@@ -1,7 +1,3 @@
-# 🔗 Links:
-# Source file: https://github.com/obytes/react-native-template-obytes/blob/master/.github/workflows/lint-ts.yml
-# Starter releasing process: https://starter.obytes.com/ci-cd/app-releasing-process/
-
 # ✍️ Description:
 # This workflow is used to create a new version of the app and push a new tag to the repo.
 # As this workflow will push code to the repo, we set up GitHub Bot as a Git user.
@@ -24,30 +20,90 @@ name: New App Version
 on:
   workflow_dispatch:
     inputs:
-      release-type:
+      # release-type:
+      #   type: choice
+      #   description: 'Release type (one of): major, minor, path'
+      #   default: ' '
+      #   required: false
+      #   options:
+      #     - major
+      #     - minor
+      #     - patch
+      #     - ' '
+
+      new-app-version:
+        type: string
+        description: |
+          **Rules:**
+
+          Production build => 24.10.2 (Ensure that the version is unique and does not contain any suffixes, this cannot be uploaded to Firebase App Distribution); 
+          Staging build -> e.g. 24.10.1-staging."
+          Development build -> e.g. 24.10.1-dev;
+
+        required: false
+        default: ''
+
+      environment:
         type: choice
-        description: 'Release type (one of): patch, minor, major'
+        description: 'Environment type (one of): development, production'
         required: true
-        default: 'patch'
+        default: 'development'
         options:
-          - patch
-          - minor
-          - major
+          - development
+          - production
+          - staging
+
+      run_ios:
+        type: choice
+        description: Run IOS build?
+        required: true
+        default: 'true'
+        options:
+          - true
+          - false
+
+      run_android:
+        type: choice
+        description: Run Android build?
+        required: true
+        default: 'true'
+        options:
+          - true
+          - false
+
+      should_submit:
+        type: choice
+        description: Whether to perform the EAS submit step
+        required: true
+        default: 'false'
+        options:
+          - true
+          - false
 
 jobs:
   release:
     name: Create New Version and push new tag
     runs-on: ubuntu-latest
+    environment: ${{ fromJSON('{"staging":"production"}')[inputs.environment] || inputs.environment }}
     permissions:
       contents: write
     steps:
+      - name: Validate inputs
+        id: validate-inputs
+        run: |
+          if [ -z "${{ github.event.inputs.release-type }}" ] && [ -z "${{ github.event.inputs.new-app-version }}" ]; then
+           echo "Error: No release type or version provided. At least one must be specified."
+           exit 1
+          fi
+
       - name: 🔍 GH_TOKEN
         if: env.GH_TOKEN == ''
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
         run: echo "GH_TOKEN=${GITHUB_TOKEN}" >> $GITHUB_ENV
       - name: 📦 Checkout project repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
           token: ${{ secrets.GH_TOKEN }}
@@ -60,6 +116,106 @@ jobs:
       - name: 📦 Setup Node + PNPM + install deps
         uses: ./.github/actions/setup-node-pnpm-install
 
-      - name: 🏃‍♂️ Run App release
+      - name: 'Load environment variables'
         run: |
-          pnpm app-release ${{ github.event.inputs.release-type }}
+          # Define the environment file name based on the input environment
+          if [ "${{ inputs.environment }}" == "staging" ]; then
+            ENV_FILE=".env.production"
+          else
+            ENV_FILE=".env.${{ inputs.environment }}"
+          fi
+
+          # Create the environment file (use $ENV_FILE variable)
+          touch $ENV_FILE
+
+           # Export Google Services JSON secrets to the GitHub environment
+           echo "GOOGLE_SERVICES_JSON_ANDROID_BASE64=${{ secrets.GOOGLE_SERVICES_JSON_ANDROID_BASE64 }}" >> $GITHUB_ENV
+           echo "GOOGLE_SERVICES_PLIST_IOS_BASE64=${{ secrets.GOOGLE_SERVICES_PLIST_IOS_BASE64 }}" >> $GITHUB_ENV
+
+           # Append environment variables to the defined env file
+           echo "GOOGLE_SERVICES_JSON_PATH=${{ vars.GOOGLE_SERVICES_JSON_PATH }}" >> $ENV_FILE
+           echo "GOOGLE_SERVICES_PLIST_PATH=${{ vars.GOOGLE_SERVICES_PLIST_PATH }}" >> $ENV_FILE
+           echo "ANTHROPIC_API_KEY=${{secrets.ANTHROPIC_API_KEY}}" >> $ENV_FILE
+           echo "RESEND_API_KEY=${{secrets.RESEND_API_KEY}}" >> $ENV_FILE
+           echo "RESEND_SENDER_EMAIL=${{secrets.RESEND_SENDER_EMAIL}}" >> $ENV_FILE
+           echo "TEST_ACCOUNT=${{secrets.TEST_ACCOUNT}}" >> $ENV_FILE
+           echo "REVENUE_CAT_API_KEYS_GOOGLE=${{secrets.REVENUE_CAT_API_KEYS_GOOGLE}}" >> $ENV_FILE
+           echo "REVENUE_CAT_API_KEYS_APPLE=${{secrets.REVENUE_CAT_API_KEYS_APPLE}}" >> $ENV_FILE
+           echo "ANALYZE_IMAGE_ENDPOINT=${{secrets.ANALYZE_IMAGE_ENDPOINT}}" >> $ENV_FILE
+           echo "ANALYZE_VIDEO_ENDPOINT=${{secrets.ANALYZE_VIDEO_ENDPOINT}}" >> $ENV_FILE
+           echo "EXPO_PUBLIC_TEST_URL=${{secrets.EXPO_PUBLIC_TEST_URL}}" >> $ENV_FILE
+
+           # Log the contents of the .env file for debugging
+           echo "Contents of $ENV_FILE:"
+           cat $ENV_FILE
+
+      - name: 🧑‍💻 Decode google services
+        run: pnpm run decode-google-services
+
+      # - name: Update EAS Config
+      #   run: |
+      #     sed -i 's|WILL_BE_REPLACED_IN_CI|${{ secrets.EXPO_PUBLIC_TEST_URL }}|g' eas.json
+      #   shell: bash
+
+      - name: 🏃‍♂️ Align native code with version changes by running prebuild
+        run: |
+          if [ "${{ inputs.environment }}" = "development" ]; then
+          echo "Running prebuild-push:development for the ${{
+           inputs.environment }} environment"
+          pnpm prebuild-push:development
+          elif [ "${{ inputs.environment }}" = "production" ]; then
+          echo "Running prebuild-push:production for the ${{
+           inputs.environment }} environment"
+          pnpm prebuild-push:production
+          elif [ "${{ inputs.environment }}" = "staging" ]; then
+          echo "Running prebuild-push:staging for the ${{
+           inputs.environment }} environment"
+          pnpm prebuild-push:staging
+          else
+          echo "Unknown environment: ${{ inputs.environment }}. No prebuild-push executed."
+          fi
+
+  create_github_release:
+    needs: release
+    uses: ./.github/workflows/new-github-release.yml
+    with:
+      version: ${{ inputs.new-app-version }} # Pass the version
+    permissions:
+      contents: write # Add permissions here
+    secrets: inherit
+
+  build:
+    needs: ['create_github_release', 'release']
+    if: ${{ inputs.environment == 'production' }}
+    uses: ./.github/workflows/eas-build-production.yml
+    with:
+      environment: ${{ inputs.environment }}
+      run_ios: ${{ inputs.run_ios == 'true' }}
+      run_android: ${{ inputs.run_android == 'true' }}
+      should_submit: ${{ inputs.should_submit == 'true' }}
+      version: ${{ inputs.new-app-version }}
+    secrets: inherit
+
+  build_staging:
+    needs: ['create_github_release', 'release']
+    if: ${{ inputs.environment == 'staging' }}
+    uses: ./.github/workflows/eas-build-staging.yml
+    with:
+      environment: ${{ inputs.environment }}
+      run_ios: ${{ inputs.run_ios == 'true' }}
+      run_android: ${{ inputs.run_android == 'true' }}
+      should_submit: ${{ inputs.should_submit == 'true' }}
+      version: ${{ inputs.new-app-version }}
+    secrets: inherit
+
+  build_development:
+    needs: ['create_github_release', 'release']
+    if: ${{ inputs.environment == 'development' }}
+    uses: ./.github/workflows/eas-build-development.yml
+    with:
+      environment: ${{ inputs.environment }}
+      run_ios: ${{ inputs.run_ios == 'true' }}
+      run_android: ${{ inputs.run_android == 'true' }}
+      should_submit: ${{ inputs.should_submit == 'true' }}
+      version: ${{ inputs.new-app-version }}
+    secrets: inherit
