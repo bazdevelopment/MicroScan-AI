@@ -12,7 +12,7 @@ name: Compress images
 on:
   push:
     branches:
-      - master
+      # - master //disabled to avoid triggering on every push on master
       - main
     paths:
       - '**.jpg'

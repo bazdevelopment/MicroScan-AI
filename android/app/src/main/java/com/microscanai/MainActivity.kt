@@ -1,4 +1,4 @@
-package com.microscanai.development
+package com.microscanai
 import expo.modules.splashscreen.SplashScreenManager
 
 import android.os.Build
