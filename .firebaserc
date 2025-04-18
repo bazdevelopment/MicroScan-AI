@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "dev": "microscan-ai-dev",
+    "prod": "microscan-ai-prod"
+  }
+}

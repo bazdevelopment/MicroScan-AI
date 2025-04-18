@@ -40,6 +40,7 @@ const NAME = 'MicroScan AI'; // app name
 const EXPO_ACCOUNT_OWNER = 'bazdevelopment'; // expo account owner
 const EAS_PROJECT_ID = 'c31d2cbe-724c-4c7c-b07c-5cb67a010ffc'; // eas project id
 const SCHEME = 'micro-scan-ai'; // app scheme
+const SLUG = 'microscan-ai';
 
 /**
  * We declare a function withEnvSuffix that will add a suffix to the variable name based on the APP_ENV
@@ -71,24 +72,33 @@ const withEnvSuffix = (name) => {
  */
 
 const client = z.object({
-  APP_ENV: z.enum(['development', 'staging', 'production']),
+  APP_ENV: z.enum(['development', 'production']),
   NAME: z.string(),
   SCHEME: z.string(),
   BUNDLE_ID: z.string(),
   PACKAGE: z.string(),
   VERSION: z.string(),
+  SLUG: z.string(),
 
   // ADD YOUR CLIENT ENV VARS HERE
-  API_URL: z.string(),
-  VAR_NUMBER: z.number(),
-  VAR_BOOL: z.boolean(),
+
+  GOOGLE_SERVICES_JSON_PATH: z.string().optional(),
+  GOOGLE_SERVICES_PLIST_PATH: z.string().optional(),
+  ANTHROPIC_API_KEY: z.string().optional(),
+  RESEND_API_KEY: z.string().optional(),
+  RESEND_SENDER_EMAIL: z.string().optional(),
+  EXPO_PUBLIC_REVENUE_CAT_API_KEYS_GOOGLE: z.string().optional(),
+  EXPO_PUBLIC_REVENUE_CAT_API_KEYS_APPLE: z.string().optional(),
+  EXPO_PUBLIC_TEST_ACCOUNT: z.string().optional(),
+  EXPO_PUBLIC_ANALYZE_IMAGE_CONVERSATION_ENDPOINT: z.string().optional(),
+  EXPO_PUBLIC_ANALYZE_VIDEO_CONVERSATION_ENDPOINT: z.string().optional(),
+  EXPO_PUBLIC_CONTINUE_CONVERSATION_ENDPOINT: z.string().optional(),
 });
 
 const buildTime = z.object({
   EXPO_ACCOUNT_OWNER: z.string(),
   EAS_PROJECT_ID: z.string(),
   // ADD YOUR BUILD TIME ENV VARS HERE
-  SECRET_KEY: z.string(),
 });
 
 /**
@@ -96,16 +106,31 @@ const buildTime = z.object({
  */
 const _clientEnv = {
   APP_ENV,
-  NAME: NAME,
-  SCHEME: SCHEME,
+  NAME,
+  SCHEME,
   BUNDLE_ID: withEnvSuffix(BUNDLE_ID),
   PACKAGE: withEnvSuffix(PACKAGE),
   VERSION: packageJSON.version,
+  SLUG,
 
   // ADD YOUR ENV VARS HERE TOO
-  API_URL: process.env.API_URL,
-  VAR_NUMBER: Number(process.env.VAR_NUMBER),
-  VAR_BOOL: process.env.VAR_BOOL === 'true',
+
+  GOOGLE_SERVICES_JSON_PATH: process.env.GOOGLE_SERVICES_JSON_PATH,
+  GOOGLE_SERVICES_PLIST_PATH: process.env.GOOGLE_SERVICES_PLIST_PATH,
+  ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY,
+  RESEND_API_KEY: process.env.RESEND_API_KEY,
+  RESEND_SENDER_EMAIL: process.env.RESEND_SENDER_EMAIL,
+  EXPO_PUBLIC_REVENUE_CAT_API_KEYS_GOOGLE:
+    process.env.EXPO_PUBLIC_REVENUE_CAT_API_KEYS_GOOGLE,
+  EXPO_PUBLIC_REVENUE_CAT_API_KEYS_APPLE:
+    process.env.EXPO_PUBLIC_REVENUE_CAT_API_KEYS_APPLE,
+  EXPO_PUBLIC_TEST_ACCOUNT: process.env.EXPO_PUBLIC_TEST_ACCOUNT,
+  EXPO_PUBLIC_ANALYZE_VIDEO_CONVERSATION_ENDPOINT:
+    process.env.EXPO_PUBLIC_ANALYZE_VIDEO_CONVERSATION_ENDPOINT,
+  EXPO_PUBLIC_ANALYZE_IMAGE_CONVERSATION_ENDPOINT:
+    process.env.EXPO_PUBLIC_ANALYZE_IMAGE_CONVERSATION_ENDPOINT,
+  EXPO_PUBLIC_CONTINUE_CONVERSATION_ENDPOINT:
+    process.env.EXPO_PUBLIC_CONTINUE_CONVERSATION_ENDPOINT,
 };
 
 /**
@@ -115,7 +140,6 @@ const _buildTimeEnv = {
   EXPO_ACCOUNT_OWNER,
   EAS_PROJECT_ID,
   // ADD YOUR ENV VARS HERE TOO
-  SECRET_KEY: process.env.SECRET_KEY,
 };
 
 /**
