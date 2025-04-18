@@ -27,6 +27,8 @@
         <data android:scheme="micro-scan-ai"/>
         <data android:scheme="com.microscanai.development"/>
         <data android:scheme="exp+obytesapp"/>
+        <data android:scheme="com.microscanai"/>
+        <data android:scheme="exp+microscan-ai"/>
       </intent-filter>
     </activity>
   </application>

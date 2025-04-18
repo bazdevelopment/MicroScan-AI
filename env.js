@@ -38,7 +38,7 @@ const BUNDLE_ID = 'com.microscanai'; // ios bundle id
 const PACKAGE = 'com.microscanai'; // android package name
 const NAME = 'MicroScan AI'; // app name
 const EXPO_ACCOUNT_OWNER = 'bazdevelopment'; // expo account owner
-const EAS_PROJECT_ID = 'c3e1075b-6fe7-4686-aa49-35b46a229044'; // eas project id
+const EAS_PROJECT_ID = 'c31d2cbe-724c-4c7c-b07c-5cb67a010ffc'; // eas project id
 const SCHEME = 'micro-scan-ai'; // app scheme
 
 /**
