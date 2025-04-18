@@ -34,10 +34,10 @@ require('dotenv').config({
 
 // TODO: Replace these values with your own
 
-const BUNDLE_ID = 'com.micro-scan-ai'; // ios bundle id
-const PACKAGE = 'com.micro-scan-ai'; // android package name
-const NAME = 'micro-scan-ai'; // app name
-const EXPO_ACCOUNT_OWNER = 'expo-owner'; // expo account owner
+const BUNDLE_ID = 'com.microscanai'; // ios bundle id
+const PACKAGE = 'com.microscanai'; // android package name
+const NAME = 'MicroScan AI'; // app name
+const EXPO_ACCOUNT_OWNER = 'bazdevelopment'; // expo account owner
 const EAS_PROJECT_ID = 'c3e1075b-6fe7-4686-aa49-35b46a229044'; // eas project id
 const SCHEME = 'micro-scan-ai'; // app scheme
 
