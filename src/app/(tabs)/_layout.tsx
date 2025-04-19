@@ -54,7 +54,7 @@ export default function TabLayout() {
   const addSelectionHapticEffect = useHaptic('selection');
   const addHeavyHapticEffect = useHaptic('heavy');
   const { isPending: isPendingRevenueCatSdkInit } = useInitializeRevenueCat(
-    firebaseAuth.currentUser?.uid as string,
+    firebaseAuth.currentUser?.uid as string
   );
 
   //todo: make sure if it's good to update the user info that often with the subscription data
@@ -123,7 +123,7 @@ export default function TabLayout() {
 
   if (!isMedicalDisclaimerApproved) {
     logEvent(
-      `User ${userInfo?.userId} is redirected to medical disclaimer screen`,
+      `User ${userInfo?.userId} is redirected to medical disclaimer screen`
     );
     return <Redirect href="/medical-disclaimer" />;
   }
@@ -171,7 +171,7 @@ export default function TabLayout() {
               tabPress: () => {
                 addSelectionHapticEffect?.();
                 logEvent(
-                  `User ${userInfo.userId} navigated to ${tab.screenName}`,
+                  `User ${userInfo.userId} navigated to ${tab.screenName}`
                 );
               },
             }}

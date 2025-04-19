@@ -175,6 +175,9 @@
     "ts-jest": "^29.1.2",
     "typescript": "^5.3.3"
   },
+  "overrides": {
+    "@expo/image-utils": "0.6.5"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/user/repo-name.git"

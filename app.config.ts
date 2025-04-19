@@ -43,6 +43,24 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     config: {
       usesNonExemptEncryption: false, // Avoid the export compliance warning on the app store
     },
+    infoPlist: {
+      CFBundleAllowMixedLocalizations: true,
+      CFBundleLocalizations: [
+        'en', // English
+        'zh', // Chinese
+        'es', // Spanish
+        'hi', // Hindi
+        'ar', // Arabic
+        'pt', // Portuguese
+        'ru', // Russian
+        'ja', // Japanese
+        'ko', // Korean
+        'de', // German
+        'fr', // French
+        'ro', // Romanian
+      ],
+      CFBundleDevelopmentRegion: 'en', // Default language, adjust if needed
+    },
   },
   experiments: {
     typedRoutes: true,
@@ -53,6 +71,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
       foregroundImage: './assets/adaptive-icon.png',
       backgroundColor: '#FFFFFF',
     },
+    blockedPermissions: ['FOREGROUND_SERVICE_MEDIA_PLAYBACK'], // Android review didn't pass (permission used by expo-av)You
     package: Env.PACKAGE,
   },
   web: {
@@ -60,7 +79,28 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     bundler: 'metro',
   },
   plugins: [
-    ['expo-quick-actions'],
+    [
+      'expo-notifications',
+      {
+        icon: './assets/icon_notification_96x96.png',
+        color: '#7982FD',
+        defaultChannel: 'default',
+      },
+    ],
+    [
+      'expo-quick-actions',
+      {
+        androidIcons: {
+          heart_icon: {
+            foregroundImage: './assets/heart-icon-android.png',
+            backgroundColor: '#FFFFFF',
+          },
+        },
+        iosIcons: {
+          heart_icon: './assets/heart-icon-ios.png',
+        },
+      },
+    ],
     ['expo-video'],
     [
       'expo-splash-screen',
@@ -83,6 +123,17 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     '@react-native-firebase/crashlytics',
     ['app-icon-badge', appIconBadgeConfig],
     ['react-native-edge-to-edge'],
+    [
+      'expo-image-picker',
+      {
+        photosPermission:
+          'Allow $(PRODUCT_NAME) to access your photo library to upload media for AI analysis, providing insights and feedback for informational purposes.',
+        cameraPermission:
+          'Allow $(PRODUCT_NAME) to access your camera to capture images for AI-powered analysis, providing insights and feedback for informational purposes.',
+        //'Disables the microphone permission',
+        microphonePermission: false,
+      },
+    ],
   ],
   extra: {
     ...ClientEnv,
