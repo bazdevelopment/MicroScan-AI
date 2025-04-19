@@ -1,0 +1,55 @@
+import { Env } from '@env';
+import axios from 'axios';
+import { firebaseCloudFunctionsInstance } from 'firebase/config';
+
+export const fetchConversation = async ({
+  conversationId,
+}: {
+  conversationId: string;
+}) => {
+  try {
+    const { data } = await firebaseCloudFunctionsInstance.httpsCallable(
+      'getConversation'
+    )({ conversationId });
+    return data.conversation;
+  } catch (error) {
+    throw error;
+  }
+};
+
+export const sendConversationMessage = async ({
+  userMessage,
+  conversationId,
+  conversationMode,
+  userId,
+  language,
+}: {
+  userMessage: string;
+  conversationId: string;
+  conversationMode: string;
+  userId: string;
+  language: string;
+}) => {
+  try {
+    const response = await axios.post(
+      Env.EXPO_PUBLIC_CONTINUE_CONVERSATION_ENDPOINT as string,
+      {
+        userId,
+        conversationId,
+        userMessage,
+        conversationMode,
+      },
+      {
+        headers: {
+          Accept: 'application/json',
+          // 'Content-Type': 'multipart/form-data',
+          'Accept-Language': language,
+        },
+      }
+    );
+
+    return response.data;
+  } catch (e) {
+    throw e;
+  }
+};
