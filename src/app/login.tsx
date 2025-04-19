@@ -1,24 +1,171 @@
-import { useRouter } from 'expo-router';
-import React from 'react';
+/* eslint-disable max-lines-per-function */
+import { Link } from 'expo-router';
+import { useColorScheme } from 'nativewind';
+import React, { useState } from 'react';
+import { Keyboard } from 'react-native';
+import { ScrollView } from 'react-native-gesture-handler';
+import { KeyboardStickyView } from 'react-native-keyboard-controller';
 
-import type { LoginFormProps } from '@/components/login-form';
-import { LoginForm } from '@/components/login-form';
-import { FocusAwareStatusBar } from '@/components/ui';
-import { useAuth } from '@/lib';
+import { useLoginWithEmail } from '@/api/user/user.hooks';
+import Branding from '@/components/branding';
+import { SnakeLine, SnakeLineRotated } from '@/components/snake-line';
+import {
+  DEVICE_TYPE,
+  translate,
+  useIsFirstTime,
+  useSelectedLanguage,
+} from '@/core';
+import getDeviceSizeCategory from '@/core/utilities/get-device-size-category';
+import { Button, colors, FocusAwareStatusBar, Input, Text, View } from '@/ui';
+import { MailIcon } from '@/ui/assets/icons';
 
 export default function Login() {
-  const router = useRouter();
-  const signIn = useAuth.use.signIn();
-
-  const onSubmit: LoginFormProps['onSubmit'] = (data) => {
-    console.log(data);
-    signIn({ access: 'access-token', refresh: 'refresh-token' });
-    router.push('/');
-  };
   return (
     <>
       <FocusAwareStatusBar />
-      <LoginForm onSubmit={onSubmit} />
+      <LoginPage />
     </>
   );
 }
+
+const LoginPage = () => {
+  const [email, setEmail] = useState('');
+  const { language } = useSelectedLanguage();
+  const { isVerySmallDevice, isMediumDevice } = getDeviceSizeCategory();
+  const { colorScheme } = useColorScheme();
+  const isDark = colorScheme === 'dark';
+  const [isFirstTime] = useIsFirstTime();
+  const { mutate: handleLoginViaEmail, isPending: isLoginPending } =
+    useLoginWithEmail({ email })();
+
+  const handleUpdateEmail = (text: string) => setEmail(text.toLowerCase());
+
+  return (
+    <KeyboardStickyView
+      className="flex-1"
+      offset={{
+        opened: isVerySmallDevice
+          ? 0
+          : isMediumDevice
+            ? DEVICE_TYPE.IOS
+              ? 250
+              : 200
+            : 270,
+      }}
+    >
+      <ScrollView
+        contentContainerStyle={{
+          overflow: 'hidden',
+          flex: 1,
+        }}
+        keyboardShouldPersistTaps="handled"
+      >
+        <View
+          className={`flex-1 bg-primary-900 px-6 pt-20 dark:bg-blackEerie ${isVerySmallDevice && 'pt-[10%]'} ${isMediumDevice && 'pt-[20%]'}`}
+        >
+          <SnakeLine
+            color={isDark ? colors.charcoal[600] : colors.primary[600]}
+            className="absolute right-[150] top-[70]"
+          />
+          <SnakeLine
+            color={isDark ? colors.charcoal[600] : colors.primary[600]}
+            className="absolute right-[50] top-[60]"
+          />
+          <SnakeLineRotated
+            color={isDark ? colors.charcoal[600] : colors.primary[600]}
+            className="absolute left-[100] top-[-20]"
+          />
+          <SnakeLineRotated
+            color={isDark ? colors.charcoal[600] : colors.primary[600]}
+            className="absolute left-[170] top-[-120]"
+          />
+          <SnakeLineRotated
+            color={isDark ? colors.charcoal[600] : colors.primary[600]}
+            className="absolute left-[200] top-[-20]"
+          />
+          <SnakeLineRotated
+            color={isDark ? colors.charcoal[600] : colors.primary[600]}
+            className="absolute right-[-10] top-[-20]"
+          />
+
+          <Branding isLogoVisible />
+
+          <Text
+            testID="form-title"
+            className={`mt-10 font-bold-nunito text-[32px] text-white ${isVerySmallDevice && 'mt-4'}`}
+          >
+            {`${isFirstTime ? translate('general.welcomeMessage') : translate('general.welcomeBack')} 👋`}
+          </Text>
+
+          <Text className="my-4 text-lg text-white">
+            {translate('auth.loginViaEmailHeading')}
+          </Text>
+
+          <View className="mt-4 rounded-3xl bg-white p-6 dark:bg-blackBeauty">
+            <Input
+              testID="email"
+              label={translate('auth.emailAddress')}
+              value={email}
+              placeholder="name@example.com"
+              onChangeText={handleUpdateEmail}
+              autoCapitalize="none"
+              keyboardType="email-address"
+              autoComplete={undefined}
+              autoCorrect={false}
+              // autoFocus
+              className="flex-1 rounded-xl bg-white px-3.5 py-5 font-primary-nunito dark:border-neutral-700 dark:bg-charcoal-800 dark:text-white"
+              icon={<MailIcon />}
+            />
+
+            <View className="mt-1 w-full flex-row flex-wrap items-center">
+              <Text className="text-sm">
+                {translate('rootLayout.screens.login.agreeingMessage')}{' '}
+              </Text>
+              <Link
+                href="/terms-of-service"
+                className="text-sm text-primary-900"
+              >
+                {translate('rootLayout.screens.login.termsAndConditions')}
+              </Link>
+              <Text className="text-sm"> {translate('general.and')} </Text>
+              <Link href="/privacy-policy" className="text-sm text-primary-900">
+                {translate('rootLayout.screens.login.privacyPolicy')}
+              </Link>
+            </View>
+
+            <Button
+              label={translate('general.continue')}
+              variant="default"
+              className="mt-6 h-[55px] w-full rounded-xl border-2 border-primary-900 bg-primary-900 pl-5 dark:bg-primary-900"
+              textClassName="text-lg text-center text-white dark:text-white"
+              iconPosition="left"
+              onPress={() => {
+                handleLoginViaEmail({ email, language });
+                Keyboard.dismiss();
+              }}
+              disabled={!email}
+              loading={isLoginPending}
+            />
+          </View>
+          <SnakeLine
+            color={isDark ? colors.charcoal[600] : colors.primary[600]}
+            className="absolute bottom-[-10] z-[-1]"
+          />
+          <SnakeLine
+            color={isDark ? colors.charcoal[600] : colors.primary[600]}
+            className="absolute bottom-[-10] left-[160px] z-[-1]"
+          />
+          <SnakeLine
+            color={isDark ? colors.charcoal[600] : colors.primary[600]}
+            className="absolute bottom-[160] left-[-50px] z-[-1]"
+          />
+
+          <SnakeLineRotated
+            color={isDark ? colors.charcoal[600] : colors.primary[600]}
+            className="absolute bottom-0 right-[-10] z-[-1]"
+          />
+        </View>
+      </ScrollView>
+    </KeyboardStickyView>
+  );
+};

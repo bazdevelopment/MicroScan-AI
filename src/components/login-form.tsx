@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 import { KeyboardAvoidingView } from 'react-native-keyboard-controller';
 import * as z from 'zod';
 
-import { Button, ControlledInput, Text, View } from '@/components/ui';
+import { Button, ControlledInput, Text, View } from '@/ui';
 
 const schema = z.object({
   name: z.string().optional(),
@@ -38,19 +38,9 @@ export const LoginForm = ({ onSubmit = () => {} }: LoginFormProps) => {
       keyboardVerticalOffset={10}
     >
       <View className="flex-1 justify-center p-4">
-        <View className="items-center justify-center">
-          <Text
-            testID="form-title"
-            className="pb-6 text-center text-4xl font-bold"
-          >
-            Sign In
-          </Text>
-
-          <Text className="mb-6 max-w-xs text-center text-gray-500">
-            Welcome! 👋 This is a demo login screen! Feel free to use any email
-            and password to sign in and try it out.
-          </Text>
-        </View>
+        <Text testID="form-title" className="pb-6 text-center text-2xl">
+          Sign In
+        </Text>
 
         <ControlledInput
           testID="name"

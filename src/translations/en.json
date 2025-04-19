@@ -1,12 +1,288 @@
 {
   "onboarding": {
-    "message": "Welcome to MicroScan AI app site"
+    "message": "Welcome to MicroScan AI!"
+  },
+  "general": {
+    "back": "Back",
+    "welcome": "Hi",
+    "welcomeBack": "Welcome Back!",
+    "welcomeMessage": "Welcome!",
+    "continue": "Continue",
+    "retry": "Retry",
+    "close": "Close",
+    "gallery": "Gallery",
+    "files": "Files",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "attention": "Attention!",
+    "new": "New",
+    "yes": "Yes",
+    "or": "or",
+    "typing": "Typing...",
+    "online": "Online",
+    "chatbotPlaceholder": "Ask me anything...",
+    "openSettings": "Open Settings",
+    "seeNotifications": "See notifications",
+    "viewProfile": "View Profile",
+    "upgradePlan": "Upgrade Plan",
+    "download": "Download",
+    "share": "Share",
+    "shareLink": "Share Link",
+    "skip": "Skip",
+    "next": "Next",
+    "update": "Update",
+    "tryAgain": "Try again",
+    "createdAt": "Created At",
+    "and": "and",
+    "saveDiscount": "SAVE",
+    "restorePurchase": "Restore purchase",
+    "medicalDisclaimer": "Medical Disclaimer",
+    "conversationHistory": "Conversation history",
+    "freeTrial": "Free trial",
+    "completedScans": "Scans completed",
+    "activeSubscription": "Subscription active",
+    "askAssistant": "Ask AI assistant",
+    "copyText": {
+      "loading": "Copying...",
+      "copied": "Copied!",
+      "copy": "Copy Link"
+    },
+    "loadingMessages": {
+      "initialAppLoad": {
+        "first": "Loading your personalized experience...",
+        "second": "Synchronizing systems...",
+        "third": "Processing your data...",
+        "fourth": "Almost ready, just a moment..."
+      },
+      "imageScanningLoading": {
+        "first": "Scanning your medical imaging, please hold tight...",
+        "second": "Analyzing details, this may take a moment...",
+        "third": "Enhancing accuracy for the best results...",
+        "fourth": "Almost there, finalizing the scan..."
+      },
+      "loadingChatbot": {
+        "first": "Aria is getting ready to assist you...",
+        "second": "Hold on! Aria is preparing your response...",
+        "third": "Thinking...your assistant Aria is on it!"
+      }
+    }
+  },
+  "backHandler": {
+    "holdOn": "Hold on!",
+    "goBackMessage": "Are you sure you want to go back?"
+  },
+  "internet": {
+    "noConnectionTitle": "You're offline!",
+    "noConnectionMessage": "Turn on mobile data or connect to a Wi-Fi. Or just take a break and go for a walk!"
+  },
+  "uploadScan": {
+    "title": "Upload Scan",
+    "scanNow": "Scan now"
+  },
+  "weekDays": {
+    "today": "Today",
+    "yesterday": "Yesterday"
+  },
+  "auth": {
+    "verifyAuthCode": "Verify authentication code",
+    "verifyAuthCodeButton": "Verify code",
+    "authCodeHeading": "Authentication code",
+    "loginViaEmailHeading": "Let’s get you signed in. Please enter your email to continue.",
+    "emailAddress": "Email"
+  },
+  "rootLayout": {
+    "screens": {
+      "welcome": {
+        "heading": "Welcome to MicroScan AI!",
+        "startButton": "Let's get started!",
+        "accountButton": "I already have an account"
+      },
+      "login": {
+        "agreeingMessage": "By continuing, you agree to our",
+        "termsAndConditions": "Terms & Conditions",
+        "privacyPolicy": "Privacy Policy"
+      },
+      "verifyAuthCode": {
+        "verificationCodeHeading": "Enter your verification code sent via email. Please note, the code will expire in 5 minutes.",
+        "verificationCodeSent": "We have sent the verification code to",
+        "verificationCodeMissing": "Didn't get the code?",
+        "resendCode": "Resend code",
+        "backToLogin": "Back to Sign In"
+      },
+      "namePreferenceScreen": {
+        "heading": "Let's make this personal!",
+        "preferredNameQuestion": "What should we call you?",
+        "placeholderPreferredName": "E.g., Captain Cool, Queen Bee, or just Alex!"
+      },
+      "freeTrialPreview": {
+        "heading": "Enjoy your free trial! 🎉",
+        "subheading": "Experience these amazing benefits during your free trial"
+      },
+      "scanInterpretation": {
+        "title": "Analysis result",
+        "headerBackTitle": "Reports"
+      },
+      "paywallOnboarding": {
+        "freeTierOfferings": {
+          "title": "Unlock Premium Features Today! 🎉",
+          "firstOffering": "Access All Premium Features",
+          "secondOffering": "Ad-Free Experience",
+          "thirdOffering": "Unlimited scans within reasonable use",
+          "fourthOffering": "Unlimited scans with fair use and 24/7 personal AI assistant access"
+        }
+      },
+      "paywallUpgradeScreen": {
+        "heading": "Unlock Premium Features Today! 🎉",
+        "firstOffering": {
+          "title": "Start Free Trial",
+          "subtitle": "Enjoy {{freeScans}} free scans – no payment"
+        },
+        "secondOffering": {
+          "title": "Monthly",
+          "subtitle": "{{ price }}/month"
+        },
+        "thirdOffering": {
+          "title": "Yearly",
+          "subtitle": "Best deal: {{ price }}/year – save more!"
+        }
+      },
+      "newAppVersionScreen": {
+        "heading": "A new version of MicroScan AI is available",
+        "subheading": "Please update to the latest version to continue using the app",
+        "action": "Get it now!"
+      },
+      "rateAppScreen": {
+        "heading": "Are you finding the app valuable and engaging?",
+        "like": "Yes, I love it!",
+        "dislike": "Not really..."
+      },
+      "noInternetScreen": {
+        "heading": "You are offline",
+        "subheading": "Your connection seems to be unstable. Please verify your network status"
+      },
+      "notifications": {
+        "title": "Notifications",
+        "noNotifications": "No notifications for now — stay tuned for updates!"
+      },
+      "termsOfService": {
+        "title": "Terms of Service"
+      },
+      "privacyPolicy": {
+        "title": "Privacy Policy"
+      },
+      "share": {
+        "title": "Share",
+        "heading": "Share MicroScan AI App",
+        "subheading": "Help others discover the power of AI-driven X-Ray analysis",
+        "scanMessage": "Scan to download the app",
+        "shareMessage": "or share via your favorite platform"
+      },
+      "rate": {
+        "title": "Give us a feedback!"
+      },
+      "profile": {
+        "title": "Profile",
+        "edit": "Edit Profile",
+        "placeholderPreferredName": "E.g., Captain Cool, Queen Bee, or just Alex!"
+      },
+      "generateReportScreen": {
+        "title": "We appreciate your patience! Here’s your AI report. ",
+        "userInput": "Your Submission",
+        "medicalReport": "Medical Report",
+        "report": "AI-Generated Medical Report",
+        "conversationName": "Conversation name"
+      },
+      "verifyEmail": {
+        "heading": "Verify email"
+      },
+      "filePreviewScreen": {
+        "generateReportButton": "Start Analysis"
+      },
+      "disclaimerScreen": {
+        "heading": "Important Medical Disclaimer",
+        "subheading": "MicroScan AI is designed for radiology professionals, healthcare experts, medical students, and enthusiasts",
+        "consentAgreement": "I have read and consent to the disclaimer.",
+        "firstConsent": "MicroScan AI does not provide health measurements, diagnoses, or treatment advice, nor is it intended for such purposes. Users of MicroScan AI must apply their clinical judgment and verify information from authoritative sources before making any clinical decisions.",
+        "secondConsent": "MicroScan AI is not a diagnostic tool, treatment platform, or a replacement for professional medical advice. It offers AI-generated insights to assist healthcare professionals in accessing medical knowledge and analyzing medical images and documents. MicroScan AI is an AI-driven informational and educational app designed more to support licensed healthcare professionals.",
+        "thirdConsent": "MicroScan AI is not designed for patient use. It does not provide direct medical diagnoses, treatment recommendations, or patient management functionalities.",
+        "fourthConsent": "MicroScan AI is not classified as a medical device and does not claim regulatory approval. It is intended for educational and informational purposes to complement professional expertise.",
+        "fifthConsent": "MicroScan AI does not collect, store, or process personal or patient data. All user interactions are confidential and limited to the scope of the app."
+      },
+      "contactUs": {
+        "heading": "Feel free to email us directly, and our team will get back to you as soon as possible",
+        "customerSupport": "Customer Support",
+        "emailAddress": "Email Address"
+      }
+    }
+  },
+  "deleteApp": {
+    "title": "Wait! Don't delete me!",
+    "subtitle": "Send a feedback instead"
+  },
+
+  "pdfPreview": {
+    "noEditorInstalled": "To preview the PDF, ensure you have a PDF viewer installed, like Adobe Acrobat Reader or Google PDF Viewer",
+    "conversationTitlePdf": "Conversation with Aria, your AI assistant"
+  },
+
+  "flows": {
+    "createReport": {
+      "finalReportForeground": {
+        "message": "Thank you for your patience!"
+      },
+      "finalReportHeader": {
+        "message": "This is the report result!"
+      },
+      "uploadFile": {
+        "title": "Please upload a medical imaging file",
+        "size": "Max: {{imageLimit}}MB (images), {{videoLimit}}MB (videos)",
+        "location": "Select from Gallery or Files",
+        "fileType": "PNG, JPG, PDF, or MP4",
+        "openCamera": "Open Camera & Take Photo",
+        "scanType": "Only X-Rays, CT, MRI, PET, or other medical imaging allowed"
+      }
+    }
+  },
+  "home": {
+    "tab": "Home",
+    "homeForeground": {
+      "maxNumberOfScans": "You've reached your scan limit! Upgrade your plan now to unlock more scans. 🚀",
+      "heading": "Welcome to MicroScan AI!",
+      "subHeading": "Get vital insights about X-Rays, MRI, CT scans, PET imaging, ultrasounds, and nuclear medicine through AI-powered analysis"
+    },
+    "scanCategories": {
+      "heading": "Radiology Reel"
+    },
+    "recentReports": {
+      "heading": "Recent Chats",
+      "noReports": "No chats to show yet!"
+    }
+  },
+  "reports": {
+    "tab": "History",
+    "noReportsAvailable": "No chat history available for this date",
+    "heading": "Chat History"
   },
   "settings": {
+    "tab": "Settings",
+    "profile": "Profile",
+    "contactUs": "Contact us",
     "about": "About",
     "app_name": "App Name",
-    "arabic": "Arabic",
-    "english": "English",
+    "languages": {
+      "arabic": "Arabic",
+      "english": "English",
+      "mandarin_chinese": "Chinese",
+      "spanish": "Spanish",
+      "hindi": "Hindi",
+      "portuguese": "Portuguese",
+      "russian": "Russian",
+      "japanese": "Japanese",
+      "korean": "Korean",
+      "german": "German",
+      "french": "French",
+      "romanian": "Romanian"
+    },
     "generale": "General",
     "github": "Github",
     "language": "Language",
@@ -14,6 +290,7 @@
     "logout": "Logout",
     "more": "More",
     "privacy": "Privacy Policy",
+    "faq": "FAQ",
     "rate": "Rate",
     "share": "Share",
     "support": "Support",
@@ -27,7 +304,126 @@
     },
     "title": "Settings",
     "version": "Version",
-    "website": "Website"
+    "website": "Website",
+    "devMode": {
+      "title": "Developer mode",
+      "componentsLibrary": "UI library"
+    }
   },
-  "welcome": "Welcome to MicroScan AI site"
+  "components": {
+    "ReportCard": {
+      "rating": "Rating"
+    },
+    "ScanReportCard": {
+      "promptMessage": "What is the reason?",
+      "unnamedConversation": "Untitled",
+      "reportTitlePlaceholder": "Add a title"
+    },
+    "WeekBlock": {
+      "week": "Week"
+    },
+    "EndScrollPlaceholder": {
+      "scrollToTop": "Scroll to Top"
+    },
+    "FreeTierStatus": {
+      "heading": "Free scans",
+      "subheading": "Unlock unlimited scans by upgrading your plan",
+      "action": "Upgrade"
+    },
+    "UploadFileOptionsModal": {
+      "heading": "Choose a picture / video"
+    },
+    "TapToViewLabel": {
+      "label": "Tap To View"
+    },
+    "UpgradeBanner": {
+      "heading": "Upgrade Now",
+      "subheading": "Unlock unlimited scans by upgrading your plan"
+    },
+    "PromptSection": {
+      "message": "Your scan is ready! Now, what would you like to find out?",
+      "prompts": {
+        "first": "Describe any abnormalities present in the lung fields",
+        "second": "Evaluate the cardiac silhouette and mediastinum",
+        "third": "Evaluate the bone structures for any lesions or fractures",
+        "fourth": "Comment on the presence or absence of pleural effusions"
+      }
+    },
+    "PremiumFeaturesOverview": {
+      "first": "Get {{freeScans}} Free Scans",
+      "second": "Access to all premium features",
+      "third": "No ads"
+    },
+
+    "Input": {
+      "labels": {
+        "nickname": "Nickname",
+        "email": "Email",
+        "emailVerification": "Email Verification"
+      }
+    },
+    "ImageAnnotationStudio": {
+      "instructions": {
+        "title": "Instructions",
+        "first": "1. Tap the 'Add Square' button to create a selection square.",
+        "second": "2. Drag the square over your region of interest.",
+        "third": "3. Adjust the corners to precisely cover the region."
+      },
+      "OpenStudioSection": {
+        "openStudioButton": "Open Studio",
+        "editMore": "Edit More",
+        "continueEditing": "Continue editing your annotations?",
+        "highlightedRegionsCount": "You have {{highlightedRegions}} highlighted regions. Tap below to add more",
+        "highlightRegions": "Need to highlight regions of your medical image?"
+      },
+      "studioToolbar": {
+        "addSquare": "Add Square"
+      }
+    }
+  },
+  "alerts": {
+    "mediaPickerPermissions": "Sorry, we need camera permissions to make this work!",
+    "errorSelectingImagePicker": "Something went wrong while selecting the image. Please try again.",
+    "errorSelectingDocumentPicker": "Something went wrong while picking the document. Please try again.",
+    "errorTakingPicture": "Something went wrong while taking the photo. Please try again.",
+    "enableNotifications": {
+      "heading": "Enable Notifications",
+      "subHeading": "Notifications are currently turned off. To stay updated, please enable them in your device settings."
+    },
+    "enableNotificationFailed": "Push notifications are disabled. Enable them in settings to receive important updates!",
+    "enableNotificationError": "An error occurred while enabling notifications",
+    "notificationDisabledSuccess": "Notifications disabled successfully.",
+    "notificationDisabledRegisterError": "Failed to unregister device for notifications.",
+    "notificationDisabledError": "An error occurred while disabling notifications.",
+    "checkNotificationStatusError": "Error checking notification status.",
+    "projectIdNotFound": "Notification project ID not found.",
+    "imageSizeLarge": "Image is too large! File size is {{fileSize}} MB, but the limit is {{imageLimit}} MB.",
+    "videoSizeLarge": "Video is too large! File size is {{fileSize}} MB, but the limit is {{videoLimit}} MB.",
+    "loggedInSuccess": "Successfully logged in",
+    "loggedOutSuccess": "You have logged out successfully!",
+    "sendVerificationCodeError": "Error when sending verification code",
+    "validateAuthCodeError": "Error when validating auth code",
+    "anonymousSignInError": "Error signing in anonymously",
+    "emailLoginError": "Error when signing in",
+    "preferredLanguageError": "Error when updating user's preferred language",
+    "sharingNotAvailable": "Sharing is currently unavailable on your device",
+    "sharingLinkError": "Failed to share link.",
+    "individualPushNotificationSuccess": "Individual push notifications sent successfully!",
+    "globalPushNotificationSuccess": "Global push notifications sent successfully! 🌍🚀",
+    "interpretationFieldsUpdateFail": "Failed to update interpretation fields! ❌",
+    "deleteScanReportFail": "Unable to delete the scan report. Please try again",
+    "onboardingUnsuccessful": "Onboarding unsuccessful. Please try again",
+    "logoutUnsuccessful": "Logout unsuccessful. Please try again",
+    "deleteScanReportQuestion": "Are you sure you want to permanently delete this report?",
+    "videoLimitExceeds": "Your video exceeds the {{videoSecondsLimit}}-seconds limit. Please trim it and re-upload",
+    "subscriptionActivated": "Your subscription has been successfully activated! Enjoy your exclusive benefits!",
+    "subscriptionCancelledByUser": "You've canceled the transaction. Feel free to try again!",
+    "subscriptionActivationFailed": "Failed to activate your subscription. Please try again",
+    "logoutQuestion": "Are you sure you want to log out?",
+    "noSubscriptionToRestore": "Oops! It looks like you don't have an active subscription at the moment. To continue enjoying full access, please choose one of our subscription plans.",
+    "restorationSuccessful": "Restoration was successful! Enjoy!",
+    "restorationError": "An error occurred while restoring the purchase.",
+    "medicalDisclaimerAlert": "MicroScan AI app does not offer diagnoses, treatment recommendations, or any medical advice. Always seek guidance from a qualified healthcare professional for medical decisions.",
+    "scanLimitReached": "We're optimizing scan quality for you! You'll be able to scan again in around {{hours}} hours and {{minutes}} minutes. Have any questions about any medical topic? Ask our chat assistant while you wait!"
+  }
 }

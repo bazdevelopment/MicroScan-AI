@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Text, View } from '@/components/ui';
-import type { TxKeyPath } from '@/lib';
+import type { TxKeyPath } from '@/core';
+import { Text, View } from '@/ui';
 
 type Props = {
   children: React.ReactNode;
@@ -10,13 +10,14 @@ type Props = {
 
 export const ItemsContainer = ({ children, title }: Props) => {
   return (
-    <>
-      {title && <Text className="pb-2 pt-4 text-lg" tx={title} />}
-      {
-        <View className=" rounded-md border border-neutral-200 dark:border-neutral-700 dark:bg-neutral-800">
-          {children}
-        </View>
-      }
-    </>
+    <View className="flex-1">
+      {title && (
+        <Text
+          className="mb-2 mt-8 pb-2 font-semibold-nunito text-lg"
+          tx={title}
+        />
+      )}
+      <View className="gap-3">{children}</View>
+    </View>
   );
 };

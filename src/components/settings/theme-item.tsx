@@ -1,9 +1,10 @@
 import React from 'react';
 
-import type { OptionType } from '@/components/ui';
-import { Options, useModal } from '@/components/ui';
-import type { ColorSchemeType } from '@/lib';
-import { translate, useSelectedTheme } from '@/lib';
+import type { ColorSchemeType } from '@/core';
+import { translate, useSelectedTheme } from '@/core';
+import type { OptionType } from '@/ui';
+import { Options, useModal } from '@/ui';
+import { MoonIcon, PhoneIcon, SunIcon } from '@/ui/assets/icons';
 
 import { Item } from './item';
 
@@ -16,21 +17,33 @@ export const ThemeItem = () => {
       setSelectedTheme(option.value as ColorSchemeType);
       modal.dismiss();
     },
-    [setSelectedTheme, modal]
+    [setSelectedTheme, modal],
   );
 
   const themes = React.useMemo(
     () => [
-      { label: `${translate('settings.theme.dark')} 🌙`, value: 'dark' },
-      { label: `${translate('settings.theme.light')} 🌞`, value: 'light' },
-      { label: `${translate('settings.theme.system')} ⚙️`, value: 'system' },
+      {
+        label: `${translate('settings.theme.light')}`,
+        value: 'light',
+        icon: <SunIcon right={10} />,
+      },
+      {
+        label: `${translate('settings.theme.dark')}`,
+        value: 'dark',
+        icon: <MoonIcon right={10} />,
+      },
+      {
+        label: `${translate('settings.theme.system')}`,
+        value: 'system',
+        icon: <PhoneIcon right={10} />,
+      },
     ],
-    []
+    [],
   );
 
   const theme = React.useMemo(
     () => themes.find((t) => t.value === selectedTheme),
-    [selectedTheme, themes]
+    [selectedTheme, themes],
   );
 
   return (
@@ -45,6 +58,7 @@ export const ThemeItem = () => {
         options={themes}
         onSelect={onSelect}
         value={theme?.value}
+        heading={translate('settings.theme.title')}
       />
     </>
   );
