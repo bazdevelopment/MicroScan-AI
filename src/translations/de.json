@@ -61,9 +61,9 @@
         "fourth": "Fast fertig, finalisiere den Scan..."
       },
       "loadingChatbot": {
-        "first": "Aria bereitet sich darauf vor, Ihnen zu helfen...",
-        "second": "Einen Moment! Aria bereitet Ihre Antwort vor...",
-        "third": "Nachdenken... Ihre Assistentin Aria ist dran!"
+        "first": "Aura bereitet sich darauf vor, Ihnen zu helfen...",
+        "second": "Einen Moment! Aura bereitet Ihre Antwort vor...",
+        "third": "Nachdenken... Ihre Assistentin Aura ist dran!"
       }
     }
   },
@@ -220,7 +220,7 @@
   },
   "pdfPreview": {
     "noEditorInstalled": "Um die PDF anzuzeigen, stellen Sie sicher, dass ein PDF-Viewer wie Adobe Acrobat Reader oder Google PDF Viewer installiert ist.",
-    "conversationTitlePdf": "Unterhaltung mit Aria, Ihrem KI-Assistenten"
+    "conversationTitlePdf": "Unterhaltung mit Aura, Ihrem KI-Assistenten"
   },
   "flows": {
     "createReport": {

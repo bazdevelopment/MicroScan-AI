@@ -68,13 +68,17 @@ export const useMediaPiker = ({ onUploadFinished }: IMediaPicker) => {
       }
 
       const sizeInMb = getFileSizeInMB(result.assets[0].fileSize as number);
+
+      const compressedImage = await compressImage(result?.assets[0].uri, 0.9);
+      const isImage = result.assets[0].mimeType?.startsWith('image');
+
       const isLongVideo = isVideoDurationLong(
-        result.assets[0].duration as number,
+        result.assets[0].duration as number
       );
 
       const { isLimitReached } = checkFileSize(
         Number(sizeInMb),
-        result.assets[0].type,
+        result.assets[0].type
       );
 
       if (isLongVideo) {
@@ -85,7 +89,7 @@ export const useMediaPiker = ({ onUploadFinished }: IMediaPicker) => {
           {
             closeButton: true,
             duration: Infinity,
-          },
+          }
         );
       }
 
@@ -96,9 +100,9 @@ export const useMediaPiker = ({ onUploadFinished }: IMediaPicker) => {
           onUploadFinished({
             fileMimeType: result.assets[0].mimeType,
             fileExtension: getImageExtension(
-              result.assets[0].fileName as string,
+              result.assets[0].fileName as string
             ),
-            fileUri: result.assets[0].uri,
+            fileUri: isImage ? compressedImage.uri : result.assets[0].uri,
             fileName: result.assets[0].fileName,
           });
       }
@@ -138,7 +142,7 @@ export const useMediaPiker = ({ onUploadFinished }: IMediaPicker) => {
             {
               closeButton: true,
               duration: Infinity,
-            },
+            }
           );
         }
 
@@ -205,7 +209,7 @@ export const useMediaPiker = ({ onUploadFinished }: IMediaPicker) => {
                 }
               },
             },
-          }),
+          })
         );
         return;
       }
@@ -226,7 +230,7 @@ export const useMediaPiker = ({ onUploadFinished }: IMediaPicker) => {
 
       const { isLimitReached } = checkFileSize(
         Number(sizeInMb),
-        result.assets[0].type,
+        result.assets[0].type
       );
 
       // Handle the loaded file with the URI
@@ -263,7 +267,7 @@ export const useMediaPiker = ({ onUploadFinished }: IMediaPicker) => {
  */
 export const compressImage = async (
   imageUri: string,
-  compressionQuality: number = 0.6,
+  compressionQuality: number = 0.6
 ): Promise<{
   uri: string;
   width: number;
@@ -280,7 +284,7 @@ export const compressImage = async (
       {
         compress: compressionQuality, // Compression value between 0 and 1
         format: ImageManipulator.SaveFormat.JPEG,
-      },
+      }
     );
 
     // Get the file size of the compressed image

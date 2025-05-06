@@ -190,7 +190,7 @@ export const fr: ITranslation = {
   },
   continueConversation: {
     messagesLimit:
-      'Aria a atteint sa capacité maximale ! Téléversez une autre analyse pour continuer à obtenir des résultats et des insights',
+      'Aura a atteint sa capacité maximale ! Téléversez une autre analyse pour continuer à obtenir des résultats et des insights',
     conversationNotFound: 'Impossible de trouver la conversation',
     serviceIssueAi:
       "Il semble y avoir un problème avec le service d'IA. Veuillez réessayer.",

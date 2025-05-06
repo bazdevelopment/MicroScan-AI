@@ -69,7 +69,7 @@ export const usePushNotificationSetup = () => {
         Toast.error(translate('alerts.enableNotificationError'));
       }
     },
-    [],
+    []
   );
 
   const disablePushNotifications = async () => {

@@ -46,11 +46,11 @@ export default function NotificationsScreen() {
 
       return groups;
     },
-    {},
+    {}
   );
 
   return (
-    <View className="flex-1 bg-primary-50 dark:bg-blackEerie">
+    <View className="flex-1 bg-white dark:bg-blackEerie">
       <ScrollView className="flex-1" showsVerticalScrollIndicator={false}>
         {areUserNotificationsLoading ? (
           <SkeletonLoader />
@@ -58,7 +58,7 @@ export default function NotificationsScreen() {
           <EdgeCaseTemplate
             image={<NoNotification width={350} height={250} />}
             title={translate(
-              'rootLayout.screens.notifications.noNotifications',
+              'rootLayout.screens.notifications.noNotifications'
             )}
             additionalClassName="mt-[30%] px-16"
           />
@@ -71,7 +71,7 @@ export default function NotificationsScreen() {
                 notifications={notifications as INotificationItem[]}
                 onMarkNotificationAsRead={onMarkNotificationAsRead}
               />
-            ),
+            )
           )
         )}
       </ScrollView>

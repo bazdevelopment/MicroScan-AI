@@ -61,9 +61,9 @@
         "fourth": "即将完成，正在完成扫描..."
       },
       "loadingChatbot": {
-        "first": "Aria 正在准备协助您...",
-        "second": "请稍等！Aria 正在准备您的回复...",
-        "third": "思考中...您的助手 Aria 正在处理！"
+        "first": "Aura 正在准备协助您...",
+        "second": "请稍等！Aura 正在准备您的回复...",
+        "third": "思考中...您的助手 Aura 正在处理！"
       }
     }
   },
@@ -220,7 +220,7 @@
   },
   "pdfPreview": {
     "noEditorInstalled": "要预览 PDF，请确保已安装 PDF 查看器，例如 Adobe Acrobat Reader 或 Google PDF Viewer。",
-    "conversationTitlePdf": "与Aria的对话，您的AI助手"
+    "conversationTitlePdf": "与Aura的对话，您的AI助手"
   },
   "flows": {
     "createReport": {

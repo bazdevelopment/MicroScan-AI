@@ -121,12 +121,12 @@ export default function TabLayout() {
     return <Redirect href="/anonymous-login" />;
   }
 
-  if (!isMedicalDisclaimerApproved) {
-    logEvent(
-      `User ${userInfo?.userId} is redirected to medical disclaimer screen`
-    );
-    return <Redirect href="/medical-disclaimer" />;
-  }
+  // if (!isMedicalDisclaimerApproved) {
+  //   logEvent(
+  //     `User ${userInfo?.userId} is redirected to medical disclaimer screen`
+  //   );
+  //   return <Redirect href="/medical-disclaimer" />;
+  // }
 
   //todo: add  this check later when the users are permanent(registered)
   // if (!userInfo?.isOtpVerified) {

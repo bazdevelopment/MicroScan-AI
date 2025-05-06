@@ -27,13 +27,13 @@ const ScanInterpretationDetailsScreen = () => {
 
   const messages =
     data?.record?.conversationMessages.filter(
-      (msg) => !Array.isArray(msg.content),
+      (msg) => !Array.isArray(msg.content)
     ) || [];
 
   const isVideo = checkIsVideo(data?.record?.mimeType);
   if (isPending) {
     return (
-      <View className="flex-1 items-center justify-center bg-primary-50 dark:bg-blackEerie">
+      <View className="flex-1 items-center justify-center bg-white dark:bg-blackEerie">
         <ActivityIndicator />
       </View>
     );
@@ -87,7 +87,7 @@ const ScanInterpretationDetailsScreen = () => {
           <View className="p-4">
             <Text className="mb-1 font-semibold-nunito text-base text-primary-900 dark:text-primary-600">
               {translate(
-                'rootLayout.screens.generateReportScreen.conversationName',
+                'rootLayout.screens.generateReportScreen.conversationName'
               )}
             </Text>
             <Text className="font-semibold-nunito text-base">
@@ -101,7 +101,7 @@ const ScanInterpretationDetailsScreen = () => {
         <View className="mx-4 my-6 rounded-2xl bg-slate-100 dark:bg-blackBeauty">
           <View className="rounded-t-2xl bg-primary-900 p-4">
             <Text className="font-semibold-nunito text-base text-white">
-              {/* Conversation with Aria */}
+              {/* Conversation with Aura */}
               {translate('general.conversationHistory')}
               {/* {translate(
                 'rootLayout.screens.generateReportScreen.medicalReport',

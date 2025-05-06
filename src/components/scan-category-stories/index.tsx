@@ -45,9 +45,9 @@ const ScanCategoriesStories: React.FC<{
                 ),
               };
             }),
-          }),
+          })
         ),
-    [categories, isDark],
+    [categories, isDark]
     // isDark as dependency is needed for darkMode
   );
 

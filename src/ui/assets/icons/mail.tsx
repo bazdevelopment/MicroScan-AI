@@ -12,14 +12,14 @@ export const MailIcon = (props: ISvgProps) => (
     // {...props}
   >
     <Path
-      stroke={props.fill || '#7982FD'}
+      stroke={props.fill || '#4568c9'}
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.5}
       d="m17.903 8.851-4.444 3.613c-.84.666-2.02.666-2.86 0L6.12 8.851"
     />
     <Path
-      stroke={props.fill || '#7982FD'}
+      stroke={props.fill || '#4568c9'}
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.5}

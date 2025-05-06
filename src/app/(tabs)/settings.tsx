@@ -104,7 +104,7 @@ export default function Settings() {
   };
 
   return (
-    <View className="mt-[-15px] flex-1 bg-primary-50 dark:bg-blackEerie">
+    <View className="mt-[-15px] flex-1 bg-white dark:bg-blackEerie">
       {DEVICE_TYPE.IOS && (
         <Toaster autoWiggleOnUpdate="toast-change" pauseWhenPageIsHidden />
       )}

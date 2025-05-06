@@ -90,20 +90,20 @@ export const ChatBubble = ({
           isUser
             ? 'px-4 bg-primary-900 dark:bg-primary-900 self-end rounded-tr-none'
             : 'pr-1 bg-slate-100 dark:bg-black self-start rounded-tl-none mr-[30]',
-          message.isError && 'bg-red-100',
+          message.isError && 'bg-red-100'
         )}
       >
         {!isUser && (
           <Image
             source={require('../ui/assets/images/assistant-avatar.png')}
-            className="mr-2 h-8 w-8 self-start rounded-full"
+            className="mr-2 size-8 self-start rounded-full"
           />
         )}
         <Text
           className={twMerge(
             'text-base',
             isUser ? 'text-white' : 'text-gray-800 dark:text-white',
-            message.isError && 'text-red-800',
+            message.isError && 'text-red-800'
           )}
         >
           {message.content}
@@ -182,7 +182,7 @@ const ChatScreen = () => {
   const [userMessage, setUserMessage] = useState('');
   const [pendingMessages, setPendingMessages] = useState<MessageType[]>([]);
   const [currentlySpeakingId, setCurrentlySpeakingId] = useState<string | null>(
-    null,
+    null
   );
   const [lastUserMessageIndex, setLastUserMessageIndex] = useState<
     number | null
@@ -207,7 +207,7 @@ const ChatScreen = () => {
   const { data: userInfo } = useUser(language);
 
   const { data: conversation, isLoading } = useConversationHistory(
-    conversationId as string,
+    conversationId as string
   );
   const { sendMessage, isSending } = useConversation(conversationId as string);
 
@@ -249,7 +249,7 @@ const ChatScreen = () => {
       });
       // Remove the pending message and add it to the conversation
       setPendingMessages((prev) =>
-        prev.filter((msg) => msg.content !== newMessage.content),
+        prev.filter((msg) => msg.content !== newMessage.content)
       );
     } catch (error) {
       console.error('Error sending message:', error);
@@ -258,8 +258,8 @@ const ChatScreen = () => {
         prev.map((msg) =>
           msg.content === newMessage.content
             ? { ...msg, isPending: false, isError: true }
-            : msg,
-        ),
+            : msg
+        )
       );
     }
   };
@@ -271,8 +271,8 @@ const ChatScreen = () => {
         prev.map((msg) =>
           msg.content === message.content
             ? { ...msg, isPending: true, isError: false }
-            : msg,
-        ),
+            : msg
+        )
       );
 
       await sendMessage({
@@ -285,7 +285,7 @@ const ChatScreen = () => {
 
       // Remove the pending message and add it to the conversation
       setPendingMessages((prev) =>
-        prev.filter((msg) => msg.content !== message.content),
+        prev.filter((msg) => msg.content !== message.content)
       );
     } catch (error) {
       console.error('Error retrying message:', error);
@@ -294,8 +294,8 @@ const ChatScreen = () => {
         prev.map((msg) =>
           msg.content === message.content
             ? { ...msg, isPending: false, isError: true }
-            : msg,
-        ),
+            : msg
+        )
       );
     }
   };
@@ -308,11 +308,11 @@ const ChatScreen = () => {
   const messages: MessageType[] = useMemo(
     () => [
       ...(conversation?.messages?.filter(
-        (msg: ConversationMessage) => !Array.isArray(msg.content),
+        (msg: ConversationMessage) => !Array.isArray(msg.content)
       ) || []),
       ...pendingMessages,
     ],
-    [conversation?.messages, pendingMessages],
+    [conversation?.messages, pendingMessages]
   );
 
   useBackHandler(() => true);
@@ -348,7 +348,7 @@ const ChatScreen = () => {
           offset: 100000,
           animated: true,
         });
-      },
+      }
     );
 
     return () => {
@@ -406,7 +406,7 @@ const ChatScreen = () => {
             />
             <View className="item-center justify-center">
               <Text className="ml-2 font-bold-nunito text-xl dark:text-white">
-                Aria
+                Aura
               </Text>
               {isSending ? (
                 <Text className="ml-2 text-xs text-gray-500 dark:text-white">
@@ -414,7 +414,7 @@ const ChatScreen = () => {
                 </Text>
               ) : (
                 <View className="flex-row items-center gap-2">
-                  <View className="h-2 w-2 rounded-full bg-success-400" />
+                  <View className="size-2 rounded-full bg-success-400" />
                   <Text className="text-xs text-gray-500 dark:text-white">
                     {translate('general.online')}
                   </Text>
@@ -426,7 +426,7 @@ const ChatScreen = () => {
                 <AttachmentPreview
                   filePath={mediaSource as string}
                   isVideo={isVideo}
-                  className="h-[40px] w-[40px] rounded-xl border-0"
+                  className="size-[40px] rounded-xl border-0"
                   isEntirelyClickable
                 />
               )}
@@ -475,7 +475,7 @@ const ChatScreen = () => {
                   'ml-2 p-2 rounded-full',
                   userMessage.trim()
                     ? 'bg-blue-500 dark:bg-primary-900'
-                    : 'bg-gray-300 dark:bg-charcoal-400',
+                    : 'bg-gray-300 dark:bg-charcoal-400'
                 )}
               >
                 <Ionicons name="send" size={20} color={colors.white} />

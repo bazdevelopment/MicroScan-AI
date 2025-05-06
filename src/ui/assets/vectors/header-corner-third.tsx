@@ -2,6 +2,7 @@ import * as React from 'react';
 import Svg, { Path } from 'react-native-svg';
 
 import { type ISvgProps } from '@/types/svg-types';
+import colors from '@/ui/colors';
 
 export const HeaderCornerThird = (props: ISvgProps) => (
   <Svg
@@ -12,7 +13,7 @@ export const HeaderCornerThird = (props: ISvgProps) => (
     {...props}
   >
     <Path
-      stroke={props.color || '#868EFD'}
+      stroke={props.color || colors.primary[700]}
       strokeOpacity={0.5}
       strokeWidth={11.488}
       d="M5.92 63.542V27.966c0-11.789 9.558-21.345 21.346-21.345h35.576"

@@ -67,7 +67,7 @@ const CustomHeader = ({
       >
         {titlePosition !== 'left' && (
           <Text
-            className={`max-w-[70%] text-center font-bold-nunito text-2xl text-gray-800 ${titleClassName}`}
+            className={`max-w-[70%] text-center font-bold-nunito text-2xl text-white ${titleClassName}`}
           >
             {title}
           </Text>

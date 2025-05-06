@@ -220,7 +220,7 @@
   },
   "pdfPreview": {
     "noEditorInstalled": "PDF をプレビューするには、Adobe Acrobat Reader や Google PDF Viewer などの PDF ビューアーがインストールされていることを確認してください。",
-    "conversationTitlePdf": "Ariaとの会話、あなたのAIアシスタント"
+    "conversationTitlePdf": "Auraとの会話、あなたのAIアシスタント"
   },
   "flows": {
     "createReport": {

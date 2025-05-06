@@ -46,7 +46,7 @@ export const ShareItem = () => {
         snapPoints={['90%']}
         title={translate('general.share')}
         backgroundStyle={{
-          backgroundColor: isDark ? colors.blackBeauty : colors.primary[50],
+          backgroundColor: isDark ? colors.blackBeauty : colors.white,
         }}
       >
         <ScrollView className="flex-1 bg-gray-50 dark:bg-blackEerie">
@@ -65,7 +65,7 @@ export const ShareItem = () => {
               <QRCode
                 value={appLink}
                 size={225}
-                color="#6c75e3"
+                color={colors.primary[900]}
                 logo={IconTransparent}
                 logoMargin={5}
                 logoSize={35}

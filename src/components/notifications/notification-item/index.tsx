@@ -41,7 +41,7 @@ const NotificationItem = ({
             language,
           });
       }}
-      className={`flex-row items-center space-x-4 rounded-xl  ${notification.isRead ? 'bg-primary-50 dark:bg-blackBeauty' : 'mt-2 bg-primary-200 dark:bg-primary-900'}  px-4 py-6`}
+      className={`flex-row items-center space-x-4 rounded-xl ${notification.isRead ? 'bg-primary-50 dark:bg-blackBeauty' : 'mt-2 bg-primary-200 dark:bg-primary-900'}  px-4 py-6`}
     >
       <View className="flex-row items-center">
         {/* Notification Content */}

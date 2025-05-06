@@ -173,7 +173,7 @@ const Reports = () => {
   );
 
   return (
-    <View className="flex-1 bg-primary-50 dark:bg-blackEerie">
+    <View className="flex-1 bg-white dark:bg-blackEerie">
       <WeekBlock
         className="px-4"
         reportSections={sections}

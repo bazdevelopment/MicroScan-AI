@@ -61,9 +61,9 @@
         "fourth": "Aproape gata, se finalizează scanarea..."
       },
       "loadingChatbot": {
-        "first": "Aria se pregătește să vă ajute...",
-        "second": "Așteptați! Aria vă pregătește răspunsul...",
-        "third": "Se gândește... asistenta dumneavoastră Aria se ocupă de asta!"
+        "first": "Aura se pregătește să vă ajute...",
+        "second": "Așteptați! Aura vă pregătește răspunsul...",
+        "third": "Se gândește... asistenta dumneavoastră Aura se ocupă de asta!"
       }
     }
   },
@@ -220,7 +220,7 @@
   },
   "pdfPreview": {
     "noEditorInstalled": "Pentru a previzualiza PDF-ul, asigură-te că ai un vizualizator PDF instalat, cum ar fi Adobe Acrobat Reader sau Google PDF Viewer",
-    "conversationTitlePdf": "Conversație cu Aria, asistentul tău AI"
+    "conversationTitlePdf": "Conversație cu Aura, asistentul tău AI"
   },
   "flows": {
     "createReport": {

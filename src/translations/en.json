@@ -55,15 +55,15 @@
         "fourth": "Almost ready, just a moment..."
       },
       "imageScanningLoading": {
-        "first": "Scanning your medical imaging, please hold tight...",
+        "first": "Scanning your microcopy image, please hold tight...",
         "second": "Analyzing details, this may take a moment...",
         "third": "Enhancing accuracy for the best results...",
         "fourth": "Almost there, finalizing the scan..."
       },
       "loadingChatbot": {
-        "first": "Aria is getting ready to assist you...",
-        "second": "Hold on! Aria is preparing your response...",
-        "third": "Thinking...your assistant Aria is on it!"
+        "first": "Aura is getting ready to assist you...",
+        "second": "Hold on! Aura is preparing your response...",
+        "third": "Thinking...your assistant Aura is on it!"
       }
     }
   },
@@ -76,7 +76,7 @@
     "noConnectionMessage": "Turn on mobile data or connect to a Wi-Fi. Or just take a break and go for a walk!"
   },
   "uploadScan": {
-    "title": "Upload Scan",
+    "title": "Upload image",
     "scanNow": "Scan now"
   },
   "weekDays": {
@@ -199,12 +199,11 @@
         "generateReportButton": "Start Analysis"
       },
       "disclaimerScreen": {
-        "heading": "Important Medical Disclaimer",
-        "subheading": "MicroScan AI is designed for radiology professionals, healthcare experts, medical students, and enthusiasts",
+        "heading": "Important Disclaimer",
+        "subheading": "MicroScan AI is designed for microscopy professionals, researchers, medical students, and enthusiasts",
         "consentAgreement": "I have read and consent to the disclaimer.",
         "firstConsent": "MicroScan AI does not provide health measurements, diagnoses, or treatment advice, nor is it intended for such purposes. Users of MicroScan AI must apply their clinical judgment and verify information from authoritative sources before making any clinical decisions.",
         "secondConsent": "MicroScan AI is not a diagnostic tool, treatment platform, or a replacement for professional medical advice. It offers AI-generated insights to assist healthcare professionals in accessing medical knowledge and analyzing medical images and documents. MicroScan AI is an AI-driven informational and educational app designed more to support licensed healthcare professionals.",
-        "thirdConsent": "MicroScan AI is not designed for patient use. It does not provide direct medical diagnoses, treatment recommendations, or patient management functionalities.",
         "fourthConsent": "MicroScan AI is not classified as a medical device and does not claim regulatory approval. It is intended for educational and informational purposes to complement professional expertise.",
         "fifthConsent": "MicroScan AI does not collect, store, or process personal or patient data. All user interactions are confidential and limited to the scope of the app."
       },
@@ -222,7 +221,7 @@
 
   "pdfPreview": {
     "noEditorInstalled": "To preview the PDF, ensure you have a PDF viewer installed, like Adobe Acrobat Reader or Google PDF Viewer",
-    "conversationTitlePdf": "Conversation with Aria, your AI assistant"
+    "conversationTitlePdf": "Conversation with Aura, your AI assistant"
   },
 
   "flows": {
@@ -234,7 +233,7 @@
         "message": "This is the report result!"
       },
       "uploadFile": {
-        "title": "Please upload a medical imaging file",
+        "title": "Upload any microscopy image for analysis",
         "size": "Max: {{imageLimit}}MB (images), {{videoLimit}}MB (videos)",
         "location": "Select from Gallery or Files",
         "fileType": "PNG, JPG, PDF, or MP4",
@@ -248,10 +247,10 @@
     "homeForeground": {
       "maxNumberOfScans": "You've reached your scan limit! Upgrade your plan now to unlock more scans. 🚀",
       "heading": "Welcome to MicroScan AI!",
-      "subHeading": "Get vital insights about X-Rays, MRI, CT scans, PET imaging, ultrasounds, and nuclear medicine through AI-powered analysis"
+      "subHeading": "Get AI-powered analysis of any microscopy images in seconds"
     },
     "scanCategories": {
-      "heading": "Radiology Reel"
+      "heading": "Microscopy Reel"
     },
     "recentReports": {
       "heading": "Recent Chats",
@@ -343,10 +342,10 @@
     "PromptSection": {
       "message": "Your scan is ready! Now, what would you like to find out?",
       "prompts": {
-        "first": "Describe any abnormalities present in the lung fields",
-        "second": "Evaluate the cardiac silhouette and mediastinum",
-        "third": "Evaluate the bone structures for any lesions or fractures",
-        "fourth": "Comment on the presence or absence of pleural effusions"
+        "first": "What cell types or structures are present in this image?",
+        "second": "Are there any abnormalities or pathogens in this sample?",
+        "third": "What is the likely origin or condition of this sample?",
+        "fourth": "What insights can you provide from this image?"
       }
     },
     "PremiumFeaturesOverview": {
@@ -374,7 +373,7 @@
         "editMore": "Edit More",
         "continueEditing": "Continue editing your annotations?",
         "highlightedRegionsCount": "You have {{highlightedRegions}} highlighted regions. Tap below to add more",
-        "highlightRegions": "Need to highlight regions of your medical image?"
+        "highlightRegions": "Need to highlight regions of your microscopy image?"
       },
       "studioToolbar": {
         "addSquare": "Add Square"

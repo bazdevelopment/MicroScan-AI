@@ -156,7 +156,7 @@ export default function Home() {
           </View> */}
           {!isUserSubscriptionActive && (
             <FreeTierStatus
-              className={`mx-4 mt-10 rounded-xl bg-white p-4 dark:bg-blackBeauty ${isVerySmallDevice ? 'mx-0' : 'mx-4'}`}
+              className={`mx-4 mt-4 rounded-xl bg-white p-4 dark:bg-blackBeauty ${isVerySmallDevice ? 'mx-0' : 'mx-4'}`}
               scansLeft={
                 userInfo?.scansRemaining >= 0 ? userInfo?.scansRemaining : 0 //do this to avoid showing values with "-" in front
               }
@@ -165,7 +165,7 @@ export default function Home() {
           )}
           {!areErrorsOnScanCategories && (
             <>
-              <Text className="mx-4 mb-3 mt-8 font-semibold-nunito">
+              <Text className="mx-4 mb-3 mt-4 font-semibold-nunito">
                 {translate('home.scanCategories.heading')}
               </Text>
 
@@ -230,7 +230,7 @@ const ReportsList = ({
         </>
       ) : !recentInterpretations?.records?.length ? (
         <EdgeCaseTemplate
-          additionalClassName="mt-8 ml-[-10]"
+          additionalClassName="mt-8 ml-[-10] "
           image={<NoReports width={100} height={100} />}
           message={translate('home.recentReports.noReports')}
           primaryAction={{
@@ -268,7 +268,7 @@ const ReportsList = ({
                   {
                     position: 'middle', // Place the alert in the middle of the screen
                     duration: Infinity, // Keep the alert visible until dismissed
-                  },
+                  }
                 );
               }
 
@@ -304,7 +304,7 @@ const ReportsList = ({
                   }
                 />
               </CardWrapper>
-            ),
+            )
           )}
         </View>
       )}

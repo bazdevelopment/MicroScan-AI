@@ -37,13 +37,13 @@ const formatPaywallData = (offerings: any) => {
     paywallData.push({
       id: offerings.monthly.product.identifier,
       title: translate(
-        'rootLayout.screens.paywallUpgradeScreen.secondOffering.title',
+        'rootLayout.screens.paywallUpgradeScreen.secondOffering.title'
       ),
       subtitle: translate(
         'rootLayout.screens.paywallUpgradeScreen.secondOffering.subtitle',
         {
           price: offerings.monthly.product.priceString,
-        },
+        }
       ),
       price: offerings.monthly.product.priceString,
       priceNumber: offerings.monthly.product.price,
@@ -56,13 +56,13 @@ const formatPaywallData = (offerings: any) => {
     paywallData.push({
       id: offerings.annual.product.identifier,
       title: translate(
-        'rootLayout.screens.paywallUpgradeScreen.thirdOffering.title',
+        'rootLayout.screens.paywallUpgradeScreen.thirdOffering.title'
       ),
       subtitle: translate(
         'rootLayout.screens.paywallUpgradeScreen.thirdOffering.subtitle',
         {
           price: offerings.annual.product.priceString,
-        },
+        }
       ),
       price: offerings.annual.product.priceString,
       priceNumber: offerings.annual.product.price,
@@ -89,7 +89,7 @@ const Paywall = () => {
     useUpdateUser();
 
   const [selectedPlan, setSelectedPlan] = useState(
-    SUBSCRIPTION_PLANS_PER_PLATFORM?.YEARLY,
+    SUBSCRIPTION_PLANS_PER_PLATFORM?.YEARLY
   );
 
   const onSuccessRestoration = async (fieldsToUpdate: object) => {
@@ -103,11 +103,11 @@ const Paywall = () => {
     useRestorePurchases(onSuccessRestoration);
 
   const pricePerMonth = formattedOfferings.find(
-    (item) => item.id === SUBSCRIPTION_PLANS_PER_PLATFORM?.MONTHLY,
+    (item) => item.id === SUBSCRIPTION_PLANS_PER_PLATFORM?.MONTHLY
   )?.priceNumber;
 
   const pricePerYear = formattedOfferings.find(
-    (item) => item.id === SUBSCRIPTION_PLANS_PER_PLATFORM?.YEARLY,
+    (item) => item.id === SUBSCRIPTION_PLANS_PER_PLATFORM?.YEARLY
   )?.priceNumber;
 
   const discount = calculateAnnualDiscount(pricePerMonth, pricePerYear);
@@ -164,7 +164,7 @@ const Paywall = () => {
           )}
         </View>
 
-        <View className="flex-1 bg-primary-50 dark:bg-blackEerie">
+        <View className="flex-1 bg-white dark:bg-blackEerie">
           <View
             className={`rounded-b-[50px] bg-primary-900  dark:bg-blackBeauty ${DEVICE_TYPE.IOS ? 'pt-6' : 'pt-10'}`}
           >
@@ -200,7 +200,7 @@ const Paywall = () => {
             <View className="gap-4 px-8 pb-4 pt-8">
               <Text className="mb-2 text-center font-bold-nunito text-[24px] text-white">
                 {translate(
-                  'rootLayout.screens.paywallOnboarding.freeTierOfferings.title',
+                  'rootLayout.screens.paywallOnboarding.freeTierOfferings.title'
                 )}
               </Text>
 
@@ -208,7 +208,7 @@ const Paywall = () => {
                 <CrownIllustration width={35} height={35} />
                 <Text className="font-bold-nunito text-lg text-white">
                   {translate(
-                    'rootLayout.screens.paywallOnboarding.freeTierOfferings.firstOffering',
+                    'rootLayout.screens.paywallOnboarding.freeTierOfferings.firstOffering'
                   )}
                 </Text>
               </View>
@@ -221,7 +221,7 @@ const Paywall = () => {
                 />
                 <Text className="font-bold-nunito text-lg text-white">
                   {translate(
-                    'rootLayout.screens.paywallOnboarding.freeTierOfferings.thirdOffering',
+                    'rootLayout.screens.paywallOnboarding.freeTierOfferings.thirdOffering'
                   )}
                 </Text>
               </View>
@@ -230,7 +230,7 @@ const Paywall = () => {
                 <NoAdsIllustration width={35} height={35} />
                 <Text className="font-bold-nunito text-lg text-white">
                   {translate(
-                    'rootLayout.screens.paywallOnboarding.freeTierOfferings.secondOffering',
+                    'rootLayout.screens.paywallOnboarding.freeTierOfferings.secondOffering'
                   )}
                 </Text>
               </View>

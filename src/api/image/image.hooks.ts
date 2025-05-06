@@ -42,7 +42,7 @@ export const useAnalyzeImage = ({
     mutationFn: (variables) => analyzeImageUsingAi(variables, language),
     onSuccess: (data) => {
       queryClient.invalidateQueries({ queryKey: ['recent-interpretations'] });
-      logEvent('Medical image has been analyzed successfully');
+      logEvent('Microscopy image has been analyzed successfully');
       onSuccessCallback({
         interpretationResult: data.interpretationResult,
         promptMessage: data.promptMessage,
@@ -63,11 +63,11 @@ export const useAnalyzeImage = ({
 
         logEvent(
           'Failure when analyzing medical image - scan limit reached',
-          'error',
+          'error'
         );
         recordError(
           error,
-          'Failure when analyzing medical image - scan limit reached',
+          'Failure when analyzing medical image - scan limit reached'
         );
 
         return Toast.warning(limitReachedMessage, {
@@ -126,7 +126,7 @@ export const useAnalyzeVideo = ({
         createdDate: data.createdAt,
         conversationId: data.conversationId,
       });
-      logEvent('Medical video has been analyzed successfully');
+      logEvent('Microscopy video has been analyzed successfully');
     },
     onError: (error) => {
       const isLimitReachedError = error?.response?.data?.message
@@ -141,11 +141,11 @@ export const useAnalyzeVideo = ({
 
         logEvent(
           'Failure when analyzing medical image - scan limit reached',
-          'error',
+          'error'
         );
         recordError(
           error,
-          'Failure when analyzing medical image - scan limit reached',
+          'Failure when analyzing medical image - scan limit reached'
         );
 
         return Toast.warning(limitReachedMessage, {

@@ -186,7 +186,7 @@ export const de: ITranslation = {
   },
   continueConversation: {
     messagesLimit:
-      'Aria hat ihre maximale Kapazität erreicht! Laden Sie einen weiteren Scan hoch, um weiterhin Analysen und Erkenntnisse zu erhalten',
+      'Aura hat ihre maximale Kapazität erreicht! Laden Sie einen weiteren Scan hoch, um weiterhin Analysen und Erkenntnisse zu erhalten',
     conversationNotFound: 'Konversation konnte nicht gefunden werden',
     serviceIssueAi:
       'Es scheint ein Problem mit dem KI-Dienst zu geben. Bitte versuchen Sie es erneut.',

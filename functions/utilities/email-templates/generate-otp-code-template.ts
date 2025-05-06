@@ -34,7 +34,7 @@ export const generateOptCodeTemplate = (
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
     .header {
-      background-color: #7982FD;
+      background-color: #4568c9;
       padding: 10px;
       text-align: center; /* Center header content */
     }
@@ -69,7 +69,7 @@ export const generateOptCodeTemplate = (
       text-align: center;
     }
     .content h2 {
-      color: #7982FD; /* primary[900] */
+      color: #4568c9; /* primary[900] */
       font-size: 20px;
       margin-bottom: 15px;
     }
@@ -83,18 +83,18 @@ export const generateOptCodeTemplate = (
       margin: 20px 0;
       padding: 15px 25px;
       background-color: #F0F1FF; /* primary[100] */
-      color: #7982FD; /* primary[base] */
+      color: #4568c9; /* primary[base] */
       font-size: 24px;
       font-weight: bold;
       letter-spacing: 5px;
       border-radius: 8px;
-      border: 2px dashed #7982FD; /* primary[base] */
+      border: 2px dashed #4568c9; /* primary[base] */
     }
     .cta-button {
       display: inline-block;
       margin: 20px 0;
       padding: 12px 24px;
-      background-color: #7982FD; /* primary[base] */
+      background-color: #4568c9; /* primary[base] */
       color: #FFFFFF;
       text-decoration: none;
       border-radius: 8px;
@@ -102,7 +102,7 @@ export const generateOptCodeTemplate = (
       transition: background-color 0.3s ease;
     }
     .cta-button:hover {
-      background-color: #7982FD; /* primary[900] */
+      background-color: #4568c9; /* primary[900] */
     }
     .footer {
       background-color: #FAFAFF; /* primary[50] */
@@ -112,7 +112,7 @@ export const generateOptCodeTemplate = (
       color: #777;
     }
     .footer a {
-      color:#7982FD; /* primary[base] */
+      color:#4568c9; /* primary[base] */
       text-decoration: none;
     }
     .footer a:hover {

@@ -32,6 +32,7 @@ export default function Layout() {
               title={translate('rootLayout.screens.scanInterpretation.title')}
               titlePosition="center"
               onGoBack={router.back}
+              titleClassName="text-black dark:text-white"
               backIconColor={isDark ? colors.white : colors.black}
               rightContent={
                 <Icon

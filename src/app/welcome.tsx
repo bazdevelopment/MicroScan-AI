@@ -13,7 +13,7 @@ const Welcome = () => {
 
   return (
     <ScrollView
-      contentContainerClassName="bg-primary-50 dark:bg-blackEerie"
+      contentContainerClassName="bg-white dark:bg-blackEerie"
       showsVerticalScrollIndicator={false}
     >
       <SafeAreaView>

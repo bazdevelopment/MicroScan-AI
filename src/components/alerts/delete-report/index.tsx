@@ -9,7 +9,6 @@ const DeleteReportAlert = ({ documentId }: { documentId: string }) => {
   const { language } = useSelectedLanguage();
 
   const { mutate: onDeleteReport } = useDeleteScanReportById();
-
   return (
     <CustomAlert
       visible

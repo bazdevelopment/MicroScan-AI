@@ -220,7 +220,7 @@
   },
   "pdfPreview": {
     "noEditorInstalled": "PDF를 미리 보려면 Adobe Acrobat Reader 또는 Google PDF Viewer와 같은 PDF 뷰어가 설치되어 있는지 확인하세요.",
-    "conversationTitlePdf": "Aria와의 대화, 당신의 AI 어시스턴트"
+    "conversationTitlePdf": "Aura와의 대화, 당신의 AI 어시스턴트"
   },
   "flows": {
     "createReport": {

@@ -14,211 +14,150 @@ interface ScanType {
 export const SCAN_CATEGORIES: ScanType[] = [
   {
     id: 1,
-    name: 'X-Ray',
-    fullName: 'X-Ray Imaging',
+    name: 'Hematology',
+    fullName: 'Hematology',
     examples: [
       {
-        name: 'Chest X-ray',
-        image: 'scans/chest-xray.jpg',
-        explanation:
-          'Examines lungs, heart, and chest wall for pneumonia, heart failure, or fractures',
+        name: 'Bacilli in blood film',
+        image: 'scans/Bacilli in blood film.png',
+        explanation: '',
       },
       {
-        name: 'Bone X-ray',
-        image: 'scans/bone-xray.jpg',
-        explanation:
-          'Shows bone fractures, alignment issues, or joint problems',
+        name: 'Carcinoma cells infiltrating bone marrow with reactive fibrosis',
+        image:
+          'scans/Carcinoma cells infiltrating bone marrow with reactive fibrosis.png',
+        explanation: '',
       },
       {
-        name: 'Dental X-ray',
-        image: 'scans/dental-xray.jpg',
-        explanation: 'Reveals tooth decay, bone loss, and cavity development',
+        name: 'Extreme neutrophil vacuolisation in sepsis',
+        image: 'scans/Extreme neutrophil vacuolisation in sepsis.png',
+        explanation: '',
       },
       {
-        name: 'Joint X-ray',
-        image: 'scans/joint-xray.jpg',
-        explanation:
-          'Evaluates joint spaces and bone alignment for arthritis or injuries',
+        name: 'Gelatinous transformation ',
+        image: 'scans/Gelatinous transformation.png',
+        explanation: '',
       },
       {
-        name: 'Skull X-ray',
-        image: 'scans/skull-xray.jpg',
-        explanation: 'Examines skull structure for fractures or abnormalities',
+        name: 'Histoplasmosis in bone marrow',
+        image: 'scans/Histoplasmosis in bone marrow.png',
+        explanation: '',
+      },
+      {
+        name: 'LE cells in incubated bone marrow ',
+        image: 'scans/LE cells in incubated bone marrow.png',
+        explanation: '',
       },
     ],
   },
   {
     id: 2,
-    name: 'MRI',
-    fullName: 'Magnetic Resonance Imaging',
+    name: 'Pathology',
+    fullName: 'Pathology',
     examples: [
       {
-        name: 'Brain MRI',
-        image: 'scans/brain-mri.jpeg',
-        explanation:
-          'Detailed imaging of brain structure to detect tumors, bleeding, inflammation, or developmental issues',
+        name: 'Alveolar Cell Carcinoma',
+        image: 'scans/Alveolar Cell Carcinoma.jpg',
+        explanation: '',
       },
       {
-        name: 'Spine MRI',
-        image: 'scans/spine-mri.jpg',
-        explanation:
-          'Examines spinal cord, disks, and vertebrae to diagnose herniated discs or spinal cord conditions',
+        name: 'Aortic Atherosclerosis',
+        image: 'scans/Aortic Atherosclerosis.jpg',
+        explanation: '',
       },
       {
-        name: 'Joint MRI',
-        image: 'scans/joint-mri.jpg',
-        explanation:
-          'Visualizes joint structures to assess injuries, arthritis, or other joint disorders',
+        name: 'Breast Adenocarcinoma',
+        image: 'scans/Breast Adenocarcinoma.jpg',
+        explanation: '',
       },
       {
-        name: 'Cardiac MRI',
-        image: 'scans/cardiac-mri.jpg',
-        explanation:
-          'Provides detailed images of heart structure and function to evaluate heart disease',
+        name: 'Emphysema',
+        image: 'scans/Emphysema.jpg',
+        explanation: '',
       },
       {
-        name: 'Abdominal MRI',
-        image: 'scans/abdominal-mri.jpg',
-        explanation:
-          'Images organs in the abdomen to detect tumors, inflammation, or other abnormalities',
+        name: 'Meningioma',
+        image: 'scans/Meningioma.jpg',
+        explanation: '',
+      },
+      {
+        name: 'Neurilemmoma',
+        image: 'scans/Neurilemmoma.jpg',
+        explanation: '',
       },
     ],
   },
   {
     id: 3,
-    name: 'CT',
-    fullName: 'Computed Tomography',
+    name: 'Microbiology',
+    fullName: 'Microbiology',
     examples: [
       {
-        name: 'Head CT',
-        image: 'scans/head-ct.webp',
-        explanation:
-          'Creates detailed cross-sections of brain to detect bleeding, tumors, or stroke',
+        name: 'Zoogloea',
+        image: 'scans/Zoogloea.jpg',
+        explanation: '',
       },
       {
-        name: 'Chest CT',
-        image: 'scans/chest-ct.jpg',
-        explanation:
-          'Detailed imaging of lungs and chest structures for cancer, infections, or blood clots',
+        name: 'Chaetonotus',
+        image: 'scans/Chaetonotus.jpg',
+        explanation: '',
       },
       {
-        name: 'Abdominal CT',
-        image: 'scans/abdominal-ct.webp',
-        explanation:
-          'Examines internal organs for inflammation, infection, or tumors',
+        name: 'Flagellate',
+        image: 'scans/Flagellate.jpg',
+        explanation: '',
       },
       {
-        name: 'Spine CT',
-        image: 'scans/spine-ct.jpg',
-        explanation:
-          'Shows detailed spine structure to diagnose herniated discs or fractures',
+        name: 'Stalked Ciliates',
+        image: 'scans/Stalked Ciliates.jpg',
+        explanation: '',
       },
       {
-        name: 'Cardiac CT',
-        image: 'scans/cardiac-ct.jpg',
-        explanation:
-          'Evaluates heart structure and coronary arteries for blockages',
+        name: 'Amoeba',
+        image: 'scans/Amoeba.jpg',
+        explanation: '',
+      },
+      {
+        name: 'Purple Sulfur Bacteria',
+        image: 'scans/Purple Sulfur Bacteria.jpg',
+        explanation: '',
       },
     ],
   },
   {
     id: 4,
-    name: 'PET',
-    fullName: 'Positron Emission Tomography',
+    name: 'Educational',
+    fullName: 'Educational',
     examples: [
       {
-        name: 'Brain PET',
-        image: 'scans/brain-pet.jpeg',
-        explanation:
-          'Shows brain activity patterns to diagnose dementia or locate tumors',
+        name: 'Human Eye',
+        image: 'scans/Human Eye.png',
+        explanation: '',
       },
       {
-        name: 'Full Body PET',
-        image: 'scans/full-body-pet.jpg',
-        explanation:
-          'Detects cancer spread throughout the body and evaluates treatment response',
+        name: 'Retina and Tapetum',
+        image: 'scans/Retina and Tapetum.png',
+        explanation: '',
       },
       {
-        name: 'Cardiac PET',
-        image: 'scans/cardiac-pet.jpg',
-        explanation:
-          'Assesses blood flow to heart muscle and cardiac metabolism',
+        name: 'Closterium',
+        image: 'scans/Closterium.webp',
+        explanation: '',
       },
       {
-        name: 'Oncology PET',
-        image: 'scans/oncology-pet.jpg',
-        explanation:
-          'Identifies cancer locations and monitors treatment effectiveness',
+        name: 'Bone Marrow under microscope',
+        image: 'scans/Bone Marrow under microscope.png',
+        explanation: '',
       },
       {
-        name: 'Neurological PET',
-        image: 'scans/neuro-pet.jpg',
-        explanation:
-          "Evaluates brain function in conditions like epilepsy or Alzheimer's",
-      },
-    ],
-  },
-  {
-    id: 5,
-    name: 'Ultra',
-    fullName: 'Ultrasound',
-    examples: [
-      {
-        name: 'Pregnancy',
-        image: 'scans/pregnancy-ultrasound.jpg',
-        explanation: 'Monitors fetal development and health during pregnancy',
+        name: 'Aluminum',
+        image: 'scans/Aluminum.png',
+        explanation: '',
       },
       {
-        name: 'Cardiac',
-        image: 'scans/cardiac-ultrasound.jpg',
-        explanation: 'Examines heart structure and function in real-time',
-      },
-      {
-        name: 'Abdominal',
-        image: 'scans/abdominal-ultrasound.jpg',
-        explanation: 'Views organs like liver, gallbladder, and kidneys',
-      },
-      {
-        name: 'Breast',
-        image: 'scans/breast-ultrasound.jpg',
-        explanation: 'Investigates breast lumps and supplements mammography',
-      },
-      {
-        name: 'Thyroid',
-        image: 'scans/thyroid-ultrasound.jpg',
-        explanation: 'Examines thyroid gland for nodules or abnormalities',
-      },
-    ],
-  },
-  {
-    id: 6,
-    name: 'Nuclear',
-    fullName: 'Nuclear Medicine',
-    examples: [
-      {
-        name: 'Bone Scan',
-        image: 'scans/bone-nuclear.jpg',
-        explanation: 'Detects bone cancer, infections, or fractures',
-      },
-      {
-        name: 'Thyroid Scan',
-        image: 'scans/thyroid-nuclear.jpg',
-        explanation: 'Evaluates thyroid function and structure',
-      },
-      {
-        name: 'MUGA Scan',
-        image: 'scans/muga-scan.jpg',
-        explanation: 'Assesses heart function and blood flow',
-      },
-      {
-        name: 'Gallium Scan',
-        image: 'scans/gallium-scan.jpg',
-        explanation: 'Identifies inflammation, infection, or tumors',
-      },
-      {
-        name: 'Renal Scan',
-        image: 'scans/renal-scan.jpg',
-        explanation: 'Evaluates kidney function and blood flow',
+        name: 'Plant Cells',
+        image: 'scans/Plant Cells.png',
+        explanation: '',
       },
     ],
   },

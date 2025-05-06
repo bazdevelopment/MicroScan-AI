@@ -171,7 +171,7 @@ export const ja: ITranslation = {
   },
   continueConversation: {
     messagesLimit:
-      'Ariaの容量がいっぱいです！分析と洞察を得るためにもう一度スキャンをアップロードしてください',
+      'Auraの容量がいっぱいです！分析と洞察を得るためにもう一度スキャンをアップロードしてください',
     conversationNotFound: '会話が見つかりません',
     serviceIssueAi: 'AIサービスに問題があるようです。もう一度お試しください。',
     noResponseAiService:

@@ -61,9 +61,9 @@
         "fourth": "Presque terminé, finalisation de l'analyse..."
       },
       "loadingChatbot": {
-        "first": "Aria se prépare à vous aider...",
-        "second": "Un instant ! Aria prépare votre réponse...",
-        "third": "Réflexion en cours... votre assistante Aria s'en occupe !"
+        "first": "Aura se prépare à vous aider...",
+        "second": "Un instant ! Aura prépare votre réponse...",
+        "third": "Réflexion en cours... votre assistante Aura s'en occupe !"
       }
     }
   },
@@ -220,7 +220,7 @@
   },
   "pdfPreview": {
     "noEditorInstalled": "Pour prévisualiser le PDF, assurez-vous d'avoir un lecteur PDF installé, comme Adobe Acrobat Reader ou Google PDF Viewer",
-    "conversationTitlePdf": "Conversation avec Aria, votre assistant IA"
+    "conversationTitlePdf": "Conversation avec Aura, votre assistant IA"
   },
   "flows": {
     "createReport": {

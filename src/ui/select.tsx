@@ -100,7 +100,7 @@ export const Options = React.forwardRef<BottomSheetModal, OptionsProps>(
           additionalClassName={`${value === item.value ? 'bg-primary-900 py-5' : 'py-5'}`}
         />
       ),
-      [onSelect, value, testID],
+      [onSelect, value, testID]
     );
 
     return (
@@ -110,7 +110,7 @@ export const Options = React.forwardRef<BottomSheetModal, OptionsProps>(
         title={heading}
         snapPoints={snapPoints}
         backgroundStyle={{
-          backgroundColor: isDark ? colors.neutral[800] : colors.primary[50],
+          backgroundColor: isDark ? colors.neutral[800] : colors.white,
         }}
       >
         {isPending && <ActivityIndicator size="small" />}
@@ -126,7 +126,7 @@ export const Options = React.forwardRef<BottomSheetModal, OptionsProps>(
         />
       </Modal>
     );
-  },
+  }
 );
 
 const Option = React.memo(
@@ -147,7 +147,7 @@ const Option = React.memo(
         {selected && <Check />}
       </Pressable>
     );
-  },
+  }
 );
 
 export interface SelectProps {
@@ -182,7 +182,7 @@ export const Select = (props: SelectProps) => {
       onSelect?.(option.value);
       modal.dismiss();
     },
-    [modal, onSelect],
+    [modal, onSelect]
   );
 
   const styles = React.useMemo(
@@ -191,7 +191,7 @@ export const Select = (props: SelectProps) => {
         error: Boolean(error),
         disabled,
       }),
-    [error, disabled],
+    [error, disabled]
   );
 
   const textValue = React.useMemo(
@@ -199,7 +199,7 @@ export const Select = (props: SelectProps) => {
       value !== undefined
         ? (options?.filter((t) => t.value === value)?.[0]?.label ?? placeholder)
         : placeholder,
-    [value, options, placeholder],
+    [value, options, placeholder]
   );
 
   return (
@@ -245,7 +245,7 @@ export const Select = (props: SelectProps) => {
 
 // only used with react-hook-form
 export function ControlledSelect<T extends FieldValues>(
-  props: ControlledSelectProps<T>,
+  props: ControlledSelectProps<T>
 ) {
   const { name, control, rules, onSelect: onNSelect, ...selectProps } = props;
 
@@ -255,7 +255,7 @@ export function ControlledSelect<T extends FieldValues>(
       field.onChange(value);
       onNSelect?.(value);
     },
-    [field, onNSelect],
+    [field, onNSelect]
   );
   return (
     <Select

@@ -48,7 +48,7 @@ export const Foreground = ({ scrollValue }: IHomeForeground) => {
   const { logEvent } = useCrashlytics();
 
   const unReadMessages = userNotifications?.notifications.filter(
-    (notification: INotificationItem) => !notification.isRead,
+    (notification: INotificationItem) => !notification.isRead
   ).length;
 
   const onStartUploadMediaFile = () => {
@@ -60,7 +60,7 @@ export const Foreground = ({ scrollValue }: IHomeForeground) => {
     isFirstTime && setIsFirstTime(false);
     if (userInfo?.scansRemaining <= 0 && userInfo.isFreeTrialOngoing) {
       logEvent(
-        `Alert informing user - ${userInfo.userId} that there are no scans available is displayed`,
+        `Alert informing user - ${userInfo.userId} that there are no scans available is displayed`
       );
       return Toast.showCustomToast(
         <CustomAlert
@@ -80,13 +80,13 @@ export const Foreground = ({ scrollValue }: IHomeForeground) => {
         {
           position: 'middle', // Place the alert in the middle of the screen
           duration: Infinity, // Keep the alert visible until dismissed
-        },
+        }
       );
     }
 
     router.navigate('/upload-file-flow');
     logEvent(
-      `User - ${userInfo.userId} pressed the 'Upload scan' button from home screen and he is redirected to the upload file flow`,
+      `User - ${userInfo.userId} pressed the 'Upload scan' button from home screen and he is redirected to the upload file flow`
     );
   };
 
@@ -96,7 +96,7 @@ export const Foreground = ({ scrollValue }: IHomeForeground) => {
         scrollValue.value,
         [0, 250, 330],
         [1, 0, 0],
-        'clamp',
+        'clamp'
       ),
     };
   }, [scrollValue]);
@@ -106,11 +106,11 @@ export const Foreground = ({ scrollValue }: IHomeForeground) => {
       {DEVICE_TYPE.IOS && (
         <Toaster autoWiggleOnUpdate="toast-change" pauseWhenPageIsHidden />
       )}
-      <SnakeLine className="absolute right-[150] top-[10]" />
+      {/* <SnakeLine className="absolute right-[150] top-[10]" />
       <SnakeLineRotated className="absolute left-[100] top-[-20]" />
       <SnakeLineRotated className="absolute left-[170] top-[-120]" />
       <SnakeLineRotated className="absolute left-[200] top-[-20]" />
-      <SnakeLineRotated className=" absolute right-[-10] top-[-20]" />
+      <SnakeLineRotated className=" absolute right-[-10] top-[-20]" /> */}
 
       <Animated.View style={foregroundWrapperAnimatedStyle}>
         <View className="mb-2 mt-8 flex-row items-center justify-between px-8">
@@ -119,7 +119,7 @@ export const Foreground = ({ scrollValue }: IHomeForeground) => {
             <IconBadge
               icon={<BellIcon />}
               badgeValue={unReadMessages}
-              className="h-[48px] w-[48px] items-center justify-center rounded-xl bg-white"
+              className="size-[48px] items-center justify-center rounded-xl bg-white"
             />
           </TouchableOpacity>
         </View>
@@ -171,7 +171,7 @@ export const Foreground = ({ scrollValue }: IHomeForeground) => {
           <Text className="text-center font-bold-nunito text-xl text-white">
             {translate('home.homeForeground.heading')}
           </Text>
-          <Text className="mt-2 text-center text-sm text-white">
+          <Text className="mt-2 text-center text-white">
             {translate('home.homeForeground.subHeading')}
           </Text>
           <Button

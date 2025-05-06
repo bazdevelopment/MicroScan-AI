@@ -69,7 +69,7 @@ const PullToRefresh = ({
         const newY = Math.min(nativeEvent.translationY * 0.5, pullThreshold);
         translateY.setValue(newY);
       },
-    },
+    }
   );
 
   const handleStateChange = useCallback(
@@ -89,7 +89,7 @@ const PullToRefresh = ({
         }
       }
     },
-    [pullThreshold, refreshing, handleRefresh, resetPosition],
+    [pullThreshold, refreshing, handleRefresh, resetPosition]
   );
 
   const defaultRefreshingComponent = (

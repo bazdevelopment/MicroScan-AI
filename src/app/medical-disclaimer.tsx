@@ -25,10 +25,7 @@ const disclaimerTexts = [
     text: translate('rootLayout.screens.disclaimerScreen.secondConsent'),
     className: 'mb-8 text-base',
   },
-  {
-    text: translate('rootLayout.screens.disclaimerScreen.thirdConsent'),
-    className: 'mb-8 text-base',
-  },
+
   {
     text: translate('rootLayout.screens.disclaimerScreen.fourthConsent'),
     className: 'mb-8 font-bold-nunito text-base',
@@ -80,7 +77,7 @@ const MedicalDisclaimerScreen = () => {
             <Checkbox.Icon checked={checked} />
             <Checkbox.Label
               text={translate(
-                'rootLayout.screens.disclaimerScreen.consentAgreement',
+                'rootLayout.screens.disclaimerScreen.consentAgreement'
               )}
             />
           </Checkbox.Root>

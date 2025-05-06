@@ -184,7 +184,7 @@ export const ro: ITranslation = {
   },
   continueConversation: {
     messagesLimit:
-      'Aria a atins capacitatea maximă! Încarcă alt scan pentru a continua să primești analize și informații',
+      'Aura a atins capacitatea maximă! Încarcă alt scan pentru a continua să primești analize și informații',
     conversationNotFound: 'Nu s-a putut găsi conversația',
     serviceIssueAi:
       'Se pare că există o problemă cu serviciul AI. Vă rugăm să încercați din nou.',

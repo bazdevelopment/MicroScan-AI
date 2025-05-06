@@ -197,6 +197,7 @@ export default function RootLayout() {
                 title={translate('uploadScan.title')}
                 className="bg-white"
                 titlePosition="center"
+                titleClassName="text-black"
                 onGoBack={router.back}
                 backIconColor={isDark ? colors.white : colors.blackBeauty}
               />
@@ -210,7 +211,7 @@ export default function RootLayout() {
             header: (props) => (
               <CustomHeader
                 {...props}
-                title="Upload Scan"
+                title="Upload Image"
                 className="bg-white pt-20"
                 titlePosition="center"
                 onGoBack={router.back}
@@ -256,8 +257,9 @@ export default function RootLayout() {
               <CustomHeader
                 {...props}
                 title={translate('rootLayout.screens.notifications.title')}
-                className="bg-primary-500"
+                className="bg-white"
                 titlePosition="center"
+                titleClassName="text-black"
                 onGoBack={router.back}
                 backIconColor={isDark ? colors.white : colors.black}
               />
@@ -271,7 +273,7 @@ export default function RootLayout() {
               <CustomHeader
                 {...props}
                 title={translate('rootLayout.screens.termsOfService.title')}
-                className="bg-primary-500"
+                className="bg-white"
                 titlePosition="center"
                 onGoBack={router.back}
                 backIconColor={isDark ? colors.white : colors.black}
@@ -286,7 +288,7 @@ export default function RootLayout() {
               <CustomHeader
                 {...props}
                 title={translate('rootLayout.screens.privacyPolicy.title')}
-                className="bg-primary-100"
+                className="bg-white"
                 titlePosition="center"
                 onGoBack={router.back}
                 backIconColor={isDark ? colors.white : colors.black}

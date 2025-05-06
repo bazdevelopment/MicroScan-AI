@@ -12,14 +12,14 @@ export const DownloadIcon = (props: ISvgProps) => (
     viewBox="0 0 24 24"
   >
     <Path
-      stroke={props.fill || '#7982FD'}
+      stroke={props.fill || '#4568c9'}
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.5}
       d="M10.602 13.26V3.228M13.032 10.82l-2.43 2.44-2.43-2.44"
     />
     <Path
-      stroke={props.fill || '#7982FD'}
+      stroke={props.fill || '#4568c9'}
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.5}

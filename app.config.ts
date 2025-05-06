@@ -83,8 +83,25 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
       'expo-notifications',
       {
         icon: './assets/icon_notification_96x96.png',
-        color: '#7982FD',
+        color: '#4568c9',
         defaultChannel: 'default',
+      },
+    ],
+    [
+      'expo-image-picker',
+      {
+        photosPermission:
+          'Allow $(PRODUCT_NAME) to access your photo library to upload media for AI analysis, providing insights and feedback for informational purposes.',
+        cameraPermission:
+          'Allow $(PRODUCT_NAME) to access your camera to capture images for AI-powered analysis, providing insights and feedback for informational purposes.',
+        //'Disables the microphone permission',
+        microphonePermission: false,
+      },
+    ],
+    [
+      'expo-document-picker',
+      {
+        iCloudContainerEnvironment: 'Production',
       },
     ],
     [
@@ -101,7 +118,14 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
         },
       },
     ],
-    ['expo-video'],
+    [
+      'expo-build-properties',
+      {
+        ios: {
+          useFrameworks: 'static',
+        },
+      },
+    ],
     [
       'expo-splash-screen',
       {
@@ -123,17 +147,6 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     '@react-native-firebase/crashlytics',
     ['app-icon-badge', appIconBadgeConfig],
     ['react-native-edge-to-edge'],
-    [
-      'expo-image-picker',
-      {
-        photosPermission:
-          'Allow $(PRODUCT_NAME) to access your photo library to upload media for AI analysis, providing insights and feedback for informational purposes.',
-        cameraPermission:
-          'Allow $(PRODUCT_NAME) to access your camera to capture images for AI-powered analysis, providing insights and feedback for informational purposes.',
-        //'Disables the microphone permission',
-        microphonePermission: false,
-      },
-    ],
   ],
   extra: {
     ...ClientEnv,

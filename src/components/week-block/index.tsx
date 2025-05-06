@@ -47,7 +47,7 @@ const WeekBlock = ({
         handleChangeSelection(initialDayFocused as ISegmentedControlOption);
         const indexToScrollFound = findSectionIndexToScroll(
           initialDayFocused?.subtitle as string,
-          reportSections,
+          reportSections
         );
 
         /**
@@ -86,7 +86,7 @@ const WeekBlock = ({
         />
       </View>
       <SegmentedControl
-        backgroundColor={isDark ? colors.blackEerie : colors.primary[50]}
+        backgroundColor={isDark ? colors.blackEerie : colors.white}
         tabInactiveColor={isDark ? colors.blackBeauty : colors.white}
         options={segmentedDays}
         selectedOption={selectedOption as ISegmentedControlOption}
@@ -95,7 +95,7 @@ const WeekBlock = ({
 
           const indexToScroll = findSectionIndexToScroll(
             `${option.month}-${option.subtitle}`,
-            reportSections,
+            reportSections
           );
 
           typeof indexToScroll === 'number' && onScrollToIndex(indexToScroll);
@@ -117,9 +117,9 @@ export default WeekBlock;
  */
 const findSectionIndexToScroll = (
   selectedDayTitle: string,
-  reports: any,
+  reports: any
 ): number => {
   return reports.findIndex((record: ISegmentedControlOption) =>
-    record.month.includes(selectedDayTitle),
+    record.month.includes(selectedDayTitle)
   );
 };

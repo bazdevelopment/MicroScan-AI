@@ -61,9 +61,9 @@
         "fourth": "Quase lá, finalizando o escaneamento..."
       },
       "loadingChatbot": {
-        "first": "Aria está se preparando para ajudá-lo...",
-        "second": "Aguarde! Aria está preparando sua resposta...",
-        "third": "Pensando... sua assistente Aria está trabalhando nisso!"
+        "first": "Aura está se preparando para ajudá-lo...",
+        "second": "Aguarde! Aura está preparando sua resposta...",
+        "third": "Pensando... sua assistente Aura está trabalhando nisso!"
       }
     }
   },
@@ -221,7 +221,7 @@
 
   "pdfPreview": {
     "noEditorInstalled": "Para visualizar o PDF, certifique-se de ter um visualizador de PDF instalado, como Adobe Acrobat Reader ou Google PDF Viewer.",
-    "conversationTitlePdf": "Conversa com Aria, sua assistente de IA"
+    "conversationTitlePdf": "Conversa com Aura, sua assistente de IA"
   },
 
   "flows": {

@@ -190,7 +190,7 @@ export const en: ITranslation = {
   },
   continueConversation: {
     messagesLimit:
-      'Aria’s at full capacity! Upload another scan to keep getting analysis and insights',
+      'Aura’s at full capacity! Upload another scan to keep getting analysis and insights',
     conversationNotFound: 'Unable to find the conversation',
     serviceIssueAi:
       'There seems to be an issue with the AI service. Please try again.',

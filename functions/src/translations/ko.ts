@@ -170,7 +170,7 @@ export const ko: ITranslation = {
   },
   continueConversation: {
     messagesLimit:
-      'Aria가 최대 용량에 도달했습니다! 분석과 통찰력을 계속 받으려면 다른 스캔을 업로드하세요',
+      'Aura가 최대 용량에 도달했습니다! 분석과 통찰력을 계속 받으려면 다른 스캔을 업로드하세요',
     conversationNotFound: '대화를 찾을 수 없음',
     serviceIssueAi: 'AI 서비스에 문제가 있는 것 같습니다. 다시 시도해 주세요.',
     noResponseAiService:

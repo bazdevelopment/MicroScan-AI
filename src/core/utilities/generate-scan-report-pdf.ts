@@ -38,7 +38,7 @@ export const generateScanReportPdf = ({
       .map((message) => {
         const isUser = message.role === 'user';
         const bubbleStyle = isUser
-          ? 'background-color: #7982FD; color:white; border-radius: 16px; padding: 12px; margin-left: auto; max-width: 80%; border-bottom-right-radius: 0;'
+          ? 'background-color: #4568c9; color:white; border-radius: 16px; padding: 12px; margin-left: auto; max-width: 80%; border-bottom-right-radius: 0;'
           : 'background-color: #F3F4F6; color: black; border-radius: 16px; padding: 12px; margin-right: auto; max-width: 80%; border-bottom-left-radius: 0;';
 
         return `
@@ -117,7 +117,7 @@ export const generateScanReportPdf = ({
         .section-title {
             font-size: 16px;
             font-weight: bold;
-            color: #7982FD;
+            color: #4568c9;
             margin-bottom: 10px;
         }
         .content {
@@ -137,7 +137,7 @@ export const generateScanReportPdf = ({
             margin-top: 20px;
         }
         .user-message {
-            background-color: #7982FD;
+            background-color: #4568c9;
             color: white;
             border-radius: 16px;
             padding: 12px;
