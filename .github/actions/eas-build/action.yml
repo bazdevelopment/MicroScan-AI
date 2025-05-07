@@ -118,7 +118,6 @@ runs:
          # Use sed to replace placeholders in eas.json
          sed -i '' "s|EXPO_PUBLIC_REVENUE_CAT_API_KEYS_GOOGLE_CI|${{ inputs.REVENUE_CAT_API_KEYS_GOOGLE }}|g" eas.json
          sed -i '' "s|EXPO_PUBLIC_REVENUE_CAT_API_KEYS_APPLE_CI|${{ inputs.REVENUE_CAT_API_KEYS_APPLE }}|g" eas.json
-         sed -i '' "s|EXPO_PUBLIC_TEST_ACCOUNT_CI|${{ inputs.TEST_ACCOUNT }}|g" eas.json
          sed -i '' "s|EXPO_PUBLIC_ANALYZE_IMAGE_CONVERSATION_ENDPOINT_CI|${{ inputs.ANALYZE_IMAGE_CONVERSATION_ENDPOINT }}|g" eas.json
          sed -i '' "s|EXPO_PUBLIC_ANALYZE_VIDEO_CONVERSATION_ENDPOINT_CI|${{ inputs.ANALYZE_VIDEO_CONVERSATION_ENDPOINT }}|g" eas.json
          sed -i '' "s|EXPO_PUBLIC_CONTINUE_CONVERSATION_ENDPOINT_CI|${{ inputs.CONTINUE_CONVERSATION_ENDPOINT }}|g" eas.json
@@ -126,7 +125,6 @@ runs:
          else
          sed -i 's|EXPO_PUBLIC_REVENUE_CAT_API_KEYS_GOOGLE_CI|${{ inputs.REVENUE_CAT_API_KEYS_GOOGLE }}|g' eas.json
          sed -i 's|EXPO_PUBLIC_REVENUE_CAT_API_KEYS_APPLE_CI|${{ inputs.REVENUE_CAT_API_KEYS_APPLE }}|g' eas.json
-         sed -i 's|EXPO_PUBLIC_TEST_ACCOUNT_CI|${{ inputs.TEST_ACCOUNT }}|g' eas.json
          sed -i 's|EXPO_PUBLIC_ANALYZE_IMAGE_CONVERSATION_ENDPOINT_CI|${{ inputs.ANALYZE_IMAGE_CONVERSATION_ENDPOINT }}|g' eas.json
          sed -i 's|EXPO_PUBLIC_ANALYZE_VIDEO_CONVERSATION_ENDPOINT_CI|${{ inputs.ANALYZE_VIDEO_CONVERSATION_ENDPOINT }}|g' eas.json
          sed -i 's|EXPO_PUBLIC_CONTINUE_CONVERSATION_ENDPOINT_CI|${{ inputs.CONTINUE_CONVERSATION_ENDPOINT }}|g' eas.json
