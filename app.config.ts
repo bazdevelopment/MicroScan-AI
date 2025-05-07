@@ -31,7 +31,11 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   orientation: 'portrait',
   icon: './assets/icon.png',
   userInterfaceStyle: 'automatic',
-  newArchEnabled: true,
+  androidStatusBar: {
+    barStyle: 'light-content',
+    backgroundColor: '#060047',
+    translucent: true,
+  },
   updates: {
     fallbackToCacheTimeout: 0,
   },
