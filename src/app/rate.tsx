@@ -16,7 +16,7 @@ const Rate = () => {
       );
     } else {
       // Redirect unhappy users to a Google Form
-      const googleFormUrl = 'https://forms.gle/3QfS27ykxEKAPofR7';
+      const googleFormUrl = '';
       Linking.openURL(googleFormUrl).catch((err) =>
         console.error('Error opening URL', err)
       );

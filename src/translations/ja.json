@@ -1,14 +1,14 @@
 {
   "onboarding": {
-    "message": "MicroScan AIへようこそ"
+    "message": "MicroScan AIへようこそ！"
   },
   "general": {
     "back": "戻る",
     "welcome": "こんにちは",
     "welcomeBack": "おかえりなさい！",
     "welcomeMessage": "ようこそ！",
-    "continue": "続ける",
-    "retry": "再試行",
+    "continue": "続行",
+    "retry": "リトライ",
     "close": "閉じる",
     "gallery": "ギャラリー",
     "files": "ファイル",
@@ -23,7 +23,7 @@
     "chatbotPlaceholder": "何でも聞いてください...",
     "openSettings": "設定を開く",
     "seeNotifications": "通知を見る",
-    "viewProfile": "プロフィールを表示",
+    "viewProfile": "プロフィールを見る",
     "upgradePlan": "プランをアップグレード",
     "download": "ダウンロード",
     "share": "共有",
@@ -32,11 +32,11 @@
     "next": "次へ",
     "update": "更新",
     "tryAgain": "もう一度試す",
-    "createdAt": "作成日",
-    "and": "および",
-    "saveDiscount": "お得",
+    "createdAt": "作成日時",
+    "and": "と",
+    "saveDiscount": "保存",
     "restorePurchase": "購入を復元",
-    "medicalDisclaimer": "医療免責事項",
+    "medicalDisclaimer": "医療に関する免責事項",
     "conversationHistory": "会話履歴",
     "freeTrial": "無料トライアル",
     "completedScans": "スキャン完了",
@@ -49,34 +49,34 @@
     },
     "loadingMessages": {
       "initialAppLoad": {
-        "first": "パーソナライズされた体験を読み込んでいます...",
+        "first": "パーソナライズされた体験を読み込み中...",
         "second": "システムを同期中...",
         "third": "データを処理中...",
-        "fourth": "もう少しお待ちください..."
+        "fourth": "もうすぐ準備完了です、少々お待ちください..."
       },
       "imageScanningLoading": {
-        "first": "医療画像をスキャン中です。しばらくお待ちください...",
-        "second": "詳細を分析中です。しばらく時間がかかることがあります...",
-        "third": "最高の結果を得るために精度を向上させています...",
-        "fourth": "もう少しで完了です。スキャンを最終確認中..."
+        "first": "マイクロコピー画像をスキャン中です、しばらくお待ちください...",
+        "second": "詳細を分析中、しばらくかかる場合があります...",
+        "third": "最高の精度のために強化中...",
+        "fourth": "もうすぐ完了です、スキャンを最終処理しています..."
       },
       "loadingChatbot": {
-        "first": "アリアはあなたをサポートする準備をしています...",
-        "second": "少々お待ちください！アリアはあなたの返信を準備中です...",
-        "third": "考え中...あなたのアシスタント、アリアが対応中です！"
+        "first": "Auraがお手伝いの準備をしています...",
+        "second": "お待ちください！Auraが応答を準備しています...",
+        "third": "考え中...アシスタントのAuraが取り組んでいます！"
       }
     }
   },
   "backHandler": {
-    "holdOn": "ちょっと待って！",
+    "holdOn": "お待ちください！",
     "goBackMessage": "本当に戻りますか？"
   },
   "internet": {
     "noConnectionTitle": "オフラインです！",
-    "noConnectionMessage": "モバイルデータをオンにするか、Wi-Fiに接続してください。または、少し休んで散歩に出かけましょう！"
+    "noConnectionMessage": "モバイルデータ通信をオンにするか、Wi-Fiに接続してください。または、休憩して散歩に出かけましょう！"
   },
   "uploadScan": {
-    "title": "スキャンをアップロード",
+    "title": "画像をアップロード",
     "scanNow": "今すぐスキャン"
   },
   "weekDays": {
@@ -87,36 +87,36 @@
     "verifyAuthCode": "認証コードを確認",
     "verifyAuthCodeButton": "コードを確認",
     "authCodeHeading": "認証コード",
-    "loginViaEmailHeading": "サインインしてください。続行するにはメールアドレスを入力してください。",
+    "loginViaEmailHeading": "サインインしましょう。続行するためにメールアドレスを入力してください。",
     "emailAddress": "メールアドレス"
   },
   "rootLayout": {
     "screens": {
       "welcome": {
-        "heading": "MicroScan AIへようこそ",
+        "heading": "MicroScan AIへようこそ！",
         "startButton": "始めましょう！",
-        "accountButton": "既にアカウントを持っています"
+        "accountButton": "すでにアカウントを持っています"
       },
       "login": {
-        "agreeingMessage": "続行することで、以下の内容に同意したものとみなされます：",
+        "agreeingMessage": "続行することにより、お客様は弊社の",
         "termsAndConditions": "利用規約",
         "privacyPolicy": "プライバシーポリシー"
       },
       "verifyAuthCode": {
-        "verificationCodeHeading": "メールで送信された確認コードを入力してください。コードは5分で失効します。",
-        "verificationCodeSent": "確認コードを以下に送信しました：",
-        "verificationCodeMissing": "コードが届きませんでしたか？",
+        "verificationCodeHeading": "メールで送信された確認コードを入力してください。コードは5分で期限切れになります。",
+        "verificationCodeSent": "確認コードを送信しました",
+        "verificationCodeMissing": "コードが届きませんか？",
         "resendCode": "コードを再送信",
         "backToLogin": "サインインに戻る"
       },
       "namePreferenceScreen": {
-        "heading": "パーソナライズしましょう！",
-        "preferredNameQuestion": "どのように呼べばよいですか？",
-        "placeholderPreferredName": "例：キャプテン・クール、クイーン・ビー、またはアレックス！"
+        "heading": "個人的な設定をしましょう！",
+        "preferredNameQuestion": "何とお呼びしましょうか？",
+        "placeholderPreferredName": "例：キャプテンクール、クイーンビー、または単にアレックス！"
       },
       "freeTrialPreview": {
         "heading": "無料トライアルをお楽しみください！🎉",
-        "subheading": "無料トライアル中にこれらの素晴らしい特典を体験してください"
+        "subheading": "無料トライアル中にこれらの素晴らしいメリットを体験してください"
       },
       "scanInterpretation": {
         "title": "分析結果",
@@ -124,47 +124,48 @@
       },
       "paywallOnboarding": {
         "freeTierOfferings": {
-          "title": "プレミアム機能を今すぐアンロック！🎉",
+          "title": "今すぐプレミアム機能を解放！🎉",
           "firstOffering": "すべてのプレミアム機能にアクセス",
           "secondOffering": "広告なしの体験",
-          "thirdOffering": "合理的な使用範囲内での無制限スキャン"
+          "thirdOffering": "合理的な使用範囲での無制限スキャン",
+          "fourthOffering": "公正な使用と24時間年中無休の個人AIアシスタントアクセスによる無制限スキャン"
         }
       },
       "paywallUpgradeScreen": {
-        "heading": "プレミアム機能を今すぐアンロック！🎉",
+        "heading": "今すぐプレミアム機能を解放！🎉",
         "firstOffering": {
           "title": "無料トライアルを開始",
-          "subtitle": "{{freeScans}}回の無料スキャンを楽しむ – 支払い不要"
+          "subtitle": "{{freeScans}}回無料スキャンをお楽しみください - 支払いなし"
         },
         "secondOffering": {
-          "title": "月次",
-          "subtitle": "{{ price }} / 月"
+          "title": "月額",
+          "subtitle": "{{ price }}/月"
         },
         "thirdOffering": {
-          "title": "年間",
-          "subtitle": "お得なプラン：{{ price }} / 年 – さらに節約！"
+          "title": "年額",
+          "subtitle": "ベストディール: {{ price }}/年 - もっとお得に！"
         }
       },
       "newAppVersionScreen": {
         "heading": "MicroScan AIの新しいバージョンが利用可能です",
-        "subheading": "アプリを引き続きご利用いただくには、最新バージョンに更新してください",
+        "subheading": "アプリを引き続き使用するには、最新バージョンにアップデートしてください",
         "action": "今すぐ入手！"
       },
       "rateAppScreen": {
-        "heading": "このアプリは役に立っていますか？",
-        "like": "はい、気に入っています！",
-        "dislike": "あまり気に入っていません..."
+        "heading": "アプリは価値があり、魅力的だと感じていますか？",
+        "like": "はい、気に入りました！",
+        "dislike": "そうでもありません..."
       },
       "noInternetScreen": {
         "heading": "オフラインです",
-        "subheading": "接続が不安定です。ネットワーク状態を確認してください"
+        "subheading": "接続が不安定なようです。ネットワーク状況を確認してください"
       },
       "notifications": {
         "title": "通知",
-        "noNotifications": "現在、通知はありません – 更新をお待ちください！"
+        "noNotifications": "今のところ通知はありません — 最新情報をお楽しみに！"
       },
       "termsOfService": {
-        "title": "利用規約"
+        "title": "サービス利用規約"
       },
       "privacyPolicy": {
         "title": "プライバシーポリシー"
@@ -172,69 +173,68 @@
       "share": {
         "title": "共有",
         "heading": "MicroScan AIアプリを共有",
-        "subheading": "AI駆動のX線解析の力を他の人にも知らせましょう",
+        "subheading": "AIによるX線分析の力を発見するのを他の人に手伝ってもらいましょう",
         "scanMessage": "アプリをダウンロードするためにスキャン",
         "shareMessage": "またはお気に入りのプラットフォームで共有"
       },
       "rate": {
-        "title": "フィードバックをお願いします！"
+        "title": "ご意見をお聞かせください！"
       },
       "profile": {
         "title": "プロフィール",
         "edit": "プロフィールを編集",
-        "placeholderPreferredName": "例：キャプテン・クール、クイーン・ビー、またはアレックス！"
+        "placeholderPreferredName": "例：キャプテンクール、クイーンビー、または単にアレックス！"
       },
       "generateReportScreen": {
-        "title": "お待たせしました！こちらがAIレポートです。",
-        "userInput": "あなたの提出内容",
+        "title": "お待ちいただきありがとうございます！こちらがAIレポートです。",
+        "userInput": "あなたの提出物",
         "medicalReport": "医療レポート",
         "report": "AI生成医療レポート",
         "conversationName": "会話名"
       },
       "verifyEmail": {
-        "heading": "メールを確認"
+        "heading": "メールアドレスを確認"
       },
       "filePreviewScreen": {
         "generateReportButton": "分析を開始"
       },
       "disclaimerScreen": {
-        "heading": "重要な医療免責事項",
-        "subheading": "MicroScan AIは、放射線科専門家、医療専門家、医学生、および愛好家向けに設計されています",
-        "consentAgreement": "免責事項を読み、同意します。",
-        "firstConsent": "MicroScan AIは、医療データ、健康測定、診断、または治療アドバイスを提供するものではなく、そのような目的でもありません。MicroScan AIのユーザーは、臨床的判断を適用し、信頼できる情報源から情報を確認してから、臨床的な決定を行う必要があります。",
-        "secondConsent": "MicroScan AIは、診断ツール、治療プラットフォーム、または専門的な医療アドバイスの代わりにはなりません。医療専門家が医学的知識にアクセスし、医療画像や文書を分析するのを支援するために、AI生成の洞察を提供します。MicroScan AIは、ライセンスを持つ医療専門家をサポートするために設計されたAI駆動の情報および教育アプリです。",
-        "thirdConsent": "MicroScan AIは、患者の使用を目的としていません。直接的な医療診断、治療推奨、または患者管理機能を提供しません。",
-        "fourthConsent": "MicroScan AIは医療機器として分類されておらず、規制当局の承認を主張していません。専門知識を補完するための教育および情報提供を目的としています。",
-        "fifthConsent": "MicroScan AIは、個人または患者のデータを収集、保存、または処理しません。すべてのユーザーインタラクションは機密であり、アプリの範囲に限定されています。"
+        "heading": "重要な免責事項",
+        "subheading": "MicroScan AIは、顕微鏡専門家、研究者、医学生、愛好家向けに設計されています。",
+        "consentAgreement": "私は免責事項を読み、同意します。",
+        "firstConsent": "MicroScan AIは、健康測定、診断、治療アドバイスを提供するものではなく、そのような目的を意図したものでもありません。MicroScan AIのユーザーは、臨床的な判断を適用し、権威ある情報源からの情報を検証してから、臨床的な決定を行う必要があります。",
+        "secondConsent": "MicroScan AIは、診断ツール、治療プラットフォーム、または専門的な医療アドバイスの代替となるものではありません。これは、医療専門家が医療知識にアクセスし、医療画像や文書を分析するのを支援するためのAI生成の洞察を提供するものです。MicroScan AIは、主に認可された医療専門家をサポートするために設計されたAI駆動の情報提供および教育用アプリです。",
+        "fourthConsent": "MicroScan AIは医療機器として分類されておらず、規制当局の承認を主張するものではありません。専門的な専門知識を補完するための教育および情報提供を目的としています。",
+        "fifthConsent": "MicroScan AIは、個人データまたは患者データを収集、保存、または処理しません。すべてのユーザーインタラクションは機密であり、アプリの範囲内に限定されます。"
       },
       "contactUs": {
-        "heading": "直接メールでご連絡ください。チームができるだけ早く返信いたします",
+        "heading": "お気軽に直接メールをお送りください。当チームができるだけ早くご連絡いたします。",
         "customerSupport": "カスタマーサポート",
         "emailAddress": "メールアドレス"
       }
     }
   },
   "deleteApp": {
-    "title": "待って！削除しないで！",
+    "title": "お待ちください！削除しないでください！",
     "subtitle": "代わりにフィードバックを送信してください"
   },
   "pdfPreview": {
-    "noEditorInstalled": "PDF をプレビューするには、Adobe Acrobat Reader や Google PDF Viewer などの PDF ビューアーがインストールされていることを確認してください。",
-    "conversationTitlePdf": "Auraとの会話、あなたのAIアシスタント"
+    "noEditorInstalled": "PDFをプレビューするには、Adobe Acrobat ReaderやGoogle PDF ViewerなどのPDFビューアがインストールされていることを確認してください",
+    "conversationTitlePdf": "AIアシスタントAuraとの会話"
   },
   "flows": {
     "createReport": {
       "finalReportForeground": {
-        "message": "お待たせしました！"
+        "message": "お待ちいただきありがとうございました！"
       },
       "finalReportHeader": {
-        "message": "こちらがレポート結果です！"
+        "message": "これがレポート結果です！"
       },
       "uploadFile": {
-        "title": "医療画像ファイルをアップロードしてください",
+        "title": "分析のために任意の顕微鏡画像をアップロード",
         "size": "最大: {{imageLimit}}MB (画像), {{videoLimit}}MB (動画)",
         "location": "ギャラリーまたはファイルから選択",
-        "fileType": "PNG、JPG、PDF、またはMP4",
+        "fileType": "PNG, JPG, PDF, または MP4",
         "openCamera": "カメラを開いて写真を撮る",
         "scanType": "X線、CT、MRI、PET、またはその他の医療画像のみ許可されています"
       }
@@ -243,16 +243,16 @@
   "home": {
     "tab": "ホーム",
     "homeForeground": {
-      "maxNumberOfScans": "スキャン回数の上限に達しました！プランをアップグレードして、さらにスキャンを利用しましょう。🚀",
-      "heading": "MicroScan AIへようこそ",
-      "subHeading": "AIを活用した分析により、MRI、X線、CTスキャン、PETイメージング、超音波、核医学に関する重要な知見を得る"
+      "maxNumberOfScans": "スキャン制限に達しました！今すぐプランをアップグレードして、さらに多くのスキャンを解放しましょう。🚀",
+      "heading": "MicroScan AIへようこそ！",
+      "subHeading": "数秒で任意の顕微鏡画像のAIパワード分析を取得"
     },
     "scanCategories": {
-      "heading": "放射線画像"
+      "heading": "顕微鏡リール"
     },
     "recentReports": {
       "heading": "最近のチャット",
-      "noReports": "表示するチャットはまだありません！"
+      "noReports": "まだ表示するチャットがありません！"
     }
   },
   "reports": {
@@ -287,12 +287,12 @@
     "logout": "ログアウト",
     "more": "その他",
     "privacy": "プライバシーポリシー",
-    "faq": "FAQ",
+    "faq": "よくある質問",
     "rate": "評価",
     "share": "共有",
     "support": "サポート",
     "support_us": "私たちをサポート",
-    "terms": "利用規約",
+    "terms": "サービス利用規約",
     "theme": {
       "dark": "ダーク",
       "light": "ライト",
@@ -312,65 +312,65 @@
       "rating": "評価"
     },
     "ScanReportCard": {
-      "promptMessage": "理由は何ですか？",
-      "unnamedConversation": "無題",
+      "promptMessage": "理由は？",
+      "unnamedConversation": "無題の会話",
       "reportTitlePlaceholder": "タイトルを追加"
     },
     "WeekBlock": {
       "week": "週"
     },
     "EndScrollPlaceholder": {
-      "scrollToTop": "トップにスクロール"
+      "scrollToTop": "一番上までスクロール"
     },
     "FreeTierStatus": {
       "heading": "無料スキャン",
-      "subheading": "プランをアップグレードして無制限のスキャンをアンロック",
+      "subheading": "プランをアップグレードして無制限スキャンを解放",
       "action": "アップグレード"
     },
     "UploadFileOptionsModal": {
-      "heading": "画像/動画を選択"
+      "heading": "写真 / 動画を選択"
     },
     "TapToViewLabel": {
       "label": "タップして表示"
     },
     "UpgradeBanner": {
       "heading": "今すぐアップグレード",
-      "subheading": "プランをアップグレードして無制限のスキャンをアンロック"
+      "subheading": "プランをアップグレードして無制限スキャンを解放"
     },
     "PromptSection": {
-      "message": "スキャンが完了しました！次に何を知りたいですか？",
+      "message": "スキャン準備ができました！さて、何を知りたいですか？",
       "prompts": {
-        "first": "肺野に異常があるかどうかを説明してください",
-        "second": "心臓の輪郭と縦隔を評価してください",
-        "third": "骨構造に病変や骨折がないか評価してください",
-        "fourth": "胸水の有無についてコメントしてください"
+        "first": "この画像にどのような細胞タイプや構造が存在しますか？",
+        "second": "このサンプルに異常や病原体はありますか？",
+        "third": "このサンプルの起源や状態は何が考えられますか？",
+        "fourth": "この画像からどのような洞察が得られますか？"
       }
     },
     "PremiumFeaturesOverview": {
       "first": "{{freeScans}}回の無料スキャンを取得",
-      "second": "すべてのプレミアム機能にアクセス",
+      "second": "すべてのプレミアム機能へのアクセス",
       "third": "広告なし"
     },
     "Input": {
       "labels": {
         "nickname": "ニックネーム",
         "email": "メールアドレス",
-        "emailVerification": "メール確認"
+        "emailVerification": "メール認証"
       }
     },
     "ImageAnnotationStudio": {
       "instructions": {
-        "title": "説明",
-        "first": "1. 「四角形を追加」ボタンをタップして選択四角形を作成します。",
-        "second": "2. 四角形を関心領域にドラッグします。",
-        "third": "3. 角を調整して領域を正確にカバーします。"
+        "title": "手順",
+        "first": "1. 「四角形を追加」ボタンをタップして選択範囲を作成します。",
+        "second": "2. 関心のある領域に四角形をドラッグします。",
+        "third": "3. 角を調整して領域を正確に覆います。"
       },
       "OpenStudioSection": {
         "openStudioButton": "スタジオを開く",
         "editMore": "さらに編集",
-        "continueEditing": "注釈の編集を続けますか？",
-        "highlightedRegionsCount": "{{highlightedRegions}} のハイライトされた領域があります。さらに追加するには下をタップしてください",
-        "highlightRegions": "医療画像の領域をハイライトする必要がありますか？"
+        "continueEditing": "注釈の編集を続行しますか？",
+        "highlightedRegionsCount": "{{highlightedRegions}}個の強調表示された領域があります。下をタップして追加します",
+        "highlightRegions": "顕微鏡画像の領域を強調表示する必要がありますか？"
       },
       "studioToolbar": {
         "addSquare": "四角形を追加"
@@ -378,48 +378,48 @@
     }
   },
   "alerts": {
-    "mediaPickerPermissions": "申し訳ありませんが、カメラの許可が必要です！",
-    "errorSelectingImagePicker": "画像の選択中にエラーが発生しました。もう一度お試しください。",
-    "errorSelectingDocumentPicker": "ドキュメントの選択中にエラーが発生しました。もう一度お試しください。",
-    "errorTakingPicture": "写真の撮影中にエラーが発生しました。もう一度お試しください。",
+    "mediaPickerPermissions": "申し訳ありません、これにはカメラの許可が必要です！",
+    "errorSelectingImagePicker": "画像の選択中に問題が発生しました。もう一度試してください。",
+    "errorSelectingDocumentPicker": "ドキュメントの選択中に問題が発生しました。もう一度試してください。",
+    "errorTakingPicture": "写真撮影中に問題が発生しました。もう一度試してください。",
     "enableNotifications": {
       "heading": "通知を有効にする",
-      "subHeading": "通知が現在オフになっています。最新情報を受け取るには、デバイスの設定で有効にしてください。"
+      "subHeading": "通知は現在オフになっています。最新情報を取得するには、デバイスの設定で有効にしてください。"
     },
-    "enableNotificationFailed": "プッシュ通知が無効になっています。重要な更新を受け取るには設定で有効にしてください。",
+    "enableNotificationFailed": "プッシュ通知が無効になっています。重要な更新を受信するには、設定で有効にしてください！",
     "enableNotificationError": "通知の有効化中にエラーが発生しました",
-    "notificationDisabledSuccess": "通知が無効化されました。",
-    "notificationDisabledRegisterError": "通知の登録解除に失敗しました。",
+    "notificationDisabledSuccess": "通知は正常に無効になりました。",
+    "notificationDisabledRegisterError": "通知のデバイス登録解除に失敗しました。",
     "notificationDisabledError": "通知の無効化中にエラーが発生しました。",
     "checkNotificationStatusError": "通知ステータスの確認中にエラーが発生しました。",
     "projectIdNotFound": "通知プロジェクトIDが見つかりません。",
-    "imageSizeLarge": "画像が大きすぎます！ファイルサイズは{{fileSize}} MBですが、制限は{{imageLimit}} MBです。",
-    "videoSizeLarge": "動画が大きすぎます！ファイルサイズは{{fileSize}} MBですが、制限は{{videoLimit}} MBです。",
-    "loggedInSuccess": "ログインに成功しました",
-    "loggedOutSuccess": "ログアウトに成功しました！",
+    "imageSizeLarge": "画像が大きすぎます！ファイルサイズは{{fileSize}} MBですが、上限は{{imageLimit}} MBです。",
+    "videoSizeLarge": "動画が大きすぎます！ファイルサイズは{{fileSize}} MBですが、上限は{{videoLimit}} MBです。",
+    "loggedInSuccess": "正常にログインしました",
+    "loggedOutSuccess": "正常にログアウトしました！",
     "sendVerificationCodeError": "確認コードの送信中にエラーが発生しました",
     "validateAuthCodeError": "認証コードの検証中にエラーが発生しました",
     "anonymousSignInError": "匿名サインイン中にエラーが発生しました",
     "emailLoginError": "サインイン中にエラーが発生しました",
-    "preferredLanguageError": "ユーザーの優先言語の更新中にエラーが発生しました",
-    "sharingNotAvailable": "お使いのデバイスでは共有機能が利用できません",
+    "preferredLanguageError": "ユーザーの希望言語の更新中にエラーが発生しました",
+    "sharingNotAvailable": "お使いのデバイスでは現在共有できません",
     "sharingLinkError": "リンクの共有に失敗しました。",
-    "individualPushNotificationSuccess": "個別プッシュ通知が正常に送信されました！",
+    "individualPushNotificationSuccess": "個別のプッシュ通知が正常に送信されました！",
     "globalPushNotificationSuccess": "グローバルプッシュ通知が正常に送信されました！🌍🚀",
-    "interpretationFieldsUpdateFail": "解析フィールドの更新に失敗しました！❌",
-    "onboardingUnsuccessful": "オンボーディングに失敗しました。もう一度お試しください",
-    "deleteScanReportFail": "スキャンレポートを削除できませんでした。もう一度お試しください",
-    "logoutUnsuccessful": "ログアウトに失敗しました。もう一度お試しください",
+    "interpretationFieldsUpdateFail": "解釈フィールドの更新に失敗しました！❌",
+    "deleteScanReportFail": "スキャンレポートを削除できません。もう一度試してください",
+    "onboardingUnsuccessful": "オンボーディングに失敗しました。もう一度試してください",
+    "logoutUnsuccessful": "ログアウトに失敗しました。もう一度試してください",
     "deleteScanReportQuestion": "このレポートを完全に削除してもよろしいですか？",
-    "videoLimitExceeds": "動画が{{videoSecondsLimit}}秒の制限を超えています。トリミングして再アップロードしてください",
+    "videoLimitExceeds": "動画が{{videoSecondsLimit}}秒の制限を超えています。トリミングして再度アップロードしてください",
     "subscriptionActivated": "サブスクリプションが正常に有効化されました！限定特典をお楽しみください！",
-    "subscriptionCancelledByUser": "取引をキャンセルしました。再度お試しください！",
-    "subscriptionActivationFailed": "サブスクリプションの有効化に失敗しました。もう一度お試しください！",
-    "logoutQuestion": "本当にログアウトしますか？",
-    "noSubscriptionToRestore": "おっと！現在、有効なサブスクリプションがないようです。引き続きフルアクセスを楽しむには、サブスクリプションプランのいずれかを選択してください。",
-    "restorationSuccessful": "復元が成功しました！お楽しみください！",
+    "subscriptionCancelledByUser": "取引をキャンセルしました。お気軽にもう一度試してください！",
+    "subscriptionActivationFailed": "サブスクリプションの有効化に失敗しました。もう一度試してください",
+    "logoutQuestion": "本当にログアウトしてもよろしいですか？",
+    "noSubscriptionToRestore": "おっと！現在アクティブなサブスクリプションがないようです。フルアクセスを引き続き利用するには、いずれかのサブスクリプションプランを選択してください。",
+    "restorationSuccessful": "復元に成功しました！お楽しみください！",
     "restorationError": "購入の復元中にエラーが発生しました。",
-    "medicalDisclaimerAlert": "MicroScan AIアプリは、診断、治療の推奨、またはいかなる医療アドバイスも提供しません。医療上の決定については、常に資格のある医療専門家の指導を求めてください。",
-    "scanLimitReached": "スキャン品質を最適化中です！約{{hours}}時間{{minutes}}分後に再度スキャンできます。医療に関する質問がありますか？待っている間にチャットアシスタントに質問してください！"
+    "medicalDisclaimerAlert": "MicroScan AIアプリは、診断、治療に関する推奨事項、または医療に関するアドバイスを提供するものではありません。医療上の決定を行う際には、必ず資格のある医療専門家の指導を求めてください。",
+    "scanLimitReached": "スキャン品質を最適化しています！約{{hours}}時間{{minutes}}分後に再度スキャンできるようになります。医療に関する質問はありますか？お待ちいただく間、チャットアシスタントにお尋ねください！"
   }
 }

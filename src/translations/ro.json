@@ -4,11 +4,11 @@
   },
   "general": {
     "back": "Înapoi",
-    "welcome": "Bună",
+    "welcome": "Salut",
     "welcomeBack": "Bine ai revenit!",
-    "welcomeMessage": "Bine ai venit!",
+    "welcomeMessage": "Bine ați venit!",
     "continue": "Continuă",
-    "retry": "Reîncearcă",
+    "retry": "Încearcă din nou",
     "close": "Închide",
     "gallery": "Galerie",
     "files": "Fișiere",
@@ -22,24 +22,24 @@
     "online": "Online",
     "chatbotPlaceholder": "Întreabă-mă orice...",
     "openSettings": "Deschide Setări",
-    "seeNotifications": "Vezi notificările",
+    "seeNotifications": "Vezi notificări",
     "viewProfile": "Vezi Profilul",
     "upgradePlan": "Actualizează Planul",
     "download": "Descarcă",
-    "share": "Partajează",
-    "shareLink": "Partajează Link",
-    "skip": "Sari peste",
+    "share": "Distribuie",
+    "shareLink": "Distribuie Link",
+    "skip": "Omite",
     "next": "Următorul",
     "update": "Actualizează",
     "tryAgain": "Încearcă din nou",
-    "createdAt": "Creat la",
+    "createdAt": "Creat La",
     "and": "și",
-    "saveDiscount": "Economisește",
+    "saveDiscount": "ECONOMISEȘTE",
     "restorePurchase": "Restaurează achiziția",
-    "medicalDisclaimer": "Avertisment medical",
+    "medicalDisclaimer": "Declarație medicală",
     "conversationHistory": "Istoricul conversației",
-    "freeTrial": "Probă gratuită",
-    "completedScans": "Scanări completate",
+    "freeTrial": "Perioadă de probă gratuită",
+    "completedScans": "Scanări finalizate",
     "activeSubscription": "Abonament activ",
     "askAssistant": "Întreabă asistentul AI",
     "copyText": {
@@ -49,34 +49,34 @@
     },
     "loadingMessages": {
       "initialAppLoad": {
-        "first": "Se încarcă experiența ta personalizată...",
-        "second": "Se sincronizează sistemele...",
+        "first": "Se încarcă experiența personalizată...",
+        "second": "Sincronizare sisteme...",
         "third": "Se procesează datele tale...",
-        "fourth": "Aproape gata, mai un moment..."
+        "fourth": "Aproape gata, doar un moment..."
       },
       "imageScanningLoading": {
-        "first": "Se scanează imaginile medicale, te rugăm să aștepți...",
+        "first": "Se scanează imaginea de microscopie, te rugăm să aștepți...",
         "second": "Se analizează detaliile, acest lucru poate dura un moment...",
-        "third": "Se îmbunătățește acuratețea pentru cele mai bune rezultate...",
+        "third": "Se îmbunătățește precizia pentru cele mai bune rezultate...",
         "fourth": "Aproape gata, se finalizează scanarea..."
       },
       "loadingChatbot": {
-        "first": "Aura se pregătește să vă ajute...",
-        "second": "Așteptați! Aura vă pregătește răspunsul...",
-        "third": "Se gândește... asistenta dumneavoastră Aura se ocupă de asta!"
+        "first": "Aura se pregătește să te asiste...",
+        "second": "Stai puțin! Aura pregătește răspunsul tău...",
+        "third": "Se gândește...asistentul tău Aura se ocupă de asta!"
       }
     }
   },
   "backHandler": {
     "holdOn": "Stai puțin!",
-    "goBackMessage": "Sigur vrei să te întorci?"
+    "goBackMessage": "Ești sigur că vrei să te întorci?"
   },
   "internet": {
     "noConnectionTitle": "Ești offline!",
-    "noConnectionMessage": "Activează datele mobile sau conectează-te la Wi-Fi. Sau ia-o puțin mai ușor și fă o plimbare!"
+    "noConnectionMessage": "Activează datele mobile sau conectează-te la Wi-Fi. Sau pur și simplu ia o pauză și mergi la o plimbare!"
   },
   "uploadScan": {
-    "title": "Încarcă Scanare",
+    "title": "Încarcă imagine",
     "scanNow": "Scanează acum"
   },
   "weekDays": {
@@ -87,7 +87,7 @@
     "verifyAuthCode": "Verifică codul de autentificare",
     "verifyAuthCodeButton": "Verifică codul",
     "authCodeHeading": "Cod de autentificare",
-    "loginViaEmailHeading": "Hai să te conectăm. Te rugăm să introduci adresa de email pentru a continua.",
+    "loginViaEmailHeading": "Să te conectăm. Te rugăm să introduci emailul pentru a continua.",
     "emailAddress": "Email"
   },
   "rootLayout": {
@@ -99,24 +99,24 @@
       },
       "login": {
         "agreeingMessage": "Continuând, ești de acord cu",
-        "termsAndConditions": "Termeni și Condiții",
+        "termsAndConditions": "Termenii și Condițiile",
         "privacyPolicy": "Politica de Confidențialitate"
       },
       "verifyAuthCode": {
-        "verificationCodeHeading": "Introdu codul de verificare trimis prin email. Te rugăm să reții că codul va expira în 5 minute.",
+        "verificationCodeHeading": "Introdu codul de verificare trimis prin email. Te rugăm să reții, codul va expira în 5 minute.",
         "verificationCodeSent": "Am trimis codul de verificare la",
         "verificationCodeMissing": "Nu ai primit codul?",
         "resendCode": "Retrimite codul",
-        "backToLogin": "Înapoi la Autentificare"
+        "backToLogin": "Înapoi la Conectare"
       },
       "namePreferenceScreen": {
-        "heading": "Hai să personalizăm!",
+        "heading": "Hai să facem acest lucru personal!",
         "preferredNameQuestion": "Cum să te numim?",
-        "placeholderPreferredName": "De exemplu, Căpitanul Cool, Regina Albinelor sau doar Alex!"
+        "placeholderPreferredName": "De ex., Căpitan Cool, Regina Albinelor, sau doar Alex!"
       },
       "freeTrialPreview": {
         "heading": "Bucură-te de perioada de probă gratuită! 🎉",
-        "subheading": "Experimentează aceste beneficii uimitoare în timpul perioadei tale de probă"
+        "subheading": "Experimentează aceste beneficii uimitoare în timpul perioadei tale de probă gratuită"
       },
       "scanInterpretation": {
         "title": "Rezultatul analizei",
@@ -124,16 +124,17 @@
       },
       "paywallOnboarding": {
         "freeTierOfferings": {
-          "title": "Deblochează Funcționalitățile Premium Astăzi! 🎉",
-          "firstOffering": "Acces la toate funcționalitățile premium",
-          "secondOffering": "Experiență fără reclame",
-          "thirdOffering": "Scanări nelimitate în limite rezonabile"
+          "title": "Deblochează Funcțiile Premium Astăzi! 🎉",
+          "firstOffering": "Acces la Toate Funcțiile Premium",
+          "secondOffering": "Experiență Fără Reclame",
+          "thirdOffering": "Scanări nelimitate în limita utilizării rezonabile",
+          "fourthOffering": "Scanări nelimitate cu utilizare echitabilă și acces 24/7 la asistentul AI personal"
         }
       },
       "paywallUpgradeScreen": {
-        "heading": "Deblochează Funcționalitățile Premium Astăzi! 🎉",
+        "heading": "Deblochează Funcțiile Premium Astăzi! 🎉",
         "firstOffering": {
-          "title": "Începe Perioada de Probă",
+          "title": "Începe Perioada de Probă Gratuită",
           "subtitle": "Bucură-te de {{freeScans}} scanări gratuite – fără plată"
         },
         "secondOffering": {
@@ -151,66 +152,65 @@
         "action": "Obține-o acum!"
       },
       "rateAppScreen": {
-        "heading": "Sunteți mulțumit de aplicația MicroScan AI?",
-        "like": "Da, o iubesc!",
-        "dislike": "Nu prea..."
+        "heading": "Găsești aplicația valoroasă și interesantă?",
+        "like": "Da, îmi place foarte mult!",
+        "dislike": "Nu chiar..."
       },
       "noInternetScreen": {
         "heading": "Ești offline",
-        "subheading": "Conexiunea ta pare să fie instabilă. Te rugăm să verifici starea rețelei"
+        "subheading": "Conexiunea ta pare instabilă. Te rugăm să verifici starea rețelei"
       },
       "notifications": {
         "title": "Notificări",
-        "noNotifications": "Nicio notificare momentan – rămâi conectat pentru actualizări!"
+        "noNotifications": "Nicio notificare deocamdată — rămâi conectat pentru actualizări!"
       },
       "termsOfService": {
-        "title": "Termeni și Condiții"
+        "title": "Termeni de Utilizare"
       },
       "privacyPolicy": {
         "title": "Politica de Confidențialitate"
       },
       "share": {
-        "title": "Partajează",
-        "heading": "Partajează Aplicația MicroScan AI",
-        "subheading": "Ajută-i pe alții să descopere puterea analizei AI a razelor X",
+        "title": "Distribuie",
+        "heading": "Distribuie Aplicația MicroScan AI",
+        "subheading": "Ajută-i pe alții să descopere puterea analizei AI a imaginilor microscopice",
         "scanMessage": "Scanează pentru a descărca aplicația",
-        "shareMessage": "sau partajează pe platforma ta preferată"
+        "shareMessage": "sau distribuie prin platforma ta favorită"
       },
       "rate": {
-        "title": "Lasă-ne un feedback!"
+        "title": "Oferă-ne un feedback!"
       },
       "profile": {
         "title": "Profil",
         "edit": "Editează Profilul",
-        "placeholderPreferredName": "De exemplu, Căpitanul Cool, Regina Albinelor sau doar Alex!"
+        "placeholderPreferredName": "De ex., Căpitan Cool, Regina Albinelor, sau doar Alex!"
       },
       "generateReportScreen": {
-        "title": "Îți mulțumim pentru răbdare! Iată raportul tău generat de AI.",
-        "userInput": "Contribuția Ta",
+        "title": "Apreciem răbdarea ta! Iată raportul tău AI.",
+        "userInput": "Transmiterea ta",
         "medicalReport": "Raport Medical",
         "report": "Raport Medical Generat de AI",
         "conversationName": "Numele conversației"
       },
       "verifyEmail": {
-        "heading": "Verifică Email"
+        "heading": "Verifică email-ul"
       },
       "filePreviewScreen": {
-        "generateReportButton": "Începe analiza"
+        "generateReportButton": "Începe Analiza"
       },
       "disclaimerScreen": {
-        "heading": "Informații importante",
-        "subheading": "MicroScan AI este conceput pentru profesioniști în radiologie, experți în sănătate, studenți la medicină și entuziaști",
-        "consentAgreement": "Am citit și sunt de acord cu avertismentul.",
-        "firstConsent": "MicroScan AI nu oferă date medicale, măsurători de sănătate, diagnostice sau sfaturi de tratament și nu este destinat unor astfel de scopuri. Utilizatorii MicroScan AI trebuie să-și aplice judecata clinică și să verifice informațiile din surse autorizate înainte de a lua orice decizie clinică.",
-        "secondConsent": "MicroScan AI nu este un instrument de diagnostic, o platformă de tratament sau un înlocuitor pentru sfaturile medicale profesionale. Oferă informații generate de IA pentru a ajuta profesioniștii din domeniul sănătății să acceseze cunoștințe medicale și să analizeze imagini și documente medicale. MicroScan AI este o aplicație informațională și educațională bazată pe IA, concepută pentru a sprijini profesioniștii din domeniul sănătății autorizați.",
-        "thirdConsent": "MicroScan AI nu este conceput pentru utilizarea pacienților. Nu oferă diagnostice medicale directe, recomandări de tratament sau funcționalități de gestionare a pacienților.",
-        "fourthConsent": "MicroScan AI nu este clasificat ca dispozitiv medical și nu pretinde aprobări reglementare. Este destinat scopurilor educaționale și informaționale pentru a completa expertiza profesională.",
-        "fifthConsent": "MicroScan AI nu colectează, stochează sau procesează date personale ale pacienților. Toate interacțiunile utilizatorilor sunt confidențiale și limitate la domeniul de aplicare al aplicației."
+        "heading": "Declarație Importantă",
+        "subheading": "MicroScan AI este conceput pentru profesioniști în microscopie, cercetători, studenți la medicină și entuziaști",
+        "consentAgreement": "Am citit și sunt de acord cu declarația.",
+        "firstConsent": "MicroScan AI nu oferă măsurători de sănătate, diagnostice sau sfaturi de tratament și nu este destinat unor astfel de scopuri. Utilizatorii MicroScan AI trebuie să își aplice judecata clinică și să verifice informațiile din surse autorizate înainte de a lua orice decizii clinice.",
+        "secondConsent": "MicroScan AI nu este un instrument de diagnostic, o platformă de tratament sau un înlocuitor pentru sfatul medical profesional. Oferă informații generate de AI pentru a ajuta profesioniștii din domeniul sănătății să acceseze cunoștințe medicale și să analizeze imagini și documente medicale. MicroScan AI este o aplicație educațională și informativă bazată pe AI, concepută mai mult pentru a sprijini profesioniștii din domeniul sănătății.",
+        "fourthConsent": "MicroScan AI nu este clasificat ca dispozitiv medical și nu pretinde aprobări de reglementare. Este destinat scopurilor educaționale și informative pentru a completa expertiza profesională.",
+        "fifthConsent": "MicroScan AI nu colectează, stochează sau procesează date personale sau ale pacienților. Toate interacțiunile utilizatorilor sunt confidențiale și limitate la scopul aplicației."
       },
       "contactUs": {
-        "heading": "Nu ezitați să ne trimiteți un e-mail direct, iar echipa noastră vă va răspunde cât mai curând posibil",
-        "customerSupport": "Suport clienți",
-        "emailAddress": "Adresă de email"
+        "heading": "Nu ezita să ne trimiți un email direct, iar echipa noastră îți va răspunde cât mai curând posibil",
+        "customerSupport": "Suport Clienți",
+        "emailAddress": "Adresă de Email"
       }
     }
   },
@@ -218,10 +218,12 @@
     "title": "Stai! Nu mă șterge!",
     "subtitle": "Trimite un feedback în schimb"
   },
+
   "pdfPreview": {
-    "noEditorInstalled": "Pentru a previzualiza PDF-ul, asigură-te că ai un vizualizator PDF instalat, cum ar fi Adobe Acrobat Reader sau Google PDF Viewer",
+    "noEditorInstalled": "Pentru a previzualiza PDF-ul, asigură-te că ai instalat un vizualizator PDF, cum ar fi Adobe Acrobat Reader sau Google PDF Viewer",
     "conversationTitlePdf": "Conversație cu Aura, asistentul tău AI"
   },
+
   "flows": {
     "createReport": {
       "finalReportForeground": {
@@ -231,39 +233,39 @@
         "message": "Acesta este rezultatul raportului!"
       },
       "uploadFile": {
-        "title": "Vă rugăm să încărcați un fișier de imagistică medicală",
+        "title": "Încarcă orice imagine de microscopie pentru analiză",
         "size": "Max: {{imageLimit}}MB (imagini), {{videoLimit}}MB (videoclipuri)",
         "location": "Selectează din Galerie sau Fișiere",
-        "fileType": "PNG, JPG, PDF sau MP4",
+        "fileType": "PNG, JPG, PDF, sau MP4",
         "openCamera": "Deschide Camera și Fă o Fotografie",
-        "scanType": "Sunt permise doar raze X, tomografii computerizate, RMN, PET sau alte imagistici medicale"
+        "scanType": "Sunt permise doar Raze X, CT, RMN, PET sau alte imagini medicale"
       }
     }
   },
   "home": {
     "tab": "Acasă",
     "homeForeground": {
-      "maxNumberOfScans": "Ai atins limita de scanări! Actualizează planul tău pentru a debloca mai multe scanări. 🚀",
+      "maxNumberOfScans": "Ai atins limita de scanări! Actualizează-ți planul acum pentru a debloca mai multe scanări. 🚀",
       "heading": "Bine ați venit la MicroScan AI!",
-      "subHeading": "Obțineți informații esențiale despre raze X, RMN, tomografie computerizată, imagistică PET, ecografii și medicină nucleară prin analiză bazată pe inteligență artificială"
+      "subHeading": "Obține analiză alimentată de AI a oricăror imagini de microscopie în câteva secunde"
     },
     "scanCategories": {
-      "heading": "Radiologie"
+      "heading": "Rolă de Microscopie"
     },
     "recentReports": {
-      "heading": "Chat-uri recente",
-      "noReports": "Nu există chat-uri de afișat încă!"
+      "heading": "Conversații Recente",
+      "noReports": "Încă nu există conversații de afișat!"
     }
   },
   "reports": {
     "tab": "Istoric",
-    "noReportsAvailable": "Nu există istoric de chat disponibil pentru această dată",
-    "heading": "Istoric chat"
+    "noReportsAvailable": "Nu există istoric de conversații disponibil pentru această dată",
+    "heading": "Istoric Conversații"
   },
   "settings": {
     "tab": "Setări",
     "profile": "Profil",
-    "contactUs": "Contactați-ne",
+    "contactUs": "Contactează-ne",
     "about": "Despre",
     "app_name": "Numele Aplicației",
     "languages": {
@@ -282,17 +284,17 @@
     },
     "generale": "General",
     "github": "Github",
-    "language": "Limba",
+    "language": "Limbă",
     "links": "Link-uri",
     "logout": "Deconectare",
     "more": "Mai mult",
     "privacy": "Politica de Confidențialitate",
-    "faq": "Întrebări Frecvente",
+    "faq": "Întrebări frecvente",
     "rate": "Evaluează",
-    "share": "Partajează",
+    "share": "Distribuie",
     "support": "Suport",
     "support_us": "Susține-ne",
-    "terms": "Termeni și Condiții",
+    "terms": "Termeni de Utilizare",
     "theme": {
       "dark": "Întunecat",
       "light": "Luminos",
@@ -303,7 +305,7 @@
     "version": "Versiune",
     "website": "Website",
     "devMode": {
-      "title": "Mod Dezvoltator",
+      "title": "Mod dezvoltator",
       "componentsLibrary": "Bibliotecă UI"
     }
   },
@@ -317,43 +319,44 @@
       "reportTitlePlaceholder": "Adaugă un titlu"
     },
     "WeekBlock": {
-      "week": "Săptămâna"
+      "week": "Săptămână"
     },
     "EndScrollPlaceholder": {
-      "scrollToTop": "Derulează în sus"
+      "scrollToTop": "Derulează în Sus"
     },
     "FreeTierStatus": {
       "heading": "Scanări gratuite",
-      "subheading": "Deblochează scanări nelimitate actualizând planul tău",
+      "subheading": "Deblochează scanări nelimitate prin actualizarea planului tău",
       "action": "Actualizează"
     },
     "UploadFileOptionsModal": {
-      "heading": "Alege o imagine / videoclip"
+      "heading": "Alege o poză / video"
     },
     "TapToViewLabel": {
-      "label": "Atinge pentru a vizualiza"
+      "label": "Apasă Pentru Vizualizare"
     },
     "UpgradeBanner": {
-      "heading": "Actualizează acum",
-      "subheading": "Deblochează scanări nelimitate actualizând planul tău"
+      "heading": "Actualizează Acum",
+      "subheading": "Deblochează scanări nelimitate prin actualizarea planului tău"
     },
     "PromptSection": {
-      "message": "Scanarea ta este gata! Acum, ce ai vrea să afli?",
+      "message": "Scanarea ta este gata! Acum, ce ai dori să afli?",
       "prompts": {
-        "first": "Descrie orice anomalii prezente în câmpurile pulmonare",
-        "second": "Evaluează silueta cardiacă și mediastinul",
-        "third": "Evaluează structurile osoase pentru leziuni sau fracturi",
-        "fourth": "Comentează prezența sau absența efuziilor pleurale"
+        "first": "Ce tipuri de celule sau structuri sunt prezente în această imagine?",
+        "second": "Există anomalii sau agenți patogeni în acest eșantion?",
+        "third": "Care este originea sau afecțiunea probabilă a acestui eșantion?",
+        "fourth": "Ce informații poți oferi din această imagine?"
       }
     },
     "PremiumFeaturesOverview": {
       "first": "Obține {{freeScans}} Scanări Gratuite",
-      "second": "Acces la toate funcționalitățile premium",
+      "second": "Acces la toate funcțiile premium",
       "third": "Fără reclame"
     },
+
     "Input": {
       "labels": {
-        "nickname": "Nume",
+        "nickname": "Porecla",
         "email": "Email",
         "emailVerification": "Verificare Email"
       }
@@ -361,41 +364,41 @@
     "ImageAnnotationStudio": {
       "instructions": {
         "title": "Instrucțiuni",
-        "first": "1. Apăsați butonul 'Adăugați pătrat' pentru a crea un pătrat de selecție.",
-        "second": "2. Trageți pătratul peste regiunea de interes.",
-        "third": "3. Ajustați colțurile pentru a acoperi cu precizie regiunea."
+        "first": "1. Apasă butonul 'Adaugă Pătrat' pentru a crea un pătrat de selecție.",
+        "second": "2. Trage pătratul peste regiunea de interes.",
+        "third": "3. Ajustează colțurile pentru a acoperi cu precizie regiunea."
       },
       "OpenStudioSection": {
         "openStudioButton": "Deschide Studio",
-        "editMore": "Editează mai mult",
-        "continueEditing": "Continuați editarea adnotărilor?",
-        "highlightedRegionsCount": "Aveți {{highlightedRegions}} regiuni evidențiate. Apăsați mai jos pentru a adăuga mai multe",
-        "highlightRegions": "Doriți să evidențiați regiuni ale imaginii dumneavoastră medicale?"
+        "editMore": "Editează Mai Mult",
+        "continueEditing": "Continui editarea adnotărilor tale?",
+        "highlightedRegionsCount": "Ai {{highlightedRegions}} regiuni evidențiate. Apasă mai jos pentru a adăuga mai multe",
+        "highlightRegions": "Trebuie să evidențiezi regiuni din imaginea ta de microscopie?"
       },
       "studioToolbar": {
-        "addSquare": "Adăugați pătrat"
+        "addSquare": "Adaugă Pătrat"
       }
     }
   },
   "alerts": {
-    "mediaPickerPermissions": "Ne pare rău, avem nevoie de permisiuni pentru cameră pentru a funcționa!",
-    "errorSelectingImagePicker": "Ceva nu a funcționat la selectarea imaginii. Te rugăm să încerci din nou.",
-    "errorSelectingDocumentPicker": "Ceva nu a funcționat la selectarea documentului. Te rugăm să încerci din nou.",
-    "errorTakingPicture": "Ceva nu a funcționat la realizarea fotografiei. Te rugăm să încerci din nou.",
+    "mediaPickerPermissions": "Ne pare rău, avem nevoie de permisiuni pentru cameră pentru a face acest lucru să funcționeze!",
+    "errorSelectingImagePicker": "Ceva nu a funcționat în timpul selectării imaginii. Te rugăm să încerci din nou.",
+    "errorSelectingDocumentPicker": "Ceva nu a funcționat în timpul selectării documentului. Te rugăm să încerci din nou.",
+    "errorTakingPicture": "Ceva nu a funcționat în timpul fotografierii. Te rugăm să încerci din nou.",
     "enableNotifications": {
       "heading": "Activează Notificările",
-      "subHeading": "Notificările sunt în prezent dezactivate. Pentru a rămâne la curent, te rugăm să le activezi în setările dispozitivului."
+      "subHeading": "Notificările sunt momentan dezactivate. Pentru a rămâne la curent, te rugăm să le activezi în setările dispozitivului tău."
     },
-    "enableNotificationFailed": "Notificările push sunt dezactivate. Activează-le în setări pentru a primi informații importante.",
-    "enableNotificationError": "A apărut o eroare la activarea notificărilor",
+    "enableNotificationFailed": "Notificările push sunt dezactivate. Activează-le în setări pentru a primi actualizări importante!",
+    "enableNotificationError": "A apărut o eroare în timpul activării notificărilor",
     "notificationDisabledSuccess": "Notificările au fost dezactivate cu succes.",
-    "notificationDisabledRegisterError": "Dezregistrarea dispozitivului pentru notificări a eșuat.",
-    "notificationDisabledError": "A apărut o eroare la dezactivarea notificărilor.",
+    "notificationDisabledRegisterError": "Nu s-a reușit anularea înregistrării dispozitivului pentru notificări.",
+    "notificationDisabledError": "A apărut o eroare în timpul dezactivării notificărilor.",
     "checkNotificationStatusError": "Eroare la verificarea stării notificărilor.",
-    "projectIdNotFound": "ID-ul proiectului de notificări nu a fost găsit.",
+    "projectIdNotFound": "ID-ul proiectului de notificare nu a fost găsit.",
     "imageSizeLarge": "Imaginea este prea mare! Dimensiunea fișierului este {{fileSize}} MB, dar limita este {{imageLimit}} MB.",
     "videoSizeLarge": "Videoclipul este prea mare! Dimensiunea fișierului este {{fileSize}} MB, dar limita este {{videoLimit}} MB.",
-    "loggedInSuccess": "Conectare reușită",
+    "loggedInSuccess": "Conectat cu succes",
     "loggedOutSuccess": "Te-ai deconectat cu succes!",
     "sendVerificationCodeError": "Eroare la trimiterea codului de verificare",
     "validateAuthCodeError": "Eroare la validarea codului de autentificare",
@@ -403,23 +406,23 @@
     "emailLoginError": "Eroare la conectare",
     "preferredLanguageError": "Eroare la actualizarea limbii preferate a utilizatorului",
     "sharingNotAvailable": "Partajarea nu este disponibilă momentan pe dispozitivul tău",
-    "sharingLinkError": "Partajarea link-ului a eșuat.",
+    "sharingLinkError": "Nu s-a reușit partajarea link-ului.",
     "individualPushNotificationSuccess": "Notificările push individuale au fost trimise cu succes!",
     "globalPushNotificationSuccess": "Notificările push globale au fost trimise cu succes! 🌍🚀",
-    "interpretationFieldsUpdateFail": "Actualizarea câmpurilor de interpretare a eșuat! ❌",
-    "deleteScanReportFail": "Nu s-a putut șterge raportul de scanare. Vă rugăm să încercați din nou",
-    "onboardingUnsuccessful": "Onboarding nereușit. Te rugăm să încerci din nou",
-    "logoutUnsuccessful": "Deconectare nereușită. Vă rugăm să încercați din nou",
-    "deleteScanReportQuestion": "Sigur doriți să ștergeți definitiv acest raport?",
-    "videoLimitExceeds": "Videoclipul tău depășește limita de {{videoSecondsLimit}} secunde. Te rog micşorează-l și încarcă din nou",
-    "subscriptionActivated": "Abonamentul dumneavoastră a fost activat cu succes! Bucurați-vă de beneficiile exclusive!",
-    "subscriptionCancelledByUser": "Ați anulat tranzacția. Nu ezitați să încercați din nou!",
-    "subscriptionActivationFailed": "Activarea abonamentului a eșuat. Vă rugăm să încercați din nou!",
-    "logoutQuestion": "Sigur doriți să vă deconectați?",
-    "noSubscriptionToRestore": "Hopa! Se pare că nu ai un abonament activ în acest moment. Pentru a continua să te bucuri de acces complet, te rugăm să alegi unul dintre planurile noastre de abonament.",
-    "restorationSuccessful": "Restaurarea a avut succes! Bucură-te de acces complet!",
-    "restorationError": "A apărut o eroare la restaurarea achiziției tale.",
-    "medicalDisclaimerAlert": "Aplicația MicroScan AI nu oferă diagnostice, recomandări de tratament sau sfaturi medicale. Consultați întotdeauna un profesionist calificat în sănătate pentru decizii medicale.",
-    "scanLimitReached": "Optimizăm calitatea scanării pentru dumneavoastră! Veți putea scana din nou în aproximativ {{hours}} ore și {{minutes}} minute. Aveți întrebări despre vreun subiect medical? Întrebați asistentul nostru de chat în timp ce așteptați!"
+    "interpretationFieldsUpdateFail": "Nu s-a reușit actualizarea câmpurilor de interpretare! ❌",
+    "deleteScanReportFail": "Nu s-a putut șterge raportul de scanare. Te rugăm să încerci din nou",
+    "onboardingUnsuccessful": "Înregistrarea nu a avut succes. Te rugăm să încerci din nou",
+    "logoutUnsuccessful": "Deconectarea nu a avut succes. Te rugăm să încerci din nou",
+    "deleteScanReportQuestion": "Ești sigur că vrei să ștergi definitiv acest raport?",
+    "videoLimitExceeds": "Videoclipul tău depășește limita de {{videoSecondsLimit}} secunde. Te rugăm să îl decupezi și să îl reîncarci",
+    "subscriptionActivated": "Abonamentul tău a fost activat cu succes! Bucură-te de beneficiile exclusive!",
+    "subscriptionCancelledByUser": "Ai anulat tranzacția. Nu ezita să încerci din nou!",
+    "subscriptionActivationFailed": "Nu s-a reușit activarea abonamentului tău. Te rugăm să încerci din nou",
+    "logoutQuestion": "Ești sigur că vrei să te deconectezi?",
+    "noSubscriptionToRestore": "Ups! Se pare că nu ai un abonament activ în acest moment. Pentru a continua să te bucuri de acces complet, te rugăm să alegi unul dintre planurile noastre de abonament.",
+    "restorationSuccessful": "Restaurarea a avut succes! Bucură-te!",
+    "restorationError": "A apărut o eroare în timpul restaurării achiziției.",
+    "medicalDisclaimerAlert": "Aplicația MicroScan AI nu oferă diagnostice, recomandări de tratament sau sfaturi medicale. Consultă întotdeauna un profesionist calificat în domeniul sănătății pentru decizii medicale.",
+    "scanLimitReached": "Optimizăm calitatea scanării pentru tine! Vei putea scana din nou în aproximativ {{hours}} ore și {{minutes}} minute. Ai întrebări despre orice subiect medical? Întreabă asistentul nostru de chat în timp ce aștepți!"
   }
 }
