@@ -36,6 +36,11 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     backgroundColor: '#060047',
     translucent: true,
   },
+  // splash: {
+  //   image: './assets/splash-icon.png',
+  //   resizeMode: 'cover',
+  //   backgroundColor: '#FFFFFF',
+  // },
   updates: {
     fallbackToCacheTimeout: 0,
   },
@@ -78,6 +83,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     blockedPermissions: ['FOREGROUND_SERVICE_MEDIA_PLAYBACK'], // Android review didn't pass (permission used by expo-av)You
     package: Env.PACKAGE,
   },
+
   web: {
     favicon: './assets/favicon.png',
     bundler: 'metro',
@@ -109,6 +115,14 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
       },
     ],
     [
+      'expo-splash-screen',
+      {
+        backgroundColor: '#FFFFFF',
+        image: './assets/splash-icon.png',
+        imageWidth: 150,
+      },
+    ],
+    [
       'expo-quick-actions',
       {
         androidIcons: {
@@ -131,14 +145,6 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
       },
     ],
     [
-      'expo-splash-screen',
-      {
-        // backgroundColor: '#FFFFFF',
-        image: './assets/splash-icon.png',
-        imageWidth: 150,
-      },
-    ],
-    [
       'expo-font',
       {
         fonts: ['./assets/fonts/Inter.ttf'],
@@ -150,7 +156,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     '@react-native-firebase/auth',
     '@react-native-firebase/crashlytics',
     ['app-icon-badge', appIconBadgeConfig],
-    ['react-native-edge-to-edge'],
+    // ['react-native-edge-to-edge'],
   ],
   extra: {
     ...ClientEnv,

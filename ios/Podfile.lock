@@ -1556,7 +1556,7 @@ PODS:
     - GoogleUtilities/Network (~> 8.0)
     - "GoogleUtilities/NSData+zlib (~> 8.0)"
     - nanopb (~> 3.30910.0)
-  - FirebaseAppCheckInterop (11.11.0)
+  - FirebaseAppCheckInterop (11.12.0)
   - FirebaseAuth (11.11.0):
     - FirebaseAppCheckInterop (~> 11.0)
     - FirebaseAuthInterop (~> 11.0)
@@ -1566,7 +1566,7 @@ PODS:
     - GoogleUtilities/Environment (~> 8.0)
     - GTMSessionFetcher/Core (< 5.0, >= 3.4)
     - RecaptchaInterop (~> 101.0)
-  - FirebaseAuthInterop (11.11.0)
+  - FirebaseAuthInterop (11.12.0)
   - FirebaseCore (11.11.0):
     - FirebaseCoreInternal (~> 11.11.0)
     - GoogleUtilities/Environment (~> 8.0)
@@ -1617,7 +1617,7 @@ PODS:
     - GoogleUtilities/Environment (~> 8.0)
     - GoogleUtilities/UserDefaults (~> 8.0)
     - PromisesObjC (~> 2.4)
-  - FirebaseMessagingInterop (11.11.0)
+  - FirebaseMessagingInterop (11.12.0)
   - FirebaseRemoteConfig (11.11.0):
     - FirebaseABTesting (~> 11.0)
     - FirebaseCore (~> 11.11.0)
@@ -1626,7 +1626,7 @@ PODS:
     - FirebaseSharedSwift (~> 11.0)
     - GoogleUtilities/Environment (~> 8.0)
     - "GoogleUtilities/NSData+zlib (~> 8.0)"
-  - FirebaseRemoteConfigInterop (11.11.0)
+  - FirebaseRemoteConfigInterop (11.12.0)
   - FirebaseSessions (11.11.0):
     - FirebaseCore (~> 11.11.0)
     - FirebaseCoreExtension (~> 11.11.0)
@@ -1636,7 +1636,7 @@ PODS:
     - GoogleUtilities/UserDefaults (~> 8.0)
     - nanopb (~> 3.30910.0)
     - PromisesSwift (~> 2.1)
-  - FirebaseSharedSwift (11.11.0)
+  - FirebaseSharedSwift (11.12.0)
   - FirebaseStorage (11.11.0):
     - FirebaseAppCheckInterop (~> 11.0)
     - FirebaseAuthInterop (~> 11.0)
@@ -1669,31 +1669,31 @@ PODS:
   - GoogleDataTransport (10.1.0):
     - nanopb (~> 3.30910.0)
     - PromisesObjC (~> 2.4)
-  - GoogleUtilities/AppDelegateSwizzler (8.0.2):
+  - GoogleUtilities/AppDelegateSwizzler (8.1.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
     - GoogleUtilities/Privacy
-  - GoogleUtilities/Environment (8.0.2):
+  - GoogleUtilities/Environment (8.1.0):
     - GoogleUtilities/Privacy
-  - GoogleUtilities/Logger (8.0.2):
+  - GoogleUtilities/Logger (8.1.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Privacy
-  - GoogleUtilities/MethodSwizzler (8.0.2):
+  - GoogleUtilities/MethodSwizzler (8.1.0):
     - GoogleUtilities/Logger
     - GoogleUtilities/Privacy
-  - GoogleUtilities/Network (8.0.2):
+  - GoogleUtilities/Network (8.1.0):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Privacy
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (8.0.2)":
+  - "GoogleUtilities/NSData+zlib (8.1.0)":
     - GoogleUtilities/Privacy
-  - GoogleUtilities/Privacy (8.0.2)
-  - GoogleUtilities/Reachability (8.0.2):
+  - GoogleUtilities/Privacy (8.1.0)
+  - GoogleUtilities/Reachability (8.1.0):
     - GoogleUtilities/Logger
     - GoogleUtilities/Privacy
-  - GoogleUtilities/UserDefaults (8.0.2):
+  - GoogleUtilities/UserDefaults (8.1.0):
     - GoogleUtilities/Logger
     - GoogleUtilities/Privacy
   - "gRPC-C++ (1.69.0)":
@@ -1833,9 +1833,9 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - MMKV (2.1.0):
-    - MMKVCore (~> 2.1.0)
-  - MMKVCore (2.1.1)
+  - MMKV (2.2.1):
+    - MMKVCore (~> 2.2.1)
+  - MMKVCore (2.2.1)
   - nanopb (3.30910.0):
     - nanopb/decode (= 3.30910.0)
     - nanopb/encode (= 3.30910.0)
@@ -3655,9 +3655,9 @@ SPEC CHECKSUMS:
   Firebase: 6a8f201c61eda24e98f1ce2b44b1b9c2caf525cc
   FirebaseABTesting: 8551c24eb28e300ce697f8eb72c1a519bb96eb40
   FirebaseAnalytics: acfa848bf81e1a4dbf60ef1f0eddd7328fe6673e
-  FirebaseAppCheckInterop: f23709c9ce92d810aa53ff4ce12ad3e666a3c7be
+  FirebaseAppCheckInterop: 73b173e5ec45192e2d522ad43f526a82ad10b852
   FirebaseAuth: 783fa4cc0420b0f6eed580721b12d4f0a5306746
-  FirebaseAuthInterop: ac22ed402c2f4e3a8c63ebd3278af9a06073c1be
+  FirebaseAuthInterop: b583210c039a60ed3f1e48865e1f3da44a796595
   FirebaseCore: 2321536f9c423b1f857e047a82b8a42abc6d9e2c
   FirebaseCoreExtension: 3a64994969dd05f4bcb7e6896c654eded238e75b
   FirebaseCoreInternal: 31ee350d87b30a9349e907f84bf49ef8e6791e5a
@@ -3666,17 +3666,17 @@ SPEC CHECKSUMS:
   FirebaseFirestoreInternal: e06766e483f3a5b16a33dfcc65e116a6dfcccd55
   FirebaseFunctions: 5a3e5aabdb843d25328de248f8fcec14bf86b964
   FirebaseInstallations: 781e0e37aa0e1c92b44d00e739aba79ad31b2dba
-  FirebaseMessagingInterop: 87d4a0a3a78644576c681974ce895599f9a867c9
+  FirebaseMessagingInterop: f4ed7b2d66b89b53fd7982b9317e403691dbd978
   FirebaseRemoteConfig: ca2e03fdd86e31d79ded53e24fa4ac719494dc35
-  FirebaseRemoteConfigInterop: 85bdce8babed7814816496bb6f082bc05b0a45e1
+  FirebaseRemoteConfigInterop: 82b81fd06ee550cbeff40004e2c106daedf73e38
   FirebaseSessions: f5c6bfeb66a7202deaf33352017bb6365e395820
-  FirebaseSharedSwift: b1d32c3b29a911dc174bcf363f2f70bda9509d2f
+  FirebaseSharedSwift: d2475748a2d2a36242ed13baa34b2acda846c925
   FirebaseStorage: 1c04b0ac8126b6fada8c9a09458f59c31868f2df
   fmt: 4c2741a687cc09f0634a2e2c72a838b99f1ff120
   glog: fdfdfe5479092de0c4bdbebedd9056951f092c4f
   GoogleAppMeasurement: 8a82b93a6400c8e6551c0bcd66a9177f2e067aed
   GoogleDataTransport: aae35b7ea0c09004c3797d53c8c41f66f219d6a7
-  GoogleUtilities: 26a3abef001b6533cf678d3eb38fd3f614b7872d
+  GoogleUtilities: 00c88b9a86066ef77f0da2fab05f65d7768ed8e1
   "gRPC-C++": cc207623316fb041a7a3e774c252cf68a058b9e8
   gRPC-Core: 860978b7db482de8b4f5e10677216309b5ff6330
   GTMSessionFetcher: 75b671f9e551e4c49153d4c4f8659ef4f559b970
@@ -3687,13 +3687,13 @@ SPEC CHECKSUMS:
   libwebp: 02b23773aedb6ff1fd38cec7a77b81414c6842a8
   lottie-ios: fcb5e73e17ba4c983140b7d21095c834b3087418
   lottie-react-native: fe8f695187d254c3fe94b870986165a60636341b
-  MMKV: ce484c1ac40bf76d5f09a0195d2ec5b3d3840d55
-  MMKVCore: 1eb661c6c498ab88e3df9ce5d8ff94d05fcc0567
+  MMKV: 383ccfa10ae23ff2a9c0f6130b7136b37b55ac10
+  MMKVCore: b0e4c420da85636d7adaa535a53dfade59a22f5c
   nanopb: fad817b59e0457d11a5dfbde799381cd727c1275
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   PromisesSwift: 9d77319bbe72ebf6d872900551f7eeba9bce2851
   PurchasesHybridCommon: bb4c1ddc8683a18859da35f45a0717379f889d94
-  RCT-Folly: 02617c592a293bd6d418e0a88ff4ee1f88329b47
+  RCT-Folly: 5dc73daec3476616d19e8a53f0156176f7b55461
   RCTDeprecation: 3afceddffa65aee666dafd6f0116f1d975db1584
   RCTRequired: ec1239bc9d8bf63e10fb92bd8b26171a9258e0c1
   RCTTypeSafety: f5ecbc86c5c5fa163c05acb7a1c5012e15b5f994
