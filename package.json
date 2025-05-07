@@ -1,6 +1,6 @@
 {
   "name": "micro-scan-ai",
-  "version": "25.5.11-dev",
+  "version": "25.5.12-dev",
   "private": true,
   "main": "expo-router/entry",
   "scripts": {
