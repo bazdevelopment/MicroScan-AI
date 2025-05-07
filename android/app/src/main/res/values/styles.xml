@@ -43,4 +43,7 @@
   <style name="AppTheme" parent="Theme.EdgeToEdge">
     <item name="colorPrimary">@color/colorPrimary</item>
   </style>
+  <style name="AppTheme" parent="Theme.EdgeToEdge">
+    <item name="colorPrimary">@color/colorPrimary</item>
+  </style>
 </resources>
