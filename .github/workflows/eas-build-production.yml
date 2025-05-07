@@ -39,7 +39,7 @@ jobs:
     steps:
       - name: Check for EXPO_TOKEN
         run: |
-          if [ -z "${{ secrets.EXPO_TOKEN_XRAY_ANALYZER }}" ]; then
+          if [ -z "${{ secrets.EXPO_TOKEN_MICROSCAN_AI }}" ]; then
             echo "You must provide an EXPO_TOKEN secret linked to this project's Expo account in this repo's secrets. Learn more: https://docs.expo.dev/eas-update/github-actions"
             exit 1
           fi
@@ -94,7 +94,7 @@ jobs:
         uses: ./.github/actions/eas-build
         with:
           APP_ENV: production
-          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN_XRAY_ANALYZER }}
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN_MICROSCAN_AI }}
           VERSION: ${{ inputs.version }}
           FIREBASE_APP_ID_IOS: ${{ secrets.FIREBASE_APP_ID_IOS }}
           FIREBASE_APP_ID_ANDROID: ${{ secrets.FIREBASE_APP_ID_ANDROID }}
@@ -156,7 +156,7 @@ jobs:
         uses: ./.github/actions/eas-build
         with:
           APP_ENV: production
-          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN_XRAY_ANALYZER }}
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN_MICROSCAN_AI }}
           VERSION: ${{ inputs.version }}
           FIREBASE_APP_ID_IOS: ${{ secrets.FIREBASE_APP_ID_IOS }}
           FIREBASE_APP_ID_ANDROID: ${{ secrets.FIREBASE_APP_ID_ANDROID }}

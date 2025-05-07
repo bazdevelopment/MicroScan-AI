@@ -25,7 +25,7 @@ const Profile = () => {
   const activeSubscription = !!customerInfo?.activeSubscriptions?.length
     ? customerInfo?.activeSubscriptions[0].includes('month')
       ? translate(
-          'rootLayout.screens.paywallUpgradeScreen.secondOffering.title',
+          'rootLayout.screens.paywallUpgradeScreen.secondOffering.title'
         )
       : customerInfo?.activeSubscriptions[0].includes('year')
         ? translate('rootLayout.screens.paywallUpgradeScreen.thirdOffering')
@@ -100,7 +100,7 @@ const Profile = () => {
             <Input
               className={`flex-1 rounded-xl bg-white px-3.5 py-5 font-primary-nunito dark:border-neutral-700 dark:bg-charcoal-800 dark:text-white ${!editModeEnabled && 'bg-slate-200'}`}
               placeholder={translate(
-                'rootLayout.screens.profile.placeholderPreferredName',
+                'rootLayout.screens.profile.placeholderPreferredName'
               )}
               value={profileInfo.userName || ''}
               onChangeText={(text: string) =>
@@ -113,7 +113,7 @@ const Profile = () => {
               <Input
                 className={`flex-1 rounded-xl bg-slate-200 px-3.5 py-5 font-primary-nunito opacity-80 dark:border-neutral-700 dark:bg-charcoal-600 dark:text-white dark:opacity-50`}
                 placeholder={translate(
-                  'rootLayout.screens.profile.placeholderPreferredName',
+                  'rootLayout.screens.profile.placeholderPreferredName'
                 )}
                 value={userInfo.email}
                 label={translate('components.Input.labels.email')}

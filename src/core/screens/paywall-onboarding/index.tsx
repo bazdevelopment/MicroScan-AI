@@ -50,7 +50,7 @@ const PaywallOnboarding = ({
   collectedData;
 }) => {
   const [selectedPlan, setSelectedPlan] = useState(
-    SUBSCRIPTION_PLANS_PER_PLATFORM?.YEARLY,
+    SUBSCRIPTION_PLANS_PER_PLATFORM?.YEARLY
   );
   const [, setIsFirstTime] = useIsFirstTime();
   const { colorScheme } = useColorScheme();
@@ -81,11 +81,11 @@ const PaywallOnboarding = ({
   const formattedOfferings = formatPaywallOnboardingData(offerings);
 
   const pricePerMonth = formattedOfferings.find(
-    (item) => item.id === SUBSCRIPTION_PLANS_PER_PLATFORM?.MONTHLY,
+    (item) => item.id === SUBSCRIPTION_PLANS_PER_PLATFORM?.MONTHLY
   )?.priceNumber;
 
   const pricePerYear = formattedOfferings.find(
-    (item) => item.id === SUBSCRIPTION_PLANS_PER_PLATFORM?.YEARLY,
+    (item) => item.id === SUBSCRIPTION_PLANS_PER_PLATFORM?.YEARLY
   )?.priceNumber;
 
   const discount = calculateAnnualDiscount(pricePerMonth, pricePerYear);
@@ -124,7 +124,7 @@ const PaywallOnboarding = ({
     } catch (error) {
       recordError(
         error,
-        'Failure on completing onboarding (but it can be false - known issue)',
+        'Failure on completing onboarding (but it can be false - known issue)'
       );
     }
   };
@@ -183,7 +183,7 @@ const PaywallOnboarding = ({
           <View className="gap-4 px-8 pt-8">
             <Text className="mb-4 text-center font-bold-nunito  text-[24px] text-white">
               {translate(
-                'rootLayout.screens.paywallOnboarding.freeTierOfferings.title',
+                'rootLayout.screens.paywallOnboarding.freeTierOfferings.title'
               )}
             </Text>
 
@@ -191,20 +191,16 @@ const PaywallOnboarding = ({
               <CrownIllustration width={35} height={35} />
               <Text className="font-bold-nunito text-lg text-white">
                 {translate(
-                  'rootLayout.screens.paywallOnboarding.freeTierOfferings.firstOffering',
+                  'rootLayout.screens.paywallOnboarding.freeTierOfferings.firstOffering'
                 )}
               </Text>
             </View>
 
-            <View className="flex-row items-center gap-4">
-              <ScanIllustration
-                width={35}
-                height={35}
-                fill={isDark ? colors.white : colors.blackBeauty}
-              />
+            <View className="w-[95%] flex-row items-center gap-4">
+              <ScanIllustration width={35} height={35} fill={colors.white} />
               <Text className="font-bold-nunito text-lg text-white">
                 {translate(
-                  'rootLayout.screens.paywallOnboarding.freeTierOfferings.thirdOffering',
+                  'rootLayout.screens.paywallOnboarding.freeTierOfferings.thirdOffering'
                 )}
               </Text>
             </View>
@@ -213,7 +209,7 @@ const PaywallOnboarding = ({
               <NoAdsIllustration width={35} height={35} />
               <Text className="font-bold-nunito text-lg text-white">
                 {translate(
-                  'rootLayout.screens.paywallOnboarding.freeTierOfferings.secondOffering',
+                  'rootLayout.screens.paywallOnboarding.freeTierOfferings.secondOffering'
                 )}
               </Text>
             </View>
@@ -281,11 +277,11 @@ const formatPaywallOnboardingData = (offerings: any) => {
     {
       id: 'free_trial',
       title: translate(
-        'rootLayout.screens.paywallUpgradeScreen.firstOffering.title',
+        'rootLayout.screens.paywallUpgradeScreen.firstOffering.title'
       ),
       subtitle: translate(
         'rootLayout.screens.paywallUpgradeScreen.firstOffering.subtitle',
-        { freeScans: MAX_FREE_SCANS },
+        { freeScans: MAX_FREE_SCANS }
       ),
       price: 'Free',
       priceNumber: '',
@@ -299,13 +295,13 @@ const formatPaywallOnboardingData = (offerings: any) => {
     paywallData.push({
       id: offerings.monthly.product.identifier,
       title: translate(
-        'rootLayout.screens.paywallUpgradeScreen.secondOffering.title',
+        'rootLayout.screens.paywallUpgradeScreen.secondOffering.title'
       ),
       subtitle: translate(
         'rootLayout.screens.paywallUpgradeScreen.secondOffering.subtitle',
         {
           price: offerings.monthly.product.priceString,
-        },
+        }
       ),
       price: offerings.monthly.product.priceString,
       priceNumber: offerings.monthly.product.price,
@@ -319,11 +315,11 @@ const formatPaywallOnboardingData = (offerings: any) => {
     paywallData.push({
       id: offerings.annual.product.identifier,
       title: translate(
-        'rootLayout.screens.paywallUpgradeScreen.thirdOffering.title',
+        'rootLayout.screens.paywallUpgradeScreen.thirdOffering.title'
       ),
       subtitle: translate(
         'rootLayout.screens.paywallUpgradeScreen.thirdOffering.subtitle',
-        { price: offerings.annual.product.priceString },
+        { price: offerings.annual.product.priceString }
       ),
       price: offerings.annual.product.priceString,
       priceNumber: offerings.annual.product.price,
@@ -374,7 +370,7 @@ const updateUserAndNavigate = async ({
       router.navigate('/(tabs)');
       setIsFirstTime(false);
       logEvent(
-        `User ${userId} has been onboarded successfully and selected ${collectedData.selectedPackage} plan and is redirected to home screen`,
+        `User ${userId} has been onboarded successfully and selected ${collectedData.selectedPackage} plan and is redirected to home screen`
       );
     })
     .catch(() => {

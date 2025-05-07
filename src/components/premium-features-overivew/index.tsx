@@ -20,11 +20,11 @@ const PremiumFeaturesOverview = () => {
       <View
         className={`rotate-3 flex-row items-center justify-center rounded-xl bg-white shadow dark:bg-primary-900 ${isVerySmallDevice ? 'p-3' : 'p-6'}`}
       >
-        <View className="mr-3  items-center justify-center rounded-full border bg-primary-100">
+        <View className="mr-3 items-center justify-center rounded-full ">
           <ScanIllustration
-            fill={colors.neutral[500]}
-            width={isVerySmallDevice ? 30 : 52}
-            height={isVerySmallDevice ? 30 : 52}
+            fill={colors.primary[900]}
+            width={isVerySmallDevice ? 30 : 40}
+            height={isVerySmallDevice ? 30 : 40}
           />
         </View>
         <Text

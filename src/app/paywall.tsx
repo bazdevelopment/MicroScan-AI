@@ -178,7 +178,7 @@ const Paywall = () => {
                 />
               }
               onPress={router.back}
-              className="left-6 top-[-10] h-[30] w-[30] justify-center bg-transparent dark:bg-transparent"
+              className="left-6 top-[-10] size-[30] justify-center bg-transparent dark:bg-transparent"
             />
 
             <SnakeLine
@@ -213,13 +213,13 @@ const Paywall = () => {
                 </Text>
               </View>
 
-              <View className="flex-row items-center gap-4">
+              <View className="w-[95%] flex-row items-center gap-4">
                 <ScanIllustration
                   width={35}
                   height={35}
                   fill={isDark ? colors.white : colors.blackBeauty}
                 />
-                <Text className="font-bold-nunito text-lg text-white">
+                <Text className="w-full font-bold-nunito text-lg text-white">
                   {translate(
                     'rootLayout.screens.paywallOnboarding.freeTierOfferings.thirdOffering'
                   )}
