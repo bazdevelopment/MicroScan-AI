@@ -16,6 +16,9 @@ inputs:
   VERSION:
     required: true
     description: 'App version'
+  IOS_PLATFORM:
+    required: true
+    description: 'Platform (ios/android)'
   PATH:
     required: true
     description: 'Path for APK'
@@ -40,6 +43,7 @@ runs:
       shell: bash
 
     - name: Deploy APK to Firebase
+      if: ${{  inputs.IOS_PLATFORM == 'false'  }}
       uses: wzieba/Firebase-Distribution-Github-Action@v1
       with:
         debug: true
@@ -49,4 +53,13 @@ runs:
         file: ${{ steps.app-name.outputs.APP_NAME }}
         releaseNotes: ${{ inputs.release_notes }}
 
-      #  - name: Deploy IPA to firebase TBA
+    - name: Deploy APK to Firebase
+      if: ${{  inputs.IOS_PLATFORM == 'true'  }}
+      uses: nickwph/firebase-app-distribution-action@v1
+      with:
+        debug: true
+        app: ${{ inputs.FIREBASE_APP_ID }}
+        credentials-file: ${{ inputs.CREDENTIAL_FILE_CONTENT_GOOGLE_KEY }}
+        testers: 'bazilucm@gmail.com'
+        file: ${{ steps.app-name.outputs.APP_NAME }}
+        releaseNotes: ${{ inputs.release_notes }}

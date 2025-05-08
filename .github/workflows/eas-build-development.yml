@@ -32,30 +32,14 @@ on:
         type: string
 
 jobs:
-  determine-runner:
-    name: Determine Runner
-    runs-on: ubuntu-latest
-    outputs:
-      runner: ${{ steps.set-runner.outputs.runner }}
-    steps:
-      - name: Set runner based on inputs
-        id: set-runner
-        run: |
-          if [[ "${{ inputs.run_ios }}" == "true" && "${{ inputs.run_android }}" != "true" ]]; then
-            echo "runner=macos-latest" >> $GITHUB_OUTPUT
-          else
-            echo "runner=ubuntu-latest" >> $GITHUB_OUTPUT
-          fi
-
   setup:
     name: Setup Common Resources
-    needs: determine-runner
-    runs-on: ${{ needs.determine-runner.outputs.runner }}
+    runs-on: ubuntu-latest
 
     steps:
       - name: Check for EXPO_TOKEN
         run: |
-          if [ -z "${{ secrets.EXPO_TOKEN_MICROSCAN_AI }}" ]; then
+          if [ -z "${{ secrets.EXPO_TOKEN_MICROSCAN_AI  }}" ]; then
             echo "You must provide an EXPO_TOKEN secret linked to this project's Expo account in this repo's secrets. Learn more: https://docs.expo.dev/eas-update/github-actions"
             exit 1
           fi
@@ -110,7 +94,7 @@ jobs:
         uses: ./.github/actions/eas-build
         with:
           APP_ENV: development
-          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN_MICROSCAN_AI }}
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN_MICROSCAN_AI  }}
           VERSION: ${{ inputs.version }}
           FIREBASE_APP_ID_IOS: ${{ secrets.FIREBASE_APP_ID_IOS }}
           FIREBASE_APP_ID_ANDROID: ${{ secrets.FIREBASE_APP_ID_ANDROID }}
@@ -194,7 +178,7 @@ jobs:
   #   steps:
   #     - name: Check for EXPO_TOKEN
   #       run: |
-  #         if [ -z "${{ secrets.EXPO_TOKEN_MICROSCAN_AI }}" ]; then
+  #         if [ -z "${{ secrets.EXPO_TOKEN_MICROSCAN_AI  }}" ]; then
   #           echo "You must provide an EXPO_TOKEN secret linked to this project's Expo account in this repo's secrets. Learn more: https://docs.expo.dev/eas-update/github-actions"
   #           exit 1
   #         fi
@@ -262,7 +246,7 @@ jobs:
   #       uses: ./.github/actions/eas-build
   #       with:
   #         APP_ENV: development
-  #         EXPO_TOKEN: ${{ secrets.EXPO_TOKEN_MICROSCAN_AI }}
+  #         EXPO_TOKEN: ${{ secrets.EXPO_TOKEN_MICROSCAN_AI  }}
   #         VERSION: ${{ env.PACKAGE_VERSION }}
   #         FIREBASE_APP_ID_IOS: ${{ secrets.FIREBASE_APP_ID_IOS }}
   #         FIREBASE_APP_ID_ANDROID: ${{ secrets.FIREBASE_APP_ID_ANDROID }}

@@ -189,3 +189,4 @@ runs:
         VERSION: ${{ inputs.VERSION }}
         FIREBASE_APP_ID: ${{ inputs.FIREBASE_APP_ID_IOS }}
         CREDENTIAL_FILE_CONTENT_GOOGLE_KEY: ${{ inputs.CREDENTIAL_FILE_CONTENT_GOOGLE_KEY }}
+        IOS_PLATFORM: ${{ inputs.IOS }}
