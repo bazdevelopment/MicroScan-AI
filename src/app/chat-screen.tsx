@@ -417,7 +417,7 @@ const ChatScreen = () => {
             />
             <View className="item-center justify-center">
               <Text className="ml-2 font-bold-nunito text-xl dark:text-white">
-                Aria
+                Aura
               </Text>
               {isSending ? (
                 <Text className="ml-2 text-xs text-gray-500 dark:text-white">

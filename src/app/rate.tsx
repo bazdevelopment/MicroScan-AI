@@ -10,7 +10,9 @@ const Rate = () => {
   const handleFeedback = (isPositive: boolean) => {
     if (isPositive) {
       // Redirect happy users to the App Store
-      const storeUrl = DEVICE_TYPE.IOS ? '' : '';
+      const storeUrl = DEVICE_TYPE.IOS
+        ? 'https://apps.apple.com/us/app/microscan-ai-microscopy/id6744826886'
+        : '';
       Linking.openURL(storeUrl).catch((err) =>
         console.error('Error opening URL', err)
       );
