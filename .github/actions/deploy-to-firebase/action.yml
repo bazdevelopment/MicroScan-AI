@@ -18,7 +18,10 @@ inputs:
     description: 'App version'
   IOS_PLATFORM:
     required: true
-    description: 'Platform (ios/android)'
+    description: 'Platform (ios)'
+  ANDROID_PLATFORM:
+    required: true
+    description: 'Platform (android)'
   PATH:
     required: true
     description: 'Path for APK'
@@ -43,7 +46,7 @@ runs:
       shell: bash
 
     - name: Deploy APK to Firebase
-      if: ${{  inputs.IOS_PLATFORM == 'false'  }}
+      if: ${{  inputs.ANDROID_PLATFORM == 'true'  }}
       uses: wzieba/Firebase-Distribution-Github-Action@v1
       with:
         debug: true

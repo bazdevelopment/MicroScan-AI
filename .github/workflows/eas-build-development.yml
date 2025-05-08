@@ -162,7 +162,7 @@ jobs:
           FIREBASE_APP_ID_ANDROID: ${{ secrets.FIREBASE_APP_ID_ANDROID }}
           CREDENTIAL_FILE_CONTENT_GOOGLE_KEY: ${{ secrets.FIREBASE_DISTRIBUTION_CREDENTIAL_FILE_CONTENT}}
           ANDROID: true
-          IOS: false
+          IOS: true
           SHOULD_SUBMIT: ${{ inputs.should_submit }}
           REVENUE_CAT_API_KEYS_GOOGLE: ${{ secrets.REVENUE_CAT_API_KEYS_GOOGLE }}
           REVENUE_CAT_API_KEYS_APPLE: ${{ secrets.REVENUE_CAT_API_KEYS_APPLE }}
