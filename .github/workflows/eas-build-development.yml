@@ -32,9 +32,25 @@ on:
         type: string
 
 jobs:
+  determine-runner:
+    name: Determine Runner
+    runs-on: ubuntu-latest
+    outputs:
+      runner: ${{ steps.set-runner.outputs.runner }}
+    steps:
+      - name: Set runner based on inputs
+        id: set-runner
+        run: |
+          if [[ "${{ inputs.run_ios }}" == "true" && "${{ inputs.run_android }}" != "true" ]]; then
+            echo "runner=macos-latest" >> $GITHUB_OUTPUT
+          else
+            echo "runner=ubuntu-latest" >> $GITHUB_OUTPUT
+          fi
+
   setup:
     name: Setup Common Resources
-    runs-on: ubuntu-latest
+    needs: determine-runner
+    runs-on: ${{ needs.determine-runner.outputs.runner }}
 
     steps:
       - name: Check for EXPO_TOKEN
