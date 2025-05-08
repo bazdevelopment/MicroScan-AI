@@ -1,40 +1,40 @@
 {
   "project_info": {
-    "project_number": "663717706568",
-    "project_id": "microscan-ai-prod",
-    "storage_bucket": "microscan-ai-prod.firebasestorage.app"
+    "project_number": "519749271097",
+    "project_id": "microscan-ai-dev",
+    "storage_bucket": "microscan-ai-dev.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:663717706568:android:525516967e0c129034517d",
+        "mobilesdk_app_id": "1:519749271097:android:769ac85174c8aa052bd7e8",
         "android_client_info": {
-          "package_name": "com.microscanai"
+          "package_name": "com.microscanai.development"
         }
       },
       "oauth_client": [
         {
-          "client_id": "663717706568-dm05r6g7t793ca3l72o10i1pm4ttreq3.apps.googleusercontent.com",
+          "client_id": "519749271097-7brvf9limeg5dv4uhpt65vet5lbqifbe.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDLa-L9P86st_HoKKB9xQ6ZpD8UlEI3oLE"
+          "current_key": "AIzaSyCbUHGKHtwFDezrhHAS3WPWarfDhyXNtms"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "663717706568-dm05r6g7t793ca3l72o10i1pm4ttreq3.apps.googleusercontent.com",
+              "client_id": "519749271097-7brvf9limeg5dv4uhpt65vet5lbqifbe.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "663717706568-4akd79vpdhqb8aoalbvt134qkaa4hcug.apps.googleusercontent.com",
+              "client_id": "519749271097-l9jio2808h4uh2mltl0fi5jscd872tcn.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.microscanai"
+                "bundle_id": "com.microscanai.development"
               }
             }
           ]
