@@ -1,8 +1,9 @@
-import { Env } from '@env';
 import axios from 'axios';
 import { firebaseCloudFunctionsInstance } from 'firebase/config';
 import { uploadFilesToFirebase } from 'firebase/utils';
 import { generateUniqueId } from 'functions/utilities/generate-unique-id';
+
+import { Env } from '@/core/env';
 
 export const analyzeImageUsingAi = async (
   payload: FormData,

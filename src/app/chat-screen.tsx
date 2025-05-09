@@ -31,7 +31,6 @@ import AttachmentPreview from '@/components/attachment-preview';
 import BounceLoader from '@/components/bounce-loader';
 import Branding from '@/components/branding';
 import Icon from '@/components/icon';
-import Toast from '@/components/toast';
 import { LOADING_MESSAGES_CHATBOT } from '@/constants/loading-messages';
 import { DEVICE_TYPE, translate } from '@/core';
 import useBackHandler from '@/core/hooks/use-back-handler';
@@ -367,14 +366,15 @@ const ChatScreen = () => {
     };
   }, []);
 
-  useEffect(() => {
-    if (!isLoading && conversationMode === 'IMAGE_SCAN_CONVERSATION') {
-      Toast.warning(translate('alerts.medicalDisclaimerAlert'), {
-        closeButton: true,
-        duration: 8000,
-      });
-    }
-  }, [isLoading, conversationMode]);
+  //!disable medical disclaimer alert for now
+  // useEffect(() => {
+  //   if (!isLoading && conversationMode === 'IMAGE_SCAN_CONVERSATION') {
+  //     Toast.warning(translate('alerts.medicalDisclaimerAlert'), {
+  //       closeButton: true,
+  //       duration: 8000,
+  //     });
+  //   }
+  // }, [isLoading, conversationMode]);
 
   if (isLoading) {
     return (
@@ -417,7 +417,7 @@ const ChatScreen = () => {
             />
             <View className="item-center justify-center">
               <Text className="ml-2 font-bold-nunito text-xl dark:text-white">
-                Aria
+                Aura
               </Text>
               {isSending ? (
                 <Text className="ml-2 text-xs text-gray-500 dark:text-white">

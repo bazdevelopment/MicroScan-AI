@@ -111,6 +111,7 @@ const Paywall = () => {
   )?.priceNumber;
 
   const discount = calculateAnnualDiscount(pricePerMonth, pricePerYear);
+
   const onSelect = (planId: string) => setSelectedPlan(planId);
 
   const handlePurchase = async () => {

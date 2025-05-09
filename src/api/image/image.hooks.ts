@@ -62,12 +62,12 @@ export const useAnalyzeImage = ({
         });
 
         logEvent(
-          'Failure when analyzing medical image - scan limit reached',
+          'Failure when analyzing microscopy image - scan limit reached',
           'error'
         );
         recordError(
           error,
-          'Failure when analyzing medical image - scan limit reached'
+          'Failure when analyzing microscopy image - scan limit reached'
         );
 
         return Toast.warning(limitReachedMessage, {
@@ -93,8 +93,8 @@ export const useAnalyzeImage = ({
         });
       }
       Toast.error(error.response.data.message);
-      logEvent('Failure when analyzing medical image', 'error');
-      recordError(error, 'Failure when analyzing medical image');
+      logEvent('Failure when analyzing microscopy image', 'error');
+      recordError(error, 'Failure when analyzing microscopy image');
     },
   });
 };
@@ -140,12 +140,12 @@ export const useAnalyzeVideo = ({
         });
 
         logEvent(
-          'Failure when analyzing medical image - scan limit reached',
+          'Failure when analyzing microscopy image - scan limit reached',
           'error'
         );
         recordError(
           error,
-          'Failure when analyzing medical image - scan limit reached'
+          'Failure when analyzing microscopy image - scan limit reached'
         );
 
         return Toast.warning(limitReachedMessage, {
@@ -172,8 +172,8 @@ export const useAnalyzeVideo = ({
       }
 
       Toast.error(error?.response?.data?.message);
-      logEvent('Failure when analyzing medical vide', 'error');
-      recordError(error, 'Failure when analyzing medical video');
+      logEvent('Failure when analyzing microscopy vide', 'error');
+      recordError(error, 'Failure when analyzing microscopy video');
     },
   });
 };

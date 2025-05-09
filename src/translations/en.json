@@ -188,8 +188,8 @@
       "generateReportScreen": {
         "title": "We appreciate your patience! Here’s your AI report. ",
         "userInput": "Your Submission",
-        "medicalReport": "Medical Report",
-        "report": "AI-Generated Medical Report",
+        "medicalReport": "Microscopy Report",
+        "report": "AI-Generated Microscopy Report",
         "conversationName": "Conversation name"
       },
       "verifyEmail": {
@@ -200,7 +200,7 @@
       },
       "disclaimerScreen": {
         "heading": "Important Disclaimer",
-        "subheading": "MicroScan AI is designed for microscopy professionals, researchers, medical students, and enthusiasts",
+        "subheading": "MicroScan AI is designed for microscopy professionals, researchers, students, and enthusiasts",
         "consentAgreement": "I have read and consent to the disclaimer.",
         "firstConsent": "MicroScan AI does not provide health measurements, diagnoses, or treatment advice, nor is it intended for such purposes. Users of MicroScan AI must apply their clinical judgment and verify information from authoritative sources before making any clinical decisions.",
         "secondConsent": "MicroScan AI is not a diagnostic tool, treatment platform, or a replacement for professional medical advice. It offers AI-generated insights to assist healthcare professionals in accessing medical knowledge and analyzing medical images and documents. MicroScan AI is an AI-driven informational and educational app designed more to support licensed healthcare professionals.",
@@ -233,12 +233,12 @@
         "message": "This is the report result!"
       },
       "uploadFile": {
-        "title": "Upload any microscopy image for analysis",
+        "title": "Upload any microscopy sample for analysis",
         "size": "Max: {{imageLimit}}MB (images), {{videoLimit}}MB (videos)",
         "location": "Select from Gallery or Files",
         "fileType": "PNG, JPG, PDF, or MP4",
         "openCamera": "Open Camera & Take Photo",
-        "scanType": "Only X-Rays, CT, MRI, PET, or other medical imaging allowed"
+        "scanType": "Only X-Rays, CT, MRI, PET, or other microscopy samples allowed"
       }
     }
   },
@@ -247,7 +247,7 @@
     "homeForeground": {
       "maxNumberOfScans": "You've reached your scan limit! Upgrade your plan now to unlock more scans. 🚀",
       "heading": "Welcome to MicroScan AI!",
-      "subHeading": "Get AI-powered analysis of any microscopy images in seconds"
+      "subHeading": "Get AI-powered analysis of any microscopy samples in seconds"
     },
     "scanCategories": {
       "heading": "Microscopy Reel"
@@ -423,6 +423,6 @@
     "restorationSuccessful": "Restoration was successful! Enjoy!",
     "restorationError": "An error occurred while restoring the purchase.",
     "medicalDisclaimerAlert": "MicroScan AI app does not offer diagnoses, treatment recommendations, or any medical advice. Always seek guidance from a qualified healthcare professional for medical decisions.",
-    "scanLimitReached": "We're optimizing scan quality for you! You'll be able to scan again in around {{hours}} hours and {{minutes}} minutes. Have any questions about any medical topic? Ask our chat assistant while you wait!"
+    "scanLimitReached": "We're optimizing scan quality for you! You'll be able to scan again in around {{hours}} hours and {{minutes}} minutes. Have any questions about any microscopy topic? Ask our chat assistant while you wait!"
   }
 }

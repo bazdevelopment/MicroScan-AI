@@ -1,6 +1,6 @@
 {
   "onboarding": {
-    "message": "欢迎使用 MicroScan AI!"
+    "message": "欢迎来到 MicroScan AI！"
   },
   "general": {
     "back": "返回",
@@ -31,17 +31,17 @@
     "skip": "跳过",
     "next": "下一步",
     "update": "更新",
-    "tryAgain": "重试",
-    "createdAt": "创建时间",
+    "tryAgain": "再试一次",
+    "createdAt": "创建于",
     "and": "和",
     "saveDiscount": "节省",
     "restorePurchase": "恢复购买",
     "medicalDisclaimer": "医疗免责声明",
-    "conversationHistory": "对话历史",
+    "conversationHistory": "对话历史记录",
     "freeTrial": "免费试用",
     "completedScans": "已完成扫描",
-    "activeSubscription": "订阅有效",
-    "askAssistant": "咨询AI助手",
+    "activeSubscription": "订阅活跃",
+    "askAssistant": "询问AI助手",
     "copyText": {
       "loading": "正在复制...",
       "copied": "已复制！",
@@ -52,28 +52,28 @@
         "first": "正在加载您的个性化体验...",
         "second": "正在同步系统...",
         "third": "正在处理您的数据...",
-        "fourth": "即将准备就绪，请稍候..."
+        "fourth": "快准备好了，请稍等..."
       },
       "imageScanningLoading": {
-        "first": "正在扫描您的显微图像，请稍等...",
+        "first": "正在扫描您的显微图像，请稍候...",
         "second": "正在分析细节，这可能需要一些时间...",
         "third": "正在提高准确性以获得最佳结果...",
         "fourth": "即将完成，正在最终确定扫描..."
       },
       "loadingChatbot": {
         "first": "Aura 正在准备协助您...",
-        "second": "请稍候！Aura 正在准备您的回复...",
-        "third": "思考中... 您的助手 Aura 正在处理！"
+        "second": "请稍等！Aura 正在准备您的回复...",
+        "third": "正在思考...您的助手 Aura 正在处理！"
       }
     }
   },
   "backHandler": {
-    "holdOn": "请稍候！",
-    "goBackMessage": "确定要返回吗？"
+    "holdOn": "请稍等！",
+    "goBackMessage": "您确定要返回吗？"
   },
   "internet": {
     "noConnectionTitle": "您已离线！",
-    "noConnectionMessage": "请开启移动数据或连接到 Wi-Fi。或者休息一下出去散步！"
+    "noConnectionMessage": "打开移动数据或连接到 Wi-Fi。或者只是休息一下，去散散步！"
   },
   "uploadScan": {
     "title": "上传图片",
@@ -87,14 +87,14 @@
     "verifyAuthCode": "验证认证码",
     "verifyAuthCodeButton": "验证码",
     "authCodeHeading": "认证码",
-    "loginViaEmailHeading": "让我们帮您登录。请输入您的电子邮件以继续。",
+    "loginViaEmailHeading": "让我们登录。请输入您的电子邮件继续。",
     "emailAddress": "电子邮件"
   },
   "rootLayout": {
     "screens": {
       "welcome": {
-        "heading": "欢迎使用 MicroScan AI!",
-        "startButton": "开始使用！",
+        "heading": "欢迎来到 MicroScan AI！",
+        "startButton": "让我们开始吧！",
         "accountButton": "我已有帐户"
       },
       "login": {
@@ -103,20 +103,20 @@
         "privacyPolicy": "隐私政策"
       },
       "verifyAuthCode": {
-        "verificationCodeHeading": "请输入通过电子邮件发送的验证码。请注意，该代码将在 5 分钟后过期。",
+        "verificationCodeHeading": "输入通过电子邮件发送的验证码。请注意，代码将在 5 分钟后过期。",
         "verificationCodeSent": "我们已将验证码发送至",
-        "verificationCodeMissing": "未收到验证码？",
-        "resendCode": "重新发送验证码",
+        "verificationCodeMissing": "没有收到验证码？",
+        "resendCode": "重发验证码",
         "backToLogin": "返回登录"
       },
       "namePreferenceScreen": {
-        "heading": "让我们更个性化！",
-        "preferredNameQuestion": "您希望我们怎么称呼您？",
-        "placeholderPreferredName": "例如：酷船长、蜂王，或者就叫 Alex！"
+        "heading": "让我们让它更个性化！",
+        "preferredNameQuestion": "我们该怎么称呼您？",
+        "placeholderPreferredName": "例如：酷船长、蜂王，或者只是 Alex！"
       },
       "freeTrialPreview": {
         "heading": "享受您的免费试用！🎉",
-        "subheading": "在免费试用期间体验这些惊人福利"
+        "subheading": "在免费试用期间体验这些惊人的好处"
       },
       "scanInterpretation": {
         "title": "分析结果",
@@ -124,15 +124,15 @@
       },
       "paywallOnboarding": {
         "freeTierOfferings": {
-          "title": "立即解锁高级功能！🎉",
+          "title": "今天就解锁高级功能！🎉",
           "firstOffering": "访问所有高级功能",
           "secondOffering": "无广告体验",
-          "thirdOffering": "合理使用范围内的无限次扫描",
-          "fourthOffering": "公平使用和 24/7 个人 AI 助理访问的无限次扫描"
+          "thirdOffering": "合理使用范围内的无限扫描",
+          "fourthOffering": "公平使用下的无限扫描和全天候个人AI助手访问"
         }
       },
       "paywallUpgradeScreen": {
-        "heading": "立即解锁高级功能！🎉",
+        "heading": "今天就解锁高级功能！🎉",
         "firstOffering": {
           "title": "开始免费试用",
           "subtitle": "享受 {{freeScans}} 次免费扫描 – 无需付款"
@@ -143,18 +143,18 @@
         },
         "thirdOffering": {
           "title": "年付",
-          "subtitle": "最划算：{{ price }}/年 – 节省更多！"
+          "subtitle": "最佳优惠：{{ price }}/年 – 节省更多！"
         }
       },
       "newAppVersionScreen": {
-        "heading": "MicroScan AI 有新版本可用",
-        "subheading": "请更新到最新版本以继续使用应用程序",
+        "heading": "MicroScan AI 的新版本可用",
+        "subheading": "请更新至最新版本以继续使用该应用",
         "action": "立即获取！"
       },
       "rateAppScreen": {
-        "heading": "您认为此应用有价值且引人入胜吗？",
-        "like": "是的，我很喜欢！",
-        "dislike": "不太是..."
+        "heading": "您觉得这个应用有价值且引人入胜吗？",
+        "like": "是的，我喜欢！",
+        "dislike": "不太喜欢..."
       },
       "noInternetScreen": {
         "heading": "您已离线",
@@ -162,7 +162,7 @@
       },
       "notifications": {
         "title": "通知",
-        "noNotifications": "暂时没有通知 — 请继续关注更新！"
+        "noNotifications": "暂时没有通知 - 请持续关注更新！"
       },
       "termsOfService": {
         "title": "服务条款"
@@ -172,10 +172,10 @@
       },
       "share": {
         "title": "分享",
-        "heading": "分享 MicroScan AI App",
-        "subheading": "帮助他人发现 AI 驱动的 X 射线分析的强大功能",
+        "heading": "分享 MicroScan AI 应用",
+        "subheading": "帮助他人发现 AI 驱动的 X 光分析的强大功能",
         "scanMessage": "扫描下载应用",
-        "shareMessage": "或通过您喜欢的平台分享"
+        "shareMessage": "或通过您喜爱的平台分享"
       },
       "rate": {
         "title": "给我们反馈！"
@@ -183,13 +183,13 @@
       "profile": {
         "title": "个人资料",
         "edit": "编辑个人资料",
-        "placeholderPreferredName": "例如：酷船长、蜂王，或者就叫 Alex！"
+        "placeholderPreferredName": "例如：酷船长、蜂王，或者只是 Alex！"
       },
       "generateReportScreen": {
-        "title": "感谢您的耐心等待！这是您的 AI 报告。",
-        "userInput": "您的提交内容",
-        "medicalReport": "医疗报告",
-        "report": "AI 生成医疗报告",
+        "title": "感谢您的耐心等待！这是您的 AI 报告。 ",
+        "userInput": "您的提交",
+        "medicalReport": "显微镜报告",
+        "report": "AI 生成的显微镜报告",
         "conversationName": "对话名称"
       },
       "verifyEmail": {
@@ -200,26 +200,26 @@
       },
       "disclaimerScreen": {
         "heading": "重要免责声明",
-        "subheading": "MicroScan AI 专为显微镜专业人士、研究人员、医学生和爱好者设计",
+        "subheading": "MicroScan AI 专为显微镜专业人士、研究人员、学生和爱好者设计",
         "consentAgreement": "我已阅读并同意免责声明。",
-        "firstConsent": "MicroScan AI 不提供健康测量、诊断或治疗建议，也不旨在用于此类目的。MicroScan AI 用户在做出任何临床决策之前，必须运用其临床判断并核实权威来源的信息。",
-        "secondConsent": "MicroScan AI 不是诊断工具、治疗平台或专业医疗建议的替代品。它提供 AI 生成的见解，以协助医护专业人员获取医疗知识并分析医学图像和文档。MicroScan AI 是一款由 AI 驱动的信息和教育应用，旨在更多地支持持牌医护专业人员。",
-        "fourthConsent": "MicroScan AI 不被归类为医疗器械，也不声称获得监管批准。它旨在用于教育和信息目的，以补充专业知识。",
-        "fifthConsent": "MicroScan AI 不收集、存储或处理个人或患者数据。所有用户交互都是保密的，仅限于应用范围。",
-        "contactUs": {
-          "heading": "请随时直接给我们发送电子邮件，我们的团队将尽快与您联系",
-          "customerSupport": "客户支持",
-          "emailAddress": "电子邮件地址"
-        }
+        "firstConsent": "MicroScan AI 不提供健康测量、诊断或治疗建议，也不旨在用于此类目的。MicroScan AI 的用户在做出任何临床决定前必须运用其临床判断力并从权威来源核实信息。",
+        "secondConsent": "MicroScan AI 不是诊断工具、治疗平台或专业医疗建议的替代品。它提供 AI 生成的见解，以帮助医疗保健专业人员获取医学知识并分析医学图像和文档。MicroScan AI 是一个由 AI 驱动的信息和教育应用，主要用于支持持牌医疗保健专业人员。",
+        "fourthConsent": "MicroScan AI 未被归类为医疗设备，也不声称获得监管批准。它旨在用于教育和信息目的，以补充专业知识。",
+        "fifthConsent": "MicroScan AI 不收集、存储或处理个人或患者数据。所有用户互动都是保密的，且仅限于应用范围。"
+      },
+      "contactUs": {
+        "heading": "请随时直接给我们发送电子邮件，我们的团队将尽快回复您",
+        "customerSupport": "客户支持",
+        "emailAddress": "电子邮件地址"
       }
     }
   },
   "deleteApp": {
     "title": "等等！不要删除我！",
-    "subtitle": "请改为发送反馈"
+    "subtitle": "改为发送反馈"
   },
   "pdfPreview": {
-    "noEditorInstalled": "要预览 PDF，请确保您已安装 PDF 查看器，例如 Adobe Acrobat Reader 或 Google PDF Viewer",
+    "noEditorInstalled": "要预览 PDF，请确保您已安装 PDF 阅读器，例如 Adobe Acrobat Reader 或 Google PDF Viewer。",
     "conversationTitlePdf": "与您的 AI 助手 Aura 的对话"
   },
   "flows": {
@@ -231,33 +231,33 @@
         "message": "这是报告结果！"
       },
       "uploadFile": {
-        "title": "上传任意显微图像进行分析",
-        "size": "最大：{{imageLimit}}MB (图像), {{videoLimit}}MB (视频)",
+        "title": "上传任何显微镜样本进行分析",
+        "size": "最大：{{imageLimit}}MB（图片），{{videoLimit}}MB（视频）",
         "location": "从图库或文件选择",
-        "fileType": "PNG, JPG, PDF 或 MP4",
+        "fileType": "PNG、JPG、PDF 或 MP4",
         "openCamera": "打开相机并拍照",
-        "scanType": "仅允许 X 射线、CT、MRI、PET 或其他医学影像"
+        "scanType": "只允许 X 光、CT、MRI、PET 或其他显微镜样本"
       }
     }
   },
   "home": {
-    "tab": "首页",
+    "tab": "主页",
     "homeForeground": {
       "maxNumberOfScans": "您已达到扫描限制！立即升级您的计划以解锁更多扫描。🚀",
-      "heading": "欢迎使用 MicroScan AI!",
-      "subHeading": "在几秒钟内获取任意显微图像的 AI 驱动分析"
+      "heading": "欢迎来到 MicroScan AI！",
+      "subHeading": "在几秒钟内获取任何显微镜图像的 AI 驱动分析"
     },
     "scanCategories": {
-      "heading": "显微镜卷轴"
+      "heading": "显微镜精选"
     },
     "recentReports": {
-      "heading": "最近的聊天",
-      "noReports": "暂时没有聊天记录！"
+      "heading": "最近聊天",
+      "noReports": "暂时没有聊天可显示！"
     }
   },
   "reports": {
     "tab": "历史记录",
-    "noReportsAvailable": "此日期没有聊天记录",
+    "noReportsAvailable": "此日期没有聊天记录可用",
     "heading": "聊天历史记录"
   },
   "settings": {
@@ -269,7 +269,7 @@
     "languages": {
       "arabic": "阿拉伯语",
       "english": "英语",
-      "mandarin_chinese": "中文",
+      "mandarin_chinese": "汉语",
       "spanish": "西班牙语",
       "hindi": "印地语",
       "portuguese": "葡萄牙语",
@@ -280,7 +280,7 @@
       "french": "法语",
       "romanian": "罗马尼亚语"
     },
-    "generale": "通用",
+    "generale": "常规",
     "github": "Github",
     "language": "语言",
     "links": "链接",
@@ -288,7 +288,7 @@
     "more": "更多",
     "privacy": "隐私政策",
     "faq": "常见问题",
-    "rate": "评分",
+    "rate": "评价",
     "share": "分享",
     "support": "支持",
     "support_us": "支持我们",
@@ -313,7 +313,7 @@
     },
     "ScanReportCard": {
       "promptMessage": "原因是什么？",
-      "unnamedConversation": "无标题",
+      "unnamedConversation": "无标题对话",
       "reportTitlePlaceholder": "添加标题"
     },
     "WeekBlock": {
@@ -324,7 +324,7 @@
     },
     "FreeTierStatus": {
       "heading": "免费扫描",
-      "subheading": "升级您的计划以解锁无限次扫描",
+      "subheading": "升级您的计划以解锁无限扫描",
       "action": "升级"
     },
     "UploadFileOptionsModal": {
@@ -335,19 +335,19 @@
     },
     "UpgradeBanner": {
       "heading": "立即升级",
-      "subheading": "升级您的计划以解锁无限次扫描"
+      "subheading": "升级您的计划以解锁无限扫描"
     },
     "PromptSection": {
       "message": "您的扫描已准备就绪！现在，您想了解什么？",
       "prompts": {
-        "first": "此图像中存在哪些细胞类型或结构？",
-        "second": "此样本中是否存在任何异常或病原体？",
-        "third": "此样本可能的来源或状况是什么？",
+        "first": "这张图片中存在哪些细胞类型或结构？",
+        "second": "此样本中是否存在异常或病原体？",
+        "third": "此样本的可能来源或状况是什么？",
         "fourth": "您可以从这张图片中提供哪些见解？"
       }
     },
     "PremiumFeaturesOverview": {
-      "first": "获取 {{freeScans}} 次免费扫描",
+      "first": "获得 {{freeScans}} 次免费扫描",
       "second": "访问所有高级功能",
       "third": "无广告"
     },
@@ -361,37 +361,37 @@
     "ImageAnnotationStudio": {
       "instructions": {
         "title": "说明",
-        "first": "1. 点击“添加方形”按钮创建一个选择框。",
-        "second": "2. 将方形拖动到您感兴趣的区域上。",
-        "third": "3. 调整角以精确覆盖该区域。"
+        "first": "1. 点击“添加方块”按钮创建选择方块。",
+        "second": "2. 将方块拖动到您感兴趣的区域。",
+        "third": "3. 调整角点以精确覆盖区域。"
       },
       "OpenStudioSection": {
         "openStudioButton": "打开工作室",
         "editMore": "编辑更多",
-        "continueEditing": "继续编辑您的注释？",
-        "highlightedRegionsCount": "您有 {{highlightedRegions}} 个突出显示的区域。点击下方添加更多",
-        "highlightRegions": "需要突出显示显微图像的区域吗？"
+        "continueEditing": "继续编辑您的注释吗？",
+        "highlightedRegionsCount": "您有 {{highlightedRegions}} 个高亮区域。点击下方添加更多",
+        "highlightRegions": "需要高亮显示显微图像的区域吗？"
       },
       "studioToolbar": {
-        "addSquare": "添加方形"
+        "addSquare": "添加方块"
       }
     }
   },
   "alerts": {
-    "mediaPickerPermissions": "抱歉，我们需要相机权限才能正常工作！",
-    "errorSelectingImagePicker": "选择图像时发生错误。请重试。",
-    "errorSelectingDocumentPicker": "选择文档时发生错误。请重试。",
-    "errorTakingPicture": "拍照时发生错误。请重试。",
+    "mediaPickerPermissions": "抱歉，我们需要相机权限才能使此功能正常工作！",
+    "errorSelectingImagePicker": "选择图片时出现问题。请再试一次。",
+    "errorSelectingDocumentPicker": "选择文档时出现问题。请再试一次。",
+    "errorTakingPicture": "拍照时出现问题。请再试一次。",
     "enableNotifications": {
       "heading": "启用通知",
-      "subHeading": "通知目前已关闭。要获取更新，请在您的设备设置中启用它们。"
+      "subHeading": "通知当前已关闭。要保持更新，请在设备设置中启用它们。"
     },
-    "enableNotificationFailed": "推送通知已禁用。请在设置中启用它们以接收重要更新！",
+    "enableNotificationFailed": "推送通知已禁用。在设置中启用它们以接收重要更新！",
     "enableNotificationError": "启用通知时发生错误",
-    "notificationDisabledSuccess": "通知已成功禁用。",
-    "notificationDisabledRegisterError": "取消注册设备以接收通知失败。",
+    "notificationDisabledSuccess": "已成功禁用通知。",
+    "notificationDisabledRegisterError": "无法取消注册设备接收通知。",
     "notificationDisabledError": "禁用通知时发生错误。",
-    "checkNotificationStatusError": "检查通知状态时发生错误。",
+    "checkNotificationStatusError": "检查通知状态时出错。",
     "projectIdNotFound": "未找到通知项目 ID。",
     "imageSizeLarge": "图片太大！文件大小为 {{fileSize}} MB，但限制为 {{imageLimit}} MB。",
     "videoSizeLarge": "视频太大！文件大小为 {{fileSize}} MB，但限制为 {{videoLimit}} MB。",
@@ -406,20 +406,20 @@
     "sharingLinkError": "分享链接失败。",
     "individualPushNotificationSuccess": "个人推送通知发送成功！",
     "globalPushNotificationSuccess": "全球推送通知发送成功！🌍🚀",
-    "interpretationFieldsUpdateFail": "更新解读字段失败！❌",
-    "deleteScanReportFail": "无法删除扫描报告。请重试",
-    "onboardingUnsuccessful": "新手引导未成功。请重试",
-    "logoutUnsuccessful": "退出登录未成功。请重试",
-    "deleteScanReportQuestion": "确定要永久删除此报告吗？",
-    "videoLimitExceeds": "您的视频超过了 {{videoSecondsLimit}} 秒的限制。请修剪后重新上传",
+    "interpretationFieldsUpdateFail": "更新解释字段失败！❌",
+    "deleteScanReportFail": "无法删除扫描报告。请再试一次",
+    "onboardingUnsuccessful": "入门失败。请再试一次",
+    "logoutUnsuccessful": "退出登录失败。请再试一次",
+    "deleteScanReportQuestion": "您确定要永久删除此报告吗？",
+    "videoLimitExceeds": "您的视频超过 {{videoSecondsLimit}} 秒的限制。请修剪并重新上传",
     "subscriptionActivated": "您的订阅已成功激活！享受您的专属福利！",
-    "subscriptionCancelledByUser": "您已取消交易。请随时重试！",
-    "subscriptionActivationFailed": "激活您的订阅失败。请重试",
-    "logoutQuestion": "确定要退出登录吗？",
-    "noSubscriptionToRestore": "糟糕！您当前似乎没有有效订阅。要继续享受完整访问权限，请选择我们的一个订阅计划。",
-    "restorationSuccessful": "恢复成功！尽情享受吧！",
+    "subscriptionCancelledByUser": "您已取消交易。请随时再试一次！",
+    "subscriptionActivationFailed": "激活您的订阅失败。请再试一次",
+    "logoutQuestion": "您确定要退出登录吗？",
+    "noSubscriptionToRestore": "哎呀！您当前似乎没有活跃订阅。要继续享受完全访问权限，请选择我们的订阅计划之一。",
+    "restorationSuccessful": "恢复成功！享受吧！",
     "restorationError": "恢复购买时发生错误。",
-    "medicalDisclaimerAlert": "MicroScan AI 应用不提供诊断、治疗建议或任何医疗建议。请始终寻求合格医疗专业人员的指导以做出医疗决策。",
-    "scanLimitReached": "我们正在为您优化扫描质量！您大约在 {{hours}} 小时 {{minutes}} 分钟后即可再次扫描。对任何医学主题有疑问吗？在等待期间咨询我们的聊天助手！"
+    "medicalDisclaimerAlert": "MicroScan AI 应用不提供诊断、治疗建议或任何医疗建议。对于医疗决策，请务必寻求合格医疗保健专业人士的指导。",
+    "scanLimitReached": "我们正在为您优化扫描质量！您大约在 {{hours}} 小时 {{minutes}} 分钟后可以再次扫描。对任何显微镜主题有疑问吗？等待时请询问我们的聊天助手！"
   }
 }

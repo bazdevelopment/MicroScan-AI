@@ -10,13 +10,15 @@ const Rate = () => {
   const handleFeedback = (isPositive: boolean) => {
     if (isPositive) {
       // Redirect happy users to the App Store
-      const storeUrl = DEVICE_TYPE.IOS ? '' : '';
+      const storeUrl = DEVICE_TYPE.IOS
+        ? 'https://apps.apple.com/us/app/microscan-ai-microscopy/id6744826886'
+        : 'https://play.google.com/store/apps/details?id=com.microscanai';
       Linking.openURL(storeUrl).catch((err) =>
         console.error('Error opening URL', err)
       );
     } else {
       // Redirect unhappy users to a Google Form
-      const googleFormUrl = '';
+      const googleFormUrl = 'https://forms.gle/amT8pXTc4M36HGUe7';
       Linking.openURL(googleFormUrl).catch((err) =>
         console.error('Error opening URL', err)
       );
