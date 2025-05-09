@@ -16,7 +16,7 @@ const NewAppVersion = () => {
     // Determine the URL based on device type
     const storeUrl = DEVICE_TYPE.IOS
       ? 'https://apps.apple.com/us/app/microscan-ai-microscopy/id6744826886'
-      : '';
+      : 'https://play.google.com/store/apps/details?id=com.microscanai';
 
     // Try opening the appropriate URL
     Linking.openURL(storeUrl).catch((err) => {

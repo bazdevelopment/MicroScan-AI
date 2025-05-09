@@ -100,7 +100,6 @@
 				D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */,
 				C2C8316D5A5641E38951BB7B /* Resources */,
 				A5D40980B522445EB1E964F0 /* GoogleService-Info.plist */,
-				B1F981CF182C4EC5B6680925 /* noop-file.swift */,
 				DDFF27FF17AE490385E5FE56 /* SplashScreen.storyboard */,
 			);
 			indentWidth = 2;
@@ -467,8 +466,8 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.microscanai.development";
-				PRODUCT_NAME = "MicroScanAI";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microscanai;
+				PRODUCT_NAME = MicroScanAI;
 				SWIFT_OBJC_BRIDGING_HEADER = "MicroScanAI/MicroScanAI-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -499,8 +498,8 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.microscanai.development";
-				PRODUCT_NAME = "MicroScanAI";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microscanai;
+				PRODUCT_NAME = MicroScanAI;
 				SWIFT_OBJC_BRIDGING_HEADER = "MicroScanAI/MicroScanAI-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -578,7 +577,10 @@
 				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -647,7 +649,10 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;

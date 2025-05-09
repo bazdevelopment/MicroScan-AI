@@ -27,7 +27,7 @@ export const ShareItem = () => {
   const isDark = colorScheme === 'dark';
   const appLink = DEVICE_TYPE.IOS
     ? 'https://apps.apple.com/us/app/microscan-ai-microscopy/id6744826886'
-    : '';
+    : 'https://play.google.com/store/apps/details?id=com.microscanai';
 
   const iconColor = isDark ? colors.neutral[50] : colors.black;
 

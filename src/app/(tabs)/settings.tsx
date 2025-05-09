@@ -209,8 +209,8 @@ export default function Settings() {
                           title:
                             'Hinweis zu persönlichen medizinischen Bildern',
                           body: 'Wir empfehlen NICHT, persönliche medizinische Bilder zur individuellen Analyse auf MicroScan AI hochzuladen, da die Ergebnisse nicht als endgültig betrachtet werden sollten. Unsere KI-Modelle werden noch erforscht und verfeinert und es können potenzielle Ungenauigkeiten auftreten. Es eignet sich hervorragend zum Lernen und um allgemeine Einblicke zu gewinnen, für ausführlichere Überprüfungen sollten Sie jedoch einen Spezialisten konsultieren. Wenn Sie Fragen haben, kontaktieren Sie uns per E-Mail - microscanaiapp@gmail.com',
-                          // title: 'Notice About Personal Medical Images',
-                          // body: 'We DO NOT encourage uploading personal medical images to MicroScan AI for individual analysis, as the results should not be considered final. Our AI models are still being researched and refined, and potential inaccuracies may occur. It’s great for learning and get general insights, but for in-depth reviews, consult a specialist. If you have any questions contact us via email - microscanaiapp@gmail.com',
+                          // title: 'Notice About Personal microscopy Images',
+                          // body: 'We DO NOT encourage uploading personal microscopy images to MicroScan AI for individual analysis, as the results should not be considered final. Our AI models are still being researched and refined, and potential inaccuracies may occur. It’s great for learning and get general insights, but for in-depth reviews, consult a specialist. If you have any questions contact us via email - microscanaiapp@gmail.com',
                           userId: '',
                           language,
                         })

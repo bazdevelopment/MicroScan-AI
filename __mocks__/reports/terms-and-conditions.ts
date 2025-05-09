@@ -7,9 +7,9 @@ export const TERMS_AND_CONDITIONS = {
         'By accessing and using MicroScan AI, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this application.',
     },
     {
-      section: '2. Medical Disclaimer',
+      section: '2. microscopy Disclaimer',
       content:
-        'The interpretations provided by MicroScan AI are based on automated algorithms and should not be used as a replacement for professional medical advice, diagnosis, or treatment. Always consult with a qualified healthcare provider regarding any medical conditions or concerns.',
+        'The interpretations provided by MicroScan AI are based on automated algorithms and should not be used as a replacement for professional microscopy advice, diagnosis, or treatment. Always consult with a qualified healthcare provider regarding any microscopy conditions or concerns.',
     },
     {
       section: '3. Use License',

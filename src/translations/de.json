@@ -18,11 +18,11 @@
     "new": "Neu",
     "yes": "Ja",
     "or": "oder",
-    "typing": "Am Tippen...",
+    "typing": "Schreibt...",
     "online": "Online",
-    "chatbotPlaceholder": "Frag mich alles...",
+    "chatbotPlaceholder": "Fragen Sie mich alles...",
     "openSettings": "Einstellungen öffnen",
-    "seeNotifications": "Benachrichtigungen ansehen",
+    "seeNotifications": "Benachrichtigungen anzeigen",
     "viewProfile": "Profil anzeigen",
     "upgradePlan": "Plan upgraden",
     "download": "Herunterladen",
@@ -31,49 +31,49 @@
     "skip": "Überspringen",
     "next": "Weiter",
     "update": "Aktualisieren",
-    "tryAgain": "Nochmal versuchen",
+    "tryAgain": "Erneut versuchen",
     "createdAt": "Erstellt am",
     "and": "und",
     "saveDiscount": "SPAREN",
     "restorePurchase": "Kauf wiederherstellen",
     "medicalDisclaimer": "Medizinischer Haftungsausschluss",
-    "conversationHistory": "Chatverlauf",
+    "conversationHistory": "Gesprächsverlauf",
     "freeTrial": "Kostenlose Testversion",
     "completedScans": "Scans abgeschlossen",
-    "activeSubscription": "Abo aktiv",
+    "activeSubscription": "Abonnement aktiv",
     "askAssistant": "KI-Assistent fragen",
     "copyText": {
-      "loading": "Wird kopiert...",
+      "loading": "Kopiert...",
       "copied": "Kopiert!",
       "copy": "Link kopieren"
     },
     "loadingMessages": {
       "initialAppLoad": {
-        "first": "Lade deine persönliche Erfahrung...",
-        "second": "Synchronisiere Systeme...",
-        "third": "Verarbeite deine Daten...",
-        "fourth": "Fast fertig, nur noch einen Moment..."
+        "first": "Lädt Ihre personalisierte Erfahrung...",
+        "second": "Systeme werden synchronisiert...",
+        "third": "Verarbeitet Ihre Daten...",
+        "fourth": "Fast fertig, einen Moment bitte..."
       },
       "imageScanningLoading": {
-        "first": "Scanne dein Mikroskopie-Bild, bitte warte...",
-        "second": "Analysiere Details, dies kann einen Moment dauern...",
-        "third": "Verbessere die Genauigkeit für die besten Ergebnisse...",
-        "fourth": "Fast fertig, finalisiere den Scan..."
+        "first": "Scannt Ihr Mikroskopiebild, bitte warten Sie...",
+        "second": "Analysiert Details, dies kann einen Moment dauern...",
+        "third": "Verbessert die Genauigkeit für beste Ergebnisse...",
+        "fourth": "Fast da, schließt den Scan ab..."
       },
       "loadingChatbot": {
-        "first": "Aura bereitet sich vor, dir zu helfen...",
-        "second": "Warte! Aura bereitet deine Antwort vor...",
-        "third": "Denke nach... dein Assistent Aura ist dran!"
+        "first": "Aura bereitet sich vor, Ihnen zu helfen...",
+        "second": "Moment! Aura bereitet Ihre Antwort vor...",
+        "third": "Denkt nach... Ihr Assistent Aura ist dabei!"
       }
     }
   },
   "backHandler": {
-    "holdOn": "Warte!",
-    "goBackMessage": "Bist du sicher, dass du zurückgehen möchtest?"
+    "holdOn": "Moment!",
+    "goBackMessage": "Sind Sie sicher, dass Sie zurückgehen möchten?"
   },
   "internet": {
-    "noConnectionTitle": "Du bist offline!",
-    "noConnectionMessage": "Schalte mobile Daten ein oder verbinde dich mit einem WLAN. Oder mach einfach eine Pause und geh spazieren!"
+    "noConnectionTitle": "Sie sind offline!",
+    "noConnectionMessage": "Schalten Sie mobile Daten ein oder verbinden Sie sich mit einem WLAN. Oder machen Sie einfach eine Pause und gehen Sie spazieren!"
   },
   "uploadScan": {
     "title": "Bild hochladen",
@@ -87,36 +87,36 @@
     "verifyAuthCode": "Authentifizierungscode überprüfen",
     "verifyAuthCodeButton": "Code überprüfen",
     "authCodeHeading": "Authentifizierungscode",
-    "loginViaEmailHeading": "Lass uns dich anmelden. Bitte gib deine E-Mail ein, um fortzufahren.",
-    "emailAddress": "E-Mail"
+    "loginViaEmailHeading": "Lassen Sie uns Sie anmelden. Bitte geben Sie Ihre E-Mail-Adresse ein, um fortzufahren.",
+    "emailAddress": "E-Mail-Adresse"
   },
   "rootLayout": {
     "screens": {
       "welcome": {
         "heading": "Willkommen bei MicroScan AI!",
-        "startButton": "Lass uns beginnen!",
+        "startButton": "Los geht's!",
         "accountButton": "Ich habe bereits ein Konto"
       },
       "login": {
-        "agreeingMessage": "Durch Fortfahren stimmst du unseren",
-        "termsAndConditions": "Nutzungsbedingungen",
-        "privacyPolicy": "Datenschutzrichtlinie"
+        "agreeingMessage": "Durch die Fortsetzung stimmen Sie unseren",
+        "termsAndConditions": "Allgemeinen Geschäftsbedingungen",
+        "privacyPolicy": "Datenschutzrichtlinien"
       },
       "verifyAuthCode": {
-        "verificationCodeHeading": "Gib deinen Bestätigungscode ein, der per E-Mail gesendet wurde. Bitte beachte, dass der Code in 5 Minuten abläuft.",
-        "verificationCodeSent": "Wir haben den Bestätigungscode an",
-        "verificationCodeMissing": "Keinen Code erhalten?",
+        "verificationCodeHeading": "Geben Sie Ihren per E-Mail gesendeten Verifizierungscode ein. Bitte beachten Sie, dass der Code in 5 Minuten abläuft.",
+        "verificationCodeSent": "Wir haben den Verifizierungscode an",
+        "verificationCodeMissing": "Code nicht erhalten?",
         "resendCode": "Code erneut senden",
         "backToLogin": "Zurück zur Anmeldung"
       },
       "namePreferenceScreen": {
-        "heading": "Lass uns das persönlich gestalten!",
-        "preferredNameQuestion": "Wie sollen wir dich nennen?",
-        "placeholderPreferredName": "Z.B. Captain Cool, Queen Bee oder einfach Alex!"
+        "heading": "Lassen Sie uns dies persönlich gestalten!",
+        "preferredNameQuestion": "Wie sollen wir Sie nennen?",
+        "placeholderPreferredName": "Zum Beispiel: Captain Cool, Queen Bee oder einfach Alex!"
       },
       "freeTrialPreview": {
-        "heading": "Genieße deine kostenlose Testversion! 🎉",
-        "subheading": "Erlebe diese tollen Vorteile während deiner Testversion"
+        "heading": "Genießen Sie Ihre kostenlose Testversion! 🎉",
+        "subheading": "Erleben Sie diese erstaunlichen Vorteile während Ihrer kostenlosen Testversion"
       },
       "scanInterpretation": {
         "title": "Analyseergebnis",
@@ -124,18 +124,18 @@
       },
       "paywallOnboarding": {
         "freeTierOfferings": {
-          "title": "Schalte noch heute Premium-Funktionen frei! 🎉",
+          "title": "Schalten Sie Premium-Funktionen noch heute frei! 🎉",
           "firstOffering": "Zugriff auf alle Premium-Funktionen",
-          "secondOffering": "Werbeerlebnis ohne Anzeigen",
-          "thirdOffering": "Unbegrenzte Scans innerhalb angemessener Nutzung",
-          "fourthOffering": "Unbegrenzte Scans mit fairer Nutzung und 24/7 Zugang zum persönlichen KI-Assistenten"
+          "secondOffering": "Werbefreies Erlebnis",
+          "thirdOffering": "Unbegrenzte Scans bei angemessener Nutzung",
+          "fourthOffering": "Unbegrenzte Scans bei fairer Nutzung und 24/7 persönlicher KI-Assistentenzugriff"
         }
       },
       "paywallUpgradeScreen": {
-        "heading": "Schalte noch heute Premium-Funktionen frei! 🎉",
+        "heading": "Schalten Sie Premium-Funktionen noch heute frei! 🎉",
         "firstOffering": {
           "title": "Kostenlose Testversion starten",
-          "subtitle": "Genieße {{freeScans}} kostenlose Scans – keine Zahlung"
+          "subtitle": "Genießen Sie {{freeScans}} kostenlose Scans – keine Zahlung"
         },
         "secondOffering": {
           "title": "Monatlich",
@@ -143,127 +143,127 @@
         },
         "thirdOffering": {
           "title": "Jährlich",
-          "subtitle": "Bester Deal: {{ price }}/Jahr – spare mehr!"
+          "subtitle": "Bestes Angebot: {{ price }}/Jahr – sparen Sie mehr!"
         }
       },
       "newAppVersionScreen": {
         "heading": "Eine neue Version von MicroScan AI ist verfügbar",
-        "subheading": "Bitte aktualisiere auf die neueste Version, um die App weiter nutzen zu können",
+        "subheading": "Bitte aktualisieren Sie auf die neueste Version, um die App weiterhin nutzen zu können",
         "action": "Jetzt holen!"
       },
       "rateAppScreen": {
-        "heading": "Findest du die App wertvoll und ansprechend?",
+        "heading": "Finden Sie die App wertvoll und ansprechend?",
         "like": "Ja, ich liebe sie!",
         "dislike": "Nicht wirklich..."
       },
       "noInternetScreen": {
-        "heading": "Du bist offline",
-        "subheading": "Deine Verbindung scheint instabil zu sein. Bitte überprüfe deinen Netzwerkstatus"
+        "heading": "Sie sind offline",
+        "subheading": "Ihre Verbindung scheint instabil zu sein. Bitte überprüfen Sie Ihren Netzwerkstatus"
       },
       "notifications": {
         "title": "Benachrichtigungen",
-        "noNotifications": "Keine Benachrichtigungen – bleib dran für Updates!"
+        "noNotifications": "Derzeit keine Benachrichtigungen – bleiben Sie dran für Updates!"
       },
       "termsOfService": {
-        "title": "Nutzungsbedingungen"
+        "title": "Allgemeine Geschäftsbedingungen"
       },
       "privacyPolicy": {
         "title": "Datenschutzrichtlinie"
       },
       "share": {
         "title": "Teilen",
-        "heading": "Teile die MicroScan AI App",
-        "subheading": "Hilf anderen, die Kraft der KI-gestützten Röntgenanalyse zu entdecken",
-        "scanMessage": "Scanne zum Herunterladen der App",
-        "shareMessage": "oder teile über deine Lieblingsplattform"
+        "heading": "MicroScan AI App teilen",
+        "subheading": "Helfen Sie anderen, die Leistungsfähigkeit der KI-gesteuerten Röntgenanalyse zu entdecken",
+        "scanMessage": "Scannen Sie, um die App herunterzuladen",
+        "shareMessage": "oder teilen Sie über Ihre Lieblingsplattform"
       },
       "rate": {
-        "title": "Gib uns Feedback!"
+        "title": "Geben Sie uns Feedback!"
       },
       "profile": {
         "title": "Profil",
         "edit": "Profil bearbeiten",
-        "placeholderPreferredName": "Z.B. Captain Cool, Queen Bee oder einfach Alex!"
+        "placeholderPreferredName": "Zum Beispiel: Captain Cool, Queen Bee oder einfach Alex!"
       },
       "generateReportScreen": {
-        "title": "Wir schätzen deine Geduld! Hier ist dein KI-Bericht.",
-        "userInput": "Deine Eingabe",
-        "medicalReport": "Medizinischer Bericht",
-        "report": "KI-generierter medizinischer Bericht",
-        "conversationName": "Chatname"
+        "title": "Wir wissen Ihre Geduld zu schätzen! Hier ist Ihr KI-Bericht. ",
+        "userInput": "Ihre Eingabe",
+        "medicalReport": "Mikroskopiebericht",
+        "report": "KI-generierter Mikroskopiebericht",
+        "conversationName": "Konversationsname"
       },
       "verifyEmail": {
-        "heading": "E-Mail bestätigen"
+        "heading": "E-Mail verifizieren"
       },
       "filePreviewScreen": {
         "generateReportButton": "Analyse starten"
       },
       "disclaimerScreen": {
         "heading": "Wichtiger Haftungsausschluss",
-        "subheading": "MicroScan AI ist für Mikroskopie-Experten, Forscher, Medizinstudenten und Enthusiasten konzipiert",
-        "consentAgreement": "Ich habe den Haftungsausschluss gelesen und stimme zu.",
-        "firstConsent": "MicroScan AI bietet keine Gesundheitsmessungen, Diagnosen oder Behandlungsempfehlungen und ist auch nicht dafür gedacht. Benutzer von MicroScan AI müssen ihr klinisches Urteil anwenden und Informationen aus autoritativen Quellen überprüfen, bevor sie klinische Entscheidungen treffen.",
-        "secondConsent": "MicroScan AI ist kein Diagnosetool, keine Behandlungsplattform oder ein Ersatz für professionellen medizinischen Rat. Es bietet KI-generierte Einblicke, um medizinisches Fachpersonal beim Zugang zu medizinischem Wissen und bei der Analyse medizinischer Bilder und Dokumente zu unterstützen. MicroScan AI ist eine KI-gesteuerte Informations- und Bildungs-App, die eher lizenzierten medizinischen Fachkräften Unterstützung bieten soll.",
-        "fourthConsent": "MicroScan AI ist nicht als Medizinprodukt klassifiziert und beansprucht keine regulatorische Zulassung. Es ist für Bildungs- und Informationszwecke gedacht, um professionelle Expertise zu ergänzen.",
-        "fifthConsent": "MicroScan AI sammelt, speichert oder verarbeitet keine persönlichen oder Patientendaten. Alle Benutzerinteraktionen sind vertraulich und auf den Umfang der App beschränkt."
+        "subheading": "MicroScan AI wurde für Mikroskopie-Profis, Forscher, Studenten und Enthusiasten entwickelt",
+        "consentAgreement": "Ich habe den Haftungsausschluss gelesen und stimme ihm zu.",
+        "firstConsent": "MicroScan AI bietet keine Gesundheitsmessungen, Diagnosen oder Behandlungsempfehlungen und ist auch nicht für solche Zwecke bestimmt. Benutzer von MicroScan AI müssen ihr klinisches Urteilsvermögen anwenden und Informationen aus autoritativen Quellen überprüfen, bevor sie klinische Entscheidungen treffen.",
+        "secondConsent": "MicroScan AI ist kein Diagnosewerkzeug, keine Behandlungsplattform und kein Ersatz für professionelle medizinische Beratung. Es bietet KI-generierte Einblicke, um medizinischem Fachpersonal den Zugang zu medizinischem Wissen und die Analyse von medizinischen Bildern und Dokumenten zu erleichtern. MicroScan AI ist eine KI-gesteuerte Informations- und Bildungs-App, die eher zur Unterstützung zugelassener Fachkräfte im Gesundheitswesen entwickelt wurde.",
+        "fourthConsent": "MicroScan AI ist nicht als Medizinprodukt klassifiziert und beansprucht keine behördliche Zulassung. Es ist für Bildungs- und Informationszwecke bestimmt, um die professionelle Expertise zu ergänzen.",
+        "fifthConsent": "MicroScan AI sammelt, speichert oder verarbeitet keine persönlichen Daten oder Patientendaten. Alle Benutzerinteraktionen sind vertraulich und auf den Umfang der App beschränkt."
       },
       "contactUs": {
-        "heading": "Schreib uns gerne direkt eine E-Mail, und unser Team wird sich so schnell wie möglich bei dir melden",
+        "heading": "Schreiben Sie uns gerne direkt eine E-Mail, unser Team wird sich so schnell wie möglich bei Ihnen melden.",
         "customerSupport": "Kundensupport",
         "emailAddress": "E-Mail-Adresse"
       }
     }
   },
   "deleteApp": {
-    "title": "Warte! Lösche mich nicht!",
-    "subtitle": "Gib stattdessen Feedback"
+    "title": "Warten Sie! Löschen Sie mich nicht!",
+    "subtitle": "Senden Sie stattdessen Feedback"
   },
   "pdfPreview": {
-    "noEditorInstalled": "Um die PDF anzuzeigen, stelle sicher, dass du einen PDF-Viewer installiert hast, wie Adobe Acrobat Reader oder Google PDF Viewer",
-    "conversationTitlePdf": "Chat mit Aura, deinem KI-Assistenten"
+    "noEditorInstalled": "Um die PDF-Datei anzuzeigen, stellen Sie sicher, dass ein PDF-Viewer installiert ist, z. B. Adobe Acrobat Reader oder Google PDF Viewer.",
+    "conversationTitlePdf": "Konversation mit Aura, Ihrem KI-Assistenten"
   },
   "flows": {
     "createReport": {
       "finalReportForeground": {
-        "message": "Danke für deine Geduld!"
+        "message": "Vielen Dank für Ihre Geduld!"
       },
       "finalReportHeader": {
-        "message": "Hier ist das Berichtsergebnis!"
+        "message": "Dies ist das Berichtsergebnis!"
       },
       "uploadFile": {
-        "title": "Lade ein Mikroskopiebild zur Analyse hoch",
+        "title": "Laden Sie eine beliebige Mikroskopieprobe zur Analyse hoch",
         "size": "Max: {{imageLimit}}MB (Bilder), {{videoLimit}}MB (Videos)",
         "location": "Aus Galerie oder Dateien auswählen",
         "fileType": "PNG, JPG, PDF oder MP4",
-        "openCamera": "Kamera öffnen & Foto machen",
-        "scanType": "Nur Röntgen, CT, MRT, PET oder andere medizinische Bildgebung erlaubt"
+        "openCamera": "Kamera öffnen & Foto aufnehmen",
+        "scanType": "Nur Röntgen-, CT-, MRT-, PET- oder andere Mikroskopieproben erlaubt"
       }
     }
   },
   "home": {
     "tab": "Startseite",
     "homeForeground": {
-      "maxNumberOfScans": "Du hast dein Scan-Limit erreicht! Upgrade jetzt deinen Plan, um mehr Scans freizuschalten. 🚀",
+      "maxNumberOfScans": "Sie haben Ihr Scan-Limit erreicht! Upgraden Sie jetzt Ihren Plan, um weitere Scans freizuschalten. 🚀",
       "heading": "Willkommen bei MicroScan AI!",
-      "subHeading": "Erhalte eine KI-gestützte Analyse von Mikroskopiebildern in Sekunden"
+      "subHeading": "Erhalten Sie KI-gestützte Analysen beliebiger Mikroskopiebilder in Sekundenschnelle"
     },
     "scanCategories": {
-      "heading": "Mikroskopie-Galerie"
+      "heading": "Mikroskopie-Reel"
     },
     "recentReports": {
-      "heading": "Aktuelle Chats",
-      "noReports": "Noch keine Chats zum Anzeigen!"
+      "heading": "Letzte Chats",
+      "noReports": "Noch keine Chats vorhanden!"
     }
   },
   "reports": {
     "tab": "Verlauf",
-    "noReportsAvailable": "Kein Chatverlauf für dieses Datum verfügbar",
-    "heading": "Chatverlauf"
+    "noReportsAvailable": "Kein Chat-Verlauf für dieses Datum verfügbar",
+    "heading": "Chat-Verlauf"
   },
   "settings": {
     "tab": "Einstellungen",
     "profile": "Profil",
-    "contactUs": "Kontakt",
+    "contactUs": "Kontaktieren Sie uns",
     "about": "Über",
     "app_name": "App-Name",
     "languages": {
@@ -281,7 +281,7 @@
       "romanian": "Rumänisch"
     },
     "generale": "Allgemein",
-    "github": "GitHub",
+    "github": "Github",
     "language": "Sprache",
     "links": "Links",
     "logout": "Abmelden",
@@ -291,13 +291,13 @@
     "rate": "Bewerten",
     "share": "Teilen",
     "support": "Support",
-    "support_us": "Unterstütze uns",
-    "terms": "Nutzungsbedingungen",
+    "support_us": "Unterstützen Sie uns",
+    "terms": "Allgemeine Geschäftsbedingungen",
     "theme": {
       "dark": "Dunkel",
       "light": "Hell",
       "system": "System",
-      "title": "Design"
+      "title": "Thema"
     },
     "title": "Einstellungen",
     "version": "Version",
@@ -313,7 +313,7 @@
     },
     "ScanReportCard": {
       "promptMessage": "Was ist der Grund?",
-      "unnamedConversation": "Unbenannt",
+      "unnamedConversation": "Unbenanntes Gespräch",
       "reportTitlePlaceholder": "Titel hinzufügen"
     },
     "WeekBlock": {
@@ -324,53 +324,53 @@
     },
     "FreeTierStatus": {
       "heading": "Kostenlose Scans",
-      "subheading": "Schalte unbegrenzte Scans frei, indem du deinen Plan upgradest",
+      "subheading": "Schalten Sie unbegrenzte Scans frei, indem Sie Ihren Plan upgraden",
       "action": "Upgraden"
     },
     "UploadFileOptionsModal": {
-      "heading": "Bild / Video auswählen"
+      "heading": "Wählen Sie ein Bild / Video"
     },
     "TapToViewLabel": {
       "label": "Zum Anzeigen tippen"
     },
     "UpgradeBanner": {
       "heading": "Jetzt upgraden",
-      "subheading": "Schalte unbegrenzte Scans frei, indem du deinen Plan upgradest"
+      "subheading": "Schalten Sie unbegrenzte Scans frei, indem Sie Ihren Plan upgraden"
     },
     "PromptSection": {
-      "message": "Dein Scan ist fertig! Was möchtest du jetzt wissen?",
+      "message": "Ihr Scan ist bereit! Was möchten Sie nun herausfinden?",
       "prompts": {
         "first": "Welche Zelltypen oder Strukturen sind in diesem Bild vorhanden?",
         "second": "Gibt es Anomalien oder Krankheitserreger in dieser Probe?",
-        "third": "Was ist der wahrscheinliche Ursprung oder Zustand dieser Probe?",
-        "fourth": "Welche Erkenntnisse kannst du aus diesem Bild gewinnen?"
+        "third": "Was ist die wahrscheinliche Herkunft oder der Zustand dieser Probe?",
+        "fourth": "Welche Erkenntnisse können Sie aus diesem Bild gewinnen?"
       }
     },
     "PremiumFeaturesOverview": {
-      "first": "Erhalte {{freeScans}} kostenlose Scans",
-      "second": "Zugriff auf alle Premium-Funktionen",
+      "first": "Erhalten Sie {{freeScans}} kostenlose Scans",
+      "second": "Zugang zu allen Premium-Funktionen",
       "third": "Keine Werbung"
     },
     "Input": {
       "labels": {
         "nickname": "Spitzname",
         "email": "E-Mail",
-        "emailVerification": "E-Mail-Bestätigung"
+        "emailVerification": "E-Mail-Verifizierung"
       }
     },
     "ImageAnnotationStudio": {
       "instructions": {
         "title": "Anleitung",
-        "first": "1. Tippe auf 'Quadrat hinzufügen', um ein Auswahlquadrat zu erstellen.",
-        "second": "2. Ziehe das Quadrat über deinen interessierenden Bereich.",
-        "third": "3. Passe die Ecken an, um den Bereich genau abzudecken."
+        "first": "1. Tippen Sie auf die Schaltfläche 'Quadrat hinzufügen', um ein Auswahlfeld zu erstellen.",
+        "second": "2. Ziehen Sie das Quadrat über den gewünschten Bereich.",
+        "third": "3. Passen Sie die Ecken an, um den Bereich präzise abzudecken."
       },
       "OpenStudioSection": {
         "openStudioButton": "Studio öffnen",
         "editMore": "Mehr bearbeiten",
-        "continueEditing": "Bearbeitung der Anmerkungen fortsetzen?",
-        "highlightedRegionsCount": "Du hast {{highlightedRegions}} markierte Bereiche. Tippe unten, um mehr hinzuzufügen",
-        "highlightRegions": "Möchtest du Bereiche deines Mikroskopiebilds markieren?"
+        "continueEditing": "Mit der Bearbeitung Ihrer Anmerkungen fortfahren?",
+        "highlightedRegionsCount": "Sie haben {{highlightedRegions}} markierte Bereiche. Tippen Sie unten, um weitere hinzuzufügen",
+        "highlightRegions": "Müssen Sie Bereiche Ihres Mikroskopiebildes hervorheben?"
       },
       "studioToolbar": {
         "addSquare": "Quadrat hinzufügen"
@@ -379,47 +379,47 @@
   },
   "alerts": {
     "mediaPickerPermissions": "Entschuldigung, wir benötigen Kameraberechtigungen, damit dies funktioniert!",
-    "errorSelectingImagePicker": "Beim Auswählen des Bildes ist ein Fehler aufgetreten. Bitte versuche es erneut.",
-    "errorSelectingDocumentPicker": "Beim Auswählen des Dokuments ist ein Fehler aufgetreten. Bitte versuche es erneut.",
-    "errorTakingPicture": "Beim Aufnehmen des Fotos ist ein Fehler aufgetreten. Bitte versuche es erneut.",
+    "errorSelectingImagePicker": "Beim Auswählen des Bildes ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+    "errorSelectingDocumentPicker": "Beim Auswählen des Dokuments ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
+    "errorTakingPicture": "Beim Aufnehmen des Fotos ist etwas schiefgelaufen. Bitte versuchen Sie es erneut.",
     "enableNotifications": {
       "heading": "Benachrichtigungen aktivieren",
-      "subHeading": "Benachrichtigungen sind derzeit deaktiviert. Um auf dem Laufenden zu bleiben, aktiviere sie bitte in deinen Geräteeinstellungen."
+      "subHeading": "Benachrichtigungen sind derzeit deaktiviert. Um auf dem Laufenden zu bleiben, aktivieren Sie diese bitte in Ihren Geräteeinstellungen."
     },
-    "enableNotificationFailed": "Push-Benachrichtigungen sind deaktiviert. Aktiviere sie in den Einstellungen, um wichtige Updates zu erhalten!",
+    "enableNotificationFailed": "Push-Benachrichtigungen sind deaktiviert. Aktivieren Sie sie in den Einstellungen, um wichtige Updates zu erhalten!",
     "enableNotificationError": "Beim Aktivieren der Benachrichtigungen ist ein Fehler aufgetreten",
     "notificationDisabledSuccess": "Benachrichtigungen erfolgreich deaktiviert.",
-    "notificationDisabledRegisterError": "Gerät konnte nicht für Benachrichtigungen abgemeldet werden.",
+    "notificationDisabledRegisterError": "Fehler beim Abmelden des Geräts für Benachrichtigungen.",
     "notificationDisabledError": "Beim Deaktivieren der Benachrichtigungen ist ein Fehler aufgetreten.",
     "checkNotificationStatusError": "Fehler beim Überprüfen des Benachrichtigungsstatus.",
-    "projectIdNotFound": "Benachrichtigungs-Projekt-ID nicht gefunden.",
-    "imageSizeLarge": "Bild ist zu groß! Dateigröße ist {{fileSize}} MB, aber das Limit ist {{imageLimit}} MB.",
-    "videoSizeLarge": "Video ist zu groß! Dateigröße ist {{fileSize}} MB, aber das Limit ist {{videoLimit}} MB.",
+    "projectIdNotFound": "Projekt-ID für Benachrichtigung nicht gefunden.",
+    "imageSizeLarge": "Bild ist zu groß! Die Dateigröße beträgt {{fileSize}} MB, aber das Limit beträgt {{imageLimit}} MB.",
+    "videoSizeLarge": "Video ist zu groß! Die Dateigröße beträgt {{fileSize}} MB, aber das Limit beträgt {{videoLimit}} MB.",
     "loggedInSuccess": "Erfolgreich angemeldet",
-    "loggedOutSuccess": "Du hast dich erfolgreich abgemeldet!",
-    "sendVerificationCodeError": "Fehler beim Senden des Bestätigungscodes",
-    "validateAuthCodeError": "Fehler beim Überprüfen des Authentifizierungscodes",
+    "loggedOutSuccess": "Sie haben sich erfolgreich abgemeldet!",
+    "sendVerificationCodeError": "Fehler beim Senden des Verifizierungscodes",
+    "validateAuthCodeError": "Fehler beim Validieren des Auth-Codes",
     "anonymousSignInError": "Fehler bei der anonymen Anmeldung",
     "emailLoginError": "Fehler bei der Anmeldung",
     "preferredLanguageError": "Fehler beim Aktualisieren der bevorzugten Sprache des Benutzers",
-    "sharingNotAvailable": "Teilen ist auf deinem Gerät derzeit nicht verfügbar",
-    "sharingLinkError": "Link konnte nicht geteilt werden.",
-    "individualPushNotificationSuccess": "Individuelle Push-Benachrichtigungen erfolgreich gesendet!",
+    "sharingNotAvailable": "Das Teilen ist auf Ihrem Gerät derzeit nicht verfügbar",
+    "sharingLinkError": "Fehler beim Teilen des Links.",
+    "individualPushNotificationSuccess": "Einzelne Push-Benachrichtigungen erfolgreich gesendet!",
     "globalPushNotificationSuccess": "Globale Push-Benachrichtigungen erfolgreich gesendet! 🌍🚀",
-    "interpretationFieldsUpdateFail": "Aktualisierung der Interpretationsfelder fehlgeschlagen! ❌",
-    "deleteScanReportFail": "Der Scan-Bericht konnte nicht gelöscht werden. Bitte versuche es erneut",
-    "onboardingUnsuccessful": "Onboarding fehlgeschlagen. Bitte versuche es erneut",
-    "logoutUnsuccessful": "Abmeldung fehlgeschlagen. Bitte versuche es erneut",
-    "deleteScanReportQuestion": "Bist du sicher, dass du diesen Bericht dauerhaft löschen möchtest?",
-    "videoLimitExceeds": "Dein Video überschreitet das {{videoSecondsLimit}}-Sekunden-Limit. Bitte kürze es und lade es erneut hoch",
-    "subscriptionActivated": "Dein Abo wurde erfolgreich aktiviert! Genieße deine exklusiven Vorteile!",
-    "subscriptionCancelledByUser": "Du hast die Transaktion abgebrochen. Versuche es gerne erneut!",
-    "subscriptionActivationFailed": "Aktivierung deines Abos fehlgeschlagen. Bitte versuche es erneut",
-    "logoutQuestion": "Bist du sicher, dass du dich abmelden möchtest?",
-    "noSubscriptionToRestore": "Hoppla! Es scheint, dass du derzeit kein aktives Abo hast. Um weiterhin vollen Zugriff zu genießen, wähle bitte einen unserer Abo-Pläne.",
+    "interpretationFieldsUpdateFail": "Fehler beim Aktualisieren der Interpretationsfelder! ❌",
+    "deleteScanReportFail": "Der Scanbericht konnte nicht gelöscht werden. Bitte versuchen Sie es erneut",
+    "onboardingUnsuccessful": "Onboarding nicht erfolgreich. Bitte versuchen Sie es erneut",
+    "logoutUnsuccessful": "Abmeldung nicht erfolgreich. Bitte versuchen Sie es erneut",
+    "deleteScanReportQuestion": "Sind Sie sicher, dass Sie diesen Bericht dauerhaft löschen möchten?",
+    "videoLimitExceeds": "Ihr Video überschreitet das Limit von {{videoSecondsLimit}} Sekunden. Bitte kürzen Sie es und laden Sie es erneut hoch",
+    "subscriptionActivated": "Ihr Abonnement wurde erfolgreich aktiviert! Genießen Sie Ihre exklusiven Vorteile!",
+    "subscriptionCancelledByUser": "Sie haben die Transaktion abgebrochen. Versuchen Sie es gerne erneut!",
+    "subscriptionActivationFailed": "Die Aktivierung Ihres Abonnements ist fehlgeschlagen. Bitte versuchen Sie es erneut",
+    "logoutQuestion": "Sind Sie sicher, dass Sie sich abmelden möchten?",
+    "noSubscriptionToRestore": "Ups! Es sieht so aus, als hätten Sie derzeit kein aktives Abonnement. Um weiterhin vollen Zugriff zu genießen, wählen Sie bitte einen unserer Abonnementpläne.",
     "restorationSuccessful": "Wiederherstellung erfolgreich! Viel Spaß!",
     "restorationError": "Beim Wiederherstellen des Kaufs ist ein Fehler aufgetreten.",
-    "medicalDisclaimerAlert": "Die MicroScan AI App bietet keine Diagnosen, Behandlungsempfehlungen oder medizinische Ratschläge. Hole immer den Rat eines qualifizierten medizinischen Fachpersonals für medizinische Entscheidungen ein.",
-    "scanLimitReached": "Wir optimieren die Scan-Qualität für dich! Du kannst in etwa {{hours}} Stunden und {{minutes}} Minuten wieder scannen. Hast du Fragen zu medizinischen Themen? Frag unseren Chat-Assistenten, während du wartest!"
+    "medicalDisclaimerAlert": "Die MicroScan AI-App bietet keine Diagnosen, Behandlungsempfehlungen oder medizinischen Ratschläge. Holen Sie stets Rat von einem qualifizierten medizinischen Fachpersonal für medizinische Entscheidungen ein.",
+    "scanLimitReached": "Wir optimieren die Scan-Qualität für Sie! Sie können in etwa {{hours}} Stunden und {{minutes}} Minuten wieder scannen. Haben Sie Fragen zu einem Thema der Mikroskopie? Fragen Sie unseren Chat-Assistenten, während Sie warten!"
   }
 }

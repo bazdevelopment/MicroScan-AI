@@ -389,7 +389,7 @@ export const analyzeImageConversation = async (req: Request, res: any) => {
 
     const base64String = convertBufferToBase64(imageFile.buf);
 
-    const conversationPrompt = `${additionalLngPrompt}.${userPromptInput}. ${process.env.IMAGE_ANALYZE_PROMPT}. ${Number(highlightedRegions) > 0 ? `This medical image has ${Number(highlightedRegions)} regions marked in red. Examine part of each highlighted region of the picture and provide a thorough medical analysis (Key observations,potential abnormalities,clinical relevance)` : ''}.`;
+    const conversationPrompt = `${additionalLngPrompt}.${userPromptInput}. ${process.env.IMAGE_ANALYZE_PROMPT}. ${Number(highlightedRegions) > 0 ? `This microscopy image has ${Number(highlightedRegions)} regions marked in red color. Examine part of each highlighted region of the picture and provide a thorough microscopy analysis (Key observations,potential abnormalities, ask the user about the highlighted areas)` : ''}.`;
 
     const imagePart = {
       inlineData: {
@@ -596,7 +596,7 @@ export const analyzeImageConversationV2 = async (req: Request, res: any) => {
 
     const base64String = convertBufferToBase64(imageFile.buf);
 
-    const conversationPrompt = `${additionalLngPrompt}. ${process.env.IMAGE_ANALYZE_PROMPT}. ${Number(highlightedRegions) > 0 ? `This medical image has ${Number(highlightedRegions)} regions marked in red. Examine part of each highlighted region of the picture and provide a thorough medical analysis (Key observations,potential abnormalities,clinical relevance)` : ''}. ${userPromptInput}.`;
+    const conversationPrompt = `${additionalLngPrompt}. ${process.env.IMAGE_ANALYZE_PROMPT}. ${Number(highlightedRegions) > 0 ? `This microscopy image has ${Number(highlightedRegions)} regions marked in red. Examine part of each highlighted region of the picture and provide a thorough microscopy analysis (Key observations,potential abnormalities, ask the user about the highlighted areas)` : ''}. ${userPromptInput}.`;
 
     const message = await anthropic.messages.create({
       model: AI_MODELS.CLAUDE_37_SONNET,
