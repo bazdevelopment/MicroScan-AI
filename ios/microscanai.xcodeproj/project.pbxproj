@@ -17,6 +17,7 @@
 		9E836E9499F1151A964EFB6B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 9BDB87C6F5413DEE4C7D96DF /* PrivacyInfo.xcprivacy */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		5596904AF6DF430299B6DAEE /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F40CE7FD549AF83E0A6FE /* noop-file.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		F174B300C3BB4BECB51E2074 /* GoogleService-Info.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "MicroScanAI/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-MicroScanAI/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		FC5AECBD0BFB4D2EAC46932C /* Inter.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Inter.ttf; path = ../assets/fonts/Inter.ttf; sourceTree = "<group>"; };
+		7C3F40CE7FD549AF83E0A6FE /* noop-file.swift */ = {isa = PBXFileReference; name = "noop-file.swift"; path = "microscanai/noop-file.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				C2C8316D5A5641E38951BB7B /* Resources */,
 				A5D40980B522445EB1E964F0 /* GoogleService-Info.plist */,
 				DDFF27FF17AE490385E5FE56 /* SplashScreen.storyboard */,
+				7C3F40CE7FD549AF83E0A6FE /* noop-file.swift */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */,
 				7F93361A29B245C18F7D63EC /* noop-file.swift in Sources */,
+				5596904AF6DF430299B6DAEE /* noop-file.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
