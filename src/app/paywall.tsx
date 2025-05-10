@@ -261,7 +261,7 @@ const Paywall = () => {
           </View>
         </View>
       </ScrollView>
-      <View className="flex-column absolute bottom-0 mx-6 w-full items-start justify-between self-center overflow-hidden px-6 pb-4 dark:bg-blackEerie">
+      <View className={`flex-column absolute mx-6 w-full items-start justify-between self-center overflow-hidden px-6 pb-4 dark:bg-blackEerie ${DEVICE_TYPE.ANDROID?'bottom-10':'bottom-0'}`}>
         <Button
           label={translate('general.continue')}
           variant="default"

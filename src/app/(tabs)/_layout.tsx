@@ -16,7 +16,12 @@ import { useUser, useUserPreferredLanguage } from '@/api/user/user.hooks';
 import CustomHeader from '@/components/cusom-header';
 import InitialLoadSpinner from '@/components/initial-load-spinner.ts';
 import { TabBarIcon } from '@/components/tab-bar-icon';
-import { translate, useIsFirstTime, useSelectedLanguage } from '@/core';
+import {
+  DEVICE_TYPE,
+  translate,
+  useIsFirstTime,
+  useSelectedLanguage,
+} from '@/core';
 import { useCrashlytics } from '@/core/hooks/use-crashlytics';
 import { useHaptic } from '@/core/hooks/use-haptics';
 import { useMedicalDisclaimerApproval } from '@/core/hooks/use-medical-disclaimer-approval';
@@ -28,7 +33,7 @@ import { tabScreens } from '@/core/navigation/tabs';
 import { type ITabsNavigationScreen } from '@/core/navigation/tabs/tabs.interface';
 import { getBottomTabBarStyle } from '@/core/navigation/tabs/tabs.styles';
 import { playSound } from '@/core/utilities/play-sound';
-import { colors, useModal } from '@/ui';
+import { colors, SafeAreaView, useModal } from '@/ui';
 
 export default function TabLayout() {
   const { colorScheme } = useColorScheme();
@@ -154,7 +159,10 @@ export default function TabLayout() {
   }
 
   return (
-    <>
+    <SafeAreaView
+      className="flex-1"
+      edges={DEVICE_TYPE.ANDROID ? ['bottom'] : []}
+    >
       <Tabs
         screenOptions={{
           tabBarStyle: bottomTabBarStyles.tabBarContainer,
@@ -199,6 +207,6 @@ export default function TabLayout() {
           />
         ))}
       </Tabs>
-    </>
+    </SafeAreaView>
   );
 }

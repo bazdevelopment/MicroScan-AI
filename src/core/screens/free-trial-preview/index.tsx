@@ -1,7 +1,7 @@
 /* eslint-disable max-lines-per-function */
 import { useColorScheme } from 'nativewind';
 import React from 'react';
-import { SafeAreaView, View } from 'react-native';
+import { View } from 'react-native';
 
 import PremiumFeaturesOverview from '@/components/premium-features-overivew';
 import ProgressDots from '@/components/progress-dots';
@@ -9,6 +9,7 @@ import { SnakeLine, SnakeLineRotated } from '@/components/snake-line';
 import { translate } from '@/core/i18n';
 import { DEVICE_TYPE } from '@/core/utilities/device-type';
 import getDeviceSizeCategory from '@/core/utilities/get-device-size-category';
+import { SafeAreaView } from '@/ui';
 import { Button, colors, FocusAwareStatusBar, Text } from '@/ui';
 
 const FreeTrialPreview = ({
@@ -22,7 +23,10 @@ const FreeTrialPreview = ({
   const { isVerySmallDevice } = getDeviceSizeCategory();
 
   return (
-    <SafeAreaView className="flex-1 bg-primary-900 dark:bg-blackEerie">
+    <SafeAreaView
+      className="flex-1 bg-primary-900 dark:bg-blackEerie"
+      edges={DEVICE_TYPE.ANDROID ? ['bottom'] : []}
+    >
       <FocusAwareStatusBar hidden />
       <SnakeLine
         color={isDark ? colors.charcoal[600] : colors.primary[600]}

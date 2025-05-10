@@ -27,6 +27,7 @@ import { calculateAnnualDiscount } from '@/core/utilities/calculate-annual-disco
 import getDeviceSizeCategory from '@/core/utilities/get-device-size-category';
 import { type CrashlyticsLogLevel } from '@/crashlytics/crashlytics.types';
 import { type IUserInfo } from '@/types/general-types';
+import { SafeAreaView } from '@/ui';
 import {
   Button,
   colors,
@@ -130,7 +131,10 @@ const PaywallOnboarding = ({
   };
 
   return (
-    <>
+    <SafeAreaView
+      className="flex-1"
+      edges={DEVICE_TYPE.ANDROID ? ['bottom'] : []}
+    >
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{
@@ -245,7 +249,7 @@ const PaywallOnboarding = ({
           />
         </View>
       </ScrollView>
-      <View className="flex-column absolute bottom-0 mx-6  w-full items-start justify-between self-center bg-white px-6 dark:bg-blackEerie">
+      <View className="flex-column absolute bottom-10 mx-6  w-full items-start justify-between self-center bg-white px-6 dark:bg-blackEerie">
         <Button
           label={translate('general.continue')}
           variant="default"
@@ -266,7 +270,7 @@ const PaywallOnboarding = ({
           loading={isPendingRestorePurchase}
         />
       </View>
-    </>
+    </SafeAreaView>
   );
 };
 
