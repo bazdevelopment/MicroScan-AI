@@ -1,9 +1,9 @@
 import { router } from 'expo-router';
 import React from 'react';
-import { View } from 'react-native';
 
 import { type IOnboardingCollectedData } from '@/app/onboarding';
 import { type ICollectedData } from '@/core/flows/upload-file-flow/upload-file-flow.interface';
+import { View } from '@/ui';
 
 import { type IFlow } from './flow-modal.interface';
 

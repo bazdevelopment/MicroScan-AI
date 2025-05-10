@@ -141,7 +141,7 @@ export const UploadFileOptionsModal = React.forwardRef<
   BottomSheetModal,
   IUploadFileOptions
 >(({ options, onSelect, testID, heading }, ref) => {
-  const height = 230;
+  const height = 250;
   const snapPoints = React.useMemo(() => [height], [height]);
   const { colorScheme } = useColorScheme();
   const isDark = colorScheme === 'dark';

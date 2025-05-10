@@ -35,7 +35,6 @@
         <data android:scheme="micro-scan-ai"/>
         <data android:scheme="com.microscanai.development"/>
         <data android:scheme="exp+microscan-ai"/>
-        <data android:scheme="com.microscanai"/>
       </intent-filter>
     </activity>
     <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" android:exported="false"/>

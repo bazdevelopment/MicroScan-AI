@@ -36,11 +36,11 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     backgroundColor: '#060047',
     translucent: true,
   },
-  // splash: {
-  //   image: './assets/splash-icon.png',
-  //   resizeMode: 'cover',
-  //   backgroundColor: '#FFFFFF',
-  // },
+  splash: {
+    image: './assets/splash_512.png',
+    resizeMode: 'contain',
+    backgroundColor: '#FFFFFF',
+  },
   updates: {
     fallbackToCacheTimeout: 0,
   },
@@ -114,14 +114,14 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
         iCloudContainerEnvironment: 'Production',
       },
     ],
-    [
-      'expo-splash-screen',
-      {
-        backgroundColor: '#FFFFFF',
-        image: './assets/splash-icon.png',
-        imageWidth: 150,
-      },
-    ],
+    // [
+    //   'expo-splash-screen',
+    //   {
+    //     backgroundColor: '#FFFFFF',
+    //     image: './assets/splash-icon.png',
+    //     imageWidth: 150,
+    //   },
+    // ],
     [
       'expo-quick-actions',
       {
@@ -156,7 +156,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     '@react-native-firebase/auth',
     '@react-native-firebase/crashlytics',
     ['app-icon-badge', appIconBadgeConfig],
-    // ['react-native-edge-to-edge'],
+    ['react-native-edge-to-edge'],
   ],
   extra: {
     ...ClientEnv,
