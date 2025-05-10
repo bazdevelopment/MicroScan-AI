@@ -149,6 +149,10 @@ export default function Settings() {
 
           <ItemsContainer title="settings.links">
             <Item
+              text="settings.citations"
+              onPress={() => router.navigate('/citations')}
+            />
+            <Item
               text="settings.privacy"
               onPress={() => router.navigate('/privacy-policy')}
             />
