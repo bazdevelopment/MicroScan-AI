@@ -1,4 +1,4 @@
-package com.microscanai
+package com.microscanai.development
 
 import android.app.Application
 import android.content.res.Configuration
