@@ -157,6 +157,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     '@react-native-firebase/crashlytics',
     ['app-icon-badge', appIconBadgeConfig],
     ['react-native-edge-to-edge'],
+    ['./with-app-theme', 'Theme.EdgeToEdge'], //to avoid dupicate AppTheme in styles.xml
   ],
   extra: {
     ...ClientEnv,
