@@ -109,13 +109,13 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.microscanai'
+    namespace 'com.microscanai.development'
     defaultConfig {
-        applicationId 'com.microscanai'
+        applicationId 'com.microscanai.development'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
-        versionName "25.5.22"
+        versionName "25.5.23"
     }
     signingConfigs {
         debug {

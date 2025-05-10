@@ -1,4 +1,4 @@
-package com.microscanai
+package com.microscanai.development
 
 import android.os.Build
 import android.os.Bundle
