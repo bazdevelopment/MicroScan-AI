@@ -173,7 +173,7 @@
       "share": {
         "title": "Teilen",
         "heading": "MicroScan AI App teilen",
-        "subheading": "Helfen Sie anderen, die Leistungsfähigkeit der KI-gesteuerten Röntgenanalyse zu entdecken",
+        "subheading": "Helfen Sie anderen, die Kraft der KI-gesteuerten Mikroskopieanalyse zu entdecken",
         "scanMessage": "Scannen Sie, um die App herunterzuladen",
         "shareMessage": "oder teilen Sie über Ihre Lieblingsplattform"
       },
@@ -236,7 +236,7 @@
         "location": "Aus Galerie oder Dateien auswählen",
         "fileType": "PNG, JPG, PDF oder MP4",
         "openCamera": "Kamera öffnen & Foto aufnehmen",
-        "scanType": "Nur Röntgen-, CT-, MRT-, PET- oder andere Mikroskopieproben erlaubt"
+        "scanType": "Nur Mikroskopieproben erlaubt"
       }
     }
   },

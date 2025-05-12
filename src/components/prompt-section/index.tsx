@@ -19,7 +19,7 @@ const PromptSection = ({
 
     const interval = setInterval(() => {
       setCurrentPrompt(
-        (prev) => (prev + 1) % FILE_UPLOAD_PROMPT_MESSAGES.length,
+        (prev) => (prev + 1) % FILE_UPLOAD_PROMPT_MESSAGES.length
       );
     }, 3000);
 

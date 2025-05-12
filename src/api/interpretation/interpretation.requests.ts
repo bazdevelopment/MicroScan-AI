@@ -13,7 +13,7 @@ export const getInterpretationByDate = async ({
 }): Promise<IInterpretationRecord> => {
   try {
     const onGetInterpretation = firebaseCloudFunctionsInstance.httpsCallable(
-      'getInterpretationByDate',
+      'getInterpretationByDate'
     );
     const { data } = await onGetInterpretation({
       startDate,
@@ -56,7 +56,7 @@ export const deleteReportById = async (fields: {
 
 export const getInterpretationByDocumentId = async (
   documentId: string,
-  language: string,
+  language: string
 ) => {
   try {
     const onGetInterpretationById =

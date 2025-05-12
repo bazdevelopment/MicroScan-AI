@@ -173,7 +173,7 @@
       "share": {
         "title": "分享",
         "heading": "分享 MicroScan AI 应用",
-        "subheading": "帮助他人发现 AI 驱动的 X 光分析的强大功能",
+        "subheading": "帮助他人发现AI驱动的显微镜分析的力量",
         "scanMessage": "扫描下载应用",
         "shareMessage": "或通过您喜爱的平台分享"
       },
@@ -236,7 +236,7 @@
         "location": "从图库或文件选择",
         "fileType": "PNG、JPG、PDF 或 MP4",
         "openCamera": "打开相机并拍照",
-        "scanType": "只允许 X 光、CT、MRI、PET 或其他显微镜样本"
+        "scanType": "仅允许显微镜样本"
       }
     }
   },

@@ -173,7 +173,7 @@
       "share": {
         "title": "공유",
         "heading": "MicroScan AI 앱 공유",
-        "subheading": "AI 기반 X선 분석의 힘을 다른 사람들이 발견하도록 도우세요",
+        "subheading": "AI 기반 현미경 분석의 힘을 다른 사람들이 발견하도록 도와주세요",
         "scanMessage": "앱을 다운로드하려면 스캔하세요",
         "shareMessage": "또는 좋아하는 플랫폼을 통해 공유하세요"
       },
@@ -236,7 +236,7 @@
         "location": "갤러리 또는 파일에서 선택",
         "fileType": "PNG, JPG, PDF, 또는 MP4",
         "openCamera": "카메라 열고 사진 찍기",
-        "scanType": "X선, CT, MRI, PET 또는 기타 현미경 샘플만 허용됩니다."
+        "scanType": "현미경 샘플만 허용됩니다"
       }
     }
   },
