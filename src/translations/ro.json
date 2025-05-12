@@ -173,7 +173,7 @@
       "share": {
         "title": "Distribuie",
         "heading": "Distribuie aplicația MicroScan AI",
-        "subheading": "Ajută-i pe alții să descopere puterea analizei radiologice bazate pe inteligență artificială",
+        "subheading": "Ajută-i pe alții să descopere puterea analizei microscopice conduse de AI",
         "scanMessage": "Scanează pentru a descărca aplicația",
         "shareMessage": "sau distribuie prin platforma ta preferată"
       },
@@ -236,7 +236,7 @@
         "location": "Selectează din Galerie sau Fișiere",
         "fileType": "PNG, JPG, PDF sau MP4",
         "openCamera": "Deschide Camera și Fă O Poză",
-        "scanType": "Sunt permise doar raze X, CT, RMN, PET sau alte mostre de microscopie"
+        "scanType": "Sunt permise doar probe microscopice"
       }
     }
   },

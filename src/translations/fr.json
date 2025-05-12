@@ -173,7 +173,7 @@
       "share": {
         "title": "Partager",
         "heading": "Partager l'application MicroScan AI",
-        "subheading": "Aidez les autres à découvrir la puissance de l'analyse radiographique basée sur l'IA",
+        "subheading": "Aidez les autres à découvrir la puissance de l'analyse microscopique pilotée par IA",
         "scanMessage": "Scanner pour télécharger l'application",
         "shareMessage": "ou partager via votre plateforme préférée"
       },
@@ -236,7 +236,7 @@
         "location": "Sélectionner dans la galerie ou les fichiers",
         "fileType": "PNG, JPG, PDF ou MP4",
         "openCamera": "Ouvrir la caméra et prendre une photo",
-        "scanType": "Seules les échantillons de rayons X, CT, IRM, TEP ou autres échantillons de microscopie sont autorisés"
+        "scanType": "Seuls les échantillons de microscopie sont autorisés"
       }
     }
   },

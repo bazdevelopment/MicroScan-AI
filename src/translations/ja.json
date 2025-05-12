@@ -173,7 +173,7 @@
       "share": {
         "title": "共有",
         "heading": "MicroScan AIアプリを共有",
-        "subheading": "他の人がAI駆動のX線分析の力を発見できるよう助けましょう",
+        "subheading": "AI駆動の顕微鏡解析の力を他の人に知らせましょう",
         "scanMessage": "スキャンしてアプリをダウンロード",
         "shareMessage": "またはお気に入りのプラットフォームで共有"
       },
@@ -236,7 +236,7 @@
         "location": "ギャラリーまたはファイルから選択",
         "fileType": "PNG、JPG、PDF、またはMP4",
         "openCamera": "カメラを開いて写真を撮る",
-        "scanType": "X線、CT、MRI、PET、またはその他の顕微鏡サンプルのみ許可"
+        "scanType": "顕微鏡サンプルのみ許可されています"
       }
     }
   },

@@ -173,7 +173,7 @@
       "share": {
         "title": "Compartir",
         "heading": "Compartir la aplicación MicroScan AI",
-        "subheading": "Ayuda a otros a descubrir el poder del análisis de rayos X impulsado por IA",
+        "subheading": "Ayuda a otros a descubrir el poder del análisis microscópico impulsado por IA",
         "scanMessage": "Escanea para descargar la aplicación",
         "shareMessage": "o comparte a través de tu plataforma favorita"
       },
@@ -236,7 +236,7 @@
         "location": "Seleccionar de Galería o Archivos",
         "fileType": "PNG, JPG, PDF o MP4",
         "openCamera": "Abrir cámara y tomar foto",
-        "scanType": "Solo se permiten rayos X, CT, MRI, PET u otras muestras de microscopía"
+        "scanType": "Solo se permiten muestras de microscopía"
       }
     }
   },

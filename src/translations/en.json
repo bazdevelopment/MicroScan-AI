@@ -173,7 +173,7 @@
       "share": {
         "title": "Share",
         "heading": "Share MicroScan AI App",
-        "subheading": "Help others discover the power of AI-driven X-Ray analysis",
+        "subheading": "Help others discover the power of AI-driven microscopy analysis",
         "scanMessage": "Scan to download the app",
         "shareMessage": "or share via your favorite platform"
       },
@@ -238,7 +238,7 @@
         "location": "Select from Gallery or Files",
         "fileType": "PNG, JPG, PDF, or MP4",
         "openCamera": "Open Camera & Take Photo",
-        "scanType": "Only X-Rays, CT, MRI, PET, or other microscopy samples allowed"
+        "scanType": "Only microscopy samples allowed"
       }
     }
   },

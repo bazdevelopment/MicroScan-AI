@@ -173,7 +173,7 @@
       "share": {
         "title": "Partilhar",
         "heading": "Partilhar a Aplicação MicroScan AI",
-        "subheading": "Ajude outros a descobrir o poder da análise de raios X impulsionada por IA",
+        "subheading": "Ajude outros a descobrir o poder da análise microscópica baseada em IA",
         "scanMessage": "Digitalize para descarregar a aplicação",
         "shareMessage": "ou partilhe através da sua plataforma favorita"
       },
@@ -236,7 +236,7 @@
         "location": "Selecionar da Galeria ou Ficheiros",
         "fileType": "PNG, JPG, PDF ou MP4",
         "openCamera": "Abrir Câmara e Tirar Foto",
-        "scanType": "Apenas raios X, TC, RM, TEP ou outras amostras de microscopia permitidas"
+        "scanType": "Apenas amostras de microscopia permitidas"
       }
     }
   },
