@@ -35,7 +35,7 @@
     "prebuild-push:staging": "pnpm run prebuild:staging && git add . && git commit -m 'prebuild ran for staging' --no-verify && git push --no-verify",
     "prepare": "husky",
     "app-release": "cross-env SKIP_BRANCH_PROTECTION=true np --no-publish --no-cleanup --no-release-draft --no-tests --any-branch",
-    "version": "pnpm run prebuild && git add .",
+    "version": "pnpm run eas-build-pre-install && git add .",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "type-check": "tsc  --noemit",
     "lint:translations": "eslint ./src/translations/ --fix --ext .json  ",
