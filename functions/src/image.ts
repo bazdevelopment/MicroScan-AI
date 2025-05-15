@@ -1541,7 +1541,7 @@ export const analyzeVideoConversation = async (req: Request, res: any) => {
       userId,
       lastScanDate,
       scansToday,
-      dailyLimit: 15, // 15 for videos (adjust as needed)
+      dailyLimit: 50, // 15 for videos (adjust as needed)
     });
 
     if (!canScanResult.canScan) {
