@@ -51,7 +51,7 @@ export const HomeHeaderBar = ({ scrollValue }: IHomeHeaderBar) => {
 
     if (userInfo?.scansRemaining <= 0 && userInfo.isFreeTrialOngoing) {
       logEvent(
-        `Alert informing user - ${userInfo.userId} that there are no scans available is displayed in home header bar`,
+        `Alert informing user - ${userInfo.userId} that there are no scans available is displayed in home header bar`
       );
       return Toast.showCustomToast(
         <CustomAlert
@@ -71,12 +71,12 @@ export const HomeHeaderBar = ({ scrollValue }: IHomeHeaderBar) => {
         {
           position: 'middle', // Place the alert in the middle of the screen
           duration: Infinity, // Keep the alert visible until dismissed
-        },
+        }
       );
     }
     router.navigate('/upload-file-flow');
     logEvent(
-      `User - ${userInfo.userId} pressed the 'Upload scan' button from home header bar and he is redirected to the upload file flow`,
+      `User - ${userInfo.userId} pressed the 'Upload scan' button from home header bar and he is redirected to the upload file flow`
     );
   };
 
@@ -86,7 +86,7 @@ export const HomeHeaderBar = ({ scrollValue }: IHomeHeaderBar) => {
         scrollValue.value,
         [0, 110, 150],
         [0, 0, 1],
-        'clamp',
+        'clamp'
       ),
     };
   }, [scrollValue]);
@@ -97,7 +97,7 @@ export const HomeHeaderBar = ({ scrollValue }: IHomeHeaderBar) => {
         scrollValue.value,
         [0, 250, 280],
         [0, 0, 1],
-        'clamp',
+        'clamp'
       ),
     };
   }, [scrollValue]);
