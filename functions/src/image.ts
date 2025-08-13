@@ -34,7 +34,7 @@ export const analyzeImage = async (req: Request, res: any) => {
     const { files, fields } = await processUploadedFile(req);
     const languageAbbreviation = req.headers['accept-language'];
 
-    const additionalLngPrompt = `The response language must be in ${LANGUAGES[languageAbbreviation as keyof typeof LANGUAGES]}`;
+    const additionalLngPrompt = `🚨 IMPORTANT SYSTEM INSTRUCTION — DO NOT IGNORE 🚨 - FROM THIS POINT FORWARD, AUTOMATICALLY DETECT THE LANGUAGE USED BY THE USER IN THE CONVERSATION AND RESPOND IN THAT LANGUAGE. IF THE USER SWITCHES TO A DIFFERENT LANGUAGE OR EXPLICITLY REQUESTS A NEW LANGUAGE, SEAMLESSLY TRANSITION TO THAT LANGUAGE INSTEAD. OTHERWISE, CONTINUE RESPONDING IN ${LANGUAGES[languageAbbreviation as keyof typeof LANGUAGES]}`;
     const t = getTranslation(languageAbbreviation as string);
     const { userId, promptMessage } = fields;
     const [imageFile] = files;
@@ -191,7 +191,7 @@ export const analyzeVideo = async (req: Request, res: any) => {
     const languageAbbreviation = req.headers['accept-language'];
     const preferredLanguage =
       LANGUAGES[languageAbbreviation as keyof typeof LANGUAGES];
-    const additionalLngPrompt = `The response language must be in ${preferredLanguage}`;
+    const additionalLngPrompt = `🚨 IMPORTANT SYSTEM INSTRUCTION — DO NOT IGNORE 🚨 - FROM THIS POINT FORWARD, AUTOMATICALLY DETECT THE LANGUAGE USED BY THE USER IN THE CONVERSATION AND RESPOND IN THAT LANGUAGE. IF THE USER SWITCHES TO A DIFFERENT LANGUAGE OR EXPLICITLY REQUESTS A NEW LANGUAGE, SEAMLESSLY TRANSITION TO THAT LANGUAGE INSTEAD. OTHERWISE, CONTINUE RESPONDING IN ${preferredLanguage}`;
     const userPromptInput = promptMessage.length
       ? `This is some additional information from the user regarding his request or expectations for this analysis:${promptMessage}`
       : '';
@@ -326,7 +326,7 @@ export const analyzeImageConversation = async (req: Request, res: any) => {
     const { files, fields } = await processUploadedFile(req);
     const languageAbbreviation = req.headers['accept-language'];
 
-    const additionalLngPrompt = `THE LANGUAGE USED FOR RESPONSE SHOULD BE: ${LANGUAGES[languageAbbreviation as keyof typeof LANGUAGES]} FROM NOW ON.`;
+    const additionalLngPrompt = `🚨 IMPORTANT SYSTEM INSTRUCTION — DO NOT IGNORE 🚨 - FROM THIS POINT FORWARD, AUTOMATICALLY DETECT THE LANGUAGE USED BY THE USER IN THE CONVERSATION AND RESPOND IN THAT LANGUAGE. IF THE USER SWITCHES TO A DIFFERENT LANGUAGE OR EXPLICITLY REQUESTS A NEW LANGUAGE, SEAMLESSLY TRANSITION TO THAT LANGUAGE INSTEAD. OTHERWISE, CONTINUE RESPONDING IN ${LANGUAGES[languageAbbreviation as keyof typeof LANGUAGES]}`;
 
     const t = getTranslation(languageAbbreviation as string);
     const { userId, promptMessage, highlightedRegions } = fields;
@@ -387,7 +387,7 @@ export const analyzeImageConversation = async (req: Request, res: any) => {
 
     const base64String = convertBufferToBase64(imageFile.buf);
 
-    const conversationPrompt = `${additionalLngPrompt}.${userPromptInput}. ${process.env.IMAGE_ANALYZE_PROMPT}. ${Number(highlightedRegions) > 0 ? `This microscopy image has ${Number(highlightedRegions)} regions marked in red color. Examine part of each highlighted region of the picture and provide a thorough microscopy analysis (Key observations,potential abnormalities, ask the user about the highlighted areas)` : ''}.`;
+    const conversationPrompt = `${userPromptInput}. ${process.env.IMAGE_ANALYZE_PROMPT}. ${Number(highlightedRegions) > 0 ? `This microscopy image has ${Number(highlightedRegions)} regions marked in red color. Examine part of each highlighted region of the picture and provide a thorough microscopy analysis (Key observations,potential abnormalities, ask the user about the highlighted areas)` : ''}.${additionalLngPrompt}.`;
 
     const imagePart = {
       inlineData: {
@@ -536,7 +536,7 @@ export const analyzeImageConversationV2 = async (req: Request, res: any) => {
     const { files, fields } = await processUploadedFile(req);
     const languageAbbreviation = req.headers['accept-language'];
 
-    const additionalLngPrompt = `THE LANGUAGE USED FOR RESPONSE SHOULD BE: ${LANGUAGES[languageAbbreviation as keyof typeof LANGUAGES]} FROM NOW ON.`;
+    const additionalLngPrompt = `🚨 IMPORTANT SYSTEM INSTRUCTION — DO NOT IGNORE 🚨 - FROM THIS POINT FORWARD, AUTOMATICALLY DETECT THE LANGUAGE USED BY THE USER IN THE CONVERSATION AND RESPOND IN THAT LANGUAGE. IF THE USER SWITCHES TO A DIFFERENT LANGUAGE OR EXPLICITLY REQUESTS A NEW LANGUAGE, SEAMLESSLY TRANSITION TO THAT LANGUAGE INSTEAD. OTHERWISE, CONTINUE RESPONDING IN ${LANGUAGES[languageAbbreviation as keyof typeof LANGUAGES]}`;
 
     const t = getTranslation(languageAbbreviation as string);
     const { userId, promptMessage, highlightedRegions } = fields;
@@ -769,7 +769,7 @@ export const continueConversation = async (req: Request, res: any) => {
     const languageAbbreviation = req.headers['accept-language'];
     t = getTranslation(languageAbbreviation as string);
 
-    const additionalLngPrompt = `THE LANGUAGE USED FOR RESPONSE SHOULD BE: ${LANGUAGES[languageAbbreviation as keyof typeof LANGUAGES]} FROM NOW ON.`;
+    const additionalLngPrompt = `🚨 IMPORTANT SYSTEM INSTRUCTION — DO NOT IGNORE 🚨 - FROM THIS POINT FORWARD, AUTOMATICALLY DETECT THE LANGUAGE USED BY THE USER IN THE CONVERSATION AND RESPOND IN THAT LANGUAGE. IF THE USER SWITCHES TO A DIFFERENT LANGUAGE OR EXPLICITLY REQUESTS A NEW LANGUAGE, SEAMLESSLY TRANSITION TO THAT LANGUAGE INSTEAD. OTHERWISE, CONTINUE RESPONDING IN ${LANGUAGES[languageAbbreviation as keyof typeof LANGUAGES]}`;
 
     const responseGuidelinesImageScan =
       "Response Guidelines: Reference initial microscopy analysis details (modality, sample, structures, abnormalities) for follow-ups, expand theoretically on user-requested aspects (e.g., 'This could indicate…' avoid repeating the full report unless asked, do NOT diagnose or suggest treatments, and focus on describing abnormalities with metrics and confidence levels (e.g., '8% atypical cells, confidence: 90%')..";
@@ -857,7 +857,7 @@ export const continueConversation = async (req: Request, res: any) => {
     }));
 
     // Add the new user message with instructions
-    const userMessageWithInstructions = `The user added this as input: ${userMessage}.${additionalLngPrompt}.Follow this guidelines for giving the response back:${responseGuidelines}`;
+    const userMessageWithInstructions = `The user added this as input: ${userMessage}.Adhere to these guidelines: ${responseGuidelines}, and reference the chat history when crafting your response.${additionalLngPrompt}`;
 
     try {
       const chat = model.startChat({
@@ -914,7 +914,7 @@ export const continueConversationV2 = async (req: Request, res: any) => {
     const languageAbbreviation = req.headers['accept-language'];
     t = getTranslation(languageAbbreviation as string);
 
-    const additionalLngPrompt = `THE LANGUAGE USED FOR RESPONSE SHOULD BE: ${LANGUAGES[languageAbbreviation as keyof typeof LANGUAGES]} FROM NOW ON.`;
+    const additionalLngPrompt = `🚨 IMPORTANT SYSTEM INSTRUCTION — DO NOT IGNORE 🚨 - FROM THIS POINT FORWARD, AUTOMATICALLY DETECT THE LANGUAGE USED BY THE USER IN THE CONVERSATION AND RESPOND IN THAT LANGUAGE. IF THE USER SWITCHES TO A DIFFERENT LANGUAGE OR EXPLICITLY REQUESTS A NEW LANGUAGE, SEAMLESSLY TRANSITION TO THAT LANGUAGE INSTEAD. OTHERWISE, CONTINUE RESPONDING IN ${LANGUAGES[languageAbbreviation as keyof typeof LANGUAGES]}`;
 
     const responseGuidelinesImageScan =
       "Response Guidelines: Reference initial microscopy analysis details (modality, sample, structures, abnormalities) for follow-ups, expand theoretically on user-requested aspects (e.g., 'This could indicate…' avoid repeating the full report unless asked, do NOT suggest treatments, and focus on describing abnormalities with metrics and confidence levels (e.g., '8% atypical cells, confidence: 90%')..";
@@ -1045,7 +1045,7 @@ export const analyzeVideoConversationV2 = async (req: Request, res: any) => {
     const languageAbbreviation = req.headers['accept-language'];
     const preferredLanguage =
       LANGUAGES[languageAbbreviation as keyof typeof LANGUAGES];
-    const additionalLngPrompt = `THE LANGUAGE USED FOR RESPONSE SHOULD BE ${preferredLanguage} FROM NOW ON.`;
+    const additionalLngPrompt = `🚨 IMPORTANT SYSTEM INSTRUCTION — DO NOT IGNORE 🚨 - FROM THIS POINT FORWARD, AUTOMATICALLY DETECT THE LANGUAGE USED BY THE USER IN THE CONVERSATION AND RESPOND IN THAT LANGUAGE. IF THE USER SWITCHES TO A DIFFERENT LANGUAGE OR EXPLICITLY REQUESTS A NEW LANGUAGE, SEAMLESSLY TRANSITION TO THAT LANGUAGE INSTEAD. OTHERWISE, CONTINUE RESPONDING IN ${preferredLanguage}`;
     const userPromptInput = promptMessage.length
       ? `THE USER HAS THIS QUESTION AND IS INTERESTED TO FIND OUT THIS:${promptMessage}`
       : '';
@@ -1290,7 +1290,7 @@ export const analyzeVideoConversationOld = async (req: Request, res: any) => {
     const languageAbbreviation = req.headers['accept-language'];
     const preferredLanguage =
       LANGUAGES[languageAbbreviation as keyof typeof LANGUAGES];
-    const additionalLngPrompt = `THE LANGUAGE USED FOR RESPONSE SHOULD BE ${preferredLanguage} FROM NOW ON.`;
+    const additionalLngPrompt = `🚨 IMPORTANT SYSTEM INSTRUCTION — DO NOT IGNORE 🚨 - FROM THIS POINT FORWARD, AUTOMATICALLY DETECT THE LANGUAGE USED BY THE USER IN THE CONVERSATION AND RESPOND IN THAT LANGUAGE. IF THE USER SWITCHES TO A DIFFERENT LANGUAGE OR EXPLICITLY REQUESTS A NEW LANGUAGE, SEAMLESSLY TRANSITION TO THAT LANGUAGE INSTEAD. OTHERWISE, CONTINUE RESPONDING IN ${preferredLanguage}`;
     const userPromptInput = promptMessage.length
       ? `THE USER HAS THIS QUESTION AND IS INTERESTED TO FIND OUT THIS:${promptMessage}`
       : '';
@@ -1501,7 +1501,7 @@ export const analyzeVideoConversation = async (req: Request, res: any) => {
     const languageAbbreviation = req.headers['accept-language'];
     const preferredLanguage =
       LANGUAGES[languageAbbreviation as keyof typeof LANGUAGES];
-    const additionalLngPrompt = `THE LANGUAGE USED FOR RESPONSE SHOULD BE ${preferredLanguage} FROM NOW ON.`;
+    const additionalLngPrompt = `🚨 IMPORTANT SYSTEM INSTRUCTION — DO NOT IGNORE 🚨 - FROM THIS POINT FORWARD, AUTOMATICALLY DETECT THE LANGUAGE USED BY THE USER IN THE CONVERSATION AND RESPOND IN THAT LANGUAGE. IF THE USER SWITCHES TO A DIFFERENT LANGUAGE OR EXPLICITLY REQUESTS A NEW LANGUAGE, SEAMLESSLY TRANSITION TO THAT LANGUAGE INSTEAD. OTHERWISE, CONTINUE RESPONDING IN ${preferredLanguage}`;
 
     const userPromptInput =
       promptMessage && promptMessage.length > 0
