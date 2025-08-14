@@ -45,7 +45,10 @@ const ScanInterpretationDetailsScreen = () => {
         <Toaster autoWiggleOnUpdate="toast-change" pauseWhenPageIsHidden />
       )}
       {/* Content */}
-      <ScrollView showsVerticalScrollIndicator={false}>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentContainerClassName="pb-[100px]"
+      >
         {/* Media Preview */}
         {data.record.url && (
           <AttachmentPreview

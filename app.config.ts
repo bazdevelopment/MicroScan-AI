@@ -156,6 +156,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
         fonts: ['./assets/fonts/Inter.ttf'],
       },
     ],
+    'expo-video',
     'expo-localization',
     'expo-router',
     '@react-native-firebase/app',

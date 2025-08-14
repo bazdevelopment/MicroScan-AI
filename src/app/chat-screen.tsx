@@ -13,7 +13,6 @@ import {
   Image,
   Keyboard,
   KeyboardAvoidingView,
-  SafeAreaView,
   TextInput,
   TouchableOpacity,
   View,
@@ -38,7 +37,7 @@ import { useTextToSpeech } from '@/core/hooks/use-text-to-speech';
 import { checkIsVideo } from '@/core/utilities/check-is-video';
 import { generateUniqueId } from '@/core/utilities/generate-unique-id';
 import { wait } from '@/core/utilities/wait';
-import { colors, Text } from '@/ui';
+import { colors, SafeAreaView, Text } from '@/ui';
 import { CloseIcon, SoundOn, StopIcon } from '@/ui/assets/icons';
 
 type MessageType = {
@@ -211,6 +210,7 @@ const ChatScreen = () => {
 
   const { colorScheme } = useColorScheme();
   const isDark = colorScheme === 'dark';
+
   const {
     i18n: { language },
   } = useTranslation();
@@ -394,7 +394,11 @@ const ChatScreen = () => {
   }
 
   return (
-    <SafeAreaView className="flex-1 bg-white dark:bg-blackEerie">
+    // <SafeAreaView className="flex-1 bg-white dark:bg-blackEerie">
+    <SafeAreaView
+      className="flex-1 bg-white dark:bg-blackEerie"
+      edges={DEVICE_TYPE.ANDROID ? ['bottom'] : []}
+    >
       {DEVICE_TYPE.IOS && (
         <Toaster autoWiggleOnUpdate="toast-change" pauseWhenPageIsHidden />
       )}
@@ -405,7 +409,7 @@ const ChatScreen = () => {
       >
         <View className="flex-1 bg-white dark:bg-blackEerie">
           {/* Header */}
-          <View className="flex-row items-center justify-between border-b border-gray-200 bg-white px-4 py-3 dark:border-gray-600 dark:bg-blackEerie">
+          <View className="mt-10 flex-row items-center justify-between border-b border-gray-200 bg-white px-4 py-3 dark:border-gray-600 dark:bg-blackEerie">
             <Icon
               size={20}
               containerStyle="rounded-full bg-blackEerie p-1"
@@ -469,9 +473,11 @@ const ChatScreen = () => {
 
           {/* Input Area */}
           <View className="border-t border-gray-200 bg-white px-4 pb-2 pt-4 dark:border-blackEerie dark:bg-blackEerie">
-            <View className="flex-row items-center rounded-full bg-gray-100 px-4 py-1 dark:bg-black ">
+            <View
+              className={`flex-row items-center rounded-2xl bg-gray-100 px-4 py-1 dark:bg-black border-primary-900/60 border-2 ${DEVICE_TYPE.IOS && 'mb-4'}`}
+            >
               <TextInput
-                className="flex-1 py-2 text-base text-gray-800 dark:text-white"
+                className="flex-1 py-3 text-base text-gray-800 dark:text-white"
                 value={userMessage}
                 onChangeText={setUserMessage}
                 placeholder={translate('general.chatbotPlaceholder')}
