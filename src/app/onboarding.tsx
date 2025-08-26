@@ -1,8 +1,8 @@
+import { router } from 'expo-router';
 import React, { useState } from 'react';
 
 import FlowModal from '@/components/flow-modal';
 import FreeTrialPreview from '@/core/screens/free-trial-preview';
-import PaywallOnboarding from '@/core/screens/paywall-onboarding';
 
 export interface IOnboardingCollectedData {
   preferredName: string;
@@ -15,7 +15,7 @@ export default function Onboarding() {
   const [currentScreenIndex, setCurrentScreenIndex] = useState(0);
 
   const onSubmitCollectedData = async (
-    _collectedData: IOnboardingCollectedData,
+    _collectedData: IOnboardingCollectedData
   ) => {};
 
   const handleGoToNextScreen = (newCollectedData: IOnboardingCollectedData) => {
@@ -39,7 +39,10 @@ export default function Onboarding() {
 
   const onSkip = () => {
     /**Navigate to the onboarding */
-    setCurrentScreenIndex(1);
+    router.navigate({
+      pathname: '/paywall-new',
+      params: { allowAppAccess: true },
+    });
   };
 
   return (
@@ -52,7 +55,7 @@ export default function Onboarding() {
       onSkip={onSkip}
     >
       <FreeTrialPreview />
-      <PaywallOnboarding />
+      {/* <PaywallOnboarding /> */}
     </FlowModal>
   );
 }

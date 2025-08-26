@@ -4,6 +4,7 @@ import { useScrollToTop } from '@react-navigation/native';
 import { router } from 'expo-router';
 import { useColorScheme } from 'nativewind';
 import React, { useRef } from 'react';
+import { Linking } from 'react-native';
 import { Toaster } from 'sonner-native';
 
 import { useUploadPrivacyPolicy } from '@/api/privacy-policy/privacy-policy.hooks';
@@ -112,7 +113,7 @@ export default function Settings() {
       {userInfo.scansRemaining <= 0 && userInfo.isFreeTrialOngoing && (
         <UpgradeBanner
           className="mx-4 mt-4"
-          onUpgradePress={() => router.navigate('/paywall')}
+          onUpgradePress={() => router.navigate('/paywall-new')}
         />
       )}
       <ScrollView ref={scrollViewRef}>
@@ -154,11 +155,17 @@ export default function Settings() {
             />
             <Item
               text="settings.privacy"
-              onPress={() => router.navigate('/privacy-policy')}
+              onPress={() =>
+                Linking.openURL('https://microscanaiprivacy.netlify.app/')
+              }
             />
             <Item
               text="settings.terms"
-              onPress={() => router.navigate('/terms-of-service')}
+              onPress={() =>
+                Linking.openURL(
+                  'https://microscanaitermsconditions.netlify.app/'
+                )
+              }
             />
             {SHOW_FAQ_SCREEN && (
               <Item

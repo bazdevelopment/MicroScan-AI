@@ -156,11 +156,11 @@ export default function Home() {
           </View> */}
           {!isUserSubscriptionActive && (
             <FreeTierStatus
-              className={`mx-4 mt-4 rounded-xl bg-white p-4 dark:bg-blackBeauty ${isVerySmallDevice ? 'mx-0' : 'mx-4'}`}
+              className={`mx-4 rounded-xl bg-white p-4 dark:bg-blackBeauty ${isVerySmallDevice ? 'mx-0' : 'mx-4'}`}
               scansLeft={
                 userInfo?.scansRemaining >= 0 ? userInfo?.scansRemaining : 0 //do this to avoid showing values with "-" in front
               }
-              onUpgrade={() => router.navigate('/paywall')}
+              onUpgrade={() => router.navigate('/paywall-new')}
             />
           )}
           {!areErrorsOnScanCategories && (
@@ -258,7 +258,7 @@ const ReportsList = ({
                         label: translate('components.UpgradeBanner.heading'),
                         variant: 'default',
                         onPress: () =>
-                          wait(500).then(() => router.navigate('/paywall')), // a small delay in mandatory for Toast, not sure why
+                          wait(500).then(() => router.navigate('/paywall-new')), // a small delay in mandatory for Toast, not sure why
                         buttonTextClassName: 'dark:text-white',
                         className:
                           'flex-1 rounded-xl h-[48] bg-primary-900 active:opacity-80 dark:bg-primary-900',
@@ -281,7 +281,7 @@ const ReportsList = ({
           {recentInterpretations?.records?.map(
             (record: IInterpretationResult) => (
               <CardWrapper
-                key={record.id}
+                key={`${record.docId}-${record.title}-${record.createdAt}`}
                 chevronColor={colors.primary[900]}
                 className="rounded-xl bg-white p-4 dark:bg-blackBeauty"
                 onPress={() =>

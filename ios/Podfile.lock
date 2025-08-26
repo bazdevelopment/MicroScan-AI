@@ -1482,13 +1482,15 @@ PODS:
     - Yoga
   - ExpoPrint (14.0.3):
     - ExpoModulesCore
-  - ExpoQuickActions (2.0.0):
+  - ExpoQuickActions (5.0.0):
     - ExpoModulesCore
   - ExpoSharing (13.0.1):
     - ExpoModulesCore
   - ExpoSpeech (13.0.1):
     - ExpoModulesCore
   - ExpoSplashScreen (0.29.24):
+    - ExpoModulesCore
+  - ExpoStoreReview (8.0.1):
     - ExpoModulesCore
   - ExpoVideo (2.0.6):
     - ExpoModulesCore
@@ -3739,6 +3741,7 @@ DEPENDENCIES:
   - ExpoSharing (from `../node_modules/expo-sharing/ios`)
   - ExpoSpeech (from `../node_modules/expo-speech/ios`)
   - ExpoSplashScreen (from `../node_modules/expo-splash-screen/ios`)
+  - ExpoStoreReview (from `../node_modules/expo-store-review/ios`)
   - ExpoVideo (from `../node_modules/expo-video/ios`)
   - EXUpdatesInterface (from `../node_modules/expo-updates-interface/ios`)
   - fast_float (from `../node_modules/react-native/third-party-podspecs/fast_float.podspec`)
@@ -3951,6 +3954,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-speech/ios"
   ExpoSplashScreen:
     :path: "../node_modules/expo-splash-screen/ios"
+  ExpoStoreReview:
+    :path: "../node_modules/expo-store-review/ios"
   ExpoVideo:
     :path: "../node_modules/expo-video/ios"
   EXUpdatesInterface:
@@ -4165,10 +4170,11 @@ SPEC CHECKSUMS:
   ExpoLocalization: 7776ea3bdb112125390745bbaf919b734b2ad1c7
   ExpoModulesCore: 2d8d1c8e238bd5e1448b06c284ac896b162fb856
   ExpoPrint: 13208d67f48c190ccfeb9b97aa3394ff31ec606b
-  ExpoQuickActions: 855c9eb619abdc0c26ac2a657aea8ee6a825ec7c
+  ExpoQuickActions: fdbda7f5874aed3dd2b1d891ec00ab3300dc7541
   ExpoSharing: 849a5ce9985c22598c16ec027e32969be8062e8e
   ExpoSpeech: 8f74347608243ee8fdc2faa14e7d2cd5503f33f8
   ExpoSplashScreen: 399ee9f85b6c8a61b965e13a1ecff8384db591c2
+  ExpoStoreReview: 92ad323dd14485e7aa67d5b47248fb22876ffaee
   ExpoVideo: 10e69b9c0652aba5c2edee2c572090e0412bd7ce
   EXUpdatesInterface: 7c977640bdd8b85833c19e3959ba46145c5719db
   fast_float: 06eeec4fe712a76acc9376682e4808b05ce978b6
@@ -4214,7 +4220,7 @@ SPEC CHECKSUMS:
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   PromisesSwift: 9d77319bbe72ebf6d872900551f7eeba9bce2851
   PurchasesHybridCommon: bb4c1ddc8683a18859da35f45a0717379f889d94
-  RCT-Folly: ea9d9256ba7f9322ef911169a9f696e5857b9e17
+  RCT-Folly: 7b4f73a92ad9571b9dbdb05bb30fad927fa971e1
   RCTDeprecation: ebe712bb05077934b16c6bf25228bdec34b64f83
   RCTRequired: ca91e5dd26b64f577b528044c962baf171c6b716
   RCTTypeSafety: e7678bd60850ca5a41df9b8dc7154638cb66871f

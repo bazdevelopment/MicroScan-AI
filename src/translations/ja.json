@@ -39,9 +39,16 @@
     "medicalDisclaimer": "医療免責事項",
     "conversationHistory": "会話履歴",
     "freeTrial": "無料トライアル",
+    "free": "無料",
     "completedScans": "スキャン完了",
     "activeSubscription": "定期購入有効",
     "askAssistant": "AIアシスタントに質問",
+    "then": "その後",
+    "perWeek": "毎週",
+    "perYear": "毎年",
+    "perMonth": "毎月",
+    "tryForFree": "無料で試す",
+    "unlockNow": "今すぐアンロック",
     "copyText": {
       "loading": "コピー中...",
       "copied": "コピーしました！",
@@ -124,26 +131,33 @@
       },
       "paywallOnboarding": {
         "freeTierOfferings": {
-          "title": "プレミアム機能を今すぐアンロック！🎉",
+          "freeTrialEnabled": "無料トライアル有効",
+          "heading": "無制限アクセス",
+          "title": "今すぐプレミアム機能をアンロック！",
           "firstOffering": "すべてのプレミアム機能にアクセス",
           "secondOffering": "広告なしの体験",
-          "thirdOffering": "適正な利用範囲内での無制限スキャン",
-          "fourthOffering": "公正な利用と24時間体制のパーソナルAIアシスタントアクセスによる無制限スキャン"
+          "thirdOffering": "無制限の顕微鏡スキャン",
+          "fourthOffering": "24時間年中無休のAIアシスタントと無制限チャット"
         }
       },
       "paywallUpgradeScreen": {
-        "heading": "プレミアム機能を今すぐアンロック！🎉",
+        "heading": "プレミアム機能を今すぐアンロック！",
         "firstOffering": {
           "title": "無料トライアルを開始",
-          "subtitle": "{{freeScans}}回の無料スキャンをお楽しみください - 支払いなし"
+          "subtitle": "{{freeScans}}回の無料スキャンを楽しむ – 支払い不要"
         },
         "secondOffering": {
-          "title": "月額",
-          "subtitle": "{{ price }}/月"
+          "title": "月間プラン",
+          "subtitle": "{{ price }} / 月"
         },
         "thirdOffering": {
-          "title": "年額",
-          "subtitle": "ベストディール：{{ price }}/年 – もっと節約！"
+          "title": "年間プラン",
+          "subtitle": "{{ price }} 年間"
+        },
+        "fourthOffering": {
+          "title": "{{trialDays}}日間の無料トライアル",
+          "subtitle": "{{ price }} 年間",
+          "plan": "週間計画"
         }
       },
       "newAppVersionScreen": {
@@ -211,6 +225,13 @@
         "heading": "直接メールをお送りください。私たちのチームができるだけ早く返信いたします。",
         "customerSupport": "カスタマーサポート",
         "emailAddress": "メールアドレス"
+      },
+      "languageAnalysisModal": {
+        "languagePreferenceQuestion": "AI分析にはどの言語を使用しますか？",
+        "languageSelection": "AIの応答言語を選択してください",
+        "languageSearchCriteria": "言語、国コード、または国旗で検索",
+        "noLanguageFound": "言語が見つかりません",
+        "noLanguageFoundSubtitle": "検索キーワードを変更してみてください"
       }
     }
   },

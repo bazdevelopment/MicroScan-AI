@@ -219,10 +219,10 @@ export const deleteScanInterpretationById = async (
     const conversationId = interpretationResult?.data()?.conversationId;
 
     // Delete the conversation
-    await db.collection('conversations').doc(conversationId).delete();
-    // Delete the document with the provided documentId
-    await db.collection(collectionName).doc(documentId).delete();
-
+    if (conversationId)
+      await db.collection('conversations').doc(conversationId).delete(); // Delete the document with the provided documentId
+    if (documentId)
+      await db.collection(collectionName).doc(documentId).delete();
     return {
       success: true,
       message: t.deleteScanInterpretation.success,

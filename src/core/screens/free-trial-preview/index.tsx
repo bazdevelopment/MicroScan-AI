@@ -1,4 +1,5 @@
 /* eslint-disable max-lines-per-function */
+import { router } from 'expo-router';
 import { useColorScheme } from 'nativewind';
 import React from 'react';
 import { View } from 'react-native';
@@ -83,7 +84,12 @@ const FreeTrialPreview = ({
           </View>
 
           <Button
-            onPress={() => goToNextScreen({})}
+            onPress={() =>
+              router.navigate({
+                pathname: '/paywall-new',
+                params: { allowAppAccess: true },
+              })
+            }
             label={translate('general.next')}
             className="bottom-[-10px] mt-6 h-[56px] w-[150px] rounded-xl border-2 border-primary-900 bg-white pl-5 dark:bg-primary-900"
             textClassName="text-lg text-primary-900 dark:text-white"

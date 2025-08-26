@@ -18,7 +18,7 @@ const PremiumFeaturesOverview = () => {
       className={`flex-1 justify-center p-4 ${isVerySmallDevice ? 'mt-4 gap-8' : 'gap-16'}`}
     >
       <View
-        className={`rotate-3 flex-row items-center justify-center rounded-xl bg-white shadow dark:bg-primary-900 ${isVerySmallDevice ? 'p-3' : 'p-6'}`}
+        className={`rotate-3 flex-row items-center justify-center rounded-xl bg-white shadow dark:bg-primary-900 ${isVerySmallDevice ? 'p-3' : 'px-10 py-6'}`}
       >
         <View className="mr-3 items-center justify-center rounded-full ">
           <ScanIllustration

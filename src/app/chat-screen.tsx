@@ -33,12 +33,15 @@ import Icon from '@/components/icon';
 import { LOADING_MESSAGES_CHATBOT } from '@/constants/loading-messages';
 import { DEVICE_TYPE, translate } from '@/core';
 import useBackHandler from '@/core/hooks/use-back-handler';
+import { useClipboard } from '@/core/hooks/use-clipboard';
 import { useTextToSpeech } from '@/core/hooks/use-text-to-speech';
 import { checkIsVideo } from '@/core/utilities/check-is-video';
 import { generateUniqueId } from '@/core/utilities/generate-unique-id';
 import { wait } from '@/core/utilities/wait';
 import { colors, SafeAreaView, Text } from '@/ui';
 import { CloseIcon, SoundOn, StopIcon } from '@/ui/assets/icons';
+import { CopiedIcon } from '@/ui/assets/icons/copied';
+import CopyIcon from '@/ui/assets/icons/copy';
 
 type MessageType = {
   role: string;
@@ -63,6 +66,7 @@ export const ChatBubble = ({
   const fadeAnim = useRef(new Animated.Value(0)).current;
   const { colorScheme } = useColorScheme();
   const isDark = colorScheme === 'dark';
+  const { copyToClipboard, copiedText } = useClipboard();
 
   useEffect(() => {
     Animated.timing(fadeAnim, {
@@ -126,7 +130,20 @@ export const ChatBubble = ({
           />
         )} */}
       </Animated.View>
-      <View className="item-center mt-1 flex-row gap-1">
+      <View className="item-center mt-1 flex-row gap-4">
+        {!isUser && (
+          <TouchableOpacity
+            className="rounded-full p-1"
+            onPress={() => copyToClipboard(message.content)}
+          >
+            {!!copiedText ? (
+              <CopiedIcon width={20} height={20} color={colors.primary[900]} />
+            ) : (
+              <CopyIcon width={20} height={20} color={colors.primary[900]} />
+            )}
+          </TouchableOpacity>
+        )}
+
         {!isUser && !!speak && (
           <View className="h-9">
             {isSpeaking ? (
@@ -134,13 +151,13 @@ export const ChatBubble = ({
                 <StopIcon
                   width={22}
                   height={22}
-                  top={5}
+                  top={3}
                   color={colors.primary[900]}
                 />
               </TouchableOpacity>
             ) : (
               <TouchableOpacity onPress={() => speak(message.content)}>
-                <SoundOn width={22} height={22} />
+                <SoundOn width={20} height={20} top={3} />
               </TouchableOpacity>
             )}
           </View>
@@ -150,7 +167,7 @@ export const ChatBubble = ({
             source={require('assets/lottie/speaking-animation.json')}
             autoPlay
             loop
-            style={{ width: 80, height: 30 }}
+            style={{ width: 30, height: 30 }}
           />
         )}
 
@@ -474,7 +491,7 @@ const ChatScreen = () => {
           {/* Input Area */}
           <View className="border-t border-gray-200 bg-white px-4 pb-2 pt-4 dark:border-blackEerie dark:bg-blackEerie">
             <View
-              className={`flex-row items-center rounded-2xl bg-gray-100 px-4 py-1 dark:bg-black border-primary-900/60 border-2 ${DEVICE_TYPE.IOS && 'mb-4'}`}
+              className={`flex-row items-center rounded-2xl border-2 border-primary-900/60 bg-gray-100 px-4 py-1 dark:bg-black ${DEVICE_TYPE.IOS && 'mb-4'}`}
             >
               <TextInput
                 className="flex-1 py-3 text-base text-gray-800 dark:text-white"
@@ -483,7 +500,7 @@ const ChatScreen = () => {
                 placeholder={translate('general.chatbotPlaceholder')}
                 placeholderTextColor={isDark ? colors.charcoal[300] : '#9CA3AF'}
                 multiline
-                maxLength={150}
+                maxLength={400}
               />
               <TouchableOpacity
                 onPress={handleSendMessage}
@@ -539,7 +556,7 @@ function getChatMessagesStyles(
     body: {
       marginTop: -7,
       marginBottom: -7,
-      fontSize: 14,
+      fontSize: 15,
       lineHeight: 22,
       color: baseTextColor,
     },
@@ -550,6 +567,10 @@ function getChatMessagesStyles(
       fontFamily: 'Font-Regular',
     },
     list_item: {
+      fontFamily: 'Font-Regular',
+    },
+    code_inline: {
+      backgroundColor: colors.primary[900],
       fontFamily: 'Font-Regular',
     },
     span: {
@@ -569,7 +590,7 @@ function getChatMessagesStyles(
     body: {
       marginTop: -7,
       marginBottom: -7,
-      fontSize: 14,
+      fontSize: 15,
       lineHeight: 22,
       color: darkTextColor,
     },
@@ -585,6 +606,10 @@ function getChatMessagesStyles(
       fontFamily: 'Font-Regular',
     },
     list_item: {
+      fontFamily: 'Font-Regular',
+    },
+    code_inline: {
+      backgroundColor: colors.primary[900],
       fontFamily: 'Font-Regular',
     },
     span: {

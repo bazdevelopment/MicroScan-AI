@@ -1,6 +1,7 @@
 /* eslint-disable max-lines-per-function */
 import { BlurView } from '@react-native-community/blur';
 import LottieView from 'lottie-react-native';
+import { useColorScheme } from 'nativewind';
 import React from 'react';
 import { Image, Modal, StyleSheet, View } from 'react-native';
 
@@ -26,6 +27,9 @@ const ScanningModal = ({
 }: IImageScannerModal) => {
   useBackHandler(() => true);
 
+  const { colorScheme } = useColorScheme();
+  const isDark = colorScheme === 'dark';
+
   return (
     <Modal
       animationType="fade"
@@ -50,7 +54,7 @@ const ScanningModal = ({
       <View className="flex-1 items-center justify-center px-10">
         <View>
           {isVideo ? (
-            <View className="h-[300px] w-[300px]">
+            <View className="size-[300px]">
               <VideoPlayer
                 videoSource={filePath as string}
                 additionalVideoStyles={{ width: 300, height: 300 }}
@@ -61,7 +65,7 @@ const ScanningModal = ({
               source={{
                 uri: filePath as string,
               }}
-              className="h-[300px] w-[300px] rounded-xl"
+              className="size-[300px] rounded-xl"
               resizeMode="cover"
             />
           )}
@@ -86,12 +90,13 @@ const ScanningModal = ({
         )}
         <View className="flex-column mt-10 gap-5">
           {!!error && (
-            <View className="flex-row justify-center gap-5">
+            <View className="justify-center gap-5">
               <Button
+                variant="default"
                 label={translate('general.retry')}
                 onPress={onRetry}
-                className="dark:bg-primary-900"
-                textClassName="dark:text-white"
+                className="h-12 min-w-[200] rounded-xl border-2 border-primary-900 bg-black active:opacity-80 dark:bg-black"
+                textClassName="text-white dark:text-white"
                 disabled={isPending}
                 icon={<RetryIcon color={colors.white} width={18} height={18} />}
               />
@@ -99,10 +104,17 @@ const ScanningModal = ({
               <Button
                 label={translate('general.close')}
                 onPress={onClose}
-                className="dark:bg-primary-900"
-                textClassName="dark:text-white"
+                variant="default"
+                className="w-[100] justify-center self-center rounded-full bg-black active:opacity-80 dark:bg-white"
+                textClassName="text-white dark:text-black"
                 disabled={isPending}
-                icon={<CloseIcon color={colors.white} width={18} height={18} />}
+                icon={
+                  <CloseIcon
+                    color={isDark ? colors.black : colors.white}
+                    width={18}
+                    height={18}
+                  />
+                }
               />
             </View>
           )}

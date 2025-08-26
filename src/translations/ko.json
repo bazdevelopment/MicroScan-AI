@@ -39,9 +39,15 @@
     "medicalDisclaimer": "의료 면책 조항",
     "conversationHistory": "대화 기록",
     "freeTrial": "무료 체험",
+    "free": "무료",
     "completedScans": "스캔 완료",
     "activeSubscription": "구독 활성",
     "askAssistant": "AI 조수에게 물어보기",
+    "perWeek": "매주",
+    "perYear": "매년",
+    "perMonth": "매달",
+    "tryForFree": "무료로 시도하기",
+    "unlockNow": "지금 잠금 해제",
     "copyText": {
       "loading": "복사 중...",
       "copied": "복사되었습니다!",
@@ -124,26 +130,33 @@
       },
       "paywallOnboarding": {
         "freeTierOfferings": {
-          "title": "오늘 프리미엄 기능을 잠금 해제하세요! 🎉",
-          "firstOffering": "모든 프리미엄 기능 액세스",
-          "secondOffering": "광고 없는 환경",
-          "thirdOffering": "합리적인 사용 범위 내에서 무제한 스캔",
-          "fourthOffering": "공정한 사용과 연중무휴 개인 AI 비서 액세스로 무제한 스캔"
+          "freeTrialEnabled": "무료 체험 활성화",
+          "heading": "무제한 이용",
+          "title": "지금 프리미엄 기능을 잠금 해제하세요!",
+          "firstOffering": "모든 프리미엄 기능 이용",
+          "secondOffering": "광고 없는 경험",
+          "thirdOffering": "무제한 현미경 스캔",
+          "fourthOffering": "연중무휴 24시간 AI 비서와 무제한 채팅"
         }
       },
       "paywallUpgradeScreen": {
-        "heading": "오늘 프리미엄 기능을 잠금 해제하세요! 🎉",
+        "heading": "프리미엄 기능을 지금 해제하세요!",
         "firstOffering": {
           "title": "무료 체험 시작",
-          "subtitle": "{{freeScans}} 무료 스캔 즐기기 – 결제 없음"
+          "subtitle": "{{freeScans}}회 무료 스캔 – 결제 불필요"
         },
         "secondOffering": {
-          "title": "월간",
-          "subtitle": "{{ price }}/월"
+          "title": "월간 계획",
+          "subtitle": "{{ price }} / 월"
         },
         "thirdOffering": {
-          "title": "연간",
-          "subtitle": "최고의 거래: {{ price }}/년 – 더 많이 절약하세요!"
+          "title": "연간 계획",
+          "subtitle": "{{ price }} 연간"
+        },
+        "fourthOffering": {
+          "title": "{{trialDays}}일 무료 체험",
+          "subtitle": "{{ price }} 연간",
+          "plan": "주간 계획"
         }
       },
       "newAppVersionScreen": {
@@ -211,6 +224,13 @@
         "heading": "부담 없이 직접 이메일을 보내주시면 저희 팀이 가능한 한 빨리 연락드리겠습니다.",
         "customerSupport": "고객 지원",
         "emailAddress": "이메일 주소"
+      },
+      "languageAnalysisModal": {
+        "languagePreferenceQuestion": "AI 분석에 어떤 언어를 사용하시겠습니까?",
+        "languageSelection": "AI 응답 언어 선택",
+        "languageSearchCriteria": "언어, 국가 코드 또는 국기로 검색",
+        "noLanguageFound": "언어를 찾을 수 없음",
+        "noLanguageFoundSubtitle": "검색어를 수정해 보세요"
       }
     }
   },

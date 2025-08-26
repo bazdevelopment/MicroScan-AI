@@ -39,7 +39,7 @@ const AttachmentPreview = ({
   return (
     <Container
       onPress={openModal}
-      className={`rounded-[25px] border-4 border-primary-300 ${className} overflow-hidden`}
+      className={`rounded-[25px] border-2 border-primary-300 ${className} overflow-hidden`}
     >
       {isVideo ? (
         <VideoPlayer
@@ -83,7 +83,7 @@ const AttachmentPreview = ({
           <View className={`w-full ${Platform.isPad ? 'h-[85%]' : 'h-96'}`}>
             <Image
               source={{ uri: filePath }}
-              className="h-full w-full"
+              className="size-full"
               contentFit="contain"
             />
           </View>

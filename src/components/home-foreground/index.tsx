@@ -70,7 +70,8 @@ export const Foreground = ({ scrollValue }: IHomeForeground) => {
             {
               label: translate('components.UpgradeBanner.heading'),
               variant: 'default',
-              onPress: () => wait(500).then(() => router.navigate('/paywall')), // a small delay in mandatory for Toast, not sure why
+              onPress: () =>
+                wait(500).then(() => router.navigate('/paywall-new')), // a small delay in mandatory for Toast, not sure why
               buttonTextClassName: 'dark:text-white',
               className:
                 'flex-1 rounded-xl h-[48] bg-primary-900 active:opacity-80 dark:bg-primary-900',
@@ -125,18 +126,18 @@ export const Foreground = ({ scrollValue }: IHomeForeground) => {
         </View>
         <CardWrapper
           isEntirelyClickable
-          className="mr-12 mt-6"
+          className="mr-12 mt-4"
           onPress={() => router.navigate('/profile')}
         >
           <View className="ml-6 flex-row items-center">
             <Avatar
-              image={require('../../ui/assets/images/avatar.png')}
+              image={require('../../ui/assets/images/avatar-doctor.png')}
               size="large"
               shape="circle"
             />
 
             <View className="ml-4 gap-3">
-              <View className="max-w-[220] flex-row items-center gap-1">
+              <View className="max-w-[240] flex-row items-center gap-1">
                 <Text className="font-semibold-nunito text-2xl text-white">
                   {`${translate('general.welcome')}, ${userInfo?.userName}!`}
                 </Text>
@@ -149,7 +150,7 @@ export const Foreground = ({ scrollValue }: IHomeForeground) => {
           </View>
         </CardWrapper>
 
-        <View className="absolute top-[200px] w-[85%] flex-col items-center self-center overflow-hidden rounded-[40px] border-[3px] border-primary-600 bg-primary-800  p-[20px]   dark:bg-charcoal-800">
+        <View className="absolute top-[190] w-[85%] flex-col items-center self-center overflow-hidden rounded-[40px] border-[3px] border-primary-600 bg-primary-800  p-[20px]   dark:bg-charcoal-800">
           <SnakeLine
             className="absolute bottom-[-20] left-[-60]"
             color={isDark ? colors.charcoal[600] : colors.primary[700]}

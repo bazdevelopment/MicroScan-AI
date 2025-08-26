@@ -61,7 +61,7 @@ const Profile = () => {
         <View className="flex-1 bg-white dark:bg-blackEerie">
           <View className="h-[120px] rounded-b-[50px] bg-primary-900 pb-10 pt-12 dark:bg-blackEerie" />
           <Avatar
-            image={require('../ui/assets/images/avatar.png')}
+            image={require('../ui/assets/images/avatar-doctor.png')}
             size="xl"
             shape="rounded-xl"
             className="top-[-55px] self-center rounded-3xl border-4 border-primary-300"

@@ -163,7 +163,7 @@ export const RadioIcon = ({
       style={{ borderColor: color, width: SIZE, height: SIZE }}
     >
       <View
-        className={`h-[10px] w-[10px] rounded-[10px] ${checked ? 'bg-primary-900 opacity-100 dark:bg-primary-900' : 'opacity-0'}`}
+        className={`size-[10px] rounded-[10px] ${checked ? 'bg-primary-900 opacity-100 dark:bg-primary-900' : 'opacity-0'}`}
       />
     </View>
   );
@@ -219,7 +219,7 @@ export const SwitchIcon = ({ checked = false }: IconProps) => {
     ? THUMB_OFFSET
     : WIDTH - THUMB_WIDTH - THUMB_OFFSET;
 
-  const backgroundColor = checked ? colors.primary[900] : colors.charcoal[400];
+  const backgroundColor = checked ? colors.success[500] : colors.charcoal[400];
 
   return (
     <View className="w-[50px] justify-center">

@@ -39,9 +39,16 @@
     "medicalDisclaimer": "Descargo de responsabilidad médica",
     "conversationHistory": "Historial de conversaciones",
     "freeTrial": "Prueba gratuita",
+    "free": "GRATIS",
     "completedScans": "Escaneos completados",
     "activeSubscription": "Suscripción activa",
     "askAssistant": "Preguntar al asistente de IA",
+    "then": "entonces",
+    "perWeek": "por semana",
+    "perYear": "por año",
+    "perMonth": "por mes",
+    "tryForFree": "Prueba gratis",
+    "unlockNow": "Desbloquear ahora",
     "copyText": {
       "loading": "Copiando...",
       "copied": "¡Copiado!",
@@ -124,26 +131,33 @@
       },
       "paywallOnboarding": {
         "freeTierOfferings": {
-          "title": "¡Desbloquea las funciones Premium hoy mismo! 🎉",
-          "firstOffering": "Accede a todas las funciones Premium",
+          "freeTrialEnabled": "Prueba gratuita habilitada",
+          "heading": "Acceso ilimitado",
+          "title": "¡Desbloquea funciones premium hoy mismo!",
+          "firstOffering": "Accede a todas las funciones premium",
           "secondOffering": "Experiencia sin anuncios",
-          "thirdOffering": "Escaneos ilimitados dentro de un uso razonable",
-          "fourthOffering": "Escaneos ilimitados con uso justo y acceso al asistente personal de IA 24/7"
+          "thirdOffering": "Escaneos de microscopía ilimitados",
+          "fourthOffering": "Chats ilimitados con un asistente de IA 24/7"
         }
       },
       "paywallUpgradeScreen": {
-        "heading": "¡Desbloquea las funciones Premium hoy mismo! 🎉",
+        "heading": "¡Desbloquea funciones premium hoy!",
         "firstOffering": {
-          "title": "Iniciar prueba gratuita",
-          "subtitle": "Disfruta de {{freeScans}} escaneos gratuitos – sin pago"
+          "title": "Comenzar prueba gratuita",
+          "subtitle": "Disfruta de {{freeScans}} escaneos gratis – sin pago"
         },
         "secondOffering": {
-          "title": "Mensual",
-          "subtitle": "{{ price }}/mes"
+          "title": "Plan mensual",
+          "subtitle": "{{ price }} / mes"
         },
         "thirdOffering": {
-          "title": "Anual",
-          "subtitle": "La mejor oferta: {{ price }}/año – ¡ahorra más!"
+          "title": "Plan Anual",
+          "subtitle": "{{ price }} por año"
+        },
+        "fourthOffering": {
+          "title": "Prueba de {{trialDays}} días",
+          "subtitle": "{{ price }} por año",
+          "plan": "Plan Semanal"
         }
       },
       "newAppVersionScreen": {
@@ -211,6 +225,13 @@
         "heading": "No dudes en enviarnos un correo electrónico directamente y nuestro equipo se pondrá en contacto contigo lo antes posible",
         "customerSupport": "Atención al cliente",
         "emailAddress": "Correo electrónico"
+      },
+      "languageAnalysisModal": {
+        "languagePreferenceQuestion": "¿Qué idioma preferirías para el análisis de la IA?",
+        "languageSelection": "Elige un idioma para las respuestas de la IA",
+        "languageSearchCriteria": "Busca por idioma, código de país o bandera",
+        "noLanguageFound": "No se encontró ningún idioma",
+        "noLanguageFoundSubtitle": "Intenta modificar tus términos de búsqueda"
       }
     }
   },

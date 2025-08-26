@@ -16,7 +16,7 @@ const FreeTierStatus = ({
   return (
     <View className={`flex-row items-center justify-between ${className}`}>
       <View className="flex-1 flex-row items-center space-x-3">
-        <View className="h-[70] w-[70] items-center justify-center overflow-hidden rounded-xl bg-primary-900">
+        <View className="size-[70] items-center justify-center overflow-hidden rounded-xl bg-primary-900">
           <CornerTopRight
             style={{
               position: 'absolute',
@@ -34,7 +34,7 @@ const FreeTierStatus = ({
         </View>
 
         <View className="ml-4 mr-2 w-full flex-1 flex-col gap-1">
-          <Text className="font-semibold-nunito text-2xl">
+          <Text className="font-semibold-nunito text-lg">
             {translate('components.FreeTierStatus.heading')}
           </Text>
           <Text className="text-sm text-gray-600">

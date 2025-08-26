@@ -26,7 +26,7 @@ const Avatar = ({
 
   const styles = React.useMemo(
     () => avatar({ size, shape, withBorder }),
-    [size, shape, withBorder],
+    [size, shape, withBorder]
   );
   return (
     <View className={styles.container({ className })} style={style}>
@@ -68,26 +68,26 @@ export default Avatar;
 const avatar = tv({
   slots: {
     container: 'items-center justify-center',
-    image: 'h-full w-full bg-primary-200 dark:bg-blackBeauty',
+    image: 'size-full bg-primary-200 dark:bg-blackBeauty',
     name: 'items-center justify-center',
   },
   variants: {
     size: {
       small: {
-        image: 'h-10 w-10',
-        name: 'h-10 w-10',
+        image: 'size-10',
+        name: 'size-10',
       },
       medium: {
-        image: 'h-16 w-16',
-        name: 'h-12 w-12',
+        image: 'size-16',
+        name: 'size-12',
       },
       large: {
-        image: 'h-[65px] w-[65px]',
-        name: 'h-14 w-14',
+        image: 'size-[65px]',
+        name: 'size-14',
       },
       xl: {
-        image: 'h-[100px] w-[100px]',
-        name: 'h-14 w-14',
+        image: 'size-[100px]',
+        name: 'size-14',
       },
     },
     shape: {

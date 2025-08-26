@@ -46,6 +46,8 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   },
   assetBundlePatterns: ['**/*'],
   ios: {
+    appStoreUrl:
+      'https://apps.apple.com/us/app/microscan-ai-microscopy/id6744826886',
     supportsTablet: true,
     bundleIdentifier: Env.BUNDLE_ID,
     googleServicesFile: ClientEnv.GOOGLE_SERVICES_PLIST_PATH,
@@ -75,6 +77,8 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     typedRoutes: true,
   },
   android: {
+    playStoreUrl:
+      'https://play.google.com/store/apps/details?id=com.microscanai',
     googleServicesFile: ClientEnv.GOOGLE_SERVICES_JSON_PATH,
     adaptiveIcon: {
       foregroundImage: './assets/adaptive-icon.png',
