@@ -27,7 +27,7 @@ export const LanguageItem = () => {
     () => [
       // English - Most widely used global language, especially in business and internet
       {
-        label: `${translate('settings.languages.english')} 🇺🇸`,
+        label: `${translate('settings.languages.english')} 🇺🇸 🇬🇧`,
         value: 'en',
       },
       // Mandarin Chinese - Largest number of native speakers
@@ -86,12 +86,12 @@ export const LanguageItem = () => {
         value: 'ro',
       },
     ],
-    [],
+    []
   );
 
   const selectedLanguage = React.useMemo(
     () => langs.find((lang) => lang.value === language),
-    [language, langs],
+    [language, langs]
   );
   return (
     <>

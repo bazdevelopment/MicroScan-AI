@@ -39,9 +39,16 @@
     "medicalDisclaimer": "医疗免责声明",
     "conversationHistory": "对话历史记录",
     "freeTrial": "免费试用",
+    "free": "免费",
     "completedScans": "已完成扫描",
     "activeSubscription": "订阅活跃",
     "askAssistant": "询问AI助手",
+    "then": "然后",
+    "perWeek": "每周",
+    "perYear": "每年",
+    "perMonth": "每月",
+    "tryForFree": "免费试用",
+    "unlockNow": "立即解锁",
     "copyText": {
       "loading": "正在复制...",
       "copied": "已复制！",
@@ -124,26 +131,33 @@
       },
       "paywallOnboarding": {
         "freeTierOfferings": {
-          "title": "今天就解锁高级功能！🎉",
+          "freeTrialEnabled": "免费试用已启用",
+          "heading": "无限访问",
+          "title": "立即解锁高级功能！",
           "firstOffering": "访问所有高级功能",
           "secondOffering": "无广告体验",
-          "thirdOffering": "合理使用范围内的无限扫描",
-          "fourthOffering": "公平使用下的无限扫描和全天候个人AI助手访问"
+          "thirdOffering": "无限次显微镜扫描",
+          "fourthOffering": "与24/7人工智能助手无限畅聊"
         }
       },
       "paywallUpgradeScreen": {
-        "heading": "今天就解锁高级功能！🎉",
+        "heading": "立即解锁高级功能！",
         "firstOffering": {
           "title": "开始免费试用",
-          "subtitle": "享受 {{freeScans}} 次免费扫描 – 无需付款"
+          "subtitle": "享受{{freeScans}}次免费扫描 – 无需付款"
         },
         "secondOffering": {
-          "title": "月付",
+          "title": "月度计划",
           "subtitle": "{{ price }}/月"
         },
         "thirdOffering": {
-          "title": "年付",
-          "subtitle": "最佳优惠：{{ price }}/年 – 节省更多！"
+          "title": "年度计划",
+          "subtitle": "{{ price }} 每年"
+        },
+        "fourthOffering": {
+          "title": "{{trialDays}}天试用",
+          "subtitle": "{{ price }} 每年",
+          "plan": "每周计划"
         }
       },
       "newAppVersionScreen": {
@@ -211,6 +225,13 @@
         "heading": "请随时直接给我们发送电子邮件，我们的团队将尽快回复您",
         "customerSupport": "客户支持",
         "emailAddress": "电子邮件地址"
+      },
+      "languageAnalysisModal": {
+        "languagePreferenceQuestion": "您希望使用哪种语言进行AI分析？",
+        "languageSelection": "为 AI 回应选择一种语言",
+        "languageSearchCriteria": "按语言、国家代码或旗帜搜索",
+        "noLanguageFound": "未找到语言",
+        "noLanguageFoundSubtitle": "请尝试修改您的搜索词"
       }
     }
   },

@@ -39,9 +39,16 @@
     "medicalDisclaimer": "Medical Disclaimer",
     "conversationHistory": "Conversation history",
     "freeTrial": "Free trial",
+    "free": "FREE",
     "completedScans": "Scans completed",
     "activeSubscription": "Subscription active",
     "askAssistant": "Ask AI assistant",
+    "then": "then",
+    "perWeek": "per week",
+    "perYear": "per year",
+    "perMonth": "per month",
+    "tryForFree": "Try For Free",
+    "unlockNow": "Unlock Now",
     "copyText": {
       "loading": "Copying...",
       "copied": "Copied!",
@@ -124,26 +131,33 @@
       },
       "paywallOnboarding": {
         "freeTierOfferings": {
-          "title": "Unlock Premium Features Today! 🎉",
+          "freeTrialEnabled": "Free Trial Enabled",
+          "heading": "Unlimited Access",
+          "title": "Unlock Premium Features Today!",
           "firstOffering": "Access All Premium Features",
           "secondOffering": "Ad-Free Experience",
-          "thirdOffering": "Unlimited scans within reasonable use",
-          "fourthOffering": "Unlimited scans with fair use and 24/7 personal AI assistant access"
+          "thirdOffering": "Unlimited microscopy scans",
+          "fourthOffering": "Unlimited chats with a 24/7 AI assistant"
         }
       },
       "paywallUpgradeScreen": {
-        "heading": "Unlock Premium Features Today! 🎉",
+        "heading": "Unlock Premium Features Today!",
         "firstOffering": {
           "title": "Start Free Trial",
           "subtitle": "Enjoy {{freeScans}} free scans – no payment"
         },
         "secondOffering": {
-          "title": "Monthly",
+          "title": "Monthly Plan",
           "subtitle": "{{ price }}/month"
         },
         "thirdOffering": {
-          "title": "Yearly",
-          "subtitle": "Best deal: {{ price }}/year – save more!"
+          "title": "Yearly Plan",
+          "subtitle": "{{ price }} per year"
+        },
+        "fourthOffering": {
+          "title": "{{trialDays}}-Day Trial",
+          "subtitle": "{{ price }} per year",
+          "plan": "Weekly Plan"
         }
       },
       "newAppVersionScreen": {
@@ -211,6 +225,13 @@
         "heading": "Feel free to email us directly, and our team will get back to you as soon as possible",
         "customerSupport": "Customer Support",
         "emailAddress": "Email Address"
+      },
+      "languageAnalysisModal": {
+        "languagePreferenceQuestion": "What language would you prefer for the AI analysis?",
+        "languageSelection": "Choose a language for AI responses",
+        "languageSearchCriteria": "Search by language, country code, or flag",
+        "noLanguageFound": "No Language Found",
+        "noLanguageFoundSubtitle": "Try modifying your search terms"
       }
     }
   },

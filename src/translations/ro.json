@@ -39,9 +39,16 @@
     "medicalDisclaimer": "Declinarea răspunderii medicale",
     "conversationHistory": "Istoric conversații",
     "freeTrial": "Probă gratuită",
+    "free": "GRATUIT",
     "completedScans": "Scanări completate",
     "activeSubscription": "Abonament activ",
     "askAssistant": "Întreabă asistentul AI",
+    "then": "iar apoi",
+    "perWeek": "pe săptămână",
+    "perYear": "pe an",
+    "perMonth": "pe lună",
+    "tryForFree": "Încearcă gratuit",
+    "unlockNow": "Deblochează acum",
     "copyText": {
       "loading": "Se copiază...",
       "copied": "Copiat!",
@@ -124,26 +131,33 @@
       },
       "paywallOnboarding": {
         "freeTierOfferings": {
-          "title": "Deblochează funcții Premium azi! 🎉",
-          "firstOffering": "Accesează toate funcțiile Premium",
+          "freeTrialEnabled": "Versiune de încercare gratuită activată",
+          "heading": "Acces nelimitat",
+          "title": "Deblochează funcțiile premium chiar astăzi!",
+          "firstOffering": "Accesează toate funcțiile premium",
           "secondOffering": "Experiență fără reclame",
-          "thirdOffering": "Scanări nelimitate în limita utilizării rezonabile",
-          "fourthOffering": "Scanări nelimitate cu utilizare echitabilă și acces 24/7 la asistentul personal AI"
+          "thirdOffering": "Scanări de microscopie nelimitate",
+          "fourthOffering": "Chat-uri nelimitate cu un asistent AI 24/7"
         }
       },
       "paywallUpgradeScreen": {
-        "heading": "Deblochează funcții Premium azi! 🎉",
+        "heading": "Deblochează Funcționalitățile Premium Astăzi!",
         "firstOffering": {
-          "title": "Începe proba gratuită",
+          "title": "Începe Perioada de Probă",
           "subtitle": "Bucură-te de {{freeScans}} scanări gratuite – fără plată"
         },
         "secondOffering": {
-          "title": "Lunar",
+          "title": "Plan lunar",
           "subtitle": "{{ price }}/lună"
         },
         "thirdOffering": {
-          "title": "Anual",
-          "subtitle": "Cea mai bună ofertă: {{ price }}/an – economisește mai mult!"
+          "title": "Plan Anual",
+          "subtitle": "{{ price }} pe an"
+        },
+        "fourthOffering": {
+          "title": "Probă de {{trialDays}} zile",
+          "subtitle": "{{ price }} pe an",
+          "plan": "Plan Săptămânal"
         }
       },
       "newAppVersionScreen": {
@@ -211,6 +225,13 @@
         "heading": "Nu ezitați să ne trimiteți un email direct, iar echipa noastră vă va răspunde cât mai curând posibil",
         "customerSupport": "Suport Clienți",
         "emailAddress": "Adresa de Email"
+      },
+      "languageAnalysisModal": {
+        "languagePreferenceQuestion": "Ce limbă ați prefera pentru analiza AI?",
+        "languageSelection": "Alegeți o limbă pentru răspunsurile AI",
+        "languageSearchCriteria": "Căutați după limbă, cod de țară sau steag",
+        "noLanguageFound": "Nicio limbă găsită",
+        "noLanguageFoundSubtitle": "Încercați să modificați termenii de căutare"
       }
     }
   },

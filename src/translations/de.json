@@ -39,9 +39,16 @@
     "medicalDisclaimer": "Medizinischer Haftungsausschluss",
     "conversationHistory": "Gesprächsverlauf",
     "freeTrial": "Kostenlose Testversion",
+    "free": "KOSTENLOS",
     "completedScans": "Scans abgeschlossen",
     "activeSubscription": "Abonnement aktiv",
     "askAssistant": "KI-Assistent fragen",
+    "then": "dann",
+    "perWeek": "pro Woche",
+    "perYear": "pro Jahr",
+    "perMonth": "pro Monat",
+    "tryForFree": "Kostenlos ausprobieren",
+    "unlockNow": "Jetzt freischalten",
     "copyText": {
       "loading": "Kopiert...",
       "copied": "Kopiert!",
@@ -124,26 +131,33 @@
       },
       "paywallOnboarding": {
         "freeTierOfferings": {
-          "title": "Schalten Sie Premium-Funktionen noch heute frei! 🎉",
+          "freeTrialEnabled": "Kostenlose Testversion aktiviert",
+          "heading": "Unbegrenzter Zugriff",
+          "title": "Schalte noch heute Premium-Funktionen frei!",
           "firstOffering": "Zugriff auf alle Premium-Funktionen",
           "secondOffering": "Werbefreies Erlebnis",
-          "thirdOffering": "Unbegrenzte Scans bei angemessener Nutzung",
-          "fourthOffering": "Unbegrenzte Scans bei fairer Nutzung und 24/7 persönlicher KI-Assistentenzugriff"
+          "thirdOffering": "Unbegrenzte Mikroskopie-Scans",
+          "fourthOffering": "Unbegrenzte Chats mit einem rund um die Uhr verfügbaren KI-Assistenten"
         }
       },
       "paywallUpgradeScreen": {
-        "heading": "Schalten Sie Premium-Funktionen noch heute frei! 🎉",
+        "heading": "Premium-Funktionen jetzt freischalten!",
         "firstOffering": {
-          "title": "Kostenlose Testversion starten",
-          "subtitle": "Genießen Sie {{freeScans}} kostenlose Scans – keine Zahlung"
+          "title": "Kostenlose Testphase starten",
+          "subtitle": "Genieße {{freeScans}} kostenlose Scans – keine Zahlung"
         },
         "secondOffering": {
-          "title": "Monatlich",
-          "subtitle": "{{ price }}/Monat"
+          "title": "Monatsplan",
+          "subtitle": "{{ price }} / Monat"
         },
         "thirdOffering": {
-          "title": "Jährlich",
-          "subtitle": "Bestes Angebot: {{ price }}/Jahr – sparen Sie mehr!"
+          "title": "Jahresplan",
+          "subtitle": "{{ price }} pro Jahr"
+        },
+        "fourthOffering": {
+          "title": "{{trialDays}}-Tägige Testversion",
+          "subtitle": "{{ price }} pro Jahr",
+          "plan": "Wochenplan"
         }
       },
       "newAppVersionScreen": {
@@ -211,6 +225,13 @@
         "heading": "Schreiben Sie uns gerne direkt eine E-Mail, unser Team wird sich so schnell wie möglich bei Ihnen melden.",
         "customerSupport": "Kundensupport",
         "emailAddress": "E-Mail-Adresse"
+      },
+      "languageAnalysisModal": {
+        "languagePreferenceQuestion": "Welche Sprache bevorzugen Sie für die KI-Analyse?",
+        "languageSelection": "Wählen Sie eine Sprache für KI-Antworten",
+        "languageSearchCriteria": "Suche nach Sprache, Ländercode oder Flagge",
+        "noLanguageFound": "Keine Sprache gefunden",
+        "noLanguageFoundSubtitle": "Versuchen Sie, Ihre Suchbegriffe zu ändern"
       }
     }
   },

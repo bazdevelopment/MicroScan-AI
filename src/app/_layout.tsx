@@ -135,7 +135,15 @@ export default function RootLayout() {
           options={{
             headerShown: false,
             gestureEnabled: false,
-            presentation: 'formSheet',
+            presentation: 'modal',
+          }}
+        />
+        <Stack.Screen
+          name="paywall-new"
+          options={{
+            headerShown: false,
+            gestureEnabled: false,
+            presentation: 'modal',
           }}
         />
         <Stack.Screen

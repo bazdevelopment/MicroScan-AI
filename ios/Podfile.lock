@@ -1490,6 +1490,8 @@ PODS:
     - ExpoModulesCore
   - ExpoSplashScreen (0.29.24):
     - ExpoModulesCore
+  - ExpoStoreReview (8.0.1):
+    - ExpoModulesCore
   - ExpoVideo (2.0.6):
     - ExpoModulesCore
   - EXUpdatesInterface (1.0.0):
@@ -3739,6 +3741,7 @@ DEPENDENCIES:
   - ExpoSharing (from `../node_modules/expo-sharing/ios`)
   - ExpoSpeech (from `../node_modules/expo-speech/ios`)
   - ExpoSplashScreen (from `../node_modules/expo-splash-screen/ios`)
+  - ExpoStoreReview (from `../node_modules/expo-store-review/ios`)
   - ExpoVideo (from `../node_modules/expo-video/ios`)
   - EXUpdatesInterface (from `../node_modules/expo-updates-interface/ios`)
   - fast_float (from `../node_modules/react-native/third-party-podspecs/fast_float.podspec`)
@@ -3951,6 +3954,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-speech/ios"
   ExpoSplashScreen:
     :path: "../node_modules/expo-splash-screen/ios"
+  ExpoStoreReview:
+    :path: "../node_modules/expo-store-review/ios"
   ExpoVideo:
     :path: "../node_modules/expo-video/ios"
   EXUpdatesInterface:
@@ -4148,29 +4153,30 @@ SPEC CHECKSUMS:
   expo-dev-launcher: 66a4945b9396f2528acc6b427b394645c8ba7b83
   expo-dev-menu: 915a71102903143a557c3a711a243c97e6703093
   expo-dev-menu-interface: 00dc42302a72722fdecec3fa048de84a9133bcc4
-  ExpoAsset: 0687fe05f5d051c4a34dd1f9440bd00858413cfe
-  ExpoClipboard: 5250b207b6d545f4e9aac5ea3c6e61c4f16d0aed
-  ExpoDevice: cf7419343b6e060209aaadd596defb1b6320597f
-  ExpoDocumentPicker: 8c1f88c2809ab2287350e8fac65964bf423578be
-  ExpoFileSystem: c8c19bf80d914c83dda3beb8569d7fb603be0970
-  ExpoFont: 773955186469acc5108ff569712a2d243857475f
-  ExpoHaptics: e01cce0741d68c281853118eb0267f88d42c6b7a
-  ExpoHead: 1b9a42c4b1a2627b8c9ef478a48af59a2fb8c684
-  ExpoImage: c37f79e5e97e0a662ed1c4b17363464007da3148
-  ExpoImageManipulator: 43c7bb3ecccbe993054d2e9131c8dcbe54f1385b
-  ExpoImagePicker: 482b2a6198b365dd18b5a0cb6d4caeec880cb8e1
-  ExpoKeepAwake: 2a5f15dd4964cba8002c9a36676319a3394c85c7
-  ExpoLinearGradient: ee9efc5acb988b911320e964fab9b4cbdeb198c4
-  ExpoLinking: 0381341519ca7180a3a057d20edb1cf6a908aaf4
-  ExpoLocalization: e36b911e04d371c6c6624ef818e56229bf51c498
-  ExpoModulesCore: aa143ddae7b87541bf00f82614bc2369ab88fded
-  ExpoPrint: cdbb10ba76557abaf825121b4136ccf5b279fe37
-  ExpoQuickActions: 5f8b794e9c69b19bd85dd51d78a9cfb9f32d61b8
-  ExpoSharing: c4540ef2e6615a92e05d2bddf019e1f58f27119e
-  ExpoSpeech: acaa550b65ffecb079ab7599cdcce7f2503d424f
-  ExpoSplashScreen: 1832984021b0795fda9302cf84ac62f0490eeadd
-  ExpoVideo: 775d29cbaf4affbee0a449770a476ce4ab69ca8c
-  EXUpdatesInterface: 1dcebac98ac5dad4289e6ff2bd5616822e894397
+  ExpoAsset: 48386d40d53a8c1738929b3ed509bcad595b5516
+  ExpoClipboard: 44fd1c8959ee8f6175d059dc011b154c9709a969
+  ExpoDevice: d36ab4186b6799a28fd449bb9a1c77455f23fd1a
+  ExpoDocumentPicker: 6d3d499cf15b692688a804f42927d0f35de5ebaa
+  ExpoFileSystem: 42d363d3b96f9afab980dcef60d5657a4443c655
+  ExpoFont: f354e926f8feae5e831ec8087f36652b44a0b188
+  ExpoHaptics: 8d199b2f33245ea85289ff6c954c7ee7c00a5b5d
+  ExpoHead: df924203fbf8e0913fc38b0f6aec71f9a9115482
+  ExpoImage: d840b256050f4428d2942bc2b6e9251f9e0d7021
+  ExpoImageManipulator: 4aca9cc1d84e31f62a7e8075c19026d3ad62f852
+  ExpoImagePicker: 24e5ba8da111f74519b1e6dc556e0b438b2b8464
+  ExpoKeepAwake: b0171a73665bfcefcfcc311742a72a956e6aa680
+  ExpoLinearGradient: 35ebd83b16f80b3add053a2fd68cc328ed927f60
+  ExpoLinking: 8d12bee174ba0cdf31239706578e29e74a417402
+  ExpoLocalization: 7776ea3bdb112125390745bbaf919b734b2ad1c7
+  ExpoModulesCore: 2d8d1c8e238bd5e1448b06c284ac896b162fb856
+  ExpoPrint: 13208d67f48c190ccfeb9b97aa3394ff31ec606b
+  ExpoQuickActions: fdbda7f5874aed3dd2b1d891ec00ab3300dc7541
+  ExpoSharing: 849a5ce9985c22598c16ec027e32969be8062e8e
+  ExpoSpeech: 8f74347608243ee8fdc2faa14e7d2cd5503f33f8
+  ExpoSplashScreen: 399ee9f85b6c8a61b965e13a1ecff8384db591c2
+  ExpoStoreReview: 92ad323dd14485e7aa67d5b47248fb22876ffaee
+  ExpoVideo: 10e69b9c0652aba5c2edee2c572090e0412bd7ce
+  EXUpdatesInterface: 7c977640bdd8b85833c19e3959ba46145c5719db
   fast_float: 06eeec4fe712a76acc9376682e4808b05ce978b6
   FBLazyVector: 7605ea4810e0e10ae4815292433c09bf4324ba45
   Firebase: 6a8f201c61eda24e98f1ce2b44b1b9c2caf525cc

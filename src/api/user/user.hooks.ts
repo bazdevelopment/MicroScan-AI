@@ -13,6 +13,7 @@ import {
   createAnonymousAccount,
   decrementNumberOfScans,
   getUserInfo,
+  grantFreeScans,
   loginWithEmail,
   sendOtpCodeViaEmail,
   updateUserInfo,
@@ -181,6 +182,16 @@ export const useUpdateUser = () => {
       Toast.error(error.message || translate('alerts.preferredLanguageError'));
       logEvent(`Error when the user is updated with new fields`, 'error');
       recordError(error, 'Error when the user is updated with new fields');
+    },
+  })();
+};
+
+export const useGrantFreeScans = () => {
+  return createMutation<Response, void, AxiosError>({
+    mutationFn: grantFreeScans,
+    onSuccess: () => {},
+    onError: (error) => {
+      Toast.error(error?.message || 'error to grant more scans');
     },
   })();
 };
