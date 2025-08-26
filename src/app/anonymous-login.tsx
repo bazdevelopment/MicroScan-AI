@@ -1,9 +1,8 @@
 /* eslint-disable max-lines-per-function */
-import { Link } from 'expo-router';
 import { firebaseAuth } from 'firebase/config';
 import { useColorScheme } from 'nativewind';
 import React, { useState } from 'react';
-import { Keyboard } from 'react-native';
+import { Keyboard, Linking, TouchableOpacity } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { KeyboardStickyView } from 'react-native-keyboard-controller';
 
@@ -96,7 +95,7 @@ export default function AnonymousLogin() {
 
             <Text className="my-4 text-xl text-white">
               {translate(
-                'rootLayout.screens.namePreferenceScreen.preferredNameQuestion',
+                'rootLayout.screens.namePreferenceScreen.preferredNameQuestion'
               )}
             </Text>
 
@@ -106,7 +105,7 @@ export default function AnonymousLogin() {
                 label={translate('components.Input.labels.nickname')}
                 value={username}
                 placeholder={translate(
-                  'rootLayout.screens.namePreferenceScreen.placeholderPreferredName',
+                  'rootLayout.screens.namePreferenceScreen.placeholderPreferredName'
                 )}
                 style={{ fontSize: !username.length ? 12 : 14 }}
                 onChangeText={handleUpdateEmail}
@@ -123,19 +122,27 @@ export default function AnonymousLogin() {
                 <Text className="text-sm">
                   {translate('rootLayout.screens.login.agreeingMessage')}{' '}
                 </Text>
-                <Link
-                  href="/terms-of-service"
-                  className="text-sm text-primary-900"
+                <TouchableOpacity
+                  onPress={() =>
+                    Linking.openURL(
+                      'https://microscanaitermsconditions.netlify.app/'
+                    )
+                  }
                 >
-                  {translate('rootLayout.screens.login.termsAndConditions')}
-                </Link>
+                  <Text className="text-sm text-primary-900 dark:text-primary-900">
+                    {translate('rootLayout.screens.login.termsAndConditions')}
+                  </Text>
+                </TouchableOpacity>
                 <Text className="text-sm"> {translate('general.and')} </Text>
-                <Link
-                  href="/privacy-policy"
-                  className="text-sm text-primary-900"
+                <TouchableOpacity
+                  onPress={() =>
+                    Linking.openURL('https://microscanaiprivacy.netlify.app/')
+                  }
                 >
-                  {translate('rootLayout.screens.login.privacyPolicy')}
-                </Link>
+                  <Text className="text-sm text-primary-900 dark:text-primary-900">
+                    {translate('rootLayout.screens.login.privacyPolicy')}
+                  </Text>
+                </TouchableOpacity>
               </View>
 
               <Button

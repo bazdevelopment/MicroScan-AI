@@ -1,6 +1,7 @@
-import { Link, router } from 'expo-router';
+/* eslint-disable max-lines-per-function */
+import { router } from 'expo-router';
 import React from 'react';
-import { ScrollView, View } from 'react-native';
+import { Linking, ScrollView, TouchableOpacity, View } from 'react-native';
 
 import Branding from '@/components/branding';
 import { translate } from '@/core';
@@ -54,13 +55,30 @@ const Welcome = () => {
             <Text className="text-sm">
               {translate('rootLayout.screens.login.agreeingMessage')}{' '}
             </Text>
-            <Link href="/terms-of-service" className="text-sm text-primary-900">
+            {/* <Link href="/terms-of-service" className="text-sm text-primary-900">
               {translate('rootLayout.screens.login.termsAndConditions')}
-            </Link>
+            </Link> */}
+            <TouchableOpacity
+              onPress={() =>
+                Linking.openURL(
+                  'https://microscanaitermsconditions.netlify.app/'
+                )
+              }
+            >
+              <Text className="text-sm text-primary-900 dark:text-primary-900">
+                {translate('rootLayout.screens.login.termsAndConditions')}
+              </Text>
+            </TouchableOpacity>
             <Text className="text-sm"> {translate('general.and')} </Text>
-            <Link href="/privacy-policy" className="text-sm text-primary-900">
-              {translate('rootLayout.screens.login.privacyPolicy')}
-            </Link>
+            <TouchableOpacity
+              onPress={() =>
+                Linking.openURL('https://microscanaiprivacy.netlify.app/')
+              }
+            >
+              <Text className="text-sm text-primary-900 dark:text-primary-900">
+                {translate('rootLayout.screens.login.privacyPolicy')}
+              </Text>
+            </TouchableOpacity>
           </View>
         </View>
       </SafeAreaView>
