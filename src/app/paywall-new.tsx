@@ -297,8 +297,8 @@ const PaywallNew = () => {
         logEvent,
         setIsFirstTime,
       });
-      DEVICE_TYPE.IOS && router.dismiss();
       requestAppRatingWithDelay(3000);
+      DEVICE_TYPE.IOS && router.dismiss();
     }
   };
 
@@ -326,8 +326,8 @@ const PaywallNew = () => {
                   logEvent,
                   setIsFirstTime,
                 });
-                DEVICE_TYPE.IOS && router.dismiss();
                 requestAppRatingWithDelay(3000);
+                DEVICE_TYPE.IOS && router.dismiss();
                 return;
               }
 
