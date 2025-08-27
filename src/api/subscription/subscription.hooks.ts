@@ -42,12 +42,12 @@ export const usePurchaseSubscription = createMutation<
 >({
   mutationFn: async ({ packageIdentifier }: { packageIdentifier: string }) => {
     const offerings = await Purchases.getOfferings();
-    const monthlyAndAnnualOfferings = [
+    const weeklyAndAnnualOfferings = [
       ...(offerings.current?.annual ? [offerings.current.annual] : []),
-      ...(offerings.current?.monthly ? [offerings.current.monthly] : []),
+      ...(offerings.current?.weekly ? [offerings.current.weekly] : []),
     ];
 
-    const selectedPackage = monthlyAndAnnualOfferings.find(
+    const selectedPackage = weeklyAndAnnualOfferings.find(
       (pkg: PurchasesPackage) => pkg.product.identifier === packageIdentifier
     );
 
