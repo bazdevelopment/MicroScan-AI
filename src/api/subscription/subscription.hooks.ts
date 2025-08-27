@@ -10,7 +10,8 @@ import Purchases, {
 import { createMutation, createQuery } from 'react-query-kit';
 
 import Toast from '@/components/toast';
-import { translate } from '@/core';
+import { DEVICE_TYPE, translate } from '@/core';
+import { requestAppRatingWithDelay } from '@/core/utilities/request-app-review';
 import { wait } from '@/core/utilities/wait';
 import { type IUserInfo } from '@/types/general-types';
 
@@ -154,12 +155,12 @@ export const useRestorePurchases = (
         };
 
         onSuccessRestoration(fieldsToUpdate);
-
+        requestAppRatingWithDelay(3000);
         queryClient.setQueryData(['user-info'], (oldData: IUserInfo) => ({
           ...oldData,
           isOnboarded: true,
         }));
-
+        DEVICE_TYPE.IOS && router.dismiss();
         router.navigate('/(tabs)');
       }
     },
