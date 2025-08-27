@@ -120,9 +120,6 @@ export const analyzeImage = usCentralFunctions.https.onRequest(
 export const analyzeImageConversation = usCentralFunctions.https.onRequest(
   imageFunctions.analyzeImageConversation,
 );
-export const analyzeImageConversationV2 = usCentralFunctions.https.onCall(
-  imageFunctions.analyzeImageConversationV2,
-);
 /** Make sure you use onRequest instead of onCall for analyzeImage function because onCall do not support FormData */
 export const continueConversation = usCentralFunctions.https.onRequest(
   imageFunctions.continueConversation,
@@ -140,9 +137,6 @@ export const analyzeVideoConversation = usCentralFunctions.https.onRequest(
   imageFunctions.analyzeVideoConversation,
 );
 
-export const analyzeVideoConversationV2 = usCentralFunctions.https.onCall(
-  imageFunctions.analyzeVideoConversationV2,
-);
 /** Get scan categories together with images*/
 export const getScanCategories = usCentralFunctions.https.onCall(
   getScanCategoriesHandler,
