@@ -541,13 +541,6 @@ export const updateUserAfterSelectingPlan = async ({
     fieldsToUpdate: object;
   }) => Promise<void>;
 }) => {
-  console.log('payload', {
-    language,
-    userId,
-    collectedData,
-    customerInfo,
-    onUpdateUser,
-  });
   const fieldsToUpdate: Partial<IUserInfo> = {
     isOnboarded: true,
     ...(collectedData.preferredName && {
