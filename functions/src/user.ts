@@ -71,7 +71,7 @@ const loginUserAnonymouslyHandler = async (data: {
       .set({
         userId: newUserId,
         isAnonymous: true, // Mark the user as anonymous
-        scansRemaining: 2, // Example field
+        scansRemaining: 1, // Example field
         subscribed: false, // Example field
         isActive: false, // Example field
         isOtpVerified: true, // Example field set to true for anonymous users
@@ -144,7 +144,7 @@ const createAnonymousAccountHandler = async (data: {
     const customToken = await admin.auth().createCustomToken(createdUser.uid);
     const createdUserDoc = db.collection('users').doc(createdUser.uid);
     await createdUserDoc.set({
-      scansRemaining: 2,
+      scansRemaining: 1,
       maxScans: 10,
       subscribed: false,
       isActive: true,
@@ -232,7 +232,7 @@ const loginUserViaEmailHandler = async (data: {
         .doc(userId)
         .set({
           email: data.email,
-          scansRemaining: 2,
+          scansRemaining: 1,
           maxScans: 10,
           subscribed: false,
           isActive: false,
@@ -758,7 +758,7 @@ const grantFreeScansForEligibleUsersHandler = async (
       // Only process users with no active subscriptions
       if (activeSubscriptionsRevenue.length === 0) {
         batch.update(userDoc.ref, {
-          scansRemaining: 2,
+          scansRemaining: 1,
           updatedAt: admin.firestore.FieldValue.serverTimestamp(),
         });
         processedUsers.push(userDoc.id);
