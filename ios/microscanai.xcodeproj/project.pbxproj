@@ -16,6 +16,7 @@
 		A791097A09B64A7FB901D21C /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98E2F8D46D934CE4B6F2C018 /* Inter.ttf */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
+		99EA189AC858491986FA7F09 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4EDCB5B554444FAA3D5ACFC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MicroScanAI/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* MicroScanAI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MicroScanAI-Bridging-Header.h"; path = "MicroScanAI/MicroScanAI-Bridging-Header.h"; sourceTree = "<group>"; };
 		FA527B8F578D97EA1714EF88 /* Pods-MicroScanAI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicroScanAI.debug.xcconfig"; path = "Target Support Files/Pods-MicroScanAI/Pods-MicroScanAI.debug.xcconfig"; sourceTree = "<group>"; };
+		B4EDCB5B554444FAA3D5ACFC /* GoogleService-Info.plist */ = {isa = PBXFileReference; name = "GoogleService-Info.plist"; path = "microscanai/GoogleService-Info.plist"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text.plist.xml; explicitFileType = undefined; includeInIndex = 0; };
+		FA1B08384574477BAEDB1A9B /* SplashScreen.storyboard */ = {isa = PBXFileReference; name = "SplashScreen.storyboard"; path = "microscanai/SplashScreen.storyboard"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				DEC405EC32634C369EEB91FB /* Resources */,
 				649EC0CA91A510362D852EBE /* Pods */,
 				944B9438C808E4DA64200849 /* ExpoModulesProviders */,
+				B4EDCB5B554444FAA3D5ACFC /* GoogleService-Info.plist */,
+				FA1B08384574477BAEDB1A9B /* SplashScreen.storyboard */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -216,6 +221,8 @@
 				40023ECD8E9842AE9035F44C /* GoogleService-Info.plist in Resources */,
 				A791097A09B64A7FB901D21C /* Inter.ttf in Resources */,
 				8B6675A2695D62822D80BEAA /* PrivacyInfo.xcprivacy in Resources */,
+				99EA189AC858491986FA7F09 /* GoogleService-Info.plist in Resources */,
+				670BCA39C62849E697101D85 /* SplashScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = MicroScanAI/MicroScanAI.entitlements;
+				CODE_SIGN_ENTITLEMENTS = microscanai/MicroScanAI.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -480,7 +487,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = MicroScanAI/MicroScanAI.entitlements;
+				CODE_SIGN_ENTITLEMENTS = microscanai/MicroScanAI.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = MicroScanAI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
