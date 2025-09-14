@@ -232,6 +232,25 @@
         "languageSearchCriteria": "Rechercher par langue, code de pays ou drapeau",
         "noLanguageFound": "Aucune langue trouvée",
         "noLanguageFoundSubtitle": "Essayez de modifier vos termes de recherche"
+      },
+      "chatScreen": {
+        "randomQuestions": {
+          "one": "Quelles sont les différences entre la microscopie en champ clair, contraste de phase et DIC ? 🔬",
+          "two": "Comment la préparation de l’échantillon peut-elle affecter la résolution de l’image ? 🧫",
+          "three": "Quand devrais-je utiliser la microscopie confocale plutôt que la microscopie en champ large ? 🧠",
+          "four": "Comment minimiser le photoblanchiment lors de l’imagerie de cellules vivantes ? ✨",
+          "five": "Quel est l’impact de l’ouverture numérique sur la résolution ? 📐",
+          "six": "Comment aligner et calibrer correctement un microscope ? ⚙️",
+          "seven": "Quelles techniques améliorent le contraste dans les échantillons non colorés ? 🌈",
+          "eight": "Quand la microscopie électronique est-elle préférée à la microscopie optique ? 🧲",
+          "nine": "Comment assurer la reproductibilité en imagerie quantitative ? 📊",
+          "ten": "Quelles sont les meilleures pratiques pour utiliser l’huile à immersion ? 🛢️",
+          "eleven": "Comment sélectionner des fluorophores pour l’imagerie multicanal ? 🎇",
+          "twelve": "Pourquoi l’épaisseur de l’échantillon est-elle critique pour l’imagerie haute résolution ? 📚",
+          "thirteen": "Comment minimiser la dérive et les vibrations pendant l’imagerie ? 🌍",
+          "fourteen": "Quelles sont les méthodes appropriées pour stocker les lames préparées ? 📦",
+          "fifteen": "Quels paramètres garantissent des images de qualité pour publication ? 📸"
+        }
       }
     }
   },
@@ -280,6 +299,9 @@
     "tab": "Historique",
     "noReportsAvailable": "Aucun historique de chat disponible pour cette date",
     "heading": "Historique du chat"
+  },
+  "chat": {
+    "tab": "Discussion"
   },
   "settings": {
     "tab": "Paramètres",

@@ -653,7 +653,7 @@ export const continueConversation = async (req: Request, res: any) => {
       const chat = model.startChat({
         history: history,
         generationConfig: {
-          maxOutputTokens: 1024,
+          maxOutputTokens: 2048,
         },
       });
 

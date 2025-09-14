@@ -13,7 +13,6 @@ export const TabBarIcon = ({
   return (
     <View className="flex-col items-center gap-2">
       {icon}
-
       <Text className={textClassName}>{title}</Text>
     </View>
   );

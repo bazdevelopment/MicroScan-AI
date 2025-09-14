@@ -232,6 +232,25 @@
         "languageSearchCriteria": "Căutați după limbă, cod de țară sau steag",
         "noLanguageFound": "Nicio limbă găsită",
         "noLanguageFoundSubtitle": "Încercați să modificați termenii de căutare"
+      },
+      "chatScreen": {
+        "randomQuestions": {
+          "one": "Care sunt diferențele dintre microscopie în câmp luminos, contrast de fază și DIC? 🔬",
+          "two": "Cum poate pregătirea probelor să afecteze rezoluția imaginii? 🧫",
+          "three": "Când ar trebui să folosesc microscopia confocală în locul celei cu câmp larg? 🧠",
+          "four": "Cum pot minimiza fotobleaching-ul în imagistica celulelor vii? ✨",
+          "five": "Care este impactul aperturii numerice asupra rezoluției? 📐",
+          "six": "Cum aliniez și calibrez corect un microscop? ⚙️",
+          "seven": "Ce tehnici îmbunătățesc contrastul în probele necolorate? 🌈",
+          "eight": "Când este preferată microscopie electronică față de cea optică? 🧲",
+          "nine": "Cum pot asigura reproducibilitatea în imagistica cantitativă? 📊",
+          "ten": "Care sunt cele mai bune practici pentru utilizarea uleiului de imersie? 🛢️",
+          "eleven": "Cum selectez fluorofori pentru imagistica multi-canal? 🎇",
+          "twelve": "De ce grosimea probei este critică pentru imagistica de înaltă rezoluție? 📚",
+          "thirteen": "Cum pot minimiza alunecarea și vibrațiile în timpul imagisticii? 🌍",
+          "fourteen": "Care sunt metodele adecvate de stocare a lamelor pregătite? 📦",
+          "fifteen": "Ce parametri asigură imagini de calitate pentru publicare? 📸"
+        }
       }
     }
   },
@@ -280,6 +299,9 @@
     "tab": "Istoric",
     "noReportsAvailable": "Nu există istoric de chat disponibil pentru această dată",
     "heading": "Istoric Chat"
+  },
+  "chat": {
+    "tab": "Chat"
   },
   "settings": {
     "tab": "Setări",

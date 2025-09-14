@@ -22,14 +22,22 @@ const Profile = () => {
     useUpdateUser();
 
   const { data: customerInfo } = useGetCustomerInfo();
-  const activeSubscription = !!customerInfo?.activeSubscriptions?.length
-    ? customerInfo?.activeSubscriptions[0].includes('month')
+  const subscription = customerInfo?.activeSubscriptions?.[0];
+
+  const activeSubscription = subscription
+    ? subscription.includes('month')
       ? translate(
           'rootLayout.screens.paywallUpgradeScreen.secondOffering.title'
         )
-      : customerInfo?.activeSubscriptions[0].includes('year')
-        ? translate('rootLayout.screens.paywallUpgradeScreen.thirdOffering')
-        : translate('general.freeTrial')
+      : subscription.includes('year')
+        ? translate(
+            'rootLayout.screens.paywallUpgradeScreen.thirdOffering.title'
+          )
+        : subscription.includes('week')
+          ? translate(
+              'rootLayout.screens.paywallUpgradeScreen.fourthOffering.plan'
+            )
+          : translate('general.freeTrial')
     : translate('general.freeTrial');
 
   const { data: userInfo } = useUser(language);

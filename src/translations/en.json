@@ -232,6 +232,25 @@
         "languageSearchCriteria": "Search by language, country code, or flag",
         "noLanguageFound": "No Language Found",
         "noLanguageFoundSubtitle": "Try modifying your search terms"
+      },
+      "chatScreen": {
+        "randomQuestions": {
+          "one": "What are the differences between brightfield, phase contrast, and DIC? 🔬",
+          "two": "How can sample preparation affect image resolution? 🧫",
+          "three": "When should I use confocal versus widefield microscopy? 🧠",
+          "four": "How can I minimize photobleaching in live-cell imaging? ✨",
+          "five": "What is the impact of numerical aperture on resolution? 📐",
+          "six": "How do I properly align and calibrate a microscope? ⚙️",
+          "seven": "Which techniques enhance contrast in unstained specimens? 🌈",
+          "eight": "When is electron microscopy preferred over light microscopy? 🧲",
+          "nine": "How can I ensure reproducibility in quantitative imaging? 📊",
+          "ten": "What are best practices for using immersion oil? 🛢️",
+          "eleven": "How do I select fluorophores for multi-channel imaging? 🎇",
+          "twelve": "Why is sample thickness critical for high-resolution imaging? 📚",
+          "thirteen": "How can drift and vibration be minimized during imaging? 🌍",
+          "fourteen": "What are proper storage methods for prepared slides? 📦",
+          "fifteen": "Which parameters ensure publication-quality images? 📸"
+        }
       }
     }
   },
@@ -282,6 +301,9 @@
     "tab": "History",
     "noReportsAvailable": "No chat history available for this date",
     "heading": "Chat History"
+  },
+  "chat": {
+    "tab": "Chat"
   },
   "settings": {
     "tab": "Settings",

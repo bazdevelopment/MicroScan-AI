@@ -36,11 +36,11 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     backgroundColor: '#060047',
     translucent: true,
   },
-  splash: {
-    image: './assets/splash_512.png',
-    resizeMode: 'contain',
-    backgroundColor: '#FFFFFF',
-  },
+  // splash: {
+  //   image: './assets/splash_512.png',
+  //   resizeMode: 'contain',
+  //   backgroundColor: '#FFFFFF',
+  // },
   updates: {
     fallbackToCacheTimeout: 0,
   },
@@ -118,14 +118,18 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
         iCloudContainerEnvironment: 'Production',
       },
     ],
-    // [
-    //   'expo-splash-screen',
-    //   {
-    //     backgroundColor: '#FFFFFF',
-    //     image: './assets/splash-icon.png',
-    //     imageWidth: 150,
-    //   },
-    // ],
+    [
+      'expo-splash-screen',
+      {
+        backgroundColor: '#FFFFFF',
+        image: './assets/icon_transparent.png',
+        dark: {
+          image: './assets/icon_transparent.png',
+          backgroundColor: '#000000',
+        },
+        imageWidth: 150,
+      },
+    ],
     [
       'expo-quick-actions',
       {
@@ -147,7 +151,6 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
           compileSdkVersion: 35,
           targetSdkVersion: 35,
           buildToolsVersion: '35.0.0',
-          kotlinVersion: '1.9.25',
         },
         ios: {
           useFrameworks: 'static',
@@ -167,8 +170,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     '@react-native-firebase/auth',
     '@react-native-firebase/crashlytics',
     ['app-icon-badge', appIconBadgeConfig],
-    ['react-native-edge-to-edge'],
-    ['./with-app-theme', 'Theme.EdgeToEdge'], //to avoid dupicate AppTheme in styles.xml
+    // ['./with-app-theme', 'Theme.EdgeToEdge'], //to avoid dupicate AppTheme in styles.xml
   ],
   extra: {
     ...ClientEnv,

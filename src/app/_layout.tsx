@@ -172,7 +172,6 @@ export default function RootLayout() {
               <CustomHeader
                 {...props}
                 title={translate('general.medicalDisclaimer')}
-                className="bg-white"
                 titlePosition="center"
                 onGoBack={() => router.navigate('/anonymous-login')}
                 backIconColor={isDark ? colors.white : colors.blackBeauty}
@@ -203,7 +202,6 @@ export default function RootLayout() {
               <CustomHeader
                 {...props}
                 title={translate('uploadScan.title')}
-                className="bg-white"
                 titlePosition="center"
                 titleClassName="text-black"
                 onGoBack={router.back}
@@ -238,7 +236,6 @@ export default function RootLayout() {
               <CustomHeader
                 {...props}
                 title="Report Result"
-                className="bg-white"
                 titlePosition="center"
                 rightContent={
                   <Icon
@@ -265,9 +262,7 @@ export default function RootLayout() {
               <CustomHeader
                 {...props}
                 title={translate('rootLayout.screens.notifications.title')}
-                className="bg-white"
                 titlePosition="center"
-                titleClassName="text-black"
                 onGoBack={router.back}
                 backIconColor={isDark ? colors.white : colors.black}
               />
@@ -312,7 +307,6 @@ export default function RootLayout() {
               <CustomHeader
                 {...props}
                 title={translate('rootLayout.screens.rate.title')}
-                className="bg-white"
                 titlePosition="center"
                 onGoBack={router.back}
                 backIconColor={isDark ? colors.white : colors.black}
@@ -328,7 +322,6 @@ export default function RootLayout() {
               <CustomHeader
                 {...props}
                 title={translate('settings.citations')}
-                className="bg-white"
                 titleClassName="text-black"
                 titlePosition="center"
                 onGoBack={router.back}
@@ -357,10 +350,10 @@ export default function RootLayout() {
               <CustomHeader
                 {...props}
                 title={translate('rootLayout.screens.profile.title')}
-                className="bg-primary-900"
                 titlePosition="center"
                 onGoBack={router.back}
-                titleClassName="text-white"
+                titleClassName="text-black"
+                backIconColor={isDark ? colors.white : colors.black}
               />
             ),
           }}
@@ -374,7 +367,6 @@ export default function RootLayout() {
                 title={translate('settings.contactUs')}
                 titlePosition="center"
                 onGoBack={router.back}
-                className="bg-white"
                 titleClassName="text-black"
                 backIconColor={isDark ? colors.white : colors.black}
               />

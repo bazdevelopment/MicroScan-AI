@@ -232,6 +232,25 @@
         "languageSearchCriteria": "Suche nach Sprache, Ländercode oder Flagge",
         "noLanguageFound": "Keine Sprache gefunden",
         "noLanguageFoundSubtitle": "Versuchen Sie, Ihre Suchbegriffe zu ändern"
+      },
+      "chatScreen": {
+        "randomQuestions": {
+          "one": "Was sind die Unterschiede zwischen Hellfeld-, Phasenkontrast- und DIC-Mikroskopie? 🔬",
+          "two": "Wie kann die Probenvorbereitung die Bildauflösung beeinflussen? 🧫",
+          "three": "Wann sollte ich konfokale anstelle von Weitfeldmikroskopie verwenden? 🧠",
+          "four": "Wie kann ich Photobleaching bei der Live-Zell-Bildgebung minimieren? ✨",
+          "five": "Welchen Einfluss hat die numerische Apertur auf die Auflösung? 📐",
+          "six": "Wie richte ich ein Mikroskop richtig aus und kalibriere es? ⚙️",
+          "seven": "Welche Techniken verbessern den Kontrast bei unbefärbten Proben? 🌈",
+          "eight": "Wann wird die Elektronenmikroskopie der Lichtmikroskopie vorgezogen? 🧲",
+          "nine": "Wie kann ich die Reproduzierbarkeit bei quantitativer Bildgebung sicherstellen? 📊",
+          "ten": "Was sind Best Practices für die Verwendung von Immersionsöl? 🛢️",
+          "eleven": "Wie wähle ich Fluorophore für Mehrkanalaufnahmen aus? 🎇",
+          "twelve": "Warum ist die Probenstärke für hochauflösende Bilder entscheidend? 📚",
+          "thirteen": "Wie kann Drift und Vibration während der Bildgebung minimiert werden? 🌍",
+          "fourteen": "Was sind geeignete Lagerungsmethoden für vorbereitete Objektträger? 📦",
+          "fifteen": "Welche Parameter gewährleisten Bilder in Veröffentlichungsqualität? 📸"
+        }
       }
     }
   },
@@ -280,6 +299,9 @@
     "tab": "Verlauf",
     "noReportsAvailable": "Kein Chat-Verlauf für dieses Datum verfügbar",
     "heading": "Chat-Verlauf"
+  },
+  "chat": {
+    "tab": "Chat"
   },
   "settings": {
     "tab": "Einstellungen",

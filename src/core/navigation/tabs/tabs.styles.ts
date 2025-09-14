@@ -9,7 +9,7 @@ export const getBottomTabBarStyle = (isDark: boolean) =>
       paddingTop: 20,
       paddingBottom: DEVICE_TYPE.ANDROID ? 10 : 26,
       backgroundColor: isDark ? colors.black : colors.white,
-      height: DEVICE_TYPE.IOS ? 92 : 65,
+      height: DEVICE_TYPE.IOS ? 85 : 65,
       width: '100%',
       borderWidth: 0,
       borderTopWidth: 0,
