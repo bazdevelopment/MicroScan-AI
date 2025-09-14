@@ -156,6 +156,7 @@ const FilePreviewScreen = ({
   const [selectedLanguage, setSelectedLanguage] = useState<string>(
     languageAIResponsesLocally || appLanguage
   );
+
   const { colorScheme } = useColorScheme();
   const isDark = colorScheme === 'dark';
   const languageModalRef = useModal();

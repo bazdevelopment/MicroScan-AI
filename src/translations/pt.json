@@ -232,6 +232,25 @@
         "languageSearchCriteria": "Pesquise por idioma, código do país ou bandeira",
         "noLanguageFound": "Nenhum Idioma Encontrado",
         "noLanguageFoundSubtitle": "Tente modificar os seus termos de pesquisa"
+      },
+      "chatScreen": {
+        "randomQuestions": {
+          "one": "Quais são as diferenças entre microscopia de campo claro, contraste de fase e DIC? 🔬",
+          "two": "Como a preparação da amostra pode afetar a resolução da imagem? 🧫",
+          "three": "Quando devo usar microscopia confocal em vez de microscopia de campo amplo? 🧠",
+          "four": "Como posso minimizar o fotobleaching em imagens de células vivas? ✨",
+          "five": "Qual é o impacto da abertura numérica na resolução? 📐",
+          "six": "Como posso alinhar e calibrar corretamente um microscópio? ⚙️",
+          "seven": "Quais técnicas aumentam o contraste em amostras não coradas? 🌈",
+          "eight": "Quando a microscopia eletrônica é preferida em relação à microscopia óptica? 🧲",
+          "nine": "Como posso garantir a reprodutibilidade na imagem quantitativa? 📊",
+          "ten": "Quais são as melhores práticas para usar óleo de imersão? 🛢️",
+          "eleven": "Como selecionar fluoróforos para imagem multicanal? 🎇",
+          "twelve": "Por que a espessura da amostra é crítica para imagens de alta resolução? 📚",
+          "thirteen": "Como posso minimizar o desvio e a vibração durante a imagem? 🌍",
+          "fourteen": "Quais são os métodos adequados para armazenar lâminas preparadas? 📦",
+          "fifteen": "Quais parâmetros garantem imagens de qualidade para publicação? 📸"
+        }
       }
     }
   },
@@ -280,6 +299,9 @@
     "tab": "Histórico",
     "noReportsAvailable": "Nenhum histórico de chat disponível para esta data",
     "heading": "Histórico do Chat"
+  },
+  "chat": {
+    "tab": "Chat"
   },
   "settings": {
     "tab": "Definições",

@@ -20,7 +20,7 @@ export const FinalReportForeground = ({ scrollValue }: IHomeForeground) => {
         scrollValue.value,
         [0, 150, 100],
         [1, 0, 0],
-        'clamp',
+        'clamp'
       ),
     };
   }, [scrollValue]);

@@ -22,8 +22,17 @@ import { useCrashlytics } from '@/core/hooks/use-crashlytics';
 import { requestAppRatingWithDelay } from '@/core/utilities/request-app-review';
 import { type CrashlyticsLogLevel } from '@/crashlytics/crashlytics.types';
 import { type IUserInfo } from '@/types/general-types';
-import { Button, CheckboxIcon, colors, Switch, Text } from '@/ui';
+import {
+  Button,
+  CheckboxIcon,
+  colors,
+  FocusAwareStatusBar,
+  Image,
+  Switch,
+  Text,
+} from '@/ui';
 import { CloseIcon } from '@/ui/assets/icons';
+import { CheckIcon } from '@/ui/assets/icons/check';
 
 import { type IOnboardingCollectedData } from './onboarding';
 
@@ -96,7 +105,8 @@ const formatPaywallData = (offerings: any) => {
 const FeatureRow = ({ icon, text }: { icon: string; text: string }) => (
   <View className="mb-3 flex-row items-center">
     <View className="mr-4 items-center justify-center rounded-full bg-blue-500 p-1">
-      <Ionicons name={icon as any} size={14} color="white" />
+      {/* <Ionicons name={icon as any} size={14} color="white" /> */}
+      <CheckIcon color={colors.white} strokeWidth={3} width={14} height={14} />
     </View>
     <Text className="flex-1 font-semibold-nunito text-lg">{text}</Text>
   </View>
@@ -184,7 +194,14 @@ const PricingCard = ({
             : 'border-gray-300 bg-white dark:bg-black'
         } items-center justify-center`}
       >
-        {isSelected && <Ionicons name="checkmark" size={16} color="white" />}
+        {isSelected && (
+          <CheckIcon
+            color={colors.white}
+            strokeWidth={3}
+            width={15}
+            height={15}
+          />
+        )}
       </View>
     </View>
   </TouchableOpacity>
@@ -305,6 +322,8 @@ const PaywallNew = () => {
   return (
     <View className="flex-1 bg-white dark:bg-black">
       <SafeAreaView className="flex-1">
+        <FocusAwareStatusBar hidden />
+
         <ScrollView
           className="flex-1"
           contentContainerStyle={{ paddingBottom: 100 }}
@@ -314,7 +333,7 @@ const PaywallNew = () => {
 
           <Icon
             size={28}
-            containerStyle="right-4 top-3 self-end p-2 z-10"
+            containerStyle={`right-4 self-end p-2 z-10 ${DEVICE_TYPE.ANDROID ? 'top-10' : 'top-2'}`}
             onPress={() => {
               if (allowAppAccess === 'true') {
                 updateUserAndNavigate({
@@ -342,17 +361,17 @@ const PaywallNew = () => {
           />
 
           {/* Content Container */}
-          <View className="-mt-4 px-6">
+          <View className={`px-6 ${DEVICE_TYPE.ANDROID ? 'mt-2' : '-mt-6'}`}>
             {/* Fish Icon */}
-            <View className="mb-12 items-center">
-              {/* <FishIcon /> */}
-              {/* <Image
-                source={require('../ui/assets/images/chest-xray.png')}
+            <View className="mb-4 items-center">
+              <Image
+                contentFit="contain"
+                source={require('../ui/assets/images/paywall-microscope-5.png')}
                 style={{
-                  width: 150,
-                  height: 100,
+                  width: 110,
+                  height: 110,
                 }}
-              /> */}
+              />
             </View>
 
             {/* Title */}

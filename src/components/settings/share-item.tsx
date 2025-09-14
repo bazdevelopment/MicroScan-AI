@@ -19,7 +19,7 @@ import { CopyLink, ShareIcon } from '@/ui/assets/icons';
 
 import { Item } from './item';
 
-const IconTransparent = require('../../../assets/splash-icon.png');
+const IconTransparent = require('../../../assets/icon_transparent.png');
 
 export const ShareItem = () => {
   const modal = useModal();

@@ -82,10 +82,10 @@ const FakeCaret = () => {
     opacity.value = withRepeat(
       withSequence(
         withTiming(0, { duration: 500 }),
-        withTiming(1, { duration: 500 }),
+        withTiming(1, { duration: 500 })
       ),
       -1,
-      true,
+      true
     );
   }, [opacity]);
 
@@ -94,7 +94,7 @@ const FakeCaret = () => {
   }));
 
   return (
-    <View className="absolute h-full w-full items-center justify-center">
+    <View className="absolute size-full items-center justify-center">
       <Animated.View
         className="h-[28px] w-[2px] rounded-sm bg-primary-900"
         style={animatedStyle}

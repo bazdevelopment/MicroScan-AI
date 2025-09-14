@@ -1,8 +1,8 @@
 /* eslint-disable max-lines-per-function */
 import { router } from 'expo-router';
 import { useColorScheme } from 'nativewind';
-import React from 'react';
-import { View } from 'react-native';
+import React, { useEffect } from 'react';
+import { SafeAreaView, View } from 'react-native';
 
 import PremiumFeaturesOverview from '@/components/premium-features-overivew';
 import ProgressDots from '@/components/progress-dots';
@@ -10,7 +10,7 @@ import { SnakeLine, SnakeLineRotated } from '@/components/snake-line';
 import { translate } from '@/core/i18n';
 import { DEVICE_TYPE } from '@/core/utilities/device-type';
 import getDeviceSizeCategory from '@/core/utilities/get-device-size-category';
-import { SafeAreaView } from '@/ui';
+import { requestAppRatingWithDelay } from '@/core/utilities/request-app-review';
 import { Button, colors, FocusAwareStatusBar, Text } from '@/ui';
 
 const FreeTrialPreview = ({
@@ -23,10 +23,14 @@ const FreeTrialPreview = ({
   const isDark = colorScheme === 'dark';
   const { isVerySmallDevice } = getDeviceSizeCategory();
 
+  useEffect(() => {
+    requestAppRatingWithDelay(500);
+  }, []);
+
   return (
     <SafeAreaView
       className="flex-1 bg-primary-900 dark:bg-blackEerie"
-      edges={DEVICE_TYPE.ANDROID ? ['bottom'] : []}
+      // edges={DEVICE_TYPE.ANDROID ? ['bottom'] : []}
     >
       <FocusAwareStatusBar hidden />
       <SnakeLine

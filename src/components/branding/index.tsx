@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Image, Text, View } from '@/ui';
 
-const IconTransparent = require('../../../assets/splash-icon.png');
+const IconTransparent = require('../../../assets/icon_transparent.png');
 
 const Branding = ({
   isLogoVisible = false,
@@ -17,9 +17,9 @@ const Branding = ({
   return (
     <View className={`flex-row items-center ${className}`}>
       {isLogoVisible && (
-        <View className="rounded-xl bg-white p-2 dark:bg-blackEerie dark:p-0">
-          <Image source={IconTransparent} className="size-[40px]" />
-        </View>
+        <>
+          <Image source={IconTransparent} className="size-[50px]" />
+        </>
       )}
 
       <View className={`${isLogoVisible ? 'ml-3' : ''}`}>

@@ -6,8 +6,8 @@ import { type ISvgProps } from '@/types/svg-types';
 export const Camera = (props: ISvgProps) => (
   <Svg
     xmlns="http://www.w3.org/2000/svg"
-    width={21}
-    height={21}
+    width={props.width || 21}
+    height={props.height || 21}
     fill="none"
     viewBox="0 0 21 21"
   >
