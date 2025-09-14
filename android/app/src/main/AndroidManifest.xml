@@ -34,7 +34,6 @@
         <category android:name="android.intent.category.BROWSABLE"/>
         <data android:scheme="micro-scan-ai"/>
         <data android:scheme="exp+microscan-ai"/>
-        <data android:scheme="com.microscanai"/>
       </intent-filter>
     </activity>
   </application>
