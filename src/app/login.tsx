@@ -22,7 +22,7 @@ import { MailIcon } from '@/ui/assets/icons';
 export default function Login() {
   return (
     <>
-      <FocusAwareStatusBar />
+      {/* <FocusAwareStatusBar /> */}
       <LoginPage />
     </>
   );

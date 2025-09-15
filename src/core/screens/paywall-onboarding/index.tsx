@@ -28,13 +28,7 @@ import getDeviceSizeCategory from '@/core/utilities/get-device-size-category';
 import { type CrashlyticsLogLevel } from '@/crashlytics/crashlytics.types';
 import { type IUserInfo } from '@/types/general-types';
 import { SafeAreaView } from '@/ui';
-import {
-  Button,
-  colors,
-  FocusAwareStatusBar,
-  SelectableLabel,
-  Text,
-} from '@/ui';
+import { Button, colors, SelectableLabel, Text } from '@/ui';
 import {
   CrownIllustration,
   NoAdsIllustration,
@@ -142,7 +136,7 @@ const PaywallOnboarding = ({
           paddingBottom: 200,
         }}
       >
-        <FocusAwareStatusBar hidden />
+        {/* <FocusAwareStatusBar hidden /> */}
         <View
           style={{
             position: 'absolute',

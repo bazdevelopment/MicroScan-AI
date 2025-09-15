@@ -11,7 +11,7 @@ import { SnakeLine, SnakeLineRotated } from '@/components/snake-line';
 import { translate, useSelectedLanguage } from '@/core';
 import { useStoreUserId } from '@/core/hooks/use-store-user-id';
 import getDeviceSizeCategory from '@/core/utilities/get-device-size-category';
-import { Button, colors, FocusAwareStatusBar, Input, Text, View } from '@/ui';
+import { Button, colors, Input, Text, View } from '@/ui';
 import { UserIcon } from '@/ui/assets/icons';
 
 export default function AnonymousLogin() {
@@ -42,7 +42,7 @@ export default function AnonymousLogin() {
       }}
       keyboardShouldPersistTaps="handled"
     >
-      <FocusAwareStatusBar hidden />
+      {/* <FocusAwareStatusBar hidden /> */}
 
       <View
         className={`flex-1 bg-primary-900 px-6 pt-20 dark:bg-blackEerie ${isVerySmallDevice && 'pt-[10%]'} ${isMediumDevice && 'pt-[20%]'}`}

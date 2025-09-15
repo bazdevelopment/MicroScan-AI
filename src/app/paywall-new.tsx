@@ -22,15 +22,7 @@ import { useCrashlytics } from '@/core/hooks/use-crashlytics';
 import { requestAppRatingWithDelay } from '@/core/utilities/request-app-review';
 import { type CrashlyticsLogLevel } from '@/crashlytics/crashlytics.types';
 import { type IUserInfo } from '@/types/general-types';
-import {
-  Button,
-  CheckboxIcon,
-  colors,
-  FocusAwareStatusBar,
-  Image,
-  Switch,
-  Text,
-} from '@/ui';
+import { Button, CheckboxIcon, colors, Image, Switch, Text } from '@/ui';
 import { CloseIcon } from '@/ui/assets/icons';
 import { CheckIcon } from '@/ui/assets/icons/check';
 
@@ -322,7 +314,7 @@ const PaywallNew = () => {
   return (
     <View className="flex-1 bg-white dark:bg-black">
       <SafeAreaView className="flex-1">
-        <FocusAwareStatusBar hidden />
+        {/* <FocusAwareStatusBar hidden /> */}
 
         <ScrollView
           className="flex-1"

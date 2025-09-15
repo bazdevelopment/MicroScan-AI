@@ -9,7 +9,7 @@ import { FocusAwareStatusBar, SafeAreaView, ScrollView } from '@/ui';
 export default function Style() {
   return (
     <>
-      <FocusAwareStatusBar />
+      {/* <FocusAwareStatusBar /> */}
       <ScrollView className="px-4">
         <SafeAreaView className="flex-1">
           <Typography />

@@ -7,7 +7,6 @@ import { firebaseAuth } from 'firebase/config';
 import { checkForAppUpdate } from 'firebase/remote-config';
 import { useColorScheme } from 'nativewind';
 import React, { useEffect } from 'react';
-import { StatusBar } from 'react-native';
 
 import {
   useGetCustomerInfo,
@@ -163,7 +162,7 @@ export default function TabLayout() {
       className="flex-1"
       edges={DEVICE_TYPE.ANDROID ? ['bottom'] : []}
     >
-      <StatusBar hidden />
+      {/* <StatusBar hidden /> */}
 
       <Tabs
         screenOptions={{

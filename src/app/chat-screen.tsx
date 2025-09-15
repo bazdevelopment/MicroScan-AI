@@ -12,12 +12,12 @@ import {
   Animated,
   Image,
   Keyboard,
-  KeyboardAvoidingView,
   ScrollView,
   TextInput,
   TouchableOpacity,
   View,
 } from 'react-native';
+import { KeyboardAwareScrollView } from 'react-native-keyboard-controller';
 import Markdown from 'react-native-markdown-display';
 import { Toaster } from 'sonner-native';
 import { twMerge } from 'tailwind-merge';
@@ -457,7 +457,17 @@ const ChatScreen = () => {
       {DEVICE_TYPE.IOS && (
         <Toaster autoWiggleOnUpdate="toast-change" pauseWhenPageIsHidden />
       )}
-      <KeyboardAvoidingView behavior="padding" className="flex-1">
+      {/* <KeyboardAvoidingView
+        behavior="padding"
+        className="flex-1"
+        keyboardVerticalOffset={DEVICE_TYPE.ANDROID ? 40 : 0}
+      > */}
+      <KeyboardAwareScrollView
+        contentContainerStyle={{
+          flex: 1,
+        }}
+        keyboardShouldPersistTaps="handled"
+      >
         <View className="flex-1 bg-white dark:bg-blackEerie">
           {/* Header */}
           <View className="flex-row items-center justify-between border-b border-gray-200 bg-white px-4 py-3 dark:border-gray-600 dark:bg-blackEerie">
@@ -539,7 +549,7 @@ const ChatScreen = () => {
           {/* Input Area */}
           <View className="border-t border-gray-200 bg-white px-4 pb-2 pt-4 dark:border-blackEerie dark:bg-blackEerie">
             <View
-              className={`flex-row items-center rounded-2xl border-2 border-primary-900/60 bg-gray-100 px-4 py-1 dark:bg-black ${DEVICE_TYPE.IOS && 'mb-4'}`}
+              className={`flex-row items-center rounded-2xl border-2 border-primary-900/60 bg-gray-100 px-4 py-1 dark:bg-black`}
             >
               {conversationMode === 'RANDOM_CONVERSATION' && (
                 <Icon
@@ -656,7 +666,7 @@ const ChatScreen = () => {
             </View>
           </View>
         </View>
-      </KeyboardAvoidingView>
+      </KeyboardAwareScrollView>
     </SafeAreaView>
   );
 };
