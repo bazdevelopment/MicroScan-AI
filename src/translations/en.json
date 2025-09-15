@@ -167,7 +167,7 @@
       },
       "rateAppScreen": {
         "heading": "Are you finding the app valuable and engaging?",
-        "like": "Yes, I love it!",
+        "like": "Yes, I like it!",
         "dislike": "Not really..."
       },
       "noInternetScreen": {
@@ -380,7 +380,7 @@
       "label": "Tap To View"
     },
     "UpgradeBanner": {
-      "heading": "Upgrade Now",
+      "heading": "Upgrade Now!",
       "subheading": "Unlock unlimited scans by upgrading your plan"
     },
     "PromptSection": {

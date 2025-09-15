@@ -2,17 +2,13 @@
 import React, { cloneElement, useState } from 'react';
 import {
   type NativeScrollEvent,
-  StatusBar,
   useWindowDimensions,
   View,
 } from 'react-native';
 import { runOnJS } from 'react-native-reanimated';
 import { StickyHeaderScrollView } from 'react-native-sticky-parallax-header';
 
-import {
-  type IParallaxScrollView,
-  type IScrollCloseToBottom,
-} from './parallax-scrollview.interface';
+import { type IParallaxScrollView } from './parallax-scrollview.interface';
 
 const ParallaxScrollView = ({
   _headerHeight = 110,
@@ -70,7 +66,7 @@ const ParallaxScrollView = ({
         onMomentumScrollEnd={onMomentumScrollEnd}
         renderHeader={() => (
           <View style={{ height: scrollHeight }}>
-            <StatusBar hidden />
+            {/* <StatusBar hidden /> */}
             {cloneElement(ForegroundComponent, { scrollValue })}
           </View>
         )}
@@ -83,16 +79,3 @@ const ParallaxScrollView = ({
 };
 
 export default ParallaxScrollView;
-
-const isCloseToBottom = ({
-  layoutMeasurement,
-  contentOffset,
-  contentSize,
-}: IScrollCloseToBottom) => {
-  'worklet';
-  const paddingToBottom = 20;
-  return (
-    layoutMeasurement.height + contentOffset.y >=
-    contentSize.height - paddingToBottom
-  );
-};

@@ -11,7 +11,7 @@ import { translate } from '@/core/i18n';
 import { DEVICE_TYPE } from '@/core/utilities/device-type';
 import getDeviceSizeCategory from '@/core/utilities/get-device-size-category';
 import { requestAppRatingWithDelay } from '@/core/utilities/request-app-review';
-import { Button, colors, FocusAwareStatusBar, Text } from '@/ui';
+import { Button, colors, Text } from '@/ui';
 
 const FreeTrialPreview = ({
   totalSteps,
@@ -33,7 +33,7 @@ const FreeTrialPreview = ({
       // edges={DEVICE_TYPE.ANDROID ? ['bottom'] : []}
     >
       <ScrollView contentContainerClassName="flex-1">
-        <FocusAwareStatusBar hidden />
+        {/* <FocusAwareStatusBar hidden /> */}
         <SnakeLine
           color={isDark ? colors.charcoal[600] : colors.primary[600]}
           className="absolute right-[150] top-[20]"
