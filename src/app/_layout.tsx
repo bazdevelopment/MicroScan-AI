@@ -1,7 +1,5 @@
 /* eslint-disable max-lines-per-function */
 // Import  global CSS file
-import '../../global.css';
-
 import {
   NunitoSans_300Light,
   NunitoSans_400Regular,
@@ -30,6 +28,15 @@ import { useNotificationListeners } from '@/core/hooks/use-notification-listener
 import { useThemeConfig } from '@/core/utilities/use-theme-config';
 import { colors } from '@/ui';
 import { CloseIcon } from '@/ui/assets/icons';
+function loadGlobalCSS() {
+  try {
+    require('../../global.css');
+  } catch (error) {
+    console.log('error loading global css', error);
+  }
+}
+
+loadGlobalCSS();
 
 export { ErrorBoundary } from 'expo-router';
 

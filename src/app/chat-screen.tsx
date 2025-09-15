@@ -3,16 +3,9 @@
 import { Ionicons } from '@expo/vector-icons';
 import { FlashList } from '@shopify/flash-list';
 import { router, useLocalSearchParams } from 'expo-router';
-import { LANGUAGES } from 'functions/utilities/languages';
 import LottieView from 'lottie-react-native';
 import { useColorScheme } from 'nativewind';
-import React, {
-  useCallback,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-} from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
   ActivityIndicator,
@@ -40,7 +33,6 @@ import BounceLoader from '@/components/bounce-loader';
 import Branding from '@/components/branding';
 import CustomAlert from '@/components/custom-alert';
 import Icon from '@/components/icon';
-import LanguageModal from '@/components/modals/language-analysis-modal';
 import Toast from '@/components/toast';
 import { AI_ANALYSIS_LANGUAGE_SELECTION } from '@/constants/language';
 import { LOADING_MESSAGES_CHATBOT } from '@/constants/loading-messages';
@@ -48,12 +40,12 @@ import { DEVICE_TYPE, translate, useSelectedLanguage } from '@/core';
 import useBackHandler from '@/core/hooks/use-back-handler';
 import { useClipboard } from '@/core/hooks/use-clipboard';
 import { useTextToSpeech } from '@/core/hooks/use-text-to-speech';
-import { getStorageItem, setStorageItem } from '@/core/storage';
+import { getStorageItem } from '@/core/storage';
 import { checkIsVideo } from '@/core/utilities/check-is-video';
 import { generateUniqueId } from '@/core/utilities/generate-unique-id';
 import { shuffleArray } from '@/core/utilities/shuffle-array';
 import { wait } from '@/core/utilities/wait';
-import { Button, colors, SafeAreaView, Text, useModal } from '@/ui';
+import { colors, SafeAreaView, Text } from '@/ui';
 import { Camera, CloseIcon, SoundOn, StopIcon } from '@/ui/assets/icons';
 import { CopiedIcon } from '@/ui/assets/icons/copied';
 import CopyIcon from '@/ui/assets/icons/copy';
@@ -247,26 +239,8 @@ const ChatScreen = () => {
     AI_ANALYSIS_LANGUAGE_SELECTION
   );
 
-  const languageModalRef = useModal();
-  const [selectedLanguage, setSelectedLanguage] = useState<string>(
-    languageAIResponsesLocally || appLanguage
-  );
-  const handleOpenLanguageSelector = useCallback(() => {
-    languageModalRef.present();
-  }, []);
+  const selectedLanguage = languageAIResponsesLocally || appLanguage;
 
-  const handleCloseLanguageSelector = useCallback(() => {
-    languageModalRef.dismiss();
-  }, []);
-
-  const handleLanguageSelect = useCallback(
-    (languageCode: string) => {
-      setSelectedLanguage(languageCode);
-      setStorageItem(AI_ANALYSIS_LANGUAGE_SELECTION, languageCode);
-      handleCloseLanguageSelector();
-    },
-    [handleCloseLanguageSelector]
-  );
   const [lastUserMessageIndex, setLastUserMessageIndex] = useState<
     number | null
   >(null);
@@ -483,11 +457,7 @@ const ChatScreen = () => {
       {DEVICE_TYPE.IOS && (
         <Toaster autoWiggleOnUpdate="toast-change" pauseWhenPageIsHidden />
       )}
-      <KeyboardAvoidingView
-        behavior="padding"
-        className="flex-1"
-        keyboardVerticalOffset={DEVICE_TYPE.ANDROID ? 40 : 0}
-      >
+      <KeyboardAvoidingView behavior="padding" className="flex-1">
         <View className="flex-1 bg-white dark:bg-blackEerie">
           {/* Header */}
           <View className="flex-row items-center justify-between border-b border-gray-200 bg-white px-4 py-3 dark:border-gray-600 dark:bg-blackEerie">
@@ -629,18 +599,7 @@ const ChatScreen = () => {
                 multiline
                 maxLength={400}
               />
-              {conversationMode === 'RANDOM_CONVERSATION' && (
-                <Button
-                  label={
-                    LANGUAGES[selectedLanguage].split(' ')[
-                      LANGUAGES[selectedLanguage].split(' ').length - 1
-                    ]
-                  }
-                  onPress={handleOpenLanguageSelector}
-                  className="bg-transparent p-1 dark:bg-transparent"
-                  textClassName="text-2xl"
-                />
-              )}
+
               <TouchableOpacity
                 // onPress={() => handleSendMessage(userMessage)}
                 onPress={() => {
@@ -698,14 +657,6 @@ const ChatScreen = () => {
           </View>
         </View>
       </KeyboardAvoidingView>
-      {/* Language Selection Modal */}
-      {conversationMode === 'RANDOM_CONVERSATION' && (
-        <LanguageModal
-          ref={languageModalRef.ref}
-          selectedLanguage={selectedLanguage}
-          onLanguageSelect={handleLanguageSelect}
-        />
-      )}
     </SafeAreaView>
   );
 };
