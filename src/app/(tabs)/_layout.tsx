@@ -7,6 +7,7 @@ import { firebaseAuth } from 'firebase/config';
 import { checkForAppUpdate } from 'firebase/remote-config';
 import { useColorScheme } from 'nativewind';
 import React, { useEffect } from 'react';
+import { StatusBar } from 'react-native';
 
 import {
   useGetCustomerInfo,
@@ -24,7 +25,6 @@ import {
 } from '@/core';
 import { useCrashlytics } from '@/core/hooks/use-crashlytics';
 import { useHaptic } from '@/core/hooks/use-haptics';
-import { useMedicalDisclaimerApproval } from '@/core/hooks/use-medical-disclaimer-approval';
 import { usePushNotificationToken } from '@/core/hooks/use-push-notification-token';
 import usePushNotifications from '@/core/hooks/use-push-notifications';
 import useRemoteConfig from '@/core/hooks/use-remote-config';
@@ -43,7 +43,7 @@ export default function TabLayout() {
   const { data: userInfo, isPending: isPendingUserinfo } = useUser(language);
 
   const [isFirstTime] = useIsFirstTime();
-  const [isMedicalDisclaimerApproved] = useMedicalDisclaimerApproval();
+  // const [isMedicalDisclaimerApproved] = useMedicalDisclaimerApproval();
   const { language: actualLocalLanguage } = useSelectedLanguage();
   const userInfoLanguage = userInfo?.preferredLanguage ?? 'en';
   const { mutate: onUpdatePreferredLanguage } = useUserPreferredLanguage();
@@ -163,6 +163,8 @@ export default function TabLayout() {
       className="flex-1"
       edges={DEVICE_TYPE.ANDROID ? ['bottom'] : []}
     >
+      <StatusBar hidden />
+
       <Tabs
         screenOptions={{
           tabBarStyle: bottomTabBarStyles.tabBarContainer,
