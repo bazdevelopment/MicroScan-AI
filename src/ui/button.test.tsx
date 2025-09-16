@@ -22,7 +22,7 @@ describe('Button component ', () => {
     render(
       <Button testID="button">
         <Text> Custom child </Text>
-      </Button>,
+      </Button>
     );
     expect(screen.getByText('Custom child')).toBeOnTheScreen();
   });
@@ -39,7 +39,7 @@ describe('Button component ', () => {
   it('should call onClick handler when clicked', () => {
     const onClick = jest.fn();
     render(
-      <Button testID="button" label="Click the button" onPress={onClick} />,
+      <Button testID="button" label="Click the button" onPress={onClick} />
     );
     expect(screen.getByTestId('button')).toBeOnTheScreen();
     fireEvent.press(screen.getByTestId('button'));
@@ -53,7 +53,7 @@ describe('Button component ', () => {
         loading={true}
         label="Click the button"
         onPress={onClick}
-      />,
+      />
     );
     expect(screen.getByTestId('button')).toBeOnTheScreen();
     expect(screen.getByTestId('button-activity-indicator')).toBeOnTheScreen();
@@ -74,7 +74,7 @@ describe('Button component ', () => {
         disabled={true}
         onPress={onClick}
         variant="secondary"
-      />,
+      />
     );
     expect(screen.getByTestId('button')).toBeOnTheScreen();
     fireEvent.press(screen.getByTestId('button'));
@@ -88,7 +88,7 @@ describe('Button component ', () => {
     const button = screen.getByTestId('button');
     // TODO: should be fixed to use haveStyle instead of comparing the class name
     const expectedStyle =
-      'font-primary-nunito font-semibold-nunito text-white dark:text-black text-xl';
+      'font-medium-nunito font-semibold-nunito text-white dark:text-black text-xl';
     const receivedStyle =
       button.props.children[0].props.children.props.className;
     expect(receivedStyle).toContain(expectedStyle);
@@ -98,7 +98,7 @@ describe('Button component ', () => {
     const button = screen.getByTestId('button');
 
     const expectedStyle =
-      'font-primary-nunito font-semibold-nunito text-secondary-600 text-base';
+      'font-medium-nunito font-semibold-nunito text-secondary-600 text-base';
     const receivedStyle =
       button.props.children[0].props.children.props.className;
     expect(receivedStyle).toContain(expectedStyle);
@@ -108,7 +108,7 @@ describe('Button component ', () => {
     const button = screen.getByTestId('button');
 
     const expectedStyle =
-      'font-primary-nunito font-semibold-nunito text-base text-neutral-600 dark:text-neutral-600';
+      'font-medium-nunito font-semibold-nunito text-base text-neutral-600 dark:text-neutral-600';
     const receivedStyle =
       button.props.children[0].props.children.props.className;
     expect(receivedStyle).toContain(expectedStyle);

@@ -102,7 +102,7 @@ export default function AnonymousLogin() {
             autoComplete={undefined}
             autoCorrect={false}
             // autoFocus
-            className="h-16 flex-1 rounded-xl bg-white px-3.5 py-5 font-primary-nunito dark:border-neutral-700 dark:bg-charcoal-800 dark:text-white"
+            className="h-16 flex-1 rounded-xl bg-white px-3.5 py-5 font-medium-nunito dark:border-neutral-700 dark:bg-charcoal-800 dark:text-white"
             icon={<UserIcon top={3} />}
           />
 
