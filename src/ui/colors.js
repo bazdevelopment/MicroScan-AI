@@ -1,5 +1,5 @@
 module.exports = {
-  white: '#ffffff',
+  white: '#FFFFFF',
   black: '#000000',
   darkGray: '#10152C',
   lightGray: '#D3D3D3',

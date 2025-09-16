@@ -34,3 +34,7 @@ To run the app on Android
 ```sh
 pnpm android
 ```
+
+## 👨🏼‍🔧 Troubleshooting
+
+-in Text.tsx, 'font-primary-nunito' caused a huge defect, sometimes the text content was not visible in the containers, then I changed to font-medium-nunito, and it seems stable now

@@ -3,6 +3,8 @@ import { StyleSheet } from 'react-native';
 import { toast } from 'sonner-native';
 import { type ToastProps } from 'sonner-native/lib/typescript/commonjs/src/types';
 
+import { colors } from '@/ui';
+
 // Default styles
 const styles = StyleSheet.create({
   actionButton: {
@@ -11,7 +13,7 @@ const styles = StyleSheet.create({
     borderRadius: 4,
   },
   actionButtonText: {
-    color: '#ffffff',
+    color: colors.white,
     fontWeight: '600',
   },
   cancelButton: {
@@ -88,7 +90,7 @@ export const showPromise = async <T>(
     loading?: string;
     success?: string | ((data: T) => string);
     error?: string | ((error: any) => string);
-  } & ToastProps,
+  } & ToastProps
 ) => {
   return toast.promise(promise, {
     ...mergeOptions(options),
@@ -109,7 +111,7 @@ export const showWithAction = (
   }: {
     actionLabel: string;
     onAction: () => void;
-  } & ToastProps,
+  } & ToastProps
 ) => {
   return toast(message, {
     ...mergeOptions(options),

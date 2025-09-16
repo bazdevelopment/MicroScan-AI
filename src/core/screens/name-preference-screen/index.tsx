@@ -45,15 +45,15 @@ const NamePreferenceScreen = ({
 
           <Text className="mb-4 mt-2 text-lg text-gray-600">
             {translate(
-              'rootLayout.screens.namePreferenceScreen.preferredNameQuestion',
+              'rootLayout.screens.namePreferenceScreen.preferredNameQuestion'
             )}
           </Text>
 
           <View className="mt-2">
             <Input
-              className="flex-1 rounded-xl bg-white px-3.5 py-5 font-primary-nunito dark:border-neutral-700 dark:bg-charcoal-800 dark:text-white"
+              className="flex-1 rounded-xl bg-white px-3.5 py-5 font-medium-nunito dark:border-neutral-700 dark:bg-charcoal-800 dark:text-white"
               placeholder={translate(
-                'rootLayout.screens.namePreferenceScreen.placeholderPreferredName',
+                'rootLayout.screens.namePreferenceScreen.placeholderPreferredName'
               )}
               value={nickname}
               onChangeText={setNickname}

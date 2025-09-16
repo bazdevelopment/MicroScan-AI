@@ -173,7 +173,7 @@ const PricingCard = ({
         </View>
 
         {subtitle && (
-          <Text className="text-md font-primary-nunito text-charcoal-900">
+          <Text className="text-md font-medium-nunito text-charcoal-900">
             {subtitle}
           </Text>
         )}
