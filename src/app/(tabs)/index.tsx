@@ -252,7 +252,7 @@ const ReportsList = ({
                 return Toast.showCustomToast(
                   <CustomAlert
                     title={translate('general.attention')}
-                    subtitle={translate('home.homeForeground.maxNumberOfScans')}
+                    subtitle={translate('alerts.chatAndMediaFilesLimit')}
                     buttons={[
                       {
                         label: translate('components.UpgradeBanner.heading'),

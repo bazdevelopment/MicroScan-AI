@@ -117,13 +117,15 @@
         "backToLogin": "Înapoi la Autentificare"
       },
       "namePreferenceScreen": {
-        "heading": "Hai să facem asta personal!",
-        "preferredNameQuestion": "Cum ar trebui să-ți spunem?",
-        "placeholderPreferredName": "Exemplu: Căpitan Cool, Regina Albină, sau doar Alex!"
+        "heading": "Acces sigur, securizat, simplu!",
+        "preferredNameQuestion": "Alege un pseudonim distractiv pentru a rămâne anonim — confidențialitatea ta contează pentru noi",
+        "placeholderPreferredName": "De exemplu, Căpitanul Cool, Regina Albinelor sau doar Alex!"
       },
       "freeTrialPreview": {
         "heading": "Bucură-te de proba gratuită! 🎉",
-        "subheading": "Experimentează aceste beneficii uimitoare în timpul probei gratuite"
+        "subheading": "Experimentează aceste beneficii uimitoare în timpul probei gratuite",
+        "review": "Analiză de microscopie excelentă, asistentul medical AI este foarte util! O aplicație indispensabilă!",
+        "reviewTrust": "📈 De încredere pentru peste 3.252 de utilizatori"
       },
       "scanInterpretation": {
         "title": "Rezultat analiză",
@@ -310,18 +312,41 @@
     "about": "Despre",
     "app_name": "Nume aplicație",
     "languages": {
-      "arabic": "Arabă",
       "english": "Engleză",
       "mandarin_chinese": "Chineză",
-      "spanish": "Spaniolă",
       "hindi": "Hindi",
-      "portuguese": "Portugheză",
-      "russian": "Rusă",
-      "japanese": "Japoneză",
-      "korean": "Coreeană",
-      "german": "Germană",
+      "spanish_spain": "Spaniolă (Spania)",
+      "spanish_mexico": "Spaniolă (Mexic)",
+      "arabic": "Arabă",
       "french": "Franceză",
-      "romanian": "Română"
+      "french_canada": "Franceză (Canada)",
+      "portuguese_brazil": "Portugheză (Brazilia)",
+      "portuguese_portugal": "Portugheză (Portugalia)",
+      "german": "Germană",
+      "japanese": "Japoneză",
+      "russian": "Rusă",
+      "korean": "Coreeană",
+      "italian": "Italiană",
+      "turkish": "Turcă",
+      "vietnamese": "Vietnameză",
+      "polish": "Poloneză",
+      "ukrainian": "Ucraineană",
+      "romanian": "Română",
+      "dutch": "Olandeză",
+      "czech": "Cehă",
+      "greek": "Greacă",
+      "swedish": "Suedeză",
+      "hungarian": "Maghiară",
+      "thai": "Thailandeză",
+      "hebrew": "Ebraică",
+      "indonesian": "Indoneziană",
+      "malay": "Malaieză",
+      "finnish": "Finlandeză",
+      "danish": "Daneză",
+      "norwegian": "Norvegiană",
+      "slovak": "Slovacă",
+      "croatian": "Croată",
+      "catalan": "Catalană"
     },
     "generale": "General",
     "github": "Github",
@@ -464,6 +489,7 @@
     "restorationSuccessful": "Restaurare reușită! Bucură-te!",
     "restorationError": "A apărut o eroare la restaurarea achiziției.",
     "medicalDisclaimerAlert": "Aplicația MicroScan AI nu oferă diagnostice, recomandări de tratament sau sfaturi medicale. Căutați întotdeauna îndrumare de la un profesionist calificat din domeniul sănătății pentru decizii medicale.",
-    "scanLimitReached": "Optimizăm calitatea scanării pentru tine! Vei putea scana din nou în aproximativ {{hours}} ore și {{minutes}} minute. Ai întrebări despre orice subiect de microscopie? Întreabă asistentul nostru de chat în timp ce aștepți!"
+    "scanLimitReached": "Optimizăm calitatea scanării pentru tine! Vei putea scana din nou în aproximativ {{hours}} ore și {{minutes}} minute. Ai întrebări despre orice subiect de microscopie? Întreabă asistentul nostru de chat în timp ce aștepți!",
+    "chatAndMediaFilesLimit": "Stimate utilizator, trebuie să vă actualizați planul pentru a beneficia de chat-uri nelimitate, scanări nelimitate, analiză multi-imagini și multe altele. 🔓"
   }
 }

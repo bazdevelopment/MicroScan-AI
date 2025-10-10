@@ -117,13 +117,15 @@
         "backToLogin": "Zurück zur Anmeldung"
       },
       "namePreferenceScreen": {
-        "heading": "Lassen Sie uns dies persönlich gestalten!",
-        "preferredNameQuestion": "Wie sollen wir Sie nennen?",
-        "placeholderPreferredName": "Zum Beispiel: Captain Cool, Queen Bee oder einfach Alex!"
+        "heading": "Sicherer, geschützter, einfacher Zugang!",
+        "preferredNameQuestion": "Wählen Sie einen lustigen Spitznamen, um anonym zu bleiben — Ihre Privatsphäre ist uns wichtig",
+        "placeholderPreferredName": "z.B. Captain Cool, Queen Bee, oder einfach Alex!"
       },
       "freeTrialPreview": {
         "heading": "Genießen Sie Ihre kostenlose Testversion! 🎉",
-        "subheading": "Erleben Sie diese erstaunlichen Vorteile während Ihrer kostenlosen Testversion"
+        "subheading": "Erleben Sie diese erstaunlichen Vorteile während Ihrer kostenlosen Testversion",
+        "review": "Großartige Mikroskopieanalyse, der KI-Medizin-Chat-Assistent ist super hilfreich! Eine unverzichtbare App!",
+        "reviewTrust": "📈 Von über 3.252 Nutzern vertraut"
       },
       "scanInterpretation": {
         "title": "Analyseergebnis",
@@ -310,18 +312,41 @@
     "about": "Über",
     "app_name": "App-Name",
     "languages": {
-      "arabic": "Arabisch",
       "english": "Englisch",
       "mandarin_chinese": "Chinesisch",
-      "spanish": "Spanisch",
       "hindi": "Hindi",
-      "portuguese": "Portugiesisch",
-      "russian": "Russisch",
-      "japanese": "Japanisch",
-      "korean": "Koreanisch",
-      "german": "Deutsch",
+      "spanish_spain": "Spanisch (Spanien)",
+      "spanish_mexico": "Spanisch (Mexiko)",
+      "arabic": "Arabisch",
       "french": "Französisch",
-      "romanian": "Rumänisch"
+      "french_canada": "Französisch (Kanada)",
+      "portuguese_brazil": "Portugiesisch (Brasilien)",
+      "portuguese_portugal": "Portugiesisch (Portugal)",
+      "german": "Deutsch",
+      "japanese": "Japanisch",
+      "russian": "Russisch",
+      "korean": "Koreanisch",
+      "italian": "Italienisch",
+      "turkish": "Türkisch",
+      "vietnamese": "Vietnamesisch",
+      "polish": "Polnisch",
+      "ukrainian": "Ukrainisch",
+      "romanian": "Rumänisch",
+      "dutch": "Niederländisch",
+      "czech": "Tschechisch",
+      "greek": "Griechisch",
+      "swedish": "Schwedisch",
+      "hungarian": "Ungarisch",
+      "thai": "Thailändisch",
+      "hebrew": "Hebräisch",
+      "indonesian": "Indonesisch",
+      "malay": "Malaiisch",
+      "finnish": "Finnisch",
+      "danish": "Dänisch",
+      "norwegian": "Norwegisch",
+      "slovak": "Slowakisch",
+      "croatian": "Kroatisch",
+      "catalan": "Katalanisch"
     },
     "generale": "Allgemein",
     "github": "Github",
@@ -464,6 +489,7 @@
     "restorationSuccessful": "Wiederherstellung erfolgreich! Viel Spaß!",
     "restorationError": "Beim Wiederherstellen des Kaufs ist ein Fehler aufgetreten.",
     "medicalDisclaimerAlert": "Die MicroScan AI-App bietet keine Diagnosen, Behandlungsempfehlungen oder medizinischen Ratschläge. Holen Sie stets Rat von einem qualifizierten medizinischen Fachpersonal für medizinische Entscheidungen ein.",
-    "scanLimitReached": "Wir optimieren die Scan-Qualität für Sie! Sie können in etwa {{hours}} Stunden und {{minutes}} Minuten wieder scannen. Haben Sie Fragen zu einem Thema der Mikroskopie? Fragen Sie unseren Chat-Assistenten, während Sie warten!"
+    "scanLimitReached": "Wir optimieren die Scan-Qualität für Sie! Sie können in etwa {{hours}} Stunden und {{minutes}} Minuten wieder scannen. Haben Sie Fragen zu einem Thema der Mikroskopie? Fragen Sie unseren Chat-Assistenten, während Sie warten!",
+    "chatAndMediaFilesLimit": "Sehr geehrter Benutzer, Sie müssen Ihren Plan upgraden, um von unbegrenzten Chats, unbegrenzten Scans, der Analyse mehrerer Bilder und mehr zu profitieren. 🔓"
   }
 }

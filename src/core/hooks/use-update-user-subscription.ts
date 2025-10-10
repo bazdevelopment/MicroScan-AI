@@ -8,7 +8,7 @@ import { type Nullable } from '@/types/general-types';
 import { useSelectedLanguage } from '../i18n';
 
 export const useUpdateUserSubscription = (
-  customerInfo: Nullable<CustomerInfo>,
+  customerInfo: Nullable<CustomerInfo>
 ) => {
   const { language } = useSelectedLanguage();
   const { data: userInfo } = useUser(language);

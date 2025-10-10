@@ -117,13 +117,15 @@
         "backToLogin": "サインインに戻る"
       },
       "namePreferenceScreen": {
-        "heading": "パーソナルにしましょう！",
-        "preferredNameQuestion": "何とお呼びしましょうか？",
-        "placeholderPreferredName": "例：キャプテンクール、クイーンビー、またはアレックス！"
+        "heading": "安全、安心、簡単なアクセス！",
+        "preferredNameQuestion": "匿名性を保つために楽しいニックネームを選んでください — お客様のプライバシーは私たちにとって重要です",
+        "placeholderPreferredName": "例：キャプテン・クール、クイーン・ビー、またはアレックス！"
       },
       "freeTrialPreview": {
         "heading": "無料トライアルをお楽しみください！🎉",
-        "subheading": "無料トライアル中にこれらの素晴らしい特典を体験してください"
+        "subheading": "無料トライアル中にこれらの素晴らしい特典を体験してください",
+        "review": "素晴らしい顕微鏡分析で、AI医療チャットアシスタントがとても役立ちます！必携のアプリです！",
+        "reviewTrust": "📈 3,252人以上のユーザーに信頼されています"
       },
       "scanInterpretation": {
         "title": "分析結果",
@@ -310,18 +312,41 @@
     "about": "について",
     "app_name": "アプリ名",
     "languages": {
-      "arabic": "アラビア語",
       "english": "英語",
-      "mandarin_chinese": "中国語（北京語）",
-      "spanish": "スペイン語",
+      "mandarin_chinese": "中国語",
       "hindi": "ヒンディー語",
-      "portuguese": "ポルトガル語",
-      "russian": "ロシア語",
-      "japanese": "日本語",
-      "korean": "韓国語",
-      "german": "ドイツ語",
+      "spanish_spain": "スペイン語（スペイン）",
+      "spanish_mexico": "スペイン語（メキシコ）",
+      "arabic": "アラビア語",
       "french": "フランス語",
-      "romanian": "ルーマニア語"
+      "french_canada": "フランス語（カナダ）",
+      "portuguese_brazil": "ポルトガル語（ブラジル）",
+      "portuguese_portugal": "ポルトガル語（ポルトガル）",
+      "german": "ドイツ語",
+      "japanese": "日本語",
+      "russian": "ロシア語",
+      "korean": "韓国語",
+      "italian": "イタリア語",
+      "turkish": "トルコ語",
+      "vietnamese": "ベトナム語",
+      "polish": "ポーランド語",
+      "ukrainian": "ウクライナ語",
+      "romanian": "ルーマニア語",
+      "dutch": "オランダ語",
+      "czech": "チェコ語",
+      "greek": "ギリシャ語",
+      "swedish": "スウェーデン語",
+      "hungarian": "ハンガリー語",
+      "thai": "タイ語",
+      "hebrew": "ヘブライ語",
+      "indonesian": "インドネシア語",
+      "malay": "マレー語",
+      "finnish": "フィンランド語",
+      "danish": "デンマーク語",
+      "norwegian": "ノルウェー語",
+      "slovak": "スロバキア語",
+      "croatian": "クロアチア語",
+      "catalan": "カタロニア語"
     },
     "generale": "一般",
     "github": "Github",
@@ -464,6 +489,7 @@
     "restorationSuccessful": "復元に成功しました！お楽しみください！",
     "restorationError": "購入の復元中にエラーが発生しました。",
     "medicalDisclaimerAlert": "MicroScan AIアプリは、診断、治療勧告、または医療アドバイスを提供しません。医療上の決定については、必ず資格のある医療専門家の指導を受けてください。",
-    "scanLimitReached": "お客様のためにスキャン品質を最適化しています！約{{hours}}時間{{minutes}}分後に再びスキャンできます。顕微鏡のトピックについて何か質問がありますか？お待ちの間、チャットアシスタントに質問してください！"
+    "scanLimitReached": "お客様のためにスキャン品質を最適化しています！約{{hours}}時間{{minutes}}分後に再びスキャンできます。顕微鏡のトピックについて何か質問がありますか？お待ちの間、チャットアシスタントに質問してください！",
+    "chatAndMediaFilesLimit": "お客様、無制限のチャット、無制限のスキャン、複数画像分析などの特典を利用するには、プランをアップグレードする必要があります。 🔓"
   }
 }

@@ -117,13 +117,15 @@
         "backToLogin": "Volver a iniciar sesión"
       },
       "namePreferenceScreen": {
-        "heading": "¡Hagamos esto personal!",
-        "preferredNameQuestion": "¿Cómo te llamaremos?",
-        "placeholderPreferredName": "Por ejemplo: Capitán Genial, Abeja Reina, ¡o simplemente Alex!"
+        "heading": "¡Acceso seguro, protegido y simple!",
+        "preferredNameQuestion": "Elige un apodo divertido para mantenerte anónimo — tu privacidad nos importa",
+        "placeholderPreferredName": "Ej.: Capitán Cool, Reina Abeja, o simplemente Alex."
       },
       "freeTrialPreview": {
         "heading": "¡Disfruta de tu prueba gratuita! 🎉",
-        "subheading": "Experimenta estos increíbles beneficios durante tu prueba gratuita"
+        "subheading": "Experimenta estos increíbles beneficios durante tu prueba gratuita",
+        "review": "Excelente análisis de microscopía, ¡el asistente médico de IA es muy útil! ¡Una aplicación imprescindible!",
+        "reviewTrust": "📈 Con la confianza de más de 3.252 usuarios"
       },
       "scanInterpretation": {
         "title": "Resultado del análisis",
@@ -310,18 +312,41 @@
     "about": "Acerca de",
     "app_name": "Nombre de la aplicación",
     "languages": {
-      "arabic": "Árabe",
       "english": "Inglés",
-      "mandarin_chinese": "Chino mandarín",
-      "spanish": "Español",
+      "mandarin_chinese": "Chino",
       "hindi": "Hindi",
-      "portuguese": "Portugués",
-      "russian": "Ruso",
-      "japanese": "Japonés",
-      "korean": "Coreano",
-      "german": "Alemán",
+      "spanish_spain": "Español (España)",
+      "spanish_mexico": "Español (México)",
+      "arabic": "Árabe",
       "french": "Francés",
-      "romanian": "Rumano"
+      "french_canada": "Francés (Canadá)",
+      "portuguese_brazil": "Portugués (Brasil)",
+      "portuguese_portugal": "Portugués (Portugal)",
+      "german": "Alemán",
+      "japanese": "Japonés",
+      "russian": "Ruso",
+      "korean": "Coreano",
+      "italian": "Italiano",
+      "turkish": "Turco",
+      "vietnamese": "Vietnamita",
+      "polish": "Polaco",
+      "ukrainian": "Ucraniano",
+      "romanian": "Rumano",
+      "dutch": "Neerlandés",
+      "czech": "Checo",
+      "greek": "Griego",
+      "swedish": "Sueco",
+      "hungarian": "Húngaro",
+      "thai": "Tailandés",
+      "hebrew": "Hebreo",
+      "indonesian": "Indonesio",
+      "malay": "Malayo",
+      "finnish": "Finlandés",
+      "danish": "Danés",
+      "norwegian": "Noruego",
+      "slovak": "Eslovaco",
+      "croatian": "Croata",
+      "catalan": "Catalán"
     },
     "generale": "General",
     "github": "Github",
@@ -464,6 +489,7 @@
     "restorationSuccessful": "¡Restauración exitosa! ¡Disfruta!",
     "restorationError": "Ocurrió un error al restaurar la compra.",
     "medicalDisclaimerAlert": "La aplicación MicroScan AI no ofrece diagnósticos, recomendaciones de tratamiento ni ningún consejo médico. Siempre busca orientación de un profesional de la salud calificado para decisiones médicas.",
-    "scanLimitReached": "¡Estamos optimizando la calidad del escaneo para ti! Podrás escanear de nuevo en aproximadamente {{hours}} horas y {{minutes}} minutos. ¿Tienes alguna pregunta sobre algún tema de microscopía? ¡Pregúntale a nuestro asistente de chat mientras esperas!"
+    "scanLimitReached": "¡Estamos optimizando la calidad del escaneo para ti! Podrás escanear de nuevo en aproximadamente {{hours}} horas y {{minutes}} minutos. ¿Tienes alguna pregunta sobre algún tema de microscopía? ¡Pregúntale a nuestro asistente de chat mientras esperas!",
+    "chatAndMediaFilesLimit": "Estimado usuario, necesita actualizar su plan para beneficiarse de chats ilimitados, escaneos ilimitados, análisis de múltiples imágenes y más. 🔓"
   }
 }
