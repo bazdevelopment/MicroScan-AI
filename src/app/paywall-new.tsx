@@ -209,6 +209,7 @@ const PaywallNew = () => {
   const YEAR_PLAN_DISCOUNT = 90;
   const { data: customerInfo } = useGetCustomerInfo();
   const [, setIsFirstTime] = useIsFirstTime();
+  const scrollViewRef = React.useRef<ScrollView>(null);
 
   const { mutateAsync: onUpdateUser, isPending: isPendingUpdateUser } =
     useUpdateUser();
@@ -228,6 +229,7 @@ const PaywallNew = () => {
     setFreeTrialEnabled(value);
     // Switch selected plan based on toggle
     setSelectedPlan(value ? 'weekly' : 'yearly');
+    scrollViewRef?.current?.scrollToEnd({ animated: true });
   };
 
   // Manual plan selection (when user taps on cards)
@@ -235,6 +237,7 @@ const PaywallNew = () => {
     setSelectedPlan(plan);
     // Update switch to match selected plan
     setFreeTrialEnabled(plan === 'weekly');
+    scrollViewRef?.current?.scrollToEnd({ animated: true });
   };
 
   const onSuccessRestoration = async (fieldsToUpdate: object) => {
@@ -320,6 +323,7 @@ const PaywallNew = () => {
           className="flex-1"
           contentContainerStyle={{ paddingBottom: 100 }}
           showsVerticalScrollIndicator={false}
+          ref={scrollViewRef}
         >
           {/* Header */}
 

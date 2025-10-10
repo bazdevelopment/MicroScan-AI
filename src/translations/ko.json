@@ -116,13 +116,15 @@
         "backToLogin": "로그인으로 돌아가기"
       },
       "namePreferenceScreen": {
-        "heading": "개인 설정해 봅시다!",
-        "preferredNameQuestion": "무엇이라고 부를까요?",
-        "placeholderPreferredName": "예: 캡틴 쿨, 여왕벌, 또는 그냥 알렉스!"
+        "heading": "안전하고, 보안되며, 간단한 액세스!",
+        "preferredNameQuestion": "익명을 유지할 수 있도록 재미있는 닉네임을 선택해 주세요 — 저희는 귀하의 개인 정보를 소중하게 생각합니다",
+        "placeholderPreferredName": "예: 캡틴 쿨, 퀸 비, 또는 알렉스!"
       },
       "freeTrialPreview": {
         "heading": "무료 체험을 즐기세요! 🎉",
-        "subheading": "무료 체험 기간 동안 이 놀라운 혜택을 경험하세요"
+        "subheading": "무료 체험 기간 동안 이 놀라운 혜택을 경험하세요",
+        "review": "훌륭한 현미경 분석이며, AI 의료 채팅 도우미가 매우 유용합니다! 꼭 필요한 앱이에요!",
+        "reviewTrust": "📈 3,252명 이상의 사용자가 신뢰합니다"
       },
       "scanInterpretation": {
         "title": "분석 결과",
@@ -309,18 +311,41 @@
     "about": "정보",
     "app_name": "앱 이름",
     "languages": {
-      "arabic": "아랍어",
       "english": "영어",
-      "mandarin_chinese": "중국어 (만다린)",
-      "spanish": "스페인어",
+      "mandarin_chinese": "중국어",
       "hindi": "힌디어",
-      "portuguese": "포르투갈어",
-      "russian": "러시아어",
-      "japanese": "일본어",
-      "korean": "한국어",
-      "german": "독일어",
+      "spanish_spain": "스페인어 (스페인)",
+      "spanish_mexico": "스페인어 (멕시코)",
+      "arabic": "아랍어",
       "french": "프랑스어",
-      "romanian": "루마니아어"
+      "french_canada": "프랑스어 (캐나다)",
+      "portuguese_brazil": "포르투갈어 (브라질)",
+      "portuguese_portugal": "포르투갈어 (포르투갈)",
+      "german": "독일어",
+      "japanese": "일본어",
+      "russian": "러시아어",
+      "korean": "한국어",
+      "italian": "이탈리아어",
+      "turkish": "터키어",
+      "vietnamese": "베트남어",
+      "polish": "폴란드어",
+      "ukrainian": "우크라이나어",
+      "romanian": "루마니아어",
+      "dutch": "네덜란드어",
+      "czech": "체코어",
+      "greek": "그리스어",
+      "swedish": "스웨덴어",
+      "hungarian": "헝가리어",
+      "thai": "태국어",
+      "hebrew": "히브리어",
+      "indonesian": "인도네시아어",
+      "malay": "말레이어",
+      "finnish": "핀란드어",
+      "danish": "덴마크어",
+      "norwegian": "노르웨이어",
+      "slovak": "슬로바키아어",
+      "croatian": "크로아티아어",
+      "catalan": "카탈루냐어"
     },
     "generale": "일반",
     "github": "Github",
@@ -463,6 +488,7 @@
     "restorationSuccessful": "복원이 성공했습니다! 즐기세요!",
     "restorationError": "구매를 복원하는 동안 오류가 발생했습니다.",
     "medicalDisclaimerAlert": "MicroScan AI 앱은 진단, 치료 권장 사항 또는 의료 조언을 제공하지 않습니다. 의료 결정은 항상 자격을 갖춘 의료 전문가의 지도를 받으십시오.",
-    "scanLimitReached": "스캔 품질을 최적화하고 있습니다! 약 {{hours}}시간 {{minutes}}분 후에 다시 스캔할 수 있습니다. 현미경 주제에 대해 질문이 있으십니까? 기다리는 동안 채팅 조수에게 물어보십시오!"
+    "scanLimitReached": "스캔 품질을 최적화하고 있습니다! 약 {{hours}}시간 {{minutes}}분 후에 다시 스캔할 수 있습니다. 현미경 주제에 대해 질문이 있으십니까? 기다리는 동안 채팅 조수에게 물어보십시오!",
+    "chatAndMediaFilesLimit": "친애하는 사용자님, 무제한 채팅, 무제한 스캔, 다중 이미지 분석 등의 혜택을 받으려면 요금제를 업그레이드해야 합니다. 🔓"
   }
 }

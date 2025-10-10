@@ -1,12 +1,12 @@
 import ar from '@/translations/ar.json';
 import de from '@/translations/de.json';
 import en from '@/translations/en.json';
-import es from '@/translations/es.json';
+import es_spain from '@/translations/es-ES.json';
 import fr from '@/translations/fr.json';
 import hi from '@/translations/hi.json';
 import ja from '@/translations/ja.json';
 import ko from '@/translations/ko.json';
-import pt from '@/translations/pt.json';
+import pt_portugal from '@/translations/pt-PT.json';
 import ro from '@/translations/ro.json';
 import ru from '@/translations/ru.json';
 import zh from '@/translations/zh.json';
@@ -18,8 +18,8 @@ export const resources = {
   ar: {
     translation: ar,
   },
-  es: {
-    translation: es,
+  'es-ES': {
+    translation: es_spain,
   },
   fr: {
     translation: fr,
@@ -30,8 +30,8 @@ export const resources = {
   hi: {
     translation: hi,
   },
-  pt: {
-    translation: pt,
+  'pt-PT': {
+    translation: pt_portugal,
   },
   ru: {
     translation: ru,

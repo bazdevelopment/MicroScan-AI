@@ -10,7 +10,10 @@
 import * as functions from 'firebase-functions/v1';
 
 import { addFieldsToCollectionHandler } from '../utilities/add-fields-to-collection';
-import { getConversationHandler } from './conversation';
+import {
+  getAllConversationsHandler,
+  getConversationHandler,
+} from './conversation';
 import * as imageFunctions from './image';
 import {
   deleteScanInterpretationById,
@@ -124,7 +127,9 @@ export const analyzeImageConversation = usCentralFunctions.https.onRequest(
 export const continueConversation = usCentralFunctions.https.onRequest(
   imageFunctions.continueConversation,
 );
-
+export const getAllConversations = usCentralFunctions.https.onCall(
+  getAllConversationsHandler,
+);
 export const getConversation = usCentralFunctions.https.onCall(
   getConversationHandler,
 );

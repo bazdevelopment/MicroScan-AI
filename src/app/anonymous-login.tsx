@@ -13,6 +13,7 @@ import { useStoreUserId } from '@/core/hooks/use-store-user-id';
 import getDeviceSizeCategory from '@/core/utilities/get-device-size-category';
 import { Button, colors, Input, Text, View } from '@/ui';
 import { UserIcon } from '@/ui/assets/icons';
+import { ArrowRightSharp } from '@/ui/assets/icons/arrow-right-sharp';
 
 export default function AnonymousLogin() {
   const [username, setUsername] = useState('');
@@ -101,6 +102,7 @@ export default function AnonymousLogin() {
             keyboardType="default"
             autoComplete={undefined}
             autoCorrect={false}
+            autoFocus
             // autoFocus
             className="h-16 flex-1 rounded-xl bg-white px-3.5 py-5 font-medium-nunito dark:border-neutral-700 dark:bg-charcoal-800 dark:text-white"
             icon={<UserIcon top={3} />}
@@ -135,10 +137,13 @@ export default function AnonymousLogin() {
 
           <Button
             label={translate('general.continue')}
+            icon={
+              <ArrowRightSharp color={colors.white} width={20} height={20} />
+            }
             variant="default"
-            className="mt-6 h-[55px] w-full rounded-xl border-2 border-primary-900 bg-primary-900 pl-5 dark:bg-primary-900"
+            className="mt-6 h-[55px] w-full rounded-xl border-2 border-primary-900 bg-primary-900 pl-5 disabled:opacity-50 dark:bg-primary-900 dark:disabled:opacity-50"
             textClassName="text-lg text-center text-white dark:text-white"
-            iconPosition="left"
+            iconPosition="right"
             onPress={() => {
               onCreateAnonymousAccount({
                 username,

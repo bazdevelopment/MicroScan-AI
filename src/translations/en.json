@@ -117,13 +117,15 @@
         "backToLogin": "Back to Sign In"
       },
       "namePreferenceScreen": {
-        "heading": "Let's make this personal!",
-        "preferredNameQuestion": "What should we call you?",
+        "heading": "Safe, secure, simple access!",
+        "preferredNameQuestion": "Pick a fun nickname to stay anonymous — your privacy matters to us",
         "placeholderPreferredName": "E.g., Captain Cool, Queen Bee, or just Alex!"
       },
       "freeTrialPreview": {
         "heading": "Enjoy your free trial! 🎉",
-        "subheading": "Experience these amazing benefits during your free trial"
+        "subheading": "Experience these amazing benefits during your free trial",
+        "review": "Great microscopy analysis, the AI medical chat assistant is super helpful! A must-have app!",
+        "reviewTrust": "📈 Trusted by 3,252+ users"
       },
       "scanInterpretation": {
         "title": "Analysis result",
@@ -312,18 +314,41 @@
     "about": "About",
     "app_name": "App Name",
     "languages": {
-      "arabic": "Arabic",
       "english": "English",
       "mandarin_chinese": "Chinese",
-      "spanish": "Spanish",
       "hindi": "Hindi",
-      "portuguese": "Portuguese",
-      "russian": "Russian",
-      "japanese": "Japanese",
-      "korean": "Korean",
-      "german": "German",
+      "spanish_spain": "Spanish (Spain)",
+      "spanish_mexico": "Spanish (Mexico)",
+      "arabic": "Arabic",
       "french": "French",
-      "romanian": "Romanian"
+      "french_canada": "French (Canada)",
+      "portuguese_brazil": "Portuguese (Brazil)",
+      "portuguese_portugal": "Portuguese (Portugal)",
+      "german": "German",
+      "japanese": "Japanese",
+      "russian": "Russian",
+      "korean": "Korean",
+      "italian": "Italian",
+      "turkish": "Turkish",
+      "vietnamese": "Vietnamese",
+      "polish": "Polish",
+      "ukrainian": "Ukrainian",
+      "romanian": "Romanian",
+      "dutch": "Dutch",
+      "czech": "Czech",
+      "greek": "Greek",
+      "swedish": "Swedish",
+      "hungarian": "Hungarian",
+      "thai": "Thai",
+      "hebrew": "Hebrew",
+      "indonesian": "Indonesian",
+      "malay": "Malay",
+      "finnish": "Finnish",
+      "danish": "Danish",
+      "norwegian": "Norwegian",
+      "slovak": "Slovak",
+      "croatian": "Croatian",
+      "catalan": "Catalan"
     },
     "generale": "General",
     "github": "Github",
@@ -467,6 +492,7 @@
     "restorationSuccessful": "Restoration was successful! Enjoy!",
     "restorationError": "An error occurred while restoring the purchase.",
     "medicalDisclaimerAlert": "MicroScan AI app does not offer diagnoses, treatment recommendations, or any medical advice. Always seek guidance from a qualified healthcare professional for medical decisions.",
-    "scanLimitReached": "We're optimizing scan quality for you! You'll be able to scan again in around {{hours}} hours and {{minutes}} minutes. Have any questions about any microscopy topic? Ask our chat assistant while you wait!"
+    "scanLimitReached": "We're optimizing scan quality for you! You'll be able to scan again in around {{hours}} hours and {{minutes}} minutes. Have any questions about any microscopy topic? Ask our chat assistant while you wait!",
+    "chatAndMediaFilesLimit": "Dear user, you need to upgrade your plan to benefit from unlimited chats, unlimited scans, multi-images analysis and more. 🔓"
   }
 }
