@@ -83,7 +83,8 @@ const FreeTrialPreview = ({
         {/* <FocusAwareStatusBar hidden /> */}
 
         <ScrollView
-          className={`flex-1 px-5 ${DEVICE_TYPE.ANDROID && isVerySmallDevice ? 'pt-[10]' : 'pt-[20]'}`}
+          className={`px-5 ${DEVICE_TYPE.ANDROID && 'pt-[42]'}`}
+          contentContainerClassName={`${DEVICE_TYPE.ANDROID ? 'pb-20' : ''}`}
           showsVerticalScrollIndicator={false}
         >
           <Text className="mb-2 text-center font-bold-nunito text-4xl text-white">
@@ -101,7 +102,7 @@ const FreeTrialPreview = ({
         </ScrollView>
         {/* Bottom Navigation */}
         <View
-          className={`mb-4 mt-auto flex-row  items-center justify-between px-6 `}
+          className={`mb-14 mt-auto flex-row  items-center justify-between px-6 `}
         >
           <View className={`${isVerySmallDevice ? 'gap-4' : 'gap-12'}`}>
             <Button

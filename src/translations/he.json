@@ -1,0 +1,495 @@
+{
+  "onboarding": {
+    "message": "ברוכים הבאים ל-MicroScan AI!"
+  },
+  "general": {
+    "back": "חזרה",
+    "welcome": "היי",
+    "welcomeBack": "ברוך שובך!",
+    "welcomeMessage": "ברוכים הבאים!",
+    "continue": "המשך",
+    "retry": "נסה שוב",
+    "close": "סגור",
+    "gallery": "גלריה",
+    "files": "קבצים",
+    "cancel": "ביטול",
+    "delete": "מחיקה",
+    "attention": "תשומת לב!",
+    "new": "חדש",
+    "yes": "כן",
+    "or": "או",
+    "typing": "כותב...",
+    "online": "מקוון",
+    "chatbotPlaceholder": "שאל אותי כל דבר...",
+    "openSettings": "פתח הגדרות",
+    "seeNotifications": "צפה בהתראות",
+    "viewProfile": "צפה בפרופיל",
+    "upgradePlan": "שדרוג מנוי",
+    "download": "הורדה",
+    "share": "שתף",
+    "shareLink": "שתף קישור",
+    "skip": "דלג",
+    "next": "הבא",
+    "update": "עדכון",
+    "tryAgain": "נסה שוב",
+    "createdAt": "נוצר ב-",
+    "and": "ו-",
+    "saveDiscount": "החסך",
+    "restorePurchase": "שחזר רכישה",
+    "medicalDisclaimer": "הצהרה רפואית",
+    "conversationHistory": "היסטוריית שיחות",
+    "freeTrial": "ניסיון חינם",
+    "free": "חינם",
+    "completedScans": "סריקות שהושלמו",
+    "activeSubscription": "מנוי פעיל",
+    "askAssistant": "שאל את עוזר ה-AI",
+    "then": "אז",
+    "perWeek": "לשבוע",
+    "perYear": "לשנה",
+    "perMonth": "לחודש",
+    "tryForFree": "נסה בחינם",
+    "unlockNow": "בטל נעילה עכשיו",
+    "copyText": {
+      "loading": "מעתיק...",
+      "copied": "הועתק!",
+      "copy": "העתק קישור"
+    },
+    "loadingMessages": {
+      "initialAppLoad": {
+        "first": "טוען את החוויה האישית שלך...",
+        "second": "מסנכרן מערכות...",
+        "third": "מעבד את הנתונים שלך...",
+        "fourth": "כמעט מוכן, רק רגע..."
+      },
+      "imageScanningLoading": {
+        "first": "סורק את תמונת המיקרוגרפיה שלך, אנא המתן...",
+        "second": "מנתח פרטים, זה עשוי לקחת כמה רגעים...",
+        "third": "משפר דיוק לתוצאות הטובות ביותר...",
+        "fourth": "כמעט סיימנו, מסיים את הסריקה..."
+      },
+      "loadingChatbot": {
+        "first": "Aura מתכוננת לעזור לך...",
+        "second": "המתן! Aura מכינה את התשובה שלך...",
+        "third": "חושב... העוזרת שלך Aura עובדת על זה!"
+      }
+    }
+  },
+  "backHandler": {
+    "holdOn": "חכה!",
+    "goBackMessage": "האם אתה בטוח שאתה רוצה לחזור?"
+  },
+  "internet": {
+    "noConnectionTitle": "אתה לא מחובר!",
+    "noConnectionMessage": "הפעל נתונים סלולריים או התחבר ל-Wi-Fi. או פשוט קח הפסקה וצא להליכה!"
+  },
+  "uploadScan": {
+    "title": "העלה תמונה",
+    "scanNow": "סרוק עכשיו"
+  },
+  "weekDays": {
+    "today": "היום",
+    "yesterday": "אתמול"
+  },
+  "auth": {
+    "verifyAuthCode": "אמת קוד אימות",
+    "verifyAuthCodeButton": "אמת קוד",
+    "authCodeHeading": "קוד אימות",
+    "loginViaEmailHeading": "בואו נחבר אותך. אנא הזן את האימייל שלך כדי להמשיך.",
+    "emailAddress": "אימייל"
+  },
+  "rootLayout": {
+    "screens": {
+      "welcome": {
+        "heading": "ברוכים הבאים ל-MicroScan AI!",
+        "startButton": "בואו נתחיל!",
+        "accountButton": "כבר יש לי חשבון"
+      },
+      "login": {
+        "agreeingMessage": "בהמשך השימוש, אתה מסכים ל",
+        "termsAndConditions": "תנאים והגבלות",
+        "privacyPolicy": "מדיניות פרטיות"
+      },
+      "verifyAuthCode": {
+        "verificationCodeHeading": "הזן את קוד האימות שנשלח בדוא\"ל. שים לב, הקוד יפוג תוך 5 דקות.",
+        "verificationCodeSent": "שלחנו את קוד האימות ל",
+        "verificationCodeMissing": "לא קיבלת את הקוד?",
+        "resendCode": "שלח קוד שוב",
+        "backToLogin": "חזרה להתחברות"
+      },
+      "namePreferenceScreen": {
+        "heading": "גישה בטוחה, מאובטחת ופשוטה!",
+        "preferredNameQuestion": "בחר כינוי כיפי כדי להישאר אנונימי - הפרטיות שלך חשובה לנו",
+        "placeholderPreferredName": "למשל, קפטן מגניב, מלכת הדבורים, או פשוט אלקס!"
+      },
+      "freeTrialPreview": {
+        "heading": "תהנה מהניסיון החינמי שלך! 🎉",
+        "subheading": "חווה את היתרונות המדהימים האלה במהלך הניסיון החינמי שלך",
+        "review": "ניתוח מיקרוסקופיה מעולה, עוזר ה-AI הרפואי סופר מועיל! אפליקציה חובה!",
+        "reviewTrust": "📈 נתמך על ידי 3,252+ משתמשים"
+      },
+      "scanInterpretation": {
+        "title": "תוצאות ניתוח",
+        "headerBackTitle": "דוחות"
+      },
+      "paywallOnboarding": {
+        "freeTierOfferings": {
+          "freeTrialEnabled": "ניסיון חינם מופעל",
+          "heading": "גישה בלתי מוגבלת",
+          "title": "בטל נעילה לתכונות פרימיום היום!",
+          "firstOffering": "גישה לכל תכונות הפרימיום",
+          "secondOffering": "חוויה נטולת פרסומות",
+          "thirdOffering": "סריקות מיקרוסקופיה בלתי מוגבלות",
+          "fourthOffering": "שיחות בלתי מוגבלות עם עוזר AI 24/7"
+        }
+      },
+      "paywallUpgradeScreen": {
+        "heading": "בטל נעילה לתכונות פרימיום היום!",
+        "firstOffering": {
+          "title": "התחל ניסיון חינם",
+          "subtitle": "תהנה מ-{{freeScans}} סריקות חינם - ללא תשלום"
+        },
+        "secondOffering": {
+          "title": "תוכנית חודשית",
+          "subtitle": "{{ price }}/לחודש"
+        },
+        "thirdOffering": {
+          "title": "תוכנית שנתית",
+          "subtitle": "{{ price }} לשנה"
+        },
+        "fourthOffering": {
+          "title": "ניסיון {{trialDays}}-יום",
+          "subtitle": "{{ price }} לשנה",
+          "plan": "תוכנית שבועית"
+        }
+      },
+      "newAppVersionScreen": {
+        "heading": "גרסה חדשה של MicroScan AI זמינה",
+        "subheading": "אנא עדכן לגרסה האחרונה כדי להמשיך להשתמש באפליקציה",
+        "action": "קבל עכשיו!"
+      },
+      "rateAppScreen": {
+        "heading": "האם אתה מוצא את האפליקציה בעלת ערך ומרתקת?",
+        "like": "כן, אני אוהב את זה!",
+        "dislike": "לא wirklich..."
+      },
+      "noInternetScreen": {
+        "heading": "אתה לא מחובר",
+        "subheading": "נראה שהחיבור שלך לא יציב. אנא בדוק את מצב הרשת שלך"
+      },
+      "notifications": {
+        "title": "התראות",
+        "noNotifications": "אין התראות כרגע - הישאר מעודכן!"
+      },
+      "termsOfService": {
+        "title": "תנאי שירות"
+      },
+      "privacyPolicy": {
+        "title": "מדיניות פרטיות"
+      },
+      "share": {
+        "title": "שתף",
+        "heading": "שתף את אפליקציית MicroScan AI",
+        "subheading": "עזור לאחרים לגלות את הכוח של ניתוח מיקרוסקופיה מונחה AI",
+        "scanMessage": "סרוק כדי להוריד את האפליקציה",
+        "shareMessage": "או שתף דרך הפלטפורמה המועדפת עליך"
+      },
+      "rate": {
+        "title": "תן לנו משוב!"
+      },
+      "profile": {
+        "title": "פרופיל",
+        "edit": "ערוך פרופיל",
+        "placeholderPreferredName": "למשל, קפטן מגניב, מלכת הדבורים, או פשוט אלקס!"
+      },
+      "generateReportScreen": {
+        "title": "אנו מעריכים את סבלנותך! הנה דוח ה-AI שלך.",
+        "userInput": "ההגשה שלך",
+        "medicalReport": "דוח מיקרוסקופיה",
+        "report": "דוח מיקרוסקופיה שנוצר על ידי AI",
+        "conversationName": "שם שיחה"
+      },
+      "verifyEmail": {
+        "heading": "אמת אימייל"
+      },
+      "filePreviewScreen": {
+        "generateReportButton": "התחל ניתוח"
+      },
+      "disclaimerScreen": {
+        "heading": "הצהרה חשובה",
+        "subheading": "MicroScan AI תוכנן עבור אנשי מקצוע במיקרוסקופיה, חוקרים, סטודנטים וחובבים",
+        "consentAgreement": "קראתי והסכמתי להצהרה.",
+        "firstConsent": "MicroScan AI אינו מספק מדידות בריאות, אבחנות או ייעוץ טיפולי, ואינו מיועד למטרות אלה. על משתמשי MicroScan AI להפעיל שיקול דעת קליני ולאמת מידע ממקורות סמכותיים לפני קבלת החלטות קליניות.",
+        "secondConsent": "MicroScan AI אינו כלי אבחון, פלטפורמת טיפול או תחליף לייעוץ רפואי מקצועי. הוא מספק תובנות שנוצרו על ידי AI כדי לסייע לאנשי מקצוע בתחום הבריאות לגשת לידע רפואי ולנתח תמונות ומסמכים רפואיים. MicroScan AI היא אפליקציית מידע וחינוך מונחית AI שנועדה יותר לתמוך באנשי מקצוע מורשים בתחום הבריאות.",
+        "fourthConsent": "MicroScan AI אינו מסווג כמכשיר רפואי ואינו טוען לאישור רגולטורי. הוא מיועד למטרות חינוכיות ומידעיות כדי להשלים מומחיות מקצועית.",
+        "fifthConsent": "MicroScan AI אינו אוסף, מאחסן או מעבד נתונים אישיים או של מטופלים. כל האינטראקציות של המשתמשים הן חסויות ומוגבלות לתחום האפליקציה."
+      },
+      "contactUs": {
+        "heading": "אל תהסס לשלוח לנו אימייל directly, והצוות שלנו יחזור אליך בהקדם האפשרי",
+        "customerSupport": "תמיכה ללקוחות",
+        "emailAddress": "כתובת אימייל"
+      },
+      "languageAnalysisModal": {
+        "languagePreferenceQuestion": "איזו שפה אתה מעדיף לניתוח ה-AI?",
+        "languageSelection": "בחר שפה לתגובות AI",
+        "languageSearchCriteria": "חפש לפי שפה, קוד מדינה או דגל",
+        "noLanguageFound": "לא נמצאה שפה",
+        "noLanguageFoundSubtitle": "נסה לשנות את מונחי החיפוש שלך"
+      },
+      "chatScreen": {
+        "randomQuestions": {
+          "one": "מהן ההבדלים בין brightfield, phase contrast ו-DIC? 🔬",
+          "two": "כיצד הכנת דגימות משפיעה על רזולוציית התמונה? 🧫",
+          "three": "מתי עלי להשתמש במיקרוסקופ קונפוקלי לעומת widefield? 🧠",
+          "four": "כיצד אוכל למזער הלבנת אור בצילום תאים חיים? ✨",
+          "five": "מה ההשפעה של numerical aperture על רזולוציה? 📐",
+          "six": "כיצד ליישר ולכייל כראוי מיקרוסקופ? ⚙️",
+          "seven": "אילו טכניקות משפרות ניגודיות בדגימות לא צבועות? 🌈",
+          "eight": "מתי עדיפה מיקרוסקופיית אלקטרונים על פני מיקרוסקופיית אור? 🧲",
+          "nine": "כיצד אוכל להבטיח שחזוריות בצילום כמותי? 📊",
+          "ten": "מהן השיטות המומלצות לשימוש בשמן immersion? 🛢️",
+          "eleven": "כיצד לבחור fluorophores לצילום multi-channel? 🎇",
+          "twelve": "מדוע עובי הדגימה קריטי לצילום ברזולוציה גבוהה? 📚",
+          "thirteen": "כיצד למזער סחיפה ורטט במהלך הצילום? 🌍",
+          "fourteen": "מהן שיטות האחסון הנכונות לשקופיות מוכנות? 📦",
+          "fifteen": "אילו פרמטרים מבטיחים תמונות באיכות פרסום? 📸"
+        }
+      }
+    }
+  },
+  "deleteApp": {
+    "title": "חכה! אל תמחק אותי!",
+    "subtitle": "שלח משוב במקום"
+  },
+  "pdfPreview": {
+    "noEditorInstalled": "לתצוגה מקדימה של PDF, ודא שיש לך מתצוגה PDF מותקנת, כמו Adobe Acrobat Reader או Google PDF Viewer",
+    "conversationTitlePdf": "שיחה עם Aura, העוזרת ה-AI שלך"
+  },
+  "flows": {
+    "createReport": {
+      "finalReportForeground": {
+        "message": "תודה על סבלנותך!"
+      },
+      "finalReportHeader": {
+        "message": "זו תוצאת הדוח!"
+      },
+      "uploadFile": {
+        "title": "העלה כל דגימת מיקרוסקופיה לניתוח",
+        "size": "מקסימום: {{imageLimit}}MB (תמונות), {{videoLimit}}MB (סרטונים)",
+        "location": "בחר מגלריה או קבצים",
+        "fileType": "PNG, JPG, PDF, או MP4",
+        "openCamera": "פתח מצלמה וצלם תמונה",
+        "scanType": "רק דגימות מיקרוסקופיה מותרות"
+      }
+    }
+  },
+  "home": {
+    "tab": "בית",
+    "homeForeground": {
+      "maxNumberOfScans": "הגעת למגבלת הסריקות שלך! שדרג את התוכנית שלך עכשיו כדי לבטל נעילה לסריקות נוספות. 🚀",
+      "heading": "ברוכים הבאים ל-MicroScan AI!",
+      "subHeading": "קבל ניתוח מונחה AI של כל דגימת מיקרוסקופיה בתוך שניות"
+    },
+    "scanCategories": {
+      "heading": "סרט מיקרוסקופיה"
+    },
+    "recentReports": {
+      "heading": "שיחות אחרונות",
+      "noReports": "אין שיחות להצגה עדיין!"
+    }
+  },
+  "reports": {
+    "tab": "היסטוריה",
+    "noReportsAvailable": "אין היסטוריית שיחות לתאריך זה",
+    "heading": "היסטוריית שיחות"
+  },
+  "chat": {
+    "tab": "צ'אט"
+  },
+  "settings": {
+    "tab": "הגדרות",
+    "profile": "פרופיל",
+    "contactUs": "צור קשר",
+    "about": "אודות",
+    "app_name": "שם האפליקציה",
+    "languages": {
+      "english": "אנגלית",
+      "mandarin_chinese": "סינית",
+      "hindi": "הינדי",
+      "spanish_spain": "ספרדית (ספרד)",
+      "spanish_mexico": "ספרדית (מקסיקו)",
+      "arabic": "ערבית",
+      "french": "צרפתית",
+      "french_canada": "צרפתית (קנדה)",
+      "portuguese_brazil": "פורטוגזית (ברזיל)",
+      "portuguese_portugal": "פורטוגזית (פורטוגל)",
+      "german": "גרמנית",
+      "japanese": "יפנית",
+      "russian": "רוסית",
+      "korean": "קוריאנית",
+      "italian": "איטלקית",
+      "turkish": "טורקית",
+      "vietnamese": "וייטנאמית",
+      "polish": "פולנית",
+      "ukrainian": "אוקראינית",
+      "romanian": "רומנית",
+      "dutch": "הולנדית",
+      "czech": "צ'כית",
+      "greek": "יוונית",
+      "swedish": "שוודית",
+      "hungarian": "הונגרית",
+      "thai": "תאילנדית",
+      "hebrew": "עברית",
+      "indonesian": "אינדונזית",
+      "malay": "מלאית",
+      "finnish": "פינית",
+      "danish": "דנית",
+      "norwegian": "נורווגית",
+      "slovak": "סלובקית",
+      "croatian": "קרואטית",
+      "catalan": "קטלאנית"
+    },
+    "generale": "כללי",
+    "github": "Github",
+    "language": "שפה",
+    "links": "קישורים",
+    "logout": "התנתק",
+    "more": "עוד",
+    "privacy": "מדיניות פרטיות",
+    "faq": "שאלות נפוצות",
+    "rate": "דרג",
+    "share": "שתף",
+    "citations": "ציטוטים למידע רפואי",
+    "support": "תמיכה",
+    "support_us": "תמכו בנו",
+    "terms": "תנאי שירות",
+    "theme": {
+      "dark": "כהה",
+      "light": "בהיר",
+      "system": "מערכת",
+      "title": "ערכת נושא"
+    },
+    "title": "הגדרות",
+    "version": "גרסה",
+    "website": "אתר אינטרנט",
+    "devMode": {
+      "title": "מצב מפתח",
+      "componentsLibrary": "ספריית UI"
+    }
+  },
+  "components": {
+    "ReportCard": {
+      "rating": "דירוג"
+    },
+    "ScanReportCard": {
+      "promptMessage": "מה הסיבה?",
+      "unnamedConversation": "ללא שם",
+      "reportTitlePlaceholder": "הוסף כותרת"
+    },
+    "WeekBlock": {
+      "week": "שבוע"
+    },
+    "EndScrollPlaceholder": {
+      "scrollToTop": "גלול למעלה"
+    },
+    "FreeTierStatus": {
+      "heading": "סריקות חינם",
+      "subheading": "בטל נעילה לסריקות בלתי מוגבלות על ידי שדרוג התוכנית שלך",
+      "action": "שדרג"
+    },
+    "UploadFileOptionsModal": {
+      "heading": "בחר תמונה / סרטון"
+    },
+    "TapToViewLabel": {
+      "label": "הקש כדי להציג"
+    },
+    "UpgradeBanner": {
+      "heading": "שדרג עכשיו!",
+      "subheading": "בטל נעילה לסריקות בלתי מוגבלות על ידי שדרוג התוכנית שלך"
+    },
+    "PromptSection": {
+      "message": "הסריקה שלך מוכנה! עכשיו, מה תרצה לגלות?",
+      "prompts": {
+        "first": "אילו סוגי תאים או מבנים קיימים בתמונה זו?",
+        "second": "האם יש חריגות או פתוגנים בדגימה זו?",
+        "third": "מה המקור או המצב הסביר של דגימה זו?",
+        "fourth": "אילו תובנות אתה יכול לספק מתמונה זו?"
+      }
+    },
+    "PremiumFeaturesOverview": {
+      "first": "ניתוח מונחה AI לכל דגימות המיקרוסקופיה",
+      "second": "גישה לכל תכונות הפרימיום",
+      "third": "ללא פרסומות"
+    },
+    "Input": {
+      "labels": {
+        "nickname": "כינוי",
+        "email": "אימייל",
+        "emailVerification": "אימות אימייל"
+      }
+    },
+    "ImageAnnotationStudio": {
+      "instructions": {
+        "title": "הוראות",
+        "first": "1. הקש על 'הוסף ריבוע' כדי ליצור ריבוע בחירה.",
+        "second": "2. גרור את הריבוע מעל האזור שמעניין אותך.",
+        "third": "3. התאם את הפינות כדי לכסות במדויק את האזור."
+      },
+      "OpenStudioSection": {
+        "openStudioButton": "פתח סטודיו",
+        "editMore": "ערוך עוד",
+        "continueEditing": "המשך לערוך את הסימונים שלך?",
+        "highlightedRegionsCount": "יש לך {{highlightedRegions}} אזורים מסומנים. הקש למטה כדי להוסיף עוד",
+        "highlightRegions": "צריך לסמן אזורים בתמונת המיקרוסקופיה שלך?"
+      },
+      "studioToolbar": {
+        "addSquare": "הוסף ריבוע"
+      }
+    }
+  },
+  "alerts": {
+    "mediaPickerPermissions": "סליחה, אנחנו צריכים הרשאות מצלמה כדי שזה יעבוד!",
+    "errorSelectingImagePicker": "משהו השתבש בבחירת התמונה. אנא נסה שוב.",
+    "errorSelectingDocumentPicker": "משהו השתבש בבחירת המסמך. אנא נסה שוב.",
+    "errorTakingPicture": "משהו השתבש בצילום התמונה. אנא נסה שוב.",
+    "enableNotifications": {
+      "heading": "הפעל התראות",
+      "subHeading": "התראות כבויות כרגע. כדי להישאר מעודכן, אנא הפעל אותן בהגדרות המכשיר שלך."
+    },
+    "enableNotificationFailed": "התראות Push כבויות. הפעל אותן בהגדרות כדי לקבל עדכונים חשובים!",
+    "enableNotificationError": "אירעה שגיאה בהפעלת ההתראות",
+    "notificationDisabledSuccess": "התראות כובו בהצלחה.",
+    "notificationDisabledRegisterError": "נכשל ביטול רישום המכשיר להתראות.",
+    "notificationDisabledError": "אירעה שגיאה בכיבוי ההתראות.",
+    "checkNotificationStatusError": "שגיאה בבדיקת סטטוס ההתראות.",
+    "projectIdNotFound": "מזהה פרויקט ההתראות לא נמצא.",
+    "imageSizeLarge": "התמונה גדולה מדי! גודל הקובץ הוא {{fileSize}} MB, אבל המגבלה היא {{imageLimit}} MB.",
+    "videoSizeLarge": "הסרטון גדול מדי! גודל הקובץ הוא {{fileSize}} MB, אבל המגבלה היא {{videoLimit}} MB.",
+    "loggedInSuccess": "התחברת בהצלחה",
+    "loggedOutSuccess": "התנתקת בהצלחה!",
+    "sendVerificationCodeError": "שגיאה בשליחת קוד אימות",
+    "validateAuthCodeError": "שגיאה באימות קוד אימות",
+    "anonymousSignInError": "שגיאה בהתחברות אנונימית",
+    "emailLoginError": "שגיאה בהתחברות",
+    "preferredLanguageError": "שגיאה בעדכון שפת המשתמש המועדפת",
+    "sharingNotAvailable": "שיתוף אינו זמין כרגע במכשיר שלך",
+    "sharingLinkError": "נכשל שיתוף הקישור.",
+    "individualPushNotificationSuccess": "התראות Push אישיות נשלחו בהצלחה!",
+    "globalPushNotificationSuccess": "התראות Push גלובליות נשלחו בהצלחה! 🌍🚀",
+    "interpretationFieldsUpdateFail": "נכשל עדכון שדות הפרשנות! ❌",
+    "deleteScanReportFail": "לא ניתן למחוק את דוח הסריקה. אנא נסה שוב",
+    "onboardingUnsuccessful": "ההרשמה לא הצליחה. אנא נסה שוב",
+    "logoutUnsuccessful": "ההתנתקות לא הצליחה. אנא נסה שוב",
+    "deleteScanReportQuestion": "האם אתה בטוח שאתה רוצה למחוק דוח זה לצמיתות?",
+    "videoLimitExceeds": "הסרטון שלך חורג ממגבלת {{videoSecondsLimit}} השניות. אנא חתוך אותו והעלה מחדש",
+    "subscriptionActivated": "המנוי שלך הופעל בהצלחה! תיהנה מהיתרונות הבלעדיים שלך!",
+    "subscriptionCancelledByUser": "ביטלת את העסקה. אל תהסס לנסות שוב!",
+    "subscriptionActivationFailed": "נכשל בהפעלת המנוי שלך. אנא נסה שוב",
+    "logoutQuestion": "האם אתה בטוח שאתה רוצה להתנתק?",
+    "noSubscriptionToRestore": "אופס! נראה שאין לך מנוי פעיל כרגע. כדי להמשיך ליהנות מגישה מלאה, אנא בחר אחת מתוכניות המנוי שלנו.",
+    "restorationSuccessful": "השחזור הצליח! תיהנה!",
+    "restorationError": "אירעה שגיאה בשחזור הרכישה.",
+    "medicalDisclaimerAlert": "אפליקציית MicroScan AI אינה מציעה אבחנות, המלצות טיפול או כל ייעוץ רפואי. תמיד פנה להכוונה מקצועית רפואית מוסמכת לקבלת החלטות רפואיות.",
+    "scanLimitReached": "אנו משפרים את איכות הסריקה עבורך! תוכל לסרוק שוב בעוד כ-{{hours}} שעות ו-{{minutes}} דקות. יש לך שאלות על נושא מיקרוסקופיה כלשהו? שאל את עוזר הצ'אט שלנו בזמן ההמתנה!",
+    "chatAndMediaFilesLimit": "משתמש יקר, עליך לשדרג את התוכנית שלך כדי ליהנות מצ'אטים בלתי מוגבלים, סריקות בלתי מוגבלות, ניתוח תמונות מרובות ועוד. 🔓"
+  }
+}

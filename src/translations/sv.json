@@ -1,0 +1,495 @@
+{
+  "onboarding": {
+    "message": "Välkommen till MicroScan AI!"
+  },
+  "general": {
+    "back": "Tillbaka",
+    "welcome": "Hej",
+    "welcomeBack": "Välkommen tillbaka!",
+    "welcomeMessage": "Välkommen!",
+    "continue": "Fortsätt",
+    "retry": "Försök igen",
+    "close": "Stäng",
+    "gallery": "Galleri",
+    "files": "Filer",
+    "cancel": "Avbryt",
+    "delete": "Radera",
+    "attention": "Uppmärksamhet!",
+    "new": "Ny",
+    "yes": "Ja",
+    "or": "eller",
+    "typing": "Skriver...",
+    "online": "Online",
+    "chatbotPlaceholder": "Fråga mig om vad som helst...",
+    "openSettings": "Öppna Inställningar",
+    "seeNotifications": "Se aviseringar",
+    "viewProfile": "Visa Profil",
+    "upgradePlan": "Uppgradera Plan",
+    "download": "Ladda ner",
+    "share": "Dela",
+    "shareLink": "Dela Länk",
+    "skip": "Hoppa över",
+    "next": "Nästa",
+    "update": "Uppdatera",
+    "tryAgain": "Försök igen",
+    "createdAt": "Skapad",
+    "and": "och",
+    "saveDiscount": "SPARA",
+    "restorePurchase": "Återställ köp",
+    "medicalDisclaimer": "Medicinsk ansvarsfriskrivning",
+    "conversationHistory": "Konversationshistorik",
+    "freeTrial": "Gratis provperiod",
+    "free": "GRATIS",
+    "completedScans": "Genomförda skanningar",
+    "activeSubscription": "Prenumeration aktiv",
+    "askAssistant": "Fråga AI-assistenten",
+    "then": "sedan",
+    "perWeek": "per vecka",
+    "perYear": "per år",
+    "perMonth": "per månad",
+    "tryForFree": "Prova Gratis",
+    "unlockNow": "Lås upp nu",
+    "copyText": {
+      "loading": "Kopierar...",
+      "copied": "Kopierad!",
+      "copy": "Kopiera Länk"
+    },
+    "loadingMessages": {
+      "initialAppLoad": {
+        "first": "Laddar din personliga upplevelse...",
+        "second": "Synkroniserar system...",
+        "third": "Bearbetar dina data...",
+        "fourth": "Nästan klar, bara ett ögonblick..."
+      },
+      "imageScanningLoading": {
+        "first": "Skannar din mikroskopibild, var god vänta...",
+        "second": "Analyserar detaljer, detta kan ta en stund...",
+        "third": "Förbättrar noggrannhet för bästa resultat...",
+        "fourth": "Nästan där, slutför skanningen..."
+      },
+      "loadingChatbot": {
+        "first": "Aura förbereder sig för att hjälpa dig...",
+        "second": "Vänta! Aura förbereder ditt svar...",
+        "third": "Tänker... din assistent Aura jobbar på det!"
+      }
+    }
+  },
+  "backHandler": {
+    "holdOn": "Vänta lite!",
+    "goBackMessage": "Är du säker på att du vill gå tillbaka?"
+  },
+  "internet": {
+    "noConnectionTitle": "Du är offline!",
+    "noConnectionMessage": "Slå på mobildata eller anslut till Wi-Fi. Eller ta en paus och gå en promenad!"
+  },
+  "uploadScan": {
+    "title": "Ladda upp bild",
+    "scanNow": "Skanna nu"
+  },
+  "weekDays": {
+    "today": "Idag",
+    "yesterday": "Igår"
+  },
+  "auth": {
+    "verifyAuthCode": "Verifiera autentiseringskod",
+    "verifyAuthCodeButton": "Verifiera kod",
+    "authCodeHeading": "Autentiseringskod",
+    "loginViaEmailHeading": "Låt oss logga in dig. Ange din e-postadress för att fortsätta.",
+    "emailAddress": "E-post"
+  },
+  "rootLayout": {
+    "screens": {
+      "welcome": {
+        "heading": "Välkommen till MicroScan AI!",
+        "startButton": "Låt oss komma igång!",
+        "accountButton": "Jag har redan ett konto"
+      },
+      "login": {
+        "agreeingMessage": "Genom att fortsätta godkänner du våra",
+        "termsAndConditions": "Villkor & Bestämmelser",
+        "privacyPolicy": "Integritetspolicy"
+      },
+      "verifyAuthCode": {
+        "verificationCodeHeading": "Ange din verifieringskod skickad via e-post. Koden upphör att gälla om 5 minuter.",
+        "verificationCodeSent": "Vi har skickat verifieringskoden till",
+        "verificationCodeMissing": "Fick du inte koden?",
+        "resendCode": "Skicka kod igen",
+        "backToLogin": "Tillbaka till inloggning"
+      },
+      "namePreferenceScreen": {
+        "heading": "Säker, trygg, enkel åtkomst!",
+        "preferredNameQuestion": "Välj ett roligt smeknamn för att vara anonym - din integritet betyder mycket för oss",
+        "placeholderPreferredName": "T.ex. Kapten Cool, Drottning Bi, eller bara Alex!"
+      },
+      "freeTrialPreview": {
+        "heading": "Njut av din gratis provperiod! 🎉",
+        "subheading": "Upplev dessa fantastiska fördelar under din gratis provperiod",
+        "review": "Bra mikroskopianalys, AI-medicinska assistenten är jättehjälpsam! En måste-ha app!",
+        "reviewTrust": "📈 Anförtros av 3 252+ användare"
+      },
+      "scanInterpretation": {
+        "title": "Analysresultat",
+        "headerBackTitle": "Rapporter"
+      },
+      "paywallOnboarding": {
+        "freeTierOfferings": {
+          "freeTrialEnabled": "Gratis provperiod aktiverad",
+          "heading": "Obegränsad Tillgång",
+          "title": "Lås upp Premium-funktioner Idag!",
+          "firstOffering": "Tillgång till alla premium-funktioner",
+          "secondOffering": "Reklamfri upplevelse",
+          "thirdOffering": "Obegränsade mikroskopiskanningar",
+          "fourthOffering": "Obegränsade chattar med en 24/7 AI-assistent"
+        }
+      },
+      "paywallUpgradeScreen": {
+        "heading": "Lås upp Premium-funktioner Idag!",
+        "firstOffering": {
+          "title": "Starta gratis provperiod",
+          "subtitle": "Njut {{freeScans}} gratis skanningar - ingen betalning"
+        },
+        "secondOffering": {
+          "title": "Månadsplan",
+          "subtitle": "{{ price }}/månad"
+        },
+        "thirdOffering": {
+          "title": "Årlig plan",
+          "subtitle": "{{ price }} per år"
+        },
+        "fourthOffering": {
+          "title": "{{trialDays}}-dagars provperiod",
+          "subtitle": "{{ price }} per år",
+          "plan": "Veckoplan"
+        }
+      },
+      "newAppVersionScreen": {
+        "heading": "En ny version av MicroScan AI är tillgänglig",
+        "subheading": "Uppdatera till den senaste versionen för att fortsätta använda appen",
+        "action": "Skaffa den nu!"
+      },
+      "rateAppScreen": {
+        "heading": "Tycker du att appen är värdefull och engagerande?",
+        "like": "Ja, jag gillar den!",
+        "dislike": "Inte riktigt..."
+      },
+      "noInternetScreen": {
+        "heading": "Du är offline",
+        "subheading": "Din anslutning verkar vara ostabil. Verifiera din nätverksstatus"
+      },
+      "notifications": {
+        "title": "Aviseringar",
+        "noNotifications": "Inga aviseringar för tillfället - håll utkik efter uppdateringar!"
+      },
+      "termsOfService": {
+        "title": "Användarvillkor"
+      },
+      "privacyPolicy": {
+        "title": "Integritetspolicy"
+      },
+      "share": {
+        "title": "Dela",
+        "heading": "Dela MicroScan AI App",
+        "subheading": "Hjälp andra att upptäcka kraften i AI-driven mikroskopianalys",
+        "scanMessage": "Skanna för att ladda ner appen",
+        "shareMessage": "eller dela via din favoritplattform"
+      },
+      "rate": {
+        "title": "Ge oss feedback!"
+      },
+      "profile": {
+        "title": "Profil",
+        "edit": "Redigera Profil",
+        "placeholderPreferredName": "T.ex. Kapten Cool, Drottning Bi, eller bara Alex!"
+      },
+      "generateReportScreen": {
+        "title": "Vi uppskattar ditt tålamod! Här är din AI-rapport.",
+        "userInput": "Ditt Inlägg",
+        "medicalReport": "Mikroskopirapport",
+        "report": "AI-genererad Mikroskopirapport",
+        "conversationName": "Konversationsnamn"
+      },
+      "verifyEmail": {
+        "heading": "Verifiera e-post"
+      },
+      "filePreviewScreen": {
+        "generateReportButton": "Starta Analys"
+      },
+      "disclaimerScreen": {
+        "heading": "Viktig ansvarsfriskrivning",
+        "subheading": "MicroScan AI är designad för mikroskopiprofessionella, forskare, studenter och entusiaster",
+        "consentAgreement": "Jag har läst och samtycker till ansvarsfriskrivningen.",
+        "firstConsent": "MicroScan AI ger inte hälsomätningar, diagnoser eller behandlingsråd, och är inte avsett för sådana ändamål. Användare av MicroScan AI måste tillämpa sitt kliniska omdöme och verifiera information från auktoritativa källor innan de fattar några kliniska beslut.",
+        "secondConsent": "MicroScan AI är inte ett diagnostiskt verktyg, behandlingsplattform eller en ersättning för professionellt medicinskt råd. Den erbjuder AI-genererade insikter för att hjälpa vårdpersonal att komma åt medicinsk kunskap och analysera medicinska bilder och dokument. MicroScan AI är en AI-driven informativ och pedagogisk app designad för att stödja legitimerad vårdpersonal.",
+        "fourthConsent": "MicroScan AI är inte klassificerad som en medicinsk apparat och gör inte anspråk på regulatoriskt godkännande. Den är avsedd för pedagogiska och informativa ändamål för att komplettera professionell expertis.",
+        "fifthConsent": "MicroScan AI samlar inte in, lagrar eller bearbetar personliga eller patientdata. Alla användarinteraktioner är konfidentiella och begränsade till appens omfattning."
+      },
+      "contactUs": {
+        "heading": "Tveka inte att mejla oss direkt, och vårt team kommer att återkomma till dig så snart som möjligt",
+        "customerSupport": "Kundsupport",
+        "emailAddress": "E-postadress"
+      },
+      "languageAnalysisModal": {
+        "languagePreferenceQuestion": "Vilket språk föredrar du för AI-analysen?",
+        "languageSelection": "Välj ett språk för AI-svar",
+        "languageSearchCriteria": "Sök efter språk, landskod eller flagga",
+        "noLanguageFound": "Inget Språk Hittat",
+        "noLanguageFoundSubtitle": "Försök att ändra dina söktermer"
+      },
+      "chatScreen": {
+        "randomQuestions": {
+          "one": "Vilka är skillnaderna mellan brightfield, faskontrast och DIC? 🔬",
+          "two": "Hur kan provberedning påverka bildupplösning? 🧫",
+          "three": "När ska jag använda konfokal mot vidfältsmikroskopi? 🧠",
+          "four": "Hur kan jag minimera fotoblekning i live-cell-avbildning? ✨",
+          "five": "Vad är effekten av numerisk apertur på upplösning? 📐",
+          "six": "Hur justerar och kalibrerar jag ett mikroskop korrekt? ⚙️",
+          "seven": "Vilka tekniker förbättrar kontrast i ofärgade prover? 🌈",
+          "eight": "När föredras elektronmikroskopi framför ljusmikroskopi? 🧲",
+          "nine": "Hur kan jag säkerställa reproducerbarhet i kvantitativ avbildning? 📊",
+          "ten": "Vilka är bästa praxis för användning av immersionsolja? 🛢️",
+          "eleven": "Hur väljer jag fluoroforer för flerkanalsavbildning? 🎇",
+          "twelve": "Varför är provtjocklek kritisk för högupplöst avbildning? 📚",
+          "thirteen": "Hur kan drift och vibrationer minimeras under avbildning? 🌍",
+          "fourteen": "Vilka är korrekta lagringsmetoder för preparerade objektglas? 📦",
+          "fifteen": "Vilka parametrar säkerställer publiceringsklara bilder? 📸"
+        }
+      }
+    }
+  },
+  "deleteApp": {
+    "title": "Vänta! Ta inte bort mig!",
+    "subtitle": "Skicka feedback istället"
+  },
+  "pdfPreview": {
+    "noEditorInstalled": "För att förhandsgranska PDF:en, se till att du har en PDF-läsare installerad, som Adobe Acrobat Reader eller Google PDF Viewer",
+    "conversationTitlePdf": "Konversation med Aura, din AI-assistent"
+  },
+  "flows": {
+    "createReport": {
+      "finalReportForeground": {
+        "message": "Tack för ditt tålamod!"
+      },
+      "finalReportHeader": {
+        "message": "Detta är rapportresultatet!"
+      },
+      "uploadFile": {
+        "title": "Ladda upp vilket mikroskopiprov som helst för analys",
+        "size": "Max: {{imageLimit}}MB (bilder), {{videoLimit}}MB (videor)",
+        "location": "Välj från Galleri eller Filer",
+        "fileType": "PNG, JPG, PDF, eller MP4",
+        "openCamera": "Öppna Kamera & Ta Foto",
+        "scanType": "Endast mikroskopiprov tillåtna"
+      }
+    }
+  },
+  "home": {
+    "tab": "Hem",
+    "homeForeground": {
+      "maxNumberOfScans": "Du har nått din skanningsgräns! Uppgradera din plan nu för att låsa upp fler skanningar. 🚀",
+      "heading": "Välkommen till MicroScan AI!",
+      "subHeading": "Få AI-driven analys av alla mikroskopiprov på några sekunder"
+    },
+    "scanCategories": {
+      "heading": "Mikroskopigalleri"
+    },
+    "recentReports": {
+      "heading": "Senaste Chattar",
+      "noReports": "Inga chattar att visa än!"
+    }
+  },
+  "reports": {
+    "tab": "Historik",
+    "noReportsAvailable": "Ingen konversationshistorik tillgänglig för detta datum",
+    "heading": "Konversationshistorik"
+  },
+  "chat": {
+    "tab": "Chatt"
+  },
+  "settings": {
+    "tab": "Inställningar",
+    "profile": "Profil",
+    "contactUs": "Kontakta oss",
+    "about": "Om",
+    "app_name": "App Namn",
+    "languages": {
+      "english": "Engelska",
+      "mandarin_chinese": "Kinesiska",
+      "hindi": "Hindi",
+      "spanish_spain": "Spanska (Spanien)",
+      "spanish_mexico": "Spanska (Mexiko)",
+      "arabic": "Arabiska",
+      "french": "Franska",
+      "french_canada": "Franska (Kanada)",
+      "portuguese_brazil": "Portugisiska (Brasilien)",
+      "portuguese_portugal": "Portugisiska (Portugal)",
+      "german": "Tyska",
+      "japanese": "Japanska",
+      "russian": "Ryska",
+      "korean": "Koreanska",
+      "italian": "Italienska",
+      "turkish": "Turkiska",
+      "vietnamese": "Vietnamesiska",
+      "polish": "Polska",
+      "ukrainian": "Ukrainska",
+      "romanian": "Rumänska",
+      "dutch": "Nederländska",
+      "czech": "Tjeckiska",
+      "greek": "Grekiska",
+      "swedish": "Svenska",
+      "hungarian": "Ungerska",
+      "thai": "Thailändska",
+      "hebrew": "Hebreiska",
+      "indonesian": "Indonesiska",
+      "malay": "Malajiska",
+      "finnish": "Finska",
+      "danish": "Danska",
+      "norwegian": "Norska",
+      "slovak": "Slovakiska",
+      "croatian": "Kroatiska",
+      "catalan": "Katalanska"
+    },
+    "generale": "Allmänt",
+    "github": "Github",
+    "language": "Språk",
+    "links": "Länkar",
+    "logout": "Logga ut",
+    "more": "Mer",
+    "privacy": "Integritetspolicy",
+    "faq": "FAQ",
+    "rate": "Betygsätt",
+    "share": "Dela",
+    "citations": "Citeringar för medicinsk information",
+    "support": "Support",
+    "support_us": "Stöd Oss",
+    "terms": "Användarvillkor",
+    "theme": {
+      "dark": "Mörkt",
+      "light": "Ljust",
+      "system": "System",
+      "title": "Tema"
+    },
+    "title": "Inställningar",
+    "version": "Version",
+    "website": "Webbplats",
+    "devMode": {
+      "title": "Utvecklarläge",
+      "componentsLibrary": "UI-bibliotek"
+    }
+  },
+  "components": {
+    "ReportCard": {
+      "rating": "Betyg"
+    },
+    "ScanReportCard": {
+      "promptMessage": "Vad är anledningen?",
+      "unnamedConversation": "Namnlös",
+      "reportTitlePlaceholder": "Lägg till en titel"
+    },
+    "WeekBlock": {
+      "week": "Vecka"
+    },
+    "EndScrollPlaceholder": {
+      "scrollToTop": "Scrolla till toppen"
+    },
+    "FreeTierStatus": {
+      "heading": "Gratis skanningar",
+      "subheading": "Lås upp obegränsade skanningar genom att uppgradera din plan",
+      "action": "Uppgradera"
+    },
+    "UploadFileOptionsModal": {
+      "heading": "Välj en bild / video"
+    },
+    "TapToViewLabel": {
+      "label": "Tryck för att visa"
+    },
+    "UpgradeBanner": {
+      "heading": "Uppgradera nu!",
+      "subheading": "Lås upp obegränsade skanningar genom att uppgradera din plan"
+    },
+    "PromptSection": {
+      "message": "Din skanning är redo! Vad vill du ta reda på nu?",
+      "prompts": {
+        "first": "Vilka celltyper eller strukturer finns i denna bild?",
+        "second": "Finns det några avvikelser eller patogener i detta prov?",
+        "third": "Vad är det troliga ursprunget eller tillståndet för detta prov?",
+        "fourth": "Vilka insikter kan du ge från denna bild?"
+      }
+    },
+    "PremiumFeaturesOverview": {
+      "first": "AI-driven analys för alla mikroskopiprov",
+      "second": "Tillgång till alla premium-funktioner",
+      "third": "Inga annonser"
+    },
+    "Input": {
+      "labels": {
+        "nickname": "Smeknamn",
+        "email": "E-post",
+        "emailVerification": "E-postverifiering"
+      }
+    },
+    "ImageAnnotationStudio": {
+      "instructions": {
+        "title": "Instruktioner",
+        "first": "1. Tryck på 'Lägg till fyrkant'-knappen för att skapa en markeringsfyrkant.",
+        "second": "2. Dra fyrkanten över ditt intresseområde.",
+        "third": "3. Justera hörnen för att täcka området exakt."
+      },
+      "OpenStudioSection": {
+        "openStudioButton": "Öppna Studio",
+        "editMore": "Redigera Mer",
+        "continueEditing": "Fortsätt redigera dina annoteringar?",
+        "highlightedRegionsCount": "Du har {{highlightedRegions}} markerade områden. Tryck nedan för att lägga till fler",
+        "highlightRegions": "Behöver du markera områden på din mikroskopibild?"
+      },
+      "studioToolbar": {
+        "addSquare": "Lägg till fyrkant"
+      }
+    }
+  },
+  "alerts": {
+    "mediaPickerPermissions": "Tyvärr, vi behöver kamerabehörigheter för att detta ska fungera!",
+    "errorSelectingImagePicker": "Något gick fel vid val av bild. Var god försök igen.",
+    "errorSelectingDocumentPicker": "Något gick fel vid val av dokument. Var god försök igen.",
+    "errorTakingPicture": "Något gick fel vid fotografering. Var god försök igen.",
+    "enableNotifications": {
+      "heading": "Aktivera Aviseringar",
+      "subHeading": "Aviseringar är för närvarande avstängda. För att hålla dig uppdaterad, var god aktivera dem i dina enhetsinställningar."
+    },
+    "enableNotificationFailed": "Push-aviseringar är inaktiverade. Aktivera dem i inställningar för att få viktiga uppdateringar!",
+    "enableNotificationError": "Ett fel uppstod vid aktivering av aviseringar",
+    "notificationDisabledSuccess": "Aviseringar inaktiverade framgångsrikt.",
+    "notificationDisabledRegisterError": "Kunde inte avregistrera enhet för aviseringar.",
+    "notificationDisabledError": "Ett fel uppstod vid inaktivering av aviseringar.",
+    "checkNotificationStatusError": "Fel vid kontroll av aviseringsstatus.",
+    "projectIdNotFound": "Aviseringsprojekt-ID hittades inte.",
+    "imageSizeLarge": "Bilden är för stor! Filstorleken är {{fileSize}} MB, men gränsen är {{imageLimit}} MB.",
+    "videoSizeLarge": "Videon är för stor! Filstorleken är {{fileSize}} MB, men gränsen är {{videoLimit}} MB.",
+    "loggedInSuccess": "Inloggning lyckades",
+    "loggedOutSuccess": "Du har loggats ut!",
+    "sendVerificationCodeError": "Fel vid sändning av verifieringskod",
+    "validateAuthCodeError": "Fel vid validering av auth-kod",
+    "anonymousSignInError": "Fel vid anonym inloggning",
+    "emailLoginError": "Fel vid inloggning",
+    "preferredLanguageError": "Fel vid uppdatering av användarens föredragna språk",
+    "sharingNotAvailable": "Delning är för närvarande inte tillgänglig på din enhet",
+    "sharingLinkError": "Kunde inte dela länk.",
+    "individualPushNotificationSuccess": "Individuella push-aviseringar skickade framgångsrikt!",
+    "globalPushNotificationSuccess": "Globala push-aviseringar skickade framgångsrikt! 🌍🚀",
+    "interpretationFieldsUpdateFail": "Kunde inte uppdatera tolkningsfälten! ❌",
+    "deleteScanReportFail": "Kan inte radera skanningsrapporten. Var god försök igen",
+    "onboardingUnsuccessful": "Onboarding misslyckades. Var god försök igen",
+    "logoutUnsuccessful": "Utloggning misslyckades. Var god försök igen",
+    "deleteScanReportQuestion": "Är du säker på att du vill radera denna rapport permanent?",
+    "videoLimitExceeds": "Din video överskrider {{videoSecondsLimit}}-sekunders gräns. Var god trimma den och ladda upp igen",
+    "subscriptionActivated": "Din prenumeration har aktiverats! Njut av dina exklusiva förmåner!",
+    "subscriptionCancelledByUser": "Du har avbrutit transaktionen. Känn dig fri att försöka igen!",
+    "subscriptionActivationFailed": "Kunde inte aktivera din prenumeration. Var god försök igen",
+    "logoutQuestion": "Är du säker på att du vill logga ut?",
+    "noSubscriptionToRestore": "Hoppsan! Det verkar som att du inte har en aktiv prenumeration för tillfället. För att fortsätta njuta av full tillgång, var god välj en av våra prenumerationsplaner.",
+    "restorationSuccessful": "Återställningen lyckades! Njut!",
+    "restorationError": "Ett fel uppstod vid återställning av köpet.",
+    "medicalDisclaimerAlert": "MicroScan AI-appen erbjuder inte diagnoser, behandlingsrekommendationer eller något medicinskt råd. Sök alltid vägledning från kvalificerad hälso- och sjukvårdspersonal för medicinska beslut.",
+    "scanLimitReached": "Vi optimerar skanningskvaliteten för dig! Du kommer att kunna skanna igen om cirka {{hours}} timmar och {{minutes}} minuter. Har du några frågor om mikroskopiämnen? Fråga vår chattassistent medan du väntar!",
+    "chatAndMediaFilesLimit": "Kära användare, du behöver uppgradera din plan för att dra nytta av obegränsade chattar, obegränsade skanningar, flerbildsanalys och mer. 🔓"
+  }
+}

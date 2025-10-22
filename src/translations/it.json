@@ -1,0 +1,495 @@
+{
+  "onboarding": {
+    "message": "Benvenuto in MicroScan AI!"
+  },
+  "general": {
+    "back": "Indietro",
+    "welcome": "Ciao",
+    "welcomeBack": "Bentornato!",
+    "welcomeMessage": "Benvenuto!",
+    "continue": "Continua",
+    "retry": "Riprova",
+    "close": "Chiudi",
+    "gallery": "Galleria",
+    "files": "File",
+    "cancel": "Annulla",
+    "delete": "Elimina",
+    "attention": "Attenzione!",
+    "new": "Nuovo",
+    "yes": "Sì",
+    "or": "o",
+    "typing": "Sta scrivendo...",
+    "online": "Online",
+    "chatbotPlaceholder": "Chiedimi qualsiasi cosa...",
+    "openSettings": "Apri Impostazioni",
+    "seeNotifications": "Vedi notifiche",
+    "viewProfile": "Visualizza Profilo",
+    "upgradePlan": "Aggiorna Piano",
+    "download": "Scarica",
+    "share": "Condividi",
+    "shareLink": "Condividi Link",
+    "skip": "Salta",
+    "next": "Avanti",
+    "update": "Aggiorna",
+    "tryAgain": "Riprova",
+    "createdAt": "Creato il",
+    "and": "e",
+    "saveDiscount": "RISPARMIA",
+    "restorePurchase": "Ripristina acquisto",
+    "medicalDisclaimer": "Disclaimer Medico",
+    "conversationHistory": "Cronologia conversazioni",
+    "freeTrial": "Prova gratuita",
+    "free": "GRATIS",
+    "completedScans": "Scansioni completate",
+    "activeSubscription": "Abbonamento attivo",
+    "askAssistant": "Chiedi all'assistente AI",
+    "then": "poi",
+    "perWeek": "a settimana",
+    "perYear": "all'anno",
+    "perMonth": "al mese",
+    "tryForFree": "Prova Gratuitamente",
+    "unlockNow": "Sblocca Ora",
+    "copyText": {
+      "loading": "Copiando...",
+      "copied": "Copiato!",
+      "copy": "Copia Link"
+    },
+    "loadingMessages": {
+      "initialAppLoad": {
+        "first": "Caricamento della tua esperienza personalizzata...",
+        "second": "Sincronizzazione dei sistemi...",
+        "third": "Elaborazione dei tuoi dati...",
+        "fourth": "Quasi pronto, solo un momento..."
+      },
+      "imageScanningLoading": {
+        "first": "Scansione della tua immagine micrografica, attendi prego...",
+        "second": "Analisi dei dettagli, potrebbe richiedere qualche momento...",
+        "third": "Miglioramento della precisione per i migliori risultati...",
+        "fourth": "Ci siamo quasi, finalizzazione della scansione..."
+      },
+      "loadingChatbot": {
+        "first": "Aura si sta preparando ad assisterti...",
+        "second": "Attendi! Aura sta preparando la tua risposta...",
+        "third": "Sto pensando... la tua assistente Aura ci sta lavorando!"
+      }
+    }
+  },
+  "backHandler": {
+    "holdOn": "Aspetta!",
+    "goBackMessage": "Sei sicuro di voler tornare indietro?"
+  },
+  "internet": {
+    "noConnectionTitle": "Sei offline!",
+    "noConnectionMessage": "Attiva i dati mobili o connettiti a Wi-Fi. O fai una pausa e fai una passeggiata!"
+  },
+  "uploadScan": {
+    "title": "Carica immagine",
+    "scanNow": "Scansiona ora"
+  },
+  "weekDays": {
+    "today": "Oggi",
+    "yesterday": "Ieri"
+  },
+  "auth": {
+    "verifyAuthCode": "Verifica codice di autenticazione",
+    "verifyAuthCodeButton": "Verifica codice",
+    "authCodeHeading": "Codice di autenticazione",
+    "loginViaEmailHeading": "Accediamo. Inserisci la tua email per continuare.",
+    "emailAddress": "Email"
+  },
+  "rootLayout": {
+    "screens": {
+      "welcome": {
+        "heading": "Benvenuto in MicroScan AI!",
+        "startButton": "Iniziamo!",
+        "accountButton": "Ho già un account"
+      },
+      "login": {
+        "agreeingMessage": "Continuando, accetti i nostri",
+        "termsAndConditions": "Termini & Condizioni",
+        "privacyPolicy": "Privacy Policy"
+      },
+      "verifyAuthCode": {
+        "verificationCodeHeading": "Inserisci il codice di verifica inviato via email. Nota: il codice scadrà tra 5 minuti.",
+        "verificationCodeSent": "Abbiamo inviato il codice di verifica a",
+        "verificationCodeMissing": "Non hai ricevuto il codice?",
+        "resendCode": "Rinvia codice",
+        "backToLogin": "Torna all'Accesso"
+      },
+      "namePreferenceScreen": {
+        "heading": "Accesso sicuro, protetto e semplice!",
+        "preferredNameQuestion": "Scegli un soprannome divertente per rimanere anonimo - la tua privacy è importante per noi",
+        "placeholderPreferredName": "Es. Captain Cool, Queen Bee, o semplicemente Alex!"
+      },
+      "freeTrialPreview": {
+        "heading": "Goditi la tua prova gratuita! 🎉",
+        "subheading": "Sperimenta questi fantastici benefici durante la tua prova gratuita",
+        "review": "Ottima analisi microscopica, l'assistente medico AI è super utile! Un'app must-have!",
+        "reviewTrust": "📈 Fidati di 3.252+ utenti"
+      },
+      "scanInterpretation": {
+        "title": "Risultato analisi",
+        "headerBackTitle": "Report"
+      },
+      "paywallOnboarding": {
+        "freeTierOfferings": {
+          "freeTrialEnabled": "Prova Gratuita Attivata",
+          "heading": "Accesso Illimitato",
+          "title": "Sblocca le Funzionalità Premium Oggi!",
+          "firstOffering": "Accesso a tutte le funzionalità premium",
+          "secondOffering": "Esperienza senza pubblicità",
+          "thirdOffering": "Scansioni microscopiche illimitate",
+          "fourthOffering": "Chat illimitate con un assistente AI 24/7"
+        }
+      },
+      "paywallUpgradeScreen": {
+        "heading": "Sblocca le Funzionalità Premium Oggi!",
+        "firstOffering": {
+          "title": "Inizia Prova Gratuita",
+          "subtitle": "Goditi {{freeScans}} scansioni gratuite - nessun pagamento"
+        },
+        "secondOffering": {
+          "title": "Piano Mensile",
+          "subtitle": "{{ price }}/mese"
+        },
+        "thirdOffering": {
+          "title": "Piano Annuale",
+          "subtitle": "{{ price }} all'anno"
+        },
+        "fourthOffering": {
+          "title": "Prova di {{trialDays}} Giorni",
+          "subtitle": "{{ price }} all'anno",
+          "plan": "Piano Settimanale"
+        }
+      },
+      "newAppVersionScreen": {
+        "heading": "È disponibile una nuova versione di MicroScan AI",
+        "subheading": "Aggiorna all'ultima versione per continuare a usare l'app",
+        "action": "Scaricala ora!"
+      },
+      "rateAppScreen": {
+        "heading": "Trovi l'app preziosa e coinvolgente?",
+        "like": "Sì, mi piace!",
+        "dislike": "Non proprio..."
+      },
+      "noInternetScreen": {
+        "heading": "Sei offline",
+        "subheading": "La tua connessione sembra instabile. Verifica lo stato della tua rete"
+      },
+      "notifications": {
+        "title": "Notifiche",
+        "noNotifications": "Nessuna notifica per ora - rimani sintonizzato per aggiornamenti!"
+      },
+      "termsOfService": {
+        "title": "Termini di Servizio"
+      },
+      "privacyPolicy": {
+        "title": "Privacy Policy"
+      },
+      "share": {
+        "title": "Condividi",
+        "heading": "Condividi l'App MicroScan AI",
+        "subheading": "Aiuta altri a scoprire il potere dell'analisi microscopica guidata dall'AI",
+        "scanMessage": "Scansiona per scaricare l'app",
+        "shareMessage": "o condividi tramite la tua piattaforma preferita"
+      },
+      "rate": {
+        "title": "Dacci un feedback!"
+      },
+      "profile": {
+        "title": "Profilo",
+        "edit": "Modifica Profilo",
+        "placeholderPreferredName": "Es. Captain Cool, Queen Bee, o semplicemente Alex!"
+      },
+      "generateReportScreen": {
+        "title": "Apprezziamo la tua pazienza! Ecco il tuo report AI.",
+        "userInput": "Il tuo Invio",
+        "medicalReport": "Report Microscopico",
+        "report": "Report Microscopico Generato da AI",
+        "conversationName": "Nome conversazione"
+      },
+      "verifyEmail": {
+        "heading": "Verifica email"
+      },
+      "filePreviewScreen": {
+        "generateReportButton": "Inizia Analisi"
+      },
+      "disclaimerScreen": {
+        "heading": "Disclaimer Importante",
+        "subheading": "MicroScan AI è progettato per professionisti microscopici, ricercatori, studenti e appassionati",
+        "consentAgreement": "Ho letto e acconsento al disclaimer.",
+        "firstConsent": "MicroScan AI non fornisce misurazioni sanitarie, diagnosi o consigli terapeutici, né è destinato a tali scopi. Gli utenti di MicroScan AI devono applicare il proprio giudizio clinico e verificare le informazioni da fonti autorevoli prima di prendere decisioni cliniche.",
+        "secondConsent": "MicroScan AI non è uno strumento diagnostico, una piattaforma di trattamento o un sostituto di consulenza medica professionale. Offre approfondimenti generati dall'AI per assistere i professionisti sanitari nell'accesso alla conoscenza medica e nell'analisi di immagini e documenti medici. MicroScan AI è un'app informativa ed educativa guidata dall'AI progettata per supportare i professionisti sanitari autorizzati.",
+        "fourthConsent": "MicroScan AI non è classificato come dispositivo medico e non rivendica approvazioni normative. È destinato a scopi educativi e informativi per integrare l'esperienza professionale.",
+        "fifthConsent": "MicroScan AI non raccoglie, memorizza o elabora dati personali o pazienti. Tutte le interazioni dell'utente sono confidenziali e limitate all'ambito dell'app."
+      },
+      "contactUs": {
+        "heading": "Sentiti libero di scriverci direttamente, e il nostro team ti ricontatterà al più presto",
+        "customerSupport": "Assistenza Clienti",
+        "emailAddress": "Indirizzo Email"
+      },
+      "languageAnalysisModal": {
+        "languagePreferenceQuestion": "Quale lingua preferisci per l'analisi AI?",
+        "languageSelection": "Scegli una lingua per le risposte AI",
+        "languageSearchCriteria": "Cerca per lingua, codice paese o bandiera",
+        "noLanguageFound": "Nessuna Lingua Trovata",
+        "noLanguageFoundSubtitle": "Prova a modificare i tuoi termini di ricerca"
+      },
+      "chatScreen": {
+        "randomQuestions": {
+          "one": "Quali sono le differenze tra campo chiaro, contrasto di fase e DIC? 🔬",
+          "two": "Come la preparazione del campione influisce sulla risoluzione dell'immagine? 🧫",
+          "three": "Quando dovrei usare la microscopia confocale rispetto a widefield? 🧠",
+          "four": "Come posso minimizzare il fotosbiancamento nell'imaging di cellule vive? ✨",
+          "five": "Qual è l'impatto dell'apertura numerica sulla risoluzione? 📐",
+          "six": "Come allineare e calibrare correttamente un microscopio? ⚙️",
+          "seven": "Quali tecniche migliorano il contrasto in campioni non colorati? 🌈",
+          "eight": "Quando è preferibile la microscopia elettronica rispetto a quella ottica? 🧲",
+          "nine": "Come posso garantire la riproducibilità nell'imaging quantitativo? 📊",
+          "ten": "Quali sono le migliori pratiche per l'uso dell'olio da immersione? 🛢️",
+          "eleven": "Come selezionare fluorofori per l'imaging multi-canale? 🎇",
+          "twelve": "Perché lo spessore del campione è critico per l'imaging ad alta risoluzione? 📚",
+          "thirteen": "Come minimizzare la deriva e le vibrazioni durante l'imaging? 🌍",
+          "fourteen": "Quali sono i metodi di conservazione corretti per vetrini preparati? 📦",
+          "fifteen": "Quali parametri garantiscono immagini di qualità pubblicabile? 📸"
+        }
+      }
+    }
+  },
+  "deleteApp": {
+    "title": "Aspetta! Non cancellarmi!",
+    "subtitle": "Invia invece un feedback"
+  },
+  "pdfPreview": {
+    "noEditorInstalled": "Per visualizzare l'anteprima del PDF, assicurati di avere un visualizzatore PDF installato, come Adobe Acrobat Reader o Google PDF Viewer",
+    "conversationTitlePdf": "Conversazione con Aura, la tua assistente AI"
+  },
+  "flows": {
+    "createReport": {
+      "finalReportForeground": {
+        "message": "Grazie per la tua pazienza!"
+      },
+      "finalReportHeader": {
+        "message": "Questo è il risultato del report!"
+      },
+      "uploadFile": {
+        "title": "Carica qualsiasi campione microscopico per l'analisi",
+        "size": "Max: {{imageLimit}}MB (immagini), {{videoLimit}}MB (video)",
+        "location": "Seleziona da Galleria o File",
+        "fileType": "PNG, JPG, PDF o MP4",
+        "openCamera": "Apri Fotocamera e Scatta Foto",
+        "scanType": "Sono consentiti solo campioni microscopici"
+      }
+    }
+  },
+  "home": {
+    "tab": "Home",
+    "homeForeground": {
+      "maxNumberOfScans": "Hai raggiunto il limite di scansioni! Aggiorna il tuo piano ora per sbloccare più scansioni. 🚀",
+      "heading": "Benvenuto in MicroScan AI!",
+      "subHeading": "Ottieni l'analisi AI di qualsiasi campione microscopico in pochi secondi"
+    },
+    "scanCategories": {
+      "heading": "Filmato Microscopico"
+    },
+    "recentReports": {
+      "heading": "Chat Recenti",
+      "noReports": "Nessuna chat da mostrare ancora!"
+    }
+  },
+  "reports": {
+    "tab": "Cronologia",
+    "noReportsAvailable": "Nessuna cronologia chat per questa data",
+    "heading": "Cronologia Chat"
+  },
+  "chat": {
+    "tab": "Chat"
+  },
+  "settings": {
+    "tab": "Impostazioni",
+    "profile": "Profilo",
+    "contactUs": "Contattaci",
+    "about": "Informazioni",
+    "app_name": "Nome App",
+    "languages": {
+      "english": "Inglese",
+      "mandarin_chinese": "Cinese",
+      "hindi": "Hindi",
+      "spanish_spain": "Spagnolo (Spagna)",
+      "spanish_mexico": "Spagnolo (Messico)",
+      "arabic": "Arabo",
+      "french": "Francese",
+      "french_canada": "Francese (Canada)",
+      "portuguese_brazil": "Portoghese (Brasile)",
+      "portuguese_portugal": "Portoghese (Portogallo)",
+      "german": "Tedesco",
+      "japanese": "Giapponese",
+      "russian": "Russo",
+      "korean": "Coreano",
+      "italian": "Italiano",
+      "turkish": "Turco",
+      "vietnamese": "Vietnamita",
+      "polish": "Polacco",
+      "ukrainian": "Ucraino",
+      "romanian": "Rumeno",
+      "dutch": "Olandese",
+      "czech": "Ceco",
+      "greek": "Greco",
+      "swedish": "Svedese",
+      "hungarian": "Ungherese",
+      "thai": "Thai",
+      "hebrew": "Ebraico",
+      "indonesian": "Indonesiano",
+      "malay": "Malese",
+      "finnish": "Finlandese",
+      "danish": "Danese",
+      "norwegian": "Norvegese",
+      "slovak": "Slovacco",
+      "croatian": "Croato",
+      "catalan": "Catalano"
+    },
+    "generale": "Generale",
+    "github": "Github",
+    "language": "Lingua",
+    "links": "Link",
+    "logout": "Disconnetti",
+    "more": "Altro",
+    "privacy": "Privacy Policy",
+    "faq": "FAQ",
+    "rate": "Valuta",
+    "share": "Condividi",
+    "citations": "Citazioni per informazioni mediche",
+    "support": "Supporto",
+    "support_us": "Supportaci",
+    "terms": "Termini di Servizio",
+    "theme": {
+      "dark": "Scuro",
+      "light": "Chiaro",
+      "system": "Sistema",
+      "title": "Tema"
+    },
+    "title": "Impostazioni",
+    "version": "Versione",
+    "website": "Sito Web",
+    "devMode": {
+      "title": "Modalità sviluppatore",
+      "componentsLibrary": "Libreria UI"
+    }
+  },
+  "components": {
+    "ReportCard": {
+      "rating": "Valutazione"
+    },
+    "ScanReportCard": {
+      "promptMessage": "Qual è il motivo?",
+      "unnamedConversation": "Senza titolo",
+      "reportTitlePlaceholder": "Aggiungi un titolo"
+    },
+    "WeekBlock": {
+      "week": "Settimana"
+    },
+    "EndScrollPlaceholder": {
+      "scrollToTop": "Scorri in Alto"
+    },
+    "FreeTierStatus": {
+      "heading": "Scansioni gratuite",
+      "subheading": "Sblocca scansioni illimitate aggiornando il tuo piano",
+      "action": "Aggiorna"
+    },
+    "UploadFileOptionsModal": {
+      "heading": "Scegli un'immagine / video"
+    },
+    "TapToViewLabel": {
+      "label": "Tocca per Visualizzare"
+    },
+    "UpgradeBanner": {
+      "heading": "Aggiorna Ora!",
+      "subheading": "Sblocca scansioni illimitate aggiornando il tuo piano"
+    },
+    "PromptSection": {
+      "message": "La tua scansione è pronta! Ora, cosa vorresti scoprire?",
+      "prompts": {
+        "first": "Quali tipi di cellule o strutture sono presenti in questa immagine?",
+        "second": "Ci sono anomalie o patogeni in questo campione?",
+        "third": "Qual è l'origine o condizione probabile di questo campione?",
+        "fourth": "Quali approfondimenti puoi fornire da questa immagine?"
+      }
+    },
+    "PremiumFeaturesOverview": {
+      "first": "Analisi AI per qualsiasi campione microscopico",
+      "second": "Accesso a tutte le funzionalità premium",
+      "third": "Nessuna pubblicità"
+    },
+    "Input": {
+      "labels": {
+        "nickname": "Soprannome",
+        "email": "Email",
+        "emailVerification": "Verifica Email"
+      }
+    },
+    "ImageAnnotationStudio": {
+      "instructions": {
+        "title": "Istruzioni",
+        "first": "1. Tocca 'Aggiungi Quadrato' per creare un quadrato di selezione.",
+        "second": "2. Trascina il quadrato sulla tua area di interesse.",
+        "third": "3. Regola gli angoli per coprire precisamente l'area."
+      },
+      "OpenStudioSection": {
+        "openStudioButton": "Apri Studio",
+        "editMore": "Modifica Altro",
+        "continueEditing": "Continua a modificare le tue annotazioni?",
+        "highlightedRegionsCount": "Hai {{highlightedRegions}} aree evidenziate. Tocca sotto per aggiungerne altre",
+        "highlightRegions": "Devi evidenziare regioni della tua immagine microscopica?"
+      },
+      "studioToolbar": {
+        "addSquare": "Aggiungi Quadrato"
+      }
+    }
+  },
+  "alerts": {
+    "mediaPickerPermissions": "Scusa, abbiamo bisogno dei permessi della fotocamera per farlo funzionare!",
+    "errorSelectingImagePicker": "Qualcosa è andato storto durante la selezione dell'immagine. Riprova.",
+    "errorSelectingDocumentPicker": "Qualcosa è andato storto durante la selezione del documento. Riprova.",
+    "errorTakingPicture": "Qualcosa è andato storto durante lo scatto della foto. Riprova.",
+    "enableNotifications": {
+      "heading": "Abilita Notifiche",
+      "subHeading": "Le notifiche sono attualmente disattivate. Per rimanere aggiornato, abilitalle nelle impostazioni del dispositivo."
+    },
+    "enableNotificationFailed": "Le notifiche push sono disabilitate. Abilitalle nelle impostazioni per ricevere aggiornamenti importanti!",
+    "enableNotificationError": "Si è verificato un errore durante l'abilitazione delle notifiche",
+    "notificationDisabledSuccess": "Notifiche disabilitate con successo.",
+    "notificationDisabledRegisterError": "Impossibile annullare la registrazione del dispositivo per le notifiche.",
+    "notificationDisabledError": "Si è verificato un errore durante la disabilitazione delle notifiche.",
+    "checkNotificationStatusError": "Errore nel controllo dello stato delle notifiche.",
+    "projectIdNotFound": "ID progetto notifiche non trovato.",
+    "imageSizeLarge": "L'immagine è troppo grande! La dimensione del file è {{fileSize}} MB, ma il limite è {{imageLimit}} MB.",
+    "videoSizeLarge": "Il video è troppo grande! La dimensione del file è {{fileSize}} MB, ma il limite è {{videoLimit}} MB.",
+    "loggedInSuccess": "Accesso effettuato con successo",
+    "loggedOutSuccess": "Ti sei disconnesso con successo!",
+    "sendVerificationCodeError": "Errore durante l'invio del codice di verifica",
+    "validateAuthCodeError": "Errore durante la convalida del codice di autenticazione",
+    "anonymousSignInError": "Errore durante l'accesso anonimo",
+    "emailLoginError": "Errore durante l'accesso",
+    "preferredLanguageError": "Errore durante l'aggiornamento della lingua preferita dell'utente",
+    "sharingNotAvailable": "La condivisione non è al momento disponibile sul tuo dispositivo",
+    "sharingLinkError": "Impossibile condividere il link.",
+    "individualPushNotificationSuccess": "Notifiche push individuali inviate con successo!",
+    "globalPushNotificationSuccess": "Notifiche push globali inviate con successo! 🌍🚀",
+    "interpretationFieldsUpdateFail": "Impossibile aggiornare i campi di interpretazione! ❌",
+    "deleteScanReportFail": "Impossibile eliminare il report di scansione. Riprova",
+    "onboardingUnsuccessful": "Onboarding non riuscito. Riprova",
+    "logoutUnsuccessful": "Disconnessione non riuscita. Riprova",
+    "deleteScanReportQuestion": "Sei sicuro di voler eliminare definitivamente questo report?",
+    "videoLimitExceeds": "Il tuo video supera il limite di {{videoSecondsLimit}} secondi. Taglialo e ricaricalo",
+    "subscriptionActivated": "Il tuo abbonamento è stato attivato con successo! Goditi i tuoi benefici esclusivi!",
+    "subscriptionCancelledByUser": "Hai annullato la transazione. Sentiti libero di riprovare!",
+    "subscriptionActivationFailed": "Impossibile attivare il tuo abbonamento. Riprova",
+    "logoutQuestion": "Sei sicuro di volerti disconnettere?",
+    "noSubscriptionToRestore": "Ops! Sembra che tu non abbia un abbonamento attivo al momento. Per continuare a godere dell'accesso completo, scegli uno dei nostri piani di abbonamento.",
+    "restorationSuccessful": "Ripristino avvenuto con successo! Goditelo!",
+    "restorationError": "Si è verificato un errore durante il ripristino dell'acquisto.",
+    "medicalDisclaimerAlert": "L'app MicroScan AI non fornisce diagnosi, raccomandazioni di trattamento o consulenze mediche. Cerca sempre la guida di un professionista sanitario qualificato per le decisioni mediche.",
+    "scanLimitReached": "Stiamo ottimizzando la qualità della scansione per te! Potrai scansionare nuovamente tra circa {{hours}} ore e {{minutes}} minuti. Hai domande su qualsiasi argomento di microscopia? Chiedi al nostro assistente chat mentre aspetti!",
+    "chatAndMediaFilesLimit": "Caro utente, devi aggiornare il tuo piano per beneficiare di chat illimitate, scansioni illimitate, analisi multi-immagine e altro. 🔓"
+  }
+}

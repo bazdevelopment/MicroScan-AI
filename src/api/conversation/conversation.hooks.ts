@@ -17,7 +17,7 @@ export const useConversationHistory = (conversationId: string) => {
   })();
 };
 
-export const useAllUserConversations = (limit: number = 5) => {
+export const useAllUserConversations = (limit: number = 10) => {
   return createQuery({
     queryKey: ['user-conversations'],
     fetcher: () => fetchAllUserConversations({ limit }),

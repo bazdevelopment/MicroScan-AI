@@ -1,0 +1,495 @@
+{
+  "onboarding": {
+    "message": "Üdvözöljük a MicroScan AI-ban!"
+  },
+  "general": {
+    "back": "Vissza",
+    "welcome": "Üdv",
+    "welcomeBack": "Üdv újra!",
+    "welcomeMessage": "Üdvözöljük!",
+    "continue": "Folytatás",
+    "retry": "Újra",
+    "close": "Bezárás",
+    "gallery": "Galéria",
+    "files": "Fájlok",
+    "cancel": "Mégse",
+    "delete": "Törlés",
+    "attention": "Figyelem!",
+    "new": "Új",
+    "yes": "Igen",
+    "or": "vagy",
+    "typing": "Gépelés...",
+    "online": "Online",
+    "chatbotPlaceholder": "Kérdezz bármit...",
+    "openSettings": "Beállítások megnyitása",
+    "seeNotifications": "Értesítések megtekintése",
+    "viewProfile": "Profil megtekintése",
+    "upgradePlan": "Csomag frissítése",
+    "download": "Letöltés",
+    "share": "Megosztás",
+    "shareLink": "Link megosztása",
+    "skip": "Kihagyás",
+    "next": "Tovább",
+    "update": "Frissítés",
+    "tryAgain": "Próbáld újra",
+    "createdAt": "Létrehozva",
+    "and": "és",
+    "saveDiscount": "MENTÉS",
+    "restorePurchase": "Vásárlás visszaállítása",
+    "medicalDisclaimer": "Orvosi jogi nyilatkozat",
+    "conversationHistory": "Beszélgetések előzményei",
+    "freeTrial": "Ingyenes próba",
+    "free": "INGYENES",
+    "completedScans": "Befejezett szkennelések",
+    "activeSubscription": "Aktív előfizetés",
+    "askAssistant": "Kérdezd az AI asszisztenst",
+    "then": "majd",
+    "perWeek": "hetente",
+    "perYear": "évente",
+    "perMonth": "havonta",
+    "tryForFree": "Próbáld Ki Ingyen",
+    "unlockNow": "Feloldás Most",
+    "copyText": {
+      "loading": "Másolás...",
+      "copied": "Másolva!",
+      "copy": "Link másolása"
+    },
+    "loadingMessages": {
+      "initialAppLoad": {
+        "first": "Személyre szabott élmény betöltése...",
+        "second": "Rendszerek szinkronizálása...",
+        "third": "Adataid feldolgozása...",
+        "fourth": "Majdnem kész, csak egy pillanat..."
+      },
+      "imageScanningLoading": {
+        "first": "Mikrofénykép szkennelése, kérjük várjon...",
+        "second": "Részletek elemzése, ez eltarthat egy ideig...",
+        "third": "Pontosság növelése a legjobb eredményekért...",
+        "fourth": "Majdnem kész, szkennelés befejezése..."
+      },
+      "loadingChatbot": {
+        "first": "Aura előkészíti a segítségnyújtást...",
+        "second": "Várj! Aura előkészíti a válaszod...",
+        "third": "Gondolkodás... asszisztense, Aura dolgozik rajta!"
+      }
+    }
+  },
+  "backHandler": {
+    "holdOn": "Várj!",
+    "goBackMessage": "Biztosan vissza szeretne menni?"
+  },
+  "internet": {
+    "noConnectionTitle": "Offline állapotban van!",
+    "noConnectionMessage": "Kapcsolja be a mobiladatokat vagy csatlakozzon Wi-Fi-hoz. Vagy csak tartson egy szünetet és menjen sétálni!"
+  },
+  "uploadScan": {
+    "title": "Kép feltöltése",
+    "scanNow": "Szkennelés most"
+  },
+  "weekDays": {
+    "today": "Ma",
+    "yesterday": "Tegnap"
+  },
+  "auth": {
+    "verifyAuthCode": "Hitelesítési kód ellenőrzése",
+    "verifyAuthCodeButton": "Kód ellenőrzése",
+    "authCodeHeading": "Hitelesítési kód",
+    "loginViaEmailHeading": "Jelentkezzen be. A folytatáshoz adja meg e-mail címét.",
+    "emailAddress": "E-mail"
+  },
+  "rootLayout": {
+    "screens": {
+      "welcome": {
+        "heading": "Üdvözöljük a MicroScan AI-ban!",
+        "startButton": "Kezdjük!",
+        "accountButton": "Már van fiókom"
+      },
+      "login": {
+        "agreeingMessage": "A folytatással elfogadja",
+        "termsAndConditions": "Felhasználási feltételeinket",
+        "privacyPolicy": "Adatvédelmi irányelveinket"
+      },
+      "verifyAuthCode": {
+        "verificationCodeHeading": "Adja meg az e-mailben küldött ellenőrző kódját. Kérjük, vegye figyelembe, hogy a kód 5 perc múlva lejár.",
+        "verificationCodeSent": "Az ellenőrző kódot elküldtük a következő címre:",
+        "verificationCodeMissing": "Nem kapta meg a kódot?",
+        "resendCode": "Kód újraküldése",
+        "backToLogin": "Vissza a bejelentkezéshez"
+      },
+      "namePreferenceScreen": {
+        "heading": "Biztonságos, védett, egyszerű hozzáférés!",
+        "preferredNameQuestion": "Válasszon egy vicces becenevet, hogy névtelen maradjon - a magánszférája fontos számunkra",
+        "placeholderPreferredName": "Pl. Kapitány Király, Méhkirálynő, vagy csak Alex!"
+      },
+      "freeTrialPreview": {
+        "heading": "Élvezze az ingyenes próbaverziót! 🎉",
+        "subheading": "Tapasztalja meg ezeket a csodás előnyöket az ingyenes próbaidőszak alatt",
+        "review": "Nagyszerű mikroszkópos elemzés, az AI orvosi chat asszisztens nagyon hasznos! Kötelező alkalmazás!",
+        "reviewTrust": "📈 Több mint 3252 felhasználó bízik benne"
+      },
+      "scanInterpretation": {
+        "title": "Elemzés eredménye",
+        "headerBackTitle": "Jelentések"
+      },
+      "paywallOnboarding": {
+        "freeTierOfferings": {
+          "freeTrialEnabled": "Ingyenes próba engedélyezve",
+          "heading": "Korlátlan hozzáférés",
+          "title": "Tegye lehetővé a Prémium funkciókat még ma!",
+          "firstOffering": "Hozzáférés az összes prémium funkcióhoz",
+          "secondOffering": "Reklámmentes élmény",
+          "thirdOffering": "Korlátlan mikroszkópos szkennelések",
+          "fourthOffering": "Korlátlan csevegés egy 24/7 AI asszisztenssel"
+        }
+      },
+      "paywallUpgradeScreen": {
+        "heading": "Tegye lehetővé a Prémium funkciókat még ma!",
+        "firstOffering": {
+          "title": "Ingyenes próba indítása",
+          "subtitle": "Élvezzen {{freeScans}} ingyenes szkennelést - fizetés nélkül"
+        },
+        "secondOffering": {
+          "title": "Havi csomag",
+          "subtitle": "{{ price }}/hó"
+        },
+        "thirdOffering": {
+          "title": "Éves csomag",
+          "subtitle": "{{ price }} évente"
+        },
+        "fourthOffering": {
+          "title": "{{trialDays}} napos próba",
+          "subtitle": "{{ price }} évente",
+          "plan": "Heti csomag"
+        }
+      },
+      "newAppVersionScreen": {
+        "heading": "A MicroScan AI új verziója elérhető",
+        "subheading": "Kérjük, frissítsen a legújabb verzióra az alkalmazás további használatához",
+        "action": "Szerezd meg most!"
+      },
+      "rateAppScreen": {
+        "heading": "Értékesnek és vonzónak találja az alkalmazást?",
+        "like": "Igen, tetszik!",
+        "dislike": "Nem igazán..."
+      },
+      "noInternetScreen": {
+        "heading": "Offline állapotban van",
+        "subheading": "A kapcsolata instabilnak tűnik. Kérjük, ellenőrizze a hálózati állapotot"
+      },
+      "notifications": {
+        "title": "Értesítések",
+        "noNotifications": "Egyelőre nincsenek értesítések – maradjon velünk a frissítésekért!"
+      },
+      "termsOfService": {
+        "title": "Szolgáltatási Feltételek"
+      },
+      "privacyPolicy": {
+        "title": "Adatvédelmi Irányelvek"
+      },
+      "share": {
+        "title": "Megosztás",
+        "heading": "Ossza meg a MicroScan AI alkalmazást",
+        "subheading": "Segítsen másoknak felfedezni az AI-vezérelt mikroszkópos elemzés erejét",
+        "scanMessage": "Szkennelje le az alkalmazás letöltéséhez",
+        "shareMessage": "vagy ossza meg kedvenc platformján"
+      },
+      "rate": {
+        "title": "Adj visszajelzést!"
+      },
+      "profile": {
+        "title": "Profil",
+        "edit": "Profil szerkesztése",
+        "placeholderPreferredName": "Pl. Kapitány Király, Méhkirálynő, vagy csak Alex!"
+      },
+      "generateReportScreen": {
+        "title": "Köszönjük a türelmét! Itt az AI jelentése.",
+        "userInput": "Beküldésed",
+        "medicalReport": "Mikroszkópos jelentés",
+        "report": "AI által generált mikroszkópos jelentés",
+        "conversationName": "Beszélgetés neve"
+      },
+      "verifyEmail": {
+        "heading": "E-mail ellenőrzése"
+      },
+      "filePreviewScreen": {
+        "generateReportButton": "Elemzés indítása"
+      },
+      "disclaimerScreen": {
+        "heading": "Fontos jogi nyilatkozat",
+        "subheading": "A MicroScan AI mikroszkópiával foglalkozó szakemberek, kutatók, diákok és rajongók számára készült",
+        "consentAgreement": "Elolvastam és elfogadom a jogi nyilatkozatot.",
+        "firstConsent": "A MicroScan AI nem nyújt egészségügyi méréseket, diagnózisokat vagy kezelési tanácsot, és nem is ilyen célra szolgál. A MicroScan AI felhasználóinak klinikai ítélőképességüket kell alkalmazniuk, és hiteles forrásokból kell ellenőrizniük az információkat bármely klinikai döntés meghozatala előtt.",
+        "secondConsent": "A MicroScan AI nem diagnosztikai eszköz, kezelési platform vagy helyettesítése a szakmai orvosi tanácsadásnak. AI által generált betekintést kínál, hogy segítse az egészségügyi szakembereket az orvosi ismeretek elérésében és az orvosi képek és dokumentumok elemzésében. A MicroScan AI egy AI-vezérelt tájékoztató és oktatási alkalmazás, amely elsősorban a engedéllyel rendelkező egészségügyi szakemberek támogatására készült.",
+        "fourthConsent": "A MicroScan AI-t nem minősítik orvosi eszköznek, és nem igényel szabályozási jóváhagyást. Oktatási és tájékoztatási célokat szolgál, hogy kiegészítse a szakmai szaktudást.",
+        "fifthConsent": "A MicroScan AI nem gyűjt, nem tárol és nem dolgoz fel személyes vagy betegadatokat. Minden felhasználói interakció bizalmas, és az alkalmazás körére korlátozódik."
+      },
+      "contactUs": {
+        "heading": "Nyugodtan küldjön közvetlenül e-mailt, és csapatunk a lehető leghamarabb válaszol",
+        "customerSupport": "Ügyfélszolgálat",
+        "emailAddress": "E-mail cím"
+      },
+      "languageAnalysisModal": {
+        "languagePreferenceQuestion": "Milyen nyelvet részesít előnyben az AI elemzéshez?",
+        "languageSelection": "Válasszon nyelvet az AI válaszokhoz",
+        "languageSearchCriteria": "Keresés nyelv, országkód vagy zászló alapján",
+        "noLanguageFound": "Nincs nyelv találat",
+        "noLanguageFoundSubtitle": "Próbálja módosítani a keresési feltételeit"
+      },
+      "chatScreen": {
+        "randomQuestions": {
+          "one": "Mik a különbségek a világos mező, fáziskontraszt és DIC között? 🔬",
+          "two": "Hogyan befolyásolhatja a minta előkészítése a kép felbontását? 🧫",
+          "three": "Mikor használjak konfokális vagy széles látómezejű mikroszkópiát? 🧠",
+          "four": "Hogyan minimalizálhatom a fotokopást élő sejtek képalkotásánál? ✨",
+          "five": "Mi a numerikus apertúra hatása a felbontásra? 📐",
+          "six": "Hogyan kell helyesen beállítani és kalibrálni egy mikroszkópot? ⚙️",
+          "seven": "Mely technikák növelik a kontrasztot festetlen mintáknál? 🌈",
+          "eight": "Mikor részesítik előnyben az elektronmikroszkópiát a fénymikroszkópia helyett? 🧲",
+          "nine": "Hogyan biztosíthatom a reprodukálhatóságot a kvantitatív képalkotásban? 📊",
+          "ten": "Mik az immerziós olaj használatának ajánlott eljárásai? 🛢️",
+          "eleven": "Hogyan válasszak fluoroforokat többcsatornás képalkotáshoz? 🎇",
+          "twelve": "Miért kritikus a minta vastagsága a nagy felbontású képalkotás szempontjából? 📚",
+          "thirteen": "Hogyan minimalizálható az elcsúszás és rezgés a képalkotás során? 🌍",
+          "fourteen": "Mik a kész preparátumok megfelelő tárolási módszerei? 📦",
+          "fifteen": "Mely paraméterek biztosítják a publikációra alkalmas képek minőségét? 📸"
+        }
+      }
+    }
+  },
+  "deleteApp": {
+    "title": "Várj! Ne törölj!",
+    "subtitle": "Küldj visszajelzést helyette"
+  },
+  "pdfPreview": {
+    "noEditorInstalled": "A PDF megtekintéséhez győződjön meg róla, hogy van telepítve PDF-megjelenítő, például Adobe Acrobat Reader vagy Google PDF Viewer",
+    "conversationTitlePdf": "Beszélgetés Aurával, AI asszisztensével"
+  },
+  "flows": {
+    "createReport": {
+      "finalReportForeground": {
+        "message": "Köszönjük a türelmét!"
+      },
+      "finalReportHeader": {
+        "message": "Ez a jelentés eredménye!"
+      },
+      "uploadFile": {
+        "title": "Töltsön fel bármilyen mikroszkópos mintát elemzésre",
+        "size": "Max: {{imageLimit}}MB (képek), {{videoLimit}}MB (videók)",
+        "location": "Válasszon a Galériából vagy Fájlokból",
+        "fileType": "PNG, JPG, PDF vagy MP4",
+        "openCamera": "Kamera megnyitása és fénykép készítése",
+        "scanType": "Csak mikroszkópos minták engedélyezettek"
+      }
+    }
+  },
+  "home": {
+    "tab": "Kezdőlap",
+    "homeForeground": {
+      "maxNumberOfScans": "Elérte a szkennelési korlátját! Frissítse csomagját, hogy több szkennelést kapjon. 🚀",
+      "heading": "Üdvözöljük a MicroScan AI-ban!",
+      "subHeading": "Szerezzen AI-vezérelt elemzést bármilyen mikroszkópos mintáról másodpercek alatt"
+    },
+    "scanCategories": {
+      "heading": "Mikroszkópos galéria"
+    },
+    "recentReports": {
+      "heading": "Legutóbbi beszélgetések",
+      "noReports": "Még nincsenek megjeleníthető beszélgetések!"
+    }
+  },
+  "reports": {
+    "tab": "Előzmények",
+    "noReportsAvailable": "Ehhez a dátumhoz nem érhető el beszélgetési előzmény",
+    "heading": "Beszélgetési előzmények"
+  },
+  "chat": {
+    "tab": "Csevegés"
+  },
+  "settings": {
+    "tab": "Beállítások",
+    "profile": "Profil",
+    "contactUs": "Lépjen kapcsolatba velünk",
+    "about": "Névjegy",
+    "app_name": "Alkalmazás neve",
+    "languages": {
+      "english": "Angol",
+      "mandarin_chinese": "Kínai",
+      "hindi": "Hindi",
+      "spanish_spain": "Spanyol (Spanyolország)",
+      "spanish_mexico": "Spanyol (Mexikó)",
+      "arabic": "Arab",
+      "french": "Francia",
+      "french_canada": "Francia (Kanada)",
+      "portuguese_brazil": "Portugál (Brazília)",
+      "portuguese_portugal": "Portugál (Portugália)",
+      "german": "Német",
+      "japanese": "Japán",
+      "russian": "Orosz",
+      "korean": "Koreai",
+      "italian": "Olasz",
+      "turkish": "Török",
+      "vietnamese": "Vietnami",
+      "polish": "Lengyel",
+      "ukrainian": "Ukrán",
+      "romanian": "Román",
+      "dutch": "Holland",
+      "czech": "Cseh",
+      "greek": "Görög",
+      "swedish": "Svéd",
+      "hungarian": "Magyar",
+      "thai": "Thai",
+      "hebrew": "Héber",
+      "indonesian": "Indonéz",
+      "malay": "Maláj",
+      "finnish": "Finn",
+      "danish": "Dán",
+      "norwegian": "Norvég",
+      "slovak": "Szlovák",
+      "croatian": "Horvát",
+      "catalan": "Katalán"
+    },
+    "generale": "Általános",
+    "github": "Github",
+    "language": "Nyelv",
+    "links": "Linkek",
+    "logout": "Kijelentkezés",
+    "more": "Több",
+    "privacy": "Adatvédelmi Irányelvek",
+    "faq": "GYIK",
+    "rate": "Értékelés",
+    "share": "Megosztás",
+    "citations": "Orvosi információk forrásai",
+    "support": "Támogatás",
+    "support_us": "Támogass Minket",
+    "terms": "Szolgáltatási Feltételek",
+    "theme": {
+      "dark": "Sötét",
+      "light": "Világos",
+      "system": "Rendszer",
+      "title": "Téma"
+    },
+    "title": "Beállítások",
+    "version": "Verzió",
+    "website": "Weboldal",
+    "devMode": {
+      "title": "Fejlesztői mód",
+      "componentsLibrary": "UI könyvtár"
+    }
+  },
+  "components": {
+    "ReportCard": {
+      "rating": "Értékelés"
+    },
+    "ScanReportCard": {
+      "promptMessage": "Mi az oka?",
+      "unnamedConversation": "Névtelen",
+      "reportTitlePlaceholder": "Cím hozzáadása"
+    },
+    "WeekBlock": {
+      "week": "Hét"
+    },
+    "EndScrollPlaceholder": {
+      "scrollToTop": "Görgess a tetejére"
+    },
+    "FreeTierStatus": {
+      "heading": "Ingyenes szkennelések",
+      "subheading": "Engedélyezzen korlátlan szkennelést csomagja frissítésével",
+      "action": "Frissítés"
+    },
+    "UploadFileOptionsModal": {
+      "heading": "Válasszon képet / videót"
+    },
+    "TapToViewLabel": {
+      "label": "Koppintson a megtekintéshez"
+    },
+    "UpgradeBanner": {
+      "heading": "Frissíts Most!",
+      "subheading": "Engedélyezzen korlátlan szkennelést csomagja frissítésével"
+    },
+    "PromptSection": {
+      "message": "Szkennelése kész! Most mit szeretne megtudni?",
+      "prompts": {
+        "first": "Milyen sejttípusok vagy szerkezetek vannak ezen a képen?",
+        "second": "Vannak-e rendellenességek vagy kórokozók a mintában?",
+        "third": "Mi a minta valószínű eredete vagy állapota?",
+        "fourth": "Milyen betekintést tud nyújtani ebből a képből?"
+      }
+    },
+    "PremiumFeaturesOverview": {
+      "first": "AI-vezérelt elemzés bármilyen mikroszkópos mintához",
+      "second": "Hozzáférés az összes prémium funkcióhoz",
+      "third": "Nincsenek hirdetések"
+    },
+    "Input": {
+      "labels": {
+        "nickname": "Becenév",
+        "email": "E-mail",
+        "emailVerification": "E-mail ellenőrzés"
+      }
+    },
+    "ImageAnnotationStudio": {
+      "instructions": {
+        "title": "Utasítások",
+        "first": "1. Koppintson a 'Négyzet hozzáadása' gombra egy kijelölő négyzet létrehozásához.",
+        "second": "2. Húzza a négyzetet az érdeklődési területére.",
+        "third": "3. Állítsa be a sarkokat, hogy pontosan lefedje a területet."
+      },
+      "OpenStudioSection": {
+        "openStudioButton": "Stúdió megnyitása",
+        "editMore": "További szerkesztés",
+        "continueEditing": "Folytatja a jegyzetei szerkesztését?",
+        "highlightedRegionsCount": "{{highlightedRegions}} kiemelt területe van. Koppintson alább több hozzáadásához",
+        "highlightRegions": "Ki kell emelnie a mikroszkópos kép területeit?"
+      },
+      "studioToolbar": {
+        "addSquare": "Négyzet hozzáadása"
+      }
+    }
+  },
+  "alerts": {
+    "mediaPickerPermissions": "Sajnáljuk, kamerajogosultságokra van szükségünk, hogy ez működjön!",
+    "errorSelectingImagePicker": "Hiba történt a kép kiválasztásakor. Kérjük, próbálja újra.",
+    "errorSelectingDocumentPicker": "Hiba történt a dokumentum kiválasztásakor. Kérjük, próbálja újra.",
+    "errorTakingPicture": "Hiba történt a fénykép készítésekor. Kérjük, próbálja újra.",
+    "enableNotifications": {
+      "heading": "Értesítések engedélyezése",
+      "subHeading": "Az értesítések jelenleg ki vannak kapcsolva. Az naprakész maradáshoz kérjük, engedélyezze azokat az eszköz beállításaiban."
+    },
+    "enableNotificationFailed": "A push értesítések ki vannak kapcsolva. Engedélyezze azokat a beállításokban, hogy fontos frissítéseket kapjon!",
+    "enableNotificationError": "Hiba történt az értesítések engedélyezésekor",
+    "notificationDisabledSuccess": "Értesítések sikeresen letiltva.",
+    "notificationDisabledRegisterError": "Nem sikerült regisztrációt törölni az értesítésekhez.",
+    "notificationDisabledError": "Hiba történt az értesítések letiltásakor.",
+    "checkNotificationStatusError": "Hiba az értesítés állapotának ellenőrzésekor.",
+    "projectIdNotFound": "Az értesítési projekt azonosítója nem található.",
+    "imageSizeLarge": "A kép túl nagy! A fájlméret {{fileSize}} MB, de a korlát {{imageLimit}} MB.",
+    "videoSizeLarge": "A videó túl nagy! A fájlméret {{fileSize}} MB, de a korlát {{videoLimit}} MB.",
+    "loggedInSuccess": "Sikeres bejelentkezés",
+    "loggedOutSuccess": "Sikeresen kijelentkezett!",
+    "sendVerificationCodeError": "Hiba az ellenőrző kód küldésekor",
+    "validateAuthCodeError": "Hiba a hitelesítési kód ellenőrzésekor",
+    "anonymousSignInError": "Hiba az anonim bejelentkezéskor",
+    "emailLoginError": "Hiba a bejelentkezéskor",
+    "preferredLanguageError": "Hiba a felhasználó preferált nyelvének frissítésekor",
+    "sharingNotAvailable": "A megosztás jelenleg nem érhető el az eszközén",
+    "sharingLinkError": "A link megosztása sikertelen.",
+    "individualPushNotificationSuccess": "Egyéni push értesítések sikeresen elküldve!",
+    "globalPushNotificationSuccess": "Globális push értesítések sikeresen elküldve! 🌍🚀",
+    "interpretationFieldsUpdateFail": "Az értelmezési mezők frissítése sikertelen! ❌",
+    "deleteScanReportFail": "A szkennelési jelentés nem törölhető. Kérjük, próbálja újra",
+    "onboardingUnsuccessful": "A bevezetés sikertelen. Kérjük, próbálja újra",
+    "logoutUnsuccessful": "A kijelentkezés sikertelen. Kérjük, próbálja újra",
+    "deleteScanReportQuestion": "Biztosan végleg törölni szeretné ezt a jelentést?",
+    "videoLimitExceeds": "Videója meghaladja a {{videoSecondsLimit}} másodperces korlátot. Kérjük, vágja le és töltse fel újra",
+    "subscriptionActivated": "Előfizetése sikeresen aktiválva! Élvezze exkluzív előnyeit!",
+    "subscriptionCancelledByUser": "Megszakította a tranzakciót. Nyugodtan próbálja újra!",
+    "subscriptionActivationFailed": "Előfizetése aktiválása sikertelen. Kérjük, próbálja újra",
+    "logoutQuestion": "Biztosan ki szeretne jelentkezni?",
+    "noSubscriptionToRestore": "Hoppá! Úgy tűnik, jelenleg nincs aktív előfizetése. A teljes hozzáférés további élvezetéhez kérjük, válasszon egy előfizetési csomagunk közül.",
+    "restorationSuccessful": "A visszaállítás sikeres! Élvezze!",
+    "restorationError": "Hiba történt a vásárlás visszaállítása során.",
+    "medicalDisclaimerAlert": "A MicroScan AI alkalmazás nem nyújt diagnózisokat, kezelési ajánlásokat vagy orvosi tanácsot. Mindig forduljon képzett egészségügyi szakemberhez orvosi döntések meghozatalához.",
+    "scanLimitReached": "Optimalizáljuk az Ön számára a szkennelés minőségét! Körülbelül {{hours}} óra és {{minutes}} perc múlva újra szkennelhet. Van kérdése a mikroszkópiával kapcsolatban? Kérdezze meg csevegő asszisztenseünket, amíg vár!",
+    "chatAndMediaFilesLimit": "Kedves felhasználó, frissítenie kell a csomagját, hogy korlátlan csevegések, korlátlan szkennelések, több kép elemzése és egyéb előnyök révén profitálhasson. 🔓"
+  }
+}
