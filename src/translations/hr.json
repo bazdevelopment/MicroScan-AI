@@ -1,0 +1,495 @@
+{
+  "onboarding": {
+    "message": "Dobrodošli u MicroScan AI!"
+  },
+  "general": {
+    "back": "Natrag",
+    "welcome": "Bok",
+    "welcomeBack": "Dobrodošli natrag!",
+    "welcomeMessage": "Dobrodošli!",
+    "continue": "Nastavi",
+    "retry": "Pokušaj ponovno",
+    "close": "Zatvori",
+    "gallery": "Galerija",
+    "files": "Datoteke",
+    "cancel": "Odustani",
+    "delete": "Izbriši",
+    "attention": "Pažnja!",
+    "new": "Novo",
+    "yes": "Da",
+    "or": "ili",
+    "typing": "Tipkanje...",
+    "online": "Online",
+    "chatbotPlaceholder": "Pitajte me bilo što...",
+    "openSettings": "Otvori postavke",
+    "seeNotifications": "Vidi obavijesti",
+    "viewProfile": "Pogledaj profil",
+    "upgradePlan": "Nadogradi plan",
+    "download": "Preuzmi",
+    "share": "Podijeli",
+    "shareLink": "Podijeli vezu",
+    "skip": "Preskoči",
+    "next": "Sljedeće",
+    "update": "Ažuriraj",
+    "tryAgain": "Pokušaj ponovno",
+    "createdAt": "Kreirano",
+    "and": "i",
+    "saveDiscount": "ŠTEDI",
+    "restorePurchase": "Vrati kupnju",
+    "medicalDisclaimer": "Medicinska izjava o odricanju od odgovornosti",
+    "conversationHistory": "Povijest razgovora",
+    "freeTrial": "Besplatna proba",
+    "free": "BESPLATNO",
+    "completedScans": "Završeni skenovi",
+    "activeSubscription": "Aktivna pretplata",
+    "askAssistant": "Pitaj AI asistenta",
+    "then": "zatim",
+    "perWeek": "tjedno",
+    "perYear": "godišnje",
+    "perMonth": "mjesečno",
+    "tryForFree": "Isprobaj Besplatno",
+    "unlockNow": "Otključaj Sada",
+    "copyText": {
+      "loading": "Kopiranje...",
+      "copied": "Kopirano!",
+      "copy": "Kopiraj vezu"
+    },
+    "loadingMessages": {
+      "initialAppLoad": {
+        "first": "Učitavanje vašeg personaliziranog iskustva...",
+        "second": "Sinkroniziranje sustava...",
+        "third": "Obrada vaših podataka...",
+        "fourth": "Skoro spremno, samo trenutak..."
+      },
+      "imageScanningLoading": {
+        "first": "Skeniranje vaše mikroskopske slike, molimo pričekajte...",
+        "second": "Analiza detalja, ovo može potrajati...",
+        "third": "Poboljšavanje točnosti za najbolje rezultate...",
+        "fourth": "Skoro gotovo, završavanje skeniranja..."
+      },
+      "loadingChatbot": {
+        "first": "Aura se priprema da vam pomogne...",
+        "second": "Pričekajte! Aura priprema vaš odgovor...",
+        "third": "Razmišljanje... vaš asistent Aura je na tome!"
+      }
+    }
+  },
+  "backHandler": {
+    "holdOn": "Pričekajte!",
+    "goBackMessage": "Jeste li sigurni da se želite vratiti?"
+  },
+  "internet": {
+    "noConnectionTitle": "Vi ste offline!",
+    "noConnectionMessage": "Uključite mobilne podatke ili se povežite na Wi-Fi. Ili jednostavno napravite pauzu i prošetajte!"
+  },
+  "uploadScan": {
+    "title": "Učitaj sliku",
+    "scanNow": "Skeniraj sada"
+  },
+  "weekDays": {
+    "today": "Danas",
+    "yesterday": "Jučer"
+  },
+  "auth": {
+    "verifyAuthCode": "Verificiraj autentifikacijski kod",
+    "verifyAuthCodeButton": "Verificiraj kod",
+    "authCodeHeading": "Autentifikacijski kod",
+    "loginViaEmailHeading": "Prijavite se. Molimo unesite svoju email adresu za nastavak.",
+    "emailAddress": "Email"
+  },
+  "rootLayout": {
+    "screens": {
+      "welcome": {
+        "heading": "Dobrodošli u MicroScan AI!",
+        "startButton": "Započnimo!",
+        "accountButton": "Već imam račun"
+      },
+      "login": {
+        "agreeingMessage": "Nastavkom prihvaćate naše",
+        "termsAndConditions": "Uvjete i odredbe",
+        "privacyPolicy": "Pravila o privatnosti"
+      },
+      "verifyAuthCode": {
+        "verificationCodeHeading": "Unesite svoj verifikacijski kod poslan putem emaila. Imajte na umu, kod će isteći za 5 minuta.",
+        "verificationCodeSent": "Poslali smo verifikacijski kod na",
+        "verificationCodeMissing": "Niste primili kod?",
+        "resendCode": "Pošalji kod ponovno",
+        "backToLogin": "Natrag na prijavu"
+      },
+      "namePreferenceScreen": {
+        "heading": "Siguran, zaštićen, jednostavan pristup!",
+        "preferredNameQuestion": "Odaberite zabavni nadimak kako biste ostali anonimni — vaša privatnost nam je važna",
+        "placeholderPreferredName": "Npr., Kapetan Cool, Kraljica Pčela, ili samo Alex!"
+      },
+      "freeTrialPreview": {
+        "heading": "Uživajte u besplatnoj probi! 🎉",
+        "subheading": "Iskusite ove nevjerojatne prednosti tijekom besplatne probe",
+        "review": "Izvršna mikroskopska analiza, AI medicinski chat asistent je super koristan! Aplikacija koju morate imati!",
+        "reviewTrust": "📈 Pouzdano od strane 3,252+ korisnika"
+      },
+      "scanInterpretation": {
+        "title": "Rezultat analize",
+        "headerBackTitle": "Izvještaji"
+      },
+      "paywallOnboarding": {
+        "freeTierOfferings": {
+          "freeTrialEnabled": "Besplatna Probna Verzija Omogućena",
+          "heading": "Neograničen Pristup",
+          "title": "Otključajte Premium Značajke Danas!",
+          "firstOffering": "Pristup svim premium značajkama",
+          "secondOffering": "Iskustvo bez reklama",
+          "thirdOffering": "Neograničeni mikroskopski skenovi",
+          "fourthOffering": "Neograničeni razgovori s 24/7 AI asistentom"
+        }
+      },
+      "paywallUpgradeScreen": {
+        "heading": "Otključajte Premium Značajke Danas!",
+        "firstOffering": {
+          "title": "Započni Besplatnu Probu",
+          "subtitle": "Uživajte u {{freeScans}} besplatnih skenova – bez plaćanja"
+        },
+        "secondOffering": {
+          "title": "Mjesečni Plan",
+          "subtitle": "{{ price }}/mjesečno"
+        },
+        "thirdOffering": {
+          "title": "Godišnji Plan",
+          "subtitle": "{{ price }} godišnje"
+        },
+        "fourthOffering": {
+          "title": "{{trialDays}}-Dnevna Probna Verzija",
+          "subtitle": "{{ price }} godišnje",
+          "plan": "Tjedni Plan"
+        }
+      },
+      "newAppVersionScreen": {
+        "heading": "Dostupna je nova verzija MicroScan AI",
+        "subheading": "Molimo ažurirajte na najnoviju verziju kako biste nastavili koristiti aplikaciju",
+        "action": "Preuzmi sada!"
+      },
+      "rateAppScreen": {
+        "heading": "Smatrate li aplikaciju vrijednom i zanimljivom?",
+        "like": "Da, sviđa mi se!",
+        "dislike": "Ne baš..."
+      },
+      "noInternetScreen": {
+        "heading": "Vi ste offline",
+        "subheading": "Vaša veza se čini nestabilnom. Molimo provjerite status svoje mreže"
+      },
+      "notifications": {
+        "title": "Obavijesti",
+        "noNotifications": "Trenutno nema obavijesti — ostani s nama za ažuriranja!"
+      },
+      "termsOfService": {
+        "title": "Uvjeti pružanja usluge"
+      },
+      "privacyPolicy": {
+        "title": "Pravila o privatnosti"
+      },
+      "share": {
+        "title": "Podijeli",
+        "heading": "Podijelite MicroScan AI Aplikaciju",
+        "subheading": "Pomozite drugima da otkriju moć mikroskopske analize pokrenute AI-jem",
+        "scanMessage": "Skenirajte za preuzimanje aplikacije",
+        "shareMessage": "ili podijelite putem svoje omiljene platforme"
+      },
+      "rate": {
+        "title": "Dajte nam povratne informacije!"
+      },
+      "profile": {
+        "title": "Profil",
+        "edit": "Uredi profil",
+        "placeholderPreferredName": "Npr., Kapetan Cool, Kraljica Pčela, ili samo Alex!"
+      },
+      "generateReportScreen": {
+        "title": "Cijenimo vaše strpljenje! Evo vašeg AI izvještaja.",
+        "userInput": "Vaš unos",
+        "medicalReport": "Mikroskopski izvještaj",
+        "report": "AI-generirani mikroskopski izvještaj",
+        "conversationName": "Naziv razgovora"
+      },
+      "verifyEmail": {
+        "heading": "Verificiraj email"
+      },
+      "filePreviewScreen": {
+        "generateReportButton": "Započni analizu"
+      },
+      "disclaimerScreen": {
+        "heading": "Važna izjava o odricanju od odgovornosti",
+        "subheading": "MicroScan AI je dizajniran za mikroskopske profesionalce, istraživače, studente i entuzijaste",
+        "consentAgreement": "Pročitao/la sam i pristajem na izjavu o odricanju od odgovornosti.",
+        "firstConsent": "MicroScan AI ne pruža zdravstvena mjerenja, dijagnoze ili savjete o liječenju, niti je namijenjen za takve svrhe. Korisnici MicroScan AI moraju primijeniti svoju kliničku prosudbu i verificirati informacije iz autoritativnih izvora prije donošenja bilo kakvih kliničkih odluka.",
+        "secondConsent": "MicroScan AI nije dijagnostički alat, platforma za liječenje ili zamjena za stručni medicinski savjet. Nudi AI-generirane uvide kako bi pomogao zdravstvenim profesionalcima u pristupu medicinskom znanju i analizi medicinskih slika i dokumenata. MicroScan AI je informativna i edukativna aplikacija pokrenuta AI-jem dizajnirana više za podršku licenciranim zdravstvenim profesionalcima.",
+        "fourthConsent": "MicroScan AI nije klasificiran kao medicinski uređaj i ne traži regulatorno odobrenje. Namijenjen je u obrazovne i informativne svrhe kako bi nadopunio stručnu ekspertizu.",
+        "fifthConsent": "MicroScan AI ne prikuplja, pohranjuje niti obrađuje osobne ili pacijentske podatke. Sve interakcije korisnika su povjerljive i ograničene na opseg aplikacije."
+      },
+      "contactUs": {
+        "heading": "Slobodno nam pošaljite email izravno, i naš tim će vam se javiti što je prije moguće",
+        "customerSupport": "Korisnička podrška",
+        "emailAddress": "Email adresa"
+      },
+      "languageAnalysisModal": {
+        "languagePreferenceQuestion": "Koji jezik preferirate za AI analizu?",
+        "languageSelection": "Odaberite jezik za AI odgovore",
+        "languageSearchCriteria": "Pretražujte po jeziku, šifri države ili zastavi",
+        "noLanguageFound": "Jezik nije pronađen",
+        "noLanguageFoundSubtitle": "Pokušajte promijeniti svoje pojmove pretraživanja"
+      },
+      "chatScreen": {
+        "randomQuestions": {
+          "one": "Koje su razlike između brightfield, phase contrast i DIC? 🔬",
+          "two": "Kako priprema uzorka može utjecati na rezoluciju slike? 🧫",
+          "three": "Kada trebam koristiti konfokalnu u odnosu na widefield mikroskopiju? 🧠",
+          "four": "Kako mogu minimizirati fotobleaching u snimanju živih stanica? ✨",
+          "five": "Kakav je utjecaj numeričke aperture na rezoluciju? 📐",
+          "six": "Kako pravilno poravnati i kalibrirati mikroskop? ⚙️",
+          "seven": "Koje tehnike poboljšavaju kontrast u neobojenim uzorcima? 🌈",
+          "eight": "Kada je elektronska mikroskopija poželjnija od svjetlosne mikroskopije? 🧲",
+          "nine": "Kako mogu osigurati ponovljivost u kvantitativnom snimanju? 📊",
+          "ten": "Koje su najbolje prakse za korištenje imerzionog ulja? 🛢️",
+          "eleven": "Kako odabrati fluorofore za multi-kanalno snimanje? 🎇",
+          "twelve": "Zašto je debljina uzorka kritična za snimanje visoke rezolucije? 📚",
+          "thirteen": "Kako se može minimizirati drift i vibracija tijekom snimanja? 🌍",
+          "fourteen": "Koje su pravilne metode pohrane za pripremljene predmetne stakalce? 📦",
+          "fifteen": "Koji parametri osiguravaju slike kvalitete za publikacije? 📸"
+        }
+      }
+    }
+  },
+  "deleteApp": {
+    "title": "Čekaj! Ne briši me!",
+    "subtitle": "Umjesto toga pošaljite povratne informacije"
+  },
+  "pdfPreview": {
+    "noEditorInstalled": "Za pregled PDF-a, osigurajte da imate instaliran PDF preglednik, kao što je Adobe Acrobat Reader ili Google PDF Viewer",
+    "conversationTitlePdf": "Razgovor s Aura, vašim AI asistentom"
+  },
+  "flows": {
+    "createReport": {
+      "finalReportForeground": {
+        "message": "Hvala vam na strpljenju!"
+      },
+      "finalReportHeader": {
+        "message": "Ovo je rezultat izvještaja!"
+      },
+      "uploadFile": {
+        "title": "Učitajte bilo koji mikroskopski uzorak za analizu",
+        "size": "Maks: {{imageLimit}}MB (slike), {{videoLimit}}MB (videozapisi)",
+        "location": "Odaberi iz Galerije ili Datoteka",
+        "fileType": "PNG, JPG, PDF ili MP4",
+        "openCamera": "Otvori kameru i snimi fotografiju",
+        "scanType": "Dopušteni su samo mikroskopski uzorci"
+      }
+    }
+  },
+  "home": {
+    "tab": "Početna",
+    "homeForeground": {
+      "maxNumberOfScans": "Dosegli ste svoj limit skenova! Nadogradite svoj plan sada da otključate više skenova. 🚀",
+      "heading": "Dobrodošli u MicroScan AI!",
+      "subHeading": "Dobijte AI-analizu bilo kojeg mikroskopskog uzorka u sekundama"
+    },
+    "scanCategories": {
+      "heading": "Mikroskopska traka"
+    },
+    "recentReports": {
+      "heading": "Nedavni razgovori",
+      "noReports": "Još nema razgovora za prikaz!"
+    }
+  },
+  "reports": {
+    "tab": "Povijest",
+    "noReportsAvailable": "Nema dostupne povijesti razgovora za ovaj datum",
+    "heading": "Povijest razgovora"
+  },
+  "chat": {
+    "tab": "Chat"
+  },
+  "settings": {
+    "tab": "Postavke",
+    "profile": "Profil",
+    "contactUs": "Kontaktirajte nas",
+    "about": "O nama",
+    "app_name": "Naziv aplikacije",
+    "languages": {
+      "english": "Engleski",
+      "mandarin_chinese": "Kineski",
+      "hindi": "Hindski",
+      "spanish_spain": "Španjolski (Španjolska)",
+      "spanish_mexico": "Španjolski (Meksiko)",
+      "arabic": "Arapski",
+      "french": "Francuski",
+      "french_canada": "Francuski (Kanada)",
+      "portuguese_brazil": "Portugalski (Brazil)",
+      "portuguese_portugal": "Portugalski (Portugal)",
+      "german": "Njemački",
+      "japanese": "Japanski",
+      "russian": "Ruski",
+      "korean": "Korejski",
+      "italian": "Talijanski",
+      "turkish": "Turski",
+      "vietnamese": "Vijetnamski",
+      "polish": "Poljski",
+      "ukrainian": "Ukrajinski",
+      "romanian": "Rumunjski",
+      "dutch": "Nizozemski",
+      "czech": "Češki",
+      "greek": "Grčki",
+      "swedish": "Švedski",
+      "hungarian": "Mađarski",
+      "thai": "Tajlandski",
+      "hebrew": "Hebrejski",
+      "indonesian": "Indonezijski",
+      "malay": "Malajski",
+      "finnish": "Finski",
+      "danish": "Danski",
+      "norwegian": "Norveški",
+      "slovak": "Slovački",
+      "croatian": "Hrvatski",
+      "catalan": "Katalonski"
+    },
+    "generale": "Općenito",
+    "github": "Github",
+    "language": "Jezik",
+    "links": "Poveznice",
+    "logout": "Odjava",
+    "more": "Više",
+    "privacy": "Pravila o privatnosti",
+    "faq": "Često postavljana pitanja",
+    "rate": "Ocijeni",
+    "share": "Podijeli",
+    "citations": "Citati za medicinske informacije",
+    "support": "Podrška",
+    "support_us": "Podržite nas",
+    "terms": "Uvjeti pružanja usluge",
+    "theme": {
+      "dark": "Tamna",
+      "light": "Svijetla",
+      "system": "Sustav",
+      "title": "Tema"
+    },
+    "title": "Postavke",
+    "version": "Verzija",
+    "website": "Web stranica",
+    "devMode": {
+      "title": "Developer mod",
+      "componentsLibrary": "UI biblioteka"
+    }
+  },
+  "components": {
+    "ReportCard": {
+      "rating": "Ocjena"
+    },
+    "ScanReportCard": {
+      "promptMessage": "Koji je razlog?",
+      "unnamedConversation": "Neimenovano",
+      "reportTitlePlaceholder": "Dodaj naslov"
+    },
+    "WeekBlock": {
+      "week": "Tjedan"
+    },
+    "EndScrollPlaceholder": {
+      "scrollToTop": "Pomakni se na vrh"
+    },
+    "FreeTierStatus": {
+      "heading": "Besplatni skenovi",
+      "subheading": "Otključajte neograničene skenove nadogradnjom svog plana",
+      "action": "Nadogradi"
+    },
+    "UploadFileOptionsModal": {
+      "heading": "Odaberi sliku / video"
+    },
+    "TapToViewLabel": {
+      "label": "Dodirni za pregled"
+    },
+    "UpgradeBanner": {
+      "heading": "Nadogradi Sada!",
+      "subheading": "Otključajte neograničene skenove nadogradnjom svog plana"
+    },
+    "PromptSection": {
+      "message": "Vaš sken je spreman! Sada, što biste željeli saznati?",
+      "prompts": {
+        "first": "Koje vrste stanica ili strukture su prisutne na ovoj slici?",
+        "second": "Ima li abnormalnosti ili patogena u ovom uzorku?",
+        "third": "Koje je vjerojatno podrijetlo ili stanje ovog uzorka?",
+        "fourth": "Koje uvide možete pružiti iz ove slike?"
+      }
+    },
+    "PremiumFeaturesOverview": {
+      "first": "AI-analiza za bilo koje mikroskopske uzorke",
+      "second": "Pristup svim premium značajkama",
+      "third": "Bez reklama"
+    },
+    "Input": {
+      "labels": {
+        "nickname": "Nadimak",
+        "email": "Email",
+        "emailVerification": "Verifikacija emaila"
+      }
+    },
+    "ImageAnnotationStudio": {
+      "instructions": {
+        "title": "Upute",
+        "first": "1. Dodirnite gumb 'Dodaj kvadrat' za kreiranje kvadratnog odabira.",
+        "second": "2. Povucite kvadrat preko svoje regije interesa.",
+        "third": "3. Podesite kutove kako biste precizno pokrili regiju."
+      },
+      "OpenStudioSection": {
+        "openStudioButton": "Otvori studio",
+        "editMore": "Uredi više",
+        "continueEditing": "Nastaviti uređivati svoje oznake?",
+        "highlightedRegionsCount": "Imate {{highlightedRegions}} označenih regija. Dodirnite ispod za dodavanje više",
+        "highlightRegions": "Trebate označiti regije svoje mikroskopske slike?"
+      },
+      "studioToolbar": {
+        "addSquare": "Dodaj kvadrat"
+      }
+    }
+  },
+  "alerts": {
+    "mediaPickerPermissions": "Nažalost, trebamo dopuštenja za kameru da bi ovo funkcioniralo!",
+    "errorSelectingImagePicker": "Nešto je pošlo po zlu pri odabiru slike. Molimo pokušajte ponovno.",
+    "errorSelectingDocumentPicker": "Nešto je pošlo po zlu pri odabiru dokumenta. Molimo pokušajte ponovno.",
+    "errorTakingPicture": "Nešto je pošlo po zlu pri snimanju fotografije. Molimo pokušajte ponovno.",
+    "enableNotifications": {
+      "heading": "Omogući obavijesti",
+      "subHeading": "Obavijesti su trenutno isključene. Kako biste ostali ažurirani, molimo omogućite ih u postavkama svog uređaja."
+    },
+    "enableNotificationFailed": "Push obavijesti su onemogućene. Omogućite ih u postavkama da primate važna ažuriranja!",
+    "enableNotificationError": "Došlo je do pogreške pri omogućavanju obavijesti",
+    "notificationDisabledSuccess": "Obavijesti su uspješno onemogućene.",
+    "notificationDisabledRegisterError": "Neuspješno odjavljivanje uređaja za obavijesti.",
+    "notificationDisabledError": "Došlo je do pogreške pri onemogućavanju obavijesti.",
+    "checkNotificationStatusError": "Pogreška pri provjeri statusa obavijesti.",
+    "projectIdNotFound": "ID projekta obavijesti nije pronađen.",
+    "imageSizeLarge": "Slika je prevelika! Veličina datoteke je {{fileSize}} MB, ali limit je {{imageLimit}} MB.",
+    "videoSizeLarge": "Video je prevelik! Veličina datoteke je {{fileSize}} MB, ali limit je {{videoLimit}} MB.",
+    "loggedInSuccess": "Uspješno prijavljeni",
+    "loggedOutSuccess": "Uspješno ste se odjavili!",
+    "sendVerificationCodeError": "Pogreška pri slanju verifikacijskog koda",
+    "validateAuthCodeError": "Pogreška pri validaciji auth koda",
+    "anonymousSignInError": "Pogreška pri anonimnoj prijavi",
+    "emailLoginError": "Pogreška pri prijavi",
+    "preferredLanguageError": "Pogreška pri ažuriranju korisničkog preferiranog jezika",
+    "sharingNotAvailable": "Dijeljenje trenutno nije dostupno na vašem uređaju",
+    "sharingLinkError": "Neuspješno dijeljenje veze.",
+    "individualPushNotificationSuccess": "Pojedinačne push obavijesti uspješno poslane!",
+    "globalPushNotificationSuccess": "Globalne push obavijesti uspješno poslane! 🌍🚀",
+    "interpretationFieldsUpdateFail": "Neuspješno ažuriranje polja interpretacije! ❌",
+    "deleteScanReportFail": "Nije moguće izbrisati izvještaj skeniranja. Molimo pokušajte ponovno",
+    "onboardingUnsuccessful": "Uvodni proces neuspješan. Molimo pokušajte ponovno",
+    "logoutUnsuccessful": "Odjava neuspješna. Molimo pokušajte ponovno",
+    "deleteScanReportQuestion": "Jeste li sigurni da želite trajno izbrisati ovaj izvještaj?",
+    "videoLimitExceeds": "Vaš video premašuje limit od {{videoSecondsLimit}} sekundi. Molimo skratite ga i ponovno učitajte",
+    "subscriptionActivated": "Vaša pretplata je uspješno aktivirana! Uživajte u svojim ekskluzivnim pogodnostima!",
+    "subscriptionCancelledByUser": "Otkazali ste transakciju. Slobodno pokušajte ponovno!",
+    "subscriptionActivationFailed": "Neuspješna aktivacija vaše pretplate. Molimo pokušajte ponovno",
+    "logoutQuestion": "Jeste li sigurni da se želite odjaviti?",
+    "noSubscriptionToRestore": "Ups! Čini se da trenutno nemate aktivnu pretplatu. Kako biste nastavili uživati u punom pristupu, molimo odaberite jedan od naših planova pretplate.",
+    "restorationSuccessful": "Vraćanje je bilo uspješno! Uživajte!",
+    "restorationError": "Došlo je do pogreške pri vraćanju kupnje.",
+    "medicalDisclaimerAlert": "MicroScan AI aplikacija ne nudi dijagnoze, preporuke liječenja ili bilo kakve medicinske savjete. Uvijek tražite smjernice od kvalificiranog zdravstvenog profesionalca za medicinske odluke.",
+    "scanLimitReached": "Optimiziramo kvalitetu skeniranja za vas! Moći ćete ponovno skenirati za otprilike {{hours}} sati i {{minutes}} minuta. Imate li pitanja o bilo kojoj mikroskopskoj temi? Pitajte našeg chat asistenta dok čekate!",
+    "chatAndMediaFilesLimit": "Poštovani korisniče, trebate nadograditi svoj plan kako biste imali koristi od neograničenih razgovora, neograničenih skenova, analize više slika i više. 🔓"
+  }
+}

@@ -1,0 +1,495 @@
+{
+  "onboarding": {
+    "message": "Witamy w MicroScan AI!"
+  },
+  "general": {
+    "back": "Wstecz",
+    "welcome": "Cześć",
+    "welcomeBack": "Witaj z powrotem!",
+    "welcomeMessage": "Witamy!",
+    "continue": "Kontynuuj",
+    "retry": "Spróbuj ponownie",
+    "close": "Zamknij",
+    "gallery": "Galeria",
+    "files": "Pliki",
+    "cancel": "Anuluj",
+    "delete": "Usuń",
+    "attention": "Uwaga!",
+    "new": "Nowy",
+    "yes": "Tak",
+    "or": "lub",
+    "typing": "Pisanie...",
+    "online": "Online",
+    "chatbotPlaceholder": "Zapytaj mnie o cokolwiek...",
+    "openSettings": "Otwórz Ustawienia",
+    "seeNotifications": "Zobacz powiadomienia",
+    "viewProfile": "Zobacz Profil",
+    "upgradePlan": "Ulepsz Plan",
+    "download": "Pobierz",
+    "share": "Udostępnij",
+    "shareLink": "Udostępnij Link",
+    "skip": "Pomiń",
+    "next": "Dalej",
+    "update": "Aktualizuj",
+    "tryAgain": "Spróbuj ponownie",
+    "createdAt": "Utworzono",
+    "and": "i",
+    "saveDiscount": "ZAPISZ",
+    "restorePurchase": "Przywróć zakup",
+    "medicalDisclaimer": "Zastrzeżenie medyczne",
+    "conversationHistory": "Historia rozmów",
+    "freeTrial": "Darmowy okres próbny",
+    "free": "DARMOWE",
+    "completedScans": "Ukończone skany",
+    "activeSubscription": "Subskrypcja aktywna",
+    "askAssistant": "Zapytaj asystenta AI",
+    "then": "następnie",
+    "perWeek": "na tydzień",
+    "perYear": "na rok",
+    "perMonth": "na miesiąc",
+    "tryForFree": "Wypróbuj Za Darmo",
+    "unlockNow": "Odblokuj Teraz",
+    "copyText": {
+      "loading": "Kopiowanie...",
+      "copied": "Skopiowano!",
+      "copy": "Kopiuj Link"
+    },
+    "loadingMessages": {
+      "initialAppLoad": {
+        "first": "Ładowanie Twojego spersonalizowanego doświadczenia...",
+        "second": "Synchronizacja systemów...",
+        "third": "Przetwarzanie Twoich danych...",
+        "fourth": "Prawie gotowe, chwileczkę..."
+      },
+      "imageScanningLoading": {
+        "first": "Skanowanie obrazu mikroskopii, proszę czekać...",
+        "second": "Analizowanie szczegółów, to może chwilę potrwać...",
+        "third": "Zwiększanie dokładności dla najlepszych wyników...",
+        "fourth": "Prawie gotowe, finalizowanie skanowania..."
+      },
+      "loadingChatbot": {
+        "first": "Aura przygotowuje się, aby Ci pomóc...",
+        "second": "Poczekaj! Aura przygotowuje Twoją odpowiedź...",
+        "third": "Myślenie... Twój asystent Aura nad tym pracuje!"
+      }
+    }
+  },
+  "backHandler": {
+    "holdOn": "Poczekaj!",
+    "goBackMessage": "Czy na pewno chcesz wrócić?"
+  },
+  "internet": {
+    "noConnectionTitle": "Jesteś offline!",
+    "noConnectionMessage": "Włącz dane komórkowe lub połącz się z Wi-Fi. Albo po prostu zrób przerwę i idź na spacer!"
+  },
+  "uploadScan": {
+    "title": "Prześlij obraz",
+    "scanNow": "Skanuj teraz"
+  },
+  "weekDays": {
+    "today": "Dziś",
+    "yesterday": "Wczoraj"
+  },
+  "auth": {
+    "verifyAuthCode": "Zweryfikuj kod uwierzytelniający",
+    "verifyAuthCodeButton": "Zweryfikuj kod",
+    "authCodeHeading": "Kod uwierzytelniający",
+    "loginViaEmailHeading": "Zalogujmy Cię. Wprowadź swój adres e-mail, aby kontynuować.",
+    "emailAddress": "E-mail"
+  },
+  "rootLayout": {
+    "screens": {
+      "welcome": {
+        "heading": "Witamy w MicroScan AI!",
+        "startButton": "Zaczynajmy!",
+        "accountButton": "Mam już konto"
+      },
+      "login": {
+        "agreeingMessage": "Kontynuując, zgadzasz się na nasze",
+        "termsAndConditions": "Warunki i Zasady",
+        "privacyPolicy": "Polityka Prywatności"
+      },
+      "verifyAuthCode": {
+        "verificationCodeHeading": "Wprowadź kod weryfikacyjny wysłany e-mailem. Kod wygaśnie za 5 minut.",
+        "verificationCodeSent": "Wysłaliśmy kod weryfikacyjny na adres",
+        "verificationCodeMissing": "Nie otrzymałeś kodu?",
+        "resendCode": "Wyślij kod ponownie",
+        "backToLogin": "Powrót do logowania"
+      },
+      "namePreferenceScreen": {
+        "heading": "Bezpieczny, pewny i prosty dostęp!",
+        "preferredNameQuestion": "Wybierz fajny pseudonim, aby zachować anonimowość — Twoja prywatność jest dla nas ważna",
+        "placeholderPreferredName": "Np. Kapitan Fajny, Królowa Pszczół, lub po prostu Alex!"
+      },
+      "freeTrialPreview": {
+        "heading": "Ciesz się darmowym okresem próbnym! 🎉",
+        "subheading": "Doświadcz tych niesamowitych korzyści podczas darmowego okresu próbnego",
+        "review": "Świetna analiza mikroskopii, asystent medyczny AI jest bardzo pomocny! Aplikacja must-have!",
+        "reviewTrust": "📈 Zaufane przez 3 252+ użytkowników"
+      },
+      "scanInterpretation": {
+        "title": "Wynik analizy",
+        "headerBackTitle": "Raporty"
+      },
+      "paywallOnboarding": {
+        "freeTierOfferings": {
+          "freeTrialEnabled": "Włączony darmowy okres próbny",
+          "heading": "Nielimitowany Dostęp",
+          "title": "Odblokuj Funkcje Premium Już Dziś!",
+          "firstOffering": "Dostęp do wszystkich funkcji premium",
+          "secondOffering": "Doświadczenie bez reklam",
+          "thirdOffering": "Nielimitowane skany mikroskopii",
+          "fourthOffering": "Nielimitowane czaty z asystentem AI 24/7"
+        }
+      },
+      "paywallUpgradeScreen": {
+        "heading": "Odblokuj Funkcje Premium Już Dziś!",
+        "firstOffering": {
+          "title": "Rozpocznij darmowy okres próbny",
+          "subtitle": "Ciesz się {{freeScans}} darmowymi skanami – bez płatności"
+        },
+        "secondOffering": {
+          "title": "Plan miesięczny",
+          "subtitle": "{{ price }}/miesiąc"
+        },
+        "thirdOffering": {
+          "title": "Plan roczny",
+          "subtitle": "{{ price }} rocznie"
+        },
+        "fourthOffering": {
+          "title": "{{trialDays}}-dniowy okres próbny",
+          "subtitle": "{{ price }} rocznie",
+          "plan": "Plan tygodniowy"
+        }
+      },
+      "newAppVersionScreen": {
+        "heading": "Dostępna jest nowa wersja MicroScan AI",
+        "subheading": "Zaktualizuj do najnowszej wersji, aby kontynuować korzystanie z aplikacji",
+        "action": "Pobierz teraz!"
+      },
+      "rateAppScreen": {
+        "heading": "Czy uważasz, że aplikacja jest wartościowa i angażująca?",
+        "like": "Tak, podoba mi się!",
+        "dislike": "Niezbyt..."
+      },
+      "noInternetScreen": {
+        "heading": "Jesteś offline",
+        "subheading": "Twoje połączenie wydaje się niestabilne. Sprawdź stan sieci"
+      },
+      "notifications": {
+        "title": "Powiadomienia",
+        "noNotifications": "Na razie brak powiadomień — czekaj na aktualizacje!"
+      },
+      "termsOfService": {
+        "title": "Warunki Usługi"
+      },
+      "privacyPolicy": {
+        "title": "Polityka Prywatności"
+      },
+      "share": {
+        "title": "Udostępnij",
+        "heading": "Udostępnij aplikację MicroScan AI",
+        "subheading": "Pomóż innym odkryć moc analizy mikroskopii napędzanej przez AI",
+        "scanMessage": "Zeskanuj, aby pobrać aplikację",
+        "shareMessage": "lub udostępnij przez ulubioną platformę"
+      },
+      "rate": {
+        "title": "Przekaż nam opinię!"
+      },
+      "profile": {
+        "title": "Profil",
+        "edit": "Edytuj Profil",
+        "placeholderPreferredName": "Np. Kapitan Fajny, Królowa Pszczół, lub po prostu Alex!"
+      },
+      "generateReportScreen": {
+        "title": "Dziękujemy za cierpliwość! Oto Twój raport AI.",
+        "userInput": "Twoje Zgłoszenie",
+        "medicalReport": "Raport Mikroskopii",
+        "report": "Wygenerowany przez AI Raport Mikroskopii",
+        "conversationName": "Nazwa rozmowy"
+      },
+      "verifyEmail": {
+        "heading": "Zweryfikuj e-mail"
+      },
+      "filePreviewScreen": {
+        "generateReportButton": "Rozpocznij Analizę"
+      },
+      "disclaimerScreen": {
+        "heading": "Ważne Zastrzeżenie",
+        "subheading": "MicroScan AI jest zaprojektowany dla profesjonalistów, badaczy, studentów i entuzjastów mikroskopii",
+        "consentAgreement": "Przeczytałem/am i zgadzam się z zastrzeżeniem.",
+        "firstConsent": "MicroScan AI nie zapewnia pomiarów zdrowotnych, diagnoz ani porad dotyczących leczenia i nie jest do tego przeznaczony. Użytkownicy MicroScan AI muszą zastosować własny osąd kliniczny i zweryfikować informacje z autorytatywnych źródeł przed podjęciem jakichkolwiek decyzji klinicznych.",
+        "secondConsent": "MicroScan AI nie jest narzędziem diagnostycznym, platformą leczenia ani zastępstwem profesjonalnej porady medycznej. Oferuje insighty generowane przez AI, aby wspomagać pracowników służby zdrowia w dostępie do wiedzy medycznej oraz analizie obrazów i dokumentów medycznych. MicroScan AI to napędzana przez AI aplikacja informacyjna i edukacyjna zaprojektowana głównie do wspierania licencjonowanych pracowników służby zdrowia.",
+        "fourthConsent": "MicroScan AI nie jest sklasyfikowany jako urządzenie medyczne i nie twierdzi, że ma aprobatę regulacyjną. Jest przeznaczony do celów edukacyjnych i informacyjnych, aby uzupełniać wiedzę fachową.",
+        "fifthConsent": "MicroScan AI nie gromadzi, nie przechowuje ani nie przetwarza danych osobowych lub pacjentów. Wszystkie interakcje użytkownika są poufne i ograniczone do zakresu aplikacji."
+      },
+      "contactUs": {
+        "heading": "Śmiało napisz do nas bezpośrednio, a nasz zespół odpowie tak szybko, jak to możliwe",
+        "customerSupport": "Wsparcie Klienta",
+        "emailAddress": "Adres e-mail"
+      },
+      "languageAnalysisModal": {
+        "languagePreferenceQuestion": "W jakim języku wolisz otrzymywać analizę AI?",
+        "languageSelection": "Wybierz język odpowiedzi AI",
+        "languageSearchCriteria": "Szukaj według języka, kodu kraju lub flagi",
+        "noLanguageFound": "Nie znaleziono języka",
+        "noLanguageFoundSubtitle": "Spróbuj zmodyfikować swoje kryteria wyszukiwania"
+      },
+      "chatScreen": {
+        "randomQuestions": {
+          "one": "Jakie są różnice między mikroskopią jasnego pola, kontrastu fazowego i DIC? 🔬",
+          "two": "Jak przygotowanie próbki może wpłynąć na rozdzielczość obrazu? 🧫",
+          "three": "Kiedy używać mikroskopii konfokalnej, a kiedy szerokopolowej? 🧠",
+          "fourth": "Jak zminimalizować wybielanie w obrazowaniu żywych komórek? ✨",
+          "five": "Jaki jest wpływ apertury numerycznej na rozdzielczość? 📐",
+          "six": "Jak prawidłowo wyregulować i skalibrować mikroskop? ⚙️",
+          "seven": "Które techniki zwiększają kontrast w niebarwionych preparatach? 🌈",
+          "eight": "Kiedy mikroskopia elektronowa jest lepsza od świetlnej? 🧲",
+          "nine": "Jak zapewnić powtarzalność w obrazowaniu ilościowym? 📊",
+          "ten": "Jakie są najlepsze praktyki używania olejku immersyjnego? 🛢️",
+          "eleven": "Jak dobrać fluorofory do obrazowania wielokanałowego? 🎇",
+          "twelve": "Dlaczego grubość próbki jest krytyczna dla obrazowania wysokiej rozdzielczości? 📚",
+          "thirteen": "Jak zminimalizować dryf i wibracje podczas obrazowania? 🌍",
+          "fourteen": "Jakie są właściwe metody przechowywania przygotowanych szkiełek? 📦",
+          "fifteen": "Które parametry zapewniają obrazy nadające się do publikacji? 📸"
+        }
+      }
+    }
+  },
+  "deleteApp": {
+    "title": "Czekaj! Nie usuwaj mnie!",
+    "subtitle": "Prześlij opinię zamiast tego"
+  },
+  "pdfPreview": {
+    "noEditorInstalled": "Aby wyświetlić podgląd PDF, upewnij się, że masz zainstalowany przeglądarkę PDF, taką jak Adobe Acrobat Reader lub Google PDF Viewer",
+    "conversationTitlePdf": "Rozmowa z Aurą, Twoim asystentem AI"
+  },
+  "flows": {
+    "createReport": {
+      "finalReportForeground": {
+        "message": "Dziękujemy za cierpliwość!"
+      },
+      "finalReportHeader": {
+        "message": "Oto wynik raportu!"
+      },
+      "uploadFile": {
+        "title": "Prześlij dowolną próbkę mikroskopii do analizy",
+        "size": "Maks.: {{imageLimit}}MB (obrazy), {{videoLimit}}MB (wideo)",
+        "location": "Wybierz z Galerii lub Plików",
+        "fileType": "PNG, JPG, PDF lub MP4",
+        "openCamera": "Otwórz Aparat i Zrób Zdjęcie",
+        "scanType": "Dozwolone tylko próbki mikroskopii"
+      }
+    }
+  },
+  "home": {
+    "tab": "Główna",
+    "homeForeground": {
+      "maxNumberOfScans": "Osiągnąłeś limit skanów! Ulepsz plan, aby odblokować więcej skanów. 🚀",
+      "heading": "Witamy w MicroScan AI!",
+      "subHeading": "Otrzymaj analizę dowolnych próbek mikroskopii wspieraną przez AI w kilka sekund"
+    },
+    "scanCategories": {
+      "heading": "Galeria Mikroskopii"
+    },
+    "recentReports": {
+      "heading": "Ostatnie Czaty",
+      "noReports": "Brak czatów do wyświetlenia!"
+    }
+  },
+  "reports": {
+    "tab": "Historia",
+    "noReportsAvailable": "Brak historii czatów na ten dzień",
+    "heading": "Historia Czatów"
+  },
+  "chat": {
+    "tab": "Czat"
+  },
+  "settings": {
+    "tab": "Ustawienia",
+    "profile": "Profil",
+    "contactUs": "Kontakt",
+    "about": "O aplikacji",
+    "app_name": "Nazwa Aplikacji",
+    "languages": {
+      "english": "Angielski",
+      "mandarin_chinese": "Chiński",
+      "hindi": "Hindi",
+      "spanish_spain": "Hiszpański (Hiszpania)",
+      "spanish_mexico": "Hiszpański (Meksyk)",
+      "arabic": "Arabski",
+      "french": "Francuski",
+      "french_canada": "Francuski (Kanada)",
+      "portuguese_brazil": "Portugalski (Brazylia)",
+      "portuguese_portugal": "Portugalski (Portugalia)",
+      "german": "Niemiecki",
+      "japanese": "Japoński",
+      "russian": "Rosyjski",
+      "korean": "Koreański",
+      "italian": "Włoski",
+      "turkish": "Turecki",
+      "vietnamese": "Wietnamski",
+      "polish": "Polski",
+      "ukrainian": "Ukraiński",
+      "romanian": "Rumuński",
+      "dutch": "Niderlandzki",
+      "czech": "Czeski",
+      "greek": "Grecki",
+      "swedish": "Szwedzki",
+      "hungarian": "Węgierski",
+      "thai": "Tajski",
+      "hebrew": "Hebrajski",
+      "indonesian": "Indonezyjski",
+      "malay": "Malajski",
+      "finnish": "Fiński",
+      "danish": "Duński",
+      "norwegian": "Norweski",
+      "slovak": "Słowacki",
+      "croatian": "Chorwacki",
+      "catalan": "Kataloński"
+    },
+    "generale": "Ogólne",
+    "github": "Github",
+    "language": "Język",
+    "links": "Linki",
+    "logout": "Wyloguj",
+    "more": "Więcej",
+    "privacy": "Polityka Prywatności",
+    "faq": "FAQ",
+    "rate": "Oceń",
+    "share": "Udostępnij",
+    "citations": "Cytowania informacji medycznych",
+    "support": "Wsparcie",
+    "support_us": "Wesprzyj Nas",
+    "terms": "Warunki Usługi",
+    "theme": {
+      "dark": "Ciemny",
+      "light": "Jasny",
+      "system": "Systemowy",
+      "title": "Motyw"
+    },
+    "title": "Ustawienia",
+    "version": "Wersja",
+    "website": "Strona Internetowa",
+    "devMode": {
+      "title": "Tryb deweloperski",
+      "componentsLibrary": "Biblioteka UI"
+    }
+  },
+  "components": {
+    "ReportCard": {
+      "rating": "Ocena"
+    },
+    "ScanReportCard": {
+      "promptMessage": "Jaki jest powód?",
+      "unnamedConversation": "Bez nazwy",
+      "reportTitlePlaceholder": "Dodaj tytuł"
+    },
+    "WeekBlock": {
+      "week": "Tydzień"
+    },
+    "EndScrollPlaceholder": {
+      "scrollToTop": "Przewiń do góry"
+    },
+    "FreeTierStatus": {
+      "heading": "Darmowe skany",
+      "subheading": "Odblokuj nielimitowane skany, ulepszając plan",
+      "action": "Ulepsz"
+    },
+    "UploadFileOptionsModal": {
+      "heading": "Wybierz obraz / wideo"
+    },
+    "TapToViewLabel": {
+      "label": "Dotknij, Aby Zobaczyć"
+    },
+    "UpgradeBanner": {
+      "heading": "Ulepsz Teraz!",
+      "subheading": "Odblokuj nielimitowane skany, ulepszając plan"
+    },
+    "PromptSection": {
+      "message": "Twój skan jest gotowy! Co chciałbyś teraz sprawdzić?",
+      "prompts": {
+        "first": "Jakie typy komórek lub struktury są obecne na tym obrazie?",
+        "second": "Czy w tej próbce są jakieś nieprawidłowości lub patogeny?",
+        "third": "Jakie jest prawdopodobne pochodzenie lub stan tej próbki?",
+        "fourth": "Jakie insighty możesz dostarczyć na podstawie tego obrazu?"
+      }
+    },
+    "PremiumFeaturesOverview": {
+      "first": "Analiza wspierana przez AI dla dowolnych próbek mikroskopii",
+      "second": "Dostęp do wszystkich funkcji premium",
+      "third": "Brak reklam"
+    },
+    "Input": {
+      "labels": {
+        "nickname": "Pseudonim",
+        "email": "E-mail",
+        "emailVerification": "Weryfikacja E-mail"
+      }
+    },
+    "ImageAnnotationStudio": {
+      "instructions": {
+        "title": "Instrukcje",
+        "first": "1. Stuknij przycisk 'Dodaj Kwadrat', aby utworzyć kwadrat wyboru.",
+        "second": "2. Przeciągnij kwadrat nad obszar zainteresowania.",
+        "third": "3. Dostosuj rogi, aby precyzyjnie pokryć region."
+      },
+      "OpenStudioSection": {
+        "openStudioButton": "Otwórz Studio",
+        "editMore": "Edytuj Więcej",
+        "continueEditing": "Kontynuować edycję adnotacji?",
+        "highlightedRegionsCount": "Masz {{highlightedRegions}} podświetlone regiony. Stuknij poniżej, aby dodać więcej",
+        "highlightRegions": "Chcesz podświetlić regiony na obrazie mikroskopii?"
+      },
+      "studioToolbar": {
+        "addSquare": "Dodaj Kwadrat"
+      }
+    }
+  },
+  "alerts": {
+    "mediaPickerPermissions": "Przepraszamy, potrzebujemy uprawnień do kamery, aby to działało!",
+    "errorSelectingImagePicker": "Coś poszło nie tak podczas wybierania obrazu. Spróbuj ponownie.",
+    "errorSelectingDocumentPicker": "Coś poszło nie tak podczas wybierania dokumentu. Spróbuj ponownie.",
+    "errorTakingPicture": "Coś poszło nie tak podczas robienia zdjęcia. Spróbuj ponownie.",
+    "enableNotifications": {
+      "heading": "Włącz Powiadomienia",
+      "subHeading": "Powiadomienia są obecnie wyłączone. Aby być na bieżąco, włącz je w ustawieniach urządzenia."
+    },
+    "enableNotificationFailed": "Powiadomienia push są wyłączone. Włącz je w ustawieniach, aby otrzymywać ważne aktualizacje!",
+    "enableNotificationError": "Wystąpił błąd podczas włączania powiadomień",
+    "notificationDisabledSuccess": "Powiadomienia wyłączone pomyślnie.",
+    "notificationDisabledRegisterError": "Nie udało się wyrejestrować urządzenia z powiadomień.",
+    "notificationDisabledError": "Wystąpił błąd podczas wyłączania powiadomień.",
+    "checkNotificationStatusError": "Błąd sprawdzania statusu powiadomień.",
+    "projectIdNotFound": "Nie znaleziono ID projektu powiadomień.",
+    "imageSizeLarge": "Obraz jest za duży! Rozmiar pliku to {{fileSize}} MB, ale limit to {{imageLimit}} MB.",
+    "videoSizeLarge": "Wideo jest za duże! Rozmiar pliku to {{fileSize}} MB, ale limit to {{videoLimit}} MB.",
+    "loggedInSuccess": "Pomyślnie zalogowano",
+    "loggedOutSuccess": "Zostałeś pomyślnie wylogowany!",
+    "sendVerificationCodeError": "Błąd podczas wysyłania kodu weryfikacyjnego",
+    "validateAuthCodeError": "Błąd podczas walidacji kodu uwierzytelniającego",
+    "anonymousSignInError": "Błąd logowania anonimowego",
+    "emailLoginError": "Błąd podczas logowania",
+    "preferredLanguageError": "Błąd podczas aktualizowania preferowanego języka użytkownika",
+    "sharingNotAvailable": "Udostępnianie jest obecnie niedostępne na Twoim urządzeniu",
+    "sharingLinkError": "Nie udało się udostępnić linku.",
+    "individualPushNotificationSuccess": "Indywidualne powiadomienia push wysłane pomyślnie!",
+    "globalPushNotificationSuccess": "Globalne powiadomienia push wysłane pomyślnie! 🌍🚀",
+    "interpretationFieldsUpdateFail": "Nie udało się zaktualizować pól interpretacji! ❌",
+    "deleteScanReportFail": "Nie można usunąć raportu skanowania. Spróbuj ponownie",
+    "onboardingUnsuccessful": "Rejestracja nieudana. Spróbuj ponownie",
+    "logoutUnsuccessful": "Wylogowanie nieudane. Spróbuj ponownie",
+    "deleteScanReportQuestion": "Czy na pewno chcesz trwale usunąć ten raport?",
+    "videoLimitExceeds": "Twoje wideo przekracza limit {{videoSecondsLimit}} sekund. Przytnij je i prześlij ponownie",
+    "subscriptionActivated": "Twoja subskrypcja została pomyślnie aktywowana! Ciesz się ekskluzywnymi korzyściami!",
+    "subscriptionCancelledByUser": "Anulowałeś transakcję. Śmiało spróbuj ponownie!",
+    "subscriptionActivationFailed": "Nie udało się aktywować subskrypcji. Spróbuj ponownie",
+    "logoutQuestion": "Czy na pewno chcesz się wylogować?",
+    "noSubscriptionToRestore": "Ups! Wygląda na to, że nie masz aktywnej subskrypcji. Aby kontynuować cieszenie się pełnym dostępem, wybierz jeden z naszych planów subskrypcyjnych.",
+    "restorationSuccessful": "Przywrócenie zakończyło się sukcesem! Ciesz się!",
+    "restorationError": "Wystąpił błąd podczas przywracania zakupu.",
+    "medicalDisclaimerAlert": "Aplikacja MicroScan AI nie oferuje diagnoz, zaleceń leczenia ani żadnych porad medycznych. Zawsze zasięgaj porady wykwalifikowanego pracownika służby zdrowia w sprawach decyzji medycznych.",
+    "scanLimitReached": "Optymalizujemy dla Ciebie jakość skanów! Będziesz mógł skanować ponownie za około {{hours}} godzin i {{minutes}} minut. Masz pytania dotyczące mikroskopii? Zapytaj naszego asystenta czatu, czekając!",
+    "chatAndMediaFilesLimit": "Drogi użytkowniku, musisz ulepszyć plan, aby korzystać z nielimitowanych czatów, nielimitowanych skanów, analizy wielu obrazów i nie tylko. 🔓"
+  }
+}

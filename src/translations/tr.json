@@ -1,0 +1,495 @@
+{
+  "onboarding": {
+    "message": "MicroScan AI'ya Hoş Geldiniz!"
+  },
+  "general": {
+    "back": "Geri",
+    "welcome": "Merhaba",
+    "welcomeBack": "Tekrar Hoş Geldiniz!",
+    "welcomeMessage": "Hoş Geldiniz!",
+    "continue": "Devam Et",
+    "retry": "Yeniden Dene",
+    "close": "Kapat",
+    "gallery": "Galeri",
+    "files": "Dosyalar",
+    "cancel": "İptal",
+    "delete": "Sil",
+    "attention": "Dikkat!",
+    "new": "Yeni",
+    "yes": "Evet",
+    "or": "veya",
+    "typing": "Yazıyor...",
+    "online": "Çevrimiçi",
+    "chatbotPlaceholder": "Bana her şeyi sor...",
+    "openSettings": "Ayarları Aç",
+    "seeNotifications": "Bildirimleri Gör",
+    "viewProfile": "Profili Görüntüle",
+    "upgradePlan": "Planı Yükselt",
+    "download": "İndir",
+    "share": "Paylaş",
+    "shareLink": "Bağlantıyı Paylaş",
+    "skip": "Atla",
+    "next": "İleri",
+    "update": "Güncelle",
+    "tryAgain": "Yeniden Dene",
+    "createdAt": "Oluşturulma Tarihi",
+    "and": "ve",
+    "saveDiscount": "KAYDET",
+    "restorePurchase": "Satın Alma İşlemini Geri Yükle",
+    "medicalDisclaimer": "Tıbbi Sorumluluk Reddi",
+    "conversationHistory": "Sohbet Geçmişi",
+    "freeTrial": "Ücretsiz Deneme",
+    "free": "ÜCRETSİZ",
+    "completedScans": "Tamamlanan taramalar",
+    "activeSubscription": "Aktif abonelik",
+    "askAssistant": "AI asistanına sor",
+    "then": "sonra",
+    "perWeek": "haftalık",
+    "perYear": "yıllık",
+    "perMonth": "aylık",
+    "tryForFree": "Ücretsiz Dene",
+    "unlockNow": "Şimdi Kilidi Aç",
+    "copyText": {
+      "loading": "Kopyalanıyor...",
+      "copied": "Kopyalandı!",
+      "copy": "Bağlantıyı Kopyala"
+    },
+    "loadingMessages": {
+      "initialAppLoad": {
+        "first": "Kişiselleştirilmiş deneyiminiz yükleniyor...",
+        "second": "Sistemler senkronize ediliyor...",
+        "third": "Verileriniz işleniyor...",
+        "fourth": "Neredeyse hazır, sadece bir dakika..."
+      },
+      "imageScanningLoading": {
+        "first": "Mikroskopi görüntünüz taranıyor, lütfen bekleyin...",
+        "second": "Detaylar analiz ediliyor, bu biraz zaman alabilir...",
+        "third": "En iyi sonuçlar için doğruluk artırılıyor...",
+        "fourth": "Neredeyse bitti, tarama sonlandırılıyor..."
+      },
+      "loadingChatbot": {
+        "first": "Aura size yardım etmek için hazırlanıyor...",
+        "second": "Bekleyin! Aura cevabınızı hazırlıyor...",
+        "third": "Düşünüyorum... asistanınız Aura üzerinde çalışıyor!"
+      }
+    }
+  },
+  "backHandler": {
+    "holdOn": "Bekleyin!",
+    "goBackMessage": "Geri dönmek istediğinizden emin misiniz?"
+  },
+  "internet": {
+    "noConnectionTitle": "Çevrimdışısınız!",
+    "noConnectionMessage": "Mobil veriyi açın veya Wi-Fi'ye bağlanın. Ya da mola verip yürüyüşe çıkın!"
+  },
+  "uploadScan": {
+    "title": "Görsel yükle",
+    "scanNow": "Şimdi tara"
+  },
+  "weekDays": {
+    "today": "Bugün",
+    "yesterday": "Dün"
+  },
+  "auth": {
+    "verifyAuthCode": "Kimlik doğrulama kodunu doğrula",
+    "verifyAuthCodeButton": "Kodu doğrula",
+    "authCodeHeading": "Kimlik doğrulama kodu",
+    "loginViaEmailHeading": "Giriş yapalım. Devam etmek için lütfen e-postanızı girin.",
+    "emailAddress": "E-posta"
+  },
+  "rootLayout": {
+    "screens": {
+      "welcome": {
+        "heading": "MicroScan AI'ya Hoş Geldiniz!",
+        "startButton": "Hadi Başlayalım!",
+        "accountButton": "Zaten bir hesabım var"
+      },
+      "login": {
+        "agreeingMessage": "Devam ederek şunları kabul etmiş olursunuz",
+        "termsAndConditions": "Hüküm ve Koşullar",
+        "privacyPolicy": "Gizlilik Politikası"
+      },
+      "verifyAuthCode": {
+        "verificationCodeHeading": "E-posta ile gönderilen doğrulama kodunuzu girin. Lütfen dikkat, kod 5 dakika içinde sona erecek.",
+        "verificationCodeSent": "Doğrulama kodunu şu adrese gönderdik:",
+        "verificationCodeMissing": "Kodu almadınız mı?",
+        "resendCode": "Kodu yeniden gönder",
+        "backToLogin": "Girişe Geri Dön"
+      },
+      "namePreferenceScreen": {
+        "heading": "Güvenli, korumalı, basit erişim!",
+        "preferredNameQuestion": "Anonim kalmak için eğlenceli bir takma ad seçin - gizliliğiniz bizim için önemli",
+        "placeholderPreferredName": "Örn: Kaptan Süper, Kraliçe Arı, ya da sadece Alex!"
+      },
+      "freeTrialPreview": {
+        "heading": "Ücretsiz deneme sürümünüzün tadını çıkarın! 🎉",
+        "subheading": "Ücretsiz deneme süreniz boyunca bu harika faydaları deneyimleyin",
+        "review": "Harika mikroskopi analizi, AI tıbbi sohbet asistanı süper yardımcı! Olmazsa olmaz bir uygulama!",
+        "reviewTrust": "📈 3.252'den fazla kullanıcı tarafından güveniliyor"
+      },
+      "scanInterpretation": {
+        "title": "Analiz sonucu",
+        "headerBackTitle": "Raporlar"
+      },
+      "paywallOnboarding": {
+        "freeTierOfferings": {
+          "freeTrialEnabled": "Ücretsiz Deneme Etkin",
+          "heading": "Sınırsız Erişim",
+          "title": "Premium Özellikleri Bugün Açın!",
+          "firstOffering": "Tüm Premium Özelliklere Erişim",
+          "secondOffering": "Reklamsız Deneyim",
+          "thirdOffering": "Sınırsız mikroskopi taraması",
+          "fourthOffering": "7/24 AI asistanı ile sınırsız sohbet"
+        }
+      },
+      "paywallUpgradeScreen": {
+        "heading": "Premium Özellikleri Bugün Açın!",
+        "firstOffering": {
+          "title": "Ücretsiz Denemeyi Başlat",
+          "subtitle": "{{freeScans}} ücretsiz tarama kullanın - ödeme yok"
+        },
+        "secondOffering": {
+          "title": "Aylık Plan",
+          "subtitle": "{{ price }}/ay"
+        },
+        "thirdOffering": {
+          "title": "Yıllık Plan",
+          "subtitle": "{{ price }} yıllık"
+        },
+        "fourthOffering": {
+          "title": "{{trialDays}} Günlük Deneme",
+          "subtitle": "{{ price }} yıllık",
+          "plan": "Haftalık Plan"
+        }
+      },
+      "newAppVersionScreen": {
+        "heading": "MicroScan AI'nın yeni bir sürümü mevcut",
+        "subheading": "Uygulamayı kullanmaya devam etmek için lütfen en son sürüme güncelleyin",
+        "action": "Hemen Alın!"
+      },
+      "rateAppScreen": {
+        "heading": "Uygulamayı değerli ve ilgi çekici buluyor musunuz?",
+        "like": "Evet, beğendim!",
+        "dislike": "Pek sayılmaz..."
+      },
+      "noInternetScreen": {
+        "heading": "Çevrimdışısınız",
+        "subheading": "Bağlantınız kararsız görünüyor. Lütfen ağ durumunuzu kontrol edin"
+      },
+      "notifications": {
+        "title": "Bildirimler",
+        "noNotifications": "Şu anda hiç bildirim yok - güncellemeler için bizi takip edin!"
+      },
+      "termsOfService": {
+        "title": "Hizmet Şartları"
+      },
+      "privacyPolicy": {
+        "title": "Gizlilik Politikası"
+      },
+      "share": {
+        "title": "Paylaş",
+        "heading": "MicroScan AI Uygulamasını Paylaşın",
+        "subheading": "Diğerlerinin AI destekli mikroskopi analizinin gücünü keşfetmesine yardım edin",
+        "scanMessage": "Uygulamayı indirmek için tara",
+        "shareMessage": "veya favori platformunuz üzerinden paylaşın"
+      },
+      "rate": {
+        "title": "Bize geri bildirim verin!"
+      },
+      "profile": {
+        "title": "Profil",
+        "edit": "Profili Düzenle",
+        "placeholderPreferredName": "Örn: Kaptan Süper, Kraliçe Arı, ya da sadece Alex!"
+      },
+      "generateReportScreen": {
+        "title": "Sabrınız için teşekkür ederiz! İşte AI raporunuz.",
+        "userInput": "Gönderiminiz",
+        "medicalReport": "Mikroskopi Raporu",
+        "report": "AI Tarafından Oluşturulan Mikroskopi Raporu",
+        "conversationName": "Sohbet adı"
+      },
+      "verifyEmail": {
+        "heading": "E-postayı doğrula"
+      },
+      "filePreviewScreen": {
+        "generateReportButton": "Analizi Başlat"
+      },
+      "disclaimerScreen": {
+        "heading": "Önemli Sorumluluk Reddi",
+        "subheading": "MicroScan AI mikroskopi profesyonelleri, araştırmacılar, öğrenciler ve meraklılar için tasarlanmıştır",
+        "consentAgreement": "Sorumluluk reddini okudum ve kabul ediyorum.",
+        "firstConsent": "MicroScan AI sağlık ölçümleri, teşhisler veya tedavi tavsiyeleri sağlamaz ve bu amaçlar için tasarlanmamıştır. MicroScan AI kullanıcıları herhangi bir klinik karar vermeden önce kendi klinik muhakemelerini uygulamalı ve bilgileri yetkili kaynaklardan doğrulamalıdır.",
+        "secondConsent": "MicroScan AI bir teşhis aracı, tedavi platformu veya profesyonel tıbbi tavsiyenin yerini tutmaz. Sağlık profesyonellerinin tıbbi bilgilere erişmesine ve tıbbi görüntüleri ve belgeleri analiz etmesine yardımcı olmak için AI tarafından oluşturulan içgörüler sunar. MicroScan AI, lisanslı sağlık profesyonellerini desteklemek için tasarlanmış AI destekli bilgilendirici ve eğitici bir uygulamadır.",
+        "fourthConsent": "MicroScan AI tıbbi cihaz olarak sınıflandırılmaz ve düzenleyici onay iddiasında bulunmaz. Profesyonel uzmanlığı tamamlamak için eğitim ve bilgilendirme amaçlıdır.",
+        "fifthConsent": "MicroScan AI kişisel veya hasta verilerini toplamaz, depolamaz veya işlemez. Tüm kullanıcı etkileşimleri gizlidir ve uygulamanın kapsamıyla sınırlıdır."
+      },
+      "contactUs": {
+        "heading": "Bizimle doğrudan e-posta göndermekten çekinmeyin, ekibimiz en kısa sürede size dönüş yapacaktır",
+        "customerSupport": "Müşteri Desteği",
+        "emailAddress": "E-posta Adresi"
+      },
+      "languageAnalysisModal": {
+        "languagePreferenceQuestion": "AI analizi için hangi dili tercih edersiniz?",
+        "languageSelection": "AI yanıtları için bir dil seçin",
+        "languageSearchCriteria": "Dil, ülke kodu veya bayrağa göre ara",
+        "noLanguageFound": "Dil Bulunamadı",
+        "noLanguageFoundSubtitle": "Arama terimlerinizi değiştirmeyi deneyin"
+      },
+      "chatScreen": {
+        "randomQuestions": {
+          "one": "Aydınlık alan, faz kontrastı ve DIC arasındaki farklar nelerdir? 🔬",
+          "two": "Numune hazırlama görüntü çözünürlüğünü nasıl etkileyebilir? 🧫",
+          "three": "Ne zaman konfokal yerine geniş alan mikroskopisini kullanmalıyım? 🧠",
+          "four": "Canlı hücre görüntülemede fotobozulma nasıl en aza indirilir? ✨",
+          "five": "Sayısal açıklığın çözünürlük üzerindeki etkisi nedir? 📐",
+          "six": "Bir mikroskop nasıl doğru şekilde hizalanır ve kalibre edilir? ⚙️",
+          "seven": "Boyanmamış numunelerde kontrastı hangi teknikler artırır? 🌈",
+          "eight": "Ne zaman elektron mikroskobu ışık mikroskobuna tercih edilir? 🧲",
+          "nine": "Kantitatif görüntülemede tekrarlanabilirliği nasıl sağlarım? 📊",
+          "ten": "Immersiyon yağı kullanımı için en iyi uygulamalar nelerdir? 🛢️",
+          "eleven": "Çok kanallı görüntüleme için floroforları nasıl seçerim? 🎇",
+          "twelve": "Numune kalınlığı neden yüksek çözünürlüklü görüntüleme için kritiktir? 📚",
+          "thirteen": "Görüntüleme sırasında sürüklenme ve titreşim nasıl en aza indirilir? 🌍",
+          "fourteen": "Hazırlanmış lamlar için uygun depolama yöntemleri nelerdir? 📦",
+          "fifteen": "Yayın kalitesinde görüntüler için hangi parametreler gereklidir? 📸"
+        }
+      }
+    }
+  },
+  "deleteApp": {
+    "title": "Bekleyin! Beni silmeyin!",
+    "subtitle": "Bunun yerine geri bildirim gönderin"
+  },
+  "pdfPreview": {
+    "noEditorInstalled": "PDF'yi önizlemek için Adobe Acrobat Reader veya Google PDF Viewer gibi bir PDF görüntüleyici yüklediğinizden emin olun",
+    "conversationTitlePdf": "AI asistanınız Aura ile sohbet"
+  },
+  "flows": {
+    "createReport": {
+      "finalReportForeground": {
+        "message": "Sabrınız için teşekkürler!"
+      },
+      "finalReportHeader": {
+        "message": "Bu raporun sonucu!"
+      },
+      "uploadFile": {
+        "title": "Analiz için herhangi bir mikroskopi numunesi yükleyin",
+        "size": "Maks: {{imageLimit}}MB (görseller), {{videoLimit}}MB (videolar)",
+        "location": "Galeriden veya Dosyalardan seçin",
+        "fileType": "PNG, JPG, PDF veya MP4",
+        "openCamera": "Kamerayı Aç ve Fotoğraf Çek",
+        "scanType": "Sadece mikroskopi numunelerine izin verilir"
+      }
+    }
+  },
+  "home": {
+    "tab": "Ana Sayfa",
+    "homeForeground": {
+      "maxNumberOfScans": "Tarama limitinize ulaştınız! Daha fazla taramanın kilidini açmak için planınızı yükseltin. 🚀",
+      "heading": "MicroScan AI'ya Hoş Geldiniz!",
+      "subHeading": "Herhangi bir mikroskopi numunesinin AI destekli analizini saniyeler içinde alın"
+    },
+    "scanCategories": {
+      "heading": "Mikroskopi Koleksiyonu"
+    },
+    "recentReports": {
+      "heading": "Son Sohbetler",
+      "noReports": "Henüz gösterilecek sohbet yok!"
+    }
+  },
+  "reports": {
+    "tab": "Geçmiş",
+    "noReportsAvailable": "Bu tarih için sohbet geçmişi mevcut değil",
+    "heading": "Sohbet Geçmişi"
+  },
+  "chat": {
+    "tab": "Sohbet"
+  },
+  "settings": {
+    "tab": "Ayarlar",
+    "profile": "Profil",
+    "contactUs": "Bize Ulaşın",
+    "about": "Hakkında",
+    "app_name": "Uygulama Adı",
+    "languages": {
+      "english": "İngilizce",
+      "mandarin_chinese": "Çince",
+      "hindi": "Hintçe",
+      "spanish_spain": "İspanyolca (İspanya)",
+      "spanish_mexico": "İspanyolca (Meksika)",
+      "arabic": "Arapça",
+      "french": "Fransızca",
+      "french_canada": "Fransızca (Kanada)",
+      "portuguese_brazil": "Portekizce (Brezilya)",
+      "portuguese_portugal": "Portekizce (Portekiz)",
+      "german": "Almanca",
+      "japanese": "Japonca",
+      "russian": "Rusça",
+      "korean": "Korece",
+      "italian": "İtalyanca",
+      "turkish": "Türkçe",
+      "vietnamese": "Vietnamca",
+      "polish": "Lehçe",
+      "ukrainian": "Ukraynaca",
+      "romanian": "Romence",
+      "dutch": "Felemenkçe",
+      "czech": "Çekçe",
+      "greek": "Yunanca",
+      "swedish": "İsveççe",
+      "hungarian": "Macarca",
+      "thai": "Tayca",
+      "hebrew": "İbranice",
+      "indonesian": "Endonezce",
+      "malay": "Malayca",
+      "finnish": "Fince",
+      "danish": "Danca",
+      "norwegian": "Norveççe",
+      "slovak": "Slovakça",
+      "croatian": "Hırvatça",
+      "catalan": "Katalanca"
+    },
+    "generale": "Genel",
+    "github": "Github",
+    "language": "Dil",
+    "links": "Bağlantılar",
+    "logout": "Çıkış Yap",
+    "more": "Daha Fazla",
+    "privacy": "Gizlilik Politikası",
+    "faq": "SSS",
+    "rate": "Değerlendir",
+    "share": "Paylaş",
+    "citations": "Tıbbi bilgi alıntıları",
+    "support": "Destek",
+    "support_us": "Bizi Destekleyin",
+    "terms": "Hizmet Şartları",
+    "theme": {
+      "dark": "Koyu",
+      "light": "Açık",
+      "system": "Sistem",
+      "title": "Tema"
+    },
+    "title": "Ayarlar",
+    "version": "Sürüm",
+    "website": "Web Sitesi",
+    "devMode": {
+      "title": "Geliştirici modu",
+      "componentsLibrary": "UI kütüphanesi"
+    }
+  },
+  "components": {
+    "ReportCard": {
+      "rating": "Değerlendirme"
+    },
+    "ScanReportCard": {
+      "promptMessage": "Sebep nedir?",
+      "unnamedConversation": "İsimsiz",
+      "reportTitlePlaceholder": "Başlık ekle"
+    },
+    "WeekBlock": {
+      "week": "Hafta"
+    },
+    "EndScrollPlaceholder": {
+      "scrollToTop": "Yukarı Kaydır"
+    },
+    "FreeTierStatus": {
+      "heading": "Ücretsiz taramalar",
+      "subheading": "Planınızı yükselterek sınırsız taramanın kilidini açın",
+      "action": "Yükselt"
+    },
+    "UploadFileOptionsModal": {
+      "heading": "Bir resim / video seçin"
+    },
+    "TapToViewLabel": {
+      "label": "Görüntülemek için dokunun"
+    },
+    "UpgradeBanner": {
+      "heading": "Hemen Yükseltin!",
+      "subheading": "Planınızı yükselterek sınırsız taramanın kilidini açın"
+    },
+    "PromptSection": {
+      "message": "Taramalarınız hazır! Şimdi ne öğrenmek istiyorsunuz?",
+      "prompts": {
+        "first": "Bu görselde hangi hücre tipleri veya yapılar bulunuyor?",
+        "second": "Bu numunede herhangi bir anormallik veya patojen var mı?",
+        "third": "Bu numunenin olası kökeni veya durumu nedir?",
+        "fourth": "Bu görselden hangi içgörüleri sağlayabilirsiniz?"
+      }
+    },
+    "PremiumFeaturesOverview": {
+      "first": "Tüm mikroskopi numuneleri için AI destekli analiz",
+      "second": "Tüm premium özelliklere erişim",
+      "third": "Reklam yok"
+    },
+    "Input": {
+      "labels": {
+        "nickname": "Takma ad",
+        "email": "E-posta",
+        "emailVerification": "E-posta Doğrulama"
+      }
+    },
+    "ImageAnnotationStudio": {
+      "instructions": {
+        "title": "Talimatlar",
+        "first": "1. Bir seçim karesi oluşturmak için 'Kare Ekle' düğmesine dokunun.",
+        "second": "2. Kareyi ilgi alanınızın üzerine sürükleyin.",
+        "third": "3. Alanı tam olarak kaplamak için köşeleri ayarlayın."
+      },
+      "OpenStudioSection": {
+        "openStudioButton": "Stüdyoyu Aç",
+        "editMore": "Daha Fazla Düzenle",
+        "continueEditing": "Açıklamalarınızı düzenlemeye devam edilsin mi?",
+        "highlightedRegionsCount": "{{highlightedRegions}} vurgulanmış bölgeniz var. Daha fazla eklemek için aşağıya dokunun",
+        "highlightRegions": "Mikroskopi görüntünüzün bölgelerini vurgulamanız mı gerekiyor?"
+      },
+      "studioToolbar": {
+        "addSquare": "Kare Ekle"
+      }
+    }
+  },
+  "alerts": {
+    "mediaPickerPermissions": "Üzgünüz, bunun çalışması için kamera izinlerine ihtiyacımız var!",
+    "errorSelectingImagePicker": "Görsel seçilirken bir şeyler yanlış gitti. Lütfen tekrar deneyin.",
+    "errorSelectingDocumentPicker": "Belge seçilirken bir şeyler yanlış gitti. Lütfen tekrar deneyin.",
+    "errorTakingPicture": "Fotoğraf çekilirken bir şeyler yanlış gitti. Lütfen tekrar deneyin.",
+    "enableNotifications": {
+      "heading": "Bildirimleri Etkinleştir",
+      "subHeading": "Bildirimler şu anda kapalı. Güncel kalmak için lütfen cihaz ayarlarınızdan etkinleştirin."
+    },
+    "enableNotificationFailed": "Push bildirimleri devre dışı. Önemli güncellemeleri almak için ayarlardan etkinleştirin!",
+    "enableNotificationError": "Bildirimler etkinleştirilirken bir hata oluştu",
+    "notificationDisabledSuccess": "Bildirimler başarıyla devre dışı bırakıldı.",
+    "notificationDisabledRegisterError": "Bildirimler için cihaz kaydı kaldırılamadı.",
+    "notificationDisabledError": "Bildirimler devre dışı bırakılırken bir hata oluştu.",
+    "checkNotificationStatusError": "Bildirim durumu kontrol edilirken hata.",
+    "projectIdNotFound": "Bildirim proje kimliği bulunamadı.",
+    "imageSizeLarge": "Görsel çok büyük! Dosya boyutu {{fileSize}} MB, ancak limit {{imageLimit}} MB.",
+    "videoSizeLarge": "Video çok büyük! Dosya boyutu {{fileSize}} MB, ancak limit {{videoLimit}} MB.",
+    "loggedInSuccess": "Başarıyla giriş yapıldı",
+    "loggedOutSuccess": "Başarıyla çıkış yaptınız!",
+    "sendVerificationCodeError": "Doğrulama kodu gönderilirken hata",
+    "validateAuthCodeError": "Kimlik doğrulama kodu doğrulanırken hata",
+    "anonymousSignInError": "Anonim giriş yapılırken hata",
+    "emailLoginError": "Giriş yapılırken hata",
+    "preferredLanguageError": "Kullanıcının tercih edilen dili güncellenirken hata",
+    "sharingNotAvailable": "Paylaşım şu anda cihazınızda kullanılamıyor",
+    "sharingLinkError": "Bağlantı paylaşılamadı.",
+    "individualPushNotificationSuccess": "Bireysel push bildirimleri başarıyla gönderildi!",
+    "globalPushNotificationSuccess": "Küresel push bildirimleri başarıyla gönderildi! 🌍🚀",
+    "interpretationFieldsUpdateFail": "Yorum alanları güncellenemedi! ❌",
+    "deleteScanReportFail": "Tarama raporu silinemiyor. Lütfen tekrar deneyin",
+    "onboardingUnsuccessful": "Hoş geldiniz süreci başarısız. Lütfen tekrar deneyin",
+    "logoutUnsuccessful": "Çıkış başarısız. Lütfen tekrar deneyin",
+    "deleteScanReportQuestion": "Bu raporu kalıcı olarak silmek istediğinizden emin misiniz?",
+    "videoLimitExceeds": "Videonuz {{videoSecondsLimit}} saniyelik limiti aşıyor. Lütfen kırpın ve yeniden yükleyin",
+    "subscriptionActivated": "Aboneliğiniz başarıyla etkinleştirildi! Özel faydalarınızın tadını çıkarın!",
+    "subscriptionCancelledByUser": "İşlemi iptal ettiniz. Tekrar denemekten çekinmeyin!",
+    "subscriptionActivationFailed": "Aboneliğiniz etkinleştirilemedi. Lütfen tekrar deneyin",
+    "logoutQuestion": "Çıkış yapmak istediğinizden emin misiniz?",
+    "noSubscriptionToRestore": "Oops! Görünüşe göre şu anda aktif bir aboneliğiniz yok. Tam erişimin keyfini çıkarmaya devam etmek için lütfen abonelik planlarımızdan birini seçin.",
+    "restorationSuccessful": "Geri yükleme başarılı oldu! Keyfini çıkarın!",
+    "restorationError": "Satın alma işlemi geri yüklenirken bir hata oluştu.",
+    "medicalDisclaimerAlert": "MicroScan AI uygulaması teşhis, tedavi önerileri veya herhangi bir tıbbi tavsiye sunmaz. Tıbbi kararlar için daima nitelikli bir sağlık uzmanından rehberlik isteyin.",
+    "scanLimitReached": "Sizin için tarama kalitesini optimize ediyoruz! Yaklaşık {{hours}} saat {{minutes}} dakika sonra tekrar tarama yapabileceksiniz. Mikroskopi konusunda herhangi bir sorunuz var mı? Beklerken sohbet asistanımıza sorun!",
+    "chatAndMediaFilesLimit": "Sayın kullanıcı, sınırsız sohbet, sınırsız tarama, çoklu görsel analizi ve daha fazlasından yararlanmak için planınızı yükseltmeniz gerekiyor. 🔓"
+  }
+}

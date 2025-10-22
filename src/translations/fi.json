@@ -1,0 +1,495 @@
+{
+  "onboarding": {
+    "message": "Tervetuloa MicroScan AI:hin!"
+  },
+  "general": {
+    "back": "Takaisin",
+    "welcome": "Hei",
+    "welcomeBack": "Tervetuloa takaisin!",
+    "welcomeMessage": "Tervetuloa!",
+    "continue": "Jatka",
+    "retry": "Yritä uudelleen",
+    "close": "Sulje",
+    "gallery": "Galleria",
+    "files": "Tiedostot",
+    "cancel": "Peruuta",
+    "delete": "Poista",
+    "attention": "Huomio!",
+    "new": "Uusi",
+    "yes": "Kyllä",
+    "or": "tai",
+    "typing": "Kirjoitetaan...",
+    "online": "Online",
+    "chatbotPlaceholder": "Kysy minulta mitä vain...",
+    "openSettings": "Avaa asetukset",
+    "seeNotifications": "Näytä ilmoitukset",
+    "viewProfile": "Näytä profiili",
+    "upgradePlan": "Päivitä tilausta",
+    "download": "Lataa",
+    "share": "Jaa",
+    "shareLink": "Jaa linkki",
+    "skip": "Ohita",
+    "next": "Seuraava",
+    "update": "Päivitä",
+    "tryAgain": "Yritä uudelleen",
+    "createdAt": "Luotu",
+    "and": "ja",
+    "saveDiscount": "TALLENNA",
+    "restorePurchase": "Palauta osto",
+    "medicalDisclaimer": "Lääketieteellinen vastuuvapauslauseke",
+    "conversationHistory": "Keskusteluhistoria",
+    "freeTrial": "Ilmainen kokeilu",
+    "free": "ILMAINEN",
+    "completedScans": "Suoritetut skannaukset",
+    "activeSubscription": "Tilaus aktiivinen",
+    "askAssistant": "Kysy tekoälyavustajalta",
+    "then": "sitten",
+    "perWeek": "viikossa",
+    "perYear": "vuodessa",
+    "perMonth": "kuukaudessa",
+    "tryForFree": "Kokeile Ilmaiseksi",
+    "unlockNow": "Avaa Nyt",
+    "copyText": {
+      "loading": "Kopioidaan...",
+      "copied": "Kopioitu!",
+      "copy": "Kopioi linkki"
+    },
+    "loadingMessages": {
+      "initialAppLoad": {
+        "first": "Ladataan personoitua kokemusta...",
+        "second": "Synkronoidaan järjestelmiä...",
+        "third": "Käsitellään tietojasi...",
+        "fourth": "Melkein valmis, vain hetki..."
+      },
+      "imageScanningLoading": {
+        "first": "Skannataan mikrokuvaasi, odota...",
+        "second": "Analysoidaan yksityiskohtia, tämä voi kestää hetken...",
+        "third": "Parannetaan tarkkuutta parhaiden tulosten saamiseksi...",
+        "fourth": "Melkein valmis, viimeistellään skannausta..."
+      },
+      "loadingChatbot": {
+        "first": "Aura valmistautuu auttamaan sinua...",
+        "second": "Odota! Aura valmistelee vastaustasi...",
+        "third": "Ajattelen... avustajasi Aura hoitaa asian!"
+      }
+    }
+  },
+  "backHandler": {
+    "holdOn": "Odota!",
+    "goBackMessage": "Oletko varma, että haluat palata takaisin?"
+  },
+  "internet": {
+    "noConnectionTitle": "Olet offline-tilassa!",
+    "noConnectionMessage": "Käytä mobiilidataa tai yhdistä Wi-Fiin. Tai pidä vain tauko ja käy kävelyllä!"
+  },
+  "uploadScan": {
+    "title": "Lataa kuva",
+    "scanNow": "Skannaa nyt"
+  },
+  "weekDays": {
+    "today": "Tänään",
+    "yesterday": "Eilen"
+  },
+  "auth": {
+    "verifyAuthCode": "Vahvista tunnistautumiskoodi",
+    "verifyAuthCodeButton": "Vahvista koodi",
+    "authCodeHeading": "Tunnistautumiskoodi",
+    "loginViaEmailHeading": "Kirjaudutaan sisään. Anna sähköpostiosoitteesi jatkaaksesi.",
+    "emailAddress": "Sähköposti"
+  },
+  "rootLayout": {
+    "screens": {
+      "welcome": {
+        "heading": "Tervetuloa MicroScan AI:hin!",
+        "startButton": "Aloitetaan!",
+        "accountButton": "Minulla on jo tili"
+      },
+      "login": {
+        "agreeingMessage": "Jatkamalla hyväksyt",
+        "termsAndConditions": "Käyttöehdot",
+        "privacyPolicy": "Tietosuojakäytäntö"
+      },
+      "verifyAuthCode": {
+        "verificationCodeHeading": "Syötä sähköpostitse lähetetty vahvistuskoodi. Huomaa, että koodi vanhenee 5 minuutissa.",
+        "verificationCodeSent": "Olemme lähettäneet vahvistuskoodin osoitteeseen",
+        "verificationCodeMissing": "Etkö saanut koodia?",
+        "resendCode": "Lähetä koodi uudelleen",
+        "backToLogin": "Takaisin kirjautumiseen"
+      },
+      "namePreferenceScreen": {
+        "heading": "Turvallinen, suojattu ja yksinkertainen pääsy!",
+        "preferredNameQuestion": "Valitse hauska lempinimi pysyäksesi nimettömänä - yksityisyytesi on meille tärkeää",
+        "placeholderPreferredName": "Esim. Kapteeni Siisti, Mehiläiskuningatar tai vain Alex!"
+      },
+      "freeTrialPreview": {
+        "heading": "Nauti ilmaisesta kokeilustasi! 🎉",
+        "subheading": "Koe nämä upeat edut ilmaisen kokeilusi aikana",
+        "review": "Loistava mikroskooppianalyysi, tekoälyavustaja on erittäin hyödyllinen! Pakollinen sovellus!",
+        "reviewTrust": "📈 Yli 3 252 käyttäjän luottama"
+      },
+      "scanInterpretation": {
+        "title": "Analyysin tulos",
+        "headerBackTitle": "Raportit"
+      },
+      "paywallOnboarding": {
+        "freeTierOfferings": {
+          "freeTrialEnabled": "Ilmainen kokeilu käytössä",
+          "heading": "Rajoittamaton pääsy",
+          "title": "Avaa Premium-ominaisuudet Tänään!",
+          "firstOffering": "Pääsy kaikkiin premium-ominaisuuksiin",
+          "secondOffering": "Mainokseton kokemus",
+          "thirdOffering": "Rajoittamattomat mikroskooppiskannaukset",
+          "fourthOffering": "Rajoittamattomat keskustelut tekoälyavustajan kanssa 24/7"
+        }
+      },
+      "paywallUpgradeScreen": {
+        "heading": "Avaa Premium-ominaisuudet Tänään!",
+        "firstOffering": {
+          "title": "Aloita ilmainen kokeilu",
+          "subtitle": "Nauti {{freeScans}} ilmaisesta skannauksesta – ei maksua"
+        },
+        "secondOffering": {
+          "title": "Kuukausitilaus",
+          "subtitle": "{{ price }}/kuukausi"
+        },
+        "thirdOffering": {
+          "title": "Vuositilaus",
+          "subtitle": "{{ price }} vuodessa"
+        },
+        "fourthOffering": {
+          "title": "{{trialDays}} päivän kokeilu",
+          "subtitle": "{{ price }} vuodessa",
+          "plan": "Viikkotilaus"
+        }
+      },
+      "newAppVersionScreen": {
+        "heading": "MicroScan AI:n uusi versio on saatavilla",
+        "subheading": "Päivitä uusimpaan versioon jatkaaksesi sovelluksen käyttöä",
+        "action": "Hae se nyt!"
+      },
+      "rateAppScreen": {
+        "heading": "Koetko sovelluksen arvokkaaksi ja kiinnostavaksi?",
+        "like": "Kyllä, pidän siitä!",
+        "dislike": "Ei oikeastaan..."
+      },
+      "noInternetScreen": {
+        "heading": "Olet offline-tilassa",
+        "subheading": "Yhteytesi vaikuttaa epävakailta. Tarkista verkon tila"
+      },
+      "notifications": {
+        "title": "Ilmoitukset",
+        "noNotifications": "Ei ilmoituksia tällä hetkellä — pysy kuulolla päivityksistä!"
+      },
+      "termsOfService": {
+        "title": "Käyttöehdot"
+      },
+      "privacyPolicy": {
+        "title": "Tietosuojakäytäntö"
+      },
+      "share": {
+        "title": "Jaa",
+        "heading": "Jaa MicroScan AI -sovellus",
+        "subheading": "Auta muita löytämään tekoälyavusteisen mikroskooppianalyysin voiman",
+        "scanMessage": "Skannaa ladataksesi sovelluksen",
+        "shareMessage": "tai jaa suosikkialustasi kautta"
+      },
+      "rate": {
+        "title": "Anna palautetta!"
+      },
+      "profile": {
+        "title": "Profiili",
+        "edit": "Muokkaa profiilia",
+        "placeholderPreferredName": "Esim. Kapteeni Siisti, Mehiläiskuningatar tai vain Alex!"
+      },
+      "generateReportScreen": {
+        "title": "Arvostamme kärsivällisyyttäsi! Tässä on tekoälyraporttisi.",
+        "userInput": "Lähetyksesi",
+        "medicalReport": "Mikroskooppiaraportti",
+        "report": "Tekoälyn luoma mikroskooppiaraportti",
+        "conversationName": "Keskustelun nimi"
+      },
+      "verifyEmail": {
+        "heading": "Vahvista sähköposti"
+      },
+      "filePreviewScreen": {
+        "generateReportButton": "Aloita analyysi"
+      },
+      "disclaimerScreen": {
+        "heading": "Tärkeä vastuuvapauslauseke",
+        "subheading": "MicroScan AI on suunniteltu mikroskooppiammattilaisille, tutkijoille, opiskelijoille ja harrastajille",
+        "consentAgreement": "Olen lukenut ja hyväksyn vastuuvapauslausekkeen.",
+        "firstConsent": "MicroScan AI ei tarjoa terveysmittauksia, diagnooseja tai hoitoneuvoja, eikä se ole tarkoitettu sellaisiin tarkoituksiin. MicroScan AI:n käyttäjien on käytettävä kliinistä harkintaansa ja varmennettava tiedot auktoritatiivisista lähteistä ennen kliinisiä päätöksiä.",
+        "secondConsent": "MicroScan AI ei ole diagnostinen työkalu, hoitoalusta tai korvaus ammattimaiselle lääketieteelliselle neuvonnalle. Se tarjoaa tekoälyn luomia oivalluksia auttaakseen terveydenhuollon ammattilaisia pääsemään käsiksi lääketieteelliseen tietoon ja analysoimaan lääketieteellisiä kuvia ja asiakirjoja. MicroScan AI on tekoälyavusteinen informatiivinen ja koulutussovellus, joka on suunniteltu tukemaan lisensoituja terveydenhuollon ammattilaisia.",
+        "fourthConsent": "MicroScan AI:ta ei luokitella lääketieteelliseksi laitteeksi, eikä se vaadi sääntelyhyväksyntää. Se on tarkoitettu koulutus- ja informatiivisiin tarkoituksiin täydentämään ammattitaitoa.",
+        "fifthConsent": "MicroScan AI ei kerää, tallenna tai käsittele henkilö- tai potilastietoja. Kaikki käyttäjävuorovaikutukset ovat luottamuksellisia ja rajoittuvat sovelluksen laajuuteen."
+      },
+      "contactUs": {
+        "heading": "Voit vapaasti lähettää meille sähköpostia suoraan, ja tiimimme vastaa sinulle mahdollisimman pian",
+        "customerSupport": "Asiakastuki",
+        "emailAddress": "Sähköpostiosoite"
+      },
+      "languageAnalysisModal": {
+        "languagePreferenceQuestion": "Mitä kieltä haluaisit tekoälyanalyysiä varten?",
+        "languageSelection": "Valitse kieli tekoälyvasteille",
+        "languageSearchCriteria": "Hae kielen, maakoodin tai lipun perusteella",
+        "noLanguageFound": "Kieltä ei löytynyt",
+        "noLanguageFoundSubtitle": "Yritä muokata hakuehtojasi"
+      },
+      "chatScreen": {
+        "randomQuestions": {
+          "one": "Mitkä ovat kirkasvalo-, vaihekontrasti- ja DIC-mikroskoopien väliset erot? 🔬",
+          "two": "Miten näytteen valmistus voi vaikuttaa kuvan resoluutioon? 🧫",
+          "three": "Milloin käytän konfokaali- ja laajakenttämikroskooppia? 🧠",
+          "four": "Miten voin minimoida valonvaimentumisen elävien solujen kuvantamisessa? ✨",
+          "five": "Mikä on numeerisen aukon vaikutus resoluutioon? 📐",
+          "six": "Miten mikroskooppi kohdennetaan ja kalibroidaan oikein? ⚙️",
+          "seven": "Mitkä tekniikat parantavat kontrastia värjäämättömissä näytteissä? 🌈",
+          "eight": "Milloin elektronimikroskopiaa suositaan valomikroskopian sijaan? 🧲",
+          "nine": "Miten varmistan toistettavuuden kvantitatiivisessa kuvantamisessa? 📊",
+          "ten": "Mitkä ovat immersioöljyn käytön parhaat käytännöt? 🛢️",
+          "eleven": "Miten valitsen fluoroforit monikanavakuvantamista varten? 🎇",
+          "twelve": "Miksi näytteen paksuus on kriittinen korkearesoluutioisen kuvantamisen kannalta? 📚",
+          "thirteen": "Muten ajautumaa ja tärinää voidaan vähentää kuvantamisen aikana? 🌍",
+          "fourteen": "Mitkä ovat valmistettujen preparaattien oikeat säilytysmenetelmät? 📦",
+          "fifteen": "Mitkä parametrit varmistavat julkaisukelpoisen kuvan laadun? 📸"
+        }
+      }
+    }
+  },
+  "deleteApp": {
+    "title": "Odota! Älä poista minua!",
+    "subtitle": "Lähetä sen sijaan palautetta"
+  },
+  "pdfPreview": {
+    "noEditorInstalled": "PDF:n esikatseluun varmista, että sinulla on PDF-katselin asennettuna, kuten Adobe Acrobat Reader tai Google PDF Viewer",
+    "conversationTitlePdf": "Keskustelu Auran, tekoälyavustajasi, kanssa"
+  },
+  "flows": {
+    "createReport": {
+      "finalReportForeground": {
+        "message": "Kiitos kärsivällisyydestäsi!"
+      },
+      "finalReportHeader": {
+        "message": "Tämä on raportin tulos!"
+      },
+      "uploadFile": {
+        "title": "Lataa mikä tahansa mikroskooppinen näyte analysoitavaksi",
+        "size": "Maks: {{imageLimit}}MB (kuvat), {{videoLimit}}MB (videot)",
+        "location": "Valitse galleriasta tai tiedostoista",
+        "fileType": "PNG, JPG, PDF tai MP4",
+        "openCamera": "Avaa kamera ja ota kuva",
+        "scanType": "Vain mikroskooppiset näytteet sallittu"
+      }
+    }
+  },
+  "home": {
+    "tab": "Koti",
+    "homeForeground": {
+      "maxNumberOfScans": "Olet saavuttanut skannausrajasi! Päivitä tilaustasi nyt saadaksesi lisää skannauksia. 🚀",
+      "heading": "Tervetuloa MicroScan AI:hin!",
+      "subHeading": "Hanki tekoälyavusteinen analyysi mistä tahansa mikroskooppisesta näytteestä sekunneissa"
+    },
+    "scanCategories": {
+      "heading": "Mikroskooppikierros"
+    },
+    "recentReports": {
+      "heading": "Viimeisimmät keskustelut",
+      "noReports": "Ei vielä keskusteluja näytettäväksi!"
+    }
+  },
+  "reports": {
+    "tab": "Historia",
+    "noReportsAvailable": "Keskusteluhistoriaa ei ole saatavilla tälle päivämäärälle",
+    "heading": "Keskusteluhistoria"
+  },
+  "chat": {
+    "tab": "Keskustelu"
+  },
+  "settings": {
+    "tab": "Asetukset",
+    "profile": "Profiili",
+    "contactUs": "Ota yhteyttä",
+    "about": "Tietoja",
+    "app_name": "Sovelluksen nimi",
+    "languages": {
+      "english": "Englanti",
+      "mandarin_chinese": "Kiina",
+      "hindi": "Hindi",
+      "spanish_spain": "Espanja (Espanja)",
+      "spanish_mexico": "Espanja (Meksiko)",
+      "arabic": "Arabia",
+      "french": "Ranska",
+      "french_canada": "Ranska (Kanada)",
+      "portuguese_brazil": "Portugali (Brasilia)",
+      "portuguese_portugal": "Portugali (Portugali)",
+      "german": "Saksa",
+      "japanese": "Japani",
+      "russian": "Venäjä",
+      "korean": "Korea",
+      "italian": "Italia",
+      "turkish": "Turkki",
+      "vietnamese": "Vietnam",
+      "polish": "Puola",
+      "ukrainian": "Ukraina",
+      "romanian": "Romania",
+      "dutch": "Hollanti",
+      "czech": "Tšekki",
+      "greek": "Kreikka",
+      "swedish": "Ruotsi",
+      "hungarian": "Unkari",
+      "thai": "Thaimaa",
+      "hebrew": "Heprea",
+      "indonesian": "Indonesia",
+      "malay": "Malaiji",
+      "finnish": "Suomi",
+      "danish": "Tanska",
+      "norwegian": "Norja",
+      "slovak": "Slovakia",
+      "croatian": "Kroatia",
+      "catalan": "Katalaani"
+    },
+    "generale": "Yleinen",
+    "github": "Github",
+    "language": "Kieli",
+    "links": "Linkit",
+    "logout": "Kirjaudu ulos",
+    "more": "Lisää",
+    "privacy": "Tietosuojakäytäntö",
+    "faq": "USEK",
+    "rate": "Arvioi",
+    "share": "Jaa",
+    "citations": "Lääketieteellisten tietojen lähteet",
+    "support": "Tuki",
+    "support_us": "Tue meitä",
+    "terms": "Käyttöehdot",
+    "theme": {
+      "dark": "Tumma",
+      "light": "Vaalea",
+      "system": "Järjestelmä",
+      "title": "Teema"
+    },
+    "title": "Asetukset",
+    "version": "Versio",
+    "website": "Verkkosivusto",
+    "devMode": {
+      "title": "Kehittäjätila",
+      "componentsLibrary": "UI-kirjasto"
+    }
+  },
+  "components": {
+    "ReportCard": {
+      "rating": "Arviointi"
+    },
+    "ScanReportCard": {
+      "promptMessage": "Mikä on syy?",
+      "unnamedConversation": "Nimetön",
+      "reportTitlePlaceholder": "Lisää otsikko"
+    },
+    "WeekBlock": {
+      "week": "Viikko"
+    },
+    "EndScrollPlaceholder": {
+      "scrollToTop": "Vieritä ylös"
+    },
+    "FreeTierStatus": {
+      "heading": "Ilmaiset skannaukset",
+      "subheading": "Avaa rajoittamattomat skannaukset päivittämällä tilauksesi",
+      "action": "Päivitä"
+    },
+    "UploadFileOptionsModal": {
+      "heading": "Valitse kuva / video"
+    },
+    "TapToViewLabel": {
+      "label": "Napauta katsellaksesi"
+    },
+    "UpgradeBanner": {
+      "heading": "Päivitä Nyt!",
+      "subheading": "Avaa rajoittamattomat skannaukset päivittämällä tilauksesi"
+    },
+    "PromptSection": {
+      "message": "Skannauksesi on valmis! Mitä haluaisit nyt selvittää?",
+      "prompts": {
+        "first": "Mitä solutyyppejä tai rakenteita tässä kuvassa on?",
+        "second": "Onko näytteessä poikkeavuuksia tai patogeeneja?",
+        "third": "Mikä on tämän näytteen todennäköinen alkuperä tai tila?",
+        "fourth": "Mitä oivalluksia voit tarjota tästä kuvasta?"
+      }
+    },
+    "PremiumFeaturesOverview": {
+      "first": "Tekoälyavusteinen analyysi kaikille mikroskooppisille näytteille",
+      "second": "Pääsy kaikkiin premium-ominaisuuksiin",
+      "third": "Ei mainoksia"
+    },
+    "Input": {
+      "labels": {
+        "nickname": "Lempinimi",
+        "email": "Sähköposti",
+        "emailVerification": "Sähköpostin vahvistus"
+      }
+    },
+    "ImageAnnotationStudio": {
+      "instructions": {
+        "title": "Ohjeet",
+        "first": "1. Napauta 'Lisää neliö' -painiketta luodaksesi valintaneliön.",
+        "second": "2. Vedä neliö kiinnostuksen kohteesi yli.",
+        "third": "3. Säädä kulmia kattamaan alue tarkasti."
+      },
+      "OpenStudioSection": {
+        "openStudioButton": "Avaa studio",
+        "editMore": "Muokkaa lisää",
+        "continueEditing": "Jatkatko annotaatioidesi muokkaamista?",
+        "highlightedRegionsCount": "Sinulla on {{highlightedRegions}} korostettua aluetta. Napauta alla lisätäksesi lisää",
+        "highlightRegions": "Tarvitsetko korostaa mikroskooppikuvasi alueita?"
+      },
+      "studioToolbar": {
+        "addSquare": "Lisää neliö"
+      }
+    }
+  },
+  "alerts": {
+    "mediaPickerPermissions": "Anteeksi, tarvitsemme kameran käyttöoikeudet, jotta tämä toimii!",
+    "errorSelectingImagePicker": "Jotain meni pieleen kuvan valinnassa. Yritä uudelleen.",
+    "errorSelectingDocumentPicker": "Jotain meni pieleen asiakirjan valinnassa. Yritä uudelleen.",
+    "errorTakingPicture": "Jotain meni pieleen kuvan ottamisessa. Yritä uudelleen.",
+    "enableNotifications": {
+      "heading": "Ota ilmoitukset käyttöön",
+      "subHeading": "Ilmoitukset ovat tällä hetkellä pois käytöstä. Pysyäksesi ajan tasalla, ota ne käyttöön laitteesi asetuksista."
+    },
+    "enableNotificationFailed": "Push-ilmoitukset on poistettu käytöstä. Ota ne käyttöön asetuksista saadaksesi tärkeitä päivityksiä!",
+    "enableNotificationError": "Ilmoitusten käyttöönotossa tapahtui virhe",
+    "notificationDisabledSuccess": "Ilmoitukset poistettu käytöstä onnistuneesti.",
+    "notificationDisabledRegisterError": "Laitteen ilmoitusten rekisteröinnin poistaminen epäonnistui.",
+    "notificationDisabledError": "Ilmoitusten poistamisessa käytöstä tapahtui virhe.",
+    "checkNotificationStatusError": "Virhe ilmoitustilan tarkistamisessa.",
+    "projectIdNotFound": "Ilmoitusprojektin ID:tä ei löytynyt.",
+    "imageSizeLarge": "Kuva on liian suuri! Tiedostokoko on {{fileSize}} MB, mutta raja on {{imageLimit}} MB.",
+    "videoSizeLarge": "Video on liian suuri! Tiedostokoko on {{fileSize}} MB, mutta raja on {{videoLimit}} MB.",
+    "loggedInSuccess": "Kirjautuminen onnistui",
+    "loggedOutSuccess": "Olet kirjautunut ulos onnistuneesti!",
+    "sendVerificationCodeError": "Virhe vahvistuskoodin lähettämisessä",
+    "validateAuthCodeError": "Virhe tunnistautumiskoodin vahvistamisessa",
+    "anonymousSignInError": "Virhe anonyymissä kirjautumisessa",
+    "emailLoginError": "Virhe kirjautumisessa",
+    "preferredLanguageError": "Virhe käyttäjän ensisijaisen kielen päivittämisessä",
+    "sharingNotAvailable": "Jakaminen ei ole tällä hetkellä saatavilla laitteessasi",
+    "sharingLinkError": "Linkin jakaminen epäonnistui.",
+    "individualPushNotificationSuccess": "Yksittäiset push-ilmoitukset lähetetty onnistuneesti!",
+    "globalPushNotificationSuccess": "Globaalit push-ilmoitukset lähetetty onnistuneesti! 🌍🚀",
+    "interpretationFieldsUpdateFail": "Tulkintakenttien päivitys epäonnistui! ❌",
+    "deleteScanReportFail": "Skannausraporttia ei voi poistaa. Yritä uudelleen",
+    "onboardingUnsuccessful": "Käyttöönotto epäonnistui. Yritä uudelleen",
+    "logoutUnsuccessful": "Uloskirjautuminen epäonnistui. Yritä uudelleen",
+    "deleteScanReportQuestion": "Oletko varma, että haluat poistaa tämän raportin pysyvästi?",
+    "videoLimitExceeds": "Videosi ylittää {{videoSecondsLimit}} sekunnin rajan. Rajaa se ja lataa uudelleen",
+    "subscriptionActivated": "Tilauksesi on aktivoitu onnistuneesti! Nauti eksklusiivisista eduistasi!",
+    "subscriptionCancelledByUser": "Olet peruuttanut tapahtuman. Voit vapaasti yrittää uudelleen!",
+    "subscriptionActivationFailed": "Tilauksesi aktivointi epäonnistui. Yritä uudelleen",
+    "logoutQuestion": "Oletko varma, että haluat kirjautua ulos?",
+    "noSubscriptionToRestore": "Hups! Näyttää siltä, että sinulla ei ole aktiivista tilausta tällä hetkellä. Jatkaaksesi täyden pääsyn nauttimista, valitse jokin tilaussuunnitelmistamme.",
+    "restorationSuccessful": "Palautus onnistui! Nauti!",
+    "restorationError": "Oston palauttamisessa tapahtui virhe.",
+    "medicalDisclaimerAlert": "MicroScan AI -sovellus ei tarjoa diagnooseja, hoitoneuvoja tai mitään lääketieteellisiä neuvoja. Pyydä aina pätevältä terveydenhuollon ammattilaiselta ohjeita lääketieteellisiä päätöksiä tehdessäsi.",
+    "scanLimitReached": "Optimoidaan skannauksen laatua puolestasi! Voit skannata uudelleen noin {{hours}} tunnin ja {{minutes}} minuutin kuluttua. Onko sinulla kysyttävää mikroskooppiasta? Kysy chat-avustajaltamme odotellessasi!",
+    "chatAndMediaFilesLimit": "Hyvä käyttäjä, sinun on päivitettävä tilauksesi saadaksesi hyödyn rajoittamattomista keskusteluista, rajoittamattomista skannauksista, usean kuvan analyyseistä ja muusta. 🔓"
+  }
+}

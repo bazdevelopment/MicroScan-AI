@@ -11,6 +11,7 @@ import { Toaster } from 'sonner-native';
 
 import { useFetchUserNotifications } from '@/api/push-notifications/push-notifications.hooks';
 import { useUser } from '@/api/user/user.hooks';
+import { MAX_SCANS_ALLOWED_FREE_TRIAL } from '@/constants/limits';
 import {
   DEVICE_TYPE,
   translate,
@@ -58,7 +59,10 @@ export const Foreground = ({ scrollValue }: IHomeForeground) => {
      * thats why we need to set it to false based on an action instead of creating another useEffect in layout
      *  */
     isFirstTime && setIsFirstTime(false);
-    if (userInfo?.scansRemaining <= 0 && userInfo.isFreeTrialOngoing) {
+    if (
+      userInfo.isFreeTrialOngoing &&
+      userInfo?.completedScans >= MAX_SCANS_ALLOWED_FREE_TRIAL
+    ) {
       logEvent(
         `Alert informing user - ${userInfo.userId} that there are no scans available is displayed`
       );

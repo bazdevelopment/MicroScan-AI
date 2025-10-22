@@ -11,6 +11,7 @@ import Animated, {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useUser } from '@/api/user/user.hooks';
+import { MAX_SCANS_ALLOWED_FREE_TRIAL } from '@/constants/limits';
 import {
   DEVICE_TYPE,
   translate,
@@ -49,7 +50,10 @@ export const HomeHeaderBar = ({ scrollValue }: IHomeHeaderBar) => {
      *  */
     isFirstTime && setIsFirstTime(false);
 
-    if (userInfo?.scansRemaining <= 0 && userInfo.isFreeTrialOngoing) {
+    if (
+      userInfo.isFreeTrialOngoing &&
+      userInfo?.completedScans >= MAX_SCANS_ALLOWED_FREE_TRIAL
+    ) {
       logEvent(
         `Alert informing user - ${userInfo.userId} that there are no scans available is displayed in home header bar`
       );

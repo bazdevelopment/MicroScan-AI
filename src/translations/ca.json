@@ -1,0 +1,495 @@
+{
+  "onboarding": {
+    "message": "Benvingut/da a MicroScan AI!"
+  },
+  "general": {
+    "back": "Enrere",
+    "welcome": "Hola",
+    "welcomeBack": "Benvingut/da de nou!",
+    "welcomeMessage": "Benvingut/da!",
+    "continue": "Continua",
+    "retry": "Torna-ho a provar",
+    "close": "Tanca",
+    "gallery": "Galeria",
+    "files": "Fitxers",
+    "cancel": "Cancel·la",
+    "delete": "Elimina",
+    "attention": "Atenció!",
+    "new": "Nou",
+    "yes": "Sí",
+    "or": "o",
+    "typing": "Escrivint...",
+    "online": "En línia",
+    "chatbotPlaceholder": "Pregunta'm el que vulguis...",
+    "openSettings": "Obre la configuració",
+    "seeNotifications": "Veure les notificacions",
+    "viewProfile": "Veure el perfil",
+    "upgradePlan": "Millora el teu pla",
+    "download": "Descarrega",
+    "share": "Comparteix",
+    "shareLink": "Comparteix l'enllaç",
+    "skip": "Omet",
+    "next": "Següent",
+    "update": "Actualitza",
+    "tryAgain": "Torna-ho a provar",
+    "createdAt": "Creat el",
+    "and": "i",
+    "saveDiscount": "ESTALVIA",
+    "restorePurchase": "Restaura la compra",
+    "medicalDisclaimer": "Avís mèdic",
+    "conversationHistory": "Historial de converses",
+    "freeTrial": "Prova gratuïta",
+    "free": "GRATUÏT",
+    "completedScans": "Escanejats completats",
+    "activeSubscription": "Subscripció activa",
+    "askAssistant": "Pregunta a l'assistent d'IA",
+    "then": "després",
+    "perWeek": "per setmana",
+    "perYear": "per any",
+    "perMonth": "per mes",
+    "tryForFree": "Prova-ho Gratuïtament",
+    "unlockNow": "Desbloqueja Ara",
+    "copyText": {
+      "loading": "S'està copiant...",
+      "copied": "S'ha copiat!",
+      "copy": "Copia l'enllaç"
+    },
+    "loadingMessages": {
+      "initialAppLoad": {
+        "first": "S'està carregant la teva experiència personalitzada...",
+        "second": "S'estan sincronitzant els sistemes...",
+        "third": "S'estan processant les teves dades...",
+        "fourth": "Gairebé llest, només un moment..."
+      },
+      "imageScanningLoading": {
+        "first": "S'està escanejant la teva imatge de microcòpia, si us plau, espera...",
+        "second": "S'estan analitzant els detalls, això pot trigar una estona...",
+        "third": "S'està millorant la precisió per als millors resultats...",
+        "fourth": "Gairebé allà, s'estan finalitzant l'escaneig..."
+      },
+      "loadingChatbot": {
+        "first": "L'Aura s'està preparant per ajudar-te...",
+        "second": "Aguanta! L'Aura està preparant la teva resposta...",
+        "third": "Pensant... el teu assistent Aura s'està encarregant!"
+      }
+    }
+  },
+  "backHandler": {
+    "holdOn": "Aguanta!",
+    "goBackMessage": "Estàs segur que vols tornar enrere?"
+  },
+  "internet": {
+    "noConnectionTitle": "Estàs fora de línia!",
+    "noConnectionMessage": "Activa les dades mòbils o connecta't a Wi-Fi. O simplement fes una pausa i fes una passejada!"
+  },
+  "uploadScan": {
+    "title": "Puja una imatge",
+    "scanNow": "Escaneja ara"
+  },
+  "weekDays": {
+    "today": "Avui",
+    "yesterday": "Ahir"
+  },
+  "auth": {
+    "verifyAuthCode": "Verifica el codi d'autenticació",
+    "verifyAuthCodeButton": "Verifica el codi",
+    "authCodeHeading": "Codi d'autenticació",
+    "loginViaEmailHeading": "Iniciem la teva sessió. Si us plau, introdueix el teu correu electrònic per continuar.",
+    "emailAddress": "Correu electrònic"
+  },
+  "rootLayout": {
+    "screens": {
+      "welcome": {
+        "heading": "Benvingut/da a MicroScan AI!",
+        "startButton": "Comencem!",
+        "accountButton": "Ja tinc un compte"
+      },
+      "login": {
+        "agreeingMessage": "En continuar, acceptes els nostres",
+        "termsAndConditions": "Termes i Condicions",
+        "privacyPolicy": "Política de Privadesa"
+      },
+      "verifyAuthCode": {
+        "verificationCodeHeading": "Introdueix el teu codi de verificació enviat per correu electrònic. Si us plau, tingues en compte que el codi caducarà en 5 minuts.",
+        "verificationCodeSent": "Hem enviat el codi de verificació a",
+        "verificationCodeMissing": "No has rebut el codi?",
+        "resendCode": "Torna a enviar el codi",
+        "backToLogin": "Torna a Iniciar Sessió"
+      },
+      "namePreferenceScreen": {
+        "heading": "Accés segur, protegit i simple!",
+        "preferredNameQuestion": "Tria un sobrenom divertit per romandre en l'anonimat: la teva privadesa és important per a nosaltres",
+        "placeholderPreferredName": "Per exemple, Capità Guai, Reina Abella, o simplement l'Alex!"
+      },
+      "freeTrialPreview": {
+        "heading": "Gaudiu de la vostra prova gratuïta! 🎉",
+        "subheading": "Experimenta aquests beneficis increïbles durant la teva prova gratuïta",
+        "review": "Una gran anàlisi de microscòpia, l'assistent mèdic d'IA és super útil! Una aplicació imprescindible!",
+        "reviewTrust": "📈 Confiat per més de 3.252 usuaris"
+      },
+      "scanInterpretation": {
+        "title": "Resultat de l'anàlisi",
+        "headerBackTitle": "Informes"
+      },
+      "paywallOnboarding": {
+        "freeTierOfferings": {
+          "freeTrialEnabled": "Prova Gratuïta Activada",
+          "heading": "Accés I·l·limitat",
+          "title": "Desbloqueja les Funcions Premium Avui!",
+          "firstOffering": "Accés a totes les funcions premium",
+          "secondOffering": "Experència sense anuncis",
+          "thirdOffering": "Escanejos de microscòpia il·limitats",
+          "fourthOffering": "Xats il·limitats amb un assistent d'IA 24/7"
+        }
+      },
+      "paywallUpgradeScreen": {
+        "heading": "Desbloqueja les Funcions Premium Avui!",
+        "firstOffering": {
+          "title": "Comença la Prova Gratuïta",
+          "subtitle": "Gaudeix de {{freeScans}} escanejos gratuïts – sense cap pagament"
+        },
+        "secondOffering": {
+          "title": "Pla Mensual",
+          "subtitle": "{{ price }}/mes"
+        },
+        "thirdOffering": {
+          "title": "Pla Anual",
+          "subtitle": "{{ price }} per any"
+        },
+        "fourthOffering": {
+          "title": "Prova de {{trialDays}} Dies",
+          "subtitle": "{{ price }} per any",
+          "plan": "Pla Setmanal"
+        }
+      },
+      "newAppVersionScreen": {
+        "heading": "Hi ha una nova versió de MicroScan AI disponible",
+        "subheading": "Si us plau, actualitza a l'última versió per continuar utilitzant l'aplicació",
+        "action": "Obteniu-la ara!"
+      },
+      "rateAppScreen": {
+        "heading": "Trobeu que l'aplicació és valuosa i atractiva?",
+        "like": "Sí, m'agrada!",
+        "dislike": "Realment no..."
+      },
+      "noInternetScreen": {
+        "heading": "Esteu fora de línia",
+        "subheading": "La vostra connexió sembla inestable. Si us plau, verifica l'estat de la teva xarxa"
+      },
+      "notifications": {
+        "title": "Notificacions",
+        "noNotifications": "Encara no hi ha notificacions — estigueu atents a les actualitzacions!"
+      },
+      "termsOfService": {
+        "title": "Termes del Servei"
+      },
+      "privacyPolicy": {
+        "title": "Política de Privadesa"
+      },
+      "share": {
+        "title": "Comparteix",
+        "heading": "Comparteix l'App MicroScan AI",
+        "subheading": "Ajuda a altres a descobrir el poder de l'anàlisi de microscòpia amb IA",
+        "scanMessage": "Escaneja per descarregar l'aplicació",
+        "shareMessage": "o comparteix a través de la teva plataforma preferida"
+      },
+      "rate": {
+        "title": "Dóna'ns la teva opinió!"
+      },
+      "profile": {
+        "title": "Perfil",
+        "edit": "Edita el perfil",
+        "placeholderPreferredName": "Per exemple, Capità Guai, Reina Abella, o simplement l'Alex!"
+      },
+      "generateReportScreen": {
+        "title": "Agraïm la teva paciència! Aquí tens el teu informe d'IA.",
+        "userInput": "La teva tramesa",
+        "medicalReport": "Informe de Microscòpia",
+        "report": "Informe de Microscòpia Generat per IA",
+        "conversationName": "Nom de la conversa"
+      },
+      "verifyEmail": {
+        "heading": "Verifica el correu electrònic"
+      },
+      "filePreviewScreen": {
+        "generateReportButton": "Inicia l'Anàlisi"
+      },
+      "disclaimerScreen": {
+        "heading": "Avís Important",
+        "subheading": "MicroScan AI està dissenyat per a professionals de la microscòpia, investigadors, estudiants i entusiastes",
+        "consentAgreement": "He llegit i accepto l'avís legal.",
+        "firstConsent": "MicroScan AI no proporciona mesures de salut, diagnòstics o consells de tractament, ni està destinat a aquests propòsits. Els usuaris de MicroScan AI han d'aplicar el seu judici clínic i verificar la informació de fonts autoritzades abans de prendre decisions clíniques.",
+        "secondConsent": "MicroScan AI no és una eina de diagnòstic, una plataforma de tractament o un substitut del consell mèdic professional. Ofereix informacions generades per IA per ajudar als professionals sanitaris a accedir al coneixement mèdic i analitzar imatges i documents mèdics. MicroScan AI és una aplicació informativa i educativa impulsada per IA dissenyada més per donar suport a professionals sanitaris amb llicència.",
+        "fourthConsent": "MicroScan AI no està classificat com a dispositiu mèdic i no pretén aprovacions reglamentàries. Està destinat a fins educatius i informatius per complementar l'expertesa professional.",
+        "fifthConsent": "MicroScan AI no recull, emmagatzema ni processa dades personals o de pacients. Totes les interaccions de l'usuari són confidencials i limitades a l'abast de l'aplicació."
+      },
+      "contactUs": {
+        "heading": "No dubtis a enviar-nos un correu electrònic directament, i el nostre equip et respondrà tan aviat com sigui possible",
+        "customerSupport": "Suport al Client",
+        "emailAddress": "Adreça de Correu Electrònic"
+      },
+      "languageAnalysisModal": {
+        "languagePreferenceQuestion": "Quina llengua preferiu per a l'anàlisi d'IA?",
+        "languageSelection": "Tria una llengua per a les respostes de la IA",
+        "languageSearchCriteria": "Cerca per llengua, codi de país o bandera",
+        "noLanguageFound": "No s'ha trobat cap llengua",
+        "noLanguageFoundSubtitle": "Prova de modificar els teus termes de cerca"
+      },
+      "chatScreen": {
+        "randomQuestions": {
+          "one": "Quines diferències hi ha entre camp clar, contrast de fases i DIC? 🔬",
+          "two": "Com pot la preparació de mostres afectar la resolució de la imatge? 🧫",
+          "three": "Quan hauria d'utilitzar microscòpia confocal versus camp ampli? 🧠",
+          "four": "Com puc minimitzar el blanquejament fotogràfic en la imatge de cèl·lules vives? ✨",
+          "five": "Quin és l'impacte de l'obertura numèrica en la resolució? 📐",
+          "six": "Com puc alinear i calibrar correctament un microscopi? ⚙️",
+          "seven": "Quines tècniques milloren el contrast en mostres no tenyides? 🌈",
+          "eight": "Quan es prefereix la microscòpia electrònica sobre la microscòpia òptica? 🧲",
+          "nine": "Com puc assegurar la reproductibilitat en la imatge quantitativa? 📊",
+          "ten": "Quines són les millors pràctiques per utilitzar oli d'immersió? 🛢️",
+          "eleven": "Com selecciono fluoròfors per a imatges multicanal? 🎇",
+          "twelve": "Per què el gruix de la mostra és crític per a la imatge d'alta resolució? 📚",
+          "thirteen": "Com es poden minimitzar la deriva i la vibració durant la captura d'imatges? 🌍",
+          "fourteen": "Quins són els mètodes d'emmagatzematge adequats per a les preparacions? 📦",
+          "fifteen": "Quins paràmetres asseguren imatges de qualitat per a publicació? 📸"
+        }
+      }
+    }
+  },
+  "deleteApp": {
+    "title": "Espera! No em suprimeixis!",
+    "subtitle": "Envia comentaris en lloc"
+  },
+  "pdfPreview": {
+    "noEditorInstalled": "Per visualitzar el PDF, assegura't que tens un visualitzador de PDF instal·lat, com Adobe Acrobat Reader o Google PDF Viewer",
+    "conversationTitlePdf": "Conversa amb l'Aura, el teu assistent d'IA"
+  },
+  "flows": {
+    "createReport": {
+      "finalReportForeground": {
+        "message": "Gràcies per la teva paciència!"
+      },
+      "finalReportHeader": {
+        "message": "Aquest és el resultat de l'informe!"
+      },
+      "uploadFile": {
+        "title": "Puja qualsevol mostra de microscòpia per analitzar",
+        "size": "Màx: {{imageLimit}}MB (imatges), {{videoLimit}}MB (vídeos)",
+        "location": "Selecciona des de la Galeria o Fitxers",
+        "fileType": "PNG, JPG, PDF o MP4",
+        "openCamera": "Obre la Càmera i Fes una Foto",
+        "scanType": "Només es permeten mostres de microscòpia"
+      }
+    }
+  },
+  "home": {
+    "tab": "Inici",
+    "homeForeground": {
+      "maxNumberOfScans": "Has arribat al teu límit d'escaneigs! Millora el teu pla ara per desbloquejar més escaneigs. 🚀",
+      "heading": "Benvingut/da a MicroScan AI!",
+      "subHeading": "Obté anàlisis amb IA de qualsevol mostra de microscòpia en qüestió de segons"
+    },
+    "scanCategories": {
+      "heading": "Carrusel de Microscòpia"
+    },
+    "recentReports": {
+      "heading": "Xats Recents",
+      "noReports": "Encara no hi ha xats per mostrar!"
+    }
+  },
+  "reports": {
+    "tab": "Historial",
+    "noReportsAvailable": "No hi ha historial de xats disponible per a aquesta data",
+    "heading": "Historial de Xats"
+  },
+  "chat": {
+    "tab": "Xat"
+  },
+  "settings": {
+    "tab": "Configuració",
+    "profile": "Perfil",
+    "contactUs": "Contacta'ns",
+    "about": "Quant a",
+    "app_name": "Nom de l'Aplicació",
+    "languages": {
+      "english": "Anglès",
+      "mandarin_chinese": "Xinès",
+      "hindi": "Hindi",
+      "spanish_spain": "Espanyol (Espanya)",
+      "spanish_mexico": "Espanyol (Mèxic)",
+      "arabic": "Àrab",
+      "french": "Francès",
+      "french_canada": "Francès (Canadà)",
+      "portuguese_brazil": "Portuguès (Brasil)",
+      "portuguese_portugal": "Portuguès (Portugal)",
+      "german": "Alemany",
+      "japanese": "Japonès",
+      "russian": "Rus",
+      "korean": "Coreà",
+      "italian": "Italià",
+      "turkish": "Turc",
+      "vietnamese": "Vietnamita",
+      "polish": "Polonès",
+      "ukrainian": "Ucraïnès",
+      "romanian": "Romanès",
+      "dutch": "Neerlandès",
+      "czech": "Txec",
+      "greek": "Grec",
+      "swedish": "Suec",
+      "hungarian": "Hongarès",
+      "thai": "Tai",
+      "hebrew": "Hebreu",
+      "indonesian": "Indonesi",
+      "malay": "Malai",
+      "finnish": "Finès",
+      "danish": "Danès",
+      "norwegian": "Noruec",
+      "slovak": "Eslovac",
+      "croatian": "Croat",
+      "catalan": "Català"
+    },
+    "generale": "General",
+    "github": "Github",
+    "language": "Idioma",
+    "links": "Enllaços",
+    "logout": "Tanca la sessió",
+    "more": "Més",
+    "privacy": "Política de Privadesa",
+    "faq": "PMF",
+    "rate": "Valora",
+    "share": "Comparteix",
+    "citations": "Citacions per a informació mèdica",
+    "support": "Suport",
+    "support_us": "Suporta'ns",
+    "terms": "Termes del Servei",
+    "theme": {
+      "dark": "Fosc",
+      "light": "Clar",
+      "system": "Sistema",
+      "title": "Tema"
+    },
+    "title": "Configuració",
+    "version": "Versió",
+    "website": "Lloc web",
+    "devMode": {
+      "title": "Mode desenvolupador",
+      "componentsLibrary": "Llibreria d'UI"
+    }
+  },
+  "components": {
+    "ReportCard": {
+      "rating": "Valoració"
+    },
+    "ScanReportCard": {
+      "promptMessage": "Quina és la raó?",
+      "unnamedConversation": "Sense títol",
+      "reportTitlePlaceholder": "Afegeix un títol"
+    },
+    "WeekBlock": {
+      "week": "Setmana"
+    },
+    "EndScrollPlaceholder": {
+      "scrollToTop": "Desplaça't a dalt"
+    },
+    "FreeTierStatus": {
+      "heading": "Escanejos gratuïts",
+      "subheading": "Desbloqueja escanejos il·limitats millorant el teu pla",
+      "action": "Millora"
+    },
+    "UploadFileOptionsModal": {
+      "heading": "Tria una imatge / vídeo"
+    },
+    "TapToViewLabel": {
+      "label": "Toqueu per veure"
+    },
+    "UpgradeBanner": {
+      "heading": "Millora Ara!",
+      "subheading": "Desbloqueja escanejos il·limitats millorant el teu pla"
+    },
+    "PromptSection": {
+      "message": "El teu escaneig està llest! Ara, què t'agradaria saber?",
+      "prompts": {
+        "first": "Quins tipus de cèl·lules o estructures hi ha en aquesta imatge?",
+        "second": "Hi ha alguna anomalia o patogen en aquesta mostra?",
+        "third": "Quina és l'origen o condició probable d'aquesta mostra?",
+        "fourth": "Quines idees pots proporcionar a partir d'aquesta imatge?"
+      }
+    },
+    "PremiumFeaturesOverview": {
+      "first": "Anàlisi amb IA per a qualsevol mostra de microscòpia",
+      "second": "Accés a totes les funcions premium",
+      "third": "Sense anuncis"
+    },
+    "Input": {
+      "labels": {
+        "nickname": "Sobrenom",
+        "email": "Correu electrònic",
+        "emailVerification": "Verificació de correu electrònic"
+      }
+    },
+    "ImageAnnotationStudio": {
+      "instructions": {
+        "title": "Instruccions",
+        "first": "1. Toqueu el botó 'Afegeix Quadrat' per crear un quadrat de selecció.",
+        "second": "2. Arrossega el quadrat sobre la teva regió d'interès.",
+        "third": "3. Ajusta les cantonades per cobrir amb precisió la regió."
+      },
+      "OpenStudioSection": {
+        "openStudioButton": "Obre l'Estudi",
+        "editMore": "Edita més",
+        "continueEditing": "Continueu editant les vostres anotacions?",
+        "highlightedRegionsCount": "Tens {{highlightedRegions}} regions destacades. Toqueu a sota per afegir-ne més",
+        "highlightRegions": "Necessites destacar regions de la teva imatge de microscòpia?"
+      },
+      "studioToolbar": {
+        "addSquare": "Afegeix Quadrat"
+      }
+    }
+  },
+  "alerts": {
+    "mediaPickerPermissions": "Ho sentim, necessitem permisos de càmera perquè això funcioni!",
+    "errorSelectingImagePicker": "Alguna cosa ha anat malament en seleccionar la imatge. Si us plau, torna-ho a provar.",
+    "errorSelectingDocumentPicker": "Alguna cosa ha anat malament en seleccionar el document. Si us plau, torna-ho a provar.",
+    "errorTakingPicture": "Alguna cosa ha anat malament en fer la foto. Si us plau, torna-ho a provar.",
+    "enableNotifications": {
+      "heading": "Activa les Notificacions",
+      "subHeading": "Les notificacions estan desactivades actualment. Per estar actualitzat, si us plau, activa-les a la configuració del teu dispositiu."
+    },
+    "enableNotificationFailed": "Les notificacions push estan desactivades. Activa-les a la configuració per rebre actualitzacions importants!",
+    "enableNotificationError": "S'ha produït un error en activar les notificacions",
+    "notificationDisabledSuccess": "Notificacions desactivades correctament.",
+    "notificationDisabledRegisterError": "No s'ha pogut donar de baixa el dispositiu per a notificacions.",
+    "notificationDisabledError": "S'ha produït un error en desactivar les notificacions.",
+    "checkNotificationStatusError": "Error en comprovar l'estat de les notificacions.",
+    "projectIdNotFound": "No s'ha trobat l'ID del projecte de notificacions.",
+    "imageSizeLarge": "La imatge és massa gran! La mida del fitxer és {{fileSize}} MB, però el límit és {{imageLimit}} MB.",
+    "videoSizeLarge": "El vídeo és massa gran! La mida del fitxer és {{fileSize}} MB, però el límit és {{videoLimit}} MB.",
+    "loggedInSuccess": "Sessió iniciada correctament",
+    "loggedOutSuccess": "Has tancat la sessió correctament!",
+    "sendVerificationCodeError": "Error en enviar el codi de verificació",
+    "validateAuthCodeError": "Error en validar el codi d'autenticació",
+    "anonymousSignInError": "Error en iniciar sessió de forma anònima",
+    "emailLoginError": "Error en iniciar sessió",
+    "preferredLanguageError": "Error en actualitzar l'idioma preferit de l'usuari",
+    "sharingNotAvailable": "La funció de compartir no està disponible actualment al teu dispositiu",
+    "sharingLinkError": "No s'ha pogut compartir l'enllaç.",
+    "individualPushNotificationSuccess": "Notificacions push individuals enviades correctament!",
+    "globalPushNotificationSuccess": "Notificacions push globals enviades correctament! 🌍🚀",
+    "interpretationFieldsUpdateFail": "No s'han pogut actualitzar els camps d'interpretació! ❌",
+    "deleteScanReportFail": "No s'ha pogut eliminar l'informe d'escaneig. Si us plau, torna-ho a provar",
+    "onboardingUnsuccessful": "Onboarding sense èxit. Si us plau, torna-ho a provar",
+    "logoutUnsuccessful": "Tancament de sessió sense èxit. Si us plau, torna-ho a provar",
+    "deleteScanReportQuestion": "Estàs segur que vols eliminar permanentment aquest informe?",
+    "videoLimitExceeds": "El teu vídeo supera el límit de {{videoSecondsLimit}} segons. Si us plau, retalla'l i torna a pujar-lo",
+    "subscriptionActivated": "La teva subscripció s'ha activat correctament! Gaudeix dels teus beneficis exclusius!",
+    "subscriptionCancelledByUser": "Has cancel·lat la transacció. No dubtis en tornar-ho a provar!",
+    "subscriptionActivationFailed": "No s'ha pogut activar la teva subscripció. Si us plau, torna-ho a provar",
+    "logoutQuestion": "Estàs segur que vols tancar la sessió?",
+    "noSubscriptionToRestore": "Ui! Sembla que no tens una subscripció activa en aquest moment. Per continuar gaudint d'accés complet, si us plau, tria un dels nostres plans de subscripció.",
+    "restorationSuccessful": "La restauració ha estat exitosa! Gaudeix!",
+    "restorationError": "S'ha produït un error en restaurar la compra.",
+    "medicalDisclaimerAlert": "L'aplicació MicroScan AI no ofereix diagnòstics, recomanacions de tractament ni cap consell mèdic. Busqueu sempre l'orientació d'un professional de la salut qualificat per a decisions mèdiques.",
+    "scanLimitReached": "Estem optimitzant la qualitat de l'escaneig per a tu! Podràs escanejar de nou en aproximadament {{hours}} hores i {{minutes}} minuts. Tens alguna pregunta sobre algun tema de microscòpia? Pregunta al nostre assistent de xat mentre esperes!",
+    "chatAndMediaFilesLimit": "Estimat usuari, necessites millorar el teu pla per beneficiar-te de xats il·limitats, escanejos il·limitats, anàlisi multi-imatge i més. 🔓"
+  }
+}

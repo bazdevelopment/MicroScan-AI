@@ -1,0 +1,495 @@
+{
+  "onboarding": {
+    "message": "Vitajte v MicroScan AI!"
+  },
+  "general": {
+    "back": "Späť",
+    "welcome": "Ahoj",
+    "welcomeBack": "Vitajte späť!",
+    "welcomeMessage": "Vitajte!",
+    "continue": "Pokračovať",
+    "retry": "Skúsiť znova",
+    "close": "Zavrieť",
+    "gallery": "Galéria",
+    "files": "Súbory",
+    "cancel": "Zrušiť",
+    "delete": "Odstrániť",
+    "attention": "Pozor!",
+    "new": "Nový",
+    "yes": "Áno",
+    "or": "alebo",
+    "typing": "Píšem...",
+    "online": "Online",
+    "chatbotPlaceholder": "Opýtajte sa ma čokoľvek...",
+    "openSettings": "Otvoriť nastavenia",
+    "seeNotifications": "Zobraziť upozornenia",
+    "viewProfile": "Zobraziť profil",
+    "upgradePlan": "Inovovať plán",
+    "download": "Stiahnuť",
+    "share": "Zdieľať",
+    "shareLink": "Zdieľať odkaz",
+    "skip": "Preskočiť",
+    "next": "Ďalej",
+    "update": "Aktualizovať",
+    "tryAgain": "Skúsiť znova",
+    "createdAt": "Vytvorené",
+    "and": "a",
+    "saveDiscount": "ULOŽIŤ",
+    "restorePurchase": "Obnoviť nákup",
+    "medicalDisclaimer": "Lekárske vyhlásenie",
+    "conversationHistory": "História konverzácií",
+    "freeTrial": "Bezplatná skúšobná verzia",
+    "free": "ZADARMO",
+    "completedScans": "Dokončené skeny",
+    "activeSubscription": "Aktívne predplatné",
+    "askAssistant": "Opýtajte sa asistenta AI",
+    "then": "potom",
+    "perWeek": "týždenne",
+    "perYear": "ročne",
+    "perMonth": "mesačne",
+    "tryForFree": "Vyskúšať Zadarmo",
+    "unlockNow": "Odomknúť Teraz",
+    "copyText": {
+      "loading": "Kopírujem...",
+      "copied": "Skopírované!",
+      "copy": "Kopírovať odkaz"
+    },
+    "loadingMessages": {
+      "initialAppLoad": {
+        "first": "Načítava sa váš personalizovaný zážitok...",
+        "second": "Synchronizujú sa systémy...",
+        "third": "Spracúvajú sa vaše dáta...",
+        "fourth": "Takmer hotovo, chvíľu strpenia..."
+      },
+      "imageScanningLoading": {
+        "first": "Skenujeme váš mikroskopický obrázok, čakajte prosím...",
+        "second": "Analyzujú sa detaily, môže to chvíľu trvať...",
+        "third": "Zvyšuje sa presnosť pre najlepšie výsledky...",
+        "fourth": "Takmer hotovo, finalizuje sa skenovanie..."
+      },
+      "loadingChatbot": {
+        "first": "Aura sa pripravuje, aby vám pomohla...",
+        "second": "Počkajte! Aura pripravuje vašu odpoveď...",
+        "third": "Premýšľam... váš asistent Aura na tom pracuje!"
+      }
+    }
+  },
+  "backHandler": {
+    "holdOn": "Počkajte!",
+    "goBackMessage": "Ste si istí, že sa chcete vrátiť späť?"
+  },
+  "internet": {
+    "noConnectionTitle": "Ste offline!",
+    "noConnectionMessage": "Zapnite mobilné dáta alebo sa pripojte k Wi-Fi. Alebo si dajte prestávku a choďte na prechádzku!"
+  },
+  "uploadScan": {
+    "title": "Nahrať obrázok",
+    "scanNow": "Skenovať teraz"
+  },
+  "weekDays": {
+    "today": "Dnes",
+    "yesterday": "Včera"
+  },
+  "auth": {
+    "verifyAuthCode": "Overiť autentifikačný kód",
+    "verifyAuthCodeButton": "Overiť kód",
+    "authCodeHeading": "Autentifikačný kód",
+    "loginViaEmailHeading": "Prihlásme vás. Ak chcete pokračovať, zadajte svoj e-mail.",
+    "emailAddress": "E-mail"
+  },
+  "rootLayout": {
+    "screens": {
+      "welcome": {
+        "heading": "Vitajte v MicroScan AI!",
+        "startButton": "Začnime!",
+        "accountButton": "Už mám účet"
+      },
+      "login": {
+        "agreeingMessage": "Pokračovaním súhlasíte s našimi",
+        "termsAndConditions": "Podmienkami",
+        "privacyPolicy": "Zásadami ochrany osobných údajov"
+      },
+      "verifyAuthCode": {
+        "verificationCodeHeading": "Zadajte overovací kód zaslaný e-mailom. Upozorňujeme, že kód vyprší za 5 minút.",
+        "verificationCodeSent": "Overovací kód sme odoslali na",
+        "verificationCodeMissing": "Nedostali ste kód?",
+        "resendCode": "Znovu odoslať kód",
+        "backToLogin": "Späť na prihlásenie"
+      },
+      "namePreferenceScreen": {
+        "heading": "Bezpečný, zabezpečený, jednoduchý prístup!",
+        "preferredNameQuestion": "Vyberte si zábavnú prezývku, aby ste zostali anonymní - vaše súkromie je pre nás dôležité",
+        "placeholderPreferredName": "Napríklad: Kapitán Super, Kráľovná Včiel, alebo len Alex!"
+      },
+      "freeTrialPreview": {
+        "heading": "Užite si bezplatnú skúšobnú verziu! 🎉",
+        "subheading": "Počas bezplatnej skúšobnej verzie zažijte tieto úžasné výhody",
+        "review": "Skvelá mikroskopická analýza, asistent AI je veľmi nápomocný! Nevyhnutná aplikácia!",
+        "reviewTrust": "📈 Dôveruje viac ako 3 252 používateľov"
+      },
+      "scanInterpretation": {
+        "title": "Výsledok analýzy",
+        "headerBackTitle": "Správy"
+      },
+      "paywallOnboarding": {
+        "freeTierOfferings": {
+          "freeTrialEnabled": "Bezplatná skúšobná verzia povolená",
+          "heading": "Neobmedzený prístup",
+          "title": "Odomknite Prémiové funkcie ešte dnes!",
+          "firstOffering": "Prístup ku všetkým prémiovým funkciám",
+          "secondOffering": "Prostredie bez reklám",
+          "thirdOffering": "Neobmedzené mikroskopické skeny",
+          "fourthOffering": "Neobmedzené chaty s asistentom AI 24/7"
+        }
+      },
+      "paywallUpgradeScreen": {
+        "heading": "Odomknite Prémiové funkcie ešte dnes!",
+        "firstOffering": {
+          "title": "Spustiť bezplatnú skúšobnú verziu",
+          "subtitle": "Využite {{freeScans}} bezplatných skenov – bez platby"
+        },
+        "secondOffering": {
+          "title": "Mesačný plán",
+          "subtitle": "{{ price }}/mesiac"
+        },
+        "thirdOffering": {
+          "title": "Ročný plán",
+          "subtitle": "{{ price }} ročne"
+        },
+        "fourthOffering": {
+          "title": "{{trialDays}}-dňová skúška",
+          "subtitle": "{{ price }} ročne",
+          "plan": "Týždenný plán"
+        }
+      },
+      "newAppVersionScreen": {
+        "heading": "Je k dispozícii nová verzia MicroScan AI",
+        "subheading": "Ak chcete naďalej používať aplikáciu, aktualizujte na najnovšiu verziu",
+        "action": "Získajte to teraz!"
+      },
+      "rateAppScreen": {
+        "heading": "Považujete aplikáciu za hodnotnú a zaujímavú?",
+        "like": "Áno, páči sa mi!",
+        "dislike": "Ani nie..."
+      },
+      "noInternetScreen": {
+        "heading": "Ste offline",
+        "subheading": "Vaše pripojenie sa zdá byť nestabilné. Skontrolujte stav siete"
+      },
+      "notifications": {
+        "title": "Upozornenia",
+        "noNotifications": "Zatiaľ žiadne upozornenia - zostaňte v kontakte pre aktualizácie!"
+      },
+      "termsOfService": {
+        "title": "Podmienky služby"
+      },
+      "privacyPolicy": {
+        "title": "Zásady ochrany osobných údajov"
+      },
+      "share": {
+        "title": "Zdieľať",
+        "heading": "Zdieľajte aplikáciu MicroScan AI",
+        "subheading": "Pomôžte ostatným objaviť silu analýzy mikroskopie riadenej AI",
+        "scanMessage": "Naskenujte pre stiahnutie aplikácie",
+        "shareMessage": "alebo zdieľajte prostredníctvom svojej obľúbenej platformy"
+      },
+      "rate": {
+        "title": "Dajte nám spätnú väzbu!"
+      },
+      "profile": {
+        "title": "Profil",
+        "edit": "Upraviť profil",
+        "placeholderPreferredName": "Napríklad: Kapitán Super, Kráľovná Včiel, alebo len Alex!"
+      },
+      "generateReportScreen": {
+        "title": "Oceňujeme vašu trpezlivosť! Tu je vaša správa AI.",
+        "userInput": "Vaše podanie",
+        "medicalReport": "Mikroskopická správa",
+        "report": "Mikroskopická správa generovaná AI",
+        "conversationName": "Názov konverzácie"
+      },
+      "verifyEmail": {
+        "heading": "Overiť e-mail"
+      },
+      "filePreviewScreen": {
+        "generateReportButton": "Spustiť analýzu"
+      },
+      "disclaimerScreen": {
+        "heading": "Dôležité vyhlásenie",
+        "subheading": "MicroScan AI je určený pre mikroskopických profesionálov, výskumníkov, študentov a nadšencov",
+        "consentAgreement": "Prečítal som si a súhlasím s vyhlásením.",
+        "firstConsent": "MicroScan AI neposkytuje zdravotné merania, diagnózy ani rady ohľadom liečby a nie je určený na takéto účely. Používatelia MicroScan AI musia použiť svoj klinický úsudok a overiť informácie z autoritatívnych zdrojov pred akýmikoľvek klinickými rozhodnutiami.",
+        "secondConsent": "MicroScan AI nie je diagnostický nástroj, liečebná platforma ani náhrada odbornej lekárskej pomoci. Ponúka poznatky generované AI, ktoré pomáhajú zdravotníckym pracovníkom pristupovať k lekárskej znalosti a analyzovať lekárske obrázky a dokumenty. MicroScan AI je informačná a vzdelávacia aplikácia riadená AI, ktorá je navrhnutá skôr na podporu licencovaných zdravotníckych pracovníkov.",
+        "fourthConsent": "MicroScan AI nie je klasifikovaný ako zdravotnícky prostriedok a nepožaduje regulačné schválenie. Je určený na vzdelávacie a informačné účely, ktoré dopĺňajú odborné znalosti.",
+        "fifthConsent": "MicroScan AI nezhromažďuje, neukladá ani nespracúva osobné údaje ani údaje o pacientoch. Všetky interakcie používateľov sú dôverné a obmedzené na rozsah aplikácie."
+      },
+      "contactUs": {
+        "heading": "Kľudne nám napíšte e-mail priamo a náš tím sa vám ozve čo najskôr",
+        "customerSupport": "Zákaznícka podpora",
+        "emailAddress": "E-mailová adresa"
+      },
+      "languageAnalysisModal": {
+        "languagePreferenceQuestion": "Aký jazyk uprednostňujete pre analýzu AI?",
+        "languageSelection": "Vyberte jazyk pre odpovede AI",
+        "languageSearchCriteria": "Hľadať podľa jazyka, kódu krajiny alebo vlajky",
+        "noLanguageFound": "Nenašiel sa žiadny jazyk",
+        "noLanguageFoundSubtitle": "Skúste upraviť svoje vyhľadávacie výrazy"
+      },
+      "chatScreen": {
+        "randomQuestions": {
+          "one": "Aké sú rozdiely medzi svetlým poľom, fázovým kontrastom a DIC? 🔬",
+          "two": "Ako môže príprava vzorky ovplyvniť rozlíšenie obrazu? 🧫",
+          "three": "Kedy mám použiť konfokálnu versus širokopásmovú mikroskopiu? 🧠",
+          "four": "Ako minimalizovať vyblednutie pri zobrazovaní živých buniek? ✨",
+          "five": "Aký je vplyv numerickej apertúry na rozlíšenie? 📐",
+          "six": "Ako správne zarovnať a kalibrovať mikroskop? ⚙️",
+          "seven": "Ktoré techniky zvyšujú kontrast u nefarbených vzoriek? 🌈",
+          "eight": "Kedy je uprednostňovaná elektrónová mikroskopia pred svetelnou mikroskopiou? 🧲",
+          "nine": "Ako zabezpečiť reprodukovateľnosť v kvantitatívnom zobrazovaní? 📊",
+          "ten": "Aké sú osvedčené postupy pre používanie imerzného oleja? 🛢️",
+          "eleven": "Ako vybrať fluorofory pre viackanálové zobrazovanie? 🎇",
+          "twelve": "Prečo je hrúbka vzorky kritická pre zobrazovanie s vysokým rozlíšením? 📚",
+          "thirteen": "Ako minimalizovať drift a vibrácie počas zobrazovania? 🌍",
+          "fourteen": "Aké sú správne metódy skladovania pripravených preparátov? 📦",
+          "fifteen": "Ktoré parametre zabezpečujú snímky vhodné pre publikáciu? 📸"
+        }
+      }
+    }
+  },
+  "deleteApp": {
+    "title": "Počkajte! Nemažte ma!",
+    "subtitle": "Namiesto toho pošlite spätnú väzbu"
+  },
+  "pdfPreview": {
+    "noEditorInstalled": "Pre náhľad PDF sa uistite, že máte nainštalovaný prehliadač PDF, ako je Adobe Acrobat Reader alebo Google PDF Viewer",
+    "conversationTitlePdf": "Konverzácia s Aurou, vaším asistentom AI"
+  },
+  "flows": {
+    "createReport": {
+      "finalReportForeground": {
+        "message": "Ďakujeme za vašu trpezlivosť!"
+      },
+      "finalReportHeader": {
+        "message": "Toto je výsledok správy!"
+      },
+      "uploadFile": {
+        "title": "Nahrajte akúkoľvek mikroskopickú vzorku na analýzu",
+        "size": "Max: {{imageLimit}}MB (obrázky), {{videoLimit}}MB (videá)",
+        "location": "Vyberte z Galérie alebo Súborov",
+        "fileType": "PNG, JPG, PDF alebo MP4",
+        "openCamera": "Otvoriť kameru a urobiť fotku",
+        "scanType": "Povolené sú len mikroskopické vzorky"
+      }
+    }
+  },
+  "home": {
+    "tab": "Domov",
+    "homeForeground": {
+      "maxNumberOfScans": "Dosiahli ste limit skenov! Inovujte svoj plán a odomknite viac skenov. 🚀",
+      "heading": "Vitajte v MicroScan AI!",
+      "subHeading": "Získajte analýzu akejkoľvek mikroskopickej vzorky pomocou AI v priebehu niekoľkých sekúnd"
+    },
+    "scanCategories": {
+      "heading": "Mikroskopická kolekcia"
+    },
+    "recentReports": {
+      "heading": "Nedávne chaty",
+      "noReports": "Zatiaľ žiadne chaty na zobrazenie!"
+    }
+  },
+  "reports": {
+    "tab": "História",
+    "noReportsAvailable": "Pre tento dátum nie je k dispozícii žiadna história chatov",
+    "heading": "História chatov"
+  },
+  "chat": {
+    "tab": "Chat"
+  },
+  "settings": {
+    "tab": "Nastavenia",
+    "profile": "Profil",
+    "contactUs": "Kontaktujte nás",
+    "about": "O aplikácii",
+    "app_name": "Názov aplikácie",
+    "languages": {
+      "english": "Angličtina",
+      "mandarin_chinese": "Čínština",
+      "hindi": "Hindčina",
+      "spanish_spain": "Španielčina (Španielsko)",
+      "spanish_mexico": "Španielčina (Mexiko)",
+      "arabic": "Arabčina",
+      "french": "Francúzština",
+      "french_canada": "Francúzština (Kanada)",
+      "portuguese_brazil": "Portugalčina (Brazília)",
+      "portuguese_portugal": "Portugalčina (Portugalsko)",
+      "german": "Nemčina",
+      "japanese": "Japončina",
+      "russian": "Ruština",
+      "korean": "Kórejčina",
+      "italian": "Taliančina",
+      "turkish": "Turečtina",
+      "vietnamese": "Vietnamčina",
+      "polish": "Poľština",
+      "ukrainian": "Ukrajinčina",
+      "romanian": "Rumunčina",
+      "dutch": "Holandčina",
+      "czech": "Čeština",
+      "greek": "Gréčtina",
+      "swedish": "Švédčina",
+      "hungarian": "Maďarčina",
+      "thai": "Thajčina",
+      "hebrew": "Hebrejčina",
+      "indonesian": "Indonézština",
+      "malay": "Malajčina",
+      "finnish": "Fínčina",
+      "danish": "Dánčina",
+      "norwegian": "Nórčina",
+      "slovak": "Slovenčina",
+      "croatian": "Chorvátčina",
+      "catalan": "Katalánčina"
+    },
+    "generale": "Všeobecné",
+    "github": "Github",
+    "language": "Jazyk",
+    "links": "Odkazy",
+    "logout": "Odhlásiť sa",
+    "more": "Viac",
+    "privacy": "Zásady ochrany osobných údajov",
+    "faq": "Časté otázky",
+    "rate": "Ohodnotiť",
+    "share": "Zdieľať",
+    "citations": "Citácie lekárskej informácie",
+    "support": "Podpora",
+    "support_us": "Podporte nás",
+    "terms": "Podmienky služby",
+    "theme": {
+      "dark": "Tmavý",
+      "light": "Svetlý",
+      "system": "Systémový",
+      "title": "Téma"
+    },
+    "title": "Nastavenia",
+    "version": "Verzia",
+    "website": "Webová stránka",
+    "devMode": {
+      "title": "Režim vývojára",
+      "componentsLibrary": "Knižnica UI"
+    }
+  },
+  "components": {
+    "ReportCard": {
+      "rating": "Hodnotenie"
+    },
+    "ScanReportCard": {
+      "promptMessage": "Aký je dôvod?",
+      "unnamedConversation": "Nepomenované",
+      "reportTitlePlaceholder": "Pridať názov"
+    },
+    "WeekBlock": {
+      "week": "Týždeň"
+    },
+    "EndScrollPlaceholder": {
+      "scrollToTop": "Posunúť nahor"
+    },
+    "FreeTierStatus": {
+      "heading": "Bezplatné skeny",
+      "subheading": "Odomknite neobmedzené skeny inováciou vášho plánu",
+      "action": "Inovovať"
+    },
+    "UploadFileOptionsModal": {
+      "heading": "Vyberte obrázok / video"
+    },
+    "TapToViewLabel": {
+      "label": "Kliknite pre zobrazenie"
+    },
+    "UpgradeBanner": {
+      "heading": "Inovujte teraz!",
+      "subheading": "Odomknite neobmedzené skeny inováciou vášho plánu"
+    },
+    "PromptSection": {
+      "message": "Váš sken je pripravený! Čo by ste teraz chceli zistiť?",
+      "prompts": {
+        "first": "Aké typy buniek alebo štruktúry sú na tomto obrázku?",
+        "second": "Sú vo vzorke nejaké anomálie alebo patogény?",
+        "third": "Aký je pravdepodobný pôvod alebo stav tejto vzorky?",
+        "fourth": "Aké poznatky môžete z tohto obrázku poskytnúť?"
+      }
+    },
+    "PremiumFeaturesOverview": {
+      "first": "Analýza pomocou AI pre akékoľvek mikroskopické vzorky",
+      "second": "Prístup ku všetkým prémiovým funkciám",
+      "third": "Bez reklám"
+    },
+    "Input": {
+      "labels": {
+        "nickname": "Prezývka",
+        "email": "E-mail",
+        "emailVerification": "Overenie e-mailu"
+      }
+    },
+    "ImageAnnotationStudio": {
+      "instructions": {
+        "title": "Inštrukcie",
+        "first": "1. Kliknite na tlačidlo 'Pridať štvorec' pre vytvorenie výberového štvorca.",
+        "second": "2. Pretiahnite štvorec cez oblasť záujmu.",
+        "third": "3. Upravte rohy pre presné pokrytie oblasti."
+      },
+      "OpenStudioSection": {
+        "openStudioButton": "Otvoriť štúdio",
+        "editMore": "Upraviť viac",
+        "continueEditing": "Pokračovať v úprave anotácií?",
+        "highlightedRegionsCount": "Máte {{highlightedRegions}} zvýraznených oblastí. Kliknite nižšie pre pridanie viac",
+        "highlightRegions": "Potrebujete zvýrazniť oblasti vášho mikroskopického obrázku?"
+      },
+      "studioToolbar": {
+        "addSquare": "Pridať štvorec"
+      }
+    }
+  },
+  "alerts": {
+    "mediaPickerPermissions": "Prepáčte, potrebujeme povolenia kamery, aby to fungovalo!",
+    "errorSelectingImagePicker": "Pri výbere obrázka sa niečo pokazilo. Skúste to znova.",
+    "errorSelectingDocumentPicker": "Pri výbere dokumentu sa niečo pokazilo. Skúste to znova.",
+    "errorTakingPicture": "Pri robení fotky sa niečo pokazilo. Skúste to znova.",
+    "enableNotifications": {
+      "heading": "Povoliť upozornenia",
+      "subHeading": "Upozornenia sú aktuálne vypnuté. Ak chcete zostať informovaní, povoľte ich v nastaveniach zariadenia."
+    },
+    "enableNotificationFailed": "Push upozornenia sú zakázané. Povoľte ich v nastaveniach, aby ste dostávali dôležité aktualizácie!",
+    "enableNotificationError": "Pri povoľovaní upozornení došlo k chybe",
+    "notificationDisabledSuccess": "Upozornenia úspešne zakázané.",
+    "notificationDisabledRegisterError": "Nepodarilo sa zrušiť registráciu zariadenia pre upozornenia.",
+    "notificationDisabledError": "Pri zakazovaní upozornení došlo k chybe.",
+    "checkNotificationStatusError": "Chyba pri kontrole stavu upozornení.",
+    "projectIdNotFound": "ID projektu upozornení nebolo nájdené.",
+    "imageSizeLarge": "Obrázok je príliš veľký! Veľkosť súboru je {{fileSize}} MB, ale limit je {{imageLimit}} MB.",
+    "videoSizeLarge": "Video je príliš veľké! Veľkosť súboru je {{fileSize}} MB, ale limit je {{videoLimit}} MB.",
+    "loggedInSuccess": "Úspešne prihlásené",
+    "loggedOutSuccess": "Boli ste úspešne odhlásení!",
+    "sendVerificationCodeError": "Chyba pri odosielaní overovacieho kódu",
+    "validateAuthCodeError": "Chyba pri overovaní autentifikačného kódu",
+    "anonymousSignInError": "Chyba pri anonymnom prihlásení",
+    "emailLoginError": "Chyba pri prihlasovaní",
+    "preferredLanguageError": "Chyba pri aktualizácii preferovaného jazyka používateľa",
+    "sharingNotAvailable": "Zdieľanie momentálne nie je na vašom zariadení k dispozícii",
+    "sharingLinkError": "Nepodarilo sa zdieľať odkaz.",
+    "individualPushNotificationSuccess": "Individuálne push upozornenia úspešne odoslané!",
+    "globalPushNotificationSuccess": "Globálne push upozornenia úspešne odoslané! 🌍🚀",
+    "interpretationFieldsUpdateFail": "Nepodarilo sa aktualizovať polia interpretácie! ❌",
+    "deleteScanReportFail": "Nie je možné odstrániť správu o skenovaní. Skúste to znova",
+    "onboardingUnsuccessful": "Úvodný proces bol neúspešný. Skúste to znova",
+    "logoutUnsuccessful": "Odhlásenie bolo neúspešné. Skúste to znova",
+    "deleteScanReportQuestion": "Ste si istí, že chcete túto správu natrvalo odstrániť?",
+    "videoLimitExceeds": "Vaše video prekračuje limit {{videoSecondsLimit}} sekúnd. Orežte ho a znova nahrajte",
+    "subscriptionActivated": "Vaše predplatné bolo úspešne aktivované! Užite si exkluzívne výhody!",
+    "subscriptionCancelledByUser": "Transakciu ste zrušili. Kľudne to skúste znova!",
+    "subscriptionActivationFailed": "Nepodarilo sa aktivovať vaše predplatné. Skúste to znova",
+    "logoutQuestion": "Ste si istí, že sa chcete odhlásiť?",
+    "noSubscriptionToRestore": "Ops! Vyzerá to, že momentálne nemáte aktívne predplatné. Ak chcete naďalej využívať plný prístup, vyberte si jeden z našich predplatných plánov.",
+    "restorationSuccessful": "Obnovenie bolo úspešné! Užite si to!",
+    "restorationError": "Pri obnovovaní nákupu došlo k chybe.",
+    "medicalDisclaimerAlert": "Aplikácia MicroScan AI neponúka diagnózy, odporúčania liečby ani žiadne lekárske rady. Pri lekársskych rozhodnutiach sa vždy riaďte radami kvalifikovaného zdravotníckeho pracovníka.",
+    "scanLimitReached": "Optimalizujeme pre vás kvalitu skenovania! Budete môcť znova skenovať približne za {{hours}} hodín a {{minutes}} minút. Máte nejaké otázky ohľadom mikroskopie? Opýtajte sa nášho asistenta chatu, kým čakáte!",
+    "chatAndMediaFilesLimit": "Vážený používateľ, pre využitie neobmedzených chatov, neobmedzených skenov, analýzy viacerých obrázkov a ďalších funkcií potrebujete inovovať svoj plán. 🔓"
+  }
+}
