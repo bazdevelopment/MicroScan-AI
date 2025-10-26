@@ -50,6 +50,7 @@ import { useTextToSpeech } from '@/core/hooks/use-text-to-speech';
 import { getStorageItem } from '@/core/storage';
 import { checkIsVideo } from '@/core/utilities/check-is-video';
 import { generateUniqueId } from '@/core/utilities/generate-unique-id';
+import { requestAppRatingWithDelay } from '@/core/utilities/request-app-review';
 import { shuffleArray } from '@/core/utilities/shuffle-array';
 import { wait } from '@/core/utilities/wait';
 import { colors, SafeAreaView, Text } from '@/ui';
@@ -292,6 +293,41 @@ export const ChatBubble = ({
   );
 };
 
+let globalHasRequested = false;
+
+export function useRequestAppRatingOnce({
+  isLoading,
+  isFetchingAllConversationsPending,
+  userInfo,
+  requestAppRatingWithDelay,
+}: {
+  isLoading: boolean;
+  isFetchingAllConversationsPending: boolean;
+  userInfo?: { completedScans?: number };
+  requestAppRatingWithDelay: (delay: number) => void;
+}) {
+  const hasRequestedRef = useRef(globalHasRequested);
+
+  useEffect(() => {
+    if (hasRequestedRef.current || globalHasRequested) return;
+
+    if (
+      !isLoading &&
+      !isFetchingAllConversationsPending &&
+      userInfo?.completedScans === 1
+    ) {
+      hasRequestedRef.current = true;
+      globalHasRequested = true;
+      requestAppRatingWithDelay(1000);
+    }
+  }, [
+    isLoading,
+    isFetchingAllConversationsPending,
+    userInfo?.completedScans,
+    requestAppRatingWithDelay,
+  ]);
+}
+
 export const TypingIndicator = () => {
   return (
     <LottieView
@@ -350,7 +386,8 @@ const ChatScreen = () => {
     conversationId as string
   );
 
-  const { data } = useAllUserConversations();
+  const { data, isPending: isFetchingAllConversationsPending } =
+    useAllUserConversations();
   const conversationsCount = data?.count || 0;
 
   const { sendMessage, isSending } = useConversation(conversationId as string);
@@ -510,6 +547,13 @@ const ChatScreen = () => {
     }
   }, [conversationMode]);
 
+  useRequestAppRatingOnce({
+    isLoading,
+    isFetchingAllConversationsPending,
+    userInfo,
+    requestAppRatingWithDelay,
+  });
+
   if (isLoading && conversationMode !== 'RANDOM_CONVERSATION') {
     return (
       <View className="flex-1 items-center justify-center bg-white dark:bg-blackEerie">
@@ -550,22 +594,28 @@ const ChatScreen = () => {
               }}
               icon={<CloseIcon color={colors.white} />}
             />
-            <View className="item-center justify-center">
-              <Text className="ml-2 font-bold-nunito text-xl dark:text-white">
-                Aura
-              </Text>
-              {isSending ? (
-                <Text className="ml-2 text-xs text-gray-500 dark:text-white">
-                  {translate('general.typing')}
+            <View className="-left-2 flex-row items-center justify-center">
+              <Image
+                source={require('../ui/assets/images/doctor-microscopy.png')}
+                className="mr-2 size-8 rounded-full"
+              />
+              <View>
+                <Text className="ml-2 font-bold-nunito text-xl dark:text-white">
+                  Aura
                 </Text>
-              ) : (
-                <View className="flex-row items-center gap-2">
-                  <View className="size-2 rounded-full bg-success-400" />
-                  <Text className="text-xs text-gray-500 dark:text-white">
-                    {translate('general.online')}
+                {isSending ? (
+                  <Text className="ml-2 text-xs text-gray-500 dark:text-white">
+                    {translate('general.typing')}
                   </Text>
-                </View>
-              )}
+                ) : (
+                  <View className="flex-row items-center gap-2">
+                    <View className="size-2 rounded-full bg-success-400" />
+                    <Text className="text-xs text-gray-500 dark:text-white">
+                      {translate('general.online')}
+                    </Text>
+                  </View>
+                )}
+              </View>
             </View>
             <View>
               {!!mediaSource && (
