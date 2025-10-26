@@ -19,7 +19,6 @@ import Icon from '@/components/icon';
 import { SUBSCRIPTION_PLANS_PER_PLATFORM } from '@/constants/subscriptions';
 import { DEVICE_TYPE, translate, useIsFirstTime } from '@/core';
 import { useCrashlytics } from '@/core/hooks/use-crashlytics';
-import { requestAppRatingWithDelay } from '@/core/utilities/request-app-review';
 import { type CrashlyticsLogLevel } from '@/crashlytics/crashlytics.types';
 import { type IUserInfo } from '@/types/general-types';
 import { Button, CheckboxIcon, colors, Image, Switch, Text } from '@/ui';
@@ -310,8 +309,8 @@ const PaywallNew = () => {
         setIsFirstTime,
         allowAppAccess,
       });
-      requestAppRatingWithDelay(3000);
       DEVICE_TYPE.IOS && router.dismiss();
+      // requestAppRatingWithDelay(3000); //!!!remove from now asking the review
     }
   };
 
@@ -342,7 +341,7 @@ const PaywallNew = () => {
                   logEvent,
                   setIsFirstTime,
                 });
-                requestAppRatingWithDelay(3000);
+                // requestAppRatingWithDelay(3000);
                 DEVICE_TYPE.IOS && router.dismiss();
                 return;
               }
