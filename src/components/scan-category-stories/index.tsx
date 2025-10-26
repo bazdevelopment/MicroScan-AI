@@ -7,6 +7,7 @@ import { useColorScheme } from 'nativewind';
 import React, { useMemo, useRef } from 'react';
 import { View } from 'react-native';
 
+import { useSelectedLanguage } from '@/core';
 import { colors, Text } from '@/ui';
 
 import { StoriesSkeletonLoader } from '../story-skeleton-loader';
@@ -23,6 +24,7 @@ const ScanCategoriesStories: React.FC<{
 }> = ({ categories, isLoading, className }) => {
   const { colorScheme } = useColorScheme();
   const isDark = colorScheme === 'dark';
+  const { language } = useSelectedLanguage();
 
   const ref = useRef<InstagramStoriesPublicMethods>(null);
   const stories = useMemo(
@@ -60,9 +62,12 @@ const ScanCategoriesStories: React.FC<{
         ref={ref}
         stories={stories}
         avatarSize={65}
-        containerStyle={{ marginTop: -20 }}
+        containerStyle={{
+          marginTop: -20,
+        }}
         avatarListContainerStyle={{
           paddingRight: 16,
+          paddingLeft: language === 'ar' || language === 'he' ? 300 : 0,
         }}
         avatarBorderColors={[
           colors.primary[900],
