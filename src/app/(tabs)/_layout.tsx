@@ -180,7 +180,7 @@ export default function TabLayout() {
               tabPress: () => {
                 addSelectionHapticEffect?.();
                 logEvent(
-                  `User ${userInfo.userId} navigated to ${tab.screenName}`
+                  `User ${userInfo?.userId} navigated to ${tab.screenName}`
                 );
               },
             }}
