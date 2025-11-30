@@ -2,13 +2,9 @@
 import * as Speech from 'expo-speech';
 import { useEffect, useState } from 'react';
 
-import {
-  AI_ANALYSIS_LANGUAGE_SELECTION,
-  IETF_BCP_47_FORMAT_LANGUAGE,
-} from '@/constants/language';
+import { IETF_BCP_47_FORMAT_LANGUAGE } from '@/constants/language';
 
 import { useSelectedLanguage } from '../i18n';
-import { getStorageItem } from '../storage';
 
 interface UseTextToSpeechProps {
   preferredGender?: 'female' | 'male';
@@ -42,10 +38,8 @@ export const useTextToSpeech = ({
   const [isLoading, setIsLoading] = useState(true);
   const [availableVoices, setAvailableVoices] = useState<Speech.Voice[]>([]);
   const [selectedVoice, setSelectedVoice] = useState<Speech.Voice | null>(null);
-  const languageAIResponsesLocally = getStorageItem(
-    AI_ANALYSIS_LANGUAGE_SELECTION
-  );
-  const voiceLanguage = languageAIResponsesLocally || language;
+
+  const voiceLanguage = language;
   // Load available voices and select default voice on mount
   useEffect(() => {
     const loadVoices = async () => {

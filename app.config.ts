@@ -104,7 +104,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
       'https://play.google.com/store/apps/details?id=com.microscanai',
     googleServicesFile: ClientEnv.GOOGLE_SERVICES_JSON_PATH,
     adaptiveIcon: {
-      foregroundImage: './assets/adaptive-icon.png',
+      foregroundImage: './assets/adaptive-icon-v2.png',
       backgroundColor: '#FFFFFF',
     },
     blockedPermissions: ['FOREGROUND_SERVICE_MEDIA_PLAYBACK'], // Android review didn't pass (permission used by expo-av)You

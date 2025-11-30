@@ -2,8 +2,7 @@
 import { router } from 'expo-router';
 import { firebaseAuth } from 'firebase/config';
 import { generateUniqueId } from 'functions/utilities/generate-unique-id';
-import { useColorScheme } from 'nativewind';
-import React, { useCallback, useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import {
   Dimensions,
   Keyboard,
@@ -21,24 +20,19 @@ import { useFinalStreamingMessage } from '@/api/conversation/conversation.hooks'
 import AttachmentPreview from '@/components/attachment-preview';
 import ImageAnnotationStudio from '@/components/image-annotation-studio';
 import ScanningModal from '@/components/image-scanner-modal';
-import LanguageModal from '@/components/modals/language-analysis-modal';
 import OpenStudioSection from '@/components/open-studio-section';
 import ProgressBar from '@/components/progress-bar';
 import PromptSection from '@/components/prompt-section';
 import Toast from '@/components/toast';
-import { AI_ANALYSIS_LANGUAGE_SELECTION } from '@/constants/language';
 import useRemoteConfig from '@/core/hooks/use-remote-config';
 import { translate, useSelectedLanguage } from '@/core/i18n';
-import { getStorageItem, setStorageItem } from '@/core/storage';
 import { checkIsVideo } from '@/core/utilities/check-is-video';
 import { DEVICE_TYPE } from '@/core/utilities/device-type';
 import { getBase64ImageUri } from '@/core/utilities/get-base64-uri';
-import { Button, colors, useModal } from '@/ui';
+import { Button, colors } from '@/ui';
 import { WandSparkle } from '@/ui/assets/icons';
 import { ArrowLeftSharp } from '@/ui/assets/icons/arrow-left.sharp';
 import { ArrowRightSharp } from '@/ui/assets/icons/arrow-right-sharp';
-import { MultiLanguage } from '@/ui/assets/icons/multi-language';
-import { SelectionIcon } from '@/ui/assets/icons/selection';
 
 import { type IFilePreviewScreen } from './file-preview-screen.interface';
 
@@ -155,11 +149,7 @@ const FilePreviewScreen = ({
   const [isStudioOpen, setIsStudioOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0); // For multiple images navigation
   const { language: appLanguage } = useSelectedLanguage();
-  const languageAIResponsesLocally = getStorageItem(
-    AI_ANALYSIS_LANGUAGE_SELECTION
-  );
-  const { AI_ANALYSIS_PROMPT_FIREBASE, ENABLE_SEND_MESSAGES_FUNCTION_BACKUP } =
-    useRemoteConfig();
+  const { AI_ANALYSIS_PROMPT_FIREBASE } = useRemoteConfig();
 
   // Determine if we have multiple images or single image/video
   const { isMultipleImages, imageDataArray, currentImageData, totalImages } =
@@ -201,13 +191,6 @@ const FilePreviewScreen = ({
       };
     }, [collectedData, currentImageIndex]);
 
-  const [selectedLanguage, setSelectedLanguage] = useState<string>(
-    languageAIResponsesLocally || appLanguage
-  );
-  const { colorScheme } = useColorScheme();
-  const isDark = colorScheme === 'dark';
-  const languageModalRef = useModal();
-
   const originalImage = currentImageData?.fileUri;
   const [imageUrlHighlighted, setImageUrlHighlighted] = useState(originalImage);
 
@@ -225,7 +208,7 @@ const FilePreviewScreen = ({
 
   const handleOpenStudio = () => setIsStudioOpen(true);
   const handleCloseStudio = () => setIsStudioOpen(false);
-  const handleCloseScanningModal = () => setIsModalVisible(false);
+  // const handleCloseScanningModal = () => setIsModalVisible(false);
 
   // Navigation functions for multiple images
   const goToNextImage = () => {
@@ -245,23 +228,6 @@ const FilePreviewScreen = ({
       setCurrentImageIndex(index);
     }
   };
-
-  const handleOpenLanguageSelector = useCallback(() => {
-    languageModalRef.present();
-  }, []);
-
-  const handleCloseLanguageSelector = useCallback(() => {
-    languageModalRef.dismiss();
-  }, []);
-
-  const handleLanguageSelect = useCallback(
-    (languageCode: string) => {
-      setSelectedLanguage(languageCode);
-      setStorageItem(AI_ANALYSIS_LANGUAGE_SELECTION, languageCode);
-      handleCloseLanguageSelector();
-    },
-    [handleCloseLanguageSelector]
-  );
 
   const addSquare = () => {
     const width = 80 + Math.random() * 120;
@@ -353,7 +319,7 @@ const FilePreviewScreen = ({
           fileName: item.fileName || '',
         };
       }),
-      language: selectedLanguage,
+      language: appLanguage,
       onStream: (chunk: string) => {},
       onComplete: (fullResponse: string) => {},
       onError: (error: Error) => {
@@ -491,36 +457,6 @@ const FilePreviewScreen = ({
             </View>
           )}
 
-          {/* Language Selection */}
-          <View className={`pb-4 ${(isVideo || isMultipleImages) && 'mt-4'}`}>
-            <Text className="mb-2 font-bold-nunito text-lg text-gray-700 dark:text-white">
-              {translate(
-                'rootLayout.screens.languageAnalysisModal.languagePreferenceQuestion'
-              )}
-            </Text>
-            <TouchableOpacity
-              activeOpacity={0.7}
-              onPress={handleOpenLanguageSelector}
-              className="border-1 flex-row items-center justify-between rounded-xl border border-charcoal-200  p-4 dark:border-charcoal-600 dark:bg-blackEerie"
-            >
-              <View className="flex-row items-center">
-                <MultiLanguage
-                  width={20}
-                  height={20}
-                  color={isDark ? colors.white : colors.charcoal[600]}
-                />
-                <Text className="ml-3 text-base font-medium text-gray-900 dark:text-white">
-                  {LANGUAGES[selectedLanguage]}
-                </Text>
-              </View>
-              <SelectionIcon
-                width={20}
-                height={20}
-                color={isDark ? colors.white : colors.charcoal[600]}
-              />
-            </TouchableOpacity>
-          </View>
-
           {/* Prompt Section */}
           <View className="pb-6">
             <PromptSection
@@ -592,13 +528,6 @@ const FilePreviewScreen = ({
           />
         )}
       </ScrollView>
-
-      {/* Language Selection Modal */}
-      <LanguageModal
-        ref={languageModalRef.ref}
-        selectedLanguage={selectedLanguage}
-        onLanguageSelect={handleLanguageSelect}
-      />
     </KeyboardStickyView>
   );
 };

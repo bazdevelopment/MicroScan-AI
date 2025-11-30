@@ -40,7 +40,6 @@ import { ImagePickerModal } from '@/components/image-picker-modal';
 import ImagePreviewGallery from '@/components/image-preview-gallery';
 import MessageMediaAttachments from '@/components/message-media-attachments';
 import Toast from '@/components/toast';
-import { AI_ANALYSIS_LANGUAGE_SELECTION } from '@/constants/language';
 import { LOADING_MESSAGES_CHATBOT } from '@/constants/loading-messages';
 import { DEVICE_TYPE, translate, useSelectedLanguage } from '@/core';
 import useBackHandler from '@/core/hooks/use-back-handler';
@@ -48,7 +47,6 @@ import { useClipboard } from '@/core/hooks/use-clipboard';
 import { useMediaPickerChat } from '@/core/hooks/use-media-picker-chat';
 import useRemoteConfig from '@/core/hooks/use-remote-config';
 import { useTextToSpeech } from '@/core/hooks/use-text-to-speech';
-import { getStorageItem } from '@/core/storage';
 import { checkIsVideo } from '@/core/utilities/check-is-video';
 import { generateUniqueId } from '@/core/utilities/generate-unique-id';
 import {
@@ -371,11 +369,6 @@ const ChatScreen = () => {
     null
   );
   const { language: appLanguage } = useSelectedLanguage();
-  const languageAIResponsesLocally = getStorageItem(
-    AI_ANALYSIS_LANGUAGE_SELECTION
-  );
-
-  const selectedLanguage = languageAIResponsesLocally || appLanguage;
 
   const [lastUserMessageIndex, setLastUserMessageIndex] = useState<
     number | null
@@ -488,7 +481,7 @@ const ChatScreen = () => {
         userId: userInfo.userId,
         history: conversation?.messages || [],
         mediaFiles,
-        language: selectedLanguage,
+        language: appLanguage,
         onStream: (chunk: string) => {},
         onComplete: (fullResponse: string) => {
           onResetFiles?.();
@@ -548,7 +541,7 @@ const ChatScreen = () => {
         userId: userInfo.userId,
         history: conversation?.messages || [],
         mediaFiles,
-        language: selectedLanguage,
+        language: appLanguage,
         onStream: (chunk: string) => {},
         onComplete: (fullResponse: string) => {
           onResetFiles?.();

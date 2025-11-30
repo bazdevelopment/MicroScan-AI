@@ -38,12 +38,7 @@ export const Text = ({
     [style]
   );
   return (
-    <NNText
-      className={textStyle}
-      style={nStyle}
-      {...props}
-      allowFontScaling={false}
-    >
+    <NNText className={textStyle} style={nStyle} {...props} allowFontScaling>
       {tx ? translate(tx) : children}
     </NNText>
   );
