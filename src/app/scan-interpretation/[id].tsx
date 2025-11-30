@@ -1,12 +1,13 @@
 /* eslint-disable max-lines-per-function */
 import { FlashList } from '@shopify/flash-list';
 import dayjs from 'dayjs';
-import { useLocalSearchParams } from 'expo-router';
+import { router, useLocalSearchParams } from 'expo-router';
 import React from 'react';
 import { ActivityIndicator, ScrollView, View } from 'react-native';
 import { Toaster } from 'sonner-native';
 
 import { useInterpretationById } from '@/api/interpretation/interpretation.hooks';
+import { useUser } from '@/api/user/user.hooks';
 import AttachmentPreview from '@/components/attachment-preview';
 import Icon from '@/components/icon';
 import { DEVICE_TYPE, translate, useSelectedLanguage } from '@/core';
@@ -19,6 +20,7 @@ import { ChatBubble } from '../chat-screen';
 const ScanInterpretationDetailsScreen = () => {
   const { id: documentId } = useLocalSearchParams();
   const { language } = useSelectedLanguage();
+  const { data: userInfo } = useUser(language);
 
   const { data, isPending } = useInterpretationById({
     documentId: documentId as string,
@@ -29,6 +31,12 @@ const ScanInterpretationDetailsScreen = () => {
     data?.record?.conversationMessages.filter(
       (msg) => !Array.isArray(msg.content)
     ) || [];
+
+  const handleUnlockMessage = () => {
+    router.navigate('/paywall-new');
+  };
+
+  const shouldBlurMessage = userInfo?.isFreeTrialOngoing;
 
   const isVideo = checkIsVideo(data?.record?.mimeType);
   if (isPending) {
@@ -74,7 +82,7 @@ const ScanInterpretationDetailsScreen = () => {
                 color={colors.white}
               />
               <Text className="ml-2 font-semibold-nunito text-sm text-white">
-                {data.record.mimeType.toUpperCase()}
+                {data?.record?.mimeType?.toUpperCase()}
               </Text>
             </View>
             <View className="flex-row items-center">
@@ -137,7 +145,12 @@ const ScanInterpretationDetailsScreen = () => {
               keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => {
                 return (
-                  <ChatBubble message={item} isUser={item.role === 'user'} />
+                  <ChatBubble
+                    message={item}
+                    isUser={item.role === 'user'}
+                    shouldBlur={shouldBlurMessage}
+                    onUnlock={handleUnlockMessage}
+                  />
                 );
               }}
               estimatedItemSize={100}

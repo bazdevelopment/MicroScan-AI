@@ -50,25 +50,24 @@ const formatPaywallData = (offerings: any) => {
       type: 'ANNUAL',
     });
   }
-  //!We won't use monthly subscription plan
-  // if (offerings?.monthly?.product) {
-  //   paywallData.push({
-  //     id: offerings.monthly.product.identifier,
-  //     title: translate(
-  //       'rootLayout.screens.paywallUpgradeScreen.secondOffering.title'
-  //     ),
-  //     subtitle: translate(
-  //       'rootLayout.screens.paywallUpgradeScreen.secondOffering.subtitle',
-  //       {
-  //         price: offerings.monthly.product.priceString,
-  //       }
-  //     ),
-  //     price: offerings.monthly.product.priceString,
-  //     priceNumber: offerings.monthly.product.price,
-  //     currency: offerings.monthly.product.currencyCode,
-  //     type: 'MONTHLY',
-  //   });
-  // }
+  if (offerings?.monthly?.product) {
+    paywallData.push({
+      id: offerings.monthly.product.identifier,
+      title: translate(
+        'rootLayout.screens.paywallUpgradeScreen.secondOffering.title'
+      ),
+      subtitle: translate(
+        'rootLayout.screens.paywallUpgradeScreen.secondOffering.subtitle',
+        {
+          price: offerings.monthly.product.priceString,
+        }
+      ),
+      price: offerings.monthly.product.priceString,
+      priceNumber: offerings.monthly.product.price,
+      currency: offerings.monthly.product.currencyCode,
+      type: 'MONTHLY',
+    });
+  }
 
   if (offerings?.weekly?.product) {
     paywallData.push({

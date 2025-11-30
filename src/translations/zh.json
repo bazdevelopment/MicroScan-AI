@@ -21,6 +21,7 @@
     "typing": "正在输入...",
     "online": "在线",
     "chatbotPlaceholder": "问我任何问题...",
+    "analyzingMediaFilesPlaceholder": "正在分析媒体文件...",
     "openSettings": "打开设置",
     "seeNotifications": "查看通知",
     "viewProfile": "查看个人资料",
@@ -213,7 +214,8 @@
         "heading": "验证电子邮件"
       },
       "filePreviewScreen": {
-        "generateReportButton": "开始分析"
+        "generateReportButton": "开始分析",
+        "mediaFilesUploaded": "您上传了 {{totalMediaFiles}} 个媒体文件"
       },
       "disclaimerScreen": {
         "heading": "重要免责声明",
@@ -378,6 +380,11 @@
     }
   },
   "components": {
+    "ImagePickerModal": {
+      "photoLibrary": "照片库",
+      "takePhoto": "拍照",
+      "chooseFile": "选择文件"
+    },
     "ReportCard": {
       "rating": "评分"
     },
@@ -491,6 +498,9 @@
     "restorationError": "恢复购买时发生错误。",
     "medicalDisclaimerAlert": "MicroScan AI 应用不提供诊断、治疗建议或任何医疗建议。对于医疗决策，请务必寻求合格医疗保健专业人士的指导。",
     "scanLimitReached": "我们正在为您优化扫描质量！您大约在 {{hours}} 小时 {{minutes}} 分钟后可以再次扫描。对任何显微镜主题有疑问吗？等待时请询问我们的聊天助手！",
-    "chatAndMediaFilesLimit": "尊敬的用户，您需要升级您的套餐才能享受无限次聊天、无限次扫描、多图像分析等更多权益。 🔓"
+    "chatAndMediaFilesLimit": "尊敬的用户，您需要升级您的套餐才能享受无限次聊天、无限次扫描、多图像分析等更多权益。 🔓",
+    "mixedMediaNotAllowed": "为了更好的准确性，请不要上传不同类型的媒体文件混合。请仅上传图像、视频或pdf — 不要全部一起上传。",
+    "multipleVideosNotAllowed": "为了更好的准确性，请一次仅上传一个视频。",
+    "mediaFilesUploadFiles": "上传媒体文件时出错。请重试。"
   }
 }

@@ -38,6 +38,7 @@
     "restorePurchase": "Gendan køb",
     "medicalDisclaimer": "Medicinsk ansvarsfraskrivelse",
     "conversationHistory": "Samtalhistorik",
+    "analyzingMediaFilesPlaceholder": "Analyserer mediefiler...",
     "freeTrial": "Gratis prøveperiode",
     "free": "GRATIS",
     "noPaymentNow": "Ingen betaling nu. Annuller når som helst.",
@@ -213,7 +214,8 @@
         "heading": "Bekræft e-mail"
       },
       "filePreviewScreen": {
-        "generateReportButton": "Start analyse"
+        "generateReportButton": "Start analyse",
+        "mediaFilesUploaded": "Du uploadede {{totalMediaFiles}} mediefiler"
       },
       "disclaimerScreen": {
         "heading": "Vigtig ansvarsfraskrivelse",
@@ -378,6 +380,11 @@
     }
   },
   "components": {
+    "ImagePickerModal": {
+      "photoLibrary": "Fotobibliotek",
+      "takePhoto": "Tag foto",
+      "chooseFile": "Vælg fil"
+    },
     "ReportCard": {
       "rating": "Vurdering"
     },
@@ -491,6 +498,9 @@
     "restorationError": "Der opstod en fejl under gendannelse af købet.",
     "medicalDisclaimerAlert": "MicroScan AI appen giver ikke diagnoser, behandlingsanbefalinger eller nogen form for medicinsk rådgivning. Søg altid vejledning fra en kvalificeret sundhedsprofessionel for medicinske beslutninger.",
     "scanLimitReached": "Vi optimerer scankvaliteten for dig! Du vil kunne scanne igen om cirka {{hours}} timer og {{minutes}} minutter. Har du spørgsmål om et mikroskopi emne? Spørg vores chatassistent mens du venter!",
-    "chatAndMediaFilesLimit": "Kære bruger, du skal opgradere din plan for at drage fordel af ubegrænsede chats, ubegrænsede scanninger, multi-billede analyse og mere. 🔓"
+    "chatAndMediaFilesLimit": "Kære bruger, du skal opgradere din plan for at drage fordel af ubegrænsede chats, ubegrænsede scanninger, multi-billede analyse og mere. 🔓",
+    "mixedMediaNotAllowed": "For bedre nøjagtighed, upload ikke en blanding af forskellige mediefiler. Upload venligst kun billeder, videoer eller pdf'er — ikke alle sammen.",
+    "multipleVideosNotAllowed": "For bedre nøjagtighed, upload venligst kun én video ad gangen.",
+    "mediaFilesUploadFiles": "Der opstod en fejl under upload af dine mediefiler. Prøv venligst igen."
   }
 }

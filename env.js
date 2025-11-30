@@ -93,6 +93,7 @@ const client = z.object({
   EXPO_PUBLIC_ANALYZE_IMAGE_CONVERSATION_ENDPOINT: z.string().optional(),
   EXPO_PUBLIC_ANALYZE_VIDEO_CONVERSATION_ENDPOINT: z.string().optional(),
   EXPO_PUBLIC_CONTINUE_CONVERSATION_ENDPOINT: z.string().optional(),
+  EXPO_PUBLIC_GEMINI_API_KEY: z.string().optional(),
 });
 
 const buildTime = z.object({
@@ -131,6 +132,7 @@ const _clientEnv = {
     process.env.EXPO_PUBLIC_ANALYZE_IMAGE_CONVERSATION_ENDPOINT,
   EXPO_PUBLIC_CONTINUE_CONVERSATION_ENDPOINT:
     process.env.EXPO_PUBLIC_CONTINUE_CONVERSATION_ENDPOINT,
+  EXPO_PUBLIC_GEMINI_API_KEY: process.env.EXPO_PUBLIC_GEMINI_API_KEY,
 };
 
 /**

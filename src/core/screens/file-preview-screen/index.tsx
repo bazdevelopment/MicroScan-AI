@@ -1,8 +1,8 @@
 /* eslint-disable max-lines-per-function */
 import { router } from 'expo-router';
 import { firebaseAuth } from 'firebase/config';
-import { useColorScheme } from 'nativewind';
-import React, { useCallback, useState } from 'react';
+import { generateUniqueId } from 'functions/utilities/generate-unique-id';
+import React, { useMemo, useState } from 'react';
 import {
   Dimensions,
   Keyboard,
@@ -16,29 +16,23 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { KeyboardStickyView } from 'react-native-keyboard-controller';
 import { Toaster } from 'sonner-native';
 
-import { useAnalyzeImage, useAnalyzeVideo } from '@/api/image/image.hooks';
+import { useFinalStreamingMessage } from '@/api/conversation/conversation.hooks';
 import AttachmentPreview from '@/components/attachment-preview';
 import ImageAnnotationStudio from '@/components/image-annotation-studio';
 import ScanningModal from '@/components/image-scanner-modal';
-import LanguageModal from '@/components/modals/language-analysis-modal';
 import OpenStudioSection from '@/components/open-studio-section';
 import ProgressBar from '@/components/progress-bar';
 import PromptSection from '@/components/prompt-section';
 import Toast from '@/components/toast';
-import { AI_ANALYSIS_LANGUAGE_SELECTION } from '@/constants/language';
+import useRemoteConfig from '@/core/hooks/use-remote-config';
 import { translate, useSelectedLanguage } from '@/core/i18n';
-import { getStorageItem, setStorageItem } from '@/core/storage';
 import { checkIsVideo } from '@/core/utilities/check-is-video';
 import { DEVICE_TYPE } from '@/core/utilities/device-type';
 import { getBase64ImageUri } from '@/core/utilities/get-base64-uri';
-import {
-  createFormDataImagePayload,
-  createFormDataVidePayload,
-} from '@/core/utilities/upload-media';
-import { Button, colors, useModal } from '@/ui';
+import { Button, colors } from '@/ui';
 import { WandSparkle } from '@/ui/assets/icons';
-import { MultiLanguage } from '@/ui/assets/icons/multi-language';
-import { SelectionIcon } from '@/ui/assets/icons/selection';
+import { ArrowLeftSharp } from '@/ui/assets/icons/arrow-left.sharp';
+import { ArrowRightSharp } from '@/ui/assets/icons/arrow-right-sharp';
 
 import { type IFilePreviewScreen } from './file-preview-screen.interface';
 
@@ -153,20 +147,57 @@ const FilePreviewScreen = ({
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [squares, setSquares] = useState([]);
   const [isStudioOpen, setIsStudioOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0); // For multiple images navigation
   const { language: appLanguage } = useSelectedLanguage();
-  const languageAIResponsesLocally = getStorageItem(
-    AI_ANALYSIS_LANGUAGE_SELECTION
-  );
-  const [selectedLanguage, setSelectedLanguage] = useState<string>(
-    languageAIResponsesLocally || appLanguage
-  );
+  const { AI_ANALYSIS_PROMPT_FIREBASE } = useRemoteConfig();
 
-  const { colorScheme } = useColorScheme();
-  const isDark = colorScheme === 'dark';
-  const languageModalRef = useModal();
+  // Determine if we have multiple images or single image/video
+  const { isMultipleImages, imageDataArray, currentImageData, totalImages } =
+    useMemo(() => {
+      // Check if collectedData is an object with multiple images (image_0, image_1, etc.)
+      if (
+        collectedData &&
+        typeof collectedData === 'object' &&
+        !collectedData.fileMimeType
+      ) {
+        const attachments = Object.values(collectedData).filter(Boolean);
 
-  const originalImage = collectedData.fileUri;
+        if (attachments.length > 1) {
+          return {
+            isMultipleImages: true,
+            imageDataArray: attachments,
+            currentImageData: attachments[currentImageIndex] || imageArray[0],
+            totalImages: attachments.length,
+          };
+        }
+        // Single image in object format
+        if (attachments.length === 1) {
+          const singleImage = attachments[0];
+          return {
+            isMultipleImages: false,
+            imageDataArray: [singleImage],
+            currentImageData: singleImage,
+            totalImages: 1,
+          };
+        }
+      }
+
+      // Legacy format - single image/video object
+      return {
+        isMultipleImages: false,
+        imageDataArray: [collectedData],
+        currentImageData: collectedData,
+        totalImages: 1,
+      };
+    }, [collectedData, currentImageIndex]);
+
+  const originalImage = currentImageData?.fileUri;
   const [imageUrlHighlighted, setImageUrlHighlighted] = useState(originalImage);
+
+  // Update highlighted image when current image changes
+  React.useEffect(() => {
+    setImageUrlHighlighted(currentImageData?.fileUri);
+  }, [currentImageData]);
 
   const screenWidth = Dimensions.get('window').width;
   const screenHeight = Dimensions.get('window').height;
@@ -177,24 +208,26 @@ const FilePreviewScreen = ({
 
   const handleOpenStudio = () => setIsStudioOpen(true);
   const handleCloseStudio = () => setIsStudioOpen(false);
-  const handleCloseScanningModal = () => setIsModalVisible(false);
+  // const handleCloseScanningModal = () => setIsModalVisible(false);
 
-  const handleOpenLanguageSelector = useCallback(() => {
-    languageModalRef.present();
-  }, []);
+  // Navigation functions for multiple images
+  const goToNextImage = () => {
+    if (currentImageIndex < totalImages - 1) {
+      setCurrentImageIndex((prev) => prev + 1);
+    }
+  };
 
-  const handleCloseLanguageSelector = useCallback(() => {
-    languageModalRef.dismiss();
-  }, []);
+  const goToPreviousImage = () => {
+    if (currentImageIndex > 0) {
+      setCurrentImageIndex((prev) => prev - 1);
+    }
+  };
 
-  const handleLanguageSelect = useCallback(
-    (languageCode: string) => {
-      setSelectedLanguage(languageCode);
-      setStorageItem(AI_ANALYSIS_LANGUAGE_SELECTION, languageCode);
-      handleCloseLanguageSelector();
-    },
-    [handleCloseLanguageSelector]
-  );
+  const goToImageAtIndex = (index: number) => {
+    if (index >= 0 && index < totalImages) {
+      setCurrentImageIndex(index);
+    }
+  };
 
   const addSquare = () => {
     const width = 80 + Math.random() * 120;
@@ -216,27 +249,10 @@ const FilePreviewScreen = ({
 
   const userId = firebaseAuth.currentUser?.uid as string;
 
-  const videoPayload = createFormDataVidePayload({
-    fileUri: imageUrlHighlighted as string,
-    fileName: collectedData.fileName as string,
-    fileMimeType: collectedData.fileMimeType as string,
-    promptMessage,
-    userId,
-  });
+  const isVideo = checkIsVideo(currentImageData?.fileExtension || '');
 
-  const imagePayload = createFormDataImagePayload({
-    fileUri: imageUrlHighlighted as string,
-    fileName: collectedData.fileName as string,
-    fileMimeType: collectedData.fileMimeType as string,
-    promptMessage: promptMessage,
-    highlightedRegions: squares?.length?.toString(),
-    userId,
-  });
-
-  const isVideo = checkIsVideo(collectedData.fileExtension!);
-
-  const mediaSource = Boolean(collectedData.fileBase64)
-    ? getBase64ImageUri(collectedData.fileBase64 as string)
+  const mediaSource = Boolean(currentImageData?.fileBase64)
+    ? getBase64ImageUri(currentImageData.fileBase64 as string)
     : imageUrlHighlighted;
 
   const onSuccess = ({
@@ -246,14 +262,13 @@ const FilePreviewScreen = ({
     conversationId: string;
     interpretationResult: string;
   }) => {
-    if (interpretationResult?.length > 200) {
-      //make sure if the response is cut off by the model to not navigate to the chat screen and display an alert instead and let the user try again
+    if (interpretationResult?.length > 50) {
       router.navigate({
         pathname: '/chat-screen',
         params: {
           conversationId,
           mediaSource,
-          mimeType: collectedData.fileMimeType,
+          mimeType: currentImageData?.fileMimeType,
           conversationMode: 'IMAGE_SCAN_CONVERSATION',
         },
       });
@@ -268,37 +283,50 @@ const FilePreviewScreen = ({
         }
       );
     }
-
-    // wait(1000).then(() => resetFlow());
   };
 
-  const {
-    mutate: handleAnalyzeImageUsingAi,
-    error: errorAnalyzeImage,
-    isPending: isPendingAnalyzeImage,
-  } = useAnalyzeImage({
-    onSuccessCallback: onSuccess,
-    language: selectedLanguage,
-    handleCloseScanningModal,
-    resetFlow,
-  });
+  const conversationId = generateUniqueId();
 
   const {
-    mutate: handleAnalyzeVideoUsingAI,
-    error: errorAnalyzeVideo,
-    isPending: isPendingAnalyzeVideo,
-  } = useAnalyzeVideo({
-    onSuccessCallback: onSuccess,
-    language: selectedLanguage,
-    handleCloseScanningModal,
-    resetFlow,
+    mutateAsync: sendStreamingMessage,
+    isPending: isPendingStreamingMessage,
+    error: errorStreamingMessage,
+  } = useFinalStreamingMessage({
+    onComplete: (data) => {
+      onSuccess({
+        conversationId: data.conversationId,
+        interpretationResult: data.interpretationResult,
+      });
+    },
+    onError: () => {},
   });
-  const onAnalyze = () => {
-    if (isVideo) {
-      handleAnalyzeVideoUsingAI(videoPayload);
-    } else {
-      handleAnalyzeImageUsingAi(imagePayload);
-    }
+
+  const onAnalyze = async () => {
+    await sendStreamingMessage({
+      prompt: AI_ANALYSIS_PROMPT_FIREBASE,
+      userMessage: !!promptMessage?.trim()
+        ? promptMessage
+        : !!imageDataArray?.length
+          ? translate('general.analyzingMediaFilesPlaceholder')
+          : '',
+      conversationId,
+      userId,
+      history: [],
+      mediaFiles: imageDataArray.map((item) => {
+        return {
+          uri: item.fileUri || '',
+          mimeType: item.fileMimeType || '',
+          fileName: item.fileName || '',
+        };
+      }),
+      language: appLanguage,
+      onStream: (chunk: string) => {},
+      onComplete: (fullResponse: string) => {},
+      onError: (error: Error) => {
+        // console.error('Error sending message:', error);
+        Toast.error('Failed to send message. Please try again.');
+      },
+    });
   };
 
   const handleUpdatePromptMessage = (message: string) => {
@@ -327,23 +355,100 @@ const FilePreviewScreen = ({
 
         {/* Main Content Card */}
         <View className="mx-4 mt-4 overflow-hidden rounded-2xl bg-white shadow-sm dark:bg-blackEerie">
+          {/* Multiple Images Navigation */}
+          {isMultipleImages && (
+            <View className="border-b border-gray-200 p-4 dark:border-gray-600">
+              <View className="flex-row items-center justify-between gap-2">
+                <Text className="max-w-[70%] font-bold-nunito text-lg text-gray-700 dark:text-white">
+                  {translate(
+                    'rootLayout.screens.filePreviewScreen.mediaFilesUploaded',
+                    { totalMediaFiles: totalImages }
+                  )}{' '}
+                  ({currentImageIndex + 1}/{totalImages})
+                </Text>
+                <View className="flex-row gap-2">
+                  <TouchableOpacity
+                    onPress={goToPreviousImage}
+                    disabled={currentImageIndex === 0}
+                    className={`self-center rounded-lg px-3 py-1 ${
+                      currentImageIndex === 0
+                        ? 'bg-gray-300 dark:bg-gray-600'
+                        : 'bg-primary-900 dark:bg-primary-700'
+                    }`}
+                  >
+                    <ArrowLeftSharp
+                      width={18}
+                      height={18}
+                      color={colors.white}
+                    />
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                    onPress={goToNextImage}
+                    disabled={currentImageIndex === totalImages - 1}
+                    className={`rounded-lg px-3 py-1 ${
+                      currentImageIndex === totalImages - 1
+                        ? 'bg-gray-300 dark:bg-gray-600'
+                        : 'bg-primary-900 dark:bg-primary-700'
+                    }`}
+                  >
+                    <ArrowRightSharp
+                      width={18}
+                      height={18}
+                      color={colors.white}
+                    />
+                  </TouchableOpacity>
+                </View>
+              </View>
+
+              {/* Image dots indicator */}
+              <View className="mt-2 flex-row justify-center gap-1">
+                {Array.from({ length: totalImages }).map((_, index) => (
+                  <TouchableOpacity
+                    key={index}
+                    onPress={() => goToImageAtIndex(index)}
+                    className={`size-2 rounded-full ${
+                      index === currentImageIndex
+                        ? 'bg-primary-900 dark:bg-primary-700'
+                        : 'bg-gray-300 dark:bg-gray-600'
+                    }`}
+                  />
+                ))}
+              </View>
+            </View>
+          )}
+
           {/* Media Preview Section */}
           <View className="mt-2">
             <AttachmentPreview
-              filePath={mediaSource as string}
-              fileMimeType={collectedData.fileMimeType as string}
-              isVideo={isVideo}
+              // Single media props (for backward compatibility)
+              filePath={!isMultipleImages ? (mediaSource as string) : undefined}
+              fileMimeType={
+                !isMultipleImages
+                  ? (currentImageData?.fileMimeType as string)
+                  : undefined
+              }
+              isVideo={!isMultipleImages ? isVideo : undefined}
               additionalImageStyles="h-[120px]"
               additionalVideoStyles={{
                 height: 120,
                 width: '100%',
                 borderRadius: 20,
               }}
+              // Multiple media props (new)
+              mediaItems={isMultipleImages ? imageDataArray : []}
+              currentIndex={isMultipleImages ? currentImageIndex : 0}
+              getMediaSource={(item) => {
+                if (item.fileBase64) {
+                  return getBase64ImageUri(item.fileBase64);
+                }
+                return item.fileUri || '';
+              }}
+              checkIsVideo={(mimeType) => checkIsVideo(mimeType || '')}
             />
           </View>
 
-          {/* Annotation Studio Section */}
-          {!isVideo && (
+          {/* Annotation Studio Section - Only for single images */}
+          {!isVideo && !isMultipleImages && (
             <View className="pb-4">
               <OpenStudioSection
                 squares={squares}
@@ -351,36 +456,6 @@ const FilePreviewScreen = ({
               />
             </View>
           )}
-
-          {/* Language Selection */}
-          <View className={`pb-4 ${isVideo && 'mt-4'}`}>
-            <Text className="mb-2 font-bold-nunito text-lg text-gray-700 dark:text-white">
-              {translate(
-                'rootLayout.screens.languageAnalysisModal.languagePreferenceQuestion'
-              )}
-            </Text>
-            <TouchableOpacity
-              activeOpacity={0.7}
-              onPress={handleOpenLanguageSelector}
-              className="border-1 flex-row items-center justify-between rounded-xl border border-charcoal-200  p-4 dark:border-charcoal-600 dark:bg-blackEerie"
-            >
-              <View className="flex-row items-center">
-                <MultiLanguage
-                  width={20}
-                  height={20}
-                  color={isDark ? colors.white : colors.charcoal[600]}
-                />
-                <Text className="ml-3 text-base font-medium text-gray-900 dark:text-white">
-                  {LANGUAGES[selectedLanguage]}
-                </Text>
-              </View>
-              <SelectionIcon
-                width={20}
-                height={20}
-                color={isDark ? colors.white : colors.charcoal[600]}
-              />
-            </TouchableOpacity>
-          </View>
 
           {/* Prompt Section */}
           <View className="pb-6">
@@ -409,7 +484,7 @@ const FilePreviewScreen = ({
         />
 
         {/* Modals */}
-        {isStudioOpen && (
+        {isStudioOpen && !isMultipleImages && (
           <RNModal
             visible={isStudioOpen}
             transparent
@@ -433,27 +508,26 @@ const FilePreviewScreen = ({
           <ScanningModal
             visible={isModalVisible}
             onClose={() => setIsModalVisible(false)}
-            filePath={
-              isVideo
-                ? collectedData.fileUri
-                : collectedData.fileBase64
-                  ? getBase64ImageUri(collectedData.fileBase64)
-                  : (imageUrlHighlighted as string)
-            }
-            isVideo={isVideo}
-            error={errorAnalyzeImage || errorAnalyzeVideo}
-            isPending={isPendingAnalyzeImage || isPendingAnalyzeVideo}
+            // Single media props (for backward compatibility)
+            filePath={imageUrlHighlighted as string}
+            isVideo={!isMultipleImages ? isVideo : undefined}
+            // Multiple images props
+            isMultipleImages={isMultipleImages}
+            mediaItems={isMultipleImages ? imageDataArray : []}
+            getMediaSource={(item) => {
+              if (item.fileBase64) {
+                return getBase64ImageUri(item.fileBase64);
+              }
+              return item.fileUri || '';
+            }}
+            checkIsVideo={(mimeType) => checkIsVideo(mimeType)}
+            // Common props
+            error={errorStreamingMessage}
+            isPending={isPendingStreamingMessage}
             onRetry={onAnalyze}
           />
         )}
       </ScrollView>
-
-      {/* Language Selection Modal */}
-      <LanguageModal
-        ref={languageModalRef.ref}
-        selectedLanguage={selectedLanguage}
-        onLanguageSelect={handleLanguageSelect}
-      />
     </KeyboardStickyView>
   );
 };

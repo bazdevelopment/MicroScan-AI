@@ -21,6 +21,7 @@
     "typing": "Píšem...",
     "online": "Online",
     "chatbotPlaceholder": "Opýtajte sa ma čokoľvek...",
+    "analyzingMediaFilesPlaceholder": "Analýza médií...",
     "openSettings": "Otvoriť nastavenia",
     "seeNotifications": "Zobraziť upozornenia",
     "viewProfile": "Zobraziť profil",
@@ -213,7 +214,8 @@
         "heading": "Overiť e-mail"
       },
       "filePreviewScreen": {
-        "generateReportButton": "Spustiť analýzu"
+        "generateReportButton": "Spustiť analýzu",
+        "mediaFilesUploaded": "Nahrali ste {{totalMediaFiles}} multimediálnych súborov"
       },
       "disclaimerScreen": {
         "heading": "Dôležité vyhlásenie",
@@ -378,6 +380,11 @@
     }
   },
   "components": {
+    "ImagePickerModal": {
+      "photoLibrary": "Knižnica fotografií",
+      "takePhoto": "Urobiť fotografiu",
+      "chooseFile": "Vybrať súbor"
+    },
     "ReportCard": {
       "rating": "Hodnotenie"
     },
@@ -491,6 +498,9 @@
     "restorationError": "Pri obnovovaní nákupu došlo k chybe.",
     "medicalDisclaimerAlert": "Aplikácia MicroScan AI neponúka diagnózy, odporúčania liečby ani žiadne lekárske rady. Pri lekársskych rozhodnutiach sa vždy riaďte radami kvalifikovaného zdravotníckeho pracovníka.",
     "scanLimitReached": "Optimalizujeme pre vás kvalitu skenovania! Budete môcť znova skenovať približne za {{hours}} hodín a {{minutes}} minút. Máte nejaké otázky ohľadom mikroskopie? Opýtajte sa nášho asistenta chatu, kým čakáte!",
-    "chatAndMediaFilesLimit": "Vážený používateľ, pre využitie neobmedzených chatov, neobmedzených skenov, analýzy viacerých obrázkov a ďalších funkcií potrebujete inovovať svoj plán. 🔓"
+    "chatAndMediaFilesLimit": "Vážený používateľ, pre využitie neobmedzených chatov, neobmedzených skenov, analýzy viacerých obrázkov a ďalších funkcií potrebujete inovovať svoj plán. 🔓",
+    "mixedMediaNotAllowed": "Pre lepšiu presnosť nenahrávajte zmes rôznych médií. Nahrajte iba obrázky, videá alebo pdf - nie všetky spolu.",
+    "multipleVideosNotAllowed": "Pre lepšiu presnosť nahrajte iba jedno video naraz.",
+    "mediaFilesUploadFiles": "Pri nahrávaní vašich médií sa vyskytla chyba. Skúste to znova."
   }
 }

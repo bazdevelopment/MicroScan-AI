@@ -19,15 +19,15 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import { KeyboardAwareScrollView } from 'react-native-keyboard-controller';
+import { KeyboardAvoidingView } from 'react-native-keyboard-controller';
 import Markdown from 'react-native-markdown-display';
 import { Toaster } from 'sonner-native';
 import { twMerge } from 'tailwind-merge';
 
 import {
   useAllUserConversations,
-  useConversation,
   useConversationHistory,
+  useFinalStreamingMessage,
 } from '@/api/conversation/conversation.hooks';
 import { useUser } from '@/api/user/user.hooks';
 import AnimatedChatQuestions from '@/components/animated-questions';
@@ -36,36 +36,40 @@ import BounceLoader from '@/components/bounce-loader';
 import Branding from '@/components/branding';
 import CustomAlert from '@/components/custom-alert';
 import Icon from '@/components/icon';
+import { ImagePickerModal } from '@/components/image-picker-modal';
+import ImagePreviewGallery from '@/components/image-preview-gallery';
+import MessageMediaAttachments from '@/components/message-media-attachments';
 import Toast from '@/components/toast';
-import { AI_ANALYSIS_LANGUAGE_SELECTION } from '@/constants/language';
-import {
-  BLURRING_CONTENT_CONVERSATIONS_LIMIT,
-  MAX_CONVERSATIONS_ALLOWED_FREE_TRIAL,
-} from '@/constants/limits';
 import { LOADING_MESSAGES_CHATBOT } from '@/constants/loading-messages';
 import { DEVICE_TYPE, translate, useSelectedLanguage } from '@/core';
 import useBackHandler from '@/core/hooks/use-back-handler';
 import { useClipboard } from '@/core/hooks/use-clipboard';
+import { useMediaPickerChat } from '@/core/hooks/use-media-picker-chat';
+import useRemoteConfig from '@/core/hooks/use-remote-config';
 import { useTextToSpeech } from '@/core/hooks/use-text-to-speech';
-import { getStorageItem } from '@/core/storage';
 import { checkIsVideo } from '@/core/utilities/check-is-video';
 import { generateUniqueId } from '@/core/utilities/generate-unique-id';
-import { requestAppRatingWithDelay } from '@/core/utilities/request-app-review';
+import {
+  requestAppRatingWithDelayStorage,
+  shouldRequestInAppRating,
+} from '@/core/utilities/request-app-review';
 import { shuffleArray } from '@/core/utilities/shuffle-array';
 import { wait } from '@/core/utilities/wait';
 import { colors, SafeAreaView, Text } from '@/ui';
-import { Camera, CloseIcon, SoundOn, StopIcon } from '@/ui/assets/icons';
+import { CloseIcon, SoundOn, StopIcon } from '@/ui/assets/icons';
+import { AddMediaPicker } from '@/ui/assets/icons/add-media-picker';
 import { CopiedIcon } from '@/ui/assets/icons/copied';
 import CopyIcon from '@/ui/assets/icons/copy';
 import { LockerIcon } from '@/ui/assets/icons/locker';
+import { SendIcon } from '@/ui/assets/icons/send';
 
 type MessageType = {
   role: string;
   content: string;
   isPending?: boolean;
   isError?: boolean;
+  imageUrls?: string[];
 };
-
 const RANDOM_QUESTIONS = [
   translate('rootLayout.screens.chatScreen.randomQuestions.one'),
   translate('rootLayout.screens.chatScreen.randomQuestions.two'),
@@ -215,11 +219,9 @@ export const ChatBubble = ({
           />
         )}
 
-        <View className="flex-1">
-          <Markdown style={isDark ? darkStyles : lightStyles}>
-            {message.content}
-          </Markdown>
-        </View>
+        <Markdown style={isDark ? darkStyles : lightStyles}>
+          {message.content}
+        </Markdown>
 
         {message.isPending && !isUser && <TypingIndicator />}
 
@@ -228,6 +230,17 @@ export const ChatBubble = ({
           <BlurredMessageOverlay onUnlock={onUnlock} isDark={isDark} />
         )}
       </Animated.View>
+      {isUser && message?.imageUrls?.length > 0 && (
+        <MessageMediaAttachments
+          urls={message.imageUrls}
+          isUser={isUser}
+          onDocumentPress={(url) => {
+            // Optional: Custom handler for document press
+            // e.g., open in a WebView, download, etc.
+            // Linking.openURL(url);
+          }}
+        />
+      )}
 
       {/* Only show actions if not blurred */}
       {!shouldBlur && (
@@ -299,12 +312,14 @@ export function useRequestAppRatingOnce({
   isLoading,
   isFetchingAllConversationsPending,
   userInfo,
-  requestAppRatingWithDelay,
+  requestAppRatingWithDelayStorage,
+  canRequestInAppRating,
 }: {
   isLoading: boolean;
   isFetchingAllConversationsPending: boolean;
   userInfo?: { completedScans?: number };
-  requestAppRatingWithDelay: (delay: number) => void;
+  requestAppRatingWithDelayStorage: (delay: number) => void;
+  canRequestInAppRating: boolean;
 }) {
   const hasRequestedRef = useRef(globalHasRequested);
 
@@ -314,17 +329,19 @@ export function useRequestAppRatingOnce({
     if (
       !isLoading &&
       !isFetchingAllConversationsPending &&
+      canRequestInAppRating &&
       userInfo?.completedScans === 1
     ) {
       hasRequestedRef.current = true;
       globalHasRequested = true;
-      requestAppRatingWithDelay(1000);
+      requestAppRatingWithDelayStorage(1000);
     }
   }, [
     isLoading,
     isFetchingAllConversationsPending,
     userInfo?.completedScans,
-    requestAppRatingWithDelay,
+    requestAppRatingWithDelayStorage,
+    canRequestInAppRating,
   ]);
 }
 
@@ -352,11 +369,6 @@ const ChatScreen = () => {
     null
   );
   const { language: appLanguage } = useSelectedLanguage();
-  const languageAIResponsesLocally = getStorageItem(
-    AI_ANALYSIS_LANGUAGE_SELECTION
-  );
-
-  const selectedLanguage = languageAIResponsesLocally || appLanguage;
 
   const [lastUserMessageIndex, setLastUserMessageIndex] = useState<
     number | null
@@ -382,15 +394,39 @@ const ChatScreen = () => {
   } = useTranslation();
   const { data: userInfo } = useUser(language);
 
-  const { data: conversation, isLoading } = useConversationHistory(
-    conversationId as string
-  );
+  const { data: conversation, isLoading: isLoadingConversation } =
+    useConversationHistory(conversationId as string);
 
   const { data, isPending: isFetchingAllConversationsPending } =
     useAllUserConversations();
   const conversationsCount = data?.count || 0;
 
-  const { sendMessage, isSending } = useConversation(conversationId as string);
+  const {
+    AI_ANALYSIS_PROMPT_FIREBASE,
+    BLURRING_CONTENT_CONVERSATIONS_LIMIT,
+    MAX_CONVERSATIONS_ALLOWED_FREE_TRIAL,
+  } = useRemoteConfig();
+
+  const { canRequest: canRequestInAppRating } = shouldRequestInAppRating();
+
+  const [isVisible, setVisible] = useState(false);
+
+  const showPicker = () => setVisible(true);
+  const closePicker = () => setVisible(false);
+
+  const {
+    onChooseImageFromGallery,
+    onChooseFromFiles,
+    onTakePhoto,
+    files,
+    onRemoveFile,
+    onResetFiles,
+  } = useMediaPickerChat({ onCloseModal: closePicker });
+
+  const {
+    mutateAsync: sendStreamingMessage,
+    isPending: isPendingStreamingMessage,
+  } = useFinalStreamingMessage({ onComplete: onResetFiles });
 
   const handleSpeak = (messageId: string, text: string) => {
     if (currentlySpeakingId === messageId) {
@@ -405,28 +441,55 @@ const ChatScreen = () => {
   };
 
   const handleSendMessage = async (userMsg) => {
-    if (!userMsg.trim()) return;
+    if (!userMsg.trim() && !files?.length) return;
     setUserMessage('');
     Keyboard.dismiss();
+
+    // Convert files to MediaFile format
+    const mediaFiles = files?.map((file) => ({
+      uri: file?.fileUri || file?.uri || '',
+      type: file?.type || '',
+      mimeType: file?.mimeType || '',
+    }));
 
     // Add the message to pending messages
     const newMessage: MessageType = {
       role: 'user',
-      content: userMsg,
+      content: !!userMsg?.trim()
+        ? userMsg
+        : !!mediaFiles?.length
+          ? translate('general.analyzingMediaFilesPlaceholder')
+          : '',
       isPending: true,
+      imageUrls: mediaFiles.map((img) => img.uri),
     };
+
     setPendingMessages((prev) => [...prev, newMessage]);
 
     // Store the index of the user's message
-    setLastUserMessageIndex(messages.length);
+    setLastUserMessageIndex(messages?.length);
 
     try {
-      await sendMessage({
-        userMessage: userMsg,
+      await sendStreamingMessage({
+        prompt: AI_ANALYSIS_PROMPT_FIREBASE,
+        userMessage: !!userMsg?.trim()
+          ? userMsg
+          : !!mediaFiles?.length
+            ? translate('general.analyzingMediaFilesPlaceholder')
+            : '',
         conversationId: conversationId as string,
-        conversationMode,
         userId: userInfo.userId,
-        language: selectedLanguage,
+        history: conversation?.messages || [],
+        mediaFiles,
+        language: appLanguage,
+        onStream: (chunk: string) => {},
+        onComplete: (fullResponse: string) => {
+          onResetFiles?.();
+        },
+        onError: (error: Error) => {
+          // console.error('Error sending message:', error);
+          Toast.error('Failed to send message. Please try again.');
+        },
       });
       // Remove the pending message and add it to the conversation
       setPendingMessages((prev) =>
@@ -451,30 +514,58 @@ const ChatScreen = () => {
       setPendingMessages((prev) =>
         prev.map((msg) =>
           msg.content === message.content
-            ? { ...msg, isPending: true, isError: false }
+            ? {
+                ...msg,
+                isPending: true,
+                isError: false,
+                imageUrls: mediaFiles?.map((img) => img.uri),
+              }
             : msg
         )
       );
 
-      await sendMessage({
-        userMessage: message.content,
-        conversationId: conversationId as string,
-        conversationMode,
-        userId: userInfo.userId,
-        language: selectedLanguage,
-      });
+      const mediaFiles = files?.map((file) => ({
+        uri: file?.fileUri || file?.uri || '',
+        type: file?.type || '',
+        mimeType: file?.mimeType || '',
+      }));
 
+      await sendStreamingMessage({
+        prompt: AI_ANALYSIS_PROMPT_FIREBASE,
+        userMessage: message.content
+          ? message.content
+          : mediaFiles?.length
+            ? translate('general.analyzingMediaFilesPlaceholder')
+            : '',
+        conversationId: conversationId as string,
+        userId: userInfo.userId,
+        history: conversation?.messages || [],
+        mediaFiles,
+        language: appLanguage,
+        onStream: (chunk: string) => {},
+        onComplete: (fullResponse: string) => {
+          onResetFiles?.();
+        },
+        onError: (error: Error) => {
+          // console.error('Error sending message:', error);
+          Toast.error('Failed to send message. Please try again.');
+        },
+      });
       // Remove the pending message and add it to the conversation
       setPendingMessages((prev) =>
         prev.filter((msg) => msg.content !== message.content)
       );
     } catch (error) {
-      console.error('Error retrying message:', error);
+      // console.error('Error retrying message:', error);
       // Mark the message as failed again
       setPendingMessages((prev) =>
         prev.map((msg) =>
           msg.content === message.content
-            ? { ...msg, isPending: false, isError: true }
+            ? {
+                ...msg,
+                isPending: false,
+                isError: true,
+              }
             : msg
         )
       );
@@ -499,12 +590,11 @@ const ChatScreen = () => {
     ],
     [conversation?.messages, pendingMessages]
   );
-
   useBackHandler(() => true);
 
   // Scroll logic based on the number of messages
   useEffect(() => {
-    if (messages.length && flashListRef.current) {
+    if (messages?.length && flashListRef.current) {
       setTimeout(() => {
         if (lastUserMessageIndex !== null) {
           // Scroll to the user's question
@@ -548,13 +638,14 @@ const ChatScreen = () => {
   }, [conversationMode]);
 
   useRequestAppRatingOnce({
-    isLoading,
+    isLoading: isLoadingConversation,
     isFetchingAllConversationsPending,
     userInfo,
-    requestAppRatingWithDelay,
+    requestAppRatingWithDelayStorage,
+    canRequestInAppRating,
   });
 
-  if (isLoading && conversationMode !== 'RANDOM_CONVERSATION') {
+  if (isLoadingConversation && conversationMode !== 'RANDOM_CONVERSATION') {
     return (
       <View className="flex-1 items-center justify-center bg-white dark:bg-blackEerie">
         <Branding isLogoVisible invertedColors />
@@ -576,15 +667,14 @@ const ChatScreen = () => {
       {DEVICE_TYPE.IOS && (
         <Toaster autoWiggleOnUpdate="toast-change" pauseWhenPageIsHidden />
       )}
-      <KeyboardAwareScrollView
-        contentContainerStyle={{
-          flex: 1,
-        }}
-        keyboardShouldPersistTaps="handled"
+      <KeyboardAvoidingView
+        behavior="padding"
+        className="flex-1"
+        keyboardVerticalOffset={DEVICE_TYPE.ANDROID ? 40 : 0}
       >
         <View className="flex-1 bg-white dark:bg-blackEerie">
           {/* Header */}
-          <View className="flex-row items-center justify-between border-b border-gray-200 bg-white px-4 py-3 dark:border-gray-600 dark:bg-blackEerie">
+          <View className="flex-row items-center justify-between border-b border-gray-200 bg-white px-4 pb-2 dark:border-gray-600 dark:bg-blackEerie">
             <Icon
               size={20}
               containerStyle="rounded-full bg-blackEerie p-1"
@@ -603,7 +693,7 @@ const ChatScreen = () => {
                 <Text className="ml-2 font-bold-nunito text-xl dark:text-white">
                   Aura
                 </Text>
-                {isSending ? (
+                {isPendingStreamingMessage ? (
                   <Text className="ml-2 text-xs text-gray-500 dark:text-white">
                     {translate('general.typing')}
                   </Text>
@@ -629,7 +719,7 @@ const ChatScreen = () => {
             </View>
           </View>
           {conversationMode === 'RANDOM_CONVERSATION' &&
-            !pendingMessages.length &&
+            !pendingMessages?.length &&
             !conversation &&
             !!RANDOM_QUESTIONS.length && (
               <ScrollView
@@ -683,6 +773,7 @@ const ChatScreen = () => {
               isSpeaking,
               userInfo?.isFreeTrialOngoing,
               conversationsCount,
+              isPendingStreamingMessage,
             ]} //triggers a reset
             keyExtractor={(item, index) => index.toString()}
             contentContainerStyle={{
@@ -709,64 +800,71 @@ const ChatScreen = () => {
               );
             }}
             estimatedItemSize={100}
-            ListFooterComponent={isSending ? <TypingIndicator /> : null}
+            ListFooterComponent={
+              isPendingStreamingMessage ? <TypingIndicator /> : null
+            }
           />
 
-          {/* Input Area */}
-          <View className="border-t border-gray-200 bg-white px-4 pb-2 pt-4 dark:border-blackEerie dark:bg-blackEerie">
-            <View
-              className={`flex-row items-center rounded-2xl border-2 border-primary-900/60 bg-gray-100 px-4 py-1 dark:bg-black`}
-            >
-              {conversationMode === 'RANDOM_CONVERSATION' && (
-                <Icon
-                  icon={<Camera />}
-                  size={28}
-                  color={isDark ? colors.white : colors.black}
-                  containerStyle="-left-2"
-                  onPress={() => {
-                    if (
-                      userInfo.isFreeTrialOngoing &&
-                      conversationsCount >= MAX_CONVERSATIONS_ALLOWED_FREE_TRIAL
-                    ) {
-                      return Toast.showCustomToast(
-                        <CustomAlert
-                          title={translate('general.attention')}
-                          subtitle={translate('alerts.chatAndMediaFilesLimit')}
-                          buttons={[
-                            {
-                              label: translate(
-                                'components.UpgradeBanner.heading'
-                              ),
-                              variant: 'default',
-                              onPress: () =>
-                                wait(500).then(() =>
-                                  router.navigate('/paywall-new')
-                                ),
-                              buttonTextClassName: 'dark:text-white',
-                              className:
-                                'flex-1 rounded-xl h-[48] bg-primary-900 active:opacity-80 dark:bg-primary-900',
-                            },
-                          ]}
-                        />,
-                        {
-                          position: 'middle',
-                          duration: Infinity,
-                        }
-                      );
-                    }
+          {/* File Preview */}
+          {!!files?.length && !isPendingStreamingMessage && (
+            <ImagePreviewGallery files={files} onRemoveFile={onRemoveFile} />
+          )}
 
-                    router.navigate('/upload-file-flow');
-                  }}
-                />
-              )}
+          {/* Input Area */}
+          <View className="flex-row border-t border-gray-200 bg-white px-4 pb-2 pt-4 dark:border-blackEerie dark:bg-transparent">
+            <View
+              className={`flex-1 flex-row items-center rounded-full border-2 border-primary-900/60 bg-gray-100 px-4 py-1.5 dark:bg-transparent ${userMessage?.length > 30 && 'rounded-lg'}`}
+            >
+              <Icon
+                icon={<AddMediaPicker />}
+                size={30}
+                color={colors.white}
+                containerStyle="-left-2 border-white border-[1.5px] rounded-full"
+                onPress={() => {
+                  if (
+                    userInfo.isFreeTrialOngoing &&
+                    conversationsCount >= MAX_CONVERSATIONS_ALLOWED_FREE_TRIAL
+                  ) {
+                    return Toast.showCustomToast(
+                      <CustomAlert
+                        title={translate('general.attention')}
+                        subtitle={translate('alerts.chatAndMediaFilesLimit')}
+                        buttons={[
+                          {
+                            label: translate(
+                              'components.UpgradeBanner.heading'
+                            ),
+                            variant: 'default',
+                            onPress: () =>
+                              wait(500).then(() =>
+                                router.navigate('/paywall-new')
+                              ),
+                            buttonTextClassName: 'dark:text-white',
+                            className:
+                              'flex-1 rounded-xl h-[48] bg-primary-900 active:opacity-80 dark:bg-primary-900',
+                          },
+                        ]}
+                      />,
+                      {
+                        position: 'middle',
+                        duration: Infinity,
+                      }
+                    );
+                  }
+                  showPicker();
+                }}
+              />
+
               <TextInput
                 className="flex-1 py-3 text-base text-gray-800 dark:text-white"
                 value={userMessage}
                 onChangeText={setUserMessage}
                 placeholder={translate('general.chatbotPlaceholder')}
-                placeholderTextColor={isDark ? colors.charcoal[300] : '#9CA3AF'}
+                placeholderTextColor={
+                  isDark ? colors.charcoal[200] : colors.charcoal[800]
+                }
                 multiline
-                maxLength={400}
+                maxLength={5000}
               />
 
               <TouchableOpacity
@@ -809,20 +907,35 @@ const ChatScreen = () => {
 
                   handleSendMessage(userMessage);
                 }}
-                disabled={isSending || !userMessage.trim()}
+                disabled={
+                  isPendingStreamingMessage ||
+                  isFetchingAllConversationsPending ||
+                  (!userMessage.trim() && !files?.length)
+                }
                 className={twMerge(
                   'ml-2 p-2 rounded-full',
-                  userMessage.trim()
+                  userMessage.trim() || !!files?.length
                     ? 'bg-blue-500 dark:bg-primary-900'
                     : 'bg-gray-300 dark:bg-charcoal-400'
                 )}
               >
-                <Ionicons name="send" size={20} color={colors.white} />
+                <SendIcon />
               </TouchableOpacity>
             </View>
           </View>
         </View>
-      </KeyboardAwareScrollView>
+      </KeyboardAvoidingView>
+      <ImagePickerModal
+        title=""
+        data={['Select from the library', 'Take a picture', 'Choose file']}
+        isVisible={isVisible}
+        onCancelPress={closePicker}
+        onBackdropPress={closePicker}
+        onPress={(item) => {}}
+        onChooseImageFromGallery={onChooseImageFromGallery}
+        onChooseFromFiles={onChooseFromFiles}
+        onTakePhoto={onTakePhoto}
+      />
     </SafeAreaView>
   );
 };

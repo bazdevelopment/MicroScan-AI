@@ -21,6 +21,7 @@
     "typing": "Sta scrivendo...",
     "online": "Online",
     "chatbotPlaceholder": "Chiedimi qualsiasi cosa...",
+    "analyzingMediaFilesPlaceholder": "Analisi File Multimediali in corso...",
     "openSettings": "Apri Impostazioni",
     "seeNotifications": "Vedi notifiche",
     "viewProfile": "Visualizza Profilo",
@@ -213,7 +214,8 @@
         "heading": "Verifica email"
       },
       "filePreviewScreen": {
-        "generateReportButton": "Inizia Analisi"
+        "generateReportButton": "Inizia Analisi",
+        "mediaFilesUploaded": "Hai caricato {{totalMediaFiles}} file multimediali"
       },
       "disclaimerScreen": {
         "heading": "Disclaimer Importante",
@@ -378,6 +380,11 @@
     }
   },
   "components": {
+    "ImagePickerModal": {
+      "photoLibrary": "Libreria Foto",
+      "takePhoto": "Scatta Foto",
+      "chooseFile": "Scegli File"
+    },
     "ReportCard": {
       "rating": "Valutazione"
     },
@@ -491,6 +498,9 @@
     "restorationError": "Si è verificato un errore durante il ripristino dell'acquisto.",
     "medicalDisclaimerAlert": "L'app MicroScan AI non fornisce diagnosi, raccomandazioni di trattamento o consulenze mediche. Cerca sempre la guida di un professionista sanitario qualificato per le decisioni mediche.",
     "scanLimitReached": "Stiamo ottimizzando la qualità della scansione per te! Potrai scansionare nuovamente tra circa {{hours}} ore e {{minutes}} minuti. Hai domande su qualsiasi argomento di microscopia? Chiedi al nostro assistente chat mentre aspetti!",
-    "chatAndMediaFilesLimit": "Caro utente, devi aggiornare il tuo piano per beneficiare di chat illimitate, scansioni illimitate, analisi multi-immagine e altro. 🔓"
+    "chatAndMediaFilesLimit": "Caro utente, devi aggiornare il tuo piano per beneficiare di chat illimitate, scansioni illimitate, analisi multi-immagine e altro. 🔓",
+    "mixedMediaNotAllowed": "Per una migliore precisione, non caricare un mix di diversi file multimediali. Carica solo immagini, video o pdf — non tutti insieme.",
+    "multipleVideosNotAllowed": "Per una migliore precisione, carica solo un video alla volta.",
+    "mediaFilesUploadFiles": "Si è verificato un errore durante il caricamento dei tuoi file multimediali. Riprova."
   }
 }

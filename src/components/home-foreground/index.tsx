@@ -11,7 +11,6 @@ import { Toaster } from 'sonner-native';
 
 import { useFetchUserNotifications } from '@/api/push-notifications/push-notifications.hooks';
 import { useUser } from '@/api/user/user.hooks';
-import { MAX_SCANS_ALLOWED_FREE_TRIAL } from '@/constants/limits';
 import {
   DEVICE_TYPE,
   translate,
@@ -19,6 +18,7 @@ import {
   useSelectedLanguage,
 } from '@/core';
 import { useCrashlytics } from '@/core/hooks/use-crashlytics';
+import useRemoteConfig from '@/core/hooks/use-remote-config';
 import { wait } from '@/core/utilities/wait';
 import { Button, colors, Text } from '@/ui';
 import { BellIcon, UploadIcon } from '@/ui/assets/icons';
@@ -41,6 +41,7 @@ export const Foreground = ({ scrollValue }: IHomeForeground) => {
   const { language } = useSelectedLanguage();
 
   const { data: userInfo } = useUser(language);
+  const { MAX_SCANS_ALLOWED_FREE_TRIAL } = useRemoteConfig();
 
   const { data: userNotifications } = useFetchUserNotifications({
     userId: userInfo?.userId,
@@ -135,7 +136,7 @@ export const Foreground = ({ scrollValue }: IHomeForeground) => {
         >
           <View className="ml-6 flex-row items-center">
             <Avatar
-              image={require('../../ui/assets/images/avatar-doctor.png')}
+              image={require('../../ui/assets/images/avatar-scientist-9.png')}
               size="large"
               shape="circle"
             />

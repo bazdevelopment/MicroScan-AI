@@ -42,7 +42,7 @@ const PromptSection = ({
         onChangeText={onUpdatePromptMessage}
         textAlignVertical="top"
         value={promptMessage}
-        maxLength={400}
+        maxLength={5000}
         underlineColorAndroid="transparent"
       />
     </View>

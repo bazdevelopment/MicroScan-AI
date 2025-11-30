@@ -21,6 +21,7 @@
     "typing": "Đang nhập...",
     "online": "Trực tuyến",
     "chatbotPlaceholder": "Hỏi tôi bất cứ điều gì...",
+    "analyzingMediaFilesPlaceholder": "Đang phân tích tệp đa phương tiện...",
     "openSettings": "Mở Cài đặt",
     "seeNotifications": "Xem thông báo",
     "viewProfile": "Xem Hồ sơ",
@@ -213,7 +214,8 @@
         "heading": "Xác minh email"
       },
       "filePreviewScreen": {
-        "generateReportButton": "Bắt Đầu Phân Tích"
+        "generateReportButton": "Bắt Đầu Phân Tích",
+        "mediaFilesUploaded": "Bạn đã tải lên {{totalMediaFiles}} tệp media"
       },
       "disclaimerScreen": {
         "heading": "Tuyên bố miễn trừ trách nhiệm quan trọng",
@@ -380,6 +382,11 @@
     }
   },
   "components": {
+    "ImagePickerModal": {
+      "photoLibrary": "Thư viện ảnh",
+      "takePhoto": "Chụp ảnh",
+      "chooseFile": "Chọn tệp"
+    },
     "ReportCard": {
       "rating": "Đánh giá"
     },
@@ -494,6 +501,9 @@
     "restorationError": "Đã xảy ra lỗi khi khôi phục giao dịch mua.",
     "medicalDisclaimerAlert": "Ứng dụng MicroScan AI không cung cấp chẩn đoán, khuyến nghị điều trị hoặc bất kỳ lời khuyên y tế nào. Luôn tìm kiếm hướng dẫn từ chuyên gia chăm sóc sức khỏe có trình độ cho các quyết định y tế.",
     "scanLimitReached": "Chúng tôi đang tối ưu hóa chất lượng quét cho bạn! Bạn sẽ có thể quét lại sau khoảng {{hours}} giờ và {{minutes}} phút nữa. Có câu hỏi nào về chủ đề kính hiển vi không? Hãy hỏi trợ lý trò chuyện của chúng tôi trong khi chờ đợi!",
-    "chatAndMediaFilesLimit": "Người dùng thân mến, bạn cần nâng cấp gói của mình để hưởng lợi từ các cuộc trò chuyện không giới hạn, lượt quét không giới hạn, phân tích đa hình ảnh và hơn thế nữa. 🔓"
+    "chatAndMediaFilesLimit": "Người dùng thân mến, bạn cần nâng cấp gói của mình để hưởng lợi từ các cuộc trò chuyện không giới hạn, lượt quét không giới hạn, phân tích đa hình ảnh và hơn thế nữa. 🔓",
+    "mixedMediaNotAllowed": "Để chính xác hơn, không tải lên hỗn hợp các tệp đa phương tiện khác nhau. Vui lòng chỉ tải lên hình ảnh, video hoặc pdf - không phải tất cả cùng nhau.",
+    "multipleVideosNotAllowed": "Để chính xác hơn, vui lòng chỉ tải lên một video tại một thời điểm.",
+    "mediaFilesUploadFiles": "Đã xảy ra lỗi khi tải lên tệp đa phương tiện của bạn. Vui lòng thử lại."
   }
 }

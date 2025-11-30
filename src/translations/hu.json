@@ -20,6 +20,7 @@
     "or": "vagy",
     "typing": "Gépelés...",
     "online": "Online",
+    "analyzingMediaFilesPlaceholder": "Médiafájlok elemzése...",
     "chatbotPlaceholder": "Kérdezz bármit...",
     "openSettings": "Beállítások megnyitása",
     "seeNotifications": "Értesítések megtekintése",
@@ -213,7 +214,8 @@
         "heading": "E-mail ellenőrzése"
       },
       "filePreviewScreen": {
-        "generateReportButton": "Elemzés indítása"
+        "generateReportButton": "Elemzés indítása",
+        "mediaFilesUploaded": "{{totalMediaFiles}} médiafájlt töltöttél fel"
       },
       "disclaimerScreen": {
         "heading": "Fontos jogi nyilatkozat",
@@ -378,6 +380,11 @@
     }
   },
   "components": {
+    "ImagePickerModal": {
+      "photoLibrary": "Fotókönyvtár",
+      "takePhoto": "Fénykép készítése",
+      "chooseFile": "Fájl kiválasztása"
+    },
     "ReportCard": {
       "rating": "Értékelés"
     },
@@ -491,6 +498,9 @@
     "restorationError": "Hiba történt a vásárlás visszaállítása során.",
     "medicalDisclaimerAlert": "A MicroScan AI alkalmazás nem nyújt diagnózisokat, kezelési ajánlásokat vagy orvosi tanácsot. Mindig forduljon képzett egészségügyi szakemberhez orvosi döntések meghozatalához.",
     "scanLimitReached": "Optimalizáljuk az Ön számára a szkennelés minőségét! Körülbelül {{hours}} óra és {{minutes}} perc múlva újra szkennelhet. Van kérdése a mikroszkópiával kapcsolatban? Kérdezze meg csevegő asszisztenseünket, amíg vár!",
-    "chatAndMediaFilesLimit": "Kedves felhasználó, frissítenie kell a csomagját, hogy korlátlan csevegések, korlátlan szkennelések, több kép elemzése és egyéb előnyök révén profitálhasson. 🔓"
+    "chatAndMediaFilesLimit": "Kedves felhasználó, frissítenie kell a csomagját, hogy korlátlan csevegések, korlátlan szkennelések, több kép elemzése és egyéb előnyök révén profitálhasson. 🔓",
+    "mixedMediaNotAllowed": "A jobb pontosság érdekében ne töltsön fel különböző médiafájlok keverékét. Kérjük, csak képeket, videókat vagy pdf-eket töltsön fel - ne mindet egyszerre.",
+    "multipleVideosNotAllowed": "A jobb pontosság érdekében kérjük, egyszerre csak egy videót töltsön fel.",
+    "mediaFilesUploadFiles": "Hiba történt a médiafájlok feltöltése során. Kérjük, próbálja újra."
   }
 }

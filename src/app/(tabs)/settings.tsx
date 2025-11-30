@@ -207,8 +207,8 @@ export default function Settings() {
                       text="Send global push notification"
                       onPress={() =>
                         onHandleGlobalPushNotifications({
-                          title: 'This is a global notification title',
-                          body: 'This is a global notification body',
+                          title: 'New Version Available! 🚀',
+                          body: "Dear user, a new version v25.10.4 for Microscope Assistant: MicroScan AI app is now available!📱 Upgrade to this version for new features, bug fixes, and an improved experience. If you've already upgraded, you're all set!",
                           language,
                         })
                       }

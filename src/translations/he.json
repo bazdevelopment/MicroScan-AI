@@ -22,6 +22,7 @@
     "online": "מקוון",
     "chatbotPlaceholder": "שאל אותי כל דבר...",
     "openSettings": "פתח הגדרות",
+    "analyzingMediaFilesPlaceholder": "מנתח קבצי מדיה...",
     "seeNotifications": "צפה בהתראות",
     "viewProfile": "צפה בפרופיל",
     "upgradePlan": "שדרוג מנוי",
@@ -213,7 +214,8 @@
         "heading": "אמת אימייל"
       },
       "filePreviewScreen": {
-        "generateReportButton": "התחל ניתוח"
+        "generateReportButton": "התחל ניתוח",
+        "mediaFilesUploaded": "העלית {{totalMediaFiles}} קבצי מדיה"
       },
       "disclaimerScreen": {
         "heading": "הצהרה חשובה",
@@ -378,6 +380,11 @@
     }
   },
   "components": {
+    "ImagePickerModal": {
+      "photoLibrary": "ספריית תמונות",
+      "takePhoto": "צלם תמונה",
+      "chooseFile": "בחר קובץ"
+    },
     "ReportCard": {
       "rating": "דירוג"
     },
@@ -491,6 +498,9 @@
     "restorationError": "אירעה שגיאה בשחזור הרכישה.",
     "medicalDisclaimerAlert": "אפליקציית MicroScan AI אינה מציעה אבחנות, המלצות טיפול או כל ייעוץ רפואי. תמיד פנה להכוונה מקצועית רפואית מוסמכת לקבלת החלטות רפואיות.",
     "scanLimitReached": "אנו משפרים את איכות הסריקה עבורך! תוכל לסרוק שוב בעוד כ-{{hours}} שעות ו-{{minutes}} דקות. יש לך שאלות על נושא מיקרוסקופיה כלשהו? שאל את עוזר הצ'אט שלנו בזמן ההמתנה!",
-    "chatAndMediaFilesLimit": "משתמש יקר, עליך לשדרג את התוכנית שלך כדי ליהנות מצ'אטים בלתי מוגבלים, סריקות בלתי מוגבלות, ניתוח תמונות מרובות ועוד. 🔓"
+    "chatAndMediaFilesLimit": "משתמש יקר, עליך לשדרג את התוכנית שלך כדי ליהנות מצ'אטים בלתי מוגבלים, סריקות בלתי מוגבלות, ניתוח תמונות מרובות ועוד. 🔓",
+    "mixedMediaNotAllowed": "לדיוק טוב יותר, אל תעלה תערובת של קבצי מדיה שונים. אנא העלה רק תמונות, סרטונים או pdf - לא כולם יחד.",
+    "multipleVideosNotAllowed": "לדיוק טוב יותר, אנא העלה רק סרטון אחד בכל פעם.",
+    "mediaFilesUploadFiles": "אירעה שגיאה בהעלאת קבצי המדיה שלך. אנא נסה שוב."
   }
 }

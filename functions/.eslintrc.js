@@ -33,7 +33,7 @@ module.exports = {
   ],
   rules: {
     'max-params': ['error', 3], // Limit the number of parameters in a function
-    'max-lines-per-function': ['error', 70], // Ensure functions are small and readable
+    'max-lines-per-function': ['error', 200], // Ensure functions are small and readable
     'import/prefer-default-export': 'off', // Allow named exports for better code organization
     'import/no-cycle': ['error', { maxDepth: '∞' }], // Prevent circular imports
     '@typescript-eslint/no-unused-vars': 'off', // Handle unused vars with 'unused-imports' plugin

@@ -21,6 +21,7 @@
     "typing": "Digitando...",
     "online": "Online",
     "chatbotPlaceholder": "Pergunte-me qualquer coisa...",
+    "analyzingMediaFilesPlaceholder": "Analisando Arquivos de Mídia...",
     "openSettings": "Abrir Configurações",
     "seeNotifications": "Ver notificações",
     "viewProfile": "Ver Perfil",
@@ -213,7 +214,8 @@
         "heading": "Verificar e-mail"
       },
       "filePreviewScreen": {
-        "generateReportButton": "Iniciar Análise"
+        "generateReportButton": "Iniciar Análise",
+        "mediaFilesUploaded": "Você enviou {{totalMediaFiles}} arquivos de mídia"
       },
       "disclaimerScreen": {
         "heading": "Aviso Importante",
@@ -380,6 +382,11 @@
     }
   },
   "components": {
+    "ImagePickerModal": {
+      "photoLibrary": "Biblioteca de Fotos",
+      "takePhoto": "Tirar Foto",
+      "chooseFile": "Escolher Arquivo"
+    },
     "ReportCard": {
       "rating": "Avaliação"
     },
@@ -494,6 +501,9 @@
     "restorationError": "Ocorreu um erro ao restaurar a compra.",
     "medicalDisclaimerAlert": "O aplicativo MicroScan AI não oferece diagnósticos, recomendações de tratamento ou qualquer aconselhamento médico. Sempre busque orientação de um profissional de saúde qualificado para decisões médicas.",
     "scanLimitReached": "Estamos otimizando a qualidade da varredura para você! Você poderá escanear novamente em aproximadamente {{hours}} horas e {{minutes}} minutos. Tem alguma dúvida sobre algum tópico de microscopia? Pergunte ao nosso assistente de chat enquanto espera!",
-    "chatAndMediaFilesLimit": "Prezado usuário, você precisa atualizar seu plano para se beneficiar de chats ilimitados, varreduras ilimitadas, análise de múltiplas imagens e mais. 🔓"
+    "chatAndMediaFilesLimit": "Prezado usuário, você precisa atualizar seu plano para se beneficiar de chats ilimitados, varreduras ilimitadas, análise de múltiplas imagens e mais. 🔓",
+    "mixedMediaNotAllowed": "Para melhor precisão, não envie uma mistura de diferentes arquivos de mídia. Envie apenas imagens, vídeos ou pdfs — não todos juntos.",
+    "multipleVideosNotAllowed": "Para melhor precisão, envie apenas um vídeo por vez.",
+    "mediaFilesUploadFiles": "Ocorreu um erro ao enviar seus arquivos de mídia. Tente novamente."
   }
 }

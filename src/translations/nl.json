@@ -21,6 +21,7 @@
     "typing": "Typen...",
     "online": "Online",
     "chatbotPlaceholder": "Vraag me alles...",
+    "analyzingMediaFilesPlaceholder": "Mediabestanden analyseren...",
     "openSettings": "Instellingen openen",
     "seeNotifications": "Meldingen bekijken",
     "viewProfile": "Profiel bekijken",
@@ -213,7 +214,8 @@
         "heading": "E-mail verifiëren"
       },
       "filePreviewScreen": {
-        "generateReportButton": "Start Analyse"
+        "generateReportButton": "Start Analyse",
+        "mediaFilesUploaded": "Je hebt {{totalMediaFiles}} mediabestanden geüpload"
       },
       "disclaimerScreen": {
         "heading": "Belangrijke Disclaimer",
@@ -378,6 +380,11 @@
     }
   },
   "components": {
+    "ImagePickerModal": {
+      "photoLibrary": "Fotobibliotheek",
+      "takePhoto": "Foto maken",
+      "chooseFile": "Bestand kiezen"
+    },
     "ReportCard": {
       "rating": "Beoordeling"
     },
@@ -491,6 +498,9 @@
     "restorationError": "Er is een fout opgetreden bij het herstellen van de aankoop.",
     "medicalDisclaimerAlert": "MicroScan AI app biedt geen diagnoses, behandelingsaanbevelingen of enig medisch advies. Zoek altijd begeleiding van een gekwalificeerde zorgprofessional voor medische beslissingen.",
     "scanLimitReached": "We optimaliseren de scankwaliteit voor je! Je kunt over ongeveer {{hours}} uur en {{minutes}} minuten weer scannen. Heb je vragen over een microscopie-onderwerp? Vraag het onze chat-assistent terwijl je wacht!",
-    "chatAndMediaFilesLimit": "Beste gebruiker, je moet je abonnement upgraden om te profiteren van onbeperkte chats, onbeperkte scans, multi-beeldanalyse en meer. 🔓"
+    "chatAndMediaFilesLimit": "Beste gebruiker, je moet je abonnement upgraden om te profiteren van onbeperkte chats, onbeperkte scans, multi-beeldanalyse en meer. 🔓",
+    "mixedMediaNotAllowed": "Voor betere nauwkeurigheid, upload geen mix van verschillende mediabestanden. Upload alleen afbeeldingen, video's of pdf's - niet allemaal samen.",
+    "multipleVideosNotAllowed": "Voor betere nauwkeurigheid, upload slechts één video per keer.",
+    "mediaFilesUploadFiles": "Er was een fout bij het uploaden van uw mediabestanden. Probeer het opnieuw."
   }
 }

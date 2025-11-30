@@ -22,6 +22,7 @@
     "online": "Online",
     "chatbotPlaceholder": "Tanyakan apa saja...",
     "openSettings": "Buka Pengaturan",
+    "analyzingMediaFilesPlaceholder": "Menganalisis File Media...",
     "seeNotifications": "Lihat notifikasi",
     "viewProfile": "Lihat Profil",
     "upgradePlan": "Upgrade Paket",
@@ -213,7 +214,8 @@
         "heading": "Verifikasi email"
       },
       "filePreviewScreen": {
-        "generateReportButton": "Mulai Analisis"
+        "generateReportButton": "Mulai Analisis",
+        "mediaFilesUploaded": "Anda mengunggah {{totalMediaFiles}} file media"
       },
       "disclaimerScreen": {
         "heading": "Penyangkalan Penting",
@@ -378,6 +380,11 @@
     }
   },
   "components": {
+    "ImagePickerModal": {
+      "photoLibrary": "Galeri Foto",
+      "takePhoto": "Ambil Foto",
+      "chooseFile": "Pilih File"
+},
     "ReportCard": {
       "rating": "Peringkat"
     },
@@ -491,6 +498,9 @@
     "restorationError": "Terjadi kesalahan saat memulihkan pembelian.",
     "medicalDisclaimerAlert": "Aplikasi MicroScan AI tidak menawarkan diagnosis, rekomendasi perawatan, atau saran medis apa pun. Selalu cari panduan dari profesional perawatan kesehatan yang berkualifikasi untuk keputusan medis.",
     "scanLimitReached": "Kami mengoptimalkan kualitas pemindaian untuk Anda! Anda akan dapat memindai lagi dalam sekitar {{hours}} jam dan {{minutes}} menit. Ada pertanyaan tentang topik mikroskopi? Tanya asisten chat kami sambil menunggu!",
-    "chatAndMediaFilesLimit": "Pengguna yang terhormat, Anda perlu mengupgrade paket Anda untuk mendapatkan keuntungan dari chat tak terbatas, pemindaian tak terbatas, analisis multi-gambar, dan lainnya. 🔓"
+    "chatAndMediaFilesLimit": "Pengguna yang terhormat, Anda perlu mengupgrade paket Anda untuk mendapatkan keuntungan dari chat tak terbatas, pemindaian tak terbatas, analisis multi-gambar, dan lainnya. 🔓",
+    "mixedMediaNotAllowed": "Untuk akurasi yang lebih baik, jangan unggah campuran file media yang berbeda. Harap unggah hanya gambar, video, atau pdf — tidak semuanya bersama-sama.",
+    "multipleVideosNotAllowed": "Untuk akurasi yang lebih baik, harap unggah hanya satu video sekaligus.",
+    "mediaFilesUploadFiles": "Terjadi kesalahan saat mengunggah file media Anda. Silakan coba lagi."
   }
 }

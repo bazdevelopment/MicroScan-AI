@@ -21,6 +21,7 @@
     "typing": "Skriver...",
     "online": "Online",
     "chatbotPlaceholder": "Fråga mig om vad som helst...",
+    "analyzingMediaFilesPlaceholder": "Analyserar mediafiler...",
     "openSettings": "Öppna Inställningar",
     "seeNotifications": "Se aviseringar",
     "viewProfile": "Visa Profil",
@@ -213,7 +214,8 @@
         "heading": "Verifiera e-post"
       },
       "filePreviewScreen": {
-        "generateReportButton": "Starta Analys"
+        "generateReportButton": "Starta Analys",
+        "mediaFilesUploaded": "Du laddade upp {{totalMediaFiles}} mediefiler"
       },
       "disclaimerScreen": {
         "heading": "Viktig ansvarsfriskrivning",
@@ -378,6 +380,11 @@
     }
   },
   "components": {
+    "ImagePickerModal": {
+      "photoLibrary": "Fotobibliotek",
+      "takePhoto": "Ta foto",
+      "chooseFile": "Välj fil"
+    },
     "ReportCard": {
       "rating": "Betyg"
     },
@@ -491,6 +498,9 @@
     "restorationError": "Ett fel uppstod vid återställning av köpet.",
     "medicalDisclaimerAlert": "MicroScan AI-appen erbjuder inte diagnoser, behandlingsrekommendationer eller något medicinskt råd. Sök alltid vägledning från kvalificerad hälso- och sjukvårdspersonal för medicinska beslut.",
     "scanLimitReached": "Vi optimerar skanningskvaliteten för dig! Du kommer att kunna skanna igen om cirka {{hours}} timmar och {{minutes}} minuter. Har du några frågor om mikroskopiämnen? Fråga vår chattassistent medan du väntar!",
-    "chatAndMediaFilesLimit": "Kära användare, du behöver uppgradera din plan för att dra nytta av obegränsade chattar, obegränsade skanningar, flerbildsanalys och mer. 🔓"
+    "chatAndMediaFilesLimit": "Kära användare, du behöver uppgradera din plan för att dra nytta av obegränsade chattar, obegränsade skanningar, flerbildsanalys och mer. 🔓",
+    "mixedMediaNotAllowed": "För bättre noggrannhet, ladda inte upp en blandning av olika mediafiler. Vänligen ladda upp endast bilder, videor eller pdf - inte alla tillsammans.",
+    "multipleVideosNotAllowed": "För bättre noggrannhet, vänligen ladda upp endast en video åt gången.",
+    "mediaFilesUploadFiles": "Det uppstod ett fel när dina mediafiler laddades upp. Vänligen försök igen."
   }
 }

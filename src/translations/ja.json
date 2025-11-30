@@ -21,6 +21,7 @@
     "typing": "入力中...",
     "online": "オンライン",
     "chatbotPlaceholder": "何でも聞いてください...",
+    "analyzingMediaFilesPlaceholder": "メディアファイルを分析中...",
     "openSettings": "設定を開く",
     "seeNotifications": "通知を見る",
     "viewProfile": "プロフィールを見る",
@@ -213,7 +214,8 @@
         "heading": "メールアドレスを確認"
       },
       "filePreviewScreen": {
-        "generateReportButton": "分析を開始"
+        "generateReportButton": "分析を開始",
+        "mediaFilesUploaded": "{{totalMediaFiles}} 個のメディアファイルをアップロードしました"
       },
       "disclaimerScreen": {
         "heading": "重要な免責事項",
@@ -378,6 +380,11 @@
     }
   },
   "components": {
+    "ImagePickerModal": {
+      "photoLibrary": "写真ライブラリ",
+      "takePhoto": "写真を撮る",
+      "chooseFile": "ファイルを選択"
+    },
     "ReportCard": {
       "rating": "評価"
     },
@@ -491,6 +498,9 @@
     "restorationError": "購入の復元中にエラーが発生しました。",
     "medicalDisclaimerAlert": "MicroScan AIアプリは、診断、治療勧告、または医療アドバイスを提供しません。医療上の決定については、必ず資格のある医療専門家の指導を受けてください。",
     "scanLimitReached": "お客様のためにスキャン品質を最適化しています！約{{hours}}時間{{minutes}}分後に再びスキャンできます。顕微鏡のトピックについて何か質問がありますか？お待ちの間、チャットアシスタントに質問してください！",
-    "chatAndMediaFilesLimit": "お客様、無制限のチャット、無制限のスキャン、複数画像分析などの特典を利用するには、プランをアップグレードする必要があります。 🔓"
+    "chatAndMediaFilesLimit": "お客様、無制限のチャット、無制限のスキャン、複数画像分析などの特典を利用するには、プランをアップグレードする必要があります。 🔓",
+    "mixedMediaNotAllowed": "精度を高めるため、異なるメディアファイルを混在させてアップロードしないでください。画像、動画、またはPDFのみをアップロードしてください — すべて一緒にはしないでください。",
+    "multipleVideosNotAllowed": "精度を高めるため、一度に1つの動画のみアップロードしてください。",
+    "mediaFilesUploadFiles": "メディアファイルのアップロード中にエラーが発生しました。もう一度お試しください。"
   }
 }
