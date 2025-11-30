@@ -6,7 +6,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Animated, Easing, Image, Modal, StyleSheet, View } from 'react-native';
 
 import { LOADING_MESSAGES_IMAGE_SCANNING } from '@/constants/loading-messages';
-import { translate } from '@/core';
+import { DEVICE_TYPE, translate } from '@/core';
 import useBackHandler from '@/core/hooks/use-back-handler';
 import { Button, colors } from '@/ui';
 import { CloseIcon, RetryIcon } from '@/ui/assets/icons';
@@ -30,6 +30,7 @@ interface IScanningModalProps {
   isPending: boolean;
   onRetry: () => void;
   isVideo?: boolean;
+  isPdfMediaSource?: boolean;
 
   // New props for multiple images
   isMultipleImages?: boolean;
@@ -50,6 +51,7 @@ const ScanningModal = ({
   mediaItems = [],
   getMediaSource,
   checkIsVideo,
+  isPdfMediaSource,
 }: IScanningModalProps) => {
   useBackHandler(() => true);
 
@@ -179,6 +181,11 @@ const ScanningModal = ({
                   additionalVideoStyles={{ width: 300, height: 300 }}
                 />
               </View>
+            ) : isPdfMediaSource && DEVICE_TYPE.ANDROID ? (
+              <Image
+                source={require('../../ui/assets/images/documents.png')}
+                className="size-[300px]"
+              />
             ) : (
               <Image
                 source={{

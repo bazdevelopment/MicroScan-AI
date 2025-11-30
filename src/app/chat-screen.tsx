@@ -248,7 +248,13 @@ export const ChatBubble = ({
           {!isUser && (
             <TouchableOpacity
               className="rounded-full p-1"
-              onPress={() => copyToClipboard(message.content)}
+              onPress={() => {
+                copyToClipboard(message.content);
+                Toast.success(translate('general.copyText.copied'), {
+                  style: { marginTop: 50 },
+                  closeButton: true,
+                });
+              }}
             >
               {!!copiedText ? (
                 <CopiedIcon
@@ -368,6 +374,7 @@ const ChatScreen = () => {
   const [currentlySpeakingId, setCurrentlySpeakingId] = useState<string | null>(
     null
   );
+  const isPdfMediaSource = mediaSource?.includes('.pdf');
   const { language: appLanguage } = useSelectedLanguage();
 
   const [lastUserMessageIndex, setLastUserMessageIndex] = useState<
@@ -708,7 +715,7 @@ const ChatScreen = () => {
               </View>
             </View>
             <View>
-              {!!mediaSource && (
+              {!!mediaSource && !isPdfMediaSource && (
                 <AttachmentPreview
                   filePath={mediaSource as string}
                   isVideo={isVideo}

@@ -351,7 +351,7 @@ export const useSendStreamingMessage = ({ onComplete, onError }) => {
       onComplete?.(data);
     },
     onError: (error) => {
-      onError?.();
+      onError?.(error);
 
       console.error('Failed to send message:', error);
     },

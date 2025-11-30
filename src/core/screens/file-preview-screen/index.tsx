@@ -255,6 +255,7 @@ const FilePreviewScreen = ({
     ? getBase64ImageUri(currentImageData.fileBase64 as string)
     : imageUrlHighlighted;
 
+  const isPdfMediaSource = mediaSource?.includes('.pdf');
   const onSuccess = ({
     conversationId,
     interpretationResult,
@@ -422,6 +423,7 @@ const FilePreviewScreen = ({
             <AttachmentPreview
               // Single media props (for backward compatibility)
               filePath={!isMultipleImages ? (mediaSource as string) : undefined}
+              isPdfMediaSource={isPdfMediaSource}
               fileMimeType={
                 !isMultipleImages
                   ? (currentImageData?.fileMimeType as string)
@@ -448,7 +450,7 @@ const FilePreviewScreen = ({
           </View>
 
           {/* Annotation Studio Section - Only for single images */}
-          {!isVideo && !isMultipleImages && (
+          {!isVideo && !isMultipleImages && !isPdfMediaSource && (
             <View className="pb-4">
               <OpenStudioSection
                 squares={squares}
@@ -506,6 +508,7 @@ const FilePreviewScreen = ({
 
         {isModalVisible && (
           <ScanningModal
+            isPdfMediaSource={isPdfMediaSource}
             visible={isModalVisible}
             onClose={() => setIsModalVisible(false)}
             // Single media props (for backward compatibility)

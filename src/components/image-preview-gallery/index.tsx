@@ -2,6 +2,8 @@ import { Ionicons } from '@expo/vector-icons';
 import React from 'react';
 import { Image, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 
+import { getDocumentIcon } from '@/core/utilities/get-document-icon';
+
 export interface IMediPickerFile {
   id: string;
   fileUri: string;
@@ -29,15 +31,6 @@ const ImagePreviewGallery: React.FC<ImagePreviewGalleryProps> = ({
 
   const isVideo = (mimeType: string) => {
     return mimeType?.startsWith('video/');
-  };
-
-  const getDocumentIcon = (fileExtension: string) => {
-    const ext = fileExtension?.toLowerCase();
-    if (ext === 'pdf') return 'document-text';
-    if (ext === 'doc' || ext === 'docx') return 'document-text';
-    if (ext === 'xls' || ext === 'xlsx') return 'stats-chart';
-    if (ext === 'ppt' || ext === 'pptx') return 'easel';
-    return 'document-attach';
   };
 
   const truncateFileName = (fileName: string, maxLength: number = 12) => {

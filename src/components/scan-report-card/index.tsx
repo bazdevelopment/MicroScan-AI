@@ -10,7 +10,7 @@ import {
   View,
 } from 'react-native';
 
-import { translate } from '@/core';
+import { DEVICE_TYPE, translate } from '@/core';
 import { useModal } from '@/core/hooks/use-modal';
 import { checkIsVideo } from '@/core/utilities/check-is-video';
 import { colors, Image, Input, Text } from '@/ui';
@@ -60,13 +60,22 @@ const ScanReportCard = ({
   const [editableTitle, setEditableTitle] = useState(title);
   const { colorScheme } = useColorScheme();
   const isDark = colorScheme === 'dark';
-
   const [modalCurrentIndex, setModalCurrentIndex] = useState(0);
   const scrollViewRef = useRef(null); // Ref for ScrollView
 
   const { isVisible: isMediaModalVisible, openModal, closeModal } = useModal();
 
   const mediaUrls = urls?.length ? urls : url ? [url] : [];
+  const mediaFileImage =
+    mediaUrls[0]?.includes('pdf') && DEVICE_TYPE.ANDROID ? (
+      <Image
+        source={require('../../ui/assets/images/documents.png')}
+        className="size-full"
+      />
+    ) : (
+      <Image source={{ uri: mediaUrls[0] }} className="size-full" />
+    );
+
   const isMultipleMedia = mediaUrls.length > 1;
 
   const isVideo = checkIsVideo(mimeType); // For the main thumbnail, falls back to checkIsVideoByUrl for gallery
@@ -143,8 +152,8 @@ const ScanReportCard = ({
                 containerStyle="w-[65px] h-[65px] mr-3 justify-center items-center bg-gray-200 dark:bg-charcoal-700 rounded-xl"
               />
             ) : (
-              <View className="mr-3 size-[65px] overflow-hidden rounded-md bg-gray-100">
-                <Image source={{ uri: mediaUrls[0] }} className="size-full" />
+              <View className="mr-3 size-[65px] items-center justify-center overflow-hidden rounded-md bg-gray-100">
+                {mediaFileImage}
               </View>
             )}
           </TouchableOpacity>
@@ -255,11 +264,12 @@ const ScanReportCard = ({
                         width: screenWidth - 40,
                       }}
                     >
-                      <Image
+                      {mediaFileImage}
+                      {/* <Image
                         source={{ uri: mediaUrl }}
                         className="size-full rounded-xl"
                         contentFit="contain"
-                      />
+                      /> */}
                     </View>
                   )}
                 </View>

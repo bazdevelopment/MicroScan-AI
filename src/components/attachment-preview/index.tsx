@@ -10,7 +10,7 @@ import {
   type ViewStyle,
 } from 'react-native';
 
-import { useSelectedLanguage } from '@/core';
+import { DEVICE_TYPE, useSelectedLanguage } from '@/core';
 import { useModal } from '@/core/hooks/use-modal';
 import { Image, Text } from '@/ui';
 // Import your arrow icons
@@ -40,6 +40,7 @@ interface AttachmentPreviewProps {
   showAdditionalInfo?: boolean;
   isEntirelyClickable?: boolean;
   showDate?: boolean;
+  isPdfMediaSource?: boolean;
 
   // Multiple media props (new)
   mediaItems?: MediaItem[];
@@ -65,11 +66,11 @@ const AttachmentPreview = ({
   currentIndex = 0,
   getMediaSource,
   checkIsVideo,
+  isPdfMediaSource,
 }: AttachmentPreviewProps) => {
   const { isVisible: isMediaModalVisible, openModal, closeModal } = useModal();
   const { language } = useSelectedLanguage();
   const [modalCurrentIndex, setModalCurrentIndex] = useState(0);
-
   // Determine if we're in multiple media mode
   const isMultipleMedia = mediaItems.length > 0;
 
@@ -141,6 +142,11 @@ const AttachmentPreview = ({
             onTapToView={openModal}
             additionalVideoStyles={additionalVideoStyles}
             showAdditionalInfo={showAdditionalInfo}
+          />
+        ) : isPdfMediaSource && DEVICE_TYPE.ANDROID ? (
+          <Image
+            source={require('../../ui/assets/images/documents.png')}
+            className="h-[120px] w-full"
           />
         ) : (
           <Image
