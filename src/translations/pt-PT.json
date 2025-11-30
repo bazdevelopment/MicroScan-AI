@@ -21,6 +21,7 @@
     "typing": "A escrever...",
     "online": "Online",
     "chatbotPlaceholder": "Pergunte-me qualquer coisa...",
+    "analyzingMediaFilesPlaceholder": "A analisar ficheiros multimédia...",
     "openSettings": "Abrir Definições",
     "seeNotifications": "Ver notificações",
     "viewProfile": "Ver Perfil",
@@ -213,7 +214,8 @@
         "heading": "Verificar e-mail"
       },
       "filePreviewScreen": {
-        "generateReportButton": "Iniciar Análise"
+        "generateReportButton": "Iniciar Análise",
+        "mediaFilesUploaded": "Carregou {{totalMediaFiles}} ficheiros multimédia"
       },
       "disclaimerScreen": {
         "heading": "Aviso Importante",
@@ -378,6 +380,11 @@
     }
   },
   "components": {
+    "ImagePickerModal": {
+      "photoLibrary": "Biblioteca de fotos",
+      "takePhoto": "Tirar foto",
+      "chooseFile": "Escolher ficheiro"
+    },
     "ReportCard": {
       "rating": "Avaliação"
     },
@@ -491,6 +498,9 @@
     "restorationError": "Ocorreu um erro ao restaurar a compra.",
     "medicalDisclaimerAlert": "A aplicação MicroScan AI não oferece diagnósticos, recomendações de tratamento ou qualquer aconselhamento médico. Procure sempre orientação de um profissional de saúde qualificado para decisões médicas.",
     "scanLimitReached": "Estamos a otimizar a qualidade da digitalização para si! Poderá digitalizar novamente em cerca de {{hours}} horas e {{minutes}} minutos. Tem alguma pergunta sobre algum tópico de microscopia? Pergunte ao nosso assistente de chat enquanto espera!",
-    "chatAndMediaFilesLimit": "Caro utilizador, precisa de atualizar o seu plano para beneficiar de chats ilimitados, scans ilimitados, análise de múltiplas imagens e mais. 🔓"
+    "chatAndMediaFilesLimit": "Caro utilizador, precisa de atualizar o seu plano para beneficiar de chats ilimitados, scans ilimitados, análise de múltiplas imagens e mais. 🔓",
+    "mixedMediaNotAllowed": "Para melhor precisão, não carregue uma mistura de diferentes ficheiros multimédia. Por favor, carregue apenas imagens, vídeos ou pdfs - não todos juntos.",
+    "multipleVideosNotAllowed": "Para melhor precisão, por favor carregue apenas um vídeo de cada vez.",
+    "mediaFilesUploadFiles": "Ocorreu um erro ao carregar os seus ficheiros multimédia. Por favor, tente novamente."
   }
 }

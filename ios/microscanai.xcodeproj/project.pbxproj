@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		19966886A057EF724B25E0E1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 9A1D3D7B35FFEBAD3DC75058 /* PrivacyInfo.xcprivacy */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		8E65C8E2212046248DE76EF8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 713F11E8F0194099BC78864F /* GoogleService-Info.plist */; };
+		A6E7AE3BA704043835A3A305 /* Pods_MicroScanAI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E4189B1FB54F0609464228 /* Pods_MicroScanAI.framework */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		C1EFAAED06A2A5475EBDFFD1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 7967D43925029014A9058137 /* PrivacyInfo.xcprivacy */; };
 		D64B537B8C9F0641A9A3990B /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D41382E19C58BA0F3E0B8 /* ExpoModulesProvider.swift */; };
-		E331DD13BD404CF3A28CD85B /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2734031FBC5D4B80A82A0BA2 /* Inter.ttf */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
+		DB65D9E223F74884B8AA9BB3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99AC0EFB1D3143A8BEAA8513 /* GoogleService-Info.plist */; };
+		3CD7223C42914FD18B421653 /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F4A0B38981F49E7A1987FE2 /* Inter.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,20 +23,17 @@
 		13B07F961A680F5B00A75B9A /* MicroScanAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroScanAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MicroScanAI/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MicroScanAI/Info.plist; sourceTree = "<group>"; };
-		6D2CABA58F9F778E8B1F98DF /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = MicroScanAI/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		73A999D81B149131F5115A6B /* Pods-MicroScanAI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicroScanAI.release.xcconfig"; path = "Target Support Files/Pods-MicroScanAI/Pods-MicroScanAI.release.xcconfig"; sourceTree = "<group>"; };
-		93A21A28D1A90F9CD12EB4DB /* Pods_MicroScanAI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicroScanAI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		98E2F8D46D934CE4B6F2C018 /* Inter.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Inter.ttf; path = ../assets/fonts/Inter.ttf; sourceTree = "<group>"; };
-		A4D6EF1184D7ABD1097DD3F8 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-MicroScanAI/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		294CD0DD9EBBC29DCDB9C13D /* Pods-MicroScanAI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicroScanAI.release.xcconfig"; path = "Target Support Files/Pods-MicroScanAI/Pods-MicroScanAI.release.xcconfig"; sourceTree = "<group>"; };
+		9A1D3D7B35FFEBAD3DC75058 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = MicroScanAI/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		A1EA4C97CB170768E8C9F5BE /* Pods-MicroScanAI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicroScanAI.debug.xcconfig"; path = "Target Support Files/Pods-MicroScanAI/Pods-MicroScanAI.debug.xcconfig"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = MicroScanAI/SplashScreen.storyboard; sourceTree = "<group>"; };
-		B4EDCB5B554444FAA3D5ACFC /* GoogleService-Info.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "microscanai/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		D73D41382E19C58BA0F3E0B8 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-MicroScanAI/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MicroScanAI/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* MicroScanAI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MicroScanAI-Bridging-Header.h"; path = "MicroScanAI/MicroScanAI-Bridging-Header.h"; sourceTree = "<group>"; };
-		FA1B08384574477BAEDB1A9B /* SplashScreen.storyboard */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SplashScreen.storyboard; path = microscanai/SplashScreen.storyboard; sourceTree = "<group>"; };
-		FA527B8F578D97EA1714EF88 /* Pods-MicroScanAI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicroScanAI.debug.xcconfig"; path = "Target Support Files/Pods-MicroScanAI/Pods-MicroScanAI.debug.xcconfig"; sourceTree = "<group>"; };
+		99AC0EFB1D3143A8BEAA8513 /* GoogleService-Info.plist */ = {isa = PBXFileReference; name = "GoogleService-Info.plist"; path = "MicroScanAI/GoogleService-Info.plist"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text.plist.xml; explicitFileType = undefined; includeInIndex = 0; };
+		9F4A0B38981F49E7A1987FE2 /* Inter.ttf */ = {isa = PBXFileReference; name = "Inter.ttf"; path = "../assets/fonts/Inter.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCBDA68667235D973FB9C914 /* Pods_MicroScanAI.framework in Frameworks */,
+				A6E7AE3BA704043835A3A305 /* Pods_MicroScanAI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,8 +65,8 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				713F11E8F0194099BC78864F /* GoogleService-Info.plist */,
-				7967D43925029014A9058137 /* PrivacyInfo.xcprivacy */,
+				9A1D3D7B35FFEBAD3DC75058 /* PrivacyInfo.xcprivacy */,
+				99AC0EFB1D3143A8BEAA8513 /* GoogleService-Info.plist */,
 			);
 			name = MicroScanAI;
 			sourceTree = "<group>";
@@ -85,8 +83,8 @@
 		336683A8C11AC9FCD515AAB8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5F05E40EB43B8380BACACCE3 /* Pods-MicroScanAI.debug.xcconfig */,
-				4777FDFFEBE1B4C3407B8A5F /* Pods-MicroScanAI.release.xcconfig */,
+				A1EA4C97CB170768E8C9F5BE /* Pods-MicroScanAI.debug.xcconfig */,
+				294CD0DD9EBBC29DCDB9C13D /* Pods-MicroScanAI.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -142,7 +140,7 @@
 		F2E9F08E2F6E4217A7C956F1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2734031FBC5D4B80A82A0BA2 /* Inter.ttf */,
+				9F4A0B38981F49E7A1987FE2 /* Inter.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -213,9 +211,9 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				40023ECD8E9842AE9035F44C /* GoogleService-Info.plist in Resources */,
-				A791097A09B64A7FB901D21C /* Inter.ttf in Resources */,
-				8B6675A2695D62822D80BEAA /* PrivacyInfo.xcprivacy in Resources */,
+				19966886A057EF724B25E0E1 /* PrivacyInfo.xcprivacy in Resources */,
+				DB65D9E223F74884B8AA9BB3 /* GoogleService-Info.plist in Resources */,
+				3CD7223C42914FD18B421653 /* Inter.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +438,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F05E40EB43B8380BACACCE3 /* Pods-MicroScanAI.debug.xcconfig */;
+			baseConfigurationReference = A1EA4C97CB170768E8C9F5BE /* Pods-MicroScanAI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -464,8 +462,8 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.microscanai;
-				PRODUCT_NAME = MicroScanAI;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.microscanai.development";
+				PRODUCT_NAME = "MicroScanAI";
 				SWIFT_OBJC_BRIDGING_HEADER = "MicroScanAI/MicroScanAI-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -476,7 +474,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4777FDFFEBE1B4C3407B8A5F /* Pods-MicroScanAI.release.xcconfig */;
+			baseConfigurationReference = 294CD0DD9EBBC29DCDB9C13D /* Pods-MicroScanAI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -495,8 +493,8 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = com.microscanai;
-				PRODUCT_NAME = MicroScanAI;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.microscanai.development";
+				PRODUCT_NAME = "MicroScanAI";
 				SWIFT_OBJC_BRIDGING_HEADER = "MicroScanAI/MicroScanAI-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -570,7 +568,10 @@
 				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -636,7 +637,10 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;

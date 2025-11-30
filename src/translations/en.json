@@ -44,6 +44,7 @@
     "completedScans": "Scans completed",
     "activeSubscription": "Subscription active",
     "askAssistant": "Ask AI assistant",
+    "analyzingMediaFilesPlaceholder": "Analyzing Media Files...",
     "then": "then",
     "perWeek": "per week",
     "perYear": "per year",
@@ -213,7 +214,8 @@
         "heading": "Verify email"
       },
       "filePreviewScreen": {
-        "generateReportButton": "Start Analysis"
+        "generateReportButton": "Start Analysis",
+        "mediaFilesUploaded": "You uploaded {{totalMediaFiles}} media files"
       },
       "disclaimerScreen": {
         "heading": "Important Disclaimer",
@@ -448,6 +450,11 @@
       "studioToolbar": {
         "addSquare": "Add Square"
       }
+    },
+    "ImagePickerModal": {
+      "photoLibrary": "Photo Library",
+      "takePhoto": "Take Photo",
+      "chooseFile": "Choose File"
     }
   },
   "alerts": {
@@ -494,6 +501,9 @@
     "restorationError": "An error occurred while restoring the purchase.",
     "medicalDisclaimerAlert": "MicroScan AI app does not offer diagnoses, treatment recommendations, or any medical advice. Always seek guidance from a qualified healthcare professional for medical decisions.",
     "scanLimitReached": "We're optimizing scan quality for you! You'll be able to scan again in around {{hours}} hours and {{minutes}} minutes. Have any questions about any microscopy topic? Ask our chat assistant while you wait!",
-    "chatAndMediaFilesLimit": "Dear user, you need to upgrade your plan to benefit from unlimited chats, unlimited scans, multi-images analysis and more. 🔓"
+    "chatAndMediaFilesLimit": "Dear user, you need to upgrade your plan to benefit from unlimited chats, unlimited scans, multi-images analysis and more. 🔓",
+    "mixedMediaNotAllowed": "Uploads must contain only images or only videos, not a mix of both.",
+    "multipleVideosNotAllowed": "For better accuracy, please upload only one video at a time.",
+    "mediaFilesUploadFiles": "There was an error uploading your media files. Please try again."
   }
 }

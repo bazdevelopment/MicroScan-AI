@@ -11,7 +11,6 @@ import Animated, {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useUser } from '@/api/user/user.hooks';
-import { MAX_SCANS_ALLOWED_FREE_TRIAL } from '@/constants/limits';
 import {
   DEVICE_TYPE,
   translate,
@@ -19,6 +18,7 @@ import {
   useSelectedLanguage,
 } from '@/core';
 import { useCrashlytics } from '@/core/hooks/use-crashlytics';
+import useRemoteConfig from '@/core/hooks/use-remote-config';
 import { wait } from '@/core/utilities/wait';
 import { Button, colors, View } from '@/ui';
 import { UploadIcon } from '@/ui/assets/icons';
@@ -35,6 +35,7 @@ export const HomeHeaderBar = ({ scrollValue }: IHomeHeaderBar) => {
   const insets = useSafeAreaInsets();
   const { colorScheme } = useColorScheme();
   const [isFirstTime, setIsFirstTime] = useIsFirstTime();
+  const { MAX_SCANS_ALLOWED_FREE_TRIAL } = useRemoteConfig();
 
   const isDark = colorScheme === 'dark';
   const { language } = useSelectedLanguage();

@@ -21,6 +21,7 @@
     "typing": "Skriver...",
     "online": "Online",
     "chatbotPlaceholder": "Spør meg om noe...",
+    "analyzingMediaFilesPlaceholder": "Analyserer mediefiler...",
     "openSettings": "Åpne Innstillinger",
     "seeNotifications": "Se varsler",
     "viewProfile": "Vis Profil",
@@ -213,7 +214,8 @@
         "heading": "Bekreft e-post"
       },
       "filePreviewScreen": {
-        "generateReportButton": "Start Analyse"
+        "generateReportButton": "Start Analyse",
+        "mediaFilesUploaded": "Du lastet opp {{totalMediaFiles}} mediefiler"
       },
       "disclaimerScreen": {
         "heading": "Viktig ansvarsfraskrivelse",
@@ -378,6 +380,11 @@
     }
   },
   "components": {
+    "ImagePickerModal": {
+      "photoLibrary": "Fotobibliotek",
+      "takePhoto": "Ta bilde",
+      "chooseFile": "Velg fil"
+    },
     "ReportCard": {
       "rating": "Vurdering"
     },
@@ -491,6 +498,9 @@
     "restorationError": "En feil oppstod under gjenopprettelse av kjøpet.",
     "medicalDisclaimerAlert": "MicroScan AI-appen tilbyr ikke diagnoser, behandlingsanbefalinger eller noe medisinsk råd. Søk alltid veiledning fra kvalifisert helsepersonell for medisinske beslutninger.",
     "scanLimitReached": "Vi optimaliserer skannekvaliteten for deg! Du vil kunne skanne igjen om cirka {{hours}} timer og {{minutes}} minutter. Har du noen spørsmål om mikroskopiemner? Spør chatassistenten vår mens du venter!",
-    "chatAndMediaFilesLimit": "Kjære bruker, du må oppgradere planen din for å dra nytte av ubegrensede chatter, ubegrensede skanninger, flerbildeanalyse og mer. 🔓"
+    "chatAndMediaFilesLimit": "Kjære bruker, du må oppgradere planen din for å dra nytte av ubegrensede chatter, ubegrensede skanninger, flerbildeanalyse og mer. 🔓",
+    "mixedMediaNotAllowed": "For bedre nøyaktighet, ikke last opp en blanding av forskjellige mediefiler. Vennligst last opp kun bilder, videoer eller pdf-er — ikke alle sammen.",
+    "multipleVideosNotAllowed": "For bedre nøyaktighet, vennligst last opp kun én video om gangen.",
+    "mediaFilesUploadFiles": "Det oppstod en feil under opplasting av mediefiler. Vennligst prøv igjen."
   }
 }

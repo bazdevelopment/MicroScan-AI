@@ -11,6 +11,7 @@ interface IInterpretationResult {
   title: string;
   createdAt: FirebaseFirestore.Timestamp; // Firestore timestamp
   url?: string;
+  urls: string[];
   filePath?: string;
   interpretationResult?: string;
   mimeType?: string;
@@ -103,6 +104,7 @@ export const getInterpretationByDateHandler = async (
           interpretation: data.interpretationResult,
           promptMessage: data.promptMessage,
           url: data.url,
+          urls: data.urls,
           createdAt: createdAt.toISOString(),
           id: data.id,
           mimeType: data.mimeType,

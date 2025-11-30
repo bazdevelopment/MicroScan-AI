@@ -22,6 +22,7 @@
     "online": "Online",
     "chatbotPlaceholder": "Pitajte me bilo što...",
     "openSettings": "Otvori postavke",
+    "analyzingMediaFilesPlaceholder": "Analiziram medijske datoteke...",
     "seeNotifications": "Vidi obavijesti",
     "viewProfile": "Pogledaj profil",
     "upgradePlan": "Nadogradi plan",
@@ -213,7 +214,8 @@
         "heading": "Verificiraj email"
       },
       "filePreviewScreen": {
-        "generateReportButton": "Započni analizu"
+        "generateReportButton": "Započni analizu",
+        "mediaFilesUploaded": "Učitali ste {{totalMediaFiles}} medijskih datoteka"
       },
       "disclaimerScreen": {
         "heading": "Važna izjava o odricanju od odgovornosti",
@@ -378,6 +380,11 @@
     }
   },
   "components": {
+    "ImagePickerModal": {
+      "photoLibrary": "Foto biblioteka",
+      "takePhoto": "Uslikaj fotografiju",
+      "chooseFile": "Odaberi datoteku"
+    },
     "ReportCard": {
       "rating": "Ocjena"
     },
@@ -491,6 +498,9 @@
     "restorationError": "Došlo je do pogreške pri vraćanju kupnje.",
     "medicalDisclaimerAlert": "MicroScan AI aplikacija ne nudi dijagnoze, preporuke liječenja ili bilo kakve medicinske savjete. Uvijek tražite smjernice od kvalificiranog zdravstvenog profesionalca za medicinske odluke.",
     "scanLimitReached": "Optimiziramo kvalitetu skeniranja za vas! Moći ćete ponovno skenirati za otprilike {{hours}} sati i {{minutes}} minuta. Imate li pitanja o bilo kojoj mikroskopskoj temi? Pitajte našeg chat asistenta dok čekate!",
-    "chatAndMediaFilesLimit": "Poštovani korisniče, trebate nadograditi svoj plan kako biste imali koristi od neograničenih razgovora, neograničenih skenova, analize više slika i više. 🔓"
+    "chatAndMediaFilesLimit": "Poštovani korisniče, trebate nadograditi svoj plan kako biste imali koristi od neograničenih razgovora, neograničenih skenova, analize više slika i više. 🔓",
+    "mixedMediaNotAllowed": "Radi bolje točnosti, ne učitavajte mješavinu različitih medijskih datoteka. Učitajte samo slike, videozapise ili pdf-ove — ne sve zajedno.",
+    "multipleVideosNotAllowed": "Radi bolje točnosti, učitajte samo jedan videozapis odjednom.",
+    "mediaFilesUploadFiles": "Došlo je do pogreške pri učitavanju vaših medijskih datoteka. Pokušajte ponovno."
   }
 }

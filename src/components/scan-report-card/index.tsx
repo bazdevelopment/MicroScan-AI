@@ -1,25 +1,50 @@
 /* eslint-disable max-lines-per-function */
 import dayjs from 'dayjs';
 import { useColorScheme } from 'nativewind';
-import React, { useState } from 'react';
-import { TouchableOpacity, View } from 'react-native';
+import React, { useRef, useState } from 'react';
+import {
+  Dimensions,
+  Platform,
+  ScrollView,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 
 import { translate } from '@/core';
 import { useModal } from '@/core/hooks/use-modal';
 import { checkIsVideo } from '@/core/utilities/check-is-video';
 import { colors, Image, Input, Text } from '@/ui';
-import { EditIcon, PlayerIcon, TickCircle } from '@/ui/assets/icons';
+import {
+  // Assuming CloseIcon is available in your assets
+  EditIcon,
+  PlayerIcon,
+  TickCircle,
+} from '@/ui/assets/icons'; // Added CloseIcon, ArrowLeftSharp, ArrowRightSharp
+import { ArrowLeftSharp } from '@/ui/assets/icons/arrow-left.sharp';
+import { ArrowRightSharp } from '@/ui/assets/icons/arrow-right-sharp';
 
 import CustomModal from '../custom-modal';
 import Icon from '../icon';
 import VideoPlayer from '../video';
 import { type IScanReportCard } from './scan-report-card.interface';
 
+// --- Utility function: Check if a URL is a video based on extension (basic) ---
+const checkIsVideoByUrl = (mediaUrl) => {
+  if (typeof mediaUrl !== 'string') return false;
+  const videoExtensions = ['.mp4', '.mov', '.avi', '.wmv', '.flv']; // Add more as needed
+  const lowerCaseUrl = mediaUrl.toLowerCase();
+  return videoExtensions.some((ext) => lowerCaseUrl.includes(ext));
+};
+// -----------------------------------------------------------------------------
+
+const { width: screenWidth } = Dimensions.get('window');
+
 const ScanReportCard = ({
   createdAt,
   interpretation,
   mimeType,
   url,
+  urls,
   title,
   onEditTitle,
   docId,
@@ -31,13 +56,29 @@ const ScanReportCard = ({
 }: IScanReportCard) => {
   const messages =
     conversationMessages?.filter((msg) => !Array.isArray(msg.content)) || [];
-
   const [isEditing, setIsEditing] = useState(false);
   const [editableTitle, setEditableTitle] = useState(title);
   const { colorScheme } = useColorScheme();
   const isDark = colorScheme === 'dark';
 
+  const [modalCurrentIndex, setModalCurrentIndex] = useState(0);
+  const scrollViewRef = useRef(null); // Ref for ScrollView
+
   const { isVisible: isMediaModalVisible, openModal, closeModal } = useModal();
+
+  const mediaUrls = urls?.length ? urls : url ? [url] : [];
+  const isMultipleMedia = mediaUrls.length > 1;
+
+  const isVideo = checkIsVideo(mimeType); // For the main thumbnail, falls back to checkIsVideoByUrl for gallery
+
+  const handleOpenModal = () => {
+    setModalCurrentIndex(0); // Always start at the first item
+    openModal();
+    // Ensure scroll position is reset when modal opens
+    setTimeout(() => {
+      scrollViewRef.current?.scrollTo({ x: 0, animated: false });
+    }, 100); // Small delay to ensure modal is rendered before scrolling
+  };
 
   const handleEditToggle = () => {
     setIsEditing((prev) => !prev);
@@ -49,14 +90,42 @@ const ScanReportCard = ({
 
   const handleTitleSubmit = (docId: string) => {
     setIsEditing(false);
-    if (editableTitle !== title) onEditTitle?.(editableTitle, docId); // Call the parent `onEdit` callback with the new title
+    if (editableTitle !== title) onEditTitle?.(editableTitle, docId);
   };
+
   const handleEdit = (docId: string) => {
     editableTitle !== title && onEditTitle?.(editableTitle, docId);
     setIsEditing(false);
   };
 
-  const isVideo = checkIsVideo(mimeType);
+  // --- Navigation functions for arrows and dots ---
+  const goToPrevious = () => {
+    setModalCurrentIndex((prevIndex) => {
+      const newIndex = prevIndex > 0 ? prevIndex - 1 : mediaUrls.length - 1;
+      scrollViewRef.current?.scrollTo({
+        x: newIndex * screenWidth,
+        animated: true,
+      });
+      return newIndex;
+    });
+  };
+
+  const goToNext = () => {
+    setModalCurrentIndex((prevIndex) => {
+      const newIndex = prevIndex < mediaUrls.length - 1 ? prevIndex + 1 : 0;
+      scrollViewRef.current?.scrollTo({
+        x: newIndex * screenWidth,
+        animated: true,
+      });
+      return newIndex;
+    });
+  };
+
+  const goToIndex = (index: number) => {
+    setModalCurrentIndex(index);
+    scrollViewRef.current?.scrollTo({ x: index * screenWidth, animated: true });
+  };
+  // ------------------------------------------------
 
   return (
     <>
@@ -64,40 +133,24 @@ const ScanReportCard = ({
         <Text className="font-bold-nunito text-xs text-primary-900">
           {dayjs(createdAt).locale(language).format(dateFormat).toUpperCase()}
         </Text>
-
-        {/* <SharePdfActionButtons
-          position="horizontal"
-          heading={title}
-          date={createdAt}
-          html={generateScanReportPdf({
-            createdAt: dayjs(createdAt).locale(language).format('DD/MM/YYYY'),
-            messages,
-            promptMessage,
-            generatedAt: dayjs().locale(language).format('DD/MM/YYYY'),
-          })}
-        /> */}
       </View>
       <View className="mt-2 flex-row items-center">
-        {/* Image Section */}
-        {url && (
-          <TouchableOpacity onPress={openModal}>
-            {isVideo ? (
+        {mediaUrls.length > 0 && (
+          <TouchableOpacity onPress={handleOpenModal}>
+            {isVideo || checkIsVideoByUrl(mediaUrls[0]) ? (
               <Icon
                 icon={<PlayerIcon />}
-                onPress={openModal}
                 containerStyle="w-[65px] h-[65px] mr-3 justify-center items-center bg-gray-200 dark:bg-charcoal-700 rounded-xl"
               />
             ) : (
               <View className="mr-3 size-[65px] overflow-hidden rounded-md bg-gray-100">
-                <Image source={{ uri: url }} className="size-full" />
+                <Image source={{ uri: mediaUrls[0] }} className="size-full" />
               </View>
             )}
           </TouchableOpacity>
         )}
 
-        {/* Content Section */}
         <View className="flex-1">
-          {/* Header Row */}
           <View className="w-[180px] flex-row items-center">
             <View className="flex-row items-center">
               {isEditing ? (
@@ -108,9 +161,9 @@ const ScanReportCard = ({
                   )}
                   onChangeText={handleTitleChange}
                   onSubmitEditing={() => handleTitleSubmit(docId)}
-                  onBlur={() => handleTitleSubmit(docId)} // Save the title on blur
+                  onBlur={() => handleTitleSubmit(docId)}
                   autoFocus
-                  className="rounded-lg  border-gray-300 px-2 py-1 text-sm dark:border-0 dark:bg-charcoal-700 dark:text-white"
+                  className="rounded-lg border-gray-300 px-2 py-1 text-sm dark:border-0 dark:bg-charcoal-700 dark:text-white"
                   multiline
                   containerClassName="rounded-lg dark:border-0"
                   style={{ width: 180 }}
@@ -146,7 +199,6 @@ const ScanReportCard = ({
             )}
           </View>
 
-          {/* Interpretation */}
           {interpretation && (
             <Text
               className="mt-1 font-medium-nunito text-sm leading-[20px] text-gray-600"
@@ -155,19 +207,110 @@ const ScanReportCard = ({
               {interpretation}
             </Text>
           )}
-
-          {/* Footer Row */}
         </View>
       </View>
+
       <CustomModal visible={isMediaModalVisible} onClose={closeModal}>
-        {isVideo ? (
-          <VideoPlayer videoSource={{ uri: url }} />
-        ) : (
-          <Image
-            source={{ uri: url }}
-            className="size-96 self-center rounded-xl"
-          />
-        )}
+        <View className={`w-full ${Platform.isPad ? 'h-[85%]' : 'h-96'}`}>
+          {/* Header with index and close button */}
+
+          {/* Media Content - ScrollView for Gallery */}
+          <ScrollView
+            horizontal
+            pagingEnabled
+            showsHorizontalScrollIndicator={false}
+            scrollEnabled={isMultipleMedia}
+            contentOffset={
+              isMultipleMedia
+                ? { x: modalCurrentIndex * screenWidth, y: 0 }
+                : { x: 0, y: 0 }
+            }
+            className="flex-1"
+          >
+            {mediaUrls.map((mediaUrl, index) => {
+              const itemIsVideo = checkIsVideoByUrl(mediaUrl);
+
+              return (
+                <View
+                  key={index}
+                  className="flex-1 items-center justify-center"
+                >
+                  {itemIsVideo ? (
+                    <View className="w-full justify-center px-4">
+                      <VideoPlayer
+                        videoSource={{ uri: mediaUrl }}
+                        additionalVideoStyles={{
+                          width: '100%',
+                          height: 300,
+                          borderRadius: 12,
+                        }}
+                      />
+                    </View>
+                  ) : (
+                    <View
+                      className={`flex-1 items-center justify-center  p-4 ${
+                        Platform.isPad ? 'h-[85%]' : 'h-full'
+                      }`}
+                      style={{
+                        width: screenWidth - 40,
+                      }}
+                    >
+                      <Image
+                        source={{ uri: mediaUrl }}
+                        className="size-full rounded-xl"
+                        contentFit="contain"
+                      />
+                    </View>
+                  )}
+                </View>
+              );
+            })}
+          </ScrollView>
+
+          {/* Navigation arrows for multiple media */}
+          {isMultipleMedia && mediaUrls.length > 1 && (
+            <>
+              {/* Previous button */}
+              <TouchableOpacity
+                onPress={goToPrevious}
+                className="absolute left-0 top-1/2 ml-2 -translate-y-1/2 rounded-full bg-black/50 p-3"
+                style={{ marginTop: -24 }} // Adjust as needed to vertically center
+              >
+                <Icon
+                  icon={<ArrowLeftSharp width={24} height={24} color="white" />}
+                />
+              </TouchableOpacity>
+
+              {/* Next button */}
+              <TouchableOpacity
+                onPress={goToNext}
+                className="absolute right-0 top-1/2 mr-2 -translate-y-1/2 rounded-full bg-black/50 p-3"
+                style={{ marginTop: -24 }} // Adjust as needed to vertically center
+              >
+                <Icon
+                  icon={
+                    <ArrowRightSharp width={24} height={24} color="white" />
+                  }
+                />
+              </TouchableOpacity>
+            </>
+          )}
+
+          {/* Dots indicator for multiple media */}
+          {isMultipleMedia && mediaUrls.length > 1 && (
+            <View className="absolute inset-x-0 bottom-8 flex-row justify-center gap-2">
+              {mediaUrls.map((_, index) => (
+                <TouchableOpacity
+                  key={index}
+                  onPress={() => goToIndex(index)} // Use goToIndex for dot navigation
+                  className={`size-2 rounded-full ${
+                    index === modalCurrentIndex ? 'bg-white' : 'bg-white/50'
+                  }`}
+                />
+              ))}
+            </View>
+          )}
+        </View>
       </CustomModal>
     </>
   );

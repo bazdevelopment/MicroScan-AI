@@ -21,6 +21,7 @@
     "typing": "Pisanie...",
     "online": "Online",
     "chatbotPlaceholder": "Zapytaj mnie o cokolwiek...",
+    "analyzingMediaFilesPlaceholder": "Analizowanie plików multimedialnych...",
     "openSettings": "Otwórz Ustawienia",
     "seeNotifications": "Zobacz powiadomienia",
     "viewProfile": "Zobacz Profil",
@@ -213,7 +214,8 @@
         "heading": "Zweryfikuj e-mail"
       },
       "filePreviewScreen": {
-        "generateReportButton": "Rozpocznij Analizę"
+        "generateReportButton": "Rozpocznij Analizę",
+        "mediaFilesUploaded": "Przesłałeś {{totalMediaFiles}} plików multimedialnych"
       },
       "disclaimerScreen": {
         "heading": "Ważne Zastrzeżenie",
@@ -378,6 +380,11 @@
     }
   },
   "components": {
+    "ImagePickerModal": {
+      "photoLibrary": "Galeria zdjęć",
+      "takePhoto": "Zrób zdjęcie",
+      "chooseFile": "Wybierz plik"
+    },
     "ReportCard": {
       "rating": "Ocena"
     },
@@ -491,6 +498,9 @@
     "restorationError": "Wystąpił błąd podczas przywracania zakupu.",
     "medicalDisclaimerAlert": "Aplikacja MicroScan AI nie oferuje diagnoz, zaleceń leczenia ani żadnych porad medycznych. Zawsze zasięgaj porady wykwalifikowanego pracownika służby zdrowia w sprawach decyzji medycznych.",
     "scanLimitReached": "Optymalizujemy dla Ciebie jakość skanów! Będziesz mógł skanować ponownie za około {{hours}} godzin i {{minutes}} minut. Masz pytania dotyczące mikroskopii? Zapytaj naszego asystenta czatu, czekając!",
-    "chatAndMediaFilesLimit": "Drogi użytkowniku, musisz ulepszyć plan, aby korzystać z nielimitowanych czatów, nielimitowanych skanów, analizy wielu obrazów i nie tylko. 🔓"
+    "chatAndMediaFilesLimit": "Drogi użytkowniku, musisz ulepszyć plan, aby korzystać z nielimitowanych czatów, nielimitowanych skanów, analizy wielu obrazów i nie tylko. 🔓",
+    "mixedMediaNotAllowed": "Dla lepszej dokładności nie przesyłaj mieszanki różnych plików multimedialnych. Prześlij tylko obrazy, filmy lub pdf - nie wszystkie razem.",
+    "multipleVideosNotAllowed": "Dla lepszej dokładności przesyłaj tylko jeden film na raz.",
+    "mediaFilesUploadFiles": "Wystąpił błąd podczas przesyłania plików multimedialnych. Spróbuj ponownie."
   }
 }

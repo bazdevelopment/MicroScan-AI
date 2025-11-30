@@ -21,6 +21,7 @@
     "typing": "Se tastează...",
     "online": "Online",
     "chatbotPlaceholder": "Întreabă-mă orice...",
+    "analyzingMediaFilesPlaceholder": "Analizez fișiere media...",
     "openSettings": "Deschide Setări",
     "seeNotifications": "Vezi notificările",
     "viewProfile": "Vezi Profilul",
@@ -213,7 +214,8 @@
         "heading": "Verifică emailul"
       },
       "filePreviewScreen": {
-        "generateReportButton": "Începe Analiza"
+        "generateReportButton": "Începe Analiza",
+        "mediaFilesUploaded": "Ați încărcat {{totalMediaFiles}} fișiere media"
       },
       "disclaimerScreen": {
         "heading": "Disclaimer Important",
@@ -378,6 +380,11 @@
     }
   },
   "components": {
+    "ImagePickerModal": {
+      "photoLibrary": "Bibliotecă foto",
+      "takePhoto": "Fă o poză",
+      "chooseFile": "Alege fișier"
+    },
     "ReportCard": {
       "rating": "Evaluare"
     },
@@ -491,6 +498,9 @@
     "restorationError": "A apărut o eroare la restaurarea achiziției.",
     "medicalDisclaimerAlert": "Aplicația MicroScan AI nu oferă diagnostice, recomandări de tratament sau sfaturi medicale. Căutați întotdeauna îndrumare de la un profesionist calificat din domeniul sănătății pentru decizii medicale.",
     "scanLimitReached": "Optimizăm calitatea scanării pentru tine! Vei putea scana din nou în aproximativ {{hours}} ore și {{minutes}} minute. Ai întrebări despre orice subiect de microscopie? Întreabă asistentul nostru de chat în timp ce aștepți!",
-    "chatAndMediaFilesLimit": "Stimate utilizator, trebuie să vă actualizați planul pentru a beneficia de chat-uri nelimitate, scanări nelimitate, analiză multi-imagini și multe altele. 🔓"
+    "chatAndMediaFilesLimit": "Stimate utilizator, trebuie să vă actualizați planul pentru a beneficia de chat-uri nelimitate, scanări nelimitate, analiză multi-imagini și multe altele. 🔓",
+    "mixedMediaNotAllowed": "Pentru o acuratețe mai bună, nu încărca un amestec de fișiere media diferite. Te rugăm să încarci doar imagini, videoclipuri sau pdf-uri — nu toate împreună.",
+    "multipleVideosNotAllowed": "Pentru o acuratețe mai bună, te rugăm să încarci doar un videoclip pe rând.",
+    "mediaFilesUploadFiles": "A apărut o eroare la încărcarea fișierelor media. Vă rugăm să încercați din nou."
   }
 }

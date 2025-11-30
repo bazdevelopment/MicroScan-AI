@@ -44,6 +44,7 @@
     "completedScans": "Escanejats completats",
     "activeSubscription": "Subscripció activa",
     "askAssistant": "Pregunta a l'assistent d'IA",
+    "analyzingMediaFilesPlaceholder": "Analitzant fitxers multimèdia...",
     "then": "després",
     "perWeek": "per setmana",
     "perYear": "per any",
@@ -213,7 +214,8 @@
         "heading": "Verifica el correu electrònic"
       },
       "filePreviewScreen": {
-        "generateReportButton": "Inicia l'Anàlisi"
+        "generateReportButton": "Inicia l'Anàlisi",
+        "mediaFilesUploaded": "Has pujat {{totalMediaFiles}} arxius multimèdia"
       },
       "disclaimerScreen": {
         "heading": "Avís Important",
@@ -378,6 +380,11 @@
     }
   },
   "components": {
+    "ImagePickerModal": {
+      "photoLibrary": "Biblioteca de fotos",
+      "takePhoto": "Fer una foto",
+      "chooseFile": "Triar fitxer"
+    },
     "ReportCard": {
       "rating": "Valoració"
     },
@@ -491,6 +498,9 @@
     "restorationError": "S'ha produït un error en restaurar la compra.",
     "medicalDisclaimerAlert": "L'aplicació MicroScan AI no ofereix diagnòstics, recomanacions de tractament ni cap consell mèdic. Busqueu sempre l'orientació d'un professional de la salut qualificat per a decisions mèdiques.",
     "scanLimitReached": "Estem optimitzant la qualitat de l'escaneig per a tu! Podràs escanejar de nou en aproximadament {{hours}} hores i {{minutes}} minuts. Tens alguna pregunta sobre algun tema de microscòpia? Pregunta al nostre assistent de xat mentre esperes!",
-    "chatAndMediaFilesLimit": "Estimat usuari, necessites millorar el teu pla per beneficiar-te de xats il·limitats, escanejos il·limitats, anàlisi multi-imatge i més. 🔓"
+    "chatAndMediaFilesLimit": "Estimat usuari, necessites millorar el teu pla per beneficiar-te de xats il·limitats, escanejos il·limitats, anàlisi multi-imatge i més. 🔓",
+    "mixedMediaNotAllowed": "Per a una millor precisió, no pengeu una barreja de diferents fitxers multimèdia. Si us plau, pengeu només imatges, vídeos o pdfs - no tots junts.",
+    "multipleVideosNotAllowed": "Per a una millor precisió, si us plau, pengeu només un vídeo a la vegada.",
+    "mediaFilesUploadFiles": "Hi ha hagut un error en pujar els vostres fitxers multimèdia. Si us plau, torneu-ho a intentar."
   }
 }

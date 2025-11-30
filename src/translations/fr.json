@@ -27,6 +27,7 @@
     "upgradePlan": "Mettre à niveau le plan",
     "download": "Télécharger",
     "share": "Partager",
+    "analyzingMediaFilesPlaceholder": "Analyse des fichiers multimédias...",
     "shareLink": "Partager le lien",
     "skip": "Passer",
     "next": "Suivant",
@@ -213,7 +214,8 @@
         "heading": "Vérifier l'e-mail"
       },
       "filePreviewScreen": {
-        "generateReportButton": "Démarrer l'analyse"
+        "generateReportButton": "Démarrer l'analyse",
+        "mediaFilesUploaded": "Vous avez téléchargé {{totalMediaFiles}} fichiers multimédias"
       },
       "disclaimerScreen": {
         "heading": "Avis de non-responsabilité important",
@@ -378,6 +380,11 @@
     }
   },
   "components": {
+    "ImagePickerModal": {
+      "photoLibrary": "Bibliothèque de photos",
+      "takePhoto": "Prendre une photo",
+      "chooseFile": "Choisir un fichier"
+    },
     "ReportCard": {
       "rating": "Évaluation"
     },
@@ -491,6 +498,9 @@
     "restorationError": "Une erreur est survenue lors de la restauration de l'achat.",
     "medicalDisclaimerAlert": "L'application MicroScan AI n'offre pas de diagnostics, de recommandations de traitement ou de conseils médicaux. Demandez toujours conseil à un professionnel de la santé qualifié pour les décisions médicales.",
     "scanLimitReached": "Nous optimisons la qualité du scan pour vous ! Vous pourrez scanner à nouveau dans environ {{hours}} heures et {{minutes}} minutes. Avez-vous des questions sur un sujet de microscopie ? Demandez à notre assistant de chat pendant que vous attendez !",
-    "chatAndMediaFilesLimit": "Cher utilisateur, vous devez mettre à niveau votre plan pour bénéficier de chats illimités, de scans illimités, de l'analyse multi-images et plus encore. 🔓"
+    "chatAndMediaFilesLimit": "Cher utilisateur, vous devez mettre à niveau votre plan pour bénéficier de chats illimités, de scans illimités, de l'analyse multi-images et plus encore. 🔓",
+    "mixedMediaNotAllowed": "Pour une meilleure précision, ne téléchargez pas un mélange de différents fichiers multimédias. Veuillez télécharger uniquement des images, des vidéos ou des pdf - pas tous ensemble.",
+    "multipleVideosNotAllowed": "Pour une meilleure précision, veuillez télécharger une seule vidéo à la fois.",
+    "mediaFilesUploadFiles": "Une erreur s'est produite lors du téléchargement de vos fichiers multimédias. Veuillez réessayer."
   }
 }

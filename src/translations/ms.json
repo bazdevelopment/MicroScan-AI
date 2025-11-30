@@ -21,6 +21,7 @@
     "typing": "Menaip...",
     "online": "Dalam Talian",
     "chatbotPlaceholder": "Tanya saya apa-apa...",
+    "analyzingMediaFilesPlaceholder": "Menganalisis Fail Media...",
     "openSettings": "Buka Tetapan",
     "seeNotifications": "Lihat pemberitahuan",
     "viewProfile": "Lihat Profil",
@@ -213,7 +214,8 @@
         "heading": "Sahkan e-mel"
       },
       "filePreviewScreen": {
-        "generateReportButton": "Mulakan Analisis"
+        "generateReportButton": "Mulakan Analisis",
+        "mediaFilesUploaded": "Anda memuat naik {{totalMediaFiles}} fail media"
       },
       "disclaimerScreen": {
         "heading": "Penafian Penting",
@@ -378,6 +380,11 @@
     }
   },
   "components": {
+    "ImagePickerModal": {
+      "photoLibrary": "Pustaka Foto",
+      "takePhoto": "Ambil Foto",
+      "chooseFile": "Pilih Fail"
+    },
     "ReportCard": {
       "rating": "Penilaian"
     },
@@ -491,6 +498,9 @@
     "restorationError": "Ralat berlaku semasa memulihkan pembelian.",
     "medicalDisclaimerAlert": "Apl MicroScan AI tidak menawarkan diagnosis, cadangan rawatan, atau sebarang nasihat perubatan. Sentiasa dapatkan panduan daripada profesional penjagaan kesihatan yang berkelayakan untuk keputusan perubatan.",
     "scanLimitReached": "Kami mengoptimumkan kualiti imbasan untuk anda! Anda akan dapat mengimbas semula dalam kira-kira {{hours}} jam dan {{minutes}} minit. Ada soalan tentang topik mikroskopi? Tanya pembantu chat kami sementara menunggu!",
-    "chatAndMediaFilesLimit": "Pengguna yang dihormati, anda perlu menaik taraf pelan anda untuk mendapat manfaat daripada perbualan tanpa had, imbasan tanpa had, analisis multi-imej dan banyak lagi. 🔓"
+    "chatAndMediaFilesLimit": "Pengguna yang dihormati, anda perlu menaik taraf pelan anda untuk mendapat manfaat daripada perbualan tanpa had, imbasan tanpa had, analisis multi-imej dan banyak lagi. 🔓",
+    "mixedMediaNotAllowed": "Untuk ketepatan yang lebih baik, jangan muat naik campuran fail media yang berbeza. Sila muat naik hanya imej, video atau pdf - bukan semua sekali.",
+    "multipleVideosNotAllowed": "Untuk ketepatan yang lebih baik, sila muat naik hanya satu video pada satu masa.",
+    "mediaFilesUploadFiles": "Terdapat ralat memuat naik fail media anda. Sila cuba lagi."
   }
 }

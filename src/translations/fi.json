@@ -23,6 +23,7 @@
     "chatbotPlaceholder": "Kysy minulta mitä vain...",
     "openSettings": "Avaa asetukset",
     "seeNotifications": "Näytä ilmoitukset",
+    "analyzingMediaFilesPlaceholder": "Analysoidaan mediatiedostoja...",
     "viewProfile": "Näytä profiili",
     "upgradePlan": "Päivitä tilausta",
     "download": "Lataa",
@@ -213,7 +214,8 @@
         "heading": "Vahvista sähköposti"
       },
       "filePreviewScreen": {
-        "generateReportButton": "Aloita analyysi"
+        "generateReportButton": "Aloita analyysi",
+        "mediaFilesUploaded": "Latoit {{totalMediaFiles}} mediatiedostoa"
       },
       "disclaimerScreen": {
         "heading": "Tärkeä vastuuvapauslauseke",
@@ -378,6 +380,11 @@
     }
   },
   "components": {
+    "ImagePickerModal": {
+      "photoLibrary": "Valokuvakirjasto",
+      "takePhoto": "Ota valokuva",
+      "chooseFile": "Valitse tiedosto"
+    },
     "ReportCard": {
       "rating": "Arviointi"
     },
@@ -491,6 +498,9 @@
     "restorationError": "Oston palauttamisessa tapahtui virhe.",
     "medicalDisclaimerAlert": "MicroScan AI -sovellus ei tarjoa diagnooseja, hoitoneuvoja tai mitään lääketieteellisiä neuvoja. Pyydä aina pätevältä terveydenhuollon ammattilaiselta ohjeita lääketieteellisiä päätöksiä tehdessäsi.",
     "scanLimitReached": "Optimoidaan skannauksen laatua puolestasi! Voit skannata uudelleen noin {{hours}} tunnin ja {{minutes}} minuutin kuluttua. Onko sinulla kysyttävää mikroskooppiasta? Kysy chat-avustajaltamme odotellessasi!",
-    "chatAndMediaFilesLimit": "Hyvä käyttäjä, sinun on päivitettävä tilauksesi saadaksesi hyödyn rajoittamattomista keskusteluista, rajoittamattomista skannauksista, usean kuvan analyyseistä ja muusta. 🔓"
+    "chatAndMediaFilesLimit": "Hyvä käyttäjä, sinun on päivitettävä tilauksesi saadaksesi hyödyn rajoittamattomista keskusteluista, rajoittamattomista skannauksista, usean kuvan analyyseistä ja muusta. 🔓",
+    "mixedMediaNotAllowed": "Parempaa tarkkuutta varten älä lataa erilaisten mediatiedostojen sekoitusta. Lataa vain kuvia, videoita tai pdf-tiedostoja — ei kaikkia yhdessä.",
+    "multipleVideosNotAllowed": "Parempaa tarkkuutta varten lataa vain yksi video kerrallaan.",
+    "mediaFilesUploadFiles": "Mediatiedostojesi lataamisessa tapahtui virhe. Yritä uudelleen."
   }
 }

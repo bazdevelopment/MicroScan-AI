@@ -21,6 +21,7 @@
     "typing": "Yazıyor...",
     "online": "Çevrimiçi",
     "chatbotPlaceholder": "Bana her şeyi sor...",
+    "analyzingMediaFilesPlaceholder": "Medya dosyaları analiz ediliyor...",
     "openSettings": "Ayarları Aç",
     "seeNotifications": "Bildirimleri Gör",
     "viewProfile": "Profili Görüntüle",
@@ -213,7 +214,8 @@
         "heading": "E-postayı doğrula"
       },
       "filePreviewScreen": {
-        "generateReportButton": "Analizi Başlat"
+        "generateReportButton": "Analizi Başlat",
+        "mediaFilesUploaded": "{{totalMediaFiles}} medya dosyası yüklediniz"
       },
       "disclaimerScreen": {
         "heading": "Önemli Sorumluluk Reddi",
@@ -378,6 +380,11 @@
     }
   },
   "components": {
+    "ImagePickerModal": {
+      "photoLibrary": "Fotoğraf Kütüphanesi",
+      "takePhoto": "Fotoğraf Çek",
+      "chooseFile": "Dosya Seç"
+    },
     "ReportCard": {
       "rating": "Değerlendirme"
     },
@@ -491,6 +498,9 @@
     "restorationError": "Satın alma işlemi geri yüklenirken bir hata oluştu.",
     "medicalDisclaimerAlert": "MicroScan AI uygulaması teşhis, tedavi önerileri veya herhangi bir tıbbi tavsiye sunmaz. Tıbbi kararlar için daima nitelikli bir sağlık uzmanından rehberlik isteyin.",
     "scanLimitReached": "Sizin için tarama kalitesini optimize ediyoruz! Yaklaşık {{hours}} saat {{minutes}} dakika sonra tekrar tarama yapabileceksiniz. Mikroskopi konusunda herhangi bir sorunuz var mı? Beklerken sohbet asistanımıza sorun!",
-    "chatAndMediaFilesLimit": "Sayın kullanıcı, sınırsız sohbet, sınırsız tarama, çoklu görsel analizi ve daha fazlasından yararlanmak için planınızı yükseltmeniz gerekiyor. 🔓"
+    "chatAndMediaFilesLimit": "Sayın kullanıcı, sınırsız sohbet, sınırsız tarama, çoklu görsel analizi ve daha fazlasından yararlanmak için planınızı yükseltmeniz gerekiyor. 🔓",
+    "mixedMediaNotAllowed": "Daha iyi doğruluk için farklı medya dosyalarının karışımını yüklemeyin. Lütfen yalnızca görseller, videolar veya pdf'ler yükleyin - hepsini birlikte değil.",
+    "multipleVideosNotAllowed": "Daha iyi doğruluk için lütfen aynı anda yalnızca bir video yükleyin.",
+    "mediaFilesUploadFiles": "Medya dosyalarınız yüklenirken bir hata oluştu. Lütfen tekrar deneyin."
   }
 }

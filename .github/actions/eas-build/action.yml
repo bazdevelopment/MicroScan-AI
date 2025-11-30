@@ -70,7 +70,9 @@ inputs:
   TEST_ACCOUNT:
     description: 'TEST_ACCOUNT'
     required: true
-
+  EXPO_PUBLIC_GEMINI_API_KEY:
+    description: 'EXPO_PUBLIC_GEMINI_API_KEY'
+    required: true
   ANALYZE_IMAGE_CONVERSATION_ENDPOINT:
     description: 'ANALYZE_IMAGE_CONVERSATION_ENDPOINT'
     required: true
@@ -112,6 +114,8 @@ runs:
          echo "ANALYZE_IMAGE_CONVERSATION_ENDPOINT: ${{ inputs.ANALYZE_IMAGE_CONVERSATION_ENDPOINT }}"
          echo "ANALYZE_VIDEO_CONVERSATION_ENDPOINT: ${{ inputs.ANALYZE_VIDEO_CONVERSATION_ENDPOINT }}"
          echo "CONTINUE_CONVERSATION_ENDPOINT: ${{ inputs.CONTINUE_CONVERSATION_ENDPOINT }}"
+          echo "EXPO_PUBLIC_GEMINI_API_KEY: ${{ inputs.EXPO_PUBLIC_GEMINI_API_KEY }}"
+
 
          # Detect OS and use appropriate sed syntax (ios use sed -i '')
          if [[ "$OSTYPE" == "darwin"* ]]; then
@@ -121,6 +125,8 @@ runs:
          sed -i '' "s|EXPO_PUBLIC_ANALYZE_IMAGE_CONVERSATION_ENDPOINT_CI|${{ inputs.ANALYZE_IMAGE_CONVERSATION_ENDPOINT }}|g" eas.json
          sed -i '' "s|EXPO_PUBLIC_ANALYZE_VIDEO_CONVERSATION_ENDPOINT_CI|${{ inputs.ANALYZE_VIDEO_CONVERSATION_ENDPOINT }}|g" eas.json
          sed -i '' "s|EXPO_PUBLIC_CONTINUE_CONVERSATION_ENDPOINT_CI|${{ inputs.CONTINUE_CONVERSATION_ENDPOINT }}|g" eas.json
+         sed -i '' "s|EXPO_PUBLIC_GEMINI_API_KEY_CI|${{ inputs.EXPO_PUBLIC_GEMINI_API_KEY }}|g" eas.json
+
 
          else
          sed -i 's|EXPO_PUBLIC_REVENUE_CAT_API_KEYS_GOOGLE_CI|${{ inputs.REVENUE_CAT_API_KEYS_GOOGLE }}|g' eas.json
@@ -128,6 +134,8 @@ runs:
          sed -i 's|EXPO_PUBLIC_ANALYZE_IMAGE_CONVERSATION_ENDPOINT_CI|${{ inputs.ANALYZE_IMAGE_CONVERSATION_ENDPOINT }}|g' eas.json
          sed -i 's|EXPO_PUBLIC_ANALYZE_VIDEO_CONVERSATION_ENDPOINT_CI|${{ inputs.ANALYZE_VIDEO_CONVERSATION_ENDPOINT }}|g' eas.json
          sed -i 's|EXPO_PUBLIC_CONTINUE_CONVERSATION_ENDPOINT_CI|${{ inputs.CONTINUE_CONVERSATION_ENDPOINT }}|g' eas.json
+         sed -i 's|EXPO_PUBLIC_GEMINI_API_KEY_CI|${{ inputs.EXPO_PUBLIC_GEMINI_API_KEY }}|g' eas.json
+
 
          fi
       shell: bash

@@ -44,14 +44,62 @@ export const requestInAppRating = async (): Promise<RatingResult> => {
     if (hasAction) {
       // Show native rating dialog (preferred method)
       await StoreReview.requestReview();
+
+      return { success: true, method: 'native_dialog' };
+    } else {
+      // Fallback: redirect to store page
+      await StoreReview.requestReview();
+
+      return { success: true, method: 'store_redirect' };
+    }
+  } catch (error) {
+    console.error('Error requesting app rating:', error);
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : 'Unknown error',
+    };
+  }
+};
+
+/**
+ * Simple function to request app rating with spam protection
+ * Call this once after user completes onboarding or any positive action
+ */
+export const requestInAppRatingAndStore = async (): Promise<RatingResult> => {
+  try {
+    // Check if we should request rating
+    const { canRequest, reason } = shouldRequestInAppRating();
+
+    if (!canRequest) {
+      console.log(`Skipping rating request: ${reason}`);
+      return {
+        success: true,
+        skipped: true,
+        reason: reason,
+      };
+    }
+
+    // Check if store review is available on this device
+    const isAvailable = await StoreReview.isAvailableAsync();
+
+    if (!isAvailable) {
+      console.log('Store review not available on this device');
+      return { success: false, error: 'Store review not available' };
+    }
+
+    // Check if device supports native rating dialog
+    const hasAction = await StoreReview.hasAction();
+    if (hasAction) {
+      // Show native rating dialog (preferred method)
+      await StoreReview.requestReview();
       // Automatically mark as rated after showing the dialog
-      // markUserHasRated();
+      markUserHasRated();
       return { success: true, method: 'native_dialog' };
     } else {
       // Fallback: redirect to store page
       await StoreReview.requestReview();
       // Automatically mark as rated after redirect
-      // markUserHasRated();
+      markUserHasRated();
       return { success: true, method: 'store_redirect' };
     }
   } catch (error) {
@@ -66,7 +114,7 @@ export const requestInAppRating = async (): Promise<RatingResult> => {
 /**
  * Check if user has already rated the app
  */
-const shouldRequestInAppRating = (): {
+export const shouldRequestInAppRating = (): {
   canRequest: boolean;
   reason?: string;
 } => {
@@ -91,6 +139,18 @@ export const markUserHasRated = (): void => {
 export const requestAppRatingWithDelay = (delayMs: number = 2000): void => {
   setTimeout(async () => {
     const result = await requestInAppRating();
+    console.log('Rating request result:', result);
+  }, delayMs);
+};
+
+/**
+ * Request rating with a delay (good UX after completing onboarding)
+ */
+export const requestAppRatingWithDelayStorage = (
+  delayMs: number = 2000
+): void => {
+  setTimeout(async () => {
+    const result = await requestInAppRatingAndStore();
     console.log('Rating request result:', result);
   }, delayMs);
 };
