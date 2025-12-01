@@ -983,24 +983,24 @@ function getChatMessagesStyles(
       color: baseTextColor,
     },
     paragraph: {
-      fontFamily: 'Font-Regular',
+      fontFamily: 'Font-Medium',
     },
     list_item: {
-      fontFamily: 'Font-Regular',
+      fontFamily: 'Font-Medium',
     },
     code_inline: {
       backgroundColor: colors.primary[900],
-      fontFamily: 'Font-Regular',
+      fontFamily: 'Font-Medium',
     },
     span: {
-      fontFamily: 'Font-Regular',
+      fontFamily: 'Font-Medium',
     },
     strong: {
       fontFamily: 'Font-Extra-Bold',
       fontWeight: '800',
     },
     em: {
-      fontFamily: 'Font-Regular',
+      fontFamily: 'Font-Medium',
       fontStyle: 'italic',
     },
   };
@@ -1009,7 +1009,7 @@ function getChatMessagesStyles(
     body: {
       marginTop: -7,
       marginBottom: -7,
-      fontSize: 15,
+      fontSize: 16,
       lineHeight: 22,
       color: darkTextColor,
     },
@@ -1022,24 +1022,24 @@ function getChatMessagesStyles(
       fontWeight: '800',
     },
     paragraph: {
-      fontFamily: 'Font-Regular',
+      fontFamily: 'Font-Medium',
     },
     list_item: {
-      fontFamily: 'Font-Regular',
+      fontFamily: 'Font-Medium',
     },
     code_inline: {
       backgroundColor: colors.primary[900],
-      fontFamily: 'Font-Regular',
+      fontFamily: 'Font-Medium',
     },
     span: {
-      fontFamily: 'Font-Regular',
+      fontFamily: 'Font-Medium',
     },
     strong: {
       fontFamily: 'Font-Extra-Bold',
       fontWeight: '800',
     },
     em: {
-      fontFamily: 'Font-Regular',
+      fontFamily: 'Font-Medium',
       fontStyle: 'italic',
     },
   };

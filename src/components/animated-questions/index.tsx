@@ -78,7 +78,7 @@ const AnimatedChatQuestions = ({
               borderColor: colors.primary[900],
             }}
           >
-            <Text className="text-center font-medium-nunito text-base text-black dark:text-white">
+            <Text className="text-center font-medium-nunito text-[15px] text-black dark:text-white">
               {q}
             </Text>
           </TouchableOpacity>
