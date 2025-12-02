@@ -309,6 +309,7 @@
     "tab": "Chat"
   },
   "settings": {
+    "cancelSubscription": "Zrušiť predplatné",
     "tab": "Nastavenia",
     "profile": "Profil",
     "contactUs": "Kontaktujte nás",
@@ -426,7 +427,8 @@
     "PremiumFeaturesOverview": {
       "first": "Analýza pomocou AI pre akékoľvek mikroskopické vzorky",
       "second": "Prístup ku všetkým prémiovým funkciám",
-      "third": "Bez reklám"
+      "third": "Bez reklám",
+      "fourth": "Neobmedzené chaty s asistentmi AI 24/7"
     },
     "Input": {
       "labels": {

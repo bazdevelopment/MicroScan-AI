@@ -309,6 +309,7 @@
     "tab": "Chat"
   },
   "settings": {
+    "cancelSubscription": "Anulează abonamentul",
     "tab": "Setări",
     "profile": "Profil",
     "contactUs": "Contactează-ne",
@@ -426,7 +427,8 @@
     "PremiumFeaturesOverview": {
       "first": "Analiză bazată pe inteligență artificială pentru orice eșantion microscopic",
       "second": "Acces la toate funcțiile premium",
-      "third": "Fără reclame"
+      "third": "Fără reclame",
+      "fourth": "Conversații nelimitate cu asistenți AI non-stop"
     },
     "Input": {
       "labels": {

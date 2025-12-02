@@ -309,6 +309,7 @@
     "tab": "Chat"
   },
   "settings": {
+    "cancelSubscription": "Batal Langganan",
     "tab": "Tetapan",
     "profile": "Profil",
     "contactUs": "Hubungi kami",
@@ -426,7 +427,8 @@
     "PremiumFeaturesOverview": {
       "first": "Analisis berkuasa AI untuk sebarang sampel mikroskopi",
       "second": "Akses kepada semua ciri premium",
-      "third": "Tiada iklan"
+      "third": "Tiada iklan",
+      "fourth": "Sembang tanpa had dengan pembantu AI 24/7"
     },
     "Input": {
       "labels": {

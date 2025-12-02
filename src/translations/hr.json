@@ -309,6 +309,7 @@
     "tab": "Chat"
   },
   "settings": {
+    "cancelSubscription": "Otkaži pretplatu",
     "tab": "Postavke",
     "profile": "Profil",
     "contactUs": "Kontaktirajte nas",
@@ -426,7 +427,8 @@
     "PremiumFeaturesOverview": {
       "first": "AI-analiza za bilo koje mikroskopske uzorke",
       "second": "Pristup svim premium značajkama",
-      "third": "Bez reklama"
+      "third": "Bez reklama",
+      "fourth": "Neograničeni razgovori s AI asistentima 24/7"
     },
     "Input": {
       "labels": {

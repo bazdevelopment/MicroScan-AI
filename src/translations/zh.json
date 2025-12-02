@@ -309,6 +309,7 @@
     "tab": "聊天"
   },
   "settings": {
+    "cancelSubscription": "取消订阅",
     "tab": "设置",
     "profile": "个人资料",
     "contactUs": "联系我们",
@@ -426,7 +427,8 @@
     "PremiumFeaturesOverview": {
       "first": "适用于任何显微镜样本的人工智能分析",
       "second": "访问所有高级功能",
-      "third": "无广告"
+      "third": "无广告",
+      "fourth": "与24/7 AI助手进行无限次聊天"
     },
     "Input": {
       "labels": {

@@ -51,7 +51,7 @@ const PremiumFeaturesOverview = () => {
           height={42}
         />
       ),
-      text: 'Unlimited chats with a 24/7 medical AI assistants',
+      text: translate('components.PremiumFeaturesOverview.fourth'),
       backgroundColor: 'bg-blue-100',
       rotation: 'rotate-2' as const,
     },

@@ -309,6 +309,7 @@
     "tab": "Chat"
   },
   "settings": {
+    "cancelSubscription": "Abonnement opzeggen",
     "tab": "Instellingen",
     "profile": "Profiel",
     "contactUs": "Neem contact op",
@@ -426,7 +427,8 @@
     "PremiumFeaturesOverview": {
       "first": "AI-gestuurde analyse voor alle microscopie monsters",
       "second": "Toegang tot alle premium functies",
-      "third": "Geen advertenties"
+      "third": "Geen advertenties",
+      "fourth": "Onbeperkte chats met 24/7 AI-assistenten"
     },
     "Input": {
       "labels": {

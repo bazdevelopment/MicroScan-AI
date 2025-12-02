@@ -309,6 +309,7 @@
     "tab": "Chat"
   },
   "settings": {
+    "cancelSubscription": "Cancelar suscripción",
     "tab": "Configuración",
     "profile": "Perfil",
     "contactUs": "Contáctanos",
@@ -426,7 +427,8 @@
     "PremiumFeaturesOverview": {
       "first": "Análisis impulsado por IA para cualquier muestra de microscopía",
       "second": "Acceso a todas las funciones premium",
-      "third": "Sin anuncios"
+      "third": "Sin anuncios",
+      "fourth": "Chats ilimitados con asistentes de IA 24/7"
     },
     "Input": {
       "labels": {

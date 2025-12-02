@@ -309,6 +309,7 @@
     "tab": "Sohbet"
   },
   "settings": {
+    "cancelSubscription": "Aboneliği İptal Et",
     "tab": "Ayarlar",
     "profile": "Profil",
     "contactUs": "Bize Ulaşın",
@@ -426,7 +427,8 @@
     "PremiumFeaturesOverview": {
       "first": "Tüm mikroskopi numuneleri için AI destekli analiz",
       "second": "Tüm premium özelliklere erişim",
-      "third": "Reklam yok"
+      "third": "Reklam yok",
+      "fourth": "7/24 AI asistanlarla sınırsız sohbet"
     },
     "Input": {
       "labels": {

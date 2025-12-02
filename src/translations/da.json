@@ -309,6 +309,7 @@
     "tab": "Chat"
   },
   "settings": {
+    "cancelSubscription": "Opsig abonnement",
     "tab": "Indstillinger",
     "profile": "Profil",
     "contactUs": "Kontakt os",
@@ -426,7 +427,8 @@
     "PremiumFeaturesOverview": {
       "first": "AI-drevet analyse til alle mikroskopiprøver",
       "second": "Adgang til alle premium-funktioner",
-      "third": "Ingen reklamer"
+      "third": "Ingen reklamer",
+      "fourth": "Ubegrænsede chats med AI-assistenter døgnet rundt"
     },
     "Input": {
       "labels": {

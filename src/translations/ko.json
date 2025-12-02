@@ -308,6 +308,7 @@
     "tab": "채팅"
   },
   "settings": {
+    "cancelSubscription": "구독 취소",
     "tab": "설정",
     "profile": "프로필",
     "contactUs": "문의하기",
@@ -425,7 +426,8 @@
     "PremiumFeaturesOverview": {
       "first": "모든 현미경 샘플을 위한 AI 기반 분석",
       "second": "모든 프리미엄 기능에 액세스",
-      "third": "광고 없음"
+      "third": "광고 없음",
+      "fourth": "24/7 AI 어시스턴트와의 무제한 채팅"
     },
     "Input": {
       "labels": {

@@ -309,6 +309,7 @@
     "tab": "Czat"
   },
   "settings": {
+    "cancelSubscription": "Anuluj subskrypcję",
     "tab": "Ustawienia",
     "profile": "Profil",
     "contactUs": "Kontakt",
@@ -426,7 +427,8 @@
     "PremiumFeaturesOverview": {
       "first": "Analiza wspierana przez AI dla dowolnych próbek mikroskopii",
       "second": "Dostęp do wszystkich funkcji premium",
-      "third": "Brak reklam"
+      "third": "Brak reklam",
+      "fourth": "Nieograniczone czaty z asystentami AI 24/7"
     },
     "Input": {
       "labels": {
