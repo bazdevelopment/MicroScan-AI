@@ -126,7 +126,7 @@
       "freeTrialPreview": {
         "heading": "Enjoy your free trial! 🎉",
         "subheading": "Experience these amazing benefits during your free trial",
-        "review": "Great microscopy analysis, the AI medical chat assistant is super helpful! A must-have app!",
+        "review": "Great microscopy analysis, the AI chat assistant is super helpful! A must-have app!",
         "reviewTrust": "📈 Trusted by 3,252+ users"
       },
       "scanInterpretation": {
@@ -311,6 +311,7 @@
     "tab": "Chat"
   },
   "settings": {
+    "cancelSubscription": "Cancel Subscription",
     "tab": "Settings",
     "profile": "Profile",
     "contactUs": "Contact us",
@@ -423,7 +424,8 @@
     "PremiumFeaturesOverview": {
       "first": "AI-powered analysis for any microscopy samples",
       "second": "Access to all premium features",
-      "third": "No ads"
+      "third": "No ads",
+      "fourth": "Unlimited chats with 24/7 AI assistants"
     },
 
     "Input": {

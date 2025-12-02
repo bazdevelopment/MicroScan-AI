@@ -1009,7 +1009,7 @@ function getChatMessagesStyles(
     body: {
       marginTop: -7,
       marginBottom: -7,
-      fontSize: 16,
+      fontSize: 15,
       lineHeight: 22,
       color: darkTextColor,
     },

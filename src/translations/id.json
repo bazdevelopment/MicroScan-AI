@@ -309,6 +309,7 @@
     "tab": "Chat"
   },
   "settings": {
+    "cancelSubscription": "Batalkan Langganan",
     "tab": "Pengaturan",
     "profile": "Profil",
     "contactUs": "Hubungi kami",
@@ -384,7 +385,7 @@
       "photoLibrary": "Galeri Foto",
       "takePhoto": "Ambil Foto",
       "chooseFile": "Pilih File"
-},
+    },
     "ReportCard": {
       "rating": "Peringkat"
     },
@@ -426,7 +427,8 @@
     "PremiumFeaturesOverview": {
       "first": "Analisis bertenaga AI untuk semua sampel mikroskopi",
       "second": "Akses ke semua fitur premium",
-      "third": "Tanpa iklan"
+      "third": "Tanpa iklan",
+      "fourth": "Obrolan tanpa batas dengan asisten AI 24/7"
     },
     "Input": {
       "labels": {

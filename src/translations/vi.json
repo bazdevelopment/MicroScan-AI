@@ -311,6 +311,7 @@
     "tab": "Trò chuyện"
   },
   "settings": {
+    "cancelSubscription": "Hủy đăng ký",
     "tab": "Cài đặt",
     "profile": "Hồ sơ",
     "contactUs": "Liên hệ với chúng tôi",
@@ -428,7 +429,8 @@
     "PremiumFeaturesOverview": {
       "first": "Phân tích được hỗ trợ bởi AI cho bất kỳ mẫu kính hiển vi nào",
       "second": "Truy cập tất cả các tính năng cao cấp",
-      "third": "Không có quảng cáo"
+      "third": "Không có quảng cáo",
+      "fourth": "Trò chuyện không giới hạn với trợ lý AI 24/7"
     },
 
     "Input": {

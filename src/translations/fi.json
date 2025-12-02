@@ -309,6 +309,7 @@
     "tab": "Keskustelu"
   },
   "settings": {
+    "cancelSubscription": "Peruuta tilaus",
     "tab": "Asetukset",
     "profile": "Profiili",
     "contactUs": "Ota yhteyttä",
@@ -426,7 +427,8 @@
     "PremiumFeaturesOverview": {
       "first": "Tekoälyavusteinen analyysi kaikille mikroskooppisille näytteille",
       "second": "Pääsy kaikkiin premium-ominaisuuksiin",
-      "third": "Ei mainoksia"
+      "third": "Ei mainoksia",
+      "fourth": "Rajoittamattomat chatit 24/7 tekoälyavustajien kanssa"
     },
     "Input": {
       "labels": {

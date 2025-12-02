@@ -309,6 +309,7 @@
     "tab": "Chat"
   },
   "settings": {
+    "cancelSubscription": "Abonnement kündigen",
     "tab": "Einstellungen",
     "profile": "Profil",
     "contactUs": "Kontaktieren Sie uns",
@@ -426,7 +427,8 @@
     "PremiumFeaturesOverview": {
       "first": "KI-gestützte Analyse für beliebige Mikroskopieproben",
       "second": "Zugang zu allen Premium-Funktionen",
-      "third": "Keine Werbung"
+      "third": "Keine Werbung",
+      "fourth": "Unbegrenzte Chats mit 24/7 KI-Assistenten"
     },
     "Input": {
       "labels": {

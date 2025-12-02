@@ -309,6 +309,7 @@
     "tab": "チャット"
   },
   "settings": {
+    "cancelSubscription": "サブスクリプションをキャンセル",
     "tab": "設定",
     "profile": "プロフィール",
     "contactUs": "お問い合わせ",
@@ -426,7 +427,8 @@
     "PremiumFeaturesOverview": {
       "first": "あらゆる顕微鏡サンプルに対応したAIによる解析",
       "second": "すべてのプレミアム機能にアクセス",
-      "third": "広告なし"
+      "third": "広告なし",
+      "fourth": "24時間365日対応のAIアシスタントとの無制限チャット"
     },
     "Input": {
       "labels": {

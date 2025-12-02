@@ -311,6 +311,7 @@
     "tab": "Chat"
   },
   "settings": {
+    "cancelSubscription": "Cancelar assinatura",
     "tab": "Configurações",
     "profile": "Perfil",
     "contactUs": "Contate-nos",
@@ -428,7 +429,8 @@
     "PremiumFeaturesOverview": {
       "first": "Análise com IA para qualquer amostra de microscopia",
       "second": "Acesso a todos os recursos premium",
-      "third": "Sem anúncios"
+      "third": "Sem anúncios",
+      "fourth": "Bate-papos ilimitados com assistentes de IA 24 horas por dia, 7 dias por semana"
     },
 
     "Input": {

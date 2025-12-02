@@ -309,6 +309,7 @@
     "tab": "צ'אט"
   },
   "settings": {
+    "cancelSubscription": "בטל מנוי",
     "tab": "הגדרות",
     "profile": "פרופיל",
     "contactUs": "צור קשר",
@@ -426,7 +427,8 @@
     "PremiumFeaturesOverview": {
       "first": "ניתוח מונחה AI לכל דגימות המיקרוסקופיה",
       "second": "גישה לכל תכונות הפרימיום",
-      "third": "ללא פרסומות"
+      "third": "ללא פרסומות",
+      "fourth": "צ'אטים בלתי מוגבלים עם עוזרי AI 24/7"
     },
     "Input": {
       "labels": {

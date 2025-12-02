@@ -309,6 +309,7 @@
     "tab": "Csevegés"
   },
   "settings": {
+    "cancelSubscription": "Előfizetés lemondása",
     "tab": "Beállítások",
     "profile": "Profil",
     "contactUs": "Lépjen kapcsolatba velünk",
@@ -426,7 +427,8 @@
     "PremiumFeaturesOverview": {
       "first": "AI-vezérelt elemzés bármilyen mikroszkópos mintához",
       "second": "Hozzáférés az összes prémium funkcióhoz",
-      "third": "Nincsenek hirdetések"
+      "third": "Nincsenek hirdetések",
+      "fourth": "Korlátlan chat 24/7 AI asszisztensekkel"
     },
     "Input": {
       "labels": {

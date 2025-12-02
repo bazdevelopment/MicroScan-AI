@@ -308,7 +308,6 @@ const PaywallNew = () => {
         setIsFirstTime,
         allowAppAccess,
       });
-      DEVICE_TYPE.IOS && router.dismiss();
       // requestAppRatingWithDelay(3000); //!!!remove from now asking the review
     }
   };
@@ -339,9 +338,10 @@ const PaywallNew = () => {
                   onUpdateUser,
                   logEvent,
                   setIsFirstTime,
+                  allowAppAccess,
                 });
                 // requestAppRatingWithDelay(3000);
-                DEVICE_TYPE.IOS && router.dismiss();
+                // DEVICE_TYPE.IOS && router.dismiss();
                 return;
               }
 
@@ -536,6 +536,7 @@ export const updateUserAndNavigate = async ({
       if (allowAppAccess === 'false') {
         router.back();
       } else {
+        DEVICE_TYPE.IOS && router.dismiss(); //!important to do this, otherwise the screen gets hanged only on ios
         router.navigate('/(tabs)');
       }
       setIsFirstTime(false);

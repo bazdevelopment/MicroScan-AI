@@ -37,8 +37,12 @@ export default function Settings() {
   const { mutateAsync: onUpdateUser, isPending: isPendingUpdateUser } =
     useUpdateUser();
 
-  const { SHOW_FAQ_SCREEN, SHOW_RATE_SCREEN, SHOW_ADMIN_SCREENS } =
-    useRemoteConfig();
+  const {
+    SHOW_FAQ_SCREEN,
+    SHOW_RATE_SCREEN,
+    SHOW_ADMIN_SCREENS,
+    SHOW_CANCEL_SUBSCRIPTION_OPTION,
+  } = useRemoteConfig();
 
   const scrollViewRef = useRef(null);
   const iconColor = colorScheme === 'dark' ? colors.neutral[50] : colors.black;
@@ -174,6 +178,21 @@ export default function Settings() {
               />
             )}
           </ItemsContainer>
+
+          {SHOW_CANCEL_SUBSCRIPTION_OPTION && (
+            <View className="mt-3">
+              <Item
+                text="settings.cancelSubscription"
+                onPress={() =>
+                  Linking.openURL(
+                    DEVICE_TYPE.IOS
+                      ? 'https://www.youtube.com/watch?v=MQkHY4DOdfw&ab_channel=AppleSupport'
+                      : 'https://www.youtube.com/watch?v=HzqAOJLSjbk&ab_channel=GuideRealm'
+                  )
+                }
+              />
+            </View>
+          )}
 
           <Button
             label={translate('settings.logout')}

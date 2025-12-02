@@ -309,6 +309,7 @@
     "tab": "Xat"
   },
   "settings": {
+    "cancelSubscription": "Cancel·lar la subscripció",
     "tab": "Configuració",
     "profile": "Perfil",
     "contactUs": "Contacta'ns",
@@ -426,7 +427,8 @@
     "PremiumFeaturesOverview": {
       "first": "Anàlisi amb IA per a qualsevol mostra de microscòpia",
       "second": "Accés a totes les funcions premium",
-      "third": "Sense anuncis"
+      "third": "Sense anuncis",
+      "fourth": "Xats il·limitats amb assistents d'IA 24/7"
     },
     "Input": {
       "labels": {
